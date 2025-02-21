@@ -18,9 +18,11 @@ function Aws_busines() {
     <WrapperContainer>
       <div className="flex flex-col items-center justify-center text-center px-4">
         <Heading>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+        <div className="text-3xl md:text-4xl lg:text-5xl font-bold">
+
             Why businesses use AWS
-          </h1>
+
+          </div>
         </Heading>
         
         <img 
@@ -29,14 +31,14 @@ function Aws_busines() {
           className="w-[60px] md:w-[80px] lg:w-[100px] my-6"
         />
 
-          <p >
         <Paragraph>
+        <span>
             Amazon Web Services (AWS) is the world's leading cloud computing
             platform, providing businesses with scalable, secure, and
             cost-effective solutions. Here's why companies of all sizes choose
             AWS:
+          </span>
         </Paragraph>
-          </p>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 

@@ -4,7 +4,7 @@ import video from '../../../../assets/Google_video.mp4'
 function Intercloud_hero() {
   return (
     <>
-        <div className="relative w-full h-[600px] overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden">
         <video
           autoPlay
           loop

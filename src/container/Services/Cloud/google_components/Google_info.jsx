@@ -1,6 +1,7 @@
 import React from "react";
 import Google_intro from "../../../../assets/google_intro.jpg";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Heading from "../../../../Layout/Heading";
 
 function Google_info() {
   return (
@@ -8,9 +9,12 @@ function Google_info() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Text Section */}
         <div className="w-full md:w-1/2">
-          <p className="uppercase text-left leading-tight mt-6 md:mt-10 text-2xl md:text-4xl font-bold">
+        <Heading><div>
+        <p className="uppercase text-left leading-tight mt-6 md:mt-10 text-2xl md:text-4xl font-bold">
             About Google Cloud
           </p>
+        </div></Heading>
+          
           <p className="mt-4 text-sm md:text-base leading-relaxed">
             Google Cloud is a comprehensive suite of cloud computing services
             that enables organizations to build, deploy, and scale applications

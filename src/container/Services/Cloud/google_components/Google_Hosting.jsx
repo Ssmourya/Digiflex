@@ -4,7 +4,7 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 
 function Google_Hosting() {
-  const [hovered, setHovered] = useState(null);
+  const [hoveredIndexes, setHoveredIndexes] = useState([]);
 
   const services = [
     { name: "Compute Engine", description: "Virtual machines on Google Cloud, providing scalable compute capacity." },
@@ -14,40 +14,60 @@ function Google_Hosting() {
     { name: "Cloud Run", description: "A fully managed platform for running containerized applications in a serverless environment." }
   ];
 
-  return (
+  // Function to handle hover state for multiple items
+  const handleMouseEnter = (index) => {
+    setHoveredIndexes((prev) => [...prev, index]);
+  };
 
+  const handleMouseLeave = (index) => {
+    setHoveredIndexes((prev) => prev.filter((i) => i !== index));
+  };
+
+  return (
     <WrapperContainer>
       <Heading>
-        <div>
-          <p className="text-[40px] text-center font-bold">Type of Google Cloud Hosting</p>
-        </div>
+        <h1 className="sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold">
+          Types of Google Cloud Hosting
+        </h1>
       </Heading>
-      <div className="flex flex-wrap md:flex-nowrap items-center justify-center p-6 md:p-10 gap-10">
+
+      <div className="flex flex-col lg:flex-row items-center justify-center p-4 sm:p-6 md:p-10 gap-6 lg:gap-10">
         {/* Services List */}
-        <div className="w-full md:w-1/2 relative">
+        <div className="w-full lg:w-1/2">
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative flex items-center group"
-              onMouseEnter={() => setHovered(index)}
-              onMouseLeave={() => setHovered(null)}
+              className="relative flex flex-col transition-all duration-300 mb-4"
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
             >
-              <p className="border-l-4 border-[#0B57D0] pl-3 text-xl md:text-2xl lg:text-3xl font-semibold mb-6 cursor-pointer">
+              {/* Service Name */}
+              <p className="border-l-4 border-[#0B57D0] pl-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold cursor-pointer">
                 {service.name}
               </p>
-              
-              {hovered === index && (
-                <div className="absolute left-[200px] md:left-[300px] top-1/2 transform -translate-y-1/2 w-44 md:w-96 p-4 shadow-lg rounded-lg border border-gray-300 z-10">
-                  <p className="font-semibold text-[#0B57D0] text-lg md:text-xl">{service.name}</p>
-                  <p className="text-sm md:text-base text-gray-600 mt-2">{service.description}</p>
+
+              {/* Description Appears Below on Hover with Smooth Expand Animation */}
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  hoveredIndexes.includes(index) ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="w-full bg-white p-3 shadow-md rounded-lg border border-gray-300">
+                  <p className="font-semibold text-[#0B57D0] text-md sm:text-lg">{service.name}</p>
+                  <p className="text-sm text-gray-600 mt-1">{service.description}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
-        {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img src={Google_hosting} alt="Google Cloud Hosting" className="max-w-full h-auto rounded-lg shadow-md" />
+
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <img 
+            src={Google_hosting} 
+            alt="Google Cloud Hosting" 
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-md" 
+          />
         </div>
       </div>
     </WrapperContainer>

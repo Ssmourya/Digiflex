@@ -10,7 +10,7 @@ function Azure_Card() {
         <Heading>
         <p>Start with us</p>
         </Heading>
-   <div className="flex justify-center items-center mt-[30px]">
+   <div className="flex justify-center items-center mt-[30px] mb-20">
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-6">
        {/* Card 1 */}
        <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px]">

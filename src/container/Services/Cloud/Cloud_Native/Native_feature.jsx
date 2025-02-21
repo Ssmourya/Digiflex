@@ -37,7 +37,7 @@ function Native_feature() {
     <>
     <WrapperContainer>
     <Heading>Cloud-Native Future</Heading>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+    <div className="mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
       {topics.map((topic, index) => (
         <div
           key={index}

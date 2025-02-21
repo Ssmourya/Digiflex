@@ -66,7 +66,7 @@ function Intercloud_approaches () {
         <Paragraph>
           <p>Intercloud migration refers to the process of moving applications, data, or workloads from one cloud provider to another. This can be driven by cost optimization, performance improvements, regulatory compliance, or vendor lock-in concerns. Several approaches can be used for intercloud migration</p>
         </Paragraph>
-        <div>
+        <div className='mb-20'>
 
           <div className="grid grid-cols-1 md:grid-cols-2 mt-[80px] gap-10">
             {advantages.map((item, index) => (

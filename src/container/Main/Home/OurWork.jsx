@@ -16,31 +16,65 @@ const projects = [
   {
     id: 1,
     url: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3",
-    title: 'Tripocio Carnival',
-    description: 'A revolutionary travel booking platform that transforms the way people plan and experience their journeys. Built with cutting-edge technology, Tripocio Carnival features an intuitive interface for booking flights, hotels, and experiences. The platform incorporates AI-powered recommendations, real-time pricing updates, and seamless payment integration. Key features include interactive travel maps, personalized itinerary building, and a unique "Memory Wall" where travelers can share their experiences.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'AWS', 'AI/ML'],
-    duration: '6 months',
-    client: 'Tripocio Travel Solutions',
+    title: "Tripocio Carnival",
+    description: "A revolutionary travel booking platform that transforms the way people plan and experience their journeys. Built with cutting-edge technology, Tripocio Carnival features an intuitive interface for booking flights, hotels, and experiences. The platform incorporates AI-powered recommendations, real-time pricing updates, and seamless payment integration. Key features include interactive travel maps, personalized itinerary building, and a unique 'Memory Wall' where travelers can share their experiences.",
+    technologies: ["React", "Node.js", "MongoDB", "AWS", "AI/ML"],
+    duration: "6 months",
+    client: "Tripocio Travel Solutions",
+    preview: "A revolutionary travel booking platform that transforms the way people plan and experience their journeys. Built with cutting-edge technology...",
   },
   {
     id: 2,
     url: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3",
-    title: 'Tradeworld247',
-    description: 'A sophisticated trading platform designed for 24/7 global market access. This comprehensive solution offers real-time market data, advanced charting tools, and automated trading capabilities. The platform features a secure authentication system, real-time notifications, and integration with multiple payment gateways. The dark-themed UI with neon accents provides excellent visibility for critical trading information while reducing eye strain during extended sessions.',
-    technologies: ['Vue.js', 'Python', 'PostgreSQL', 'WebSocket', 'Docker'],
-    duration: '8 months',
-    client: 'TradeWorld Technologies',
+    title: "Tradeworld247",
+    description: "A sophisticated trading platform designed for 24/7 global market access. This comprehensive solution offers real-time market data, advanced charting tools, and automated trading capabilities. The platform features a secure authentication system, real-time notifications, and integration with multiple payment gateways. The dark-themed UI with neon accents provides excellent visibility for critical trading information while reducing eye strain during extended sessions.",
+    technologies: ["Vue.js", "Python", "PostgreSQL", "WebSocket", "Docker"],
+    duration: "8 months",
+    client: "TradeWorld Technologies",
+    preview: "A sophisticated trading platform designed for 24/7 global market access. This comprehensive solution offers real-time market data, advanced charting tools...",
   },
   {
     id: 3,
     url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3",
-    title: 'Arihant Capital',
-    description: 'A modern financial services platform that revolutionizes wealth management and investment tracking. The system provides comprehensive portfolio management, real-time market analysis, and automated investment recommendations. Features include customizable dashboards, detailed financial reports, and secure document management. The clean, minimalist design ensures that complex financial data is presented in an easily digestible format.',
-    technologies: ['Angular', 'Java Spring Boot', 'Oracle', 'Kubernetes', 'Redux'],
-    duration: '12 months',
-    client: 'Arihant Financial Services',
-  }
+    title: "Arihant Capital",
+    description: "A modern financial services platform that revolutionizes wealth management and investment tracking. The system provides comprehensive portfolio management, real-time market analysis, and automated investment recommendations. Features include customizable dashboards, detailed financial reports, and secure document management. The clean, minimalist design ensures that complex financial data is presented in an easily digestible format.",
+    technologies: ["Angular", "Java Spring Boot", "Oracle", "Kubernetes", "Redux"],
+    duration: "12 months",
+    client: "Arihant Financial Services",
+    preview: "A modern financial services platform that revolutionizes wealth management and investment tracking. The system provides comprehensive portfolio management...",
+  },
+  {
+    id: 4,
+    url: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3",
+    title: "Reerate App",
+    description: "A cutting-edge real estate application that streamlines the property search and buying experience. With an intuitive interface, users can explore properties, view immersive 3D tours, and get AI-driven recommendations based on preferences.",
+    technologies: ["Next.js", "Firebase", "GraphQL", "Redux", "Tailwind CSS"],
+    duration: "7 months",
+    client: "Reerate Technologies",
+    preview: "A cutting-edge real estate application that streamlines the property search and buying experience. With an intuitive interface, users can explore properties...",
+  },
+  {
+    id: 5,
+    url: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?ixlib=rb-4.0.3",
+    title: "Healthveda Organic",
+    description: "An e-commerce platform dedicated to organic health products. The website features an AI-powered recommendation system, seamless checkout process, and personalized subscription plans.",
+    technologies: ["Shopify", "React", "Node.js", "MongoDB", "Stripe"],
+    duration: "5 months",
+    client: "Healthveda Organic",
+    preview: "An e-commerce platform dedicated to organic health products. The website features an AI-powered recommendation system, seamless checkout process...",
+  },
+  {
+    id: 6,
+    url: "https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3",
+    title: "Meta Sky Dubai",
+    description: "A dynamic real estate and travel experience platform designed for Dubai enthusiasts. It provides real-time property listings, virtual tours, and AI-powered insights into Dubai's real estate market.",
+    technologies: ["Vue.js", "Nuxt.js", "Firebase", "Tailwind CSS", "AWS"],
+    duration: "9 months",
+    client: "Meta Sky Dubai",
+    preview: "A dynamic real estate and travel experience platform designed for Dubai enthusiasts. It provides real-time property listings, virtual tours...",
+  },
 ];
+
 
 export default function OurWork() {
   return (
@@ -48,37 +82,40 @@ export default function OurWork() {
       <WrapperContainer>
         <div className='pb-10'>
           <div className="text-center p-4 lg:p-8">
-            <h2 className="text-base text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase">Portfolio</h2>
-            <h1 className="mt-2 text-3xl lg:text-4xl font-bold text-blue-700">Our Work</h1>
+            <h2 className="text-base text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase">OUR WORK</h2>
+            <h1 className="mt-2 text-4xl md:text-5xl font-bold text-blue-700">Portfolio</h1>
             <p className="mt-4 text-lg lg:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
               Discover how we've helped businesses transform their digital presence with cutting-edge solutions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
+          <div className="flex gap-4 flex-wrap justify-center">
             {projects.map((project) => (
               <Dialog
                 key={project.id}
                 transition={{
                   type: 'spring',
-                  stiffness: 120,
-                  damping: 20,
-                  mass: 1,
-                  bounce: 0.02,
-                  duration: 0.7,
-                }}>
+                  bounce: 0.05,
+                  duration: 0.5,
+                }}
+              >
                 <DialogTrigger
-                  className="group flex flex-col overflow-hidden rounded-2xl border dark:border-gray-800 bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-sm">
+                  style={{ borderRadius: '12px' }}
+                  className="flex w-full flex-col overflow-hidden border bg-white hover:bg-blue-50 max-w-sm"
+                >
                   <DialogImage
                     src={project.url}
                     alt={project.title}
-                    className="h-48 lg:h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="h-48 w-full object-cover"
                   />
                   <div className="flex flex-grow flex-row items-end justify-between p-4 lg:p-6">
                     <div>
                       <DialogTitle className="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">
                         {project.title}
                       </DialogTitle>
+                      <p className="text-gray-600 text-sm line-clamp-2">
+                        {project.preview}
+                      </p>
                     </div>
                     <button className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-900 transition-colors">
                       <Plus className="w-5 h-5 lg:w-6 lg:h-6" />

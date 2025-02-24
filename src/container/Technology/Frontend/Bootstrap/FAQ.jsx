@@ -79,7 +79,7 @@ Bootstrap Development FAQ
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="space-y-4"
+        className="space-y-4 mb-20"
       >
         {faqs.map((faq, index) => (
           <motion.div

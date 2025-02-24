@@ -100,7 +100,7 @@ function TechCard({ tech }) {
 export default function ToolsAndTech() {
   return (
     <WrapperContainer>
-      <div className="min-h-screen bg-white ">
+      <div className=" bg-white ">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: -20 }}

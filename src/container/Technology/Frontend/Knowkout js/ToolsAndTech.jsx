@@ -72,24 +72,25 @@ function TechCard({ tech }) {
       className="relative"
     >
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-      <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-        <div className="relative z-10">
+      <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group h-64 flex flex-col justify-between">
+        <div className="relative z-10 flex flex-col items-center">
           <motion.div
-            className={`w-16 h-16 rounded-full ${tech.color} flex items-center justify-center mb-4 mx-auto text-white`}
+            className={`w-16 h-16 rounded-full ${tech.color} flex items-center justify-center text-white`}
             whileHover={{ rotate: 360 }}
             transition={{ duration: 0.6 }}
           >
             {tech.icon}
           </motion.div>
-          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+          <h3 className="text-xl font-bold text-gray-800 mt-4 group-hover:text-blue-600 transition-colors text-center">
             {tech.name}
           </h3>
-          <p className="text-gray-600 mb-4 text-sm">{tech.description}</p>
         </div>
+        <p className="text-gray-600 text-sm text-center">{tech.description}</p>
       </div>
     </motion.div>
   );
 }
+
 
 export default function ToolsAndTech() {
   return (

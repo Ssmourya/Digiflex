@@ -12,7 +12,7 @@ import {
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
-import Subheading from "../../../../Layout/Subheading";
+
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
@@ -28,28 +28,11 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
   </div>
 );
 
-const CodeExample = ({ title, code }) => (
-  <div className="mb-6">
-    <h4 className="text-sm font-semibold text-gray-600 mb-2">{title}</h4>
-    <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-gray-200 overflow-x-auto">
-      {code}
-    </div>
-  </div>
-);
 
-const TabButton = ({ active, children, onClick }) => (
-  <button
-    onClick={onClick}
-    className={`px-4 py-2 rounded-md transition-all duration-300 ${
-      active ? "bg-purple-600 text-white" : "text-gray-600 hover:bg-purple-50"
-    }`}
-  >
-    {children}
-  </button>
-);
+
 
 const Benefits = () => {
-  const [activeTab, setActiveTab] = useState("grid");
+
 
   const features = [
     {
@@ -135,37 +118,7 @@ const Benefits = () => {
         ))}
       </div>
 
-      {/* Code Examples Section */}
-      <div className="bg-white rounded-lg p-6 shadow-sm">
-        <Subheading>Code Examples</Subheading>
-        <div className="flex gap-4 mb-6">
-          <TabButton
-            active={activeTab === "grid"}
-            onClick={() => setActiveTab("grid")}
-          >
-            Grid System
-          </TabButton>
-          <TabButton
-            active={activeTab === "components"}
-            onClick={() => setActiveTab("components")}
-          >
-            Components
-          </TabButton>
-          <TabButton
-            active={activeTab === "utilities"}
-            onClick={() => setActiveTab("utilities")}
-          >
-            Utilities
-          </TabButton>
-        </div>
-
-        <CodeExample
-          title={`Example: ${
-            activeTab.charAt(0).toUpperCase() + activeTab.slice(1)
-          }`}
-          code={codeExamples[activeTab]}
-        />
-      </div>
+  
     </WrapperContainer>
   );
 };

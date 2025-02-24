@@ -62,7 +62,7 @@ const Saas2 = () => {
                 {feature.icon}
               </div>
             </div>
-            <Subheading >
+            <Subheading>
               {feature.title}
             </Subheading>
             <p className="text-gray-600 leading-relaxed">
@@ -74,9 +74,9 @@ const Saas2 = () => {
 
       {/* Extra Content for Larger Screens */}
       <div className="hidden lg:block mt-16 p-8 bg-gray-100 rounded-lg shadow-lg">
-        <Subheading className="text-2xl  text-center mb-4">
+        <Heading >
           Additional Insights
-        </Subheading>
+        </Heading>
         <p className="text-gray-700 text-center">
           Our SaaS solutions empower businesses with seamless scalability, enhanced security, and optimized user experiences. Join our growing list of successful partners today!
         </p>

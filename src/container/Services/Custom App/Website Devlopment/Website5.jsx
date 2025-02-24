@@ -1,6 +1,5 @@
 import React from "react";
 import bg9 from "../../../../assets/bg9.png"; // Correct image path
-import { Link } from "react-router-dom";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 
@@ -8,7 +7,7 @@ export default function Website5() {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto">
       <Heading className="text-2xl md:text-3xl font-bold text-center mb-8">
-        Best Website Development Services In India - Affordable Yet Best!
+        Professional Website Development Services - Elevate Your Online Presence
       </Heading>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -20,17 +19,14 @@ export default function Website5() {
             className="w-full h-auto rounded-md"
           />
           <p className="text-lg text-gray-700 mt-6 text-center md:text-left">
-            We provide top-tier website development services tailored to your business needs.
-            Whether you're looking to establish an online presence, expand your e-commerce capabilities,
-            or create a custom web application, our expert team ensures your vision is brought to life
-            with high-quality design and functionality.
+            At Digiflex.ai, we specialize in creating high-performance websites tailored to your business needs. Whether you need a sleek corporate website, a feature-rich e-commerce platform, or a custom web application, our expert developers ensure seamless user experiences and cutting-edge design.
           </p>
         </div>
 
         {/* Right side - Services Information */}
         <div className="p-6 border rounded-lg">
           <Heading className="text-xl font-bold mb-4 text-center md:text-left">
-            OUR WEBSITE DEVELOPMENT SERVICES
+            Our Website Development Services
           </Heading>
 
           <div className="space-y-4">
@@ -38,26 +34,27 @@ export default function Website5() {
               {
                 title: "Informational Website",
                 description:
-                  "Perfect for businesses or individuals looking to share information, showcase services, and provide easy navigation for visitors. Includes up to 3 pages.",
+                  "Perfect for businesses or individuals looking to share information and establish credibility online. Includes up to 5 pages with responsive design.",
               },
               {
                 title: "Business Website",
                 description:
-                  "Ideal for companies looking to establish an online presence. This includes up to 5-10 pages with essential business information and contact details.",
+                  "Ideal for small and medium enterprises. This package includes up to 10 pages, optimized for conversions, lead generation, and mobile responsiveness.",
+              },
+             
+              {
+                title: "Website Maintenance & Support",
+                description:
+                  "Ongoing website maintenance, security updates, and performance optimization to ensure your site runs smoothly.",
               },
               {
-                title: "E-commerce Website",
+                title: "SEO & Performance Optimization",
                 description:
-                  "Perfect for businesses that sell products online. This includes advanced product catalog features, shopping cart integration, and secure payment options.",
-              },
-              {
-                title: "Web Application Development",
-                description:
-                  "Custom web applications designed to meet the unique needs of your business, whether it’s a customer portal, internal tool, or anything in between.",
+                  "Enhance your website’s visibility with SEO-optimized content, speed optimization, and technical enhancements.",
               },
             ].map((service, index) => (
               <div key={index} className="space-y-2">
-                <Subheading className="font-semibold text-lg">
+                <Subheading className="font-semibold text-lg text-[#172554]">
                   {service.title}
                 </Subheading>
                 <p className="text-gray-700">{service.description}</p>
@@ -65,32 +62,6 @@ export default function Website5() {
             ))}
           </div>
         </div>
-      </div>
-
-      <div className="mt-8 text-center space-y-4">
-        
-
-        {/* WhatsApp Icon */}
-        <Link
-          to="#"
-          className="inline-flex items-center bg-[#3730A3] text-white p-3 rounded-full hover:bg-green-600 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-6 h-6"
-          >
-            <path d="M3 21l1.9-5.7a8.5 8.5 0 113.4 3.4z" />
-          </svg>
-          <span className="ml-2 text-sm">Chat on WhatsApp</span>
-        </Link>
       </div>
     </section>
   );

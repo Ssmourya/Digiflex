@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Code, Download, HeadphonesIcon, Shield, Workflow } from "lucide-react";
 import Subheading from "../../../../Layout/Subheading";
+import Heading from "../../../../Layout/Heading";
 
 const features = [
   {
@@ -54,7 +55,7 @@ const FeatureCard = ({ feature, index }) => (
       <div className="bg-[#3730A3] rounded-full p-3 w-16 h-16 flex items-center justify-center shadow-md">
         {feature.icon}
       </div>
-      <h3 className="text-xl font-bold text-gray-800 ml-4">
+      <h3 className="text-xl font-bold text-blue-600 ml-4">
         {feature.title}
       </h3>
     </div>
@@ -68,6 +69,10 @@ export default function Amp() {
   return (
     <section className="w-full py-12 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
+        
+      <Heading>Our Key Features</Heading>
+          
+      
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <FeatureCard key={feature.title} feature={feature} index={index} />

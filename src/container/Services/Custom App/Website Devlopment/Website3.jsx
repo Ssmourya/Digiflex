@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   MonitorIcon,
   ShoppingCartIcon,
@@ -10,10 +11,18 @@ import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 
 const ServiceCard = ({ icon, title, description, linkText = "VIEW MORE" }) => (
-  <div className="flex flex-col space-y-4 p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 md:p-8">
-    <div className="w-12 h-12 text-[#172554] flex items-center justify-center">
+  <motion.div
+    className="flex flex-col space-y-4 p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 md:p-8"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
+    <motion.div
+      className="w-12 h-12 text-[#172554] flex items-center justify-center"
+      whileHover={{ rotate: 15 }}
+    >
       {icon}
-    </div>
+    </motion.div>
     <Subheading className="text-xl font-semibold text-[#172554]">
       {title}
     </Subheading>
@@ -25,7 +34,7 @@ const ServiceCard = ({ icon, title, description, linkText = "VIEW MORE" }) => (
         {linkText}
       </button>
     )}
-  </div>
+  </motion.div>
 );
 
 export default function Website3() {
@@ -69,7 +78,12 @@ export default function Website3() {
   ];
 
   return (
-    <section className="py-16 px-4  text-white">
+    <motion.section
+      className="py-16 px-4 text-white"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="max-w-7xl mx-auto">
         <Heading className="text-center text-3xl font-bold mb-10">
           Our Services
@@ -85,6 +99,6 @@ export default function Website3() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

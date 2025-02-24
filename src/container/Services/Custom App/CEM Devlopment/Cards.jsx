@@ -10,99 +10,99 @@ const Cards = () => {
       <br />
       <div className="flex items-center justify-center text-lg font-bold text-black mb-6">
         <Heading>
-          Extend the power of Service Cloud with these related products.
+          Enhance Customer Experiences with These Powerful CEM Solutions
         </Heading>
       </div>
 
       <div className="grid grid-cols-1 gap-4 p-4 mt-4 bg-white rounded-xl shadow-md md:grid-cols-2 lg:grid-cols-4">
-        {/* Card 1 */}
+        {/* Card 1 - Omni-Channel Engagement */}
         <motion.div
-          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center"
+          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center h-full flex flex-col justify-between"
           whileHover={{
             scale: 1.05,
             boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
             transition: { duration: 0.3 }
           }}
         >
-          <div className="flex justify-center mb-2">
-            <MessageSquare className="h-8 w-8 text-blue-500" />
+          <div>
+            <div className="flex justify-center mb-2">
+              <MessageSquare className="h-8 w-8 text-blue-500" />
+            </div>
+            <Subheading>Omni-Channel Engagement</Subheading>
+            <p className="text-gray-500 text-sm mb-3">
+              Deliver seamless interactions across chat, email, voice, and social media, ensuring consistent support at every touchpoint.
+            </p>
           </div>
-          <Subheading>
-            Omni-Channel Routing
-          </Subheading>
-          <p className="text-gray-500 text-sm mb-3">
-            Optimizes customer interactions by directing them across channels like phone, email, and chat.
-          </p>
-          <button className="px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-md hover:bg-blue-600 transition-all duration-300 flex items-center justify-center mx-auto">
+          <button className="px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-md hover:bg-blue-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
           </button>
         </motion.div>
 
-        {/* Card 2 */}
+        {/* Card 2 - Self-Service & AI Chatbots */}
         <motion.div
-          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center"
+          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center h-full flex flex-col justify-between"
           whileHover={{
             scale: 1.05,
             boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
             transition: { duration: 0.3 }
           }}
         >
-          <div className="flex justify-center mb-2">
-            <UserCheck className="h-8 w-8 text-green-500" />
+          <div>
+            <div className="flex justify-center mb-2">
+              <UserCheck className="h-8 w-8 text-green-500" />
+            </div>
+            <Subheading>AI-Powered Self-Service</Subheading>
+            <p className="text-gray-500 text-sm mb-3">
+              Enable customers to resolve issues instantly with intelligent chatbots, FAQs, and interactive knowledge bases.
+            </p>
           </div>
-          <Subheading>
-            Self-Service
-          </Subheading>
-          <p className="text-gray-500 text-sm mb-3">
-            Intuitive portals and chatbots that empower customers to get support instantly.
-          </p>
-          <button className="px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-md hover:bg-green-600 transition-all duration-300 flex items-center justify-center mx-auto">
+          <button className="px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-md hover:bg-green-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
           </button>
         </motion.div>
 
-        {/* Card 3 */}
+        {/* Card 3 - Predictive Analytics & AI */}
         <motion.div
-          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center"
+          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center h-full flex flex-col justify-between"
           whileHover={{
             scale: 1.05,
             boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
             transition: { duration: 0.3 }
           }}
         >
-          <div className="flex justify-center mb-2">
-            <Zap className="h-8 w-8 text-yellow-500" />
+          <div>
+            <div className="flex justify-center mb-2">
+              <Zap className="h-8 w-8 text-yellow-500" />
+            </div>
+            <Subheading>Predictive Analytics & AI Insights</Subheading>
+            <p className="text-gray-500 text-sm mb-3">
+              Use AI-driven insights to predict customer needs, personalize support, and optimize service strategies.
+            </p>
           </div>
-          <Subheading>
-            Einstein for Service
-          </Subheading>
-          <p className="text-gray-500 text-sm mb-3">
-            Leverages AI to automate tasks and deliver personalized, data-driven experiences.
-          </p>
-          <button className="px-4 py-2 bg-yellow-500 text-white text-sm font-medium rounded-md hover:bg-yellow-600 transition-all duration-300 flex items-center justify-center mx-auto">
+          <button className="px-4 py-2 bg-yellow-500 text-white text-sm font-medium rounded-md hover:bg-yellow-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
           </button>
         </motion.div>
 
-        {/* Card 4 */}
+        {/* Card 4 - Automated Workflows & Process Optimization */}
         <motion.div
-          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center"
+          className="bg-white p-4 rounded-xl border border-gray-200 shadow-md text-center h-full flex flex-col justify-between"
           whileHover={{
             scale: 1.05,
             boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
             transition: { duration: 0.3 }
           }}
         >
-          <div className="flex justify-center mb-2">
-            <Settings className="h-8 w-8 text-purple-500" />
+          <div>
+            <div className="flex justify-center mb-2">
+              <Settings className="h-8 w-8 text-purple-500" />
+            </div>
+            <Subheading>Automated Workflows & Process Optimization</Subheading>
+            <p className="text-gray-500 text-sm mb-3">
+              Streamline service operations with AI-driven automation, reducing response times and improving agent efficiency.
+            </p>
           </div>
-          <Subheading>
-            Customer Service Automation & Process
-          </Subheading>
-          <p className="text-gray-500 text-sm mb-3">
-            Streamlines support tasks with AI and chatbots to automate ticket routing and FAQs.
-          </p>
-          <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 transition-all duration-300 flex items-center justify-center mx-auto">
+          <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
           </button>
         </motion.div>

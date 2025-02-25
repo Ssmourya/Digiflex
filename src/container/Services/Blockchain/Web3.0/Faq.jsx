@@ -39,7 +39,7 @@ const Faq = () => {
   const containerStyle = {
     maxWidth: '1200px',
     margin: '0 auto',
-    padding: '60px 20px',
+    // padding: '60px 20px',
     fontFamily: 'Arial, sans-serif',
     minHeight: '100vh',
   };

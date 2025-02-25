@@ -1,10 +1,8 @@
-import React from 'react';
-import { Circle, X, Square } from 'lucide-react';
-import Heading from '../../../../Layout/Heading';
-import Subheading from '../../../../Layout/Subheading';
-import WrapperContainer from '../../../../Layout/WrapperContainer';
-
-
+import React from "react";
+import { Circle, X, Square } from "lucide-react";
+import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const ServiceCard = ({ icon: Icon, title, description }) => {
   return (
@@ -24,49 +22,45 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Circle,
-      title: "UNITY3D GAME DEVELOPMENT",
-      description: "Unity is one of the most cutting-edge game development platforms that offer all possible modular tools to deliver interacting and engaging 2D and 3D games. Game development using Unity allows getting quality results in an acceptable time frame. We use Unity for game design to create entertainment products of high revenue potential and flawless performance on mobile, web, PC, or console."
+      title: "Unity3D Game Development",
+      description:
+        "Digiflex specializes in Unity3D game development, offering high-quality 2D and 3D gaming solutions with immersive experiences. Our expertise ensures seamless performance across mobile, web, PC, and console platforms.",
     },
     {
       icon: X,
-      title: "AR/VR/XR - APP DEVELOPMENT",
-      description: "Our Unity engineers can greatly contribute to your project by delivering high-performance products with VR/AR/XR platform integration, as well as ensuring a great user experience. We provide solutions for various areas such as entertainment, games, education, etc. Our Unity gaming company has many similar projects in our portfolio, which allows us to quickly assess the viability of any idea and make recommendations for improving it."
+      title: "AR/VR/XR App Development",
+      description:
+        "We create cutting-edge AR, VR, and XR applications that redefine user experiences. From gaming to education and enterprise solutions, Digiflex delivers innovative immersive applications tailored to your needs.",
     },
     {
       icon: Square,
-      title: "LIVEOPS UNITY SERVICES",
-      description: "Unity is a useful tool for LiveOps work, and we offer our clients LiveOps services to advance their development process. Using LiveOps services, we can help you with post-release game maintenance, updates with new characters, features, and missions, analytics on player activity, and more."
-    }
+      title: "LiveOps & Game Maintenance",
+      description:
+        "Our LiveOps services keep your game fresh and engaging with regular updates, new content, and performance optimizations. We ensure long-term success with analytics-driven improvements and post-launch support.",
+    },
   ];
 
   return (
-        <WrapperContainer>
-        {/* Header Section */}
+    <WrapperContainer>
+      {/* Header Section */}
+      <div className="text-center mb-16">
+        <Heading>Digiflex Unity3D Game Development Services</Heading>
+      </div>
+      <Subheading>
+        At Digiflex, we craft innovative gaming experiences using the latest technology and creative solutions.
+        Our Unity game developers bring your vision to life with engaging, high-performance games for all platforms.
+      </Subheading>
+      <br />
 
-        <div className="text-center mb-16">
-          <Heading>OUR UNITY3D GAME DEVELOPMENT SERVICES</Heading>
-        </div>
-            <Subheading>
-            Our Unity game developers are renowned for the skills and knowledge that enable us to create the
-            ultimate gaming experience with the most creative solutions. Engage new players with our professional
-            services!
-            </Subheading>
-            <br />
-        
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="h-full">
-              <ServiceCard
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-              />
-            </div>
-          ))}
-        </div>
-      </WrapperContainer>
-  
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service, index) => (
+          <div key={index} className="h-full">
+            <ServiceCard icon={service.icon} title={service.title} description={service.description} />
+          </div>
+        ))}
+      </div>
+    </WrapperContainer>
   );
 };
 

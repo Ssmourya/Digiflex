@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const SmartWork = () => {
-//   return (
-//     <div>SmartWork</div>
-//   )
-// }
-
-// export default SmartWork
-
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -21,6 +11,7 @@ import {
   Bitcoin,
 } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const steps = [
   {
@@ -85,13 +76,15 @@ const StepCard = ({ step, index }) => (
 
 const SmartContractWorkflow = () => {
   return (
-
+    <WrapperContainer>
     <section>
-        <div className=" p-6 md:p-12">
-      <div className="max-w-6xl mx-auto">
+        <div className="">
+     
         <div>
             <Heading>
-          How Does a Smart Contract Work?
+          <div>
+            How Does a Smart Contract Work?
+          </div>
 
             </Heading>
 
@@ -113,10 +106,10 @@ const SmartContractWorkflow = () => {
             ))}
           </div>
         </div>
-      </div>
+      
     </div>
     </section>
-    
+    </WrapperContainer>
   );
 };
 

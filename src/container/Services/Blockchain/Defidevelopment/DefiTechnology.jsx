@@ -1,6 +1,8 @@
 import React from 'react';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const DeFiIcon = ({ paths, viewBox = "0 0 24 24" }) => (
   <svg 
@@ -56,27 +58,7 @@ const DefiTechnology = () => {
         <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" />
       } />
     },
-    {
-      name: "Yearn Finance",
-      description: "It comprises a string of DeFi-focused protocols that leverage multiple lending services, including Compound, DyDx, and Fulcrum to optimize lending options.",
-      icon: <DeFiIcon paths={
-        <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z" />
-      } />
-    },
-    {
-      name: "Project Serum",
-      description: "A decentralized exchange built on a blockchain compatible with Bitcoin and Ethereum. It allows traders to engage in transactions involving currencies other than ERC-20 tokens.",
-      icon: <DeFiIcon paths={
-        <path d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
-      } />
-    },
-    {
-      name: "Fulcrum",
-      description: "A decentralized platform designed for tokenized margin trading and lending. It enables users to lend assets for interest or enter into short/leveraged positions.",
-      icon: <DeFiIcon paths={
-        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
-      } />
-    }
+ 
   ];
 
   return (
@@ -95,8 +77,12 @@ const DefiTechnology = () => {
             className="bg-white p-6 rounded-xl  hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
           >
             <div className="mb-4 p-3 rounded-full bg-blue-50">{tech.icon}</div>
-            <h3 className="text-xl font-semibold mb-2 text-blue-900">{tech.name}</h3>
-            <p className="text-gray-600 text-center text-sm">{tech.description}</p>
+           <Subheading>
+           {tech.name}
+           </Subheading>
+            <Paragraph>
+            {tech.description}
+            </Paragraph>
           </div>
         ))}
       </div>

@@ -1,73 +1,113 @@
 import React from "react";
-import { FaCoins, FaDollarSign, FaUsers, FaChartLine, FaGlobe, FaClock } from "react-icons/fa";
-import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
+import Subheading from "../../../../Layout/Subheading";
 
-
-const benefits = [
+const steps = [
   {
-    title: "Access to Global Investors",
-    description: "ICO allows startups to reach investors worldwide, breaking geographical barriers and increasing funding opportunities.",
-    icon: <FaGlobe className="text-blue-500 text-4xl" />,
+    id: 1,
+    title: "Consultation",
+    description:
+      "We start with thorough consulting and research to create an effective ICO strategy for your business.",
   },
   {
-    title: "Quick and Easy Fundraising",
-    description: "Unlike traditional fundraising, ICOs offer a faster way to raise capital without intermediaries like banks or VCs.",
-    icon: <FaDollarSign className="text-green-500 text-4xl" />,
+    id: 2,
+    title: "Understanding Your Goals",
+    description:
+      "Here we plan our offerings after deeply understanding your goals and vision for your ICO project.",
   },
   {
-    title: "Liquidity and Token Trading",
-    description: "Tokens issued in an ICO can be traded on crypto exchanges, providing investors with liquidity and potential value appreciation.",
-    icon: <FaCoins className="text-yellow-500 text-4xl" />,
+    id: 3,
+    title: "Development Phase",
+    description:
+      "This phase covers actual development, configuring smart contracts and ensuring readiness for launch.",
   },
   {
-    title: "Decentralized and Transparent",
-    description: "Blockchain technology ensures transparency and decentralization, making ICOs more secure and trustworthy.",
-    icon: <FaChartLine className="text-purple-500 text-4xl" />,
+    id: 4,
+    title: "Testing and QA",
+    description:
+      "Our dedicated QA team conducts extensive testing to ensure reliability and performance of the product.",
   },
   {
-    title: "Early Adoption Opportunities",
-    description: "Investors can participate in projects at an early stage, gaining potential high returns if the project succeeds.",
-    icon: <FaUsers className="text-red-500 text-4xl" />,
+    id: 5,
+    title: "Deployment",
+    description:
+      "We finalize the product, making it live and offering services, including server deployment and maintenance.",
   },
   {
-    title: "Faster Development and Innovation",
-    description: "Funds raised through ICOs can be used for rapid development and scaling of innovative blockchain solutions.",
-    icon: <FaClock className="text-cyan-500 text-4xl" />,
+    id: 6,
+    title: "Support and Maintenance",
+    description:
+      "Our team provides comprehensive support and maintenance to ensure smooth operation and continuous improvements.",
   },
 ];
 
-const Initialofferingbenifits = () => {
+const IcoDevelopmentProcess = () => {
   return (
-
     <WrapperContainer>
-       <div className="min-h-screen py-12 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        {/* Header Section */}
+
+
+    <div>
+      <div className="max-w-7xl mx-auto px-4">
+        
+        {/* Heading */}
+        <div className="text-center">
         <Heading>
-
-        <h1 >Benefits of Initial Coin Offering (ICO)</h1>
-        </Heading>
-      </div>
-
-      {/* Benefits Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
-        {benefits.map((benefit, index) => (
-          <div key={index} className="flex flex-col items-center text-center p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
-            <div className="p-4 bg-gray-100 rounded-full">{benefit.icon}</div>
-            <h3 className="text-lg font-semibold text-gray-800 mt-4">{benefit.title}</h3>
-            <p className="text-gray-600 mt-2 text-sm">{benefit.description}</p>
+          <div>
+          Initial Coin Offering Benifits
           </div>
-        ))}
+        </Heading>
+          <Paragraph>
+          Unlock success in your business with our comprehensive ICO development process, positioning us as a true leader in the crypto industry.
+          </Paragraph>
+        </div>
+
+        {/* Alternating Timeline */}
+        <div className="relative wrap overflow-hidden py-10">
+          {/* Vertical line in the center */}
+          <div />
+          
+          {steps.map((step, index) => {
+            const isEven = index % 2 === 0; // Even indices on the left, odd on the right
+
+            return (
+              <div
+                key={step.id}
+                className={`
+                  mb-8 flex gap-5 flex-col md:flex-row items-center w-full 
+                  ${isEven ? "md:flex-row" : "md:flex-row-reverse"}
+                `}
+              >
+                {/* Empty space on one side */}
+                <div className="order-1 md:w-5/12 w-full"></div>
+
+                {/* Purple circle with step number */}
+                <div className="z-20 flex items-center order-1 bg-[#1D4ED8] shadow-xl w-10 h-10 rounded-full">
+                  <span className="mx-auto font-bold text-white">
+                    {step.id}
+                  </span>
+                </div>
+
+                {/* Step content box */}
+                <div className="order-1 bg-white rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4 mt-4 md:mt-0">
+                 <Subheading>
+                  <div>
+                  {step.title}
+                  </div>
+                 </Subheading>
+                  <p className="text-gray-600 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
     </WrapperContainer>
-     
-
-
-   
-   
   );
 };
 
-export default Initialofferingbenifits;
+export default IcoDevelopmentProcess;

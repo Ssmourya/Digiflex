@@ -2,6 +2,7 @@ import React from 'react';
 import Automation from "../../../../assets/Automation.jpeg";
 import Cybersecurity from "../../../../assets/Cybersecurity.jpeg";
 import Shield from "../../../../assets/Shield.jpeg";
+import WrapperContainer from '../../../../Layout/WrapperContainer';
 const Card = ({ image, title, description, points }) => (
     <div className="relative w-72 bg-black border border-green-500 text-white rounded-xl overflow-hidden shadow-2xl group transition-all duration-300 hover:scale-105">
         <div className="relative">
@@ -174,7 +175,10 @@ const AccelerateBusiness = () => {
     ];
   
     return (
-        <div className="bg-white w-11/12 mx-auto px-4 py-12">
+        <WrapperContainer>
+
+        
+        <div className="bg-white w-11/12 mx-auto px-4">
             <h2 className="text-5xl font-semibold text-[#1A2E6F] mb-4">What we do ?</h2>
             <h1 className="text-4xl font-semibold text-[#1A2E6F] mb-6">Accelerate your business</h1>
             <p className="text-black mb-8 text-xl max-w-2xl">We strengthen enterprises for digital transformation.</p>
@@ -196,6 +200,7 @@ const AccelerateBusiness = () => {
             }
             </div>
         </div>
+        </WrapperContainer>
     );
   };
   

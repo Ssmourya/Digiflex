@@ -61,7 +61,7 @@ const FAQ = () => {
           </Paragraph>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mb-20">
           {faqData.map((faq, index) => (
             <motion.div
               key={index}

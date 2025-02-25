@@ -12,6 +12,8 @@
 import React from "react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const services = [
   {
@@ -45,7 +47,7 @@ const  DevelopmentServices = () => {
     <WrapperContainer>
 
   
-    <div className="max-w-6xl mx-auto px-2  py-12">
+    <div >
      <Heading>
         <div>
         Our NFT Marketplace Development Services
@@ -60,8 +62,12 @@ const  DevelopmentServices = () => {
           >
             <span className="text-4xl text-blue-500">{service.icon}</span>
             <div>
-              <h3 className="text-lg font-semibold">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
+              <Subheading>
+              {service.title}
+              </Subheading>
+              <Paragraph>
+              {service.description}
+              </Paragraph>
             </div>
           </div>
         ))}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Automation from "../../../../assets/Automation.jpeg";
 import Cybersecurity from "../../../../assets/Cybersecurity.jpeg";
 import Shield from "../../../../assets/Shield.jpeg";
+import WrapperContainer from '../../../../Layout/WrapperContainer';
 
 // Reusable Card Component
 const Card = ({ index, hoveredIndex, onHover, onLeave, image, title }) => {
@@ -43,7 +44,10 @@ const AnalystRecognition = () => {
     ];
 
     return (
-        <div className="flex flex-row items-center justify-between px-4 py-12 w-11/12 mx-auto bg-white">      {/* Header */}
+        <WrapperContainer>
+
+      
+        <div className="flex flex-row items-center justify-between px-4  w-11/12 mx-auto bg-white">      {/* Header */}
            
             <div className="flex items-center justify-center">
                 
@@ -75,6 +79,8 @@ const AnalystRecognition = () => {
                 }
             </div>
         </div>
+
+        </WrapperContainer>
     );
 };
 

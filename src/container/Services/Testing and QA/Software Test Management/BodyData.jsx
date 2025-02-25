@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import  Automation from "../../../../assets/Automation.jpeg"
 import  Cybersecurity from "../../../../assets/Cybersecurity.jpeg"
 import  Shield from "../../../../assets/Shield.jpeg"
+import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
 const Body = () => {
 
     const sections = [
@@ -39,8 +42,11 @@ const Body = () => {
     ];
 
     return (
+        <WrapperContainer>
+
+        
         <div>
-            <div className="relative bg-white min-h-screen flex flex-col px-4 py-12">
+            <div >
                 {sections.map((section, index) => (
                     <motion.div 
                         key={index} 
@@ -71,23 +77,23 @@ const Body = () => {
                                             transition={{ duration: 1 }}
                                             className="px-10 w-[65%]"
                                         >
-                                            <motion.h1
+                                            <motion.Heading
                                                 initial={{ opacity: 0, scale: 0.9 }}
                                                 whileInView={{ opacity: 1, scale: 1 }}
                                                 transition={{ duration: 1.2 }}
-                                                className="text-5xl text-[#1A2E6F] md:text-6xl font-semibold leading-tight mb-8"
+                                                className="text-5xl text-[#1A2E6F] md:text-6xl font-semibold leading-tight mb-8 flex"
                                             >
                                                 {section.title}
-                                            </motion.h1>
+                                            </motion.Heading>
 
-                                            <motion.p
+                                            <motion.Paragraph
                                                 initial={{ opacity: 0 }}
                                                 whileInView={{ opacity: 1 }}
                                                 transition={{ duration: 1.5 }}
                                                 className="text-xl mb-6 mx-auto"
                                             >
                                                 {section.description}
-                                            </motion.p>
+                                            </motion.Paragraph>
 
                                             {
                                                 Object.values(section.points).map((point, pointIndex) => (
@@ -167,6 +173,8 @@ const Body = () => {
                 ))}
             </div>
         </div>
+
+        </WrapperContainer>
     );
 }
 

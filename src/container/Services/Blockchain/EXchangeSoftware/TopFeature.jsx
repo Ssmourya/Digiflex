@@ -74,43 +74,6 @@ const TopFeature = () => {
       title: "Order and Trade Management",
       description: "Process and manage trade orders for an optimized experience."
     },
-    {
-      icon: (
-        <div className="w-10 h-10 mx-auto">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-full h-full">
-            <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" strokeWidth="2"/>
-            <path d="M12 6v12M8 12h8" strokeWidth="2"/>
-          </svg>
-        </div>
-      ),
-      title: "Liquidity Providers",
-      description: "Boost exchange liquidity with trusted liquidity providers."
-    },
-    {
-      icon: (
-        <div className="w-10 h-10 mx-auto">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-full h-full">
-            <circle cx="12" cy="12" r="9" strokeWidth="2"/>
-            <path d="M12 6v12m-3-3h6" strokeWidth="2"/>
-          </svg>
-        </div>
-      ),
-      title: "Staking/Lending",
-      description: "Stake and lend assets to earn passive income easily."
-    },
-    {
-      icon: (
-        <div className="w-10 h-10 mx-auto">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-full h-full">
-            <circle cx="8" cy="8" r="4" strokeWidth="2"/>
-            <circle cx="16" cy="16" r="4" strokeWidth="2"/>
-            <path d="M8 12v3a3 3 0 0 0 3 3h6" strokeWidth="2"/>
-          </svg>
-        </div>
-      ),
-      title: "P2P Integration",
-      description: "Enable peer-to-peer exchange with escrow support for security."
-    },
   ];
 
   return (

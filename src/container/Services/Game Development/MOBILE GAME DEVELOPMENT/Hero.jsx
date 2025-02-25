@@ -1,35 +1,74 @@
-import React, { useState } from "react";
-import videoGame from "../../../../assets/videoGame.mp4";
+import React, { useState, useEffect } from "react";
+//import videoGame from "../../../../assets/videoGame.mp4";
+import videoGame from "../../../../assets/unrealGame.mp4";
+
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("services");
 
   const navItems = ["Services", "Portfolio", "About", "Contact"];
+  const headingText = "Mobile Game App Development Services";
+
+  // Function to generate animation delay for typewriter effect
+  const getTypewriterStyle = (index) => {
+    const delay = index * 0.1; // Incremental delay for each character
+    return {
+      animation: `typewriter 0.5s ease-out ${delay}s forwards, bounce 0.3s ${delay + 0.2}s ease-out`,
+      opacity: 0, // Start invisible
+    };
+  };
+
+  useEffect(() => {
+    // Add keyframes dynamically to the document
+    const styleSheet = document.createElement("style");
+    styleSheet.textContent = `
+      @keyframes typewriter {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes bounce {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
+      }
+    `;
+    document.head.appendChild(styleSheet);
+  }, []);
 
   return (
     <div className="min-h-screen text-white">
-      <video
-        autoPlay
-        loop
-        mutedy
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover filter"
-        style={{ filter: "blur(4px)" }}
-      >
-        <source src={videoGame} type="video/mp4" />
-      </video>
+      
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-16">
+       <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover filter"
+        style={{ filter: "blur(1px)" }}
+      >
+        <source src={videoGame} type="video/mp4" />
+      </video>
+       
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Mobile Game App
-            <br />
-            Development Services
+          
+          
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            {headingText.split("").map((char, index) => (
+              <span
+                key={index}
+                className="inline-block"
+                style={getTypewriterStyle(index)}
+              >
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto">
             Where imagination meets innovation to create award-winning gaming
             products
           </p>

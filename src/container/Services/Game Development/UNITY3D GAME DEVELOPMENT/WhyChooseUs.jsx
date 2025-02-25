@@ -47,7 +47,6 @@ const WhyChooseUs = () => {
 
   return (
     <WrapperContainer>
-      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <Heading>WHY CHOOSE OUR UNITY GAME DEVELOPMENT COMPANY</Heading>
@@ -65,7 +64,7 @@ const WhyChooseUs = () => {
             </div>
           ))}
         </div>
-      </div>
+      
     </WrapperContainer>
   );
 };

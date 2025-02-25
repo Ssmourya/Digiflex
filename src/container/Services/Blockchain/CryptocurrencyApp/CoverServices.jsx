@@ -11,8 +11,11 @@ import {
   Rocket
 } from 'lucide-react';
 
+
+
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer'
+
 
 const ServiceCard = ({ title, description, icon: Icon }) => (
   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
@@ -76,9 +79,9 @@ const CoverServices = () => {
 
   return (
    <WrapperContainer>
-    <div className="min-h-screen p-8">
+    <div>
       <div className="max-w-7xl mx-auto">
-      <div className="bg-white py-10 flex justify-center">
+      <div className="bg-white  flex justify-center">
         <Heading>
         <h1>
           What We Cover In Cryptocurrency Services
@@ -91,6 +94,7 @@ const CoverServices = () => {
           {services.map((service, index) => (
             <ServiceCard
               key={index}
+              
               title={service.title}
               description={service.description}
               icon={service.icon}

@@ -1,9 +1,16 @@
 import React from 'react'
+import VrXrServices from './VrXrServices'
+import DevelopmentServices from './DevelopmentServices'
+import Tools from './Tools'
+import VRXRSimulationFAQ from './VRXRSimulationFAQ'
 
 const Body = () => {
     return (
         <div>
-            <h1>Body ....</h1>
+            <VrXrServices />
+            <DevelopmentServices/>
+            <Tools />
+            <VRXRSimulationFAQ />
         </div>
     )
 }

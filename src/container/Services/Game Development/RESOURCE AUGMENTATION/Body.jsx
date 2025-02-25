@@ -1,9 +1,17 @@
 import React from 'react'
+import ResourceAugmentationServices from './ResourceAugmentationServices';
+import BenefitsSection from './BenefitsSection';
+import ResourceAugmentation from './ResourceAugmentation';
+import ResourceAugmentationFAQ from './ResourceAugmentationFAQ';
 
  const Body = () => {
     return (
         <div>
-           <h1>Body</h1> 
+           <ResourceAugmentationServices />
+           <BenefitsSection />
+           <ResourceAugmentation />
+           <ResourceAugmentationFAQ />  
+
         </div>
     )
 }

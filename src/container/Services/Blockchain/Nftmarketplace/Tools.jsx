@@ -188,7 +188,7 @@ const Tools = () => {
   return (
     <>
       <WrapperContainer>
-        <div className="max-w-6xl mx-auto">
+        <div>
           <div className="text-center mb-16">
             <Heading>
               <div>

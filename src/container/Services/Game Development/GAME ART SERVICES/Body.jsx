@@ -1,10 +1,16 @@
 import React from 'react'
-import ServicesSection from './ServicesSection'
+import GameArtServicesFAQ from './GameArtServicesFAQ'
+import GameArtServices from './GameArtServices'
+import TopFeature from './TopFeature'
+import GameArtModules from './GameArtModules'
 
 const Body = () => {
     return (
         <div>
-            <ServicesSection/>
+             <GameArtServices/>
+             <TopFeature/>
+             <GameArtModules/>
+            <GameArtServicesFAQ />
         </div>
     )
 }

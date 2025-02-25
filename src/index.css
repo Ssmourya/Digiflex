@@ -212,3 +212,24 @@ code {
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background: #2563eb;
 }
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* Light blue-gray */
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb; /* Blue-600 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af; /* Blue-700 */
+}
+
+/* Firefox scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #f1f5f9;
+}

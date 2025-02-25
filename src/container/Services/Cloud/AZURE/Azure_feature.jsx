@@ -1,9 +1,9 @@
 import React from "react";
 import Azure_computer from '../../../../assets/Azore_Computer.png';
-import Azure_storage from '../../../../assets/Azore_storage.webp'
+import Azure_storage from '../../../../assets/Azore_storage.webp';
 import Azure_network from "../../../../assets/Azore_network.png";
 import Azure_learning from '../../../../assets/Azore_learning.jpg';
-import Azure_security from '../../../../assets/Azore_security.png'
+import Azure_security from '../../../../assets/Azore_security.png';
 import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Subheading from "../../../../Layout/Subheading";
@@ -46,46 +46,52 @@ const services = [
     details: "Secure access and identity management with Azure AD, store secrets safely in Key Vault, and protect resources using Security Center.",
   },
 ];
-function Azure_feature() {
 
+function Azure_feature() {
   return (
     <>
-    <WrapperContainer>
-    <Heading>
-      <div>
-        <h1>Key Features of Azure</h1>
-      </div>
-      </Heading>
-      <div className="ml-20 mr-20 mt-[40px] flex justify-center items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="relative border border-gray-300 p-5 rounded-xl shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white cursor-pointer overflow-hidden"
-            >
-              <div className="w-16 h-16 mx-auto mb-2">
-                <img src={service.icon} alt="icon" className="w-full h-full" />
-              </div>
-              
-              <div className="text-center">
-              <Subheading>
-                <h2 className="text-xl font-bold">{service.title}</h2>
-                </Subheading>
-                <p className="text-gray-700 group-hover:text-white">{service.brief}</p>
-              </div>
-
-              {/* Detailed Information (Appears on Hover) */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center bg-blue-500 text-white p-5 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300">
-                {/* Logo stays visible in hover state */}
-                <div className="w-16 h-16 mb-2">
-                  <img src={service.icon} alt="icon" className="w-full h-full" />
+      <WrapperContainer>
+        <Heading>
+          <div>
+            <h1>Key Features of Azure</h1>
+          </div>
+        </Heading>
+        <div className="px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="relative h-auto min-h-[250px] group"
+              >
+                {/* Base Card */}
+                <div className="absolute inset-0 p-4 bg-white border border-gray-300 rounded-xl shadow-md transition-all duration-300 group-hover:opacity-0">
+                  <div className="flex flex-col items-center justify-center h-full space-y-3">
+                    <div className="w-16 h-16 flex-shrink-0">
+                      <img src={service.icon} alt="icon" className="w-full h-full object-contain" />
+                    </div>
+                    <Subheading>
+                      <h2 className="text-lg sm:text-xl font-bold text-center group-hover:text-white">{service.title}</h2>
+                    </Subheading>
+                    <p className="text-gray-700 text-center text-sm sm:text-base">{service.brief}</p>
+                  </div>
                 </div>
-                <p>{service.details}</p>
+
+                {/* Hover Card */}
+                <div className="absolute inset-0 p-4 bg-blue-500 text-white rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="flex flex-col items-center justify-center h-full space-y-3">
+                    <div className="w-16 h-16 flex-shrink-0">
+                      <img src={service.icon} alt="icon" className="w-full h-full object-contain" />
+                    </div>
+                    <Subheading>
+                      <h2 className="text-lg sm:text-xl font-bold text-center text-white">{service.title}</h2>
+                    </Subheading>
+                    <p className="text-center text-sm sm:text-base">{service.details}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
       </WrapperContainer>
     </>
   );

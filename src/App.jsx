@@ -89,6 +89,10 @@ import Intercloud_Migration from "./pages/Intercloud";
 import AWS from "./pages/AWS";
 import CloudNative from "./pages/CloudNative"
 
+// AI development
+
+import Ai_development from './pages/Ai_development'
+
 function App() {
   const location = useLocation();
 
@@ -310,7 +314,7 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           path="/services/game-development/vr-xr-simulation"
           element={<VR_XRSimulation />}
         />
-        <Route
+        <Route 
           path="/services/game-development/resource-augmentation"
           element={<ResourceAugmentation />}
         />
@@ -324,6 +328,10 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
       <Route path="/services/cloud/AWS" element={<AWS/>}/>
       <Route path="/services/cloud/CloudNative" element={<CloudNative/>}/>
       <Route path="/services/cloud/CloudOptimization" element={<CloudOptimization/>}/>
+
+      {/* AI development */}
+      
+      <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
 
       </Routes>
 

@@ -8,6 +8,11 @@ import {
   TestTube2,
   Cloud,
   FileCode,
+  Terminal,
+  Settings,
+  Wrench,
+  Layers,
+  MonitorSmartphone,
 } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
@@ -28,14 +33,14 @@ const techCategories = [
     category: "Coding Tools",
     items: [
       { icon: FileCode, name: "NPM" },
-      { icon: FileCode, name: "VS Code" },
-      { icon: FileCode, name: "WebStorm" },
+      { icon: Terminal, name: "VS Code" },
+      { icon: MonitorSmartphone, name: "WebStorm" },
     ],
   },
   {
     category: "Libraries",
     items: [
-      { icon: Atom, name: "Apollo" },
+      { icon: Layers, name: "Apollo" },
       { icon: Database, name: "Redux" },
     ],
   },
@@ -52,7 +57,7 @@ const techCategories = [
     category: "Testing",
     items: [
       { icon: TestTube2, name: "React Testing Library" },
-      { icon: TestTube2, name: "Jest" },
+      { icon: Wrench, name: "Jest" },
     ],
   },
   {
@@ -82,18 +87,19 @@ const TechStack = () => {
       <Heading>Tools & Technologies</Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {techCategories.map((category, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-6 text-gray-800 border-b pb-2">
+          <div key={index} className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold mb-6 text-gray-800 border-b pb-2 flex items-center gap-2">
+              <Settings className="w-5 h-5 text-blue-500" />
               {category.category}
             </h3>
             <div className="grid grid-cols-3 gap-4">
               {category.items.map((tech, techIndex) => (
                 <div
                   key={techIndex}
-                  className="flex flex-col items-center justify-center hover:bg-gray-100 p-2 rounded-lg transition-colors"
+                  className="flex flex-col items-center justify-center hover:bg-blue-100 p-3 rounded-lg transition-all transform hover:scale-105"
                 >
-                  <tech.icon className="w-10 h-10 mb-2 text-blue-500" />
-                  <span className="text-xs text-center text-gray-600">
+                  <tech.icon className="w-10 h-10 mb-2 text-blue-600" />
+                  <span className="text-sm text-center text-gray-700 font-medium">
                     {tech.name}
                   </span>
                 </div>

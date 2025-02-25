@@ -5,7 +5,7 @@ import azure from '../../../../assets/Microsoft-Azure-logo.png'
 function Azure_Hero() {
   return (
     <>
-        <div className="relative w-full h-[600px] overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden">
         <video
           autoPlay
           loop

@@ -23,28 +23,34 @@ function Intercloudpopular() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1>Popular Tools for Intercloud Migration</h1>
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold">
+          Popular Tools for Intercloud Migration
+        </h1>
       </Heading>
-      <div className="flex flex-col items-center space-y-10 p-10 w-full">
-        <div className="grid grid-cols-4 gap-12 w-full max-w-5xl">
+
+      <div className="flex flex-col items-center space-y-10 px-4 py-10 w-full">
+        {/* First Row - 4 images */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full max-w-5xl">
           {images.slice(0, 4).map((img, index) => (
-            <div key={index} className="w-full h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2">
+            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 shadow-md">
               <img src={img} alt={`Image ${index + 1}`} className="w-full h-full object-contain" />
             </div>
           ))}
         </div>
-        {/* Second Row - 3 images (Zigzag) */}
-        <div className="grid grid-cols-3 gap-12 w-full max-w-4xl ml-10">
+
+        {/* Second Row - 3 images (Centered) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full max-w-4xl">
           {images.slice(4, 7).map((img, index) => (
-            <div key={index} className="w-full h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2">
+            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 shadow-md">
               <img src={img} alt={`Image ${index + 5}`} className="w-full h-full object-contain" />
             </div>
           ))}
         </div>
+
         {/* Third Row - 4 images */}
-        <div className="grid grid-cols-4 gap-12 w-full max-w-5xl">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full max-w-5xl">
           {images.slice(7, 11).map((img, index) => (
-            <div key={index} className="w-full h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2">
+            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 shadow-md">
               <img src={img} alt={`Image ${index + 8}`} className="w-full h-full object-contain" />
             </div>
           ))}

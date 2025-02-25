@@ -93,7 +93,7 @@ const UnrealGameFAQ = () => {
 
   return (
     <WrapperContainer>
-      <div className="mx-auto">
+      <div className="mx-auto mb-20">
         <div className="text-center mb-12">
           <Heading>Unreal Engine Game Development FAQ</Heading>
           <p className="text-gray-600 mb-8">

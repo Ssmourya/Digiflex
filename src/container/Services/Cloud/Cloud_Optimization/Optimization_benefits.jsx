@@ -64,7 +64,7 @@ function Optimization_benefits() {
           friendly computing practices. 
         </Paragraph>
           </p>
-          <div> 
+          <div className="mb-20"> 
           <p className="text-center">
           <Paragraph>
           By leveraging cost-saving techniques

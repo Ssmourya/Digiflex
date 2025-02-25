@@ -60,7 +60,7 @@ const GameDevProcess = () => {
       </Heading>
       <div className="grid gap-4">
         {Object.entries(sections).map(([key, section]) => (
-          <div key={key} className="border rounded-lg overflow-hidden shadow-sm">
+          <div key={key} className="border rounded-lg overflow-hidden shadow-sm bg-gray-100">
             <div 
               className={`cursor-pointer p-4 transition-colors duration-200 ${
                 expandedSection === key ? 'bg-blue-50' : 'hover:bg-gray-50'

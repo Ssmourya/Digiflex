@@ -98,7 +98,7 @@ const MobileGameFAQ = () => {
 
   return (
     <WrapperContainer>
-      <div className=" mx-auto">
+      <div className=" mx-auto mb-20">
         <div className="text-center mb-12">
           <Heading> Mobile Game Development FAQ</Heading>
 

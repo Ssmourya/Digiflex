@@ -1,160 +1,155 @@
-import React, { useState } from 'react';
-import Subheading from '../../../../Layout/Subheading';
-import WrapperContainer from '../../../../Layout/WrapperContainer';
+import React, { useState } from "react";
+import Subheading from "../../../../Layout/Subheading";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const PricingPlans = () => {
-  const [billingCycle, setBillingCycle] = useState('yearly');
+  const [billingCycle, setBillingCycle] = useState("yearly");
 
   const plans = [
     {
-      name: 'FREE',
-      icon: '◇',
-      title: 'Create your first game 100% free.',
+      name: "STARTER",
+      icon: "◇",
+      title: "Begin your game development journey with Digiflex.",
       price: 0,
       features: [
-        'Fully featured, open-source game engine',
-        'Publish to Android/Desktop (once per day)',
-        'Try multiplayer and online services for free',
-        'Thousands of free assets on the Asset Store'
+        "Access to Digiflex's game engine",
+        "Basic publishing on Android & Desktop",
+        "Community support and learning resources",
+        "Access to free game assets",
       ],
-      buttonText: 'Create an account',
-      buttonVariant: 'black'
+      buttonText: "Get Started",
+      buttonVariant: "black",
     },
     {
-      name: 'SILVER',
-      icon: '◆',
-      title: 'Learn faster, create more, publish with ease.',
-      price: 15.99,
+      name: "PROFESSIONAL",
+      icon: "◆",
+      title: "Unlock advanced features to create and launch games effortlessly.",
+      price: 19.99,
       features: [
-        'Publish on Google Play, desktop and on the web',
-        'Store up to 50 games in the cloud',
-        'Unlimited lobbies for players in multiplayer games',
-        'Analytics to follow your game virality',
-        'Become a gamedev with the Complete GDevelop Master Course.',
-        '100 credits per month'
+        "Full publishing support on Android, iOS & Web",
+        "Cloud storage for up to 50 game projects",
+        "Multiplayer game hosting with unlimited lobbies",
+        "Advanced analytics and player insights",
+        "Exclusive access to Digiflex's learning portal",
+        "100 monthly credits for asset purchases",
       ],
-      buttonText: 'Get started',
-      buttonVariant: 'primary'
+      buttonText: "Upgrade Now",
+      buttonVariant: "primary",
     },
     {
-      name: 'GOLD',
-      icon: '⬧',
-      iconColor: 'text-yellow-400',
-      title: 'Full creation and marketing features. Publish anywhere.',
-      price: 31.99,
+      name: "BUSINESS",
+      icon: "⬧",
+      iconColor: "text-yellow-400",
+      title: "Scale your game development with powerful tools and marketing support.",
+      price: 39.99,
       features: [
-        'Publish your game on iOS',
-        'Dedicated channel on Discord',
-        'Unlimited leaderboards and player feedbacks',
-        'Unlimited lobbies for players in multiplayer games',
-        '300 credits per month, to promote your game or use in asset store',
-        '1 free asset pack to claim per month'
+        "Publish games on all major platforms, including iOS",
+        "Priority support with dedicated Discord channel",
+        "Unlimited leaderboards and player feedback system",
+        "Advanced monetization features",
+        "300 credits per month for promotions and asset purchases",
+        "Exclusive monthly asset packs",
       ],
-      buttonText: 'Get started',
-      buttonVariant: 'primary'
+      buttonText: "Get Business Plan",
+      buttonVariant: "primary",
     },
     {
-      name: 'PRO',
-      icon: '⬢',
-      iconColor: 'text-red-500',
-      title: 'Unlimited usage. Full professional features.',
-      price: 259,
+      name: "ENTERPRISE",
+      icon: "⬢",
+      iconColor: "text-red-500",
+      title: "Comprehensive solutions for professional game studios and enterprises.",
+      price: 299,
       features: [
-        'Dedicated support channel on Discord for pros',
-        'Collaboration: share projects with teammates',
-        'Version history for projects',
-        'Unlimited cloud projects',
-        'Unlimited lobbies for players in multiplayer games',
-        'Access to the upcoming pro marketplace',
-        'Billing/invoices available'
+        "Personalized support with a dedicated account manager",
+        "Collaborative tools for team-based game development",
+        "Version control and unlimited cloud storage",
+        "Pro marketplace access for premium assets",
+        "Custom billing & invoicing solutions",
+        "Advanced game security and anti-cheat features",
       ],
-      buttonText: 'Get started',
-      buttonVariant: 'primary'
-    }
+      buttonText: "Contact Sales",
+      buttonVariant: "primary",
+    },
   ];
 
   return (
     <WrapperContainer>
-      
-        <div className="max-w-7xl mx-auto">
-          {/* Billing Toggle */}
-          <div className="flex justify-center mb-12">
-            <div className="bg-gray-100 p-1 rounded-full inline-flex">
-              <button
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 
-                  ${billingCycle === 'monthly' ? 'bg-white shadow-sm' : 'text-gray-500'}`}
-                onClick={() => setBillingCycle('monthly')}
-              >
-                Monthly
-              </button>
-              <button
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 
-                  ${billingCycle === 'yearly' ? 'bg-purple-600 text-white shadow-sm' : 'text-gray-500'}`}
-                onClick={() => setBillingCycle('yearly')}
-              >
-                Yearly
-              </button>
-            </div>
-          </div>
-
-          {/* Pricing Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {plans.map((plan) => (
-              <div
-                key={plan.name}
-                className="bg-gray-100 rounded-lg p-6 flex flex-col transform hover:-translate-y-1 transition-all duration-200 hover:shadow-lg"
-              >
-                <div className="flex-grow space-y-4">
-                  {/* Plan Icon & Name */}
-                  <div className="flex flex-col items-center">
-                    <span className={`text-2xl mb-2 ${plan.iconColor || 'text-gray-400'}`}>
-                      {plan.icon}
-                    </span>
-                    <span className="text-xs font-medium text-gray-500">{plan.name}</span>
-                  </div>
-
-                  {/* Plan Title */}
-                  <Subheading className="text-base">{plan.title}</Subheading>
-
-                  {/* Features List */}
-                  <ul className="space-y-3 flex-grow">
-                    {plan.features.map((feature) => (
-                      <li key={feature} className="flex items-start">
-                        <svg
-                          className="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span className="text-gray-600 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Price & Button - Always at Bottom */}
-                <div className="mt-auto">
-                  <button
-                    className={`w-full py-2 px-3 mt-4 rounded-md text-center text-sm font-medium transition-colors duration-200
-                      ${plan.buttonVariant === 'black' 
-                        ? 'bg-black text-white hover:bg-gray-800' 
-                        : 'bg-purple-600 text-white hover:bg-purple-700'}`}
-                  >
-                    {plan.buttonText}
-                  </button>
-                </div>
-              </div>
-            ))}
+      <div className="max-w-7xl mx-auto">
+        {/* Billing Toggle */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-gray-100 p-1 rounded-full inline-flex shadow">
+            <button
+              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
+                ${billingCycle === "monthly" ? "bg-white shadow-md text-black" : "text-gray-600"}`}
+              onClick={() => setBillingCycle("monthly")}
+            >
+              Monthly
+            </button>
+            <button
+              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
+                ${billingCycle === "yearly" ? "bg-purple-600 text-white shadow-md" : "text-gray-600"}`}
+              onClick={() => setBillingCycle("yearly")}
+            >
+              Yearly
+            </button>
           </div>
         </div>
-      
+
+        {/* Pricing Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {plans.map((plan) => (
+            <div
+              key={plan.name}
+              className="bg-white rounded-xl p-6 flex flex-col transform hover:-translate-y-1 transition-all duration-200 hover:shadow-lg border border-gray-200 text-center"
+            >
+              <div className="flex flex-col items-center space-y-3">
+                {/* Plan Icon & Name */}
+                <span className={`text-3xl ${plan.iconColor || "text-gray-500"}`}>
+                  {plan.icon}
+                </span>
+                <span className="text-sm font-semibold text-gray-500">{plan.name}</span>
+
+                {/* Plan Title */}
+                <Subheading className="text-lg font-bold">{plan.title}</Subheading>
+              </div>
+
+              {/* Features List */}
+              <ul className="space-y-4 text-left mt-4">
+                {plan.features.map((feature) => (
+                  <li key={feature} className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700 text-sm">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Price & Button */}
+              <div className="mt-auto pt-4">
+                <span className="text-xl font-bold text-gray-900">
+                  {plan.price === 0 ? "Free" : `$${plan.price}/mo`}
+                </span>
+                <button
+                  className={`w-full py-2 px-3 mt-4 rounded-md text-sm font-medium transition-all duration-200
+                    ${
+                      plan.buttonVariant === "black"
+                        ? "bg-black text-white hover:bg-gray-800"
+                        : "bg-purple-600 text-white hover:bg-purple-700"
+                    }`}
+                >
+                  {plan.buttonText}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </WrapperContainer>
   );
 };

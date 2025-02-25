@@ -90,9 +90,9 @@ const WebApplication4 = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Subheading className="text-2xl font-bold text-[#4A90E2]">
+          <Heading>
             Why Choose Us?
-          </Subheading>
+          </Heading>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

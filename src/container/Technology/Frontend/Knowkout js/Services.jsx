@@ -41,18 +41,7 @@ const services = [
       "Knockout.js enables us to create stunning and interactive UI/UX designs to elevate your business and overcome challenges.",
     icon: <FaUserCircle className="text-4xl text-orange-500" />,
   },
-  {
-    title: "Knockout.js Integration Solutions",
-    description:
-      "As Knockout.js ensures seamless integration solutions, we integrate your existing platforms to help scale your business.",
-    icon: <FaCogs className="text-4xl text-orange-500" />,
-  },
-  {
-    title: "Knockout.js Plugin Development",
-    description:
-      "We leverage this amazing framework to create effective and high-performing plugins useful in Knockout.js applications.",
-    icon: <FaPlug className="text-4xl text-orange-500" />,
-  },
+
   {
     title: "Knockout.js E-commerce Development",
     description:

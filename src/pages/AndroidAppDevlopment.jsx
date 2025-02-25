@@ -5,16 +5,18 @@ import AndroidServices from '../container/Technology/MobileAppDev/ANDROID APP DE
 import TechStack from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPMENT/TechStack'
 import SmartFeatures from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPMENT/SmartFeatures'
 import AndroidDevelopmentProcess from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPMENT/AndroidDevelopmentProcess'
-
+import WrapperContainer from '../Layout/WrapperContainer'
 const AndroidAppDevlopment = () => {
   return (
    <>
       <HeroSection/>
+      <WrapperContainer>
       <WhyDigiflex/>
       <AndroidServices/>
       <TechStack/>
       <SmartFeatures/>
       <AndroidDevelopmentProcess/>
+      </WrapperContainer>
     </>
   )
 }

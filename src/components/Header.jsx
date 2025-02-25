@@ -38,7 +38,9 @@ import {
   ChevronRight
 } from "lucide-react";
 import logo from "../assets/digiflex.png";
-import { FaAngular, FaBootstrap, FaReact, FaVuejs } from "react-icons/fa";
+import image from "../assets/mobileappdev.jpg"
+import { FaAngular, FaBootstrap, FaReact, FaVuejs, FaApple, FaAndroid,  FaCode, FaMicrosoft, FaHtml5 } from "react-icons/fa";
+import { FaFlutter } from "react-icons/fa6";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -399,39 +401,38 @@ const Navbar = () => {
         "Build high-performance mobile applications for various platforms.",
       features: [
         {
-          icon: Smartphone,
+          icon: FaApple,
           title: "IOS App",
           path: "/tech/mobile/ios",
         },
         {
-          icon: Smartphone,
+          icon: FaAndroid,
           title: "Android App",
           path: "/tech/AndroidAppDevlopment",
         },
         {
-          icon: Smartphone,
+          icon: FaReact,
           title: "React Native",
           path: "/tech/ReactNative",
         },
-        { icon: Smartphone, title: "Flutter", path: "/tech/FlutterDevlopment" },
+        { icon: FaFlutter, title: "Flutter", path: "/tech/FlutterDevlopment" },
         {
-          icon: Smartphone,
+          icon: FaCode,
           title: "NativeScript",
           path: "/tech/NativeScript",
         },
         {
-          icon: Smartphone,
+          icon: FaMicrosoft,
           title: "Xamarin",
           path: "/tech/XamarinAppDevlopment",
         },
         {
-          icon: Smartphone,
+          icon: FaHtml5,
           title: "HTMl APP",
           path: "/tech/HtmlDevlopment",
         },
       ],
-      image:
-        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
+      image: image,
     },
     {
       id: "frontend",

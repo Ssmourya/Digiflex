@@ -310,7 +310,7 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           path="/services/game-development/vr-xr-simulation"
           element={<VR_XRSimulation />}
         />
-        <Route
+        <Route 
           path="/services/game-development/resource-augmentation"
           element={<ResourceAugmentation />}
         />

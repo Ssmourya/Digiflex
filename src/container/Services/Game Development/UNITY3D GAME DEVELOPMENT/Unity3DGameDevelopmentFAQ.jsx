@@ -42,47 +42,48 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
   );
 };
 
-const MobileGameFAQ = () => {
+const Unity3DGameDevelopmentFAQ = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [openItems, setOpenItems] = useState({});
 
   const faqData = [
     {
-      question: "What is the typical timeline for developing a mobile game?",
+      question: "What is Unity3D game development?",
       answer:
-        "The development timeline varies based on the game's complexity. Simple games might take 3-6 months, while complex games can take 12+ months. Factors affecting timeline include game features, art style, multiplayer functionality, and platform requirements. We provide detailed timeline estimates during the initial consultation.",
+        "Unity3D is a powerful game development engine used to create 2D and 3D games across multiple platforms, including mobile, PC, consoles, and VR/AR. It offers a robust set of tools for rendering, physics, animation, and scripting (primarily in C#), making it ideal for both indie developers and large studios.",
     },
     {
-      question: "How much does it cost to develop a mobile game?",
+      question: "What are the benefits of using Unity3D for game development?",
       answer:
-        "Mobile game development costs typically range from $30,000 to $500,000+. The final cost depends on factors like game complexity, graphics quality, features, platforms (iOS/Android), and monetization strategy. We offer flexible pricing models and can work within different budget ranges while maintaining quality.",
+        "Unity3D provides cross-platform support, a user-friendly interface, an extensive asset store, and a strong community. It enables rapid prototyping, high-quality graphics, and efficient workflows. Its versatility makes it suitable for projects of all sizes, from small indie games to AAA titles.",
     },
     {
-      question: "Do you develop for both iOS and Android platforms?",
+      question: "What platforms can Unity3D games be deployed to?",
       answer:
-        "Yes, we develop games for both iOS and Android platforms. We use cross-platform development frameworks like Unity and Unreal Engine to ensure consistent quality across platforms while optimizing development time and costs. We can also develop native games for specific platforms if required.",
+        "Unity3D supports deployment to numerous platforms, including iOS, Android, Windows, macOS, Linux, PlayStation, Xbox, Nintendo Switch, and WebGL. This flexibility allows developers to reach a wide audience with a single codebase, optimized for each platform’s requirements.",
     },
     {
-      question: "What game engines do you use for development?",
+      question: "How do you ensure performance in Unity3D games?",
       answer:
-        "We primarily use Unity and Unreal Engine for mobile game development. Unity is excellent for 2D and 3D games with lower system requirements, while Unreal Engine is perfect for high-end graphics and performance. We choose the engine based on your game's specific needs and requirements.",
+        "We optimize Unity3D games through efficient coding practices, asset management, and profiling tools like Unity’s Profiler. Techniques include reducing draw calls, optimizing shaders, implementing LOD (Level of Detail) systems, and fine-tuning physics calculations to ensure smooth performance across target devices.",
     },
     {
-      question: "How do you handle game monetization?",
+      question: "How long does it take to develop a game with Unity3D?",
       answer:
-        "We implement various monetization strategies including in-app purchases, advertisements, premium versions, and subscription models. Our team analyzes market trends and your target audience to recommend the most effective monetization strategy. We also ensure seamless integration with popular payment gateways and ad networks.",
+        "Development timelines vary by project scope. Simple 2D Unity3D games can take 3-6 months, while complex 3D games might require 12-24 months. Factors like team size, feature set, and art requirements influence the schedule. We provide tailored estimates during project planning.",
     },
     {
-      question: "What support do you provide after game launch?",
+      question: "What support do you offer for Unity3D game development?",
       answer:
-        "We provide comprehensive post-launch support including bug fixes, performance optimization, feature updates, and server maintenance. Our team monitors game performance, user feedback, and analytics to make necessary improvements. We also offer different maintenance packages to suit your ongoing support needs.",
+        "We provide end-to-end support, including game design, programming, art creation, optimization, and deployment. Post-launch, we offer bug fixes, updates, and performance enhancements. Our team leverages Unity’s ecosystem to deliver robust solutions tailored to your vision.",
     },
     {
-      question: "Can you help with game marketing and distribution?",
+      question: "Can you integrate monetization and analytics in Unity3D games?",
       answer:
-        "Yes, we provide assistance with App Store Optimization (ASO), creating promotional materials, and implementing analytics tools. We can help optimize your game's store listing, integrate social features, and implement user acquisition strategies. We also guide you through the app store submission process.",
+        "Yes, we integrate monetization features like in-app purchases, ads (e.g., Unity Ads), and DLCs, as well as analytics tools (e.g., Unity Analytics, Google Analytics) to track player behavior. We ensure seamless implementation to maximize revenue and provide actionable insights.",
     },
   ];
+
   const toggleItem = (index) => {
     setOpenItems((prev) => ({
       ...prev,
@@ -98,13 +99,12 @@ const MobileGameFAQ = () => {
 
   return (
     <WrapperContainer>
-      <div className=" mx-auto mb-20">
+      <div className="mx-auto mb-20">
         <div className="text-center mb-12">
-          <Heading> Mobile Game Development FAQ</Heading>
+          <Heading>Unity3D Game Development FAQ</Heading>
 
           <p className="text-gray-600 mb-8">
-            Find answers to common questions about mobile game development
-            process, timeline, costs, and more.
+            Find answers to common questions about Unity3D game development, its benefits, process, and more.
           </p>
 
           <div className="relative max-w-xl mx-auto">
@@ -142,4 +142,4 @@ const MobileGameFAQ = () => {
   );
 };
 
-export default MobileGameFAQ;
+export default Unity3DGameDevelopmentFAQ;

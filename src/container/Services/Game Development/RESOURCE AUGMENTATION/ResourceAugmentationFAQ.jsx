@@ -42,47 +42,48 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
   );
 };
 
-const MobileGameFAQ = () => {
+const ResourceAugmentationFAQ = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [openItems, setOpenItems] = useState({});
 
   const faqData = [
     {
-      question: "What is the typical timeline for developing a mobile game?",
+      question: "What is resource augmentation in game development?",
       answer:
-        "The development timeline varies based on the game's complexity. Simple games might take 3-6 months, while complex games can take 12+ months. Factors affecting timeline include game features, art style, multiplayer functionality, and platform requirements. We provide detailed timeline estimates during the initial consultation.",
+        "Resource augmentation involves supplementing your existing game development team with external skilled professionals to meet project demands. This can include programmers, artists, designers, QA testers, or other specialists. It provides flexibility to scale your team quickly without the overhead of permanent hires.",
     },
     {
-      question: "How much does it cost to develop a mobile game?",
+      question: "How does resource augmentation benefit game development?",
       answer:
-        "Mobile game development costs typically range from $30,000 to $500,000+. The final cost depends on factors like game complexity, graphics quality, features, platforms (iOS/Android), and monetization strategy. We offer flexible pricing models and can work within different budget ranges while maintaining quality.",
+        "Resource augmentation accelerates development timelines, fills skill gaps, and reduces costs compared to full-time hiring. It allows you to access specialized expertise (e.g., Unreal Engine developers or 3D animators) on-demand, ensuring high-quality output while maintaining project momentum and budget control.",
     },
     {
-      question: "Do you develop for both iOS and Android platforms?",
+      question: "What types of roles can be augmented for game projects?",
       answer:
-        "Yes, we develop games for both iOS and Android platforms. We use cross-platform development frameworks like Unity and Unreal Engine to ensure consistent quality across platforms while optimizing development time and costs. We can also develop native games for specific platforms if required.",
+        "We provide augmentation for a wide range of roles including game programmers (Unity, Unreal Engine), 3D/2D artists, animators, UI/UX designers, sound engineers, QA testers, and project managers. We tailor the team composition based on your project's specific needs and technology stack.",
     },
     {
-      question: "What game engines do you use for development?",
+      question: "How do you ensure quality with augmented resources?",
       answer:
-        "We primarily use Unity and Unreal Engine for mobile game development. Unity is excellent for 2D and 3D games with lower system requirements, while Unreal Engine is perfect for high-end graphics and performance. We choose the engine based on your game's specific needs and requirements.",
+        "Our augmented resources are vetted professionals with proven expertise in game development. We align them with your workflows, provide onboarding, and maintain regular quality checks. Our team uses industry-standard tools and collaborates seamlessly with your in-house staff to ensure consistent quality.",
     },
     {
-      question: "How do you handle game monetization?",
+      question: "How quickly can augmented resources be onboarded?",
       answer:
-        "We implement various monetization strategies including in-app purchases, advertisements, premium versions, and subscription models. Our team analyzes market trends and your target audience to recommend the most effective monetization strategy. We also ensure seamless integration with popular payment gateways and ad networks.",
+        "We can onboard augmented resources within days to weeks, depending on the role and project requirements. After understanding your needs, we match you with pre-screened professionals from our talent pool, ensuring a fast and efficient integration into your development pipeline.",
     },
     {
-      question: "What support do you provide after game launch?",
+      question: "What support do you provide for managing augmented teams?",
       answer:
-        "We provide comprehensive post-launch support including bug fixes, performance optimization, feature updates, and server maintenance. Our team monitors game performance, user feedback, and analytics to make necessary improvements. We also offer different maintenance packages to suit your ongoing support needs.",
+        "We offer project management support, communication tools, and progress tracking to ensure smooth collaboration. Our coordinators facilitate integration, handle scheduling, and provide regular updates. We also offer flexible engagement models to adapt to your project’s evolving needs.",
     },
     {
-      question: "Can you help with game marketing and distribution?",
+      question: "Can augmented resources assist with game launches?",
       answer:
-        "Yes, we provide assistance with App Store Optimization (ASO), creating promotional materials, and implementing analytics tools. We can help optimize your game's store listing, integrate social features, and implement user acquisition strategies. We also guide you through the app store submission process.",
+        "Yes, our augmented teams can support pre-launch optimization, bug fixing, testing, and post-launch updates. We also assist with marketing tasks like creating promotional assets and integrating analytics tools, ensuring a successful launch on platforms like Steam or Epic Games Store.",
     },
   ];
+
   const toggleItem = (index) => {
     setOpenItems((prev) => ({
       ...prev,
@@ -98,13 +99,12 @@ const MobileGameFAQ = () => {
 
   return (
     <WrapperContainer>
-      <div className=" mx-auto mb-20">
+      <div className="mx-auto mb-20">
         <div className="text-center mb-12">
-          <Heading> Mobile Game Development FAQ</Heading>
+          <Heading>Resource Augmentation in Game Development FAQ</Heading>
 
           <p className="text-gray-600 mb-8">
-            Find answers to common questions about mobile game development
-            process, timeline, costs, and more.
+            Find answers to common questions about resource augmentation for game development, its benefits, process, and more.
           </p>
 
           <div className="relative max-w-xl mx-auto">
@@ -142,4 +142,4 @@ const MobileGameFAQ = () => {
   );
 };
 
-export default MobileGameFAQ;
+export default ResourceAugmentationFAQ;

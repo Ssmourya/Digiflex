@@ -44,38 +44,34 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
   );
 };
 
-const UnrealGameFAQ = () => {
+const VRXRSimulationFAQ = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [openItems, setOpenItems] = useState({});
 
   const faqData = [
     {
-      question: "What is the typical timeline for developing an Unreal Engine game?",
-      answer: "The timeline depends on the game's complexity. Small projects take 3-6 months, while AAA games can take years. Factors like graphics, AI, multiplayer, and platform affect the timeline."
+      question: "What is the typical timeline for developing a VR/XR simulation?",
+      answer: "Timelines vary based on complexity. Basic simulations take 3-6 months, while complex projects can take a year or more. Factors like interactivity, graphics, and AI influence development time."
     },
     {
-      question: "How much does it cost to develop an Unreal Engine game?",
-      answer: "Costs range from $50,000 to several million dollars, depending on assets, mechanics, multiplayer, and customization. We provide detailed cost breakdowns based on project scope."
+      question: "What platforms do you develop VR/XR simulations for?",
+      answer: "We develop for Oculus, HTC Vive, PlayStation VR, Meta Quest, and enterprise AR devices like Microsoft HoloLens and Magic Leap."
     },
     {
-      question: "Do you develop Unreal Engine games for multiple platforms?",
-      answer: "Yes, we develop for PC, consoles (PS5, Xbox), and mobile. Unreal Engine’s cross-platform support allows seamless development and optimization."
+      question: "How much does it cost to develop a VR/XR simulation?",
+      answer: "Costs range from $50,000 to several hundred thousand dollars, depending on scope, level of detail, and required hardware compatibility."
     },
     {
-      question: "What are the advantages of using Unreal Engine for game development?",
-      answer: "Unreal Engine offers high-fidelity graphics, a robust physics engine, Blueprint scripting, and real-time rendering, making it ideal for immersive experiences."
+      question: "What industries can benefit from VR/XR simulations?",
+      answer: "Industries like healthcare, education, real estate, military training, and engineering benefit from immersive simulations for training and visualization."
     },
     {
-      question: "How do you handle monetization in Unreal Engine games?",
-      answer: "We implement in-game purchases, ads, DLC, and subscriptions. We also optimize revenue models based on the target audience and platform."
+      question: "What technologies do you use for VR/XR simulation development?",
+      answer: "We utilize Unreal Engine, Unity, OpenXR, WebXR, and AI-driven interactivity tools to create high-fidelity and immersive experiences."
     },
     {
-      question: "What support do you provide after launching an Unreal Engine game?",
-      answer: "We offer post-launch updates, bug fixes, performance optimizations, and new content development to ensure the game’s longevity."
-    },
-    {
-      question: "Can you assist with Unreal Engine game publishing and marketing?",
-      answer: "Yes, we help with store submissions, trailer creation, SEO optimization, and digital marketing strategies to maximize reach and downloads."
+      question: "Do you provide post-launch support for VR/XR simulations?",
+      answer: "Yes, we offer maintenance, updates, and optimizations to ensure smooth performance and user experience improvements."
     }
   ];
 
@@ -95,10 +91,9 @@ const UnrealGameFAQ = () => {
     <WrapperContainer>
       <div className="mx-auto mb-20">
         <div className="text-center mb-12">
-          <Heading>Unreal Engine Game Development FAQ</Heading>
+          <Heading>VR/XR Simulation Development FAQ</Heading>
           <p className="text-gray-600 mb-8">
-            Find answers to common questions about Unreal Engine game development, 
-            costs, platforms, and more.
+            Find answers to common questions about VR/XR simulation development, costs, platforms, and more.
           </p>
           <div className="relative max-w-xl mx-auto">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -135,4 +130,4 @@ const UnrealGameFAQ = () => {
   );
 };
 
-export default UnrealGameFAQ;
+export default VRXRSimulationFAQ;

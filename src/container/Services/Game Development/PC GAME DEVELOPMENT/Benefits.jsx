@@ -5,7 +5,7 @@ import Heading from '../../../../Layout/Heading';
 import Paragraph from '../../../../Layout/Paragraph';
 
 const BenefitCard = ({ icon, title, description }) => (
-  <div className="bg-[#f3f4f6] rounded-lg p-8 transition-all duration-300 hover:shadow-xl flex flex-col h-full">
+  <div className="bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:shadow-xl flex flex-col h-full">
     <div className="flex justify-between items-start mb-6">
       <h3 className="text-gray-900 text-xl font-bold max-w-[70%]">{title}</h3>
       <div className="w-16 h-16"> {/* Adjust size with custom width and height */}
@@ -20,23 +20,23 @@ const Benefits = () => {
   const benefits = [
     {
       icon: <Box className="text-blue-500" size={48} />,  // Increase icon size using size prop
-      title: "CUSTOMIZED FULL-CYCLE GAME DEVELOPMENT",
-      description: "We create games carefully tailored to your specific needs and budget expectations. Experienced professionals in each desktop game development area provide a customized approach to your project to match the goals and scale."
+      title: "END-TO-END PC GAME DEVELOPMENT",
+      description: "Digiflex specializes in full-cycle PC game development, delivering tailored solutions that align with your vision and market needs. Our team ensures high-quality execution from concept to launch."
     },
     {
       icon: <Users className="text-green-500" size={48} />,  // Increase icon size using size prop
-      title: "TRANSPARENCY AND RELIABLE PARTNERSHIP",
-      description: "Thanks to an open dialogue, transparent communication and strict adherence to the wishes of the client, our PC gaming company ensures complete satisfaction with the implemented projects and secures repeat business in 90% of cases."
+      title: "TRANSPARENT AND CLIENT-FOCUSED APPROACH",
+      description: "We prioritize clear communication and collaboration to ensure our clients are always in control. With Digiflex, you get a dedicated partner committed to delivering exceptional results with complete transparency."
     },
     {
       icon: <ShieldCheck className="text-red-500" size={48} />,  // Increase icon size using size prop
-      title: "ADHERENCE TO THE BEST SECURITY PRACTICES",
-      description: "Keep calm and don't worry about data, system and infrastructure protection: we adhere to strict protection policy rules and constantly update security systems in accordance with the latest innovations."
+      title: "ROBUST SECURITY AND DATA PROTECTION",
+      description: "Security is a top priority at Digiflex. We implement best-in-class security protocols to safeguard your game data, player information, and infrastructure from potential threats."
     },
     {
       icon: <CheckCircle className="text-yellow-500" size={48} />,  // Increase icon size using size prop
-      title: "EXCEPTIONAL FLEXIBILITY AND SCALABILITY",
-      description: "We adjust to the scale of the project and are ready to attract an even greater number of highly skilled experts if necessary for the successful implementation of the project on schedule. On average, we need 2 weeks to hire a new specialist."
+      title: "SCALABLE AND ADAPTABLE DEVELOPMENT",
+      description: "Whether it's a small indie project or a large-scale AAA game, Digiflex scales development resources efficiently. We quickly adapt to project needs, ensuring timely delivery without compromising quality."
     }
   ];
 
@@ -46,12 +46,12 @@ const Benefits = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <Heading>
-            <h2>OUR FUNDAMENTAL BENEFITS IN PC GAME DEVELOPMENT</h2>
+            <h2>WHY CHOOSE DIGIFLEX FOR PC GAME DEVELOPMENT?</h2>
           </Heading>
 
           <p className="max-w-3xl mx-auto">
             <Paragraph>
-              Over the years of successful work on many global projects, we have formed a solid base of quality criteria that we strictly follow and that allow us to stand out.
+              At Digiflex, we leverage years of expertise in PC game development to bring your ideas to life. Our commitment to quality, innovation, and customer satisfaction sets us apart in the industry.
             </Paragraph>
           </p>
         </div>

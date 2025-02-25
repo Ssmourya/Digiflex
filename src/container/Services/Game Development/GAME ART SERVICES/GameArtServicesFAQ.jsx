@@ -42,47 +42,48 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
   );
 };
 
-const MobileGameFAQ = () => {
+const GameArtServicesFAQ = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [openItems, setOpenItems] = useState({});
 
   const faqData = [
     {
-      question: "What is the typical timeline for developing a mobile game?",
+      question: "What are game art services in game development?",
       answer:
-        "The development timeline varies based on the game's complexity. Simple games might take 3-6 months, while complex games can take 12+ months. Factors affecting timeline include game features, art style, multiplayer functionality, and platform requirements. We provide detailed timeline estimates during the initial consultation.",
+        "Game art services encompass the creation of visual assets for games, including 2D/3D characters, environments, animations, UI designs, and concept art. These services enhance the game's aesthetic appeal and immersion, tailored to the project's style and platform requirements.",
     },
     {
-      question: "How much does it cost to develop a mobile game?",
+      question: "How do game art services benefit game development?",
       answer:
-        "Mobile game development costs typically range from $30,000 to $500,000+. The final cost depends on factors like game complexity, graphics quality, features, platforms (iOS/Android), and monetization strategy. We offer flexible pricing models and can work within different budget ranges while maintaining quality.",
+        "Professional game art services elevate the player experience with high-quality visuals, improve brand identity, and ensure technical compatibility. They save time for development teams by outsourcing specialized tasks, allowing focus on gameplay and mechanics while delivering polished, market-ready graphics.",
     },
     {
-      question: "Do you develop for both iOS and Android platforms?",
+      question: "What types of game art services do you provide?",
       answer:
-        "Yes, we develop games for both iOS and Android platforms. We use cross-platform development frameworks like Unity and Unreal Engine to ensure consistent quality across platforms while optimizing development time and costs. We can also develop native games for specific platforms if required.",
+        "We offer a wide range of services including 2D concept art, 3D modeling and texturing, character design, environment art, animation (rigging and keyframing), UI/UX design, and visual effects. We customize our deliverables to match your game’s art direction and engine (e.g., Unity, Unreal).",
     },
     {
-      question: "What game engines do you use for development?",
+      question: "How do you ensure quality in game art production?",
       answer:
-        "We primarily use Unity and Unreal Engine for mobile game development. Unity is excellent for 2D and 3D games with lower system requirements, while Unreal Engine is perfect for high-end graphics and performance. We choose the engine based on your game's specific needs and requirements.",
+        "Our team of experienced artists uses industry-standard tools like Blender, Maya, Photoshop, and Substance Painter. We follow iterative feedback loops, adhere to your style guide, and perform quality checks to ensure assets are optimized, visually consistent, and performance-ready for your game.",
     },
     {
-      question: "How do you handle game monetization?",
+      question: "How long does it take to create game art assets?",
       answer:
-        "We implement various monetization strategies including in-app purchases, advertisements, premium versions, and subscription models. Our team analyzes market trends and your target audience to recommend the most effective monetization strategy. We also ensure seamless integration with popular payment gateways and ad networks.",
+        "Timelines depend on asset complexity and volume. Simple 2D assets may take days, while detailed 3D models or animations can take weeks. We provide detailed schedules during planning, ensuring timely delivery aligned with your development milestones.",
     },
     {
-      question: "What support do you provide after game launch?",
+      question: "What support do you offer for integrating game art?",
       answer:
-        "We provide comprehensive post-launch support including bug fixes, performance optimization, feature updates, and server maintenance. Our team monitors game performance, user feedback, and analytics to make necessary improvements. We also offer different maintenance packages to suit your ongoing support needs.",
+        "We ensure seamless integration by delivering assets in compatible formats (e.g., FBX, PNG) and providing technical support for engines like Unity or Unreal. We also offer optimization guidance and revisions to ensure assets perform well in-game across target platforms.",
     },
     {
-      question: "Can you help with game marketing and distribution?",
+      question: "Can you create promotional art for game launches?",
       answer:
-        "Yes, we provide assistance with App Store Optimization (ASO), creating promotional materials, and implementing analytics tools. We can help optimize your game's store listing, integrate social features, and implement user acquisition strategies. We also guide you through the app store submission process.",
+        "Yes, we produce promotional art including key visuals, trailers, splash screens, and store assets for platforms like Steam, App Store, or Epic Games Store. Our team crafts marketing materials that align with your game’s branding to attract players and boost visibility.",
     },
   ];
+
   const toggleItem = (index) => {
     setOpenItems((prev) => ({
       ...prev,
@@ -98,13 +99,13 @@ const MobileGameFAQ = () => {
 
   return (
     <WrapperContainer>
-      <div className=" mx-auto mb-20">
+      <div className="mx-auto mb-20">
         <div className="text-center mb-12">
-          <Heading> Mobile Game Development FAQ</Heading>
+          <Heading>Game Art Services in Game Development FAQ</Heading>
 
           <p className="text-gray-600 mb-8">
-            Find answers to common questions about mobile game development
-            process, timeline, costs, and more.
+            Find answers to common questions about game art services for game
+            development, their benefits, process, and more.
           </p>
 
           <div className="relative max-w-xl mx-auto">
@@ -142,4 +143,4 @@ const MobileGameFAQ = () => {
   );
 };
 
-export default MobileGameFAQ;
+export default GameArtServicesFAQ;

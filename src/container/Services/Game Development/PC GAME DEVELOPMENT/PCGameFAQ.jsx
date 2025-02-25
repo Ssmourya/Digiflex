@@ -42,47 +42,48 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
   );
 };
 
-const MobileGameFAQ = () => {
+const PCGameFAQ = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [openItems, setOpenItems] = useState({});
 
   const faqData = [
     {
-      question: "What is the typical timeline for developing a mobile game?",
+      question: "What is the typical timeline for developing a PC game?",
       answer:
-        "The development timeline varies based on the game's complexity. Simple games might take 3-6 months, while complex games can take 12+ months. Factors affecting timeline include game features, art style, multiplayer functionality, and platform requirements. We provide detailed timeline estimates during the initial consultation.",
+        "The development timeline varies based on the game's complexity. Simple PC games might take 6-12 months, while complex AAA titles can take 2-5 years. Factors affecting timeline include game features, graphical complexity, multiplayer functionality, and hardware requirements. We provide detailed timeline estimates during the initial consultation.",
     },
     {
-      question: "How much does it cost to develop a mobile game?",
+      question: "How much does it cost to develop a PC game?",
       answer:
-        "Mobile game development costs typically range from $30,000 to $500,000+. The final cost depends on factors like game complexity, graphics quality, features, platforms (iOS/Android), and monetization strategy. We offer flexible pricing models and can work within different budget ranges while maintaining quality.",
+        "PC game development costs typically range from $50,000 to several million dollars for AAA titles. The final cost depends on factors like game complexity, graphics quality, team size, development tools, and distribution platform requirements. We offer flexible pricing models and can work within different budget ranges while maintaining quality.",
     },
     {
-      question: "Do you develop for both iOS and Android platforms?",
+      question: "Do you develop for multiple PC platforms?",
       answer:
-        "Yes, we develop games for both iOS and Android platforms. We use cross-platform development frameworks like Unity and Unreal Engine to ensure consistent quality across platforms while optimizing development time and costs. We can also develop native games for specific platforms if required.",
+        "Yes, we develop games for various PC platforms including Windows, macOS, and Linux. We use cross-platform development tools like Unity and Unreal Engine to ensure compatibility while optimizing for different operating systems. We can also create platform-specific optimizations based on your target audience.",
     },
     {
-      question: "What game engines do you use for development?",
+      question: "What game engines do you use for PC development?",
       answer:
-        "We primarily use Unity and Unreal Engine for mobile game development. Unity is excellent for 2D and 3D games with lower system requirements, while Unreal Engine is perfect for high-end graphics and performance. We choose the engine based on your game's specific needs and requirements.",
+        "We primarily use Unity and Unreal Engine for PC game development. Unity is versatile for both 2D and 3D games, while Unreal Engine excels in delivering high-fidelity graphics and performance for premium PC titles. We select the engine based on your game's specific technical and visual requirements.",
     },
     {
-      question: "How do you handle game monetization?",
+      question: "How do you handle game monetization for PC games?",
       answer:
-        "We implement various monetization strategies including in-app purchases, advertisements, premium versions, and subscription models. Our team analyzes market trends and your target audience to recommend the most effective monetization strategy. We also ensure seamless integration with popular payment gateways and ad networks.",
+        "We implement various monetization strategies including upfront purchases, DLCs (Downloadable Content), microtransactions, and subscription models. Our team analyzes market trends and your target audience to recommend the most effective monetization strategy, integrating seamlessly with platforms like Steam, Epic Games Store, or custom launchers.",
     },
     {
       question: "What support do you provide after game launch?",
       answer:
-        "We provide comprehensive post-launch support including bug fixes, performance optimization, feature updates, and server maintenance. Our team monitors game performance, user feedback, and analytics to make necessary improvements. We also offer different maintenance packages to suit your ongoing support needs.",
+        "We provide comprehensive post-launch support including bug fixes, performance optimization, feature updates, and multiplayer server maintenance. Our team monitors game performance, player feedback, and analytics to make necessary improvements. We also offer different maintenance packages tailored to PC gaming needs.",
     },
     {
       question: "Can you help with game marketing and distribution?",
       answer:
-        "Yes, we provide assistance with App Store Optimization (ASO), creating promotional materials, and implementing analytics tools. We can help optimize your game's store listing, integrate social features, and implement user acquisition strategies. We also guide you through the app store submission process.",
+        "Yes, we assist with Steam page optimization, creating promotional materials, and implementing analytics tools. We can help optimize your game's store presence, integrate community features, and implement user acquisition strategies. We also guide you through the distribution platform submission process (Steam, Epic Games Store, etc.).",
     },
   ];
+
   const toggleItem = (index) => {
     setOpenItems((prev) => ({
       ...prev,
@@ -98,12 +99,12 @@ const MobileGameFAQ = () => {
 
   return (
     <WrapperContainer>
-      <div className=" mx-auto mb-20">
+      <div className="mx-auto mb-20">
         <div className="text-center mb-12">
-          <Heading> Mobile Game Development FAQ</Heading>
+          <Heading>PC Game Development FAQ</Heading>
 
           <p className="text-gray-600 mb-8">
-            Find answers to common questions about mobile game development
+            Find answers to common questions about PC game development
             process, timeline, costs, and more.
           </p>
 
@@ -142,4 +143,4 @@ const MobileGameFAQ = () => {
   );
 };
 
-export default MobileGameFAQ;
+export default PCGameFAQ;

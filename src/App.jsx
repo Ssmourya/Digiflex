@@ -89,6 +89,10 @@ import Intercloud_Migration from "./pages/Intercloud";
 import AWS from "./pages/AWS";
 import CloudNative from "./pages/CloudNative"
 
+//AI app
+
+import Ai_development from "./pages/Ai_development"
+
 function App() {
   const location = useLocation();
 
@@ -325,6 +329,9 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
       <Route path="/services/cloud/CloudNative" element={<CloudNative/>}/>
       <Route path="/services/cloud/CloudOptimization" element={<CloudOptimization/>}/>
 
+      {/*Ai app*/}
+
+      <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
       </Routes>
 
       {location.pathname !== "/" && <ReviewsSection />}

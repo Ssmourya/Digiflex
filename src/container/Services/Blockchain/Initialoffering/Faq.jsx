@@ -42,8 +42,8 @@ const Faq = () => {
 
   return (
  <WrapperContainer>
-        <div className="bg-white py-16 px-6">
-      <div className="max-w-5xl mx-auto text-center">
+        <div className="bg-white  px-6 p-10">
+      <div className="max-w-6xl mx-auto text-center">
         <Heading>
         <h2>
           Frequently Asked Questions

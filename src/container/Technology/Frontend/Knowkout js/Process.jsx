@@ -72,7 +72,7 @@ const Process = () => {
 
   return (
     <WrapperContainer>
-      <div className="text-center mb-16">
+      <div className="text-center mb-10">
         <Heading>Knockout.js Development Process</Heading>
         <Paragraph>
           Our Knockout.js development process ensures a structured and scalable

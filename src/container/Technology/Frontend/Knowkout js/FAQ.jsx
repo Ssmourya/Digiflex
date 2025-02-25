@@ -76,7 +76,7 @@ const FAQ = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="space-y-4"
+        className="space-y-4 mb-12"
       >
         {faqs.map((faq, index) => (
           <motion.div

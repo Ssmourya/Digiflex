@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronLeft, ChevronRight, Menu } from "lucide-react";
+import Heading from "../../../../Layout/Heading";
 import { motion } from "framer-motion";
 import Hd from "../../../../assets/Hd.jpg";
 import Hd2 from "../../../../assets/Hd2.jpg";
@@ -53,11 +54,9 @@ const WebApplication3 = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="flex justify-between items-center mb-6">
-          <Subheading>
-            Industries We Cater To
-          </Subheading>
-          <Menu className="w-6 h-6 text-gray-600 cursor-pointer" />
+        <div >
+          <Heading>Industries We Cater To</Heading>
+          
         </div>
 
         <p className="text-gray-600 mb-8 max-w-3xl">
@@ -112,10 +111,10 @@ const WebApplication3 = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        <p className="text-gray-600 text-lg">
-          Trusted by startups and Fortune{" "}
-          <span className="text-orange-500">500</span> companies
-        </p>
+        
+      <Heading>Trusted by startups and Fortune <span className="text-orange-500">500</span> companies</Heading>
+           
+      
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center mt-8">
@@ -139,18 +138,7 @@ const WebApplication3 = () => {
         ))}
       </div>
 
-      {/* Extra Content for Larger Screens */}
-      <div className="hidden lg:block mt-12 text-center">
-        <Subheading >
-          Why Choose Us?
-        </Subheading>
-        <p className="text-gray-700 mt-3 max-w-4xl mx-auto">
-          We specialize in building <strong>scalable and high-performing</strong>{" "}
-          software solutions tailored to various industries. Whether you’re a{" "}
-          <strong>startup</strong> or an <strong>enterprise</strong>, we ensure{" "}
-          <strong>seamless integration, security, and user engagement.</strong>
-        </p>
-      </div>
+     
     </div>
   );
 };

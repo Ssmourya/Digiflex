@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowUp, PhoneCall } from 'lucide-react';
+import Saas5 from './Saas5';
+import Heading from '../../../../Layout/Heading';
 
 const Saas4 = () => {
   const sectors = [
@@ -40,6 +42,11 @@ const Saas4 = () => {
   return (
     <div className="bg-navy-900 w-full min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-8">
+        <Heading>Industries We Serve with SaaS Solutions</Heading>
+
+          <p className="text-gray-400 mt-2">Empowering diverse sectors with innovative SaaS applications tailored to their unique needs.</p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {sectors.map((sector, index) => (
             <div 
@@ -61,10 +68,8 @@ const Saas4 = () => {
             </div>
           ))}
         </div>
-
-        {/* Fixed Side Buttons */}
-        
       </div>
+      <Saas5/>
     </div>
   );
 };

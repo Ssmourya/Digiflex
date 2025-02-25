@@ -7,7 +7,7 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 const Cryptodevelopment = () => {
   const cards = [
     {
-      title: "Centralized Exchange",
+      title: "Centralized Exchange", 
       description: "Highly secure and efficient centralized crypto exchange solutions with fast transactions.",
       message: "Trusted by top crypto traders worldwide.",
       icon: <FaExchangeAlt size={40} className="text-blue-600" />
@@ -48,15 +48,17 @@ const Cryptodevelopment = () => {
   const isInView = useInView(sectionRef, { once: true });
 
   return (
+    <>
     <WrapperContainer>
-      <div className="bg-white py-8 flex justify-center">
+    <div>
+      {/* <div className="bg-white py-8 flex justify-center"> */}
         <Heading>
-          <h1>Our Crypto Exchange Development Solutions</h1>
+          <h1>Our Crypto Exchange Development Solutions </h1>
         </Heading>
-      </div>
+      {/* </div> */}
 
-      <div className="bg-white py-8" ref={sectionRef}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto text-center">
+      <div className="bg-white" ref={sectionRef}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 max-w-6xl mx-auto text-center">
           {cards.map((card, index) => (
             <motion.div
               key={index}
@@ -83,7 +85,9 @@ const Cryptodevelopment = () => {
           ))}
         </div>
       </div>
-    </WrapperContainer>
+      </div>
+     </WrapperContainer>
+      </>
   );
 };
 

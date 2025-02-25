@@ -5,37 +5,41 @@ import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
-
-
 const services = [
   {
     title: "Full-Cycle Mobile Game Development",
-    description: "Our mobile game app development company takes advantage of cross-platform mobile game development for you to get the product you deserve, from concept art production to development, testing, and release.",
+    description:
+      "At Digiflex, we provide end-to-end mobile game development solutions, from ideation and concept art to development, testing, and deployment. We ensure your game meets industry standards and engages players worldwide.",
     icon: "⚙️",
   },
   {
-    title: "Android/iOS Game Development",
-    description: "Game-Ace is proficient in designing, programming, and supporting mobile games for both Android and iOS platforms. Using our custom-tailored solutions, you receive a game for the most coveted audiences.",
+    title: "Android & iOS Game Development",
+    description:
+      "Our team specializes in creating high-quality games for both Android and iOS platforms, ensuring seamless performance and an immersive gaming experience across devices.",
     icon: "📱",
   },
   {
     title: "Cross-Platform Game Development",
-    description: "With our mobile game apps development services, your mobile game ideas will receive a new life and be embodied in a high-end product optimized for as many supporting platforms as your project requires.",
+    description:
+      "With Digiflex's expertise in cross-platform game development, we bring your gaming ideas to life, optimizing them for multiple platforms to reach a wider audience.",
     icon: "🖥️",
   },
   {
-    title: "Mobile Game Art, Design, & Animation",
-    description: "As a mobile game app development company providing full-cycle creation services, we create a complete, integral product, from art assets, animation, and UI/UX design to story, gameplay mechanics, QA, and development.",
+    title: "Game Art, Design, & Animation",
+    description:
+      "We offer top-notch 2D/3D game art, UI/UX design, and animation services to create visually stunning and engaging games that captivate players.",
     icon: "🎨",
   },
   {
-    title: "UI/UX Logic Design & Execution",
-    description: "Despite the style your mobile game needs to feature or a genre whose rules it has to abide by, our UI/UX designers will ensure the best player experience so that your users will have the best time playing the game.",
+    title: "UI/UX Logic & Game Design",
+    description:
+      "Our UI/UX designers ensure your game has an intuitive and user-friendly interface, enhancing player engagement and delivering an exceptional gaming experience.",
     icon: "🖌️",
   },
   {
-    title: "Mobile Game Testing",
-    description: "The QA & QC teams at Game-Ace always have one eye for the technical part and another for the feeling of the gameplay itself. So they evaluate your game’s playability, performance, compatibility, and other aspects.",
+    title: "Game Testing & Quality Assurance",
+    description:
+      "At Digiflex, we conduct thorough game testing to ensure smooth performance, bug-free gameplay, and optimal compatibility across different devices and platforms.",
     icon: "✅",
   },
 ];
@@ -43,10 +47,9 @@ const services = [
 const ServicesSection = () => {
   return (
     <WrapperContainer>
-
       <div className="text-center mb-12">
-      <Heading >Mobile Game Development Services We Provide</Heading>
-       </div>
+        <Heading>Digiflex Mobile Game Development Services</Heading>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {services.map((service, index) => (
@@ -60,8 +63,6 @@ const ServicesSection = () => {
           </motion.div>
         ))}
       </div>
-    
-
     </WrapperContainer>
   );
 };

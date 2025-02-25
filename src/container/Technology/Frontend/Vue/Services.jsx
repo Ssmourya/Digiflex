@@ -14,7 +14,7 @@ import Paragraph from "../../../../Layout/Paragraph";
 const ServiceCard = ({ title, description, icon: Icon }) => {
   return (
     <div className="p-6 rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-      <div className="bg-orange-500 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+      <div className="bg-blue-500 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
         <Icon className="w-8 h-8 text-white" />
       </div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>

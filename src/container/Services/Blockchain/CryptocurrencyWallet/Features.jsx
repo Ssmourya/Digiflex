@@ -97,12 +97,11 @@ const Features = () => {
 
   return (
    <WrapperContainer>
-        <div className="container min-h-screen mx-auto py-10 lg:w-[80vw] md:w-[80vw]">
+        <div >
         <Heading>
-        <h1>
+        <div>
         Unique Features Of Cryptocurrency Wallet Development Solutions
-      </h1>
-
+        </div>
         </Heading>
     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">

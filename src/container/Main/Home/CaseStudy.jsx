@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaRobot, FaBrain, FaLock, FaCloud, FaMicrochip, FaCubes, FaEye, FaNetworkWired } from "react-icons/fa";
 import "tailwindcss/tailwind.css";
-import WrapperContainer from '../../../Layout/WrapperContainer'
+import WrapperContainer from "../../../Layout/WrapperContainer";
 
 const images1 = [
   "https://i.pinimg.com/736x/ae/5f/c6/ae5fc66ea21871dd7aa620e7109f048d.jpg",
@@ -56,12 +56,12 @@ const TechnologyCards = () => {
       {technologies.map((tech, index) => (
         <div
           key={index}
-          className="p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 bg-white text-black flex items-center gap-4"
+          className="p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 bg-[#121826] text-white flex items-center gap-4"
         >
-          <div className="text-blue-600 text-2xl">{tech.icon}</div>
+          <div className="text-blue-400 text-2xl">{tech.icon}</div>
           <div>
-            <h3 className="font-bold text-lg">{tech.name}</h3>
-            <p className="text-gray-600 text-sm">{tech.description}</p>
+            <h3 className="font-bold text-lg text-blue-300">{tech.name}</h3>
+            <p className="text-gray-400 text-sm">{tech.description}</p>
           </div>
         </div>
       ))}
@@ -71,28 +71,20 @@ const TechnologyCards = () => {
 
 const KeyFeatures = () => {
   return (
+    <div className="bg-black text-white py-16 flex justify-center items-center">
     <WrapperContainer>
-      <div className="relative w-full max-w-[1400px] rounded-[2.5rem] p-0.5 overflow-hidden bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-500/20">
-        {/* Animated gradient overlays */}
-        <div className="absolute inset-0">
-            {/* <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2" /> */}
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2" />
-            {/* <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 translate-x-1/2 translate-y-1/2" /> */}
-        </div>
-        
-        {/* Inner Content */}
-        <div className="relative bg-white rounded-[2.4rem] p-8 sm:p-12 lg:p-10 overflow-hidden">
+      <div className="w-full max-w-[1400px] rounded-[2.5rem] p-0.5 overflow-hidden bg-[#121826] flex flex-col justify-center items-center">
+        <div className="relative bg-black rounded-[2.4rem] p-8 sm:p-12 lg:p-10 overflow-hidden text-center">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl font-bold text-blue-600 text-center"
+            className="text-4xl font-bold text-blue-400"
           >
             Key Features
           </motion.h2>
           
-          <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
             <div className="flex gap-4">
               <Marquee images={images1} direction="up" />
               <Marquee images={images2} direction="down" />
@@ -101,8 +93,10 @@ const KeyFeatures = () => {
           </div>
         </div>
       </div>
-    </WrapperContainer>
+      </WrapperContainer>
+    </div>
   );
 };
 
 export default KeyFeatures;
+  

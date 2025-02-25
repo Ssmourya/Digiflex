@@ -6,9 +6,11 @@ import Faq from './Faq'
 
 
 
+
 const Body = () => {
   return (
  <>
+ 
  <Initialofferingservices/>
  <Initialofferingbenifits/>
  <Whychoose/>

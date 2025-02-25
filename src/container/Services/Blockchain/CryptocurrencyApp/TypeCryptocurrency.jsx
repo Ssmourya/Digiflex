@@ -1,125 +1,269 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   ShieldCheck,
   Wallet,
   Code,
   BarChart,
   Globe,
-  Users
+  Users,
+  ArrowRight
 } from 'lucide-react';
-
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 
-const ServiceCard = ({ title, description, icon }) => {
+
+const GridCard = ({ title, description, icon, index }) => {
+  const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
+  useEffect(() => {
+    // Stagger the appearance of cards
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, index * 200); // 200ms delay between each card
+
+    return () => clearTimeout(timer);
+  }, [index]);
+
   const iconComponents = {
-    Wallet: Wallet,
-    Code: Code,
-    BarChart: BarChart,
-    Globe: Globe,
-    Users: Users,
-    ShieldCheck: ShieldCheck
+    Wallet,
+    Code,
+    BarChart,
+    Globe,
+    Users,
+    ShieldCheck
   };
 
   const IconComponent = iconComponents[icon];
+  const bulletPoints = description.split('\n').filter(point => point.startsWith('•'));
 
   return (
-
-        <div
-      className="relative bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <div
+      className={`
+        transform
+        transition-all
+        duration-1000
+        ease-out
+        ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}
+      `}
     >
-      <div className="p-6 flex flex-col items-center text-center">
+      <div
+        className={`
+          relative
+          bg-white
+          rounded-2xl
+          transition-all
+          duration-700
+          ease-in-out
+          ${isHovered ? 'shadow-2xl scale-105' : 'shadow-lg scale-100'}
+          cursor-pointer
+          overflow-hidden
+        `}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Gradient overlay */}
         <div 
-          className={`flex flex-col items-center transition-all duration-300 ${
-            isHovered ? 'h-96' : 'h-48'
-          } overflow-hidden`}
-        >
-          <div className="p-5 bg-blue-100 rounded-full mb-4">
-            <IconComponent size={32} className="text-blue-500" />
+          className={`
+            absolute
+            inset-0
+            bg-gradient-to-br
+            from-blue-50/50
+            to-transparent
+            transition-opacity
+            duration-700
+            ${isHovered ? 'opacity-100' : 'opacity-0'}
+          `}
+        />
+
+        <div className="p-8 relative">
+          {/* Icon Container */}
+          <div className="flex justify-center mb-6">
+            <div 
+              className={`
+                relative
+                group
+                p-6
+                rounded-full
+                transition-all
+                duration-700
+                ease-in-out
+                ${isHovered ? 'bg-blue-500 rotate-6' : 'bg-blue-100 rotate-0'}
+              `}
+            >
+              {/* Animated rings */}
+              <div 
+                className={`
+                  absolute
+                  inset-0
+                  rounded-full
+                  border-2
+                  border-blue-200
+                  transition-all
+                  duration-700
+                  ${isHovered ? 'scale-150 opacity-0' : 'scale-100 opacity-0'}
+                `}
+              />
+              <div 
+                className={`
+                  absolute
+                  inset-0
+                  rounded-full
+                  border-2
+                  border-blue-100
+                  transition-all
+                  duration-1000
+                  delay-100
+                  ${isHovered ? 'scale-125 opacity-0' : 'scale-100 opacity-0'}
+                `}
+              />
+              
+              <IconComponent 
+                size={32} 
+                className={`
+                  transition-all
+                  duration-700
+                  ${isHovered ? 'text-white -rotate-6' : 'text-blue-500 rotate-0'}
+                `}
+              />
+            </div>
           </div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
-            {title}
-          </h3>
-          <p className="text-gray-600 text-sm whitespace-pre-line">
-            {description}
-          </p>
+
+          {/* Content */}
+          <div className="relative">
+            <h3 
+              className={`
+                text-xl
+                font-bold
+                text-center
+                mb-4
+                transition-all
+                duration-700
+                ${isHovered ? 'text-blue-600' : 'text-gray-800'}
+              `}
+            >
+              {title}
+            </h3>
+
+            {/* Bullet points with staggered animation */}
+            <div 
+              className={`
+                space-y-3
+                transition-all
+                duration-700
+                ease-in-out
+                ${isHovered ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'}
+              `}
+            >
+              {bulletPoints.map((point, idx) => (
+                <div
+                  key={idx}
+                  className={`
+                    flex
+                    items-start
+                    space-x-2
+                    transition-all
+                    duration-700
+                    ease-in-out
+                    ${isHovered 
+                      ? 'translate-y-0 opacity-100' 
+                      : 'translate-y-4 opacity-0'
+                    }
+                  `}
+                  style={{
+                    transitionDelay: `${idx * 100}ms`
+                  }}
+                >
+                  <ArrowRight 
+                    size={16} 
+                    className="mt-1 flex-shrink-0 text-blue-500" 
+                  />
+                  <p className="text-sm text-gray-600">
+                    {point.substring(1).trim()}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Animated border */}
+          <div 
+            className={`
+              absolute
+              bottom-0
+              left-0
+              h-1
+              bg-gradient-to-r
+              from-blue-400
+              to-blue-600
+              transition-all
+              duration-700
+              ease-in-out
+              ${isHovered ? 'w-full opacity-100' : 'w-0 opacity-0'}
+            `}
+          />
         </div>
       </div>
     </div>
- 
- 
   );
 };
 
-const CoverServices = () => {
+const AnimatedGrid = () => {
   const services = [
     {
+
       title: 'Secure Crypto Wallets',
-      description: 'Our comprehensive wallet development services include:\n• Multi-currency support with advanced security protocols\n• Biometric authentication integration\n• Real-time transaction tracking\n• Secure key management systems\n• Cross-chain compatibility\n• Backup and recovery solutions',
+      description: '• Multi-currency support with advanced security\n• Biometric authentication integration\n• Real-time transaction tracking\n• Secure key management\n• Cross-chain compatibility\n• Backup and recovery solutions',
       icon: 'Wallet'
     },
     {
       title: 'Smart Contract Development',
-      description: 'Expert smart contract development featuring:\n• Custom contract logic implementation\n• Security auditing and optimization\n• Multi-platform blockchain support\n• Automated testing and deployment\n• Gas optimization techniques\n• Upgrade mechanisms and governance',
+      description: '• Custom contract logic implementation\n• Security auditing and optimization\n• Multi-platform blockchain support\n• Automated testing and deployment\n• Gas optimization techniques\n• Upgrade mechanisms',
       icon: 'Code'
     },
     {
-      title: 'Decentralized Exchange (DEX)',
-      description: 'Complete DEX development solutions including:\n• Automated Market Maker (AMM) implementation\n• Liquidity pool management\n• Cross-chain trading capabilities\n• Advanced order types\n• Yield farming integration\n• Real-time price feeds',
+      title: 'Decentralized Exchange',
+      description: '• Automated Market Maker (AMM)\n• Liquidity pool management\n• Cross-chain trading capabilities\n• Advanced order types\n• Yield farming integration\n• Real-time price feeds',
       icon: 'BarChart'
     },
     {
       title: 'Token Development',
-      description: 'Professional token development services covering:\n• Custom token smart contracts\n• Multiple blockchain platform support\n• Tokenomics design and implementation\n• Security audit assistance\n• Exchange listing support\n• Token governance systems',
+      description: '• Custom token smart contracts\n• Multiple blockchain support\n• Tokenomics implementation\n• Security audit assistance\n• Exchange listing support\n• Token governance systems',
       icon: 'Globe'
     },
     {
       title: 'NFT Marketplace',
-      description: 'Comprehensive NFT marketplace solutions featuring:\n• Custom marketplace development\n• Minting functionality\n• Auction and bidding systems\n• Royalty management\n• Multiple payment gateway integration\n• Collection management tools',
+      description: '• Custom marketplace development\n• Minting functionality\n• Auction and bidding systems\n• Royalty management\n• Payment gateway integration\n• Collection management',
       icon: 'Users'
     },
     {
       title: 'Blockchain Security',
-      description: 'Advanced blockchain security services including:\n• Smart contract auditing\n• Penetration testing\n• Multi-layer security protocols\n• Real-time monitoring systems\n• Fraud detection mechanisms\n• Emergency response planning',
+      description: '• Smart contract auditing\n• Penetration testing\n• Multi-layer security protocols\n• Real-time monitoring\n• Fraud detection systems\n• Emergency response planning',
       icon: 'ShieldCheck'
     }
   ];
 
   return (
-   <WrapperContainer>
-       <div className="min-h-screen p-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-white py-10 flex justify-center mb-8">
-          <Heading>
-          <h1>
-            Types of Cryptocurrency
-          </h1>
-          </Heading>
-         
+    <WrapperContainer>
+    <div>
+      <Heading>
+        <div>
+        Our Services
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
-          ))}
-        </div>
+      </Heading>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service, index) => (
+          <GridCard
+            key={index}
+            {...service}
+            index={index}
+          />
+        ))}
       </div>
     </div>
-   </WrapperContainer>
-     
-  
-  
-   
+    </WrapperContainer>
   );
 };
 
-export default CoverServices;
+export default AnimatedGrid;

@@ -2,6 +2,8 @@ import React from 'react';
 import { FolderIcon, DownloadIcon } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJira } from '@fortawesome/free-brands-svg-icons';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
 
 const TestManagementSystem = () => {
     const features = [
@@ -74,12 +76,16 @@ const TestManagementSystem = () => {
     }
 
     return (
+ <WrapperContainer>
 
-        <div className="container mx-auto min-h-screen w-11/12 px-4 py-12">
+ 
+        <div >
             
-            <h1 className="text-5xl font-semibold text-center text-[#1A2E6F] mb-20">
-                Key features of Test Management System
-            </h1>
+          <Heading>
+            <div>
+            Key features of Test Management System
+            </div>
+          </Heading>
         
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {
@@ -90,6 +96,8 @@ const TestManagementSystem = () => {
             </div>
 
         </div>
+
+ </WrapperContainer>
     );
 };
 

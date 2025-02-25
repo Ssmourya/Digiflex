@@ -1,85 +1,84 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Shield, Clock, Users, Code, Scale, WrapText } from 'lucide-react';
-import Heading from '../../../../Layout/Heading';
-import Subheading from '../../../../Layout/Subheading';
-import WrapperContainer from '../../../../Layout/WrapperContainer';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Shield, Clock, Users, Code, Scale, Rocket, Lightbulb } from "lucide-react";
+import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const BenefitCard = ({ icon: Icon, title, description, index }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  
   return (
-    
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.2 }}
       className="bg-[#f3f4f6] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
-      <motion.div
-        animate={{ scale: isHovered ? 1.1 : 1 }}
-        transition={{ duration: 0.3 }}
-        className="flex items-center gap-4 mb-4"
-      >
+      <div className="flex items-center gap-4 mb-4">
         <div className="p-3 bg-blue-600 rounded-lg">
           <Icon className="w-6 h-6 text-white" />
         </div>
         <Subheading>{title}</Subheading>
-      </motion.div>
+      </div>
       <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
     </motion.div>
-    
-    
   );
 };
 
-const GameAceBenefits = () => {
+const DigiflexBenefits = () => {
   const benefits = [
     {
       icon: Code,
-      title: "Extensive Expertise",
-      description: "Our mobile game development team masters competitive software architecting expertise, allowing us to keep the quality level at its peak."
+      title: "Cutting-Edge Game Development",
+      description:
+        "At Digiflex, we utilize advanced technologies and frameworks to develop engaging and immersive mobile games tailored for global audiences.",
     },
     {
       icon: Users,
-      title: "Client-oriented Approach",
-      description: "With 19 years in mobile game development, we've harvested experience to utilize world-class solutions tailored to each client's project."
+      title: "Player-Centric Approach",
+      description:
+        "We prioritize user experience by creating games that captivate, entertain, and provide seamless interactions across multiple platforms.",
     },
     {
       icon: Clock,
-      title: "On-time Delivery",
-      description: "Game-Ace heavily bets on partnership and communication, delivering projects on time with careful attention to established deadlines."
+      title: "Timely Project Delivery",
+      description:
+        "Our streamlined development process ensures your game is completed on schedule, without compromising on quality or innovation.",
     },
     {
       icon: Scale,
-      title: "Scalable Solutions",
-      description: "We strive to become an all-in-one solution for our clients, covering any needs while ensuring stable game performance."
+      title: "Scalable & Future-Ready Solutions",
+      description:
+        "We build mobile games that are scalable and adaptable, allowing your game to grow with expanding audiences and new market trends.",
     },
     {
       icon: Shield,
-      title: "Complete Data Security",
-      description: "Game-Ace develops projects according to ISO/IEC 27001:2013 security standards, keeping your business data protected and encrypted."
-    }
+      title: "Robust Security & Data Protection",
+      description:
+        "Digiflex follows industry-best security standards to protect your intellectual property and game data, ensuring secure and reliable development.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovative Game Concepts",
+      description:
+        "We push the boundaries of creativity to deliver unique and engaging gameplay experiences that stand out in the competitive gaming industry.",
+    },
   ];
 
   return (
-  <WrapperContainer>
-        
+    <WrapperContainer>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className=" mx-auto"
+        className="mx-auto"
       >
         <div className="text-center mb-12">
-          <Heading> Benefits of Creating Mobile Games with Game-Ace</Heading>
+          <Heading>Why Choose Digiflex for Mobile Game Development?</Heading>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Game-Ace develops cross-platform mobile games that ignite inspiration, draw attention, and engage large audiences.
+            Digiflex specializes in creating high-performance, cross-platform mobile games that engage, entertain, and drive success.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <BenefitCard key={index} {...benefit} index={index} />
           ))}
@@ -92,13 +91,12 @@ const GameAceBenefits = () => {
           className="text-center mt-12"
         >
           <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
-            GET STARTED
+            Get Started with Digiflex
           </button>
         </motion.div>
       </motion.div>
-      </WrapperContainer>
-
+    </WrapperContainer>
   );
 };
 
-export default GameAceBenefits;
+export default DigiflexBenefits;

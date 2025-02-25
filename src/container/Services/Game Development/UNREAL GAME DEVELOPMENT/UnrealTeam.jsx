@@ -4,78 +4,67 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Paragraph from '../../../../Layout/Paragraph';
 import Subheading from '../../../../Layout/Subheading';
 
-
 const TeamMemberCard = ({ icon, title, description }) => (
-  <div className="bg-[#f3f4f6] rounded-lg p-8 transition-all duration-300 hover:shadow-xl group">
-    <div className="mb-6 w-24 h-24 mx-auto transform transition-transform duration-300 group-hover:scale-110">
+  <div className="bg-[#f3f4f6] rounded-lg p-6 transition-all duration-300 hover:shadow-xl group text-center border border-gray-300 shadow-md hover:shadow-2xl hover:border-white hover:bg-blue-500 transform hover:-translate-y-1">
+    <div className="mb-4 w-12 h-12 mx-auto text-[#f59e0b] group-hover:text-white group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>
-    <Subheading>{title}</Subheading>
-    <Paragraph>{description}</Paragraph>
-   </div>
+    <h3 className="text-lg sm:text-xl font-semibold text-[#1E3A8A] group-hover:text-white transition-colors duration-300">
+      {title}
+    </h3>
+    <p className="text-gray-600 mt-2 text-sm sm:text-base group-hover:text-white transition-colors duration-300">
+      {description}
+    </p>
+  </div>
 );
 
 const UnrealTeam = () => {
-  const gradient = "url(#grad1)";
-
   const teamMembers = [
     {
-      icon: (
-        <svg viewBox="0 0 24 24" fill={gradient} className="w-24 h-24">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style={{ stopColor: '#4f46e5', stopOpacity: 1 }} />
-              <stop offset="100%" style={{ stopColor: '#ec4899', stopOpacity: 1 }} />
-            </linearGradient>
-          </defs>
-          <path d="M12 2L2 7l10 5 10-5-10-5zm0 6.3L4.4 7 12 3.7 19.6 7 12 8.3zm0 2.7l-7.6-3.3L12 10l7.6-2.3L12 11z" />
-        </svg>
-      ),
+      icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><polygon points="12 2 2 7 12 12 22 7 12 2" /><polyline points="2 17 12 22 22 17" /><polyline points="2 12 12 17 22 12" /></svg>,
       title: "Game Designer",
       description: "Defines the game's core mechanics, world-building, and player experience. Works closely with narrative designers to develop the plot and gameplay."
     },
     {
-      icon: (
-        <svg viewBox="0 0 24 24" fill={gradient} className="w-24 h-24">
-          <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z" />
-        </svg>
-      ),
+      icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><path d="M12 2l7 20-7-5-7 5z" /></svg>,
       title: "Unreal Tech Lead",
       description: "Expert in Unreal Engine, responsible for game architecture, coding, and mentoring developers. Ensures high-quality code and optimal performance."
     },
     {
-      icon: (
-        <svg viewBox="0 0 24 24" fill={gradient} className="w-24 h-24">
-          <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
-        </svg>
-      ),
+      icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>,
       title: "QA Specialist",
       description: "Ensures game quality by identifying design inconsistencies, bugs, and errors. Works closely with developers to enhance gameplay and user experience."
+    },
+    {
+      icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><path d="M4 4h16v16H4z" /></svg>,
+      title: "3D Artist",
+      description: "Creates high-quality 3D assets, characters, and environments, ensuring the game world is visually stunning and immersive."
+    },
+    {
+      icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><path d="M12 2L19 21H5L12 2z" /></svg>,
+      title: "Animator",
+      description: "Brings characters and objects to life with fluid and realistic animations, ensuring smooth and engaging gameplay."
+    },
+    {
+      icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l2 2" /></svg>,
+      title: "Audio Engineer",
+      description: "Designs and implements immersive sound effects and music to enhance the player's emotional and auditory experience."
     }
   ];
 
   return (
     <WrapperContainer>
-        {/* Header Section */}
-        <div className="text-center mb-16">
-
-          <Heading>Unreal Engine Development Team</Heading>
-          <Subheading>iLogos' expert game dev team thrives on challenges. With over 17 years in the industry, we handle projects of any complexity. Our highly skilled members, committed to continuous learning and professional growth, are ready for any task.
-          </Subheading>
-         
-        </div>
-
-        {/* Team Members Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <TeamMemberCard
-              key={index}
-              icon={member.icon}
-              title={member.title}
-              description={member.description}
-            />
-          ))}
-        </div>
+      <div className="text-center mb-16">
+        <Heading>Unreal Engine Development Team</Heading>
+        <Subheading>
+          iLogos' expert game dev team thrives on challenges. With over 17 years in the industry, we handle projects of any complexity. Our highly skilled members, committed to continuous learning and professional growth, are ready for any task.
+        </Subheading>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
+        {teamMembers.map((member, index) => (
+          <TeamMemberCard key={index} icon={member.icon} title={member.title} description={member.description} />
+        ))}
+      </div>
     </WrapperContainer>
   );
 };

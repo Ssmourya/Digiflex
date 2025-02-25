@@ -2,6 +2,8 @@ import react from "react";
 import { motion } from 'framer-motion';
 // import security from "../images/security.jpg"
 import left_logo from "../../../../assets/left-logo.jpeg"
+import { Heading } from "lucide-react";
+import WrapperContainer from "../../../../Layout/WrapperContainer"
 
 const Overview = () => {
     
@@ -40,7 +42,7 @@ const Overview = () => {
                 <div className="relative mt-3">
 
                     {/* Line */}
-                    <div className="absolute left-[0.3rem] top-0 h-full w-[2px] bg-black"></div>
+                    <div className="absolute left-[0.3rem]  h-full w-[2px] bg-black"></div>
 
                     <div className="flex flex-col space-y-5">
                         {/* Diamonds */}
@@ -76,14 +78,14 @@ const Overview = () => {
                 transition={{ duration: 1 }}
                 className="px-10 w-[65%]"
             >
-                <motion.h1
+                <motion.Heading
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2 }}
                     className="text-4xl md:text-4xl font-semibold text-[#1A2E6F] leading-tight mb-8"
                 >
-                   {title}   
-                </motion.h1>
+                  <Heading> {title}   </Heading>
+                </motion.Heading>
 
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -102,7 +104,10 @@ const Overview = () => {
 
     return (
 
-        <div className="relative bg-white min-h-screen w-11/12 mx-auto px-4 py-12 flex flex-col items-center justify-center">
+     <WrapperContainer>
+
+    
+        <div className="relative bg-white  w-11/12 mx-auto  flex flex-col items-center justify-center">
 
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -111,14 +116,15 @@ const Overview = () => {
                 className="flex flex-col items-center"
             >
                 {/* Centered Overview */}
-                <motion.h1
+                
+                <motion.Heading
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2 }}
                     className="text-4xl md:text-5xl font-semibold leading-tight text-center text-[#1A2E6F]"
                 >
                     Overview
-                </motion.h1>
+                </motion.Heading>
 
                 {/* Underline */}
                 <div className="w-40 h-1 bg-[#64a2e2] mt-2"></div>
@@ -160,6 +166,7 @@ const Overview = () => {
             }
         </div>
 
+    </WrapperContainer>   
     )
 }
 

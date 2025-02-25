@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, Zap, Layers } from 'lucide-react';
+import { Code, ShieldCheck, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
@@ -8,24 +8,24 @@ const WebApplication2 = () => {
   const services = [
     {
       id: 1,
-      icon: <Smartphone className="w-10 h-10 text-[#172554]" />,
-      title: "Cross-Platform All the Way",
+      icon: <Code className="w-10 h-10 text-[#172554]" />,
+      title: "Tailored Web Solutions",
       description:
-        "We create digital solutions that handle multiple simultaneous interactions across platforms while ensuring blazing-fast service delivery. Our solutions offer consistent and engaging experiences.",
+        "We develop custom web applications that are designed to meet your unique business needs, ensuring seamless performance, scalability, and security.",
     },
     {
       id: 2,
-      icon: <Zap className="w-10 h-10 text-[#172554]" />,
-      title: "Lightning-Fast Performance",
+      icon: <ShieldCheck className="w-10 h-10 text-[#172554]" />,
+      title: "Secure & Scalable Architecture",
       description:
-        "Speed is critical for mobile-first audience success. We implement advanced techniques including code minification, image compression, and efficient caching strategies to optimize loading times.",
+        "Security and scalability are our top priorities. Our web applications are built with advanced security measures and scalable architecture to support business growth.",
     },
     {
       id: 3,
-      icon: <Layers className="w-10 h-10 text-[#172554]" />,
-      title: "Expert UI/UX Designers",
+      icon: <Globe className="w-10 h-10 text-[#172554]" />,
+      title: "Seamless User Experience",
       description:
-        "Our cutting-edge development team includes expert designers and engineers who craft interfaces focused on creating engaging user experiences and intuitive interactions.",
+        "Our web applications focus on providing an intuitive user experience, fast performance, and responsive design to engage users across all devices.",
     },
   ];
 
@@ -39,12 +39,12 @@ const WebApplication2 = () => {
       >
         {/* Title Section */}
         <Heading>
-          Empowering Your Business <br />
-          with Mobile-First Excellence
+          Custom Web Application Development <br />
+          for Business Excellence
         </Heading>
 
         <p className="mb-12 text-gray-700 max-w-3xl text-center md:text-left mx-auto md:mx-0">
-          Recognizing the need of the era, we have developed comprehensive expertise that helps you tap into this growing market by enabling seamless, integrated experiences across devices.
+          We specialize in creating high-performance, secure, and scalable web applications tailored to your business goals. Our expert team leverages modern technologies to drive innovation and efficiency.
         </p>
 
         {/* Service Cards */}
@@ -65,13 +65,18 @@ const WebApplication2 = () => {
           ))}
         </div>
 
-        {/* Extra Content for Laptops & Desktops */}
-        <div className="hidden lg:block mt-12">
-          <Subheading>Why Choose Our Mobile-First Approach?</Subheading>
-          <p className="text-gray-700 mt-3 max-w-4xl">
-            Our solutions prioritize <strong>speed, security, and seamless user experience</strong>, ensuring your business thrives in the digital-first world. Whether it's <strong>progressive web apps, cross-platform applications, or native solutions</strong>, we build applications that scale with your needs.
-          </p>
+        {/* Call-to-Action Buttons */}
+        <div className="flex justify-center mt-10 space-x-4">
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
+            Get Started
+          </button>
+          <button className="bg-transparent border border-blue-600 text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-transform transform hover:scale-105 duration-300">
+            Learn More
+          </button>
         </div>
+
+        {/* Extra Content for Laptops & Desktops */}
+       
       </motion.div>
     </div>
   );

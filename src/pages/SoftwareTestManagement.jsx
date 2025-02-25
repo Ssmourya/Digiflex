@@ -15,7 +15,7 @@ const SoftwareTestManagement = () => {
   return (
     <div>
         <Hero/>
-		<WrapperContainer>
+		
 		<Overview/>
 		<ScalableAutomation/>
 		<TestManagementSystem/>
@@ -23,7 +23,6 @@ const SoftwareTestManagement = () => {
 		<BodyData/>
 		<AnalystRecognition/>
 		<AccelerateBusiness/>
-		</WrapperContainer>
     </div>
   )
 }

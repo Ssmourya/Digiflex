@@ -110,14 +110,10 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
   console.log(match);
 }
 
-   
-   
-  
-
   return (
-    <div className=" w-full">
+    <div className=" w-full ">
       <Header />
-
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
@@ -334,9 +330,9 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
       <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
       </Routes>
 
-      {location.pathname !== "/" && <ReviewsSection />}
-      {location.pathname !== "/" && <Contact />}
-      {location.pathname !== "/" &&  <Navigation />}
+   <ReviewsSection/>
+       <Contact/>
+      <Navigation />
       
      
       <Footer />

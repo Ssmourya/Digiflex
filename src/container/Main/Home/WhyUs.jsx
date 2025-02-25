@@ -1,97 +1,65 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import WrapperContainer from '../../../Layout/WrapperContainer';
 
-const PaidMedia = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 30 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1],
-      },
-    },
-  };
-
+function App() {
   return (
-    <div className="flex items-center justify-center bg-black py-12 w-full">
-      {/* Main Container with Animated Border */}
-      <div className="relative w-full max-w-[1400px] rounded-[2.5rem] p-0.5 overflow-hidden bg-gradient-to-r from-black via-gray-900 to-black shadow-lg">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-blue-400/20 opacity-30 animate-pulse" />
-
-        {/* Inner Container */}
-        <div className="relative bg-black rounded-[2.4rem] p-8 sm:p-12 lg:p-10 overflow-hidden text-white">
-          {/* Background Gradient Elements */}
-          <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-600 rounded-full filter blur-3xl opacity-20 -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-20 translate-x-1/2 translate-y-1/2" />
-
-          {/* Content */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.2 }}
-            className="relative flex flex-col md:flex-row gap-8 md:gap-12"
-          >
-            {/* Left Content */}
-            <motion.div variants={item} className="flex-1 flex flex-col">
-              <h2 className="text-5xl pb-5 font-bold text-blue-600 drop-shadow-lg">
-                Why Us
-              </h2>
-
-              <p className="text-gray-300 mt-6 text-lg">
-                At Digiflex, we empower businesses with cutting-edge IT solutions,
-                cloud services, and strategic consulting to drive digital
-                innovation and operational efficiency.
-              </p>
-
-              <ul className="mt-6 space-y-4">
-                {["Innovation-Driven Solution", "Customer-Centric Approach", "Industry Expertise", "Scalability & Growth"].map((text, index) => (
-                  <motion.li
-                    key={index}
-                    variants={item}
-                    className="flex items-center space-x-3 group"
-                  >
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white group-hover:bg-blue-400 transition-colors duration-300">
-                      ✔
-                    </span>
-                    <span className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300">
-                      {text}
-                    </span>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* Right - Video Section */}
-            <motion.div variants={item} className="flex-1">
-              <div className="relative w-full aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg border-2 border-blue-600">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-blue-400/20" />
-                <video
-                  className="w-full h-full object-cover rounded-xl"
-                  src="https://videos.pexels.com/video-files/3205618/3205618-sd_640_360_25fps.mp4"
-                  autoPlay
-                  loop
-                  muted
-                />
+    <div className=" bg-gradient-to-br from-[#000B1F] to-[#001F4E] relative overflow-hidden">
+      {/* Network grid background effect */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2044&q=80')] opacity-10 bg-cover bg-center" />
+      <WrapperContainer>
+      <div className="container mx-auto relative">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          {/* Content Section */}
+          <div className="lg:w-1/2 space-y-8">
+            <div className="inline-block">
+              <span className="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium">
+                WHY CHOOSE US
+              </span>
+            </div>
+            
+            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Transforming Business Through Advanced AI Solutions
+            </h1>
+            
+            <p className="text-gray-300 text-lg">
+              Leverage the power of artificial intelligence to streamline operations, enhance decision-making, and drive innovation across your organization with our cutting-edge solutions.
+            </p>
+            
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-gray-200">
+                <CheckCircle2 className="text-blue-400 h-5 w-5" />
+                <span>Custom AI Solutions for Enterprise Growth</span>
               </div>
-            </motion.div>
-          </motion.div>
+              <div className="flex items-center gap-3 text-gray-200">
+                <CheckCircle2 className="text-blue-400 h-5 w-5" />
+                <span>Advanced Machine Learning Integration</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-200">
+                <CheckCircle2 className="text-blue-400 h-5 w-5" />
+                <span>24/7 Intelligent Process Automation</span>
+              </div>
+            </div>
+            
+            <button className="bg-gradient-to-r from-blue-500 to-blue-500 text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/25 transition-all">
+              Get Started
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
+          
+          {/* Image Section */}
+          <div className="lg:w-100">
+            <img 
+              src="https://html.designingmedia.com/artelligence/assets/images/choose-image.png"
+              alt="AI Technology Visualization"
+              className="rounded-4xl "
+            />
+          </div>
         </div>
       </div>
+      </WrapperContainer>
     </div>
   );
-};
+}
 
-export default PaidMedia;
+export default App;

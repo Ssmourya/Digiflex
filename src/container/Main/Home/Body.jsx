@@ -1,54 +1,60 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import WhyUsSection from "./WhyUs";
 import { BentoGridItem } from "../../../components/ui/Bento-grid";
-import { WhatWeOffer } from "./WhatWeOffer";
-import Timeline from "./Timeline";
-import Introduction from "./Intro";
-
-import CaseStudies from "./CaseStudy";
-
+import  WhatWeOffer  from './WhatWeOffer';
+import Timeline from './Timeline';
+import Introduction from './Intro';
+import Expertie from './Experties';
+import CaseStudies from './CaseStudy';
+import IndustriesCarousel from "./Industries";
 import OurWork from "./OurWork";
 import TeamSection from "./OurTeam";
 import Recognitions from "./Recognition";
-import StandOut from "./StandOut";
-import ScrollSections from "./ScrollSections";
-import Contact from './Contact'
-import Navigation from "./Navigation";
+import Technologies from "./Technologies";
+import AwardsSection from "./Awards";
 
 const MotionBentoGridItem = motion(BentoGridItem);
 
 const BentoGridFeatures = () => {
   return (
-    <div className="relative z-10">
-      
-      <Introduction/>
+    
+      <div className="relative z-10 bg-white">
+        {/* Introduction */}
+        <Introduction />
 
-      
-      <ScrollSections />
-     
-      <Timeline />
+        {/* Why us */}
+        <WhyUsSection />
 
-     
-      <CaseStudies />
+        {/* Our Expertise */}
+        {/* <Expertie /> */}
 
-      <StandOut />
+        {/* Technologies */}
+        <Technologies/>
 
-     
-      <WhatWeOffer/>
+        {/* Industries */}
+        <IndustriesCarousel />
 
-      {/* Our Work */}
-      <OurWork />
+        {/* Timeline */}
+        <Timeline />
 
-      {/* Our Team */}
-      <TeamSection />
+        {/* Case Study */}
+        <CaseStudies />
 
-      {/* Recognition */}
-      <Recognitions />
+        {/* What we offer */}
+        <WhatWeOffer />
 
-      <Contact/>
-      <Navigation/>
-    </div>
+        {/* Our Work */}
+        <OurWork />
+        
+        <AwardsSection/>
+
+        {/* Our Team */}
+        <TeamSection />
+        {/* Recognition */}
+        <Recognitions />
+
+      </div>
   );
 };
 

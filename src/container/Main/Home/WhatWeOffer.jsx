@@ -1,344 +1,121 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import WrapperContainer from "../../../Layout/WrapperContainer";
+import React from 'react';
+import { Lightbulb, Palette, CheckCircle, Code } from 'lucide-react';
+import WrapperContainer from '../../../Layout/WrapperContainer';
 
-const ServiceCard = ({ content, thumbnail, className, index }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  
+function App() {
   return (
-    <motion.div 
-      className={`relative overflow-hidden rounded-3xl transition-all duration-700 ${className}`}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.1 }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ scale: 1.03, boxShadow: "0 25px 50px -12px rgba(0, 0, 255, 0.25)" }}
-      style={{ minHeight: "380px" }}
-    >
-      {thumbnail && (
-        <motion.div 
-          className="absolute inset-0 bg-cover bg-center z-0"
-          animate={{ 
-            scale: isHovered ? 1.1 : 1,
-            filter: isHovered ? "brightness(0.5)" : "brightness(0.4)"
-          }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          style={{ backgroundImage: `url(${thumbnail})` }} 
-        />
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-5"></div>
-      <motion.div 
-        className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center"
-        animate={{ y: isHovered ? -10 : 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        {content}
-        <motion.div 
-          className="mt-8 overflow-hidden h-0 opacity-0"
-          animate={{ height: isHovered ? "auto" : 0, opacity: isHovered ? 1 : 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="flex items-center justify-center text-blue-500 font-medium">
-            <span>Learn more</span>
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
+    <div className="min-h-screen">
+      <WrapperContainer>
+      <div className="container mx-auto max-w-7xl">
+        {/* Header Section */}
+        <div className="text-center">
+        <div className="inline-flex items-center justify-center px-4 py-2 bg-blue-50 rounded-full mb-6">
+            <Lightbulb className="w-5 h-5 text-blue-600 mr-2" />
+            <span className="text-blue-600 font-semibold text-sm">WHAT WE OFFER</span>
           </div>
-        </motion.div>
-      </motion.div>
-      <motion.div 
-        className="absolute top-0 left-0 right-0 mx-auto h-1 bg-blue-600"
-        style={{ width: "30%" }}
-        animate={{ 
-          width: isHovered ? "50%" : "30%",
-          opacity: isHovered ? 1 : 0.7
-        }}
-        transition={{ duration: 0.6 }}
-      />
-    </motion.div>
-  );
-};
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-blue-700">
+            Comprehensive Digital Solutions for Your Business
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            From ideation to execution, we provide expert consulting, design, development, and quality assurance to bring your vision to life.
+          </p>
+        </div>
 
-const ServiceOne = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-5xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      Consulting
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Expert guidance to align your business goals with the right technology solutions.
-    </p>
-  </div>
-);
-
-const ServiceTwo = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-4xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      Custom App Development
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Tailored applications designed to meet your unique business needs.
-    </p>
-  </div>
-);
-
-const ServiceThree = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-4xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      Testing and QA
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Comprehensive testing services to ensure your applications are bug-free and performant.
-    </p>
-  </div>
-);
-
-const ServiceFour = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-4xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      UI & UX
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Beautiful and intuitive designs that enhance user experience and engagement.
-    </p>
-  </div>
-);
-
-const ServiceFive = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-4xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      Cloud Solutions
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Scalable and secure cloud infrastructure to power your digital transformation.
-    </p>
-  </div>
-);
-
-const ServiceSix = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-4xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      Data Analytics
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Transform your raw data into actionable insights for informed decision-making.
-    </p>
-  </div>
-);
-
-const ServiceSeven = () => (
-  <div className="flex flex-col items-center">
-    <motion.p 
-      className="font-bold md:text-4xl text-2xl text-white mb-4 text-center"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.2 }}
-    >
-      Cybersecurity
-    </motion.p>
-    <p className="font-normal text-base max-w-lg text-gray-300 text-center">
-      Protect your digital assets with our comprehensive security solutions.
-    </p>
-  </div>
-);
-
-const ViewAllCard = () => (
-  <motion.div 
-    onClick={() => window.location.href = '/services'}
-    className="bg-gradient-to-br from-blue-900 to-blue-700 h-full w-full rounded-3xl flex flex-col items-center justify-center cursor-pointer p-8 relative overflow-hidden group"
-    whileHover={{ 
-      scale: 1.03, 
-      boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.5)" 
-    }}
-  >
-    <motion.div 
-      className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-600 to-blue-800 opacity-0"
-      whileHover={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
+        {/* Main Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side - Image Collage */}
+<div className="relative order-2 lg:order-1 h-[600px]">
+  {/* Main Large Image */}
+  <div className="absolute left-0 top-0 w-[70%] h-[500px] bg-white rounded-3xl">
+    <img 
+      src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=800"
+      alt="AI Technology"
+      className="w-full h-full object-cover rounded-2xl"
     />
-    
-    <motion.div 
-      className="absolute top-0 left-0 w-full h-full"
-      whileHover={{ background: "radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.3) 70%)" }}
-    />
-    
-    <motion.div className="relative z-10 flex flex-col items-center">
-      <motion.h3 
-        className="text-2xl md:text-3xl font-bold text-white mb-4 text-center"
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-      >
-        View All Services
-      </motion.h3>
-      
-      <p className="text-sm text-blue-100 text-center opacity-80 mb-6">
-        Discover our complete range of solutions
-      </p>
-      
-      <motion.div 
-        className="w-14 h-14 rounded-full border-2 border-white/30 flex items-center justify-center"
-        whileHover={{ borderColor: "rgba(255,255,255,0.8)" }}
-        transition={{ duration: 0.3 }}
-      >
-        <motion.svg 
-          className="w-6 h-6 text-white" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-          initial={{ x: 0 }}
-          whileHover={{ x: 3 }}
-          transition={{ repeat: Infinity, repeatType: "reverse", duration: 0.8 }}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </motion.svg>
-      </motion.div>
-    </motion.div>
-    
-    <motion.div 
-      className="absolute bottom-0 right-0 w-32 h-32 bg-blue-400 rounded-full filter blur-3xl opacity-20"
-      animate={{ 
-        scale: [1, 1.2, 1],
-        opacity: [0.2, 0.3, 0.2],
-      }}
-      transition={{ 
-        duration: 4,
-        repeat: Infinity,
-        repeatType: "reverse"
-      }}
-    />
-  </motion.div>
-);
+  </div>
 
-const cards = [
-  {
-    id: 1,
-    content: <ServiceOne />,
-    className: "md:col-span-2 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 2,
-    content: <ServiceTwo />,
-    className: "md:col-span-2 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 3,
-    content: <ServiceThree />,
-    className: "md:col-span-2 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 4,
-    content: <ServiceFour />,
-    className: "md:col-span-2 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 5,
-    content: <ServiceFive />,
-    className: "md:col-span-2 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 6,
-    content: <ServiceSix />,
-    className: "md:col-span-2 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 7,
-    content: <ServiceSeven />,
-    className: "md:col-span-3 md:row-span-1",
-    thumbnail: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 8,
-    content: <ViewAllCard />,
-    className: "md:col-span-1 md:row-span-1",
-    isViewAll: true
-  }
-];
+  {/* Top Right Image */}
+  <div className="absolute -right-8 top-[5%] w-[35%] h-[300px] border-8 border-white">
+    <img 
+      src="https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&q=80&w=400"
+      alt="Data Analysis"
+      className="w-full h-full object-cover rounded-2xl"
+    />
+  </div>
 
-export function WhatWeOffer() {
-  return (
-    <div className="bg-black  py-24 overflow-hidden">
-    <WrapperContainer>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Background glow effects */}
-        <div className="absolute top-40 left-20 w-64 h-64 bg-blue-900 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-blue-700 rounded-full filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: "2s" }}></div>
-        
-        <div className="h-full w-full">
-          <motion.div 
-            className="flex flex-col items-center pb-16"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <motion.div 
-              className="w-24 h-1 bg-blue-600 rounded-full mb-8"
-              initial={{ width: 0 }}
-              animate={{ width: "6rem" }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            />
-            
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
-              What We <motion.span 
-                className="text-blue-600 inline-block"
-                animate={{ 
-                  color: ["#2563eb", "#3b82f6", "#60a5fa", "#3b82f6", "#2563eb"],
-                }}
-                transition={{ duration: 6, repeat: Infinity }}
-              >
-                Offer
-              </motion.span>
-            </h2>
-            
-            <motion.p 
-              className="text-gray-400 text-center max-w-2xl text-lg"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Transforming ideas into digital reality with our comprehensive suite of services
-            </motion.p>
-          </motion.div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {cards.map((card, index) => (
-              <div key={card.id} className={card.className}>
-                <ServiceCard 
-                  content={card.content}
-                  thumbnail={card.thumbnail}
-                  className={card.isViewAll ? 'h-full' : ''}
-                  index={index}
-                />
-              </div>
-            ))}
+  {/* Bottom Right Image */}
+  <div className="absolute -right-10 bottom-0 w-[60%] h-[300px] border-8 border-white rounded-3xl">
+    <img 
+      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400"
+      alt="Machine Learning"
+      className="w-full h-full object-cover rounded-2xl"
+    />
+  </div>
+  
+  {/* Success Rate Badge */}
+  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+    <div className="bg-blue-900 text-white rounded-full h-40 w-40 flex flex-col items-center justify-center shadow-2xl border-[6px] border-white">
+      <span className="text-5xl font-bold">80%</span>
+      <span className="text-sm font-medium mt-1">Success Project</span>
+    </div>
+  </div>
+</div>
+
+          {/* Right Side - Services List */}
+          <div className="order-1 lg:order-2">
+            <div className="space-y-10">
+          {/* Consulting */}
+          <div className="flex items-start gap-6">
+            <div className="bg-blue-50 p-4 rounded-2xl">
+              <Lightbulb className="w-7 h-7 text-blue-600" />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Consulting</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Strategic guidance and innovative solutions to help businesses harness technology and drive growth effectively.
+              </p>
+            </div>
+          </div>
+
+          {/* UI & UX Design */}
+          <div className="flex items-start gap-6">
+            <div className="bg-blue-50 p-4 rounded-2xl">
+              <Palette className="w-7 h-7 text-blue-600" />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">UI & UX Design</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Crafting seamless, engaging, and intuitive digital experiences that enhance user interaction and satisfaction.
+              </p>
+            </div>
+          </div>
+
+          {/* Testing & QA */}
+          <div className="flex items-start gap-6">
+            <div className="bg-blue-50 p-4 rounded-2xl">
+              <CheckCircle className="w-7 h-7 text-blue-600" />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Testing & QA</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Ensuring high-quality, bug-free, and efficient applications through rigorous testing and quality assurance processes.
+              </p>
+            </div>
+          </div>
+
+          {/* Development */}
+          <div className="flex items-start gap-6">
+            <div className="bg-blue-50 p-4 rounded-2xl">
+              <Code className="w-7 h-7 text-blue-600" />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Development</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Full-cycle development services, from frontend and backend to cloud and AI integrations, ensuring scalable and robust solutions.
+              </p>
+            </div>
+          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -346,3 +123,5 @@ export function WhatWeOffer() {
     </div>
   );
 }
+
+export default App;

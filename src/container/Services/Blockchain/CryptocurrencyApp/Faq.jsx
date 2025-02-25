@@ -34,7 +34,7 @@ const Faq = () => {
 
   return (
   <WrapperContainer>
-<div className="max-w-4xl mx-auto  to-gray-200 min-h-screen">
+<div className="max-w-4xl mx-auto  to-gray-200 p-10">
     <Heading>
       <h1>Frequently Asked Questions</h1>
     </Heading>

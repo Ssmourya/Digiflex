@@ -62,7 +62,7 @@ const FeatureCard = ({ title, description, icon }) => {
 const WhyChoose = () => {
   return (
     <WrapperContainer>
-      <section className="py-12">
+      <section>
         <div className="max-w-6xl mx-auto text-center">
           <Heading>
             <h2>Why Choose Quest Digiflex</h2>

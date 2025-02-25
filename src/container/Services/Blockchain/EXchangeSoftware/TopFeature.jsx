@@ -77,20 +77,16 @@ const TopFeature = () => {
   ];
 
   return (
-    <WrapperContainer>
-
- 
-    <div className="w-full  rounded-xl">
-      <div className="text-center p-6 ">
+<>
+<WrapperContainer>
+      <div className="text-center">
         <Heading>
-        <h1>
+        <div>
           Top Features of Exchange Software
-        </h1>
+        </div>
         </Heading>
-       
       </div>
-      
-      <div className="p-4 sm:p-6">
+      <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <div
@@ -110,8 +106,8 @@ const TopFeature = () => {
           ))}
         </div>
       </div>
-    </div>
-    </WrapperContainer>
+      </WrapperContainer>
+      </>
   );
 };
 

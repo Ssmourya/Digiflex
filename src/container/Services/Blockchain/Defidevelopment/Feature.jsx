@@ -8,7 +8,7 @@ import Paragraph from "../../../../Layout/Paragraph";
 const FeaturesSection = () => {
   return (
     <WrapperContainer>
-      <div className="py-12">
+      <div >
         <Heading className="text-center">
           Our Top Features
         </Heading>

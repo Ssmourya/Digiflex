@@ -44,7 +44,7 @@ const Faq = () => {
             Frequently Asked Questions
           </div>
         </Heading>
-        <div className="space-y-6">
+        <div className="space-y-6 p-10">
           {faqData.map((faq, index) => {
             const isOpen = openIndex === index;
             return (

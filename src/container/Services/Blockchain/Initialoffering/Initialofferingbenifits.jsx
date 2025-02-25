@@ -64,7 +64,7 @@ const IcoDevelopmentProcess = () => {
         </div>
 
         {/* Alternating Timeline */}
-        <div className="relative wrap overflow-hidden py-10">
+        <div className="relative wrap overflow-hidden">
           {/* Vertical line in the center */}
           <div />
           

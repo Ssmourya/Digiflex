@@ -40,7 +40,8 @@ const Faq = () => {
     margin: '0 auto',
     // padding: '60px 20px',
     fontFamily: 'Arial, sans-serif',
-    minHeight: '100vh',
+    // minHeight: '100vh',/
+    padding:'40px'
   };
 
   const headerStyle = {

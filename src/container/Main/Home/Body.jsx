@@ -1,53 +1,54 @@
 import React from "react";
 import { motion } from "framer-motion";
-import WhyUsSection from "./WhyUs";
+
 import { BentoGridItem } from "../../../components/ui/Bento-grid";
-import { WhatWeOffer } from './WhatWeOffer';
-import Timeline from './Timeline';
-import Introduction from './Intro';
-import Expertie from './Experties';
-import CaseStudies from './CaseStudy';
-import IndustriesCarousel from "./Industries";
+import { WhatWeOffer } from "./WhatWeOffer";
+import Timeline from "./Timeline";
+import Introduction from "./Intro";
+
+import CaseStudies from "./CaseStudy";
+
 import OurWork from "./OurWork";
 import TeamSection from "./OurTeam";
 import Recognitions from "./Recognition";
+import StandOut from "./StandOut";
+import ScrollSections from "./ScrollSections";
+import Contact from './Contact'
+import Navigation from "./Navigation";
 
 const MotionBentoGridItem = motion(BentoGridItem);
 
 const BentoGridFeatures = () => {
   return (
-    
-      <div className="relative z-10">
-        {/* Introduction */}
-        <Introduction />
+    <div className="relative z-10">
+      
+      <Introduction/>
 
-        {/* Why us */}
-        <WhyUsSection />
+      
+      <ScrollSections />
+     
+      <Timeline />
 
-        {/* Our Expertise */}
-        <Expertie />
+     
+      <CaseStudies />
 
-        {/* Industries */}
-        <IndustriesCarousel />
+      <StandOut />
 
-        {/* Timeline */}
-        <Timeline />
+     
+      <WhatWeOffer/>
 
-        {/* Case Study */}
-        <CaseStudies />
+      {/* Our Work */}
+      <OurWork />
 
-        {/* What we offer */}
-        <WhatWeOffer />
+      {/* Our Team */}
+      <TeamSection />
 
-        {/* Our Work */}
-        <OurWork />
+      {/* Recognition */}
+      <Recognitions />
 
-        {/* Our Team */}
-        <TeamSection />
-
-        {/* Recognition */}
-        <Recognitions />
-      </div>
+      <Contact/>
+      <Navigation/>
+    </div>
   );
 };
 

@@ -11,18 +11,19 @@ const data = [
     img: IntercloudCloud,
     title: "Cloud-to-Cloud Migration",
     description:
-      "Moving applications, workloads, and data between two cloud platforms (e.g., AWS to Azure).",
+      "Digiflex ensures smooth migration of applications, workloads, and data between cloud platforms like AWS and Azure, optimizing performance and cost-efficiency.",
   },
   {
     img: Intercloudimg,
     title: "Hybrid Cloud Migration",
-    description: "Moving data between private clouds and public clouds.",
+    description: 
+      "With Digiflex, businesses can seamlessly move data between private and public clouds, ensuring security, scalability, and operational efficiency.",
   },
   {
     img: IntercloudHybrid,
     title: "Multi-Cloud Deployment",
     description:
-      "Using multiple cloud providers simultaneously to distribute workloads.",
+      "Digiflex enables businesses to leverage multiple cloud providers simultaneously, distributing workloads for enhanced reliability and flexibility.",
   },
 ];
 
@@ -32,11 +33,11 @@ function IntercloudType() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1>Intercloud Migration Type</h1>
+        <h1>Intercloud Migration Services by Digiflex</h1>
       </Heading>
       <Paragraph>
         <p className="text-center text-gray-600 max-w-2xl mx-auto">
-          Explore different types of intercloud migrations to optimize your cloud strategy.
+          Digiflex provides cutting-edge intercloud migration solutions to help businesses optimize their cloud strategy efficiently and securely.
         </p>
       </Paragraph>
       <div className="flex flex-wrap justify-center gap-6 p-6">
@@ -51,10 +52,10 @@ function IntercloudType() {
             <h2 className="text-lg font-semibold mt-2 text-center">{item.title}</h2>
             <div
               className={`absolute top-0 left-0 w-full h-full bg-white p-4 flex items-center justify-center text-center transition-transform duration-500 ease-in-out rounded-lg shadow-lg ${
-    hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
-  }`}
+                hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+              }`}
             >
-             <h2 className="text-lg font-semibold mt-2 pr-2 text-center">{item.title}</h2>
+              <h2 className="text-lg font-semibold mt-2 pr-2 text-center">{item.title}</h2>
               <p className="text-sm text-gray-700">{item.description}</p>
             </div>
           </div>

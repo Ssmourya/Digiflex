@@ -60,11 +60,8 @@ function Google_Services() {
           </div>
         </Heading>
         <Paragraph><div>
-        <p className="text-center mt-4 mb-10">
-          Google Cloud provides a comprehensive suite of services that empower
-          organizations to build, deploy, and scale modern applications. Its
-          compute offerings, data services, and AI tools ensure reliable
-          performance and security.
+        <p className="text-center sm:text-lg md:text-xl mt-4 mb-10">
+        Google Cloud provides a comprehensive suite of services that empower organizations to build, deploy, and scale modern applications. Its compute offerings, data services, and AI tools ensure reliable performance and security. Digiflex leverages these powerful capabilities to develop innovative AI-driven applications, delivering scalable, secure, and high-performance solutions for businesses.
         </p>
         </div></Paragraph>
 

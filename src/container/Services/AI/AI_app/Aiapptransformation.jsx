@@ -33,7 +33,7 @@ const benefits = [
 function Aiapptransformation() {
   return (
     <>
-      <div className="bg-[#E0E0E0]">
+      <div className="bg-[#E0E0E0] pb-20">
         <WrapperContainer>
         <Heading>
               <span>
@@ -48,7 +48,7 @@ function Aiapptransformation() {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row w-full max-w-4xl bg-white border border-gray-300 rounded-lg p-6 mb-4 shadow-md"
+                  className="flex flex-col md:flex-row w-full max-w-4xl bg-white border border-gray-300 rounded-lg p-6 mb-4 shadow-md "
                 >
                   <h2 className="text-4xl font-semibold text-gray-800 w-1/3">
                     {benefit.title}

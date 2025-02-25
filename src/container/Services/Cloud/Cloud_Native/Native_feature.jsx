@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Cpu, Leaf, Code, Cloud, Network } from "lucide-react";
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
@@ -6,37 +6,37 @@ import Subheading from '../../../../Layout/Subheading';
 
 const topics = [
     {
-      title: "Kubernetes Beyond Containers",
-      description: "Explore Kubernetes for AI, Edge, & IoT.",
+      title: "Advanced Kubernetes Applications",
+      description: "Harness Kubernetes for AI, Edge Computing, and IoT innovations.",
       icon: <Cpu size={40} />,
     },
     {
-      title: "AI-Driven Cloud Operations (AIOps)",
-      description: "Enhancing cloud efficiency with AI-powered operations.",
+      title: "AI-Powered Cloud Management",
+      description: "Optimize cloud performance with AI-driven automation.",
       icon: <Cloud size={40} />,
     },
     {
-      title: "Sustainability & Green Cloud Computing",
-      description: "Learn how cloud computing is going green.",
+      title: "Eco-Friendly Cloud Solutions",
+      description: "Discover sustainable and energy-efficient cloud computing.",
       icon: <Leaf size={40} />,
     },
     {
-      title: "The Rise of WebAssembly (Wasm)",
-      description: "Explore WebAssembly's role in cloud-native applications.",
+      title: "WebAssembly: The Future of Cloud Apps",
+      description: "Unleashing WebAssembly for high-performance cloud-native applications.",
       icon: <Code size={40} />,
     },
     {
-      title: "Decentralized & Blockchain-Based Cloud",
-      description: "Discover the future of decentralized cloud services.",
+      title: "Blockchain-Powered Cloud Services",
+      description: "Revolutionizing cloud security and decentralization with blockchain.",
       icon: <Network size={40} />,
     },
   ];
 
-function Native_feature() {
+function NativeFeature() {
   return (
     <>
     <WrapperContainer>
-    <Heading>Cloud-Native Future</Heading>
+    <Heading>Cloud-Native Innovations by Digiflex</Heading>
     <div className="mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
       {topics.map((topic, index) => (
         <div
@@ -61,4 +61,4 @@ function Native_feature() {
   )
 }
 
-export default Native_feature
+export default NativeFeature;

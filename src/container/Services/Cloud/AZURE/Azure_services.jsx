@@ -8,80 +8,77 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const advantages = [
   {
-    title: "Scalability & Flexibility",
+    title: "Scalability & Flexibility with Digiflex",
     points: [
-      "Easily scale resources up or down based on demand.",
-      "Supports hybrid and multi-cloud environments.",
+      "Digiflex ensures seamless scaling of cloud resources based on business needs.",
+      "Supports hybrid and multi-cloud environments for optimized performance.",
     ],
     image: Azure_sca,
   },
   {
-    title: "Cost-Effectiveness",
+    title: "Cost-Effective Cloud Solutions",
     points: [
-      "Pay-as-you-go pricing, reducing upfront costs.",
-      "Discounts for long-term commitments (Azure Reserved Instances).",
+      "Digiflex leverages Azure’s pay-as-you-go model to minimize IT expenses.",
+      "Exclusive discounts and strategic resource allocation for maximum efficiency.",
     ],
     image: Azore_cost,
   },
   {
-    title: "Security & Compliance",
+    title: "Enterprise-Grade Security & Compliance",
     points: [
-      "Multi-layered encryption, DDoS protection, and threat monitoring.",
-      "Complies with GDPR, HIPAA, ISO, and other global standards.",
+      "Digiflex implements advanced security measures, including multi-layer encryption and threat protection.",
+      "Ensures compliance with GDPR, HIPAA, ISO, and other global standards to meet regulatory requirements.",
     ],
     image: Azure_security,
   },
   {
-    title: "High Availability & Reliability",
+    title: "Reliable Cloud Infrastructure",
     points: [
-      "99.99% uptime with multiple data centers worldwide.",
-      "Disaster recovery and automatic backups ensure data safety.",
+      "Digiflex guarantees 99.99% uptime with Azure’s globally distributed data centers.",
+      "Automated backups and disaster recovery solutions to safeguard critical data.",
     ],
     image: Azure_time,
   },
 ];
 
 function AzureServices() {
-  
   return (
-  <>
-  <WrapperContainer>
-    <div>
-    <Heading>
-      <h1>
-        Advantages of Azure
-      </h1>
-      </Heading>
-      <div className="space-y-20">
-        {advantages.map((advantage, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center justify-between ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
-          >
-            {/* Text Section */}
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">{advantage.title}</h2>
-              <ul className="list-disc list-inside text-lg space-y-2">
-                {advantage.points.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            </div>
+    <>
+      <WrapperContainer>
+        <div>
+          <Heading>
+            <h1>Advantages of Azure with Digiflex</h1>
+          </Heading>
+          <div className="space-y-20">
+            {advantages.map((advantage, index) => (
+              <div
+                key={index}
+                className={`flex flex-col md:flex-row items-center justify-between ${
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
+              >
+                {/* Text Section */}
+                <div className="w-full md:w-1/2">
+                  <h2 className="text-3xl font-bold mb-4">{advantage.title}</h2>
+                  <ul className="list-disc list-inside text-lg space-y-2">
+                    {advantage.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
 
-            <div className="w-full md:w-1/2 flex justify-center">
-              <img
-                src={advantage.image}
-                alt={advantage.title}
-                className="w-[350px] h-[300px] object-cover rounded-lg"
-              />
-            </div>
+                <div className="w-full md:w-1/2 flex justify-center">
+                  <img
+                    src={advantage.image}
+                    alt={advantage.title}
+                    className="w-[350px] h-[300px] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
-    </WrapperContainer>
+        </div>
+      </WrapperContainer>
     </>
   );
 }

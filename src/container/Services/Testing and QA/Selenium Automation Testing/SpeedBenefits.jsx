@@ -1,4 +1,8 @@
 import React from 'react';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const SpeedBenefits = () => {
 
@@ -24,13 +28,18 @@ const SpeedBenefits = () => {
     ];
 
     return (
-        <div className="w-11/12 mx-auto px-4 py-12">
+        <WrapperContainer>
+        <div className=" mx-auto ">
             <div className="text-center mb-16">
-                <h2 className="text-5xl text-[#1A2E6F] font-semibold mb-2">why digiflex.ai ?</h2>
-                <h1 className="text-4xl font-semibold text-[#1A2E6F] mb-4">speed redefines success</h1>
-                <p className="max-w-3xl mx-auto">
+            <Heading>
+                <h2>why digiflex.ai ?</h2>
+                </Heading>
+                <Subheading>
+                <h1>speed redefines success</h1>
+                </Subheading>
+                <Paragraph>
                     at digiflex.ai, we empower businesses with next-gen automation and AI-driven solutions. experience unparalleled speed, accuracy, and efficiency like never before.
-                </p>
+                    </Paragraph>
             </div>
 
             {/* Stats Grid */}
@@ -56,6 +65,7 @@ const SpeedBenefits = () => {
                 </button>
             </div>
         </div>
+        </WrapperContainer>
     );
 };
 

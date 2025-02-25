@@ -8,42 +8,42 @@ const data = [
   {
     title: "Microservices Architecture",
     description:
-      "Applications are divided into small, independent services that communicate via APIs. Each microservice can be developed, deployed, and scaled independently. Enables faster updates, modularity, and high availability.",
+      "Digiflex enables applications to be built as small, independent services that communicate via APIs. Each microservice can be developed, deployed, and scaled independently, ensuring faster updates, modularity, and high availability.",
   },
   {
     title: "Containerization & Orchestration",
     description:
-      "Docker: Standard for packaging applications with dependencies. Kubernetes: Manages, scales, and automates containerized applications. Helm: A package manager for Kubernetes applications.",
+      "Digiflex leverages Docker for standardized application packaging and Kubernetes for automated management, scaling, and orchestration. Helm simplifies Kubernetes application deployment, enhancing operational efficiency.",
   },
   {
     title: "Serverless Computing",
     description:
-      "Eliminates the need to manage infrastructure. Examples: AWS Lambda, Azure Functions, Google Cloud Functions. Only charges for actual execution time, improving cost efficiency.",
+      "Digiflex eliminates infrastructure management with serverless solutions like AWS Lambda, Azure Functions, and Google Cloud Functions. This ensures cost-efficiency by charging only for actual execution time.",
   },
   {
     title: "CI/CD (Continuous Integration & Continuous Deployment)",
     description:
-      "Automates the development pipeline for faster software delivery. Uses Jenkins, GitHub Actions, GitLab CI/CD, AWS CodePipeline. Reduces manual intervention and enhances productivity.",
+      "Digiflex automates software development pipelines using tools like Jenkins, GitHub Actions, GitLab CI/CD, and AWS CodePipeline. This reduces manual effort and accelerates software delivery.",
   },
   {
     title: "Scalability & Elasticity",
     description:
-      "Auto-scaling based on traffic demand and system load. Uses Horizontal and Vertical Scaling strategies. Load balancing ensures performance optimization.",
+      "Digiflex optimizes auto-scaling strategies to meet traffic demands dynamically. Horizontal and vertical scaling techniques, along with load balancing, ensure performance optimization.",
   },
   {
     title: "Observability & Monitoring",
     description:
-      "Uses logs, metrics, and traces for real-time insights. Tools: Prometheus, Grafana, AWS CloudWatch, Datadog. Ensures proactive issue detection and resolution.",
+      "Digiflex provides real-time insights using tools like Prometheus, Grafana, AWS CloudWatch, and Datadog. This ensures proactive issue detection and resolution.",
   },
   {
     title: "Service Mesh for Secure Communication",
     description:
-      "Ensures secure, encrypted, and optimized communication between microservices. Tools: Istio, Linkerd, Consul. Provides traffic control, security, and observability.",
+      "Digiflex ensures secure, encrypted, and optimized communication between microservices with Istio, Linkerd, and Consul, providing enhanced traffic control, security, and observability.",
   },
   {
     title: "Security & Compliance",
     description:
-      "Zero Trust Security Model: Least privilege access enforcement. Identity & Access Management (IAM): Controls user permissions. Encryption & TLS: Ensures data protection in transit and at rest.",
+      "Digiflex enforces the Zero Trust Security Model with least privilege access, Identity & Access Management (IAM), and data encryption via TLS to ensure complete protection of sensitive information.",
   },
 ];
 
@@ -52,40 +52,40 @@ export default function Sidebar() {
 
   return (
     <WrapperContainer>
-    <Heading><h1>Key Components of Cloud-Native Services</h1></Heading>
-    <div className="flex p-4 justify-center items-center">
-      {/* Full Screen Card with Divider */}
-      <div className="w-full h-full flex">
-        {/* Left Sidebar */}
-        <div className="w-1/2 p-4">
-        <Subheading>
-          <h2 className="text-xl font-bold mb-4">Topics</h2>
-          </Subheading>
-          <ul className="space-y-2">
-            {data.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => setSelected(item)}
-                className={`p-2 cursor-pointer rounded-md hover:bg-blue-100 transition ${
-                  selected.title === item.title ? "bg-blue-200" : ""
-                }`}
-              >
-                {item.title}
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-        {/* Vertical Divider */}
-        <div className="w-0.5 bg-gray-300"></div>
+      <Heading><h1>Digiflex Cloud-Native Services</h1></Heading>
+      <div className="flex p-4 justify-center items-center">
+        {/* Full Screen Card with Divider */}
+        <div className="w-full h-full flex">
+          {/* Left Sidebar */}
+          <div className="w-1/2 p-4">
+            <Subheading>
+              <h2 className="text-xl font-bold mb-4">Topics</h2>
+            </Subheading>
+            <ul className="space-y-2">
+              {data.map((item, index) => (
+                <li
+                  key={index}
+                  onClick={() => setSelected(item)}
+                  className={`p-2 cursor-pointer rounded-md hover:bg-blue-100 transition ${
+                    selected.title === item.title ? "bg-blue-200" : ""
+                  }`}
+                >
+                  {item.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {/* Vertical Divider */}
+          <div className="w-0.5 bg-gray-300"></div>
 
-        {/* Right Content Section */}
-        <div className="w-1/2 p-4">
-          <Subheading><h2 className="text-2xl font-bold mb-4">{selected.title}</h2></Subheading>
-          <Paragraph><p className="text-gray-700">{selected.description}</p></Paragraph>
+          {/* Right Content Section */}
+          <div className="w-1/2 p-4">
+            <Subheading><h2 className="text-2xl font-bold mb-4">{selected.title}</h2></Subheading>
+            <Paragraph><p className="text-gray-700">{selected.description}</p></Paragraph>
+          </div>
         </div>
       </div>
-    </div>
     </WrapperContainer>
   );
 }

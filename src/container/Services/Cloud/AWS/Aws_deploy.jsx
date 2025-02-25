@@ -4,10 +4,10 @@ import Heading from "../../../../Layout/Heading";
 
 function Aws_deploy() {
   const steps = [
-    { title: "Choose Deployment Method" },
-    { title: "Deploy Frontend" },
-    { title: "Deploy Backend" },
-    { title: "Connect Frontend & Backend" },
+    { title: "Select Deployment Strategy" },
+    { title: "Deploy Frontend with Digiflex" },
+    { title: "Deploy Backend with Digiflex" },
+    { title: "Integrate Frontend & Backend Seamlessly" },
   ];
 
   return (
@@ -15,7 +15,7 @@ function Aws_deploy() {
       <Heading>
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-center px-4">
-            Process to Deploy a Project on AWS
+            Deploy Your Project on AWS with Digiflex
           </h1>
         </div>
       </Heading>

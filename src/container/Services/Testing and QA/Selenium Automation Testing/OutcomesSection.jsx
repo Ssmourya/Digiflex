@@ -1,19 +1,25 @@
 import React from 'react';
 import { Smile, Settings, TrendingUp } from 'lucide-react';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Subheading from '../../../../Layout/Subheading';
 
 const OutcomesSection = () => {
     return (
-        <div className="w-11/12 mx-auto px-4 py-12">
+        <WrapperContainer>
+        <div>
             
             {/* Header Section */}
             <div className="mb-10">
-                <div className="text-5xl font-semibold text-[#1A2E6F] mb-4">
+                <Heading>
                     The outcomes we deliver
-                </div>
-                <h2 className="text-3xl font-semibold text-[#1A2E6F]">
+                    </Heading>
+                    <Subheading>
+                <h2 className="text-3xl text-center font-semibold ">
                     Faster product delivery cycles & increased customer satisfaction
                 </h2>
-                <p className="mt-4 text-xl">
+                </Subheading>
+                <p className="mt-4 text-center text-xl">
                     Apexon Selenium testing services deliver significant business advantages:
                 </p>
             </div>
@@ -60,6 +66,7 @@ const OutcomesSection = () => {
                 </div>
             </div>
         </div>
+        </WrapperContainer>
     );
 };
 

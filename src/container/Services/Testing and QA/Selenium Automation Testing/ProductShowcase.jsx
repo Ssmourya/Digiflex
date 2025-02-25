@@ -1,4 +1,7 @@
 import React from 'react';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const ProductShowcase = () => {
     const products = [
@@ -33,13 +36,12 @@ const ProductShowcase = () => {
     ];
 
     return (
-        <div className="w-11/12 mx-auto px-4 py-12">
-            
-            <h1 className="text-5xl font-semibold text-center mb-12 text-[#1A2E6F]">
+        <WrapperContainer>
+        <div>
+            <Heading>
                 Our Core Solutions
-            </h1>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                </Heading>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-5">
                 {
                     products.map((product, index) => (
                         <div 
@@ -53,7 +55,8 @@ const ProductShowcase = () => {
                 }
             </div>
             
-            <div className="mt-8 text-center text-gray-600">
+            <div >
+            <Paragraph>
                 streamline, optimize, and innovate your testing workflows with cutting-edge ai-powered solutions.
                 <a href="#" className="text-blue-600 hover:text-blue-700 ml-2 inline-flex items-center">
                     more about digiflex AI
@@ -61,8 +64,10 @@ const ProductShowcase = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </a>
+                </Paragraph>
             </div>
         </div>
+        </WrapperContainer>
     );
 };
 

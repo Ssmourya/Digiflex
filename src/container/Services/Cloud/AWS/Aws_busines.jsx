@@ -19,9 +19,7 @@ function Aws_busines() {
       <div className="flex flex-col items-center justify-center text-center px-4">
         <Heading>
         <div className="text-3xl md:text-4xl lg:text-5xl font-bold">
-
-            Why businesses use AWS
-
+            Why Businesses Choose Digiflex for AWS Solutions
           </div>
         </Heading>
         
@@ -33,10 +31,7 @@ function Aws_busines() {
 
         <Paragraph>
         <span>
-            Amazon Web Services (AWS) is the world's leading cloud computing
-            platform, providing businesses with scalable, secure, and
-            cost-effective solutions. Here's why companies of all sizes choose
-            AWS:
+            Digiflex leverages the power of Amazon Web Services (AWS) to provide businesses with scalable, secure, and cost-effective cloud solutions. As a trusted cloud service provider, Digiflex enables companies of all sizes to optimize operations, enhance security, and drive innovation using AWS infrastructure.
           </span>
         </Paragraph>
       </div>

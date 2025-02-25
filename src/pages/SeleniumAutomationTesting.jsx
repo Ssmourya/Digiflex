@@ -13,7 +13,6 @@ const SeleniumAutomationTesting = () => {
     return (
         <div>
             <SeleniumAutomationHeroSection/>
-            <WrapperContainer>
             <BusinessAIHeader/>
             <RealAutomation/>
             <OutcomesSection/>
@@ -21,7 +20,7 @@ const SeleniumAutomationTesting = () => {
             <SpeedBenefits/>
             <ProductShowcase/>
             <IntegrationShowcase/>
-            </WrapperContainer>
+            
         </div>
     )
 }

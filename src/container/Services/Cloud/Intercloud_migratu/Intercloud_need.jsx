@@ -6,27 +6,32 @@ const data = [
   {
     title: 'Cost Optimization',
     details:
-      'Cloud providers offer different pricing models; migrating workloads can reduce operational costs.',
+      'Digiflex helps businesses reduce cloud expenses by strategically migrating workloads to cost-effective cloud providers.',
   },
   {
     title: 'Vendor Lock-in Avoidance',
-    details: 'Companies move between clouds to avoid dependency on a single provider.',
+    details: 
+      'Digiflex enables seamless transitions between cloud platforms, ensuring flexibility and preventing dependency on a single provider.',
   },
   {
     title: 'Performance Optimization',
-    details: 'Workloads are shifted to a provider offering better speed, reliability, and lower latency.',
+    details: 
+      'With Digiflex, businesses can migrate workloads to cloud environments offering higher speed, reliability, and lower latency.',
   },
   {
     title: 'Compliance and Regulations',
-    details: 'Some industries must store data in specific geographic regions due to legal requirements.',
+    details: 
+      'Digiflex ensures compliance with industry regulations by securely migrating and storing data in the required geographic locations.',
   },
   {
     title: 'Disaster Recovery and Redundancy',
-    details: 'Hosting data across multiple clouds ensures backup and fault tolerance.',
+    details: 
+      'Digiflex enhances data security and business continuity by distributing workloads across multiple clouds for backup and fault tolerance.',
   },
   {
     title: 'Scalability and Flexibility',
-    details: 'Businesses can leverage the strengths of multiple providers for different services.',
+    details: 
+      'Digiflex empowers businesses to scale seamlessly by leveraging multi-cloud solutions for diverse services and infrastructure needs.',
   },
 ];
 
@@ -34,31 +39,29 @@ function Intercloud_need() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <>
-      <WrapperContainer>
-        <Heading>
-          <h1>Why is Intercloud Migration Needed?</h1>
-        </Heading>
-        <div className="">
-          <ul className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
-            {data.map((item, index) => (
-              <li
-                key={index}
-                className="p-4 border-b last:border-b-0 cursor-pointer transition-all duration-300 
-                hover:bg-blue-900 hover:text-white"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <div className="font-semibold">{item.title}</div>
-                {hoveredIndex === index && (
-                  <p className="mt-2 transition-opacity duration-500">{item.details}</p>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </WrapperContainer>
-    </>
+    <WrapperContainer>
+      <Heading>
+        <h1>Why Choose Digiflex for Intercloud Migration?</h1>
+      </Heading>
+      <div className="">
+        <ul className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
+          {data.map((item, index) => (
+            <li
+              key={index}
+              className="p-4 border-b last:border-b-0 cursor-pointer transition-all duration-300 
+              hover:bg-blue-900 hover:text-white"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <div className="font-semibold">{item.title}</div>
+              {hoveredIndex === index && (
+                <p className="mt-2 transition-opacity duration-500">{item.details}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </WrapperContainer>
   );
 }
 

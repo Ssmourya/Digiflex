@@ -7,33 +7,33 @@ function Aws_intro() {
     const useCases = [
         { 
             title: "Big Data & Analytics", 
-            description: "Real-time data processing using AWS services.", 
-            extra: "AWS offers scalable storage, data lakes, and powerful analytics with services like Redshift, Athena, and EMR."
+            description: "Real-time data processing with Digiflex-powered AWS solutions.", 
+            extra: "Digiflex leverages AWS services like Redshift, Athena, and EMR to offer scalable storage, data lakes, and advanced analytics."
         },
         { 
             title: "AI & Machine Learning", 
-            description: "Training and deploying ML models.", 
-            extra: "AWS provides AI/ML services such as SageMaker, Rekognition, Polly, and Lex for advanced automation."
+            description: "Training and deploying ML models with Digiflex expertise.", 
+            extra: "With AWS SageMaker, Rekognition, Polly, and Lex, Digiflex enables businesses to integrate AI-driven automation seamlessly."
         },
         { 
             title: "IoT (Internet of Things)", 
-            description: "Managing and analyzing IoT devices.", 
-            extra: "AWS IoT Core enables secure connection and management of billions of IoT devices globally."
+            description: "Managing and analyzing IoT devices with Digiflex solutions.", 
+            extra: "Digiflex utilizes AWS IoT Core to provide secure connections and efficient management for billions of IoT devices."
         },
         { 
             title: "Web Hosting", 
-            description: "Hosting websites and applications with auto-scaling.", 
-            extra: "AWS supports hosting with EC2, S3, CloudFront, and Route 53 for seamless global delivery."
+            description: "Hosting websites and applications with Digiflex-managed AWS infrastructure.", 
+            extra: "Digiflex ensures reliable hosting with AWS EC2, S3, CloudFront, and Route 53 for seamless global delivery."
         },
         { 
             title: "Enterprise Applications", 
-            description: "SAP, Microsoft, and other enterprise workloads.", 
-            extra: "AWS enables running business-critical applications with high performance, scalability, and security."
+            description: "Running SAP, Microsoft, and other enterprise workloads with Digiflex solutions.", 
+            extra: "Digiflex optimizes business-critical applications using AWS for high performance, scalability, and security."
         },
         { 
             title: "Gaming", 
-            description: "Scalable backend infrastructure for multiplayer games.", 
-            extra: "AWS GameLift and other services offer high-speed, low-latency game server hosting."
+            description: "Scalable backend infrastructure for multiplayer games powered by Digiflex.", 
+            extra: "Using AWS GameLift and other services, Digiflex delivers high-speed, low-latency game server hosting."
         }
     ];
 
@@ -43,14 +43,14 @@ function Aws_intro() {
                 {/* AWS Introduction Section */}
                 <div className="text-center px-4 sm:px-6 lg:px-8">
                     <Heading>
-                        <h1>About AWS Cloud Services</h1>
+                        <h1>About AWS Cloud Services by Digiflex</h1>
                     </Heading>
-                        <div >
-                    <Paragraph>
-                            AWS Cloud (Amazon Web Services Cloud) is the world's leading cloud computing platform, providing a vast set of services such as computing, storage, databases, networking, security, AI, and analytics. 
-                            It enables businesses, developers, and enterprises to build, deploy, and manage applications on a global scale with high reliability, security, and cost efficiency.
-                    </Paragraph>
-                        </div>
+                    <div>
+                        <Paragraph>
+                            Digiflex, a leading provider of cloud solutions, harnesses the power of AWS Cloud to offer computing, storage, databases, networking, security, AI, and analytics services. 
+                            Our solutions enable businesses, developers, and enterprises to build, deploy, and manage applications globally with unmatched reliability, security, and cost efficiency.
+                        </Paragraph>
+                    </div>
                 </div>
 
                 {/* AWS Use Cases Section */}

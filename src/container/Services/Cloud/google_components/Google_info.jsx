@@ -2,6 +2,8 @@ import React from "react";
 import Google_intro from "../../../../assets/google_intro.jpg";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
+
 
 function Google_info() {
   return (
@@ -14,15 +16,11 @@ function Google_info() {
             About Google Cloud
           </p>
         </div></Heading>
-          
-          <p className="mt-4 text-sm md:text-base leading-relaxed">
-            Google Cloud is a comprehensive suite of cloud computing services
-            that enables organizations to build, deploy, and scale applications
-            using the same infrastructure that powers Google’s own products. It
-            offers robust computing power, flexible storage options, advanced
-            data analytics, and cutting-edge machine learning tools, all
-            designed to deliver high performance and security on a global scale.
+          <Paragraph>
+          <p className="text-left mt-4 text-sm md:text-base leading-relaxed">
+          Digiflex leverages the power of Google Cloud to deliver cutting-edge AI app development services. With Google Cloud’s robust computing power, flexible storage options, advanced data analytics, and machine learning tools, Digiflrx ensures high-performance, scalable, and secure solutions for businesses worldwide. By utilizing the same infrastructure that powers Google’s own products, Digiflrx helps organizations build, deploy, and scale applications efficiently, driving innovation and digital transformation.
           </p>
+          </Paragraph>
         </div>
 
         {/* Image Section */}
@@ -34,7 +32,7 @@ function Google_info() {
           />
         </div>
       </div>
-      <div className="w-4/5 h-2 mt-10 flex p-0 gap-0">
+      <div className="w-full h-2 mt-10 flex p-0 gap-0">
       <div className="w-4/6 bg-blue-500"></div>
       <div className="w-2/6 bg-red-500"></div>
       <div className="w-2/6 bg-yellow-500"></div>

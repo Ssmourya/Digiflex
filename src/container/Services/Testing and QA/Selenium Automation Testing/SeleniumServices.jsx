@@ -1,5 +1,9 @@
 import React from 'react';
 import { Cog, Database, CheckCircle, BarChart3, Layout, Code } from 'lucide-react';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const features = [
     {
@@ -36,24 +40,26 @@ const features = [
 
 const SeleniumServices = () => {
     return (
-        <div className="w-11/12 mx-auto bg-white px-4 py-12">
-            <div className="max-w-7xl">
+        <WrapperContainer>
+            <div>
                 {/* Header Section */}
-                <div className="mb-12 text-center">
-                    <div className="uppercase text-5xl font-semibold text-[#1A2E6F] mb-4">
+                <div className="mb-12">
+                <Heading>
                         OUR OFFERING
-                    </div>
-                    <h2 className="text-4xl font-semibold text-[#1A2E6F] mb-6">
+                        </Heading>
+                        <Subheading>
+                    <h2  className='text-center'>
                         END-TO-END SELENIUM TESTING SERVICES
                     </h2>
-                    <p className="text-black text-lg">
+                    </Subheading>
+                    <Paragraph>
                         Our Selenium Testing Services Framework provides a comprehensive solution to 
                         accelerate QA cycles and enhance digital service levels.
-                    </p>
+                        </Paragraph>
                 </div>
 
                 {/* Features Grid */}
-                <div className="w-11/12 mx-auto grid md:grid-cols-2 gap-8">
+                <div className=" grid md:grid-cols-2 gap-8">
                     {
                         features.map((feature, index) => (
                             <div key={index} className="border border-gray-200 rounded-lg p-6 hover:border-blue-500 transition-all duration-300 group">
@@ -61,19 +67,19 @@ const SeleniumServices = () => {
                                     <div className="bg-blue-50 p-3 rounded-lg group-hover:bg-blue-100 transition-colors">
                                         {feature.icon}
                                     </div>
-                                    <h3 className="uppercase font-bold text-lg text-[#1A2E6F]">
+                                        <Subheading>
                                         {feature.title}
-                                    </h3>
+                                        </Subheading>
                                 </div>
-                                <p className="text-black ml-[60px]">
+                                <Paragraph>
                                     {feature.description}
-                                </p>
+                                    </Paragraph>
                             </div>
                         ))
                     }
                 </div>
             </div>
-        </div>
+            </WrapperContainer>
     );
 };
 

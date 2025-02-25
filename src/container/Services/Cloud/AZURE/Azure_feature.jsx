@@ -53,7 +53,7 @@ function Azure_feature() {
       <WrapperContainer>
         <Heading>
           <div>
-            <h1>Key Features of Azure</h1>
+            <h1>Essential Features of Azure with Digiflex</h1>
           </div>
         </Heading>
         <div className="px-4 sm:px-6 lg:px-8 py-8">

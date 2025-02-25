@@ -279,7 +279,7 @@ const Navbar = () => {
       color: 'text-[#00C8D5]',
       description: 'AI development involves machine learning, deep learning, NLP, and computer vision. Key steps: data collection, model training, testing, and deployment. Used in automation, healthcare, finance, and robotics.',
       features: [
-        { icon: Cloud, title: 'Google Cloud', path: '/services/AI/Ai_development' },  
+        { icon: Cloud, title: 'AI App', path: '/services/AI/Ai_development' },  
 
         ],
       image: 'https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg'

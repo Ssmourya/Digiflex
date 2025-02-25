@@ -8,30 +8,34 @@ function Azure_Card() {
    <>
    <WrapperContainer>
         <Heading>
-        <p>Start with us</p>
+        <p>Start Your Cloud Journey with Digiflex</p>
         </Heading>
    <div className="flex justify-center items-center mt-[30px] mb-20">
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-6">
        {/* Card 1 */}
-       <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px]">
-       <Subheading><h2 className="text-xl font-semibold">Start building free</h2></Subheading>
+       <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px] flex flex-col justify-between">
+       <Subheading><h2 className="text-xl font-semibold">Get Started for Free with Digiflex</h2></Subheading>
          <p className="text-gray-600 mt-2">
-           Get free services and a USD 200 credit to explore Azure for up to 30 days.
+           Experience Azure with Digiflex’s expertise and enjoy free services with a USD 200 credit for up to 30 days.
          </p>
-         <button className="mt-4 bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700">
-           Try Azure for free
-         </button>
+         <div className="mt-4 flex justify-start">
+           <button className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700">
+             Try Azure with Digiflex
+           </button>
+         </div>
        </div>
 
        {/* Card 2 */}
-       <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px]">
-         <Subheading><h2 className="text-xl font-semibold">Started with pay as you go</h2></Subheading>
+       <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px] flex flex-col justify-between">
+         <Subheading><h2 className="text-xl font-semibold">Flexible Pay-As-You-Go with Digiflex</h2></Subheading>
          <p className="text-gray-600 mt-2">
-           Pay only for what you use beyond free amounts of services.
+           Scale effortlessly and pay only for what you use beyond free service limits with Digiflex’s Azure solutions.
          </p>
-         <button className="mt-9 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
-           Sign up
-         </button>
+         <div className="mt-4 flex justify-start">
+           <button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+             Get Started with Digiflex
+           </button>
+         </div>
        </div>
      </div>
    </div>

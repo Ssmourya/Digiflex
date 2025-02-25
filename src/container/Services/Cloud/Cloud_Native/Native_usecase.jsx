@@ -4,19 +4,19 @@ import Heading from "../../../../Layout/Heading";
 
 function CloudNativeUseCases() {
   const useCases = [
-    "Cloud-Native in Banking & Finance",
-    "Cloud-Native in Healthcare & Telemedicine",
-    "Cloud-Native for E-Commerce & Retail",
-    "Cloud-Native in IoT & Smart Devices",
-    "Cloud-Native AI & Big Data Workloads"
+    "Digiflex Cloud-Native Solutions for Banking & Finance",
+    "Digiflex Cloud-Native Innovations in Healthcare & Telemedicine",
+    "Enhancing E-Commerce & Retail with Digiflex Cloud-Native Solutions",
+    "Smart IoT & Device Integration with Digiflex Cloud-Native Services",
+    "AI & Big Data Optimization Using Digiflex Cloud-Native Technologies"
   ];
 
   return (
     <WrapperContainer>
-      <Heading>Cloud-Native Use Cases</Heading>
+      <Heading>Digiflex Cloud-Native Use Cases</Heading>
       <div className="relative flex flex-col items-center text-center justify-center gap-6 rounded-xl">
         {/* Vertical Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-[300px] w-1 bg-gray-300"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-[400px] w-1 bg-gray-300"></div>
         
         {useCases.map((useCase, index) => (
           <div

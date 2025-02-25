@@ -25,6 +25,9 @@ import {
     Key, 
     UserCheck 
 } from 'lucide-react';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const IntegrationShowcase = () => {
     const categories = [
@@ -85,16 +88,15 @@ const IntegrationShowcase = () => {
     ];
 
     return (
-        
-        <div className="w-11/12 auto-max max-w-6xl mx-auto px-6 py-16 bg-white">
-
+        <div className='pb-20'>
+        <WrapperContainer>
             <div className="mx-auto">
-                <h2 className="text-3xl md:text-4xl font-semibold text-center mb-6 text-[#1A2E6F]">
+                <Heading>
                     Enterprise-Ready Integrations
-                </h2>
-                
+                    </Heading>
+                <Paragraph>
                 <div className="text-center mb-16">
-                    <p className="text-lg text-gray-600 mb-4">
+                    <p>
                         Connect your essential tools and automate workflows with our pre-built integrations
                     </p>
                     <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
@@ -102,6 +104,7 @@ const IntegrationShowcase = () => {
                         <span className="ml-1">→</span>
                     </a>
                 </div>
+                </Paragraph>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {
@@ -133,6 +136,7 @@ const IntegrationShowcase = () => {
                     }
                 </div>
             </div>
+        </WrapperContainer>
         </div>
     );
 };

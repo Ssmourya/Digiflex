@@ -5,25 +5,25 @@ import Paragraph from "../../../../Layout/Paragraph";
 
 const features = [
   {
-    title: "Cost management",
+    title: "Cost Efficiency",
   },
   {
-    title: "Improved efficiency",
+    title: "Enhanced Operational Performance",
   },
   {
-    title: "Enhance productivity",
+    title: "Boosted Productivity",
   },
   {
-    title: "Increased visibility",
+    title: "Greater Transparency & Control",
   },
 ];
 
-function Optimization_benefits() {
+function OptimizationBenefits() {
   return (
     <>
       <WrapperContainer>
         <Heading>
-          <h1>Benefits of cloud optimization</h1>
+          <h1>Key Benefits of Cloud Optimization</h1>
         </Heading>
         <div className="flex flex-wrap justify-center items-center mt-[40px]">
           <div className="flex flex-wrap gap-10 justify-center">
@@ -42,43 +42,20 @@ function Optimization_benefits() {
           </div>
         </div>
       </WrapperContainer>
-        <WrapperContainer>
-        <Heading>Important of Cloud Optimization</Heading>
-        <p className="text-center">
+      <WrapperContainer>
+        <Heading>Importance of Cloud Optimization</Heading>
         <Paragraph>
-          Cloud optimization plays a crucial role in ensuring businesses
-          maximize the value of their cloud investments by balancing cost,
-          performance, and scalability. As organizations increasingly rely on
-          cloud services, inefficient resource management can lead to
-          unnecessary expenses and underutilized infrastructure. By implementing
-          optimization strategies such as rightsizing, autoscaling, and load
-          balancing, companies can ensure that cloud resources align with actual
-          usage needs, preventing over-provisioning while maintaining high
-          performance. Additionally, cloud optimization helps combat cloud
-          sprawl by regularly auditing and eliminating idle or redundant
-          resources, reducing waste and improving overall efficiency. Security
-          and compliance are also enhanced, as optimized cloud environments
-          minimize vulnerabilities and ensure adherence to industry regulations.
-          Furthermore, effective cloud management supports sustainability
-          efforts by reducing energy consumption and promoting environmentally
-          friendly computing practices. 
+          Cloud optimization is essential for businesses aiming to maximize the value of their cloud investments. By fine-tuning cost, performance, and scalability, organizations can prevent unnecessary expenses and ensure efficient resource utilization. Optimization strategies like rightsizing, autoscaling, and load balancing help align cloud resources with actual usage, preventing over-provisioning while maintaining peak performance.
         </Paragraph>
-          </p>
-          <div className="mb-20"> 
-          <p className="text-center">
-          <Paragraph>
-          By leveraging cost-saving techniques
-          such as reserved instances, spot instances, and efficient data
-          transfer methods, businesses can further reduce operational expenses.
-          Ultimately, cloud optimization enables organizations to be more agile,
-          competitive, and innovative, allowing them to focus on growth and
-          delivering high-quality services while keeping costs under control.
-          </Paragraph>
-          </p>
-          </div>
-        </WrapperContainer>
+        <Paragraph>
+          Regular auditing and resource management reduce cloud sprawl by eliminating idle or redundant resources, improving efficiency. Additionally, optimizing cloud environments enhances security and compliance, reducing vulnerabilities and ensuring adherence to industry standards. Sustainable cloud management practices also contribute to energy efficiency, supporting environmentally responsible computing.
+        </Paragraph>
+        <Paragraph>
+          Leveraging cost-saving techniques such as reserved instances, spot instances, and efficient data transfer methods enables businesses to cut operational expenses. Ultimately, cloud optimization empowers organizations to remain agile, competitive, and innovative, allowing them to focus on growth and delivering high-quality services while maintaining cost efficiency.
+        </Paragraph>
+      </WrapperContainer>
     </>
   );
 }
 
-export default Optimization_benefits;
+export default OptimizationBenefits;

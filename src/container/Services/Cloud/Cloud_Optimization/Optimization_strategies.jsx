@@ -6,52 +6,52 @@ import Paragraph from "../../../../Layout/Paragraph";
 
 const StrategiesData = [
   {
-    title: "Rightsizing Resources",
+    title: "Efficient Resource Allocation",
     describe:
-      "Analyze and adjust compute, storage, and database resources based on actual usage.",
+      "Optimize compute, storage, and database resources to match actual usage and reduce costs.",
   },
   {
-    title: "Autoscaling and Load Balancing",
+    title: "Dynamic Scaling and Load Management",
     describe:
-      "Automatically scale resources up or down based on demand.Use load balancing to distribute traffic efficiently across multiple servers.",
+      "Implement autoscaling to adjust resources dynamically and balance traffic across multiple servers efficiently.",
   },
   {
-    title: "Reserved Instances & Spot Instances",
+    title: "Cost-Effective Instance Management",
     describe:
-      "Use Reserved Instances (RIs) for predictable workloads to save costs.Leverage Spot Instances or Preemptible VMs for non-critical tasks at a lower price.",
+      "Utilize Reserved Instances for predictable workloads and leverage Spot Instances for non-critical tasks to save costs.",
   },
   {
-    title: "Storage Optimization",
+    title: "Optimized Data Storage Solutions",
     describe:
-      "Choose the right storage tier (e.g., Standard, Infrequent Access, Glacier) to balance cost and performance.",
+      "Select appropriate storage tiers (e.g., Standard, Infrequent Access, Archive) to achieve cost-effectiveness and performance balance.",
   },
   {
-    title: "Monitoring & Cost Management",
+    title: "Proactive Monitoring and Cost Control",
     describe:
-      "Use cloud-native monitoring tools like AWS CloudWatch, Azure Monitor, or Google Cloud Operations Suite to track performance and costs.",
+      "Leverage cloud-native monitoring tools such as AWS CloudWatch, Azure Monitor, or Google Cloud Operations Suite to manage performance and expenditures.",
   },
   {
-    title: "Automation & AI-driven Optimization",
+    title: "Automation and AI-Powered Efficiency",
     describe:
-      "Use Infrastructure as Code (IaC) with Terraform or AWS CloudFormation to manage cloud resources efficiently.",
+      "Utilize Infrastructure as Code (IaC) with Terraform or AWS CloudFormation to streamline cloud resource management and automation.",
   },
   {
-    title: "Multi-Cloud and Hybrid Cloud Strategies",
+    title: "Multi-Cloud and Hybrid Deployment Strategies",
     describe:
-      "Distribute workloads across multiple cloud providers to avoid vendor lock-in and improve redundancy.",
+      "Distribute workloads across multiple cloud providers to prevent vendor lock-in and enhance redundancy.",
   },
   {
-    title: "Governance and Policy Enforcement",
+    title: "Policy-Driven Governance and Compliance",
     describe:
-      "Set up policies for access control, resource tagging, and compliance to prevent unnecessary spending.",
+      "Establish access control policies, enforce resource tagging, and maintain compliance to avoid unnecessary expenses.",
   },
 ];
 
-function Optimization_strategies() {
+function OptimizationStrategies() {
   const [activeIndex, setActiveIndex] = useState(null);
   return (
     <WrapperContainer>
-      <Heading>Strategies of Cloud Optimization</Heading>
+      <Heading>Cloud Optimization Strategies by Digiflex</Heading>
       <div className="flex flex-col md:flex-row justify-between items-center mt-8">
         <div className="flex flex-col w-full text-black md:w-2/3">
           {StrategiesData.map((strategy, index) => (
@@ -68,9 +68,9 @@ function Optimization_strategies() {
               </div>
               {activeIndex === index && (
                 <Paragraph>
-                <div className="p-4 transition-opacity duration-300 text-xl opacity-100">
-                  {strategy.describe}
-                </div>
+                  <div className="p-4 transition-opacity duration-300 text-xl opacity-100">
+                    {strategy.describe}
+                  </div>
                 </Paragraph>
               )}
             </div>
@@ -89,4 +89,4 @@ function Optimization_strategies() {
   );
 }
 
-export default Optimization_strategies;
+export default OptimizationStrategies;

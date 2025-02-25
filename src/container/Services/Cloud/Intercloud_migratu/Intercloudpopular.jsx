@@ -32,16 +32,17 @@ function Intercloudpopular() {
         {/* First Row - 4 images */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full max-w-5xl">
           {images.slice(0, 4).map((img, index) => (
-            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 shadow-md">
+            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 ">
               <img src={img} alt={`Image ${index + 1}`} className="w-full h-full object-contain" />
             </div>
           ))}
         </div>
 
+
         {/* Second Row - 3 images (Centered) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full max-w-4xl">
           {images.slice(4, 7).map((img, index) => (
-            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 shadow-md">
+            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 ">
               <img src={img} alt={`Image ${index + 5}`} className="w-full h-full object-contain" />
             </div>
           ))}
@@ -50,7 +51,7 @@ function Intercloudpopular() {
         {/* Third Row - 4 images */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full max-w-5xl">
           {images.slice(7, 11).map((img, index) => (
-            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 shadow-md">
+            <div key={index} className="w-full h-24 sm:h-28 md:h-36 lg:h-40 overflow-hidden rounded-lg bg-white p-2 ">
               <img src={img} alt={`Image ${index + 8}`} className="w-full h-full object-contain" />
             </div>
           ))}

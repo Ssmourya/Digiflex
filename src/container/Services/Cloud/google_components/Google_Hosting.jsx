@@ -66,7 +66,7 @@ function Google_Hosting() {
           <img 
             src={Google_hosting} 
             alt="Google Cloud Hosting" 
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-md" 
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg " 
           />
         </div>
       </div>

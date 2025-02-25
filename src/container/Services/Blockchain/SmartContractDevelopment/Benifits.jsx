@@ -1,12 +1,3 @@
-// import React from 'react'
-
-// const Benifits = () => {
-//   return (
-//     <div>Benifits</div>
-//   )
-// }
-
-// export default Benifits
 import React from "react";
 import { Handshake, Eye, Shield, Settings, DollarSign, Crosshair, BarChart, Activity } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
@@ -31,7 +22,7 @@ const SmartContractBenefits = () => {
     <WrapperContainer>
 
    
-    <div className=" flex flex-col items-center justify-center  p-6">
+    <div className=" flex flex-col items-center justify-center ">
       <Heading>
       <div>
         The Benefits of Smart Contracts

@@ -41,7 +41,7 @@ const Faq = () => {
 
   return (
     <WrapperContainer>
-      <div className="bg-white py-16 px-6">
+      <div>
         <div className="max-w-5xl mx-auto text-center">
           <Heading>
             <div>

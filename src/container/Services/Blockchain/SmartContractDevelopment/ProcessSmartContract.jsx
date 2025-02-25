@@ -1,28 +1,3 @@
-// import React from 'react'
-// import Heading from '../../../../Layout/Heading'
-// import WrapperContainer from '../../../../Layout/WrapperContainer'
-
-// const ProcessSmartContract = () => {
-//   return (
-//     <>
-//       <WrapperContainer>
-
-//       <Heading>
-//             <h1>Smart Contract development Process</h1>
-//         </Heading>
-        
-//       </WrapperContainer>
-       
-
-     
-    
-
-//     </>
-//   )
-// }
-
-// export default ProcessSmartContract
-
 import React from 'react';
 import { FaClipboardList, FaCogs, FaCode, FaShieldAlt, FaRocket } from "react-icons/fa";
 import Heading from '../../../../Layout/Heading';
@@ -61,7 +36,7 @@ const steps = [
 const ProcessSmartContract = () => {
   return (
     <WrapperContainer>
-      <div className="min-h-screen py-12 px-6">
+      <div>
         <div className="max-w-6xl mx-auto text-center">
           <Heading>
              Smart Contract Development Process

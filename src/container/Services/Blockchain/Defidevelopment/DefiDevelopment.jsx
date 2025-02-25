@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const DefiDevelopment = () => {
-//   return (
-//     <div>DefiDevelopment</div>
-//   )
-// }
-
-// export default DefiDevelopment
-
 import React, { memo } from 'react';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
@@ -117,7 +107,7 @@ const services = [
 const DeFiServices = () => {
   return (
     <WrapperContainer>
-      <div className="min-h-screen py-16 px-4">
+      <div>
       <div className="max-w-6xl mx-auto">
         
           <Heading>

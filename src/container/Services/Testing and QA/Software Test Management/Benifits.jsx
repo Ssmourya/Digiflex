@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import WrapperContainer from '../../../../Layout/WrapperContainer';
 
 
 
@@ -59,11 +60,11 @@ const Benifits = () => {
     ];
 
     return (
-
-        <div className="container bg-white min-h-screen w-11/12 mx-auto px-4 py-12 ">
+ <WrapperContainer>
+        <div >
 
             <motion.h1
-                className="text-5xl font-semibold text-center text-[#1A2E6F] mb-20"
+                className="text-5xl font-semibold text-center text-[#1A2E6F] mb-20 "
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -88,6 +89,7 @@ const Benifits = () => {
             </motion.div>
 
         </div>
+ </WrapperContainer>
     );
 };
 

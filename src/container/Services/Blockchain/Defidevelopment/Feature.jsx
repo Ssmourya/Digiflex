@@ -1,52 +1,43 @@
-// import React from 'react'
-// import WrapperContainer from '../../../../Layout/WrapperContainer'
-// import Heading from '../../../../Layout/Heading'
-
-// const Feature = () => {
-//   return (
-//    <>
-//    <WrapperContainer>
-//     <Heading>
-//         Top Features
-//     </Heading>
-//     <div className='max-w-6xl '>
-        
-
-//     </div>
-
-//    </WrapperContainer>
-//    </>
-//   )
-// }
-
-// export default Feature
-
-
 import React from "react";
+import { motion } from "framer-motion";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const FeaturesSection = () => {
   return (
     <WrapperContainer>
-        <Heading>
-        Our Top Feature's 
+      <div className="py-12">
+        <Heading className="text-center">
+          Our Top Features
         </Heading>
-
-      <div className="max-w-4xl mt-8 md:mt-0 flex flex-col space-y-6">
-        {features.map((feature, index) => (
-          <div key={index} className="flex items-start space-x-4">
-            <div className="text-orange-500 text-2xl">{feature.icon}</div>
-            <div>
-              <h3 className="text-lg font-bold">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </div>
-          </div>
-        ))}
+        <div className="max-w-4xl mx-auto mt-8 space-y-8">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="flex items-start space-x-4 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 bg-white"
+            >
+              <div className="flex-shrink-0 text-orange-500 text-3xl">
+                {feature.icon}
+              </div>
+              <div>
+                <Subheading className="mb-2 text-lg font-semibold text-gray-800">
+                  {feature.title}
+                </Subheading>
+                <Paragraph className="text-gray-600">
+                  {feature.description}
+                </Paragraph>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-
-      </WrapperContainer>
-    
+    </WrapperContainer>
   );
 };
 
@@ -73,7 +64,7 @@ const features = [
     icon: "🔗",
     title: "Decentralization",
     description:
-      "Through Decentralization, we enable users to have full access to their funds and financial activities ensuring transparency.",
+      "Through decentralization, we enable users to have full access to their funds and financial activities ensuring transparency.",
   },
 ];
 

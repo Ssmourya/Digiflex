@@ -1,5 +1,8 @@
 import React from 'react';
 import cloud_infrastructure from "../../../../assets/cloud_infrastructure.jpeg"
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph"
 // import { Fullscreen } from 'lucide-react';
 
 const FeaturesList = ({ features }) => {
@@ -38,14 +41,20 @@ const featuresData = [
 
 const ScalableAutomation = () => {
     return (
-        <div className="flex flex-col justify-between md:flex-row min-h-screen w-11/12 mx-auto bg-white px-4 py-12">
+        <WrapperContainer>
+        <div className="flex flex-col justify-between md:flex-row  w-11/12 mx-auto bg-white px-4">
             
             {/* Left Section */}
-            <div className="md:w-1/2 md:pr-8 p-4 py-4">
-                <h1 className="text-5xl font-semibold mb-4 text-[#1A2E6F]">Scalable Automation Cloud Infrastructure</h1>
-                <p className="mb-4 text-xl">
+            <div className="md:w-1/2 md:pr-8 py-4">
+                <Heading>
+                    <div>Scalable Automation Cloud Infrastructure</div>
+                </Heading>
+                <Paragraph>
+                    <span>
                     Effortlessly scale test configurations in the cloud and seamlessly test across diverse real devices, browsers, and OS versions.
-                </p>
+                    </span>
+                </Paragraph>
+                
                 <FeaturesList features={featuresData} />
                 <button className="text-blue-500 hover:text-blue-600 font-medium py-2">
                     Get Started For Free 
@@ -58,6 +67,7 @@ const ScalableAutomation = () => {
                 <img src={cloud_infrastructure} className='mx-auto rounded-xl' width={"1400px"} alt="" />
             </div>
         </div>
+        </WrapperContainer>
   );
 };
 

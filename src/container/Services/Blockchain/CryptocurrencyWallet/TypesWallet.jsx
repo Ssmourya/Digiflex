@@ -1,6 +1,8 @@
 import React from 'react';
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const CryptoWalletTypes = () => {
   const walletTypes = [
@@ -64,11 +66,11 @@ const CryptoWalletTypes = () => {
 
   return (
     <WrapperContainer>
-      <div className="container min-h-screen mx-auto py-10 lg:w-[80vw] md:w-[80vw] px-4 sm:px-6">
+      <div className="container mx-auto lg:w-[80vw] md:w-[80vw] px-4 sm:px-6">
         <Heading>
-          <h1>
+        <div>
             Types Of Crypto Wallet
-          </h1>
+        </div>     
         </Heading>
 
         {/* Responsive Grid with Centering and Left/Right Gaps */}
@@ -81,12 +83,12 @@ const CryptoWalletTypes = () => {
               <div className="text-[#1E3A8A]">
                 {wallet.icon}
               </div>
-              <h2 className="text-2xl font-semibold mb-3 text-[#1E3A8A]">
-                {wallet.title}
-              </h2>
-              <p className="text-gray-600">
-                {wallet.description}
-              </p>
+             <Subheading>
+             {wallet.title}
+             </Subheading>
+            <Paragraph>
+            {wallet.description}
+            </Paragraph>
             </div>
           ))}
         </div>

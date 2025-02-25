@@ -61,7 +61,7 @@ const FAQ = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="container mx-auto "
+        className="container mx-auto mb-20"
       >
         <div className="text-center mb-12">
           <Heading>Frequently Asked Questions</Heading>

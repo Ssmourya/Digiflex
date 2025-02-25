@@ -1,9 +1,10 @@
 import React from 'react';
 import Heading from "../../../../Layout/Heading";
+
 const Button = ({ children, className, ...props }) => {
   return (
     <button
-      className={`bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-medium rounded-lg transition duration-300 ease-in-out ${className}`}
+      className={`bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg shadow-md transition duration-300 ease-in-out ${className}`}
       {...props}
     >
       {children}
@@ -32,38 +33,35 @@ const mediaLogos = [
 
 const Website2 = () => {
   return (
-    <div className="w-full bg-gray-100 py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-10">
+    <div className="w-full bg-white py-14 sm:py-20 px-6 sm:px-10">
       <div className="max-w-7xl mx-auto">
-        
-        {/* As Seen On Section */}
-        <div className="text-center mb-8 sm:mb-12">
-          <Heading>Featured In</Heading>
+        {/* Featured In Section */}
+        <div className="text-center mb-10">
+          <Heading>Trusted By Leading Brands</Heading>
         </div>
 
         {/* Media Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 mb-10 sm:mb-16">
+        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 mb-14">
           {mediaLogos.map((logo, index) => (
-            <div key={index} className="w-20 h-20 sm:w-28 sm:h-28 bg-white shadow-lg rounded-full flex items-center justify-center p-3 sm:p-4">
+            <div key={index} className="w-24 h-24 sm:w-32 sm:h-32 bg-white shadow-lg rounded-full flex items-center justify-center p-4">
               <img src={logo.src} alt={logo.alt} className="max-w-full h-auto object-contain" />
             </div>
           ))}
         </div>
 
-        {/* Heading Section */}
-        <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-gray-900 text-3xl sm:text-4xl font-bold leading-tight">
-            Welcome to <span className="text-blue-600">Digiflex.ai</span>
+        {/* Welcome Section */}
+        <div className="text-center mb-8">
+          <h1 className="text-gray-900 text-3xl sm:text-5xl font-bold leading-tight">
+            Build Your Digital Success with <span className="text-blue-600">Digiflex.ai</span>
           </h1>
-          <p className="text-base sm:text-lg text-gray-600 mt-3 sm:mt-4 max-w-2xl mx-auto">
-            Your trusted partner in web development. We specialize in crafting custom, responsive, and SEO-optimized business websites to boost your digital presence.
+          <p className="text-lg sm:text-xl text-gray-700 mt-4 max-w-3xl mx-auto">
+            We create stunning, high-performance websites tailored to your business needs. Elevate your online presence with our expert development solutions.
           </p>
         </div>
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <Button>
-            Get Your Website Today
-          </Button>
+          <Button>Start Your Project Today</Button>
         </div>
       </div>
     </div>

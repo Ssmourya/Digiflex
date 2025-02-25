@@ -8,7 +8,7 @@ const Card6part = () => {
   return (
    <>
    <WrapperContainer>
-    <div className="bg-gray-100 p-10 rounded-xl">
+    <div className="bg-white p-10 rounded-xl">
     <Heading>
   <h1>
     Blockchain Support Services

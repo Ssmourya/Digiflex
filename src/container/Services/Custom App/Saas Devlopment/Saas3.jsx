@@ -7,23 +7,23 @@ const Saas3 = () => {
   const caseStudies = [
     {
       image: 'https://i.pinimg.com/736x/70/c9/80/70c980f3001190ad5f829b5018a06215.jpg',
-      tag: 'WEBSITE DEVELOPMENT',
-      title: 'Panasonic Sign-Edge'
+      tag: 'SAAS DEVELOPMENT',
+      title: 'Scalable Cloud-Based Solutions'
     },
     {
       image: 'https://i.pinimg.com/736x/c8/22/f8/c822f8d970d9419ffbf048d49e002e3f.jpg',
-      tag: 'UI/UX DESIGN',
-      title: 'MamyPoko'
+      tag: 'MULTI-TENANT ARCHITECTURE',
+      title: 'Optimized SaaS Platforms'
     },
     {
       image: 'https://i.pinimg.com/736x/04/8b/47/048b471216515fc73c0d23cb6917864b.jpg',
-      tag: 'UI/UX DESIGN',
-      title: 'Panasonic eCareWiz'
+      tag: 'SECURITY & COMPLIANCE',
+      title: 'Enterprise-Grade Security'
     },
     {
       image: 'https://i.pinimg.com/736x/18/2d/3e/182d3e102f2021cab86cd224323cd741.jpg',
-      tag: 'UI/UX DESIGN',
-      title: 'KFC Recruitment App'
+      tag: 'PERFORMANCE OPTIMIZATION',
+      title: 'High-Availability SaaS'
     }
   ];
 
@@ -33,12 +33,12 @@ const Saas3 = () => {
         {/* Header */}
         <div className="mb-12 flex justify-between items-center">
           <div>
-            <Heading >
-              Our Case Studies
+            <Heading>
+              Our SaaS Success Stories
             </Heading>
           </div>
           <button className="bg-blue-500 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-blue-600 transition-colors">
-            View More Portfolios
+            View More Case Studies
             <MoveRight className="w-4 h-4" />
           </button>
         </div>

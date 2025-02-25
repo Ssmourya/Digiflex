@@ -1,49 +1,79 @@
 import React from "react";
 import bg5 from "../../../../assets/bg5.png";
+import bg6 from "../../../../assets/bg6.png"; // Added a new image
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 
 const Four = () => {
   return (
-    <div className="flex gap-8 p-8 font-sans bg-white">
-      <div className="flex-1">
-        <img
-          src={bg5}
-          alt="Service Console"
-          className="w-full rounded-lg shadow-md mb-4"
-        />
-        <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
-          Ask Agentforce
-        </button>
-      </div>
-      <div className="flex-1">
-        <Heading >
-        OptiOps
-        </Heading>
-        <Subheading className="text-lg text-gray-600 mb-4">
-          Knowledge Management
-        </Subheading>
-        <div className="flex gap-4 mb-4">
-          <button className="bg-blue-700 text-white py-3 px-6 font-semibold rounded-lg hover:bg-blue-800">
-            Watch Demo
-          </button>
-          <button className="bg-blue-700 text-white py-3 px-6 font-semibold rounded-lg hover:bg-blue-800">
-            Learn more
-          </button>
-        </div>
-        <div className="mb-4">
-          <Subheading className="text-blue-600 text-xl mb-2">
-            Knowledge Base
+    <div className="bg-white p-8 font-sans">
+      {/* First Section - OptiOps */}
+      <div className="flex gap-8 items-center mb-12">
+        <div className="flex-1">
+          <Heading>OptiOps</Heading>
+          <Subheading className="text-lg text-gray-600 mb-4">
+            Intelligent Knowledge Management
           </Subheading>
-          <p className="text-gray-600 text-base mb-4">
-            Stay one step ahead of potential disruptions with powerful incident management tools seamlessly integrated into Service Cloud. By monitoring systems through out-of-the-box integrations, these tools proactively detect potential problems, enabling businesses to take swift action before they escalate into widespread issues. With the ability to track and manage incidents in real-time, businesses can minimize downtime and enhance operational efficiency.
-            The integration of incident management into Service Cloud empowers service and operations teams to work in unison.
-          </p>
+          <div className="flex gap-4 mb-4">
+            <button className="bg-blue-700 text-white py-3 px-6 font-semibold rounded-lg hover:bg-blue-800">
+              Watch Demo
+            </button>
+            <button className="bg-blue-700 text-white py-3 px-6 font-semibold rounded-lg hover:bg-blue-800">
+              Learn More
+            </button>
+          </div>
+          <div className="mb-4">
+            <Subheading className="text-blue-600 text-xl mb-2">
+              AI-Powered Knowledge Base
+            </Subheading>
+            <p className="text-gray-600 text-base mb-4">
+              Empower your service teams with AI-driven knowledge management. 
+              Reduce resolution times and enhance customer interactions with instant access to contextual, relevant information.  
+              Leverage real-time insights to improve agent productivity and customer satisfaction.
+            </p>
+          </div>
+          <ul className="list-none p-0">
+            <li className="text-blue-600 text-base mb-2">AI-Powered Search</li>
+            <li className="text-blue-600 text-base mb-2">Smart Content Suggestions</li>
+          </ul>
         </div>
-        <ul className="list-none p-0">
-          <li className="text-blue-600 text-base mb-2">Incident Resolution</li>
-          <li className="text-blue-600 text-base mb-2">Broadcast Communications</li>
-        </ul>
+        <div className="flex-1">
+          <img src={bg5} alt="Knowledge Management" className="w-full rounded-lg shadow-md mb-4" />
+        </div>
+      </div>
+
+      {/* Second Section - OmniAssist */}
+      <div className="flex gap-8 items-center flex-row-reverse">
+        <div className="flex-1">
+          <Heading>OmniAssist</Heading>
+          <Subheading className="text-lg text-gray-600 mb-4">
+            Omni-Channel Customer Engagement
+          </Subheading>
+          <div className="flex gap-4 mb-4">
+            <button className="bg-blue-700 text-white py-3 px-6 font-semibold rounded-lg hover:bg-blue-800">
+              Watch Demo
+            </button>
+            <button className="bg-blue-700 text-white py-3 px-6 font-semibold rounded-lg hover:bg-blue-800">
+              Learn More
+            </button>
+          </div>
+          <div className="mb-4">
+            <Subheading className="text-blue-600 text-xl mb-2">
+              Unified Communication Across Channels
+            </Subheading>
+            <p className="text-gray-600 text-base mb-4">
+              Deliver seamless customer support across voice, chat, email, and social channels.  
+              Our omni-channel engagement solution ensures personalized, context-aware interactions, reducing friction and improving customer experience.
+            </p>
+          </div>
+          <ul className="list-none p-0">
+            <li className="text-blue-600 text-base mb-2">Automated Response Suggestions</li>
+            <li className="text-blue-600 text-base mb-2">Real-Time Agent Collaboration</li>
+          </ul>
+        </div>
+        <div className="flex-1">
+          <img src={bg6} alt="Omni-Channel Engagement" className="w-full rounded-lg shadow-md mb-4" />
+        </div>
       </div>
     </div>
   );

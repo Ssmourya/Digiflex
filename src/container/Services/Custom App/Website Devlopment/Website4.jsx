@@ -1,10 +1,10 @@
 import React from "react";
-import { Code, Clipboard, CheckCircle, Coffee, ShoppingCart } from "lucide-react";
+import { Code, Clipboard, CheckCircle, Coffee, ShoppingCart, Globe, Shield, Layers } from "lucide-react";
 import bussse from "../../../../assets/Busssensss.png";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import { motion } from "framer-motion";
 
-// Data for the process steps and website packages
 const processSteps = [
   { title: "Planning", description: "Understanding business needs.", icon: <Clipboard className="w-8 h-8 text-white" /> },
   { title: "Design", description: "Creating visually appealing mockups.", icon: <Coffee className="w-8 h-8 text-white" /> },
@@ -18,7 +18,7 @@ const packages = [
   { 
     title: "STARTUP WEBSITE", 
     subtitle: "Best for Startups", 
-    description: "Simple and professional.", 
+    description: "Simple and professional websites for new businesses.", 
     buttonText: "Startup Plan", 
     icon: <Clipboard className="w-8 h-8 text-white" /> 
   },
@@ -36,18 +36,38 @@ const packages = [
     buttonText: "Ecommerce Website Plan", 
     icon: <ShoppingCart className="w-8 h-8 text-white" /> 
   },
+  { 
+    title: "ENTERPRISE SOLUTIONS", 
+    subtitle: "Best for Corporates", 
+    description: "Custom enterprise-level web solutions for high efficiency.", 
+    buttonText: "Enterprise Plan", 
+    icon: <Globe className="w-8 h-8 text-white" /> 
+  },
+  { 
+    title: "SECURE WEB DEVELOPMENT", 
+    subtitle: "Cybersecurity Focused", 
+    description: "We prioritize security to protect your data and users.", 
+    buttonText: "Secure Web Plan", 
+    icon: <Shield className="w-8 h-8 text-white" /> 
+  },
+  { 
+    title: "CUSTOM WEB APPS", 
+    subtitle: "Tailored Solutions", 
+    description: "Fully customized web applications built for your needs.", 
+    buttonText: "Custom Web Plan", 
+    icon: <Layers className="w-8 h-8 text-white" /> 
+  }
 ];
 
-// Reusable Button Component
 const Button = ({ className, children }) => (
-  <button className={`${className} px-6 py-3 rounded-full text-white font-semibold transition-transform transform hover:scale-105 duration-300`}>
-    {children}
-  </button>
+  <button className={`${className} px-6 py-3 rounded-full text-white font-semibold transition-transform transform hover:scale-105 duration-300`}>{children}</button>
 );
 
-// Unified Card Component used for both packages and process steps
 const Card = ({ icon, title, subtitle, description, button }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 text-center transform transition-all hover:shadow-xl hover:-translate-y-1 duration-300">
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="bg-white rounded-lg shadow-md p-6 text-center transform transition-all hover:shadow-xl duration-300"
+  >
     <div className="mx-auto bg-[#3730A3] rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-md">
       {icon}
     </div>
@@ -55,17 +75,14 @@ const Card = ({ icon, title, subtitle, description, button }) => (
     {subtitle && <p className="text-sm text-gray-500 mt-1">{subtitle}</p>}
     <p className="text-gray-600 mt-2">{description}</p>
     {button && <div className="mt-4">{button}</div>}
-  </div>
+  </motion.div>
 );
 
 export default function Website4() {
   return (
-    <section className="py-16 px-4 bg-gray-100">
+    <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto space-y-16">
-        {/* Website Development Packages */}
-        <Heading>
-          Our Website Development Packages
-        </Heading>
+        <Heading> Expert Website Development Services </Heading>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {packages.map((pkg, index) => (
             <Card 
@@ -79,18 +96,13 @@ export default function Website4() {
           ))}
         </div>
 
-        <div className="bg-[#3730A3] text-white py-3 px-6 rounded-full text-center">
-          <p className="font-medium">(64%) Of Small Businesses Have A Website! Do You Have One?</p>
-        </div>
+      
 
-        {/* Business Website Value Section */}
         <div className="flex flex-col md:flex-row items-center justify-between bg-white p-8 space-y-8 md:space-y-0 rounded-lg shadow-md">
           <div className="md:w-1/2 space-y-4">
-            <Heading>
-              Does It Make A Value To Get A Business Website?
-            </Heading>
+            <Heading> Why Invest in a Business Website? </Heading>
             <p className="text-lg text-gray-700">
-              Hire Digiflex.ai – A leading website development company specializing in mobile-responsive and SEO-friendly websites.
+              Partner with Digiflex.ai for SEO-friendly, mobile-responsive, and high-performance websites.
             </p>
           </div>
           <div className="w-full md:w-1/2 hidden md:block">
@@ -98,13 +110,8 @@ export default function Website4() {
           </div>
         </div>
 
-        {/* Website Development Process */}
-        <Heading>
-          Our Website Development Process
-        </Heading>
-        <Subheading className="text-center text-gray-600">
-          A streamlined overview of our custom web app development process.
-        </Subheading>
+        <Heading> Our Website Development Process </Heading>
+        <Subheading className="text-center text-gray-600">A streamlined approach for top-quality web solutions.</Subheading>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {processSteps.map((step, index) => (
             <Card 

@@ -67,7 +67,7 @@ const FeatureCard = ({ feature, index }) => (
 
 export default function Amp() {
   return (
-    <section className="w-full py-12 bg-gray-50">
+    <section className="w-full py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         
       <Heading>Our Key Features</Heading>

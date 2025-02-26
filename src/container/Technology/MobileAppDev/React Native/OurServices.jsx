@@ -27,7 +27,7 @@ const OurServices = () => {
 
   return (
     <motion.div
-      className="w-full min-h-screen bg-gray-50 text-[#172554] px-6 md:px-12 flex flex-col justify-center items-center"
+      className="w-full min-h-screen bg-white text-[#172554] px-6 md:px-12 flex flex-col justify-center items-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

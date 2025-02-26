@@ -34,7 +34,7 @@ const features = [
 
 const WhyChooseFlutter = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6">
+    <section className="bg-white py-20 px-6">
       {/* Main Heading with Animated Underline */}
       <Heading 
         initial={{ opacity: 0, y: -30 }}

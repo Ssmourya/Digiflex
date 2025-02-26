@@ -12,7 +12,7 @@ const features = [
 
 export default function NativeScriptBenefits() {
   return (
-    <section className="bg-[#F3F4F6] py-16 px-6 text-#172554 text-center">
+    <section className="bg-white py-16 px-6 text-#172554 text-center">
       
       <Heading
         initial={{ opacity: 0, y: -50 }}

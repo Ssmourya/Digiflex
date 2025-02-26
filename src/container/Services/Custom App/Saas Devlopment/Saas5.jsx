@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import React from 'react';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
 
 const Saas5 = () => {
-  const [openFaq, setOpenFaq] = useState(null);
-
   const insights = [
     {
       title: 'Revolutionizing SaaS with AI: Trends and Innovations',
@@ -21,33 +18,6 @@ const Saas5 = () => {
       title: 'Scaling SaaS Applications for Global Enterprises',
       category: 'Enterprise SaaS',
       image: 'https://i.pinimg.com/736x/95/e1/3d/95e13df0b24a78549dfd3897cfd9e6e4.jpg'
-    }
-  ];
-
-  const faqs = [
-    {
-      question: 'What are SaaS Application Development Services?',
-      answer: 'SaaS Application Development Services provide cloud-based software solutions that are accessible over the internet. These services include design, development, deployment, and maintenance of software applications that follow the Software-as-a-Service model.'
-    },
-    {
-      question: 'What are the key benefits of SaaS solutions?',
-      answer: 'SaaS solutions offer advantages such as cost-effectiveness, automatic updates, scalability, remote accessibility, and seamless integration with other cloud services. They help businesses reduce infrastructure costs and streamline operations.'
-    },
-    {
-      question: 'How does SaaS ensure data security?',
-      answer: 'SaaS applications implement security measures such as end-to-end encryption, multi-factor authentication, regular security audits, and compliance with industry standards (e.g., GDPR, HIPAA, SOC 2).'
-    },
-    {
-      question: 'Can SaaS applications be customized?',
-      answer: 'Yes, SaaS applications can be customized to meet specific business needs. This includes configurable user interfaces, API integrations, workflow automation, and custom reporting capabilities.'
-    },
-    {
-      question: 'What makes a SaaS application scalable?',
-      answer: 'A scalable SaaS application is designed to handle increased user demand without performance degradation. It uses cloud infrastructure, microservices architecture, load balancing, and optimized database management.'
-    },
-    {
-      question: 'What support and maintenance services are provided for SaaS applications?',
-      answer: 'SaaS applications require ongoing support including bug fixes, performance monitoring, feature updates, security patches, and 24/7 customer support to ensure smooth operation and user satisfaction.'
     }
   ];
 
@@ -85,37 +55,6 @@ const Saas5 = () => {
                   {insight.title}
                 </Subheading>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="mt-16">
-        <Heading className="text-2xl font-bold mb-8">
-          FAQs - SaaS Application Development Services
-        </Heading>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div 
-              key={index}
-              className="bg-gray-50 rounded-lg overflow-hidden"
-            >
-              <button
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100"
-                onClick={() => setOpenFaq(openFaq === index ? null : index)}
-              >
-                <span className="font-medium">{faq.question}</span>
-                {openFaq === index ? 
-                  <ChevronUp className="w-5 h-5 text-gray-500" /> : 
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                }
-              </button>
-              {openFaq === index && (
-                <div className="px-6 py-4 bg-white">
-                  <p className="text-gray-600">{faq.answer}</p>
-                </div>
-              )}
             </div>
           ))}
         </div>

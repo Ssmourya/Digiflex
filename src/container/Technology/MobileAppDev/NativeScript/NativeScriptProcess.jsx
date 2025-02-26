@@ -45,7 +45,7 @@ export default function NativeScriptProcess() {
   const [selectedStep, setSelectedStep] = useState(null);
 
   return (
-    <div className="py-16 bg-gray-100">
+    <div className="py-16 bg-white">
       <div className="max-w-6xl mx-auto text-center px-4">
         
        <Heading

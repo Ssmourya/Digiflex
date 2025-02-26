@@ -4,6 +4,8 @@ import WebApplication2 from "../container/Services/Custom App/Web Application De
 import WebApplication3 from "../container/Services/Custom App/Web Application Devlopment/WebApplication3";
 import WebApplication4 from "../container/Services/Custom App/Web Application Devlopment/WebApplication4";
 import WebApplication5 from "../container/Services/Custom App/Web Application Devlopment/WebApplication5";
+import FrequentlyAskedQuestions from "../container/Services/Custom App/Web Application Devlopment/FrequentlyAskedQuestions";
+
 
 export default function Application() {
   return (
@@ -52,10 +54,14 @@ export default function Application() {
       </div>
 
       {/* Additional Sections */}
+     
       <WebApplication2 />
       <WebApplication3 />
       <WebApplication4 />
       <WebApplication5 />
+      
+      <FrequentlyAskedQuestions/>
+      
     </>
   );
 }

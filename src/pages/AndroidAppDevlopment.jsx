@@ -6,6 +6,7 @@ import TechStack from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPM
 import SmartFeatures from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPMENT/SmartFeatures'
 import AndroidDevelopmentProcess from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPMENT/AndroidDevelopmentProcess'
 import WrapperContainer from '../Layout/WrapperContainer'
+import FAQ from '../container/Technology/MobileAppDev/ANDROID APP DEVELOPMENT/FAQ'
 const AndroidAppDevlopment = () => {
   return (
    <>
@@ -16,6 +17,7 @@ const AndroidAppDevlopment = () => {
       <TechStack/>
       <SmartFeatures/>
       <AndroidDevelopmentProcess/>
+      <FAQ/>
       </WrapperContainer>
     </>
   )

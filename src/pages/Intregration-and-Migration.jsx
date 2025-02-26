@@ -5,6 +5,7 @@ import Mobile2 from "../container/Services/Custom App/Intregation and Migration/
 import Mobile3 from "../container/Services/Custom App/Intregation and Migration/Mobile3";
 import Mobile4 from "../container/Services/Custom App/Intregation and Migration/mobile4";
 import WrapperContainer from "../Layout/WrapperContainer";
+import IntegrationMigrationFAQ from "../container/Services/Custom App/Intregation and Migration/IntegrationMigrationFAQ";
 
 const Mobile = () => {
   return (
@@ -74,6 +75,7 @@ const Mobile = () => {
       <Mobile3 />
       <Mobile4 />
       </WrapperContainer>
+      <IntegrationMigrationFAQ/>
     </>
   );
 };

@@ -36,7 +36,7 @@ const techStackData = [
 
 const XamarinTechStack = () => {
   return (
-    <section className="py-20 bg-[#F9FAFB]">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">

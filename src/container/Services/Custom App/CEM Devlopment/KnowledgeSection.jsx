@@ -1,34 +1,8 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import React from "react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 
-const faqs = [
-  {
-    question: "How does AI-powered knowledge management improve customer support?",
-    answer:
-      "AI automates the discovery of relevant articles, reduces resolution times, and ensures accurate responses by analyzing past interactions and queries.",
-  },
-  {
-    question: "Can the knowledge base be customized for different industries?",
-    answer:
-      "Yes, our AI-powered knowledge management system is adaptable and can be tailored to meet industry-specific requirements.",
-  },
-  {
-    question: "Does this system integrate with existing support tools?",
-    answer:
-      "Absolutely! Our knowledge management system seamlessly integrates with CRM platforms, chatbots, and other customer support tools.",
-  },
-];
-
 const KnowledgeSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <div className="flex flex-wrap items-start gap-8 p-8 bg-white font-sans">
       {/* Knowledge Left Section */}
@@ -65,43 +39,6 @@ const KnowledgeSection = () => {
           alt="AI-Driven Knowledge Management"
           className="w-full max-w-md rounded-lg shadow-lg mb-4"
         />
-       
-      </div>
-      
-      {/* Frequently Asked Questions Section */}
-      <div className="w-full mt-12">
-        <Heading>Frequently Asked Questions</Heading>
-        <Subheading className="text-gray-600 mb-6">
-          Find quick answers to common queries.
-        </Subheading>
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
-              <button
-                className="flex justify-between items-center w-full text-left text-blue-600 font-semibold focus:outline-none"
-                onClick={() => toggleFAQ(index)}
-              >
-                {faq.question}
-                {openIndex === index ? (
-                  <ChevronUp className="w-5 h-5 text-blue-600" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-blue-600" />
-                )}
-              </button>
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{
-                  height: openIndex === index ? "auto" : 0,
-                  opacity: openIndex === index ? 1 : 0,
-                }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden"
-              >
-                <p className="text-white mt-2">{faq.answer}</p>
-              </motion.div>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Heading from "../../../../Layout/Heading";
-import Subheading from "../../../../Layout/Subheading";
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 const FAQItem = ({ question, answer }) => {
@@ -37,47 +35,49 @@ const FAQItem = ({ question, answer }) => {
 const FrequentlyAskedQuestions = () => {
   const faqs = [
     {
-      question: "What is Xamarin?",
-      answer: "Xamarin is a cross-platform development framework from Microsoft that uses C# and .NET to build native mobile applications for iOS, Android, and Windows.",
+      question: "What is Website Development?",
+      answer:
+        "Website Development involves creating websites and web applications, focusing on both front-end and back-end processes to deliver engaging user experiences.",
     },
     {
-      question: "Which languages can I use with Xamarin?",
-      answer: "Xamarin primarily uses C#, allowing developers to share code across multiple platforms while still delivering native performance.",
+      question: "Which technologies are used in Website Development?",
+      answer:
+        "We use a combination of HTML5, CSS3, and JavaScript, along with frameworks such as React, Angular, or Vue for the front-end, and Node.js, PHP, or Ruby on Rails for the back-end.",
     },
     {
-      question: "What is Xamarin.Forms?",
-      answer: "Xamarin.Forms is a UI toolkit within Xamarin that enables developers to build cross-platform user interfaces using a single, shared codebase.",
+      question: "How do you ensure responsive design?",
+      answer:
+        "We employ responsive design principles using flexible grids, media queries, and adaptive layouts to ensure that your website looks and works great on all devices.",
     },
     {
-      question: "How does Xamarin integrate with Visual Studio?",
-      answer: "Xamarin integrates seamlessly with Visual Studio, providing robust debugging, testing tools, and design support for developing mobile applications.",
+      question: "What is your website development process?",
+      answer:
+        "Our process includes planning, design, development, testing, and deployment. We follow agile methodologies to ensure iterative improvements and timely delivery.",
     },
     {
-      question: "Is Xamarin free to use?",
-      answer: "Yes, Xamarin is available as part of Visual Studio Community Edition, making it free for individual developers and small teams.",
+      question: "How do you handle website maintenance?",
+      answer:
+        "We offer ongoing maintenance services including security updates, performance optimization, and regular content updates to keep your website current and secure.",
     },
   ];
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-[90%] md:max-w-5xl mx-auto px-4 fade-in">
-        {/* Section Heading */}
         <div className="text-center mb-8">
           <h3 className="text-5xl font-extrabold text-center text-blue-600">
             ❓ Frequently Asked Questions (FAQs)
           </h3>
-          <Subheading>
+          <p className="text-blue-900 text-lg mt-4">
             Got questions? We're here to help.
-          </Subheading>
+          </p>
         </div>
-        {/* FAQ Cards */}
         <div className="bg-white shadow-lg rounded-xl p-6 md:p-8">
           {faqs.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}
         </div>
       </div>
-      {/* Fade-in Animation */}
       <style jsx>{`
         .fade-in {
           animation: fadeIn 1s ease-out forwards;

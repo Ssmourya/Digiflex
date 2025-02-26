@@ -11,6 +11,7 @@ import Com3 from '../assets/Logo4.jpg';
 import Com4 from '../assets/Logo5.jpg';
 import Heading from '../Layout/Heading';
 import WrapperContainer from '../Layout/WrapperContainer';
+import FrequentlyAskedQuestions from '../container/Services/Custom App/Mobile App Devlopment/FrequentlyAskedQuestions';
 
 
 
@@ -63,6 +64,7 @@ const Amp = () => {
       <Amp2 />
       <Amp3 />
       <Amp5 />
+      <FrequentlyAskedQuestions/>
       
       </WrapperContainer>
      

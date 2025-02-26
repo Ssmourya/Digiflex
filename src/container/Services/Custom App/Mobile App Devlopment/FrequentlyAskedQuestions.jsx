@@ -37,24 +37,24 @@ const FAQItem = ({ question, answer }) => {
 const FrequentlyAskedQuestions = () => {
   const faqs = [
     {
-      question: "What is Xamarin?",
-      answer: "Xamarin is a cross-platform development framework from Microsoft that uses C# and .NET to build native mobile applications for iOS, Android, and Windows.",
+      question: "What is Web and Mobile App Development?",
+      answer: "Web and Mobile App Development involves creating applications that work seamlessly across both web browsers and mobile devices, often using responsive design techniques and cross-platform frameworks.",
     },
     {
-      question: "Which languages can I use with Xamarin?",
-      answer: "Xamarin primarily uses C#, allowing developers to share code across multiple platforms while still delivering native performance.",
+      question: "Which technologies are commonly used?",
+      answer: "Developers often use HTML5, CSS3, and JavaScript for web apps, along with frameworks like React, Angular, or Vue. For mobile apps, frameworks like React Native, Flutter, or Ionic are popular choices.",
     },
     {
-      question: "What is Xamarin.Forms?",
-      answer: "Xamarin.Forms is a UI toolkit within Xamarin that enables developers to build cross-platform user interfaces using a single, shared codebase.",
+      question: "What frameworks support both web and mobile development?",
+      answer: "Frameworks like React Native (with Expo), Flutter, and Ionic allow for building cross-platform applications with a single codebase, streamlining development and maintenance.",
     },
     {
-      question: "How does Xamarin integrate with Visual Studio?",
-      answer: "Xamarin integrates seamlessly with Visual Studio, providing robust debugging, testing tools, and design support for developing mobile applications.",
+      question: "How do I ensure cross-device compatibility?",
+      answer: "Using responsive design, media queries, and testing on various devices and emulators helps ensure that your application works well across different screen sizes and operating systems.",
     },
     {
-      question: "Is Xamarin free to use?",
-      answer: "Yes, Xamarin is available as part of Visual Studio Community Edition, making it free for individual developers and small teams.",
+      question: "What are the benefits of a unified codebase?",
+      answer: "A unified codebase reduces development time and cost, simplifies maintenance, and ensures consistency in user experience across both web and mobile platforms.",
     },
   ];
 

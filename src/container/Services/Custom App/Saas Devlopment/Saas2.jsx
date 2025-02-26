@@ -73,7 +73,7 @@ const Saas2 = () => {
       </div>
 
       {/* Extra Content for Larger Screens */}
-      <div className="hidden lg:block mt-16 p-8 bg-gray-100 rounded-lg shadow-lg">
+      <div className="hidden lg:block mt-16 p-8 bg-white rounded-lg shadow-lg">
         <Heading >
           Additional Insights
         </Heading>

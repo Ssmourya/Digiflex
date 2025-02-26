@@ -23,14 +23,14 @@ const whyDigiflex = [
 
 export default function NativeScriptServices() {
   return (
-    <section className="py-16 bg-[#F3F4F6]">
+    <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Heading className="text-3xl font-bold text-gray-800 mb-8 flex justify-center items-center gap-2">
+          <Heading >
             🛠 Our NativeScript App Development Services
           </Heading>
         </motion.div>

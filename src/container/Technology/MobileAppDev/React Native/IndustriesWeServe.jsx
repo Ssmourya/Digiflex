@@ -37,7 +37,7 @@ const industries = [
 const IndustriesWeServe = () => {
   return (
     <motion.div
-      className="w-full py-16 bg-gray-50 text-[#172554] px-6 md:px-12"
+      className="w-full py-16 bg-white text-[#172554] px-6 md:px-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

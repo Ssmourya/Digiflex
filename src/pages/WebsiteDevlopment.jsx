@@ -6,6 +6,7 @@ import Website5 from '../container/Services/Custom App/Website Devlopment/Websit
 import { PhoneIcon as WhatsApp } from 'lucide-react';
 import videoBg from '../assets/blockchain_video.mp4'; // Video background
 import WrapperContainer from '../Layout/WrapperContainer';
+import FrequentlyAskedQuestions from '../container/Services/Custom App/Website Devlopment/FrequentlyAskedQuestions';
 
 const Website = () => {
   return (
@@ -49,11 +50,12 @@ const Website = () => {
 
       {/* Additional Components */}
      <WrapperContainer>
-       <Website2 />
+      <Website2 />
       <Website3 />
       <Website4 />
       <Website5 />
       </WrapperContainer>
+      <FrequentlyAskedQuestions/>
     </>
   );
 };

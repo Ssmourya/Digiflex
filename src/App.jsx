@@ -5,10 +5,10 @@ import Home from './pages/Home'
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 
-import CemDevlopment from "./pages/Cem-devlopment";
+import CEMDEVELOPMENT from "./pages/CEMDEVELOPMENT";
 import IntregrationandMigration from "./pages/Intregration-and-Migration";
 import BlockChainDevlopment from "./pages/BlockChainDevlopment";
-import SaasDeclopment from "./pages/Saas-Devlopment";
+import SAASDEVELOPMENT from "./pages/SAASDEVELOPMENT";
 import WebsiteDevlopment from "./pages/WebsiteDevlopment";
 import MobileAppDevlopment from "./pages/Mobile-App-Devlopment";
 import WebApplicationDevlopment from "./pages/WebApplicationDevlopment";
@@ -141,31 +141,31 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
         />
 
         <Route
-          path="/services/custom-apps/IntregrationandMigration"
+          path="/integration-and-migration-services"
           element={<IntregrationandMigration />}
         />
         <Route
-          path="/services/custom-apps/cem-devlopment"
-          element={<CemDevlopment />}
+          path="/customer-experience-management-development"
+          element={<CEMDEVELOPMENT/>}
         />
         <Route
-          path="/services/custom-apps/SaasDevlopment"
-          element={<SaasDeclopment />}
+          path="saas-software-development"
+          element={<SAASDEVELOPMENT/>}
         />
         <Route
-          path="/services/custom-apps/WebsiteDevlopment"
+          path="/website-development-services"
           element={<WebsiteDevlopment />}
         />
         <Route
-          path="/services/custom-apps/block-chain"
+          path="/blockchain-development-services"
           element={<BlockChainDevlopment />}
         />
         <Route
-          path="/services/custom-apps/MobileAppDevlopment"
+          path="/mobile-app-development"
           element={<MobileAppDevlopment />}
         />
         <Route
-          path="/services/custom-apps/webApplicationDevlopment"
+          path="/web-application-development"
           element={<WebApplicationDevlopment />}
         />
 
@@ -261,27 +261,27 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
         <Route path="/tech/frontend/nextjs" element={<NextjsDevelopment />} />
 
         {/* Mobile Technology */}
-        <Route path="/tech/mobile/ios" element={<IosDevelopmentTech />} />
+        <Route path="/ios-app-development-services" element={<IosDevelopmentTech />} />
         <Route
-          path="/tech/AndroidAppDevlopment"
+          path="/android-app-development-services"
           element={<AndroidAppDevlopment />}
         />
-        <Route path="/tech/ReactNative" element={<ReactNative />} />
+        <Route path="/react-native-app-development-services" element={<ReactNative />} />
         <Route
-          path="/tech/FlutterDevlopment"
+          path="/flutter-app-development-services"
           element={<FlutterAppDevlopment />}
         />
-        <Route path="/tech/NativeScript" element={<NativeScript />} />
+        <Route path="/nativescript-app-development-services" element={<NativeScript />} />
         <Route
-          path="/tech/XamarinAppDevlopment"
+          path="/xamarin-app-development-services"
           element={<XamarinAppDEvlopment />}
         />
         <Route
-        path="/tech/HtmlDevlopment"
+        path="/html5-app-development-services"
         element={<HtmlDevlopment/>}
       />
       <Route
-      path="/tech/web/mean"
+      path="/mean-stack-development"
       element={<WebsiteTechDevlopmet/>}
     />
         {/* Game development */}

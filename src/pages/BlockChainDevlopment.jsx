@@ -8,6 +8,7 @@ import Cardpart5 from "../container/Services/Custom App/BlockChain/Cardpart5";
 import Card6part from "../container/Services/Custom App/BlockChain/Card6part";
 import videoBg from "../assets/blockchain_video.mp4";
 import WrapperContainer from "../Layout/WrapperContainer";
+import BlockchainDevelopmentFAQ from "../container/Services/Custom App/BlockChain/BlockchainDevelopmentFAQ";
 
 function Home() {
   return (
@@ -26,7 +27,7 @@ function Home() {
         </video>
 
         {/* Overlay */}
-        <WrapperContainer>
+       
           <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
 
           {/* Content */}
@@ -53,20 +54,21 @@ function Home() {
               Hire Blockchain Developers
             </motion.p>
           </motion.div>
-        </WrapperContainer>
+       
       </div>
 
       {/* Blockchain Service Components */}
-      <div>
-      <WrapperContainer>
-        <Cardpart1 />
-        <Cardparten2 />
-        <Cardpart3 />
-        <Cardpart4 />
-        <Cardpart5 />
-        <Card6part />
+     
+        <WrapperContainer>
+          <Cardpart1 />
+          <Cardparten2 />
+          <Cardpart3 />
+          <Cardpart4 />
+          <Cardpart5 />
+          <Card6part />
         </WrapperContainer>
-      </div>
+        <BlockchainDevelopmentFAQ/>
+      
     </>
   );
 }

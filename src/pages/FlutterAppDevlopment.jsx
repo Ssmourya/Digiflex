@@ -4,6 +4,7 @@ import WhyChooseFlutter from '../container/Technology/MobileAppDev/FlutterAppDEv
 import OurServices from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/OurServices';
 import OurTechStack from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/OurTechStack'
 import IndustriesWeServe from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/IndustriesWeServe'
+import FAQ from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/FAQ';
 const FlutterAppDevlopment = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const FlutterAppDevlopment = () => {
       <OurServices/>
       <OurTechStack/>
       <IndustriesWeServe/>
+      <FAQ/>
       
     </div>
   )

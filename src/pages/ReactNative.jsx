@@ -5,6 +5,7 @@ import OurServices from '../container/Technology/MobileAppDev/React Native/OurSe
 import OurTechStack from '../container/Technology/MobileAppDev/React Native/OurTechStack'
 import SmartFeatures from '../container/Technology/MobileAppDev/React Native/SmartFeatures'
 import IndustriesWeServe from '../container/Technology/MobileAppDev/React Native/IndustriesWeServe'
+import FAQ from '../container/Technology/MobileAppDev/React Native/FAQ'
 const ReactNative = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const ReactNative = () => {
       <OurServices/>
       <IndustriesWeServe/>
       <SmartFeatures/>
-      
+      <FAQ/>
       
     </div>
   )

@@ -106,7 +106,7 @@ export default function WhyChooseDigiflex() {
   const [activeFeature, setActiveFeature] = useState(features[0].id);
 
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="bg-white py-12">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Main Heading & Subheading */}
         <div className="text-center mb-8">

@@ -3,7 +3,7 @@ import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 const XamarinAppServices = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

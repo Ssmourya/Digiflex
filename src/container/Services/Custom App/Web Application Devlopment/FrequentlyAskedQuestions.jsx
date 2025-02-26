@@ -37,24 +37,29 @@ const FAQItem = ({ question, answer }) => {
 const FrequentlyAskedQuestions = () => {
   const faqs = [
     {
-      question: "What is Xamarin?",
-      answer: "Xamarin is a cross-platform development framework from Microsoft that uses C# and .NET to build native mobile applications for iOS, Android, and Windows.",
+      question: "What are Web App Development Services?",
+      answer:
+        "Our Web App Development Services involve designing, building, deploying, and maintaining responsive and robust web applications tailored to meet your business needs.",
     },
     {
-      question: "Which languages can I use with Xamarin?",
-      answer: "Xamarin primarily uses C#, allowing developers to share code across multiple platforms while still delivering native performance.",
+      question: "Which technologies do you use?",
+      answer:
+        "We utilize modern technologies such as HTML5, CSS3, and JavaScript frameworks like React, Angular, or Vue, along with backend solutions like Node.js, Ruby on Rails, or Django.",
     },
     {
-      question: "What is Xamarin.Forms?",
-      answer: "Xamarin.Forms is a UI toolkit within Xamarin that enables developers to build cross-platform user interfaces using a single, shared codebase.",
+      question: "How do you ensure responsive design?",
+      answer:
+        "We ensure responsive design by using flexible grid systems, media queries, and a mobile-first approach to create seamless experiences across all devices.",
     },
     {
-      question: "How does Xamarin integrate with Visual Studio?",
-      answer: "Xamarin integrates seamlessly with Visual Studio, providing robust debugging, testing tools, and design support for developing mobile applications.",
+      question: "What is your development process?",
+      answer:
+        "Our process involves planning, design, development, testing, and deployment. We follow agile methodologies for continuous improvement and timely delivery.",
     },
     {
-      question: "Is Xamarin free to use?",
-      answer: "Yes, Xamarin is available as part of Visual Studio Community Edition, making it free for individual developers and small teams.",
+      question: "How do you handle ongoing maintenance?",
+      answer:
+        "We offer comprehensive maintenance services, including performance optimization, security updates, and regular enhancements to keep your web application running smoothly.",
     },
   ];
 

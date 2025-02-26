@@ -37,24 +37,24 @@ const FAQItem = ({ question, answer }) => {
 const FrequentlyAskedQuestions = () => {
   const faqs = [
     {
-      question: "What is Xamarin?",
-      answer: "Xamarin is a cross-platform development framework from Microsoft that uses C# and .NET to build native mobile applications for iOS, Android, and Windows.",
+      question: "What is HTML5 App Development?",
+      answer: "HTML5 App Development refers to building web and mobile applications using HTML5, CSS3, and JavaScript. These apps run on any platform with a modern web browser.",
     },
     {
-      question: "Which languages can I use with Xamarin?",
-      answer: "Xamarin primarily uses C#, allowing developers to share code across multiple platforms while still delivering native performance.",
+      question: "What are the benefits of HTML5 apps?",
+      answer: "HTML5 apps offer cross-platform compatibility, ease of deployment, and the ability to leverage web standards for a consistent experience across devices.",
     },
     {
-      question: "What is Xamarin.Forms?",
-      answer: "Xamarin.Forms is a UI toolkit within Xamarin that enables developers to build cross-platform user interfaces using a single, shared codebase.",
+      question: "Can HTML5 apps work offline?",
+      answer: "Yes, HTML5 provides features like local storage and service workers, which enable offline functionality and caching for web apps.",
     },
     {
-      question: "How does Xamarin integrate with Visual Studio?",
-      answer: "Xamarin integrates seamlessly with Visual Studio, providing robust debugging, testing tools, and design support for developing mobile applications.",
+      question: "How does HTML5 improve mobile app performance?",
+      answer: "HTML5 improves mobile app performance by utilizing native browser optimizations and providing rich multimedia support without requiring additional plugins.",
     },
     {
-      question: "Is Xamarin free to use?",
-      answer: "Yes, Xamarin is available as part of Visual Studio Community Edition, making it free for individual developers and small teams.",
+      question: "What tools are commonly used for HTML5 app development?",
+      answer: "Popular tools include frameworks like Ionic, Apache Cordova, and PhoneGap, which help you build, test, and deploy HTML5 apps across multiple platforms.",
     },
   ];
 
@@ -63,7 +63,7 @@ const FrequentlyAskedQuestions = () => {
       <div className="max-w-[90%] md:max-w-5xl mx-auto px-4 fade-in">
         {/* Section Heading */}
         <div className="text-center mb-8">
-          <h3 className="text-5xl font-extrabold text-center text-blue-600">
+          <h3 className="text-5xl font-extrabold text-center text-blue-600" >
             ❓ Frequently Asked Questions (FAQs)
           </h3>
           <Subheading>

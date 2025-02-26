@@ -25,7 +25,7 @@ const steps = [
 
 export default function DevelopmentProcess() {
   return (
-    <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
           Our Development Process (Steps)

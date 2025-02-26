@@ -5,6 +5,7 @@ import Thirds from "../container/Services/Custom App/CEM Devlopment/Third";
 import Four from "../container/Services/Custom App/CEM Devlopment/Four";
 import KnowledgeSection from "../container/Services/Custom App/CEM Devlopment/KnowledgeSection";
 import WrapperContainer from "../Layout/WrapperContainer";
+import CemDevelopmentFAQ from "../container/Services/Custom App/CEM Devlopment/CemDevelopmentFAQ";
 
 const Hero = () => {
   return (
@@ -45,6 +46,7 @@ const Hero = () => {
       <Cards />
       <KnowledgeSection />
     </WrapperContainer>
+    <CemDevelopmentFAQ/>
     </>
   );
 };

@@ -50,6 +50,7 @@ import PCGameDevelopment from './pages/PCGameDevelopment';
 
 // Game Development end here
 
+// Blockchain start
 import ExchangeShoftware from "./pages/ExchangeShoftware";
 import InitialCoinOffering from "./pages/InitialCoinOffering";
 import CryptocurrencyApp from "./pages/CryptocurrencyApp";
@@ -58,6 +59,10 @@ import SmartContractDevelopment from "./pages/SmartContractDevelopment";
 import DefiDevelopment from "./pages/DefiDevelopment";
 import Web3 from "./pages/Web3";
 import NftMarketplace from "./pages/NftMarketplace";
+// Blockchain end
+
+// salesforce start
+import ApplicationArchitecture from "./pages/ApplicationArchitecture";
 
 // Frontend Technology
 
@@ -93,6 +98,7 @@ import CloudNative from "./pages/CloudNative"
 
 import Ai_development from "./pages/Ai_development"
 
+
 function App() {
   const location = useLocation();
 
@@ -104,7 +110,7 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-   const match = useMatch("/:path");
+  const match = useMatch("/:path");
 
 if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
   console.log(match);
@@ -245,6 +251,9 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
 
 {/* Blockchain development end */}
 
+{/* salesforce start */}
+<Route path="/services/salesforce/applicationarchitecture" element={<ApplicationArchitecture/>} />
+
 
         {/* Frontend Technology */}
         <Route path="/tech/frontend/angular" element={<AngularDevelopment />} />
@@ -330,11 +339,9 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
       <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
       </Routes>
 
-   <ReviewsSection/>
-       <Contact/>
+      {!match && <ReviewsSection />}
+      {!match && <Contact />}
       <Navigation />
-      
-     
       <Footer />
     </div>
   );

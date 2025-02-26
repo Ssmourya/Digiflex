@@ -43,28 +43,30 @@ const Faq = () => {
     <WrapperContainer>
       <div>
         <div className="max-w-5xl mx-auto text-center">
-          <Heading>
-            <div>
-            Frequently Asked Questions
-            </div>
-          </Heading>
+
+        <h3 className="text-4xl font-bold text-center mb-6 text-blue-700">
+          Nft Development :- Frequently Asked Questions
+       </h3>
           <Paragraph>
           <span>
               Get answers to the most common questions about NFT Marketplace development.
-          </span>
-           
+          </span>       
           </Paragraph>
+
         </div>
 
         {/* FAQ Section */}
-        <div className="max-w-4xl p-10 mx-auto space-y-4">
+        <div className="max-w-4xl p-5 mx-auto space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border rounded-lg shadow-md">
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
               >
-                <span className="text-lg font-semibold text-gray-800">{faq.question}</span>
+                <h4>
+                <div className="text-lg font-semibold text-gray-800">{faq.question}</div>
+                </h4>
+
                 {openIndex === index ? (
                   <FaChevronUp className="text-gray-600" />
                 ) : (
@@ -81,7 +83,11 @@ const Faq = () => {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="overflow-hidden"
               >
-                <div className="px-6 pb-4 text-gray-700 text-md">{faq.answer}</div>
+                <Paragraph>
+
+                <div className="px-6 pb-2 text-gray-700 text-md">{faq.answer}</div>
+                </Paragraph>
+
               </motion.div>
             </div>
           ))}

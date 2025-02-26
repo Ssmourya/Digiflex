@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* src/index.css */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -26,12 +25,12 @@ code {
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  display: none;
 }
 
 /*Designconsulting Hero*/
@@ -213,6 +212,57 @@ code {
   background: #2563eb;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af; 
+}
 
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #f1f5f9;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Add these styles for smooth transitions */
+.transition-transform {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add if you want a fade animation for the dropdown */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}

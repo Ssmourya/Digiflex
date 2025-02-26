@@ -52,7 +52,7 @@ const FeatureCard = ({ feature, index }) => (
     transition={{ duration: 0.5, delay: index * 0.1 }}
   >
     <div className="flex items-center justify-center md:justify-start">
-      <div className="bg-[#3730A3] rounded-full p-3 w-16 h-16 flex items-center justify-center shadow-md">
+      <div className="bg-blue-500 rounded-full p-3 w-16 h-16 flex items-center justify-center shadow-md">
         {feature.icon}
       </div>
       <h3 className="text-xl font-bold text-blue-600 ml-4">

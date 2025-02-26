@@ -41,23 +41,24 @@ const Saas = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="bg-blue-600 text-white text-sm px-3 py-1 inline-block mb-4">
-            SERVICES
-          </div>
+         
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             SaaS Development Services
           </h1>
           <p className="text-lg leading-relaxed mb-6">
-            Since 2007, we have been building impactful SaaS solutions, enterprise software, and large-scale products for global businesses across 20+ industries.
-          </p>
+          Scalable, Secure, and High-Performance SaaS Solutions for Modern Businesses. </p>
 
           {/* Call to Action Button */}
-          <a
-            href="#contact"
-            className="inline-block bg-blue-600 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
-          >
+          <div className="flex justify-center">
+          <div className="flex flex-wrap justify-center space-x-4">
+          <button className="bg-white text-[#172554] px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-transform transform hover:scale-105 duration-300">
             Get Started
-          </a>
+          </button>
+          <button className="bg-transparent border border-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#172554] transition-transform transform hover:scale-105 duration-300">
+            Learn More
+          </button>
+        </div>
+          </div>
         </motion.div>
       </div>
 

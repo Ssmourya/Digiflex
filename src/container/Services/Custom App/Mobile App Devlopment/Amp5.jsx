@@ -83,7 +83,7 @@ const Amp5 = () => {
               <p className="text-gray-600 flex-grow">{service.description}</p>
 
               {/* Button */}
-              <button className="bg-[#3730A3] text-white px-6 py-2 rounded-md flex items-center hover:bg-teal-700 transition-all duration-300 self-center md:self-start">
+              <button className="bg-blue-600 text-white px-6 py-2 rounded-md flex items-center hover:bg-blue-700 transition-all duration-300 self-center md:self-start">
                 Learn More <ArrowRight className="ml-2" />
               </button>
             </div>

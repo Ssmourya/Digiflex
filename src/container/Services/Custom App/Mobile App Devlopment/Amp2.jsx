@@ -10,19 +10,19 @@ import Subheading from "../../../../Layout/Subheading";
 const Amp2 = () => {
   const features = [
     {
-      icon: <Shield className="w-8 h-8 text-[#172554]" />,
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
       text: "Secure and Scalable Mobile App Solutions",
     },
     {
-      icon: <Users className="w-8 h-8 text-[#172554]" />,
+      icon: <Users className="w-8 h-8 text-blue-600" />,
       text: "Experienced Team with Deep Industry Knowledge",
     },
     {
-      icon: <FileCheck className="w-8 h-8 text-[#172554]" />,
+      icon: <FileCheck className="w-8 h-8 text-blue-600" />,
       text: "Custom Mobile Applications Tailored to Your Business Needs",
     },
     {
-      icon: <Clock className="w-8 h-8 text-[#172554]" />,
+      icon: <Clock className="w-8 h-8 text-blue-600" />,
       text: "Timely Delivery and Ongoing Support",
     },
   ];
@@ -92,12 +92,7 @@ const Amp2 = () => {
               <p className="text-black text-lg">
                 Our mobile app development process is built on transparency, ensuring clear communication, real-time progress updates, and alignment with client expectations. With Digiflex.ai, you get a fully collaborative approach that guarantees high-quality app solutions.
               </p>
-              <motion.button
-                className="bg-[#3730A3] text-[#0c0c0d] px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all mt-4"
-                whileHover={{ scale: 1.1 }}
-              >
-                Learn More
-              </motion.button>
+              
             </motion.div>
             <motion.div
               className="w-full md:w-1/2 flex justify-center"

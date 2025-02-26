@@ -74,14 +74,7 @@ const WebApplication4 = () => {
         ))}
       </div>
       
-      <div className="flex justify-center mt-8 space-x-4">
-        <button className="p-3 rounded-full bg-[#4A90E2] text-white hover:bg-[#357ABD] transition-all shadow-md">
-          <ChevronLeft size={24} />
-        </button>
-        <button className="p-3 rounded-full bg-[#E94E77] text-white hover:bg-[#D03D65] transition-all shadow-md">
-          <ChevronRight size={24} />
-        </button>
-      </div>
+     
 
       {/* Extra Content for Larger Screens */}
       <div className="hidden lg:block mt-16 text-center">

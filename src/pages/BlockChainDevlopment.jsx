@@ -47,12 +47,16 @@ function Home() {
               ensures transparency, security, and immutability by using
               cryptographic hashing and consensus mechanisms.
             </p>
-            <motion.p
-              className="mt-10 w-fit px-5 py-2 border-2 border-[#C04112] rounded-[30px] text-[25px] uppercase cursor-pointer hover:bg-[#C04112] transition-all duration-300"
-              whileHover={{ scale: 1.1 }}
-            >
-              Hire Blockchain Developers
-            </motion.p>
+            <div className="flex justify-center py-5">
+            <div className="flex flex-wrap justify-center space-x-4">
+            <button className="bg-white text-[#172554] px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-transform transform hover:scale-105 duration-300">
+              Get Started
+            </button>
+            <button className="bg-transparent border border-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#172554] transition-transform transform hover:scale-105 duration-300">
+              Learn More
+            </button>
+          </div>
+            </div>
           </motion.div>
        
       </div>

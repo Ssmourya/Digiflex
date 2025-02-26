@@ -71,7 +71,7 @@ function Footer() {
   return (
     
     <footer className="bg-blue-950 text-white">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto py-4">
         {/* Logo - reduced margin bottom */}
         <div className="mb-4 max-w-[1200px] mx-auto">
           <h1 className="text-3xl font-bold tracking-tight text-white">DIGIFLEX</h1>

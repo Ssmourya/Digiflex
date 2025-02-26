@@ -104,7 +104,7 @@ const ContactForm = () => {
 
     return (
             <WrapperContainer>
-        <div className="flex flex-col justify-between w-11/12 md:flex-row mx-auto bg-white md:p-10 rounded-lg ">
+        <div className="flex flex-col justify-between w-full md:flex-row mx-auto bg-white rounded-lg ">
             {/* Left Section */}
             <div className="md:w-1/2 md:pr-8 ">
                 <h1 className="text-5xl md:text-5xl font-bold mb-4 text-blue-700">

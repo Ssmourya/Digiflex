@@ -133,6 +133,7 @@ function DialogContent({ children, className, style }) {
         aria-modal="true"
         aria-labelledby={`dialog-title-${uniqueId}`}
         aria-describedby={`dialog-description-${uniqueId}`}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         {children}
       </motion.div>
@@ -142,6 +143,7 @@ function DialogContent({ children, className, style }) {
 function DialogContainer({ children, className }) {
   const { isOpen, setIsOpen, uniqueId } = useDialog();
   const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
     if (isOpen) {
       window.scrollTo(0, 0);
@@ -149,6 +151,7 @@ function DialogContainer({ children, className }) {
     setMounted(true);
     return () => setMounted(false);
   }, []);
+
   if (!mounted) return null;
   return (
     <AnimatePresence initial={false} mode="sync">
@@ -156,13 +159,14 @@ function DialogContainer({ children, className }) {
         <>
           <motion.div
             key={`backdrop-${uniqueId}`}
-            className="fixed inset-0 h-full z-50  w-full bg-white/40 backdrop-blur-sm dark:bg-black/40 "
+            className="fixed inset-0 h-full z-50  w-full bg-white/40 backdrop-blur-sm dark:bg-black/40"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
             onClick={() => setIsOpen(false)}
           />
-          <div className={cn(`fixed  inset-0 z-50 w-fit mx-auto`, className)}>
+          <div className={cn(`fixed inset-0 z-50 w-fit mx-auto`, className)}>
             {children}
           </div>
         </>
@@ -198,7 +202,11 @@ function DialogSubtitle({ children, className, style }) {
 function DialogDescription({
   children,
   className,
-  variants,
+  variants = {
+    initial: { opacity: 0, y: 10 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -10 }
+  },
   disableLayoutAnimation,
 }) {
   const { uniqueId } = useDialog();
@@ -215,6 +223,7 @@ function DialogDescription({
       initial="initial"
       animate="animate"
       exit="exit"
+      transition={{ duration: 0.2, ease: "easeOut" }}
       id={`dialog-description-${uniqueId}`}
     >
       {children}
@@ -233,7 +242,15 @@ function DialogImage({ src, alt, className, style }) {
     />
   );
 }
-function DialogClose({ children, className, variants }) {
+function DialogClose({ 
+  children, 
+  className, 
+  variants = {
+    initial: { opacity: 0, scale: 0.9 },
+    animate: { opacity: 1, scale: 1 },
+    exit: { opacity: 0, scale: 0.9 }
+  }
+}) {
   const { setIsOpen, uniqueId } = useDialog();
   const handleClose = useCallback(() => {
     setIsOpen(false);

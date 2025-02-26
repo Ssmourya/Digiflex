@@ -50,6 +50,7 @@ import PCGameDevelopment from './pages/PCGameDevelopment';
 
 // Game Development end here
 
+// Blockchain start
 import ExchangeShoftware from "./pages/ExchangeShoftware";
 import InitialCoinOffering from "./pages/InitialCoinOffering";
 import CryptocurrencyApp from "./pages/CryptocurrencyApp";
@@ -58,6 +59,10 @@ import SmartContractDevelopment from "./pages/SmartContractDevelopment";
 import DefiDevelopment from "./pages/DefiDevelopment";
 import Web3 from "./pages/Web3";
 import NftMarketplace from "./pages/NftMarketplace";
+// Blockchain end
+
+// salesforce start
+import ApplicationArchitecture from "./pages/ApplicationArchitecture";
 
 // Frontend Technology
 
@@ -92,6 +97,7 @@ import CloudNative from "./pages/CloudNative"
 //AI app
 
 import Ai_development from "./pages/Ai_development"
+
 
 function App() {
   const location = useLocation();
@@ -244,6 +250,9 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
 <Route path="/services/blockchain/web3development" element={<Web3/>}/>
 
 {/* Blockchain development end */}
+
+{/* salesforce start */}
+<Route path="/services/salesforce/applicationarchitecture" element={<ApplicationArchitecture/>} />
 
 
         {/* Frontend Technology */}

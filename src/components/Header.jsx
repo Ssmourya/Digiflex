@@ -389,6 +389,60 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    {
+      id: "SalesForce",
+      icon: Cpu,
+      title: "SalesForce",
+      color: "text-yellow-500",
+      description: "Cutting-edge solutions using blockchain technologies.",
+      features: [
+        {
+          icon: Cpu,
+          title: "Application Architecture",
+          path: "/services/salesforce/applicationarchitecture",
+        },
+        {
+          icon: Database,
+          title: "Initial Coin Offering",
+          path: "/services/blockchain/initialcoinoffering",
+        },
+        {
+          icon: Currency,
+          title: "Cryptocurrency App",
+          path: "/services/blockchain/cryptocurrency",
+        },
+        {
+          icon: Wallet,
+          title: "Cryptocurrency Wallet",
+          path: "/services/blockchain/cryptocurrencywallet",
+        },
+        {
+          icon: Signature,
+          title: "Smart Contract",
+          path: "/services/blockchain/smartcontractdevelopment",
+        },
+        {
+          icon: MessageSquareLock,
+          title: "Nft Marketplace",
+          path: "/services/blockchain/nftmarketplacedevelopment",
+        },
+    
+        {
+          icon: ServerIcon,
+          title: "Defi Development Services",
+          path: "/services/blockchain/defidevelopmentservices",
+        },
+        {
+          icon: ServerIcon,
+          title: "Web3 Development",
+          path: "/services/blockchain/web3development",
+        },
+
+
+      ],
+      image:
+      "https://images.unsplash.com/photo-1640032152000-f273e2ca6922?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
   // Technology dropdown content
   const technologies = [

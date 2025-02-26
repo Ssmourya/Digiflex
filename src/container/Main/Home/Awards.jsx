@@ -6,7 +6,6 @@ import google from '../../../assets/google.png'
 import mobapp from '../../../assets/mobapp.png'
 import globalSpring from '../../../assets/globalSpring.png'
 import manifest from '../../../assets/manifest.png'
-import topsoftware from '../../../assets/topsoftware.png'
 
 function App() {
     const awards = [
@@ -15,56 +14,56 @@ function App() {
           image: clutch,
           alt: "Clutch Award Badge",
           link: "https://clutch.co",
-          sizeMultiplier: 2.2 
+          sizeMultiplier: 2.0
         },
         {
           id: 2,
           image: goodfirms,
           alt: "Top Rated Badge",
           link: "https://www.goodfirms.co",
-          sizeMultiplier: 1.1
+          sizeMultiplier: 0.9
         },
         {
           id: 3,
           image: "https://erawebstudio.com/wp-content/uploads/2022/04/upwork-badge.png",
           alt: "Upwork Top Rated Badge",
           link: "https://www.upwork.com",
-          sizeMultiplier: 1.1
+          sizeMultiplier: 0.9
         },
         {
         id: 4,
         image: google,
         alt: "Upwork Top Rated Badge",
         link: "https://www.upwork.com",
-        sizeMultiplier: 2.2
+        sizeMultiplier: 2.0
         },
         {
             id: 5,
             image: mobapp,
             alt: "Top Rated Badge",
             link: "https://www.goodfirms.co",
-            sizeMultiplier: 1.2
+            sizeMultiplier: 1.0
           },
           {
             id: 6,
             image: "https://www.softwaresuggest.com/award_logo/customer-choice-winter-2025.png",
             alt: "Upwork Top Rated Badge",
             link: "https://www.upwork.com",
-            sizeMultiplier: 1.3
+            sizeMultiplier: 1.1
           },
           {
             id: 7,
             image: globalSpring,
             alt: "Top Rated Badge",
             link: "https://www.goodfirms.co",
-            sizeMultiplier: 1.2
+            sizeMultiplier: 1.0
           },
           {
             id: 8,
             image: manifest,
             alt: "Upwork Top Rated Badge",
             link: "https://www.upwork.com",
-            sizeMultiplier: 1.2
+            sizeMultiplier: 1.0
           },
       ];
 
@@ -177,7 +176,7 @@ function App() {
       <CelebrationBackground />
       <section className="py-20 px-4 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20">
+          <div className="mb-10">
             <div className="flex flex-col items-center">
               <h2 className="text-blue-700  text-5xl md:text-6xl font-bold">
                 Awards &
@@ -187,7 +186,7 @@ function App() {
             </div>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-16 md:gap-24">
+          <div className="flex flex-wrap justify-center gap-12 md:gap-20">
             {awards.map((award, index) => (
               <motion.div 
                 key={award.id}

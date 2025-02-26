@@ -104,7 +104,7 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-   const match = useMatch("/:path");
+  const match = useMatch("/:path");
 
 if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
   console.log(match);
@@ -330,11 +330,9 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
       <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
       </Routes>
 
-   <ReviewsSection/>
-       <Contact/>
+      {!match && <ReviewsSection />}
+      {!match && <Contact />}
       <Navigation />
-      
-     
       <Footer />
     </div>
   );

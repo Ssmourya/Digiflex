@@ -56,6 +56,7 @@ const Navbar = () => {
   const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
   const [activeMobileSubMenu, setActiveMobileSubMenu] = useState(null);
   const navRef = useRef(null);
+  const searchInputRef = useRef(null);
 
 
 
@@ -626,6 +627,21 @@ const Navbar = () => {
     setActiveMobileSubMenu(activeMobileSubMenu === id ? null : id);
   };
 
+  // Set focus on search input when search is activated
+  useEffect(() => {
+    if (isSearchActive && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [isSearchActive]);
+
+  // Toggle search functionality
+  const toggleSearch = () => {
+    setIsSearchActive(!isSearchActive);
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   // Get active content data
   const getActiveContentData = (type) => {
     const content = getDropdownContent(type);
@@ -727,8 +743,8 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navRef}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center h-16 gap-x-4">
-          {/* Logo */}
-          <Link to="/" className="flex items-center no-underline mr-auto">
+          {/* Logo - Hide logo on very small screens when search is active */}
+          <Link to="/" className={`flex items-center no-underline ${isSearchActive ? 'hidden sm:flex sm:mr-2' : 'mr-auto'}`}>
             <img src={logo} alt="logo" className="h-6" />
           </Link>
 
@@ -801,23 +817,29 @@ const Navbar = () => {
               </div>
             </>
           ) : (
-            <div className="flex-1 flex items-center ml-4 md:ml-8">
-              <Search className="h-5 w-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="e.g. Business Intelligence"
-                className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 ml-4"
-                autoFocus
-              />
-              <button className="bg-[#6B7CFF] px-4 md:px-6 py-2 text-sm mr-2 md:mr-4 hover:bg-[#5A6AE6] transition-colors">
-                SEARCH
-              </button>
-              <button
-                onClick={() => setIsSearchActive(false)}
-                className="text-white hover:text-gray-300"
-              >
-                <X className="h-5 w-5" />
-              </button>
+            // Responsive Search Bar
+            <div className="flex-1 flex items-center justify-between w-full">
+              <div className="flex items-center flex-grow">
+                <Search className="h-5 w-5 text-gray-400 min-w-5" />
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  placeholder="Search..."
+                  className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 ml-2 sm:ml-4 text-sm sm:text-base w-full"
+                  autoFocus
+                />
+              </div>
+              <div className="flex items-center">
+                <button className="bg-[#6B7CFF] px-2 sm:px-4 py-2 text-xs sm:text-sm mr-2 hover:bg-[#5A6AE6] transition-colors whitespace-nowrap">
+                  SEARCH
+                </button>
+                <button
+                  onClick={toggleSearch}
+                  className="text-white hover:text-gray-300"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
             </div>
           )}
         </div>

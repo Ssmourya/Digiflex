@@ -8,7 +8,7 @@ import Subheading from '../../../../Layout/Subheading';
 
 const Mobile2 = () => {
   return (
-    <section className="bg-[#F9FAFB] text-black py-12">
+    <section className="bg-white text-black py-12">
       <div className="container mx-auto text-center">
         <Heading>Key Features</Heading>
         

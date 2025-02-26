@@ -59,7 +59,7 @@ const Mobile3 = () => {
   ];
 
   return (
-    <div className="bg-gray-50 text-black p-8">
+    <div className="bg-white text-black p-8">
       {/* Section Title */}
       <Heading
       

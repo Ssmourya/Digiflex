@@ -86,7 +86,7 @@ import CloudOptimization from './pages/CloudOptimization';
 
 //websitedevelopment
 
-import WebsiteTechDevlopmet from './pages/WebsiteTechDevlopmet'
+import WebsiteTechDevlopmet from './pages/Mern'
 import Java from "./pages/JavaDevelopemt"
 
 //Cloud
@@ -293,6 +293,7 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
         path="/html5-app-development-services"
         element={<HtmlDevlopment/>}
       />
+       {/* Website Development */}
       <Route
       path="/mean-stack-development"
       element={<WebsiteTechDevlopmet/>}

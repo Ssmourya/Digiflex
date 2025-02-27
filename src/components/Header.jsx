@@ -527,7 +527,7 @@ const Navbar = () => {
       description:
         "Full-stack website development using modern frameworks and languages.",
       features: [
-        { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
+        { icon: Globe, title: "MERN Stack", path: "/mean-stack-development" },
         { icon: Globe, title: "Java/J2EE", path: "/java-j2ee-development-services" },
         { icon: Globe, title: "Python", path: "/python-development-services" },
         { icon: Globe, title: ".NET", path: "/dotnet-development-services" },

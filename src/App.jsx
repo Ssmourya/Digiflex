@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation, useMatch } from "react-router-dom";
 import { useEffect } from "react";
 
-import Home from './pages/Home'
+import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 
@@ -17,7 +17,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import { ReviewsSection} from "./components/Reviews";
+import { ReviewsSection } from "./components/Reviews";
 
 import SoftwareTestManagement from "./pages/SoftwareTestManagement";
 import TestAutomation from "./pages/TestAutomation";
@@ -46,7 +46,7 @@ import VR_XRSimulation from "./pages/VR_XRSimulation";
 import ResourceAugmentation from "./pages/ResourceAugmentation";
 import UnrealGameDevelopment from "./pages/UnrealGameDevelopment";
 import GameArtServices from "./pages/GameArtServices";
-import PCGameDevelopment from './pages/PCGameDevelopment';
+import PCGameDevelopment from "./pages/PCGameDevelopment";
 
 // Game Development end here
 
@@ -96,12 +96,11 @@ import Cloud_Migration from "./pages/Cloud_Migration";
 import Google from "./pages/Google";
 import Intercloud_Migration from "./pages/Intercloud";
 import AWS from "./pages/AWS";
-import CloudNative from "./pages/CloudNative"
+import CloudNative from "./pages/CloudNative";
 
 //AI app
 
 import Ai_development from "./pages/Ai_development"
-
 
 function App() {
   const location = useLocation();
@@ -116,14 +115,17 @@ function App() {
 
   const match = useMatch("/:path");
 
-if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
-  console.log(match);
-}
+  if (
+    match?.params.path === "about-us" ||
+    match?.params.path === "contact-us"
+  ) {
+    console.log(match);
+  }
 
   return (
     <div className=" w-full ">
       <Header />
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
@@ -180,27 +182,27 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
         />
 
         <Route
-          path="/services/consulting/mobile-consulting"
+          path="/services/consulting/mobile-web-app-consulting-services"
           element={<MobileConsulting />}
         />
         <Route
-          path="/services/consulting/web-consulting"
+          path="/services/consulting//website-consulting-solutions"
           element={<WebConsulting />}
         />
         <Route
-          path="/services/consulting/salesforce-consulting"
+          path="/services/consulting/salesforce-consulting-company"
           element={<SalesforceConsulting />}
         />
         <Route
-          path="/services/consulting/devops-consulting"
+          path="/services/consulting/devops-consulting-services"
           element={<DevopsConsulting />}
         />
         <Route
-          path="/services/consulting/testing-consulting"
+          path="/services/consulting/software-testing-consulting"
           element={<TestingConsulting />}
         />
         <Route
-          path="/services/consulting/ai-consulting"
+          path="/services/consulting/ai-consulting-experts"
           element={<AiConsulting />}
         />
 
@@ -222,7 +224,7 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           path="/services/ui-ux/design-testing"
           element={<DesignTesting />}
         />
-         {/* Blockchain development start*/}
+        {/* Blockchain development start*/}
         <Route
           path="/services/blockchain/exchangesoftware"
           element={<ExchangeShoftware />}
@@ -246,32 +248,46 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           element={<CryptocurrencyWallet />}
         />
 
-<Route path="/services/blockchain/nftmarketplacedevelopment" element={<NftMarketplace/>}/> 
+        <Route
+          path="/services/blockchain/nftmarketplacedevelopment"
+          element={<NftMarketplace />}
+        />
 
-<Route path="/services/blockchain/defidevelopmentservices" element={<DefiDevelopment/>}/>
+        <Route
+          path="/services/blockchain/defidevelopmentservices"
+          element={<DefiDevelopment />}
+        />
 
-
-<Route path="/services/blockchain/web3development" element={<Web3/>}/>
+        <Route path="/services/blockchain/web3development" element={<Web3 />} />
 
 {/* Blockchain development end */}
 
-{/* salesforce start */}
-<Route path="/services/salesforce/applicationarchitecture" element={<ApplicationArchitecture/>} />
-
 
         {/* Frontend Technology */}
-        <Route path="/tech/frontend/angular" element={<AngularDevelopment />} />
-        <Route path="/tech/frontend/react" element={<ReactDevelopment />} />
-        <Route path="/tech/frontend/vue" element={<VueDevelopment />} />
         <Route
-          path="/tech/frontend/bootstrap"
+          path="/tech/frontend/angular-development-services"
+          element={<AngularDevelopment />}
+        />
+        <Route
+          path="/tech/frontend/reactjs-development-services"
+          element={<ReactDevelopment />}
+        />
+        <Route
+          path="/tech/frontend/vuejs-development-services"
+          element={<VueDevelopment />}
+        />
+        <Route
+          path="/tech/frontend/bootstrap-development-services"
           element={<BootstrapDevelopment />}
         />
-        <Route
-          path="/tech/frontend/knockout"
+        <Route 
+          path="/tech/frontend/knockoutjs-development-services"
           element={<KnowkoutjsDevelopment />}
         />
-        <Route path="/tech/frontend/nextjs" element={<NextjsDevelopment />} />
+        <Route
+          path="/tech/frontend/nextjs-development-services"
+          element={<NextjsDevelopment />}
+        />
 
         {/* Mobile Technology */}
         <Route path="/ios-app-development-services" element={<IosDevelopmentTech />} />
@@ -290,17 +306,13 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           element={<XamarinAppDEvlopment />}
         />
         <Route
-        path="/html5-app-development-services"
+        path="/tech/HtmlDevlopment"
         element={<HtmlDevlopment/>}
       />
        {/* Website Development */}
       <Route
-      path="/mean-stack-development"
+      path="/tech/web/mean"
       element={<WebsiteTechDevlopmet/>}
-    />
-      <Route
-      path="/java-j2ee-development-services"
-      element={<Java/>}
     />
         {/* Game development */}
 
@@ -328,29 +340,42 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           path="/services/game-development/vr-xr-simulation"
           element={<VR_XRSimulation />}
         />
-        <Route 
+        <Route
           path="/services/game-development/resource-augmentation"
           element={<ResourceAugmentation />}
         />
-      
 
-      {/* Cloud */}
-      <Route path="/services/cloud/azure" element={<Azure/>} />
-      <Route path="/services/cloud/cloud_migration" element={<Cloud_Migration/>}/>
-      <Route path="/services/cloud/google_components" element={<Google/>} />
-      <Route path="/services/cloud/intercloud_Migration" element={<Intercloud_Migration/>}/>
-      <Route path="/services/cloud/AWS" element={<AWS/>}/>
-      <Route path="/services/cloud/CloudNative" element={<CloudNative/>}/>
-      <Route path="/services/cloud/CloudOptimization" element={<CloudOptimization/>}/>
+        {/* Cloud */}
+        <Route path="/services/cloud/azure" element={<Azure />} />
+        <Route
+          path="/services/cloud/cloud_migration"
+          element={<Cloud_Migration />}
+        />
+        <Route path="/services/cloud/google_components" element={<Google />} />
+        <Route
+          path="/services/cloud/intercloud_Migration"
+          element={<Intercloud_Migration />}
+        />
+        <Route path="/services/cloud/AWS" element={<AWS />} />
+        <Route path="/services/cloud/CloudNative" element={<CloudNative />} />
+        <Route
+          path="/services/cloud/CloudOptimization"
+          element={<CloudOptimization />}
+        />
 
-      {/*Ai app*/}
+        {/*Ai app*/}
 
-      <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
+        <Route
+          path="/services/AI/Ai_development"
+          element={<Ai_development />}
+        />
       </Routes>
 
-      {!match && <ReviewsSection />}
-      {!match && <Contact />}
+   <ReviewsSection/>
+       <Contact/>
       <Navigation />
+      
+     
       <Footer />
     </div>
   );

@@ -7,6 +7,7 @@ import { IndustriesSection } from "./IndustriesSection";
 import { servicesData, reasons, processSteps, industries } from "./constants";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import FAQ from "./FAQ";
 
 function Body() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -87,6 +88,8 @@ function Body() {
       {/* Industries Section */}
 
       <IndustriesSection industries={industries} />
+
+      <FAQ/>
     </div>
   );
 }

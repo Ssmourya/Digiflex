@@ -4,6 +4,7 @@ import Impact from './Impact';
 import Features from './Features';
 import ProcessSection from './ProcessSection';
 import Industry from './Industry';
+import FAQ from './FAQ';
 function Body() {
   return (
      <>
@@ -12,6 +13,7 @@ function Body() {
       <Features />
       <ProcessSection />
       <Industry />
+      <FAQ/>
      </>
   );
 }

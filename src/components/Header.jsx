@@ -5,7 +5,7 @@ import {
   Boxes,
   MoveUpRight,
   Search,
-  Cloudy ,
+  Cloudy,
   X,
   Menu,
   Globe,
@@ -35,11 +35,21 @@ import {
   Code2Icon,
   CodeSquareIcon,
   ChevronDown,
-  ChevronRight
+  ChevronRight,
 } from "lucide-react";
 import logo from "../assets/digiflex.png";
-import image from "../assets/mobileappdev.jpg"
-import { FaAngular, FaBootstrap, FaReact, FaVuejs, FaApple, FaAndroid,  FaCode, FaMicrosoft, FaHtml5 } from "react-icons/fa";
+import image from "../assets/mobileappdev.jpg";
+import {
+  FaAngular,
+  FaBootstrap,
+  FaReact,
+  FaVuejs,
+  FaApple,
+  FaAndroid,
+  FaCode,
+  FaMicrosoft,
+  FaHtml5,
+} from "react-icons/fa";
 import { FaFlutter } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -57,8 +67,6 @@ const Navbar = () => {
   const [activeMobileSubMenu, setActiveMobileSubMenu] = useState(null);
   const navRef = useRef(null);
   const searchInputRef = useRef(null);
-
-
 
   const navItems = [
     {
@@ -101,32 +109,32 @@ const Navbar = () => {
         {
           icon: Code,
           title: "Mobile & Web App Consulting",
-          path: "/services/consulting/mobile-consulting",
+          path: "/services/consulting/mobile-web-app-consulting-services",
         },
         {
           icon: Server,
           title: "Website Consulting",
-          path: "/services/consulting/web-consulting",
+          path: "/services/consulting//website-consulting-solutions",
         },
         {
           icon: Globe,
           title: "Salesforce Consulting",
-          path: "/services/consulting/salesforce-consulting",
+          path: "/services/consulting/salesforce-consulting-company",
         },
         {
           icon: ShoppingBag,
           title: "DevOps Consulting",
-          path: "/services/consulting/devops-consulting",
+          path: "/services/consulting/devops-consulting-services",
         },
         {
           icon: LineChart,
           title: "Testing Consulting",
-          path: "/services/consulting/testing-consulting",
+          path: "/services/consulting/software-testing-consulting",
         },
         {
           icon: Clock,
           title: "AI Consulting",
-          path: "/services/consulting/ai-consulting",
+          path: "/services/consulting/ai-consulting-experts",
         },
       ],
       image:
@@ -258,34 +266,58 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
     },
-    { id: 'CS', 
-      icon: Cloudy, 
-      title: 'Cloud',
-      color: 'text-[#00C8D5]',
-      description: 'Cloud services offer online computing resources like storage, servers, and software, enabling scalability and cost-efficiency. ',
+    {
+      id: "CS",
+      icon: Cloudy,
+      title: "Cloud",
+      color: "text-[#00C8D5]",
+      description:
+        "Cloud services offer online computing resources like storage, servers, and software, enabling scalability and cost-efficiency. ",
       features: [
-        { icon: Cloud, title: 'Google Cloud', path: '/services/cloud/google_components' },
-        { icon: Cloud, title: 'Azure Cloud', path: '/services/cloud/azure'},
-        { icon: Server, title: 'AWS', path: '/services/cloud/AWS'},      
-        { icon: MoveUpRight, title: 'Cloud Migration', path: '/services/cloud/cloud_migration'},
-        { icon: MoveUpRight, title: 'Intercloud Migration', path: '/services/cloud/intercloud_Migration'},
-        { icon: Boxes, title: 'Cloud Native', path: '/services/cloud/CloudNative'},
-        { icon: Database, title: 'Cloud Optimization', path: '/services/cloud/CloudOptimization'},    
-
-        ],
-      image: 'https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg'
+        {
+          icon: Cloud,
+          title: "Google Cloud",
+          path: "/services/cloud/google_components",
+        },
+        { icon: Cloud, title: "Azure Cloud", path: "/services/cloud/azure" },
+        { icon: Server, title: "AWS", path: "/services/cloud/AWS" },
+        {
+          icon: MoveUpRight,
+          title: "Cloud Migration",
+          path: "/services/cloud/cloud_migration",
+        },
+        {
+          icon: MoveUpRight,
+          title: "Intercloud Migration",
+          path: "/services/cloud/intercloud_Migration",
+        },
+        {
+          icon: Boxes,
+          title: "Cloud Native",
+          path: "/services/cloud/CloudNative",
+        },
+        {
+          icon: Database,
+          title: "Cloud Optimization",
+          path: "/services/cloud/CloudOptimization",
+        },
+      ],
+      image:
+        "https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg",
     },
 
-    { id: 'AI', 
-      icon: BrainCircuit, 
-      title: 'AI DEVELOPMENT',
-      color: 'text-[#00C8D5]',
-      description: 'AI development involves machine learning, deep learning, NLP, and computer vision. Key steps: data collection, model training, testing, and deployment. Used in automation, healthcare, finance, and robotics.',
+    {
+      id: "AI",
+      icon: BrainCircuit,
+      title: "AI DEVELOPMENT",
+      color: "text-[#00C8D5]",
+      description:
+        "AI development involves machine learning, deep learning, NLP, and computer vision. Key steps: data collection, model training, testing, and deployment. Used in automation, healthcare, finance, and robotics.",
       features: [
-        { icon: Cloud, title: 'AI App', path: '/services/AI/Ai_development' },  
-
-        ],
-      image: 'https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg'
+        { icon: Cloud, title: "AI App", path: "/services/AI/Ai_development" },
+      ],
+      image:
+        "https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg",
     },
 
     {
@@ -325,7 +357,7 @@ const Navbar = () => {
           title: "Nft Marketplace",
           path: "/services/blockchain/nftmarketplacedevelopment",
         },
-    
+
         {
           icon: ServerIcon,
           title: "Defi Development Services",
@@ -336,11 +368,9 @@ const Navbar = () => {
           title: "Web3 Development",
           path: "/services/blockchain/web3development",
         },
-
-
       ],
       image:
-      "https://images.unsplash.com/photo-1640032152000-f273e2ca6922?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1640032152000-f273e2ca6922?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 
     {
@@ -497,23 +527,23 @@ const Navbar = () => {
       description:
         "Modern frontend frameworks and libraries for building responsive web applications.",
       features: [
-        { icon: FaAngular, title: "Angular", path: "/tech/frontend/angular" },
-        { icon: FaReact, title: "React.js", path: "/tech/frontend/react" },
-        { icon: FaVuejs, title: "Vue.js", path: "/tech/frontend/vue" },
+        { icon: FaAngular, title: "Angular", path: "/tech/frontend/angular-development-services" },
+        { icon: FaReact, title: "React.js", path: "/tech/frontend/reactjs-development-services" },
+        { icon: FaVuejs, title: "Vue.js", path: "/tech/frontend/vuejs-development-services" },
         {
           icon: FaBootstrap,
           title: "Bootstrap",
-          path: "/tech/frontend/bootstrap",
+          path: "/tech/frontend/bootstrap-development-services",
         },
         {
           icon: Code2Icon,
           title: "Knockout.js",
-          path: "/tech/frontend/knockout",
+          path: "/tech/frontend/knockoutjs-development-services",
         },
         {
           icon: CodeSquareIcon,
           title: "Next.js",
-          path: "/tech/frontend/nextjs",
+          path: "/tech/frontend/nextjs-development-services",
         },
       ],
       image:
@@ -705,9 +735,9 @@ const Navbar = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
@@ -722,75 +752,84 @@ const Navbar = () => {
     if (!content.length) return null;
 
     return (
-      <div 
-  className="absolute lg:w-[75vw] md:w-[90vw] top-8 mt-3 left-0 transform -translate-x-1/2 max-w-7xl bg-white shadow-xl rounded-lg overflow-hidden z-60" 
-  onMouseEnter={() => handleMouseEnter(type)} 
-  onMouseLeave={handleMouseLeave}
-> 
-  <div className="grid grid-cols-12 p-4 md:p-8"> 
-    <div className="col-span-12 md:col-span-3 bg-gray-50 rounded-lg p-4"> 
-      <h3 className="text-lg font-semibold mb-4 text-gray-900"> 
-        {type.charAt(0).toUpperCase() + type.slice(1)} 
-      </h3> 
-      <div className="space-y-2"> 
-        {content.map((item) => ( 
-          <button 
-            key={item.id} 
-            className={`flex items-center w-full gap-3 p-2 rounded-lg hover:bg-white transition-colors duration-200 ${ 
-              item.id === activeItems[type] ? "bg-white shadow-sm" : "" 
-            }`} 
-            onMouseEnter={() => handleItemSelect(type, item.id)} 
-          > 
-            <item.icon className={`h-5 w-5 ${item.color}`} /> 
-            <span className="text-sm font-medium text-gray-700"> 
-              {item.title} 
-            </span> 
-          </button> 
-        ))} 
-      </div> 
-    </div>
+      <div
+        className="absolute lg:w-[75vw] md:w-[90vw] top-8 mt-3 left-0 transform -translate-x-1/2 max-w-7xl bg-white shadow-xl rounded-lg overflow-hidden z-60"
+        onMouseEnter={() => handleMouseEnter(type)}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="grid grid-cols-12 p-4 md:p-8">
+          <div className="col-span-12 md:col-span-3 bg-gray-50 rounded-lg p-4">
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">
+              {type.charAt(0).toUpperCase() + type.slice(1)}
+            </h3>
+            <div className="space-y-2">
+              {content.map((item) => (
+                <button
+                  key={item.id}
+                  className={`flex items-center w-full gap-3 p-2 rounded-lg hover:bg-white transition-colors duration-200 ${
+                    item.id === activeItems[type] ? "bg-white shadow-sm" : ""
+                  }`}
+                  onMouseEnter={() => handleItemSelect(type, item.id)}
+                >
+                  <item.icon className={`h-5 w-5 ${item.color}`} />
+                  <span className="text-sm font-medium text-gray-700">
+                    {item.title}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
 
-  <div className="col-span-12 md:col-span-9 p-4">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <h3 className="text-xl font-bold text-gray-900 mb-4">
-          {activeContentData.title}
-        </h3>
-        <p className="text-gray-600 mb-6">
-          {activeContentData.description}
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {activeContentData.features.map((feature, index) => (
-            <Link
-              key={index}
-              to={feature.path}
-              className="flex items-center gap-2 text-gray-700 hover:bg-gray-50 p-2 rounded-lg transition-colors"
-              onClick={handleFeatureClick}
-            >
-              <feature.icon className={`h-5 w-5 ${activeContentData.color}`} />
-              <span>{feature.title}</span>
-            </Link>
-          ))}
+          <div className="col-span-12 md:col-span-9 p-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {activeContentData.title}
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  {activeContentData.description}
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {activeContentData.features.map((feature, index) => (
+                    <Link
+                      key={index}
+                      to={feature.path}
+                      className="flex items-center gap-2 text-gray-700 hover:bg-gray-50 p-2 rounded-lg transition-colors"
+                      onClick={handleFeatureClick}
+                    >
+                      <feature.icon
+                        className={`h-5 w-5 ${activeContentData.color}`}
+                      />
+                      <span>{feature.title}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="hidden md:block rounded-lg overflow-hidden">
+                <img
+                  src={activeContentData.image}
+                  alt={activeContentData.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="hidden md:block rounded-lg overflow-hidden">
-        <img
-          src={activeContentData.image}
-          alt={activeContentData.title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
       </div>
     );
   };
 
   return (
+<<<<<<< HEAD
+    <nav
+      className="sticky top-0 z-50 w-full bg-blue-950 text-white"
+      ref={navRef}
+    >
+      <div className="max-w-7xl mx-auto px-4">
+=======
     <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navRef}>
       <div className="max-w-[1275px] mx-auto px-4">
+>>>>>>> 081c1a598b70d6251aa98f7362c91ee2d28bbc76
         <div className="flex items-center h-16 gap-x-4">
           {/* Logo - Hide logo on very small screens when search is active */}
           <Link to="/" className={`flex items-center no-underline ${isSearchActive ? 'hidden sm:flex sm:mr-2' : 'mr-auto'}`}>
@@ -906,45 +945,61 @@ const Navbar = () => {
                         className="flex items-center justify-between w-full py-2 px-4 text-white hover:bg-blue-900 transition-colors text-sm"
                       >
                         <span>{item.label}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
-                          activeMobileDropdown === item.dropdownType ? 'rotate-180' : ''
-                        }`} />
+                        <ChevronDown
+                          className={`h-4 w-4 transition-transform duration-200 ${
+                            activeMobileDropdown === item.dropdownType
+                              ? "rotate-180"
+                              : ""
+                          }`}
+                        />
                       </button>
-                      
+
                       {activeMobileDropdown === item.dropdownType && (
                         <div className="pl-4 py-2 bg-blue-900">
-                          {getDropdownContent(item.dropdownType).map((content) => (
-                            <div key={content.id} className="mb-2">
-                              <button
-                                onClick={() => toggleMobileSubMenu(content.id)}
-                                className="flex items-center justify-between w-full py-2 px-4 text-white hover:bg-blue-800 transition-colors text-sm"
-                              >
-                                <div className="flex items-center">
-                                  <content.icon className={`h-4 w-4 ${content.color} mr-2`} />
-                                  <span>{content.title}</span>
-                                </div>
-                                <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${
-                                  activeMobileSubMenu === content.id ? 'rotate-90' : ''
-                                }`} />
-                              </button>
-                              
-                              {activeMobileSubMenu === content.id && (
-                                <div className="pl-4 py-2 bg-blue-800">
-                                  {content.features.map((feature, index) => (
-                                    <Link
-                                      key={index}
-                                      to={feature.path}
-                                      className="flex items-center py-2 px-4 text-white hover:bg-blue-700 transition-colors text-sm"
-                                      onClick={handleFeatureClick}
-                                    >
-                                      <feature.icon className={`h-4 w-4 mr-2 ${content.color}`} />
-                                      <span>{feature.title}</span>
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          ))}
+                          {getDropdownContent(item.dropdownType).map(
+                            (content) => (
+                              <div key={content.id} className="mb-2">
+                                <button
+                                  onClick={() =>
+                                    toggleMobileSubMenu(content.id)
+                                  }
+                                  className="flex items-center justify-between w-full py-2 px-4 text-white hover:bg-blue-800 transition-colors text-sm"
+                                >
+                                  <div className="flex items-center">
+                                    <content.icon
+                                      className={`h-4 w-4 ${content.color} mr-2`}
+                                    />
+                                    <span>{content.title}</span>
+                                  </div>
+                                  <ChevronRight
+                                    className={`h-4 w-4 transition-transform duration-200 ${
+                                      activeMobileSubMenu === content.id
+                                        ? "rotate-90"
+                                        : ""
+                                    }`}
+                                  />
+                                </button>
+
+                                {activeMobileSubMenu === content.id && (
+                                  <div className="pl-4 py-2 bg-blue-800">
+                                    {content.features.map((feature, index) => (
+                                      <Link
+                                        key={index}
+                                        to={feature.path}
+                                        className="flex items-center py-2 px-4 text-white hover:bg-blue-700 transition-colors text-sm"
+                                        onClick={handleFeatureClick}
+                                      >
+                                        <feature.icon
+                                          className={`h-4 w-4 mr-2 ${content.color}`}
+                                        />
+                                        <span>{feature.title}</span>
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            )
+                          )}
                         </div>
                       )}
                     </div>

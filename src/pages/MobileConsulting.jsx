@@ -8,7 +8,6 @@ function MobileConsulting() {
     <div>
       <Hero/>
       <Body/>
-
     </div>
   )
 }

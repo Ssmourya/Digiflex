@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Subheading from "../../../../Layout/Subheading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
@@ -72,35 +73,94 @@ const PricingPlans = () => {
     },
   ];
 
+  // Animation variants for the container and cards
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const cardHover = {
+    scale: 1.03,
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut",
+    },
+  };
+
+  // Animation for billing toggle buttons
+  const buttonVariants = {
+    active: {
+      scale: 1.05,
+      transition: {
+        duration: 0.2,
+      },
+    },
+    inactive: {
+      scale: 1,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
   return (
     <WrapperContainer>
       <div className="max-w-7xl mx-auto">
         {/* Billing Toggle */}
         <div className="flex justify-center mb-12">
           <div className="bg-gray-100 p-1 rounded-full inline-flex shadow">
-            <button
+            <motion.button
               className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
                 ${billingCycle === "monthly" ? "bg-white shadow-md text-black" : "text-gray-600"}`}
               onClick={() => setBillingCycle("monthly")}
+              variants={buttonVariants}
+              animate={billingCycle === "monthly" ? "active" : "inactive"}
             >
               Monthly
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
                 ${billingCycle === "yearly" ? "bg-purple-600 text-white shadow-md" : "text-gray-600"}`}
               onClick={() => setBillingCycle("yearly")}
+              variants={buttonVariants}
+              animate={billingCycle === "yearly" ? "active" : "inactive"}
             >
               Yearly
-            </button>
+            </motion.button>
           </div>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {plans.map((plan) => (
-            <div
+            <motion.div
               key={plan.name}
-              className="bg-white rounded-xl p-6 flex flex-col transform hover:-translate-y-1 transition-all duration-200 hover:shadow-lg border border-gray-200 text-center"
+              className="bg-white rounded-xl p-6 flex flex-col border border-gray-200 text-center"
+              variants={cardVariants}
+              whileHover={cardHover}
             >
               <div className="flex flex-col items-center space-y-3">
                 {/* Plan Icon & Name */}
@@ -135,23 +195,27 @@ const PricingPlans = () => {
                 <span className="text-xl font-bold text-gray-900">
                   {plan.price === 0 ? "Free" : `$${plan.price}/mo`}
                 </span>
-                <button
+                <motion.button
                   className={`w-full py-2 px-3 mt-4 rounded-md text-sm font-medium transition-all duration-200
                     ${
                       plan.buttonVariant === "black"
                         ? "bg-black text-white hover:bg-gray-800"
                         : "bg-purple-600 text-white hover:bg-purple-700"
                     }`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   {plan.buttonText}
-                </button>
+                </motion.button>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </WrapperContainer>
   );
 };
+
+
 
 export default PricingPlans;

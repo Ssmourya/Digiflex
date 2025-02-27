@@ -103,7 +103,7 @@ const technologies = [
 
 function Technologies() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen mb-4 ">
         <WrapperContainer>
       <div className="max-w-7xl mx-auto">
         <motion.div

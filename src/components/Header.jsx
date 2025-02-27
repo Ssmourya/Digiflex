@@ -790,7 +790,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navRef}>
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-[1275px] mx-auto px-4">
         <div className="flex items-center h-16 gap-x-4">
           {/* Logo - Hide logo on very small screens when search is active */}
           <Link to="/" className={`flex items-center no-underline ${isSearchActive ? 'hidden sm:flex sm:mr-2' : 'mr-auto'}`}>

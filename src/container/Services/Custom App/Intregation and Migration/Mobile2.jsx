@@ -5,6 +5,7 @@ import bg12 from '../../../../assets/bg12.jpg';
 import { motion } from 'framer-motion';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const Mobile2 = () => {
   return (
@@ -27,9 +28,9 @@ const Mobile2 = () => {
             <Subheading className="text-xl font-semibold mb-2">
               End-To-End Consulting
             </Subheading>
-            <p>
+            <Paragraph>
               From creating data architecture to creating automated transfer scripts, from creating data warehouses to running your automated scripts, we can help you at every step.
-            </p>
+            </Paragraph>
           </motion.div>
           
           {/* Center Image with Animation */}
@@ -55,9 +56,9 @@ const Mobile2 = () => {
             <Subheading className="text-xl font-semibold mb-2">
               Automated Data Transfer
             </Subheading>
-            <p>
+            <Paragraph>
               Algoworks focuses on an automated tool-based data migration approach offering minimal code changes, leaving the investment in business logic intact.
-            </p>
+            </Paragraph>
           </motion.div>
           
         </div>

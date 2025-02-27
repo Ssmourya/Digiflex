@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
-
+import Paragraph from "../../../../Layout/Paragraph";
 const WhyDigiflex = () => {
   return (
     <section className="py-16 bg-white">
@@ -10,10 +10,10 @@ const WhyDigiflex = () => {
         <div className="text-center mb-12">
           <Heading>📌 Why Digiflex for Xamarin Development? </Heading>
 
-          <p className="text-gray-700 text-lg">
+          <Paragraph>
             Unlock the full potential of your mobile strategy with our expert
             Xamarin solutions.
-          </p>
+          </Paragraph>
         </div>
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

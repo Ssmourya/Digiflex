@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import Subheading from "../../../../Layout/Subheading";
 import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const Amp5 = () => {
   const services = [
@@ -80,7 +81,7 @@ const Amp5 = () => {
 
               {/* Text Content */}
               <Subheading>{service.title}</Subheading>
-              <p className="text-gray-600 flex-grow">{service.description}</p>
+              <Paragraph>{service.description}</Paragraph>
 
               {/* Button */}
               <button className="bg-blue-600 text-white px-6 py-2 rounded-md flex items-center hover:bg-blue-700 transition-all duration-300 self-center md:self-start">

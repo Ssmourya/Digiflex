@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph'
 const IndustriesWeServe = () => {
   const industries = [
     {
@@ -69,9 +70,9 @@ const IndustriesWeServe = () => {
                 
                
                 
-                <p className="text-gray-700 text-center mt-2">
+                <Paragraph>
                   {industry.description}
-                </p>
+                </Paragraph>
               </div>
             </motion.div>
           ))}

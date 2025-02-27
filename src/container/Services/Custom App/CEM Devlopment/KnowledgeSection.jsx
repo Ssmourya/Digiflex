@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const KnowledgeSection = () => {
   return (
@@ -17,12 +18,12 @@ const KnowledgeSection = () => {
           <Subheading className="text-lg font-semibold text-blue-600 mb-2">
             AI-Powered Knowledge Base
           </Subheading>
-          <p className="text-base text-gray-600 mb-4">
+          <Paragraph>
             Provide instant access to relevant knowledge articles, FAQs, and troubleshooting 
             guides, enabling both customers and support agents to resolve issues efficiently. 
             Reduce service request volumes by offering self-service solutions through an 
             intelligent AI-driven knowledge management system.
-          </p>
+          </Paragraph>
         </div>
         <ul className="list-none space-y-2">
           <li className="text-base text-blue-600">Real-Time AI Article Recommendations</li>

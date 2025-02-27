@@ -1,19 +1,20 @@
 import React from "react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
-
+import Paragraph from "../../../../Layout/Paragraph";
+import Heading from "../../../../Layout/Heading";
 const Html5DevelopmentSection = () => {
   return (
     <WrapperContainer>
     
     <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-white">
       <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="text-3xl font-bold text-blue-600 mb-4">
+        <Heading>
           Why Customers Choose Us for HTML5 Development
-        </h2>
-        <p className="text-black mb-6">
+        </Heading>
+        <Paragraph>
           Here are just some of the ways that we stand out as a company when it
           comes to our experience with HTML5 Web Development.
-        </p>
+        </Paragraph>
         <ul className="text-black space-y-2">
           <li>✔ Agile HTML5 development methodology</li>
           <li>✔ Award-winning and creative HTML5 solutions</li>

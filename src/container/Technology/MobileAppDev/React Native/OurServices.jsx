@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
-
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph'
 const OurServices = () => {
   const services = [
     {
@@ -56,7 +57,7 @@ const OurServices = () => {
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-4xl mr-4">{service.icon}</span>
-            <p className="text-xl font-medium text-gray-800">{service.text}</p>
+            <Subheading>{service.text}</Subheading>
           </motion.div>
         ))}
       </motion.div>

@@ -5,6 +5,7 @@ import { SiMysql, SiPostgresql, SiMongodb } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const WebApplication4 = () => {
   const [activeTab, setActiveTab] = useState('programming');
@@ -18,7 +19,6 @@ const WebApplication4 = () => {
         <FaJs key="javascript" size={40} className="text-[#F7DF1E]" />, 
         <FaReact key="react" size={40} className="text-[#61DAFB]" />, 
         <FaPython key="python" size={40} className="text-[#3776AB]" />, 
-     
       ]
     },
     mobile: {
@@ -50,9 +50,9 @@ const WebApplication4 = () => {
         <Heading>
           Technologies & Frameworks We Use
         </Heading>
-        <Subheading className="text-gray-700 text-lg md:text-xl leading-relaxed">
+        <Paragraph className="text-gray-700 text-lg md:text-xl leading-relaxed">
           As a leading web development company, we are proud to have a team of expert developers skilled in the following core technologies:
-        </Subheading>
+        </Paragraph>
       </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -74,9 +74,6 @@ const WebApplication4 = () => {
         ))}
       </div>
       
-     
-
-      {/* Extra Content for Larger Screens */}
       <div className="hidden lg:block mt-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -92,9 +89,9 @@ const WebApplication4 = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <Subheading className="text-gray-700 text-lg mt-4 max-w-3xl mx-auto">
+          <Paragraph className="text-gray-700 text-lg mt-4 max-w-3xl mx-auto">
             Our team is proficient in the latest technologies and frameworks, ensuring secure, scalable, and high-performing web solutions.
-          </Subheading>
+          </Paragraph>
         </motion.div>
         <div className="mt-6 flex justify-center gap-8">
           {[
@@ -113,7 +110,7 @@ const WebApplication4 = () => {
               <Subheading className="text-xl font-semibold text-[#4A90E2]">
                 {item.title}
               </Subheading>
-              <p className="text-gray-600 mt-2">{item.desc}</p>
+              <Paragraph className="text-gray-600 mt-2">{item.desc}</Paragraph>
             </motion.div>
           ))}
         </div>

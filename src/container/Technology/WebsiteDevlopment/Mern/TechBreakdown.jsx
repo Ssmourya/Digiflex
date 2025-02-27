@@ -1,7 +1,8 @@
 import { FaCode, FaBuilding, FaShoppingCart, FaExchangeAlt, FaCloud, FaDatabase, FaJsSquare, FaExpand, FaUsers, FaRocket } from "react-icons/fa";
 import Heading from '../../../../Layout/Heading'
 import WhyChooseMern from "./TechnologiesWeUse";
-import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 export default function MernStackServices() {
   return (
     <>    
@@ -19,8 +20,8 @@ export default function MernStackServices() {
             >
               <service.icon className="text-blue-600 text-3xl" />
               <div>
-                <h3 className="text-xl font-semibold">{service.title}</h3>
-                <p className="mt-2 text-sm">{service.description}</p>
+                <Subheading className="text-xl font-semibold">{service.title}</Subheading>
+                <Paragraph className="mt-2 text-sm">{service.description}</Paragraph>
               </div>
             </div>
           ))}
@@ -39,11 +40,11 @@ export default function MernStackServices() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-blue-600 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 flex items-center gap-4"
+              className="bg-white text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 flex items-center gap-4"
             >
               <reason.icon className="text-white text-3xl" />
               <div>
-                <h3 className="text-xl font-semibold">{reason.title}</h3>
+                <Subheading className="text-xl font-semibold">{reason.title}</Subheading>
               </div>
             </div>
           ))}

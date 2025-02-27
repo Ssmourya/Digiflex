@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Settings, Users, Box, HeartHandshake } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph'
 
 const Saas2 = () => {
   const features = [
@@ -65,9 +66,9 @@ const Saas2 = () => {
             <Subheading>
               {feature.title}
             </Subheading>
-            <p className="text-gray-600 leading-relaxed">
+            <Paragraph>
               {feature.description}
-            </p>
+            </Paragraph>
           </motion.div>
         ))}
       </div>
@@ -77,9 +78,9 @@ const Saas2 = () => {
         <Heading >
           Additional Insights
         </Heading>
-        <p className="text-gray-700 text-center">
+        <Paragraph>
           Our SaaS solutions empower businesses with seamless scalability, enhanced security, and optimized user experiences. Join our growing list of successful partners today!
-        </p>
+        </Paragraph>
       </div>
     </div>
   );

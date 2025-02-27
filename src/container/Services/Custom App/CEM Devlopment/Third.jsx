@@ -2,6 +2,7 @@ import React from "react";
 import bg4 from "../../../../assets/bg4.png";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const Thirds = () => {
   return (
@@ -11,9 +12,9 @@ const Thirds = () => {
         <Heading>
           Empower Customer Engagement with Trusted Partners
         </Heading>
-        <p className="text-lg text-gray-600 mb-6">
+        <Paragraph>
           Enhance your CEM strategy with leading tech partners and seamless integrations.
-        </p>
+        </Paragraph>
 
         {/* Infinite Scrolling Logos */}
         <div className="logos-container overflow-hidden relative w-full">
@@ -71,11 +72,11 @@ const Thirds = () => {
           <Subheading>
             Transforming Customer Journeys with Smart Automation
           </Subheading>
-          <p className="text-lg text-gray-700">
+          <Paragraph>
             Streamline customer interactions with a unified AI-driven workspace. 
             Our CEM solutions enhance omnichannel engagement, automate workflows, 
             and provide intelligent case management to boost efficiency and customer satisfaction.
-          </p>
+          </Paragraph>
         </div>
       </div>
     </div>

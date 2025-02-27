@@ -1,4 +1,5 @@
 import React from "react";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const steps = [
   {
@@ -42,7 +43,7 @@ export default function DevelopmentProcess() {
                 <h3 className="mt-4 text-xl font-semibold text-gray-800">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-gray-600">{step.description}</p>
+                <Paragraph>{step.description}</Paragraph>
               </div>
             ))}
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 import bg9 from "../../../../assets/bg9.png"; // Correct image path
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
-
+import Paragrph from "../../../../Layout/Paragraph"
 export default function Website5() {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto">
@@ -18,9 +18,9 @@ export default function Website5() {
             alt="Website Development Services"
             className="w-full h-auto rounded-md"
           />
-          <p className="text-lg text-gray-700 mt-6 text-center md:text-left">
+          <Paragrph>
             At Digiflex.ai, we specialize in creating high-performance websites tailored to your business needs. Whether you need a sleek corporate website, a feature-rich e-commerce platform, or a custom web application, our expert developers ensure seamless user experiences and cutting-edge design.
-          </p>
+          </Paragrph>
         </div>
 
         {/* Right side - Services Information */}
@@ -54,10 +54,10 @@ export default function Website5() {
               },
             ].map((service, index) => (
               <div key={index} className="space-y-2">
-                <Subheading className="font-semibold text-lg text-[#172554]">
+                <Subheading>
                   {service.title}
                 </Subheading>
-                <p className="text-gray-700">{service.description}</p>
+                <Paragrph>{service.description}</Paragrph>
               </div>
             ))}
           </div>

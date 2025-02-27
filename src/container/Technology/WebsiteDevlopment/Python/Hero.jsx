@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center overflow-hidden">
       {/* Animated background circles */}
@@ -15,12 +15,12 @@ const HeroSection = () => {
         {/* Heading */}
         <div className="space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-[fadeIn_1s_ease-in]">
-            MERN Stack Development
+            Python Development
           </h1>
           
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-gray-200 mb-12 animate-[fadeIn_1s_ease-in_0.3s]">
-            Building powerful web applications with MongoDB, Express.js, React.js, and Node.js
+            Empowering businesses with scalable, efficient, and high-performance Python solutions.
           </p>
 
           {/* CTA button */}
@@ -41,4 +41,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

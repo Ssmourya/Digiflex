@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaMobileAlt, FaSync, FaPaintBrush, FaServer, FaBug, FaTools, FaUsers, FaRocket, FaLock, FaChartLine, FaCogs, FaHeadset } from "react-icons/fa";
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from "../../../../Layout/Paragraph";
 
 const services = [
   { icon: <FaMobileAlt />, title: "Custom NativeScript App Development", description: "Tailored solutions for businesses" },
@@ -77,7 +78,7 @@ export default function NativeScriptServices() {
                 <div className="text-4xl text-green-500 mb-4">{reason.icon}</div>
               </motion.div>
               <Subheading>{reason.title}</Subheading>
-              <p className="text-gray-600">{reason.description}</p>
+              <Paragraph className="text-gray-600">{reason.description}</Paragraph>
             </motion.div>
           ))}
         </div>

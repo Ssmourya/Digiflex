@@ -83,7 +83,11 @@ import NativeScript from "./pages/NativeScript";
 import XamarinAppDEvlopment from "./pages/XamarinAppDEvlopment";
 import HtmlDevlopment from "./pages/HtmlAppDevlopment"
 import CloudOptimization from './pages/CloudOptimization';
+
+//websitedevelopment
+
 import WebsiteTechDevlopmet from './pages/WebsiteTechDevlopmet'
+import Java from "./pages/JavaDevelopemt"
 
 //Cloud
 
@@ -292,6 +296,10 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
       <Route
       path="/mean-stack-development"
       element={<WebsiteTechDevlopmet/>}
+    />
+      <Route
+      path="/java-j2ee-development-services"
+      element={<Java/>}
     />
         {/* Game development */}
 

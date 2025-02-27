@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 
 const Mobile5 = () => {
@@ -15,9 +16,9 @@ const Mobile5 = () => {
         transition={{ duration: 1 }}
       >
         <Heading>Integration and Migration Made Easier!!</Heading>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto mt-4">
+        <Paragraph>
           Accelerate Your Digital Transformation with Seamless Integration & Migration.
-        </p>
+        </Paragraph>
       </motion.div>
 
       {/* Case Study */}
@@ -53,12 +54,12 @@ const Mobile5 = () => {
           <Subheading>
             Mindbowser's Augmented Team Helped an E-learning Platform Add New Features at a Faster Pace
           </Subheading>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <Paragraph>
             The e-learning platform provides STEM-focused courses and tech camps for a deeper education in technology for school students. 
             The platform is supported by education and technology experts from the Harvard Graduate School of Education and the MIT Media Lab, 
             making it a perfect synthesis of education and STEM. Mindbowser augmented the development efforts by providing a technology team 
             that worked directly with the CTO to accelerate development efforts.
-          </p>
+          </Paragraph>
         </motion.div>
       </motion.div>
     </div>

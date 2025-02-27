@@ -9,6 +9,8 @@ import {
 } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragrph from "../../../../Layout/Paragraph"
+
 
 const ServiceCard = ({ icon, title, description, linkText = "VIEW MORE" }) => (
   <motion.div
@@ -26,9 +28,9 @@ const ServiceCard = ({ icon, title, description, linkText = "VIEW MORE" }) => (
     <Subheading className="text-xl font-semibold text-[#172554]">
       {title}
     </Subheading>
-    <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+    <Paragrph>
       {description}
-    </p>
+    </Paragrph>
     {linkText && (
       <button className="text-[#172554] hover:text-blue-700 text-sm font-medium uppercase text-left w-fit">
         {linkText}

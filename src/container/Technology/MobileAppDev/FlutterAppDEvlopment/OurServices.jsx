@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
-import Subheading from "../../../../Layout/Subheading"; // Import Subheading
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";  // Import Subheading
 import {
   Smartphone,
   Palette,
@@ -94,9 +95,9 @@ const OurServices = () => {
           
               {service.title}
             </Subheading>
-            <p className="mt-2 text-lg text-gray-600 transition duration-300 hover:text-gray-300">
+            <Paragraph>
               {service.description}
-            </p>
+            </Paragraph>
           </motion.div>
         ))}
       </div>

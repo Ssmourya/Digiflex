@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph';
 const techStackData = [
   {
     icon: '💻',
@@ -65,7 +66,7 @@ const XamarinTechStack = () => {
                 
                   <Subheading>{tech.title}</Subheading>
               
-                <p className="text-gray-600">{tech.description}</p>
+                <Paragraph className="text-gray-600">{tech.description}</Paragraph>
               </div>
             </div>
           ))}

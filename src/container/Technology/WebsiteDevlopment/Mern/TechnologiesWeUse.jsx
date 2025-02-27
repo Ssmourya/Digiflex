@@ -2,6 +2,8 @@ import React from 'react';
 import Heading from '../../../../Layout/Heading';
 import DevelopmentProcess from './DevelopmentProcess';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Paragraph from '../../../../Layout/Paragraph';
+import Subheading from '../../../../Layout/Subheading';
 
 // Simple SVG icons as components
 const IconFrontend = () => (
@@ -86,7 +88,7 @@ export default function TechnologiesWeUse() {
     {
       category: 'DevOps',
       icon: IconDevOps,
-      image: 'https://via.placeholder.com/400x300?text=DevOps',
+      image: 'https://i.pinimg.com/originals/88/e5/a4/88e5a4a52f0d7725c5e56364422b79fc.gif',
       technologies: ['CI/CD', 'Kubernetes', 'Prometheus', 'Grafana'],
     },
   ];
@@ -97,9 +99,9 @@ export default function TechnologiesWeUse() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Heading>Technologies We Use</Heading>
-            <p className="text-gray-700 max-w-2xl mx-auto">
+            <Paragraph className="text-gray-700 max-w-2xl mx-auto">
               We leverage cutting-edge technologies to deliver scalable, robust, and high-performance digital solutions.
-            </p>
+            </Paragraph>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {techCategories.map((item, index) => {
@@ -118,7 +120,7 @@ export default function TechnologiesWeUse() {
                       <div className="p-3 rounded-full bg-blue-600 text-white mr-3">
                         <Icon />
                       </div>
-                      <h3 className="text-xl font-bold">{item.category}</h3>
+                      <Subheading>{item.category}</Subheading>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {item.technologies.map((tech, i) => (

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Heading from '../../../../Layout/Heading';
-
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph'
 const features = [
   {
     title: "Push Notifications",
@@ -63,9 +64,11 @@ const SmartFeatures = () => {
           >
             {/* Feature Header */}
             <div className="flex justify-between items-center">
-              <span className="text-lg font-semibold text-[#172554]">
+             <Subheading>
+            <span className="text-lg font-semibold text-[#172554]">
                 {feature.title}
               </span>
+              </Subheading>
               {openFeature === index ? (
                 <ChevronUp className="w-6 h-6 text-[#172554]" />
               ) : (
@@ -75,14 +78,14 @@ const SmartFeatures = () => {
 
             {/* Expandable Feature Description */}
             {openFeature === index && (
-              <motion.p
+              <Paragraph 
                 className="mt-4 text-base text-gray-700"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ duration: 0.4 }}
               >
-                {feature.description}
-              </motion.p>
+                {feature.description}  
+              </Paragraph>
             )}
           </motion.div>
         ))}

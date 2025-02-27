@@ -7,6 +7,7 @@ import img5 from '../../../../assets/enterprise.png';
 import img6 from '../../../../assets/Reacl-estate.jpg';
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 export default function Industries() {
   const industries = [
@@ -31,14 +32,16 @@ export default function Industries() {
           Industries We Serve
        
         </Heading>
-        <motion.p 
+        <Paragraph
+         
           className="text-black mb-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
           We develop high-quality iOS applications across various industries to meet business needs.
-        </motion.p>
+        
+        </Paragraph>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {industries.map((industry, index) => (
             <motion.div
@@ -63,7 +66,7 @@ export default function Industries() {
               
               </Subheading>
               
-              <p className="text-black mt-2">{industry.description}</p>
+              <Paragraph>{industry.description}</Paragraph>
             </motion.div>
           ))}
         </div>

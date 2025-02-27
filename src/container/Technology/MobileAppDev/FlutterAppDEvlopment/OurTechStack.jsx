@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from "../../../../Layout/Paragraph";
 
 const techStack = [
   {
@@ -82,14 +83,16 @@ const TechContent = ({ feature }) => {
       >
         <Heading>{feature.title}</Heading>
       </motion.h3>
-      <motion.p
+      <Paragraph
+      
         className="text-gray-600 leading-relaxed"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
         {feature.description}
-      </motion.p>
+     
+      </Paragraph>
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

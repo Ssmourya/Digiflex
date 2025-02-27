@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
-import Subheading from "../../../../Layout/Subheading"; // Import Subheading
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph"; // Import Subheading
 import {
   HeartPulse,
   ShoppingCart,
@@ -62,7 +63,7 @@ const IndustriesWeServe = () => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="text-xl mb-10 text-[#172554]"
+        
       >
         Discover how our Flutter solutions empower diverse industries.
       </Subheading>
@@ -88,13 +89,13 @@ const IndustriesWeServe = () => {
               {industry.title}
             </Subheading>
             {/* Card Subheading as Subheading */}
-            <Subheading
+            <Paragraph
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="mt-2 text-base text-gray-700"
             >
               {industry.description}
-            </Subheading>
+            </Paragraph>
           </motion.div>
         ))}
       </div>

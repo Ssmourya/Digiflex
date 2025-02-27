@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 import img1 from "../../../../assets/Healthcare.jpg";
 import img2 from "../../../../assets/Ecomerce.jpg";
 import img3 from "../../../../assets/Automation.jpeg";
@@ -143,13 +144,13 @@ export default function IndustriesSection() {
               {selectedIndustry.icon}
               <span>{selectedIndustry.name}</span>
             </Heading>
-            <Subheading
+            <Paragraph
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-gray-700 mt-2 text-center max-w-2xl"
             >
               {selectedIndustry.description}
-            </Subheading>
+            </Paragraph>
           </div>
         </div>
       </div>

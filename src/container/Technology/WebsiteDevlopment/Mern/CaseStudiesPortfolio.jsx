@@ -1,7 +1,8 @@
 import React from 'react';
 import Heading from '../../../../Layout/Heading';
 import MeanStackDevelopmentFAQ from './MeanStackDevelopmentFAQ';
-
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph';
 export default function CaseStudiesPortfolio() {
   const projects = [
     {
@@ -59,29 +60,12 @@ export default function CaseStudiesPortfolio() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-700 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-4 mb-4">
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline font-medium"
-                  >
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline font-medium"
-                  >
-                    GitHub
-                  </a>
-                </div>
-                <blockquote className="text-gray-500 italic">
+                <Subheading className="text-xl text-blue-600 font-bold mb-2">{project.title}</Subheading>
+                <Paragraph className="text-gray-700 mb-4">{project.description}</Paragraph>
+                
+                <Paragraph>
                   "{project.testimonial}"
-                </blockquote>
+                </Paragraph>
               </div>
             </div>
           ))}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Subheading from '../../../../Layout/Subheading';
 import Heading from "../../../../Layout/Heading";
+import Paragraph from '../../../../Layout/Paragraph'
 const industries = [
   {
     icon: "🏥",
@@ -76,9 +77,9 @@ const IndustriesWeServe = () => {
               {industry.title} </Subheading>
 
               {/* Industry Description */}
-              <p className="text-base text-center text-gray-700">
+              <Paragraph>
                 {industry.description}
-              </p>
+              </Paragraph>
             </div>
           </motion.div>
         ))}

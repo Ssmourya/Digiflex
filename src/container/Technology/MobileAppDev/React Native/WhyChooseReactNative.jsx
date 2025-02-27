@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
-
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph'
 const WhyChooseReactNative = () => {
   const features = [
     {
@@ -50,13 +51,13 @@ const WhyChooseReactNative = () => {
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="flex items-center p-6 bg-blue-500 text-white rounded-xl shadow-lg border border-[#172554] hover:shadow-xl transition transform hover:scale-105"
+            className="flex items-center p-6  text-white rounded-xl shadow-lg border border-[#172554] hover:shadow-xl transition transform hover:scale-105"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <span className="text-3xl mr-4">{feature.icon}</span>
-            <p className="text-lg font-medium">{feature.text}</p>
+            <Subheading>{feature.text}</Subheading>
           </motion.div>
         ))}
       </div>

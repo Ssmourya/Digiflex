@@ -3,6 +3,7 @@ import { Code, Clipboard, CheckCircle, Coffee, ShoppingCart, Globe, Shield, Laye
 import bussse from "../../../../assets/Busssensss.png";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragrph from "../../../../Layout/Paragraph"
 import { motion } from "framer-motion";
 
 const processSteps = [
@@ -73,7 +74,7 @@ const Card = ({ icon, title, subtitle, description, button }) => (
     </div>
     <h3 className="text-xl font-bold mt-4 text-gray-800">{title}</h3>
     {subtitle && <p className="text-sm text-gray-500 mt-1">{subtitle}</p>}
-    <p className="text-gray-600 mt-2">{description}</p>
+    <Paragrph>{description}</Paragrph>
     {button && <div className="mt-4">{button}</div>}
   </motion.div>
 );

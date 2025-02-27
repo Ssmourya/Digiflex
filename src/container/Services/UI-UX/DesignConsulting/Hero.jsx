@@ -107,7 +107,7 @@
             </Heading>
             
             {/* Animated Description with Glowing Effect */}
-            <Paragraph className=" md:text-2xl text-white max-w-4xl mx-auto leading-relaxed mb-12 animate-glow">
+            <Paragraph className=" md:text-xl text-white max-w-4xl mx-auto leading-relaxed mb-12 animate-glow">
               At Digiflex, we are a 
               <span className="relative inline-block group mx-2">
                 pragmatic design agency

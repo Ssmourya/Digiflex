@@ -174,11 +174,11 @@ function App() {
   return (
     <div className="min-h relative overflow-hidden">
       <CelebrationBackground />
-      <section className="py-20 px-4 relative">
+      <section className="py-12 sm:py-20 px-4 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-10">
+          <div className="mb-6 sm:mb-10">
             <div className="flex flex-col items-center">
-              <h2 className="text-blue-700  text-5xl md:text-6xl font-bold">
+              <h2 className="text-blue-700 text-4xl sm:text-5xl md:text-6xl font-bold">
                 Awards &
                 Recognitions
               </h2>
@@ -186,7 +186,8 @@ function App() {
             </div>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-12 md:gap-20">
+          {/* Updated grid layout with responsive columns */}
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:flex md:flex-wrap md:justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-20">
             {awards.map((award, index) => (
               <motion.div 
                 key={award.id}
@@ -203,14 +204,21 @@ function App() {
                   href={award.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full max-w-[240px]"
+                  className="block w-full max-w-[100px] sm:max-w-[140px] md:max-w-[180px] lg:max-w-[240px]"
                 >
                   <div className="w-full aspect-square flex items-center justify-center">
                     <img
                       src={award.image}
                       alt={award.alt}
-                      className={`w-full h-full object-contain ${award.sizeMultiplier ? `scale-${award.sizeMultiplier * 100}` : ''}`}
-                      style={award.sizeMultiplier ? { transform: `scale(${award.sizeMultiplier})` } : {}}
+                      className="w-full h-full object-contain"
+                      style={{ 
+                        transform: `scale(${
+                          // Smaller scale on mobile, original scale on larger screens
+                          window.innerWidth < 640 
+                            ? Math.min(2, award.sizeMultiplier || 1) 
+                            : (award.sizeMultiplier || 1)
+                        })`
+                      }}
                     />
                   </div>
                 </a>

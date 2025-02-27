@@ -5,12 +5,12 @@ import Home from './pages/Home'
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 
-import CEMDEVELOPMENT from "./pages/CEMDEVELOPMENT";
-import IntregrationandMigration from "./pages/Intregration-and-Migration";
+import CEMDEVELOPMENT from "./pages/CemDevelopment";
+import IntregrationandMigration from "./pages/IntregrationAndMigration";
 import BlockChainDevlopment from "./pages/BlockChainDevlopment";
-import SAASDEVELOPMENT from "./pages/SAASDEVELOPMENT";
+import SAASDEVELOPMENT from "./pages/SaasDevelopment";
 import WebsiteDevlopment from "./pages/WebsiteDevlopment";
-import MobileAppDevlopment from "./pages/Mobile-App-Devlopment";
+import MobileAppDevlopment from "./pages/MobileAppDevlopment";
 import WebApplicationDevlopment from "./pages/WebApplicationDevlopment";
 
 import Contact from "./components/Contact";
@@ -80,7 +80,7 @@ import AndroidAppDevlopment from "./pages/AndroidAppDevlopment";
 import ReactNative from "./pages/ReactNative";
 import FlutterAppDevlopment from "./pages/FlutterAppDevlopment";
 import NativeScript from "./pages/NativeScript";
-import XamarinAppDEvlopment from "./pages/XamarinAppDEvlopment";
+import XamarinAppDEvlopment from "./pages/XamarinAppDevelopment";
 import HtmlDevlopment from "./pages/HtmlAppDevlopment"
 import CloudOptimization from './pages/CloudOptimization';
 

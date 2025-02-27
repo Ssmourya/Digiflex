@@ -48,17 +48,8 @@ const Mobile = () => {
         </motion.div>
       </div>
 
-      {/* Chat Button */}
-      <motion.div
-        className="fixed bottom-4 right-4 md:bottom-8 md:right-8"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <button className="bg-white text-black px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
-          Chat with us!
-        </button>
-      </motion.div>
+      
+      
 
       <WrapperContainer>
       <Mobile2 />

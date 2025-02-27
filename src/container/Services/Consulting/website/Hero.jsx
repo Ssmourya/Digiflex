@@ -76,7 +76,6 @@ function Hero() {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 animate-pulse"></span>
             </span>
             performance, and scalability for your business.
-      
           </p>
 
           {/* Animated Button with Complex Effects */}

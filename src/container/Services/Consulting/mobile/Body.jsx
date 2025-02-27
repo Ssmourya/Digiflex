@@ -6,6 +6,7 @@ import Industries from "./Industries";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
+import FAQ from "./FAQ";
 
 function Body() {
   return (
@@ -26,6 +27,7 @@ function Body() {
       <Services />
       <WhyChoose />
       <Industries />
+      <FAQ/>
     </div>
   );
 }

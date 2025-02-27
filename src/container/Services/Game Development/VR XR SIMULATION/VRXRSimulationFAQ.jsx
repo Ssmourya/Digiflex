@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Heading from '../../../../Layout/Heading';
-import Subheading from '../../../../Layout/Subheading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 
 const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
@@ -17,7 +15,8 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
         onClick={onToggle}
         className="w-full flex justify-between items-center py-4 px-6 hover:bg-gray-100 transition-colors duration-200 rounded-lg"
       >
-        <Subheading>{question}</Subheading>
+        <h4 className="text-xl font-semibold text-blue-600 mb-2 mt-4">{question}</h4>
+      
         {isOpen ? (
           <ChevronUp className="w-5 h-5 text-blue-600" />
         ) : (
@@ -91,7 +90,7 @@ const VRXRSimulationFAQ = () => {
     <WrapperContainer>
       <div className="mx-auto mb-20">
         <div className="text-center mb-12">
-          <Heading>VR/XR Simulation Development FAQ</Heading>
+          <h3 className="text-5xl font-bold text-center mb-6 text-blue-700">VR/XR Simulation Development FAQ</h3>
           <p className="text-gray-600 mb-8">
             Find answers to common questions about VR/XR simulation development, costs, platforms, and more.
           </p>

@@ -5,12 +5,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 
-import CemDevlopment from "./pages/Cem-devlopment";
-import IntregrationandMigration from "./pages/Intregration-and-Migration";
+import CEMDEVELOPMENT from "./pages/CemDevelopment";
+import IntregrationandMigration from "./pages/IntregrationAndMigration";
 import BlockChainDevlopment from "./pages/BlockChainDevlopment";
-import SaasDeclopment from "./pages/Saas-Devlopment";
+import SAASDEVELOPMENT from "./pages/SaasDevelopment";
 import WebsiteDevlopment from "./pages/WebsiteDevlopment";
-import MobileAppDevlopment from "./pages/Mobile-App-Devlopment";
+import MobileAppDevlopment from "./pages/MobileAppDevlopment";
 import WebApplicationDevlopment from "./pages/WebApplicationDevlopment";
 
 import Contact from "./components/Contact";
@@ -50,6 +50,7 @@ import PCGameDevelopment from "./pages/PCGameDevelopment";
 
 // Game Development end here
 
+// Blockchain start
 import ExchangeShoftware from "./pages/ExchangeShoftware";
 import InitialCoinOffering from "./pages/InitialCoinOffering";
 import CryptocurrencyApp from "./pages/CryptocurrencyApp";
@@ -58,6 +59,10 @@ import SmartContractDevelopment from "./pages/SmartContractDevelopment";
 import DefiDevelopment from "./pages/DefiDevelopment";
 import Web3 from "./pages/Web3";
 import NftMarketplace from "./pages/NftMarketplace";
+// Blockchain end
+
+// salesforce start
+import ApplicationArchitecture from "./pages/ApplicationArchitecture";
 
 // Frontend Technology
 
@@ -75,10 +80,14 @@ import AndroidAppDevlopment from "./pages/AndroidAppDevlopment";
 import ReactNative from "./pages/ReactNative";
 import FlutterAppDevlopment from "./pages/FlutterAppDevlopment";
 import NativeScript from "./pages/NativeScript";
-import XamarinAppDEvlopment from "./pages/XamarinAppDEvlopment";
-import HtmlDevlopment from "./pages/HtmlAppDevlopment";
-import CloudOptimization from "./pages/CloudOptimization";
-import WebsiteTechDevlopmet from "./pages/WebsiteTechDevlopmet";
+import XamarinAppDEvlopment from "./pages/XamarinAppDevelopment";
+import HtmlDevlopment from "./pages/HtmlAppDevlopment"
+import CloudOptimization from './pages/CloudOptimization';
+
+//websitedevelopment
+
+import WebsiteTechDevlopmet from './pages/WebsiteTechDevlopmet'
+import Java from "./pages/JavaDevelopemt"
 
 //Cloud
 
@@ -91,7 +100,7 @@ import CloudNative from "./pages/CloudNative";
 
 //AI app
 
-import Ai_development from "./pages/Ai_development";
+import Ai_development from "./pages/Ai_development"
 
 function App() {
   const location = useLocation();
@@ -144,31 +153,31 @@ function App() {
         />
 
         <Route
-          path="/services/custom-apps/IntregrationandMigration"
+          path="/integration-and-migration-services"
           element={<IntregrationandMigration />}
         />
         <Route
-          path="/services/custom-apps/cem-devlopment"
-          element={<CemDevlopment />}
+          path="/customer-experience-management-development"
+          element={<CEMDEVELOPMENT/>}
         />
         <Route
-          path="/services/custom-apps/SaasDevlopment"
-          element={<SaasDeclopment />}
+          path="saas-software-development"
+          element={<SAASDEVELOPMENT/>}
         />
         <Route
-          path="/services/custom-apps/WebsiteDevlopment"
+          path="/website-development-services"
           element={<WebsiteDevlopment />}
         />
         <Route
-          path="/services/custom-apps/block-chain"
+          path="/blockchain-development-services"
           element={<BlockChainDevlopment />}
         />
         <Route
-          path="/services/custom-apps/MobileAppDevlopment"
+          path="/mobile-app-development"
           element={<MobileAppDevlopment />}
         />
         <Route
-          path="/services/custom-apps/webApplicationDevlopment"
+          path="/web-application-development"
           element={<WebApplicationDevlopment />}
         />
 
@@ -251,7 +260,8 @@ function App() {
 
         <Route path="/services/blockchain/web3development" element={<Web3 />} />
 
-        {/* Blockchain development end */}
+{/* Blockchain development end */}
+
 
         {/* Frontend Technology */}
         <Route
@@ -280,23 +290,29 @@ function App() {
         />
 
         {/* Mobile Technology */}
-        <Route path="/tech/mobile/ios" element={<IosDevelopmentTech />} />
+        <Route path="/ios-app-development-services" element={<IosDevelopmentTech />} />
         <Route
-          path="/tech/AndroidAppDevlopment"
+          path="/android-app-development-services"
           element={<AndroidAppDevlopment />}
         />
-        <Route path="/tech/ReactNative" element={<ReactNative />} />
+        <Route path="/react-native-app-development-services" element={<ReactNative />} />
         <Route
-          path="/tech/FlutterDevlopment"
+          path="/flutter-app-development-services"
           element={<FlutterAppDevlopment />}
         />
-        <Route path="/tech/NativeScript" element={<NativeScript />} />
+        <Route path="/nativescript-app-development-services" element={<NativeScript />} />
         <Route
-          path="/tech/XamarinAppDevlopment"
+          path="/xamarin-app-development-services"
           element={<XamarinAppDEvlopment />}
         />
-        <Route path="/tech/HtmlDevlopment" element={<HtmlDevlopment />} />
-        <Route path="/tech/web/mean" element={<WebsiteTechDevlopmet />} />
+        <Route
+        path="/tech/HtmlDevlopment"
+        element={<HtmlDevlopment/>}
+      />
+      <Route
+      path="/tech/web/mean"
+      element={<WebsiteTechDevlopmet/>}
+    />
         {/* Game development */}
 
         <Route
@@ -354,10 +370,11 @@ function App() {
         />
       </Routes>
 
-      <ReviewsSection />
-      <Contact />
+   <ReviewsSection/>
+       <Contact/>
       <Navigation />
-
+      
+     
       <Footer />
     </div>
   );

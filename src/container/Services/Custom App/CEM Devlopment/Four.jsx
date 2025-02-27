@@ -3,7 +3,7 @@ import bg5 from "../../../../assets/bg5.png";
 import bg6 from "../../../../assets/bg6.png"; // Added a new image
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
-
+import Paragraph from "../../../../Layout/Paragraph";
 const Four = () => {
   return (
     <div className="bg-white p-8 font-sans">
@@ -26,11 +26,11 @@ const Four = () => {
             <Subheading className="text-blue-600 text-xl mb-2">
               AI-Powered Knowledge Base
             </Subheading>
-            <p className="text-gray-600 text-base mb-4">
+            <Paragraph>
               Empower your service teams with AI-driven knowledge management. 
               Reduce resolution times and enhance customer interactions with instant access to contextual, relevant information.  
               Leverage real-time insights to improve agent productivity and customer satisfaction.
-            </p>
+            </Paragraph>
           </div>
           <ul className="list-none p-0">
             <li className="text-blue-600 text-base mb-2">AI-Powered Search</li>
@@ -61,10 +61,10 @@ const Four = () => {
             <Subheading className="text-blue-600 text-xl mb-2">
               Unified Communication Across Channels
             </Subheading>
-            <p className="text-gray-600 text-base mb-4">
+            <Paragraph>
               Deliver seamless customer support across voice, chat, email, and social channels.  
               Our omni-channel engagement solution ensures personalized, context-aware interactions, reducing friction and improving customer experience.
-            </p>
+            </Paragraph>
           </div>
           <ul className="list-none p-0">
             <li className="text-blue-600 text-base mb-2">Automated Response Suggestions</li>

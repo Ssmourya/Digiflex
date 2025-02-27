@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaCode, FaCogs, FaToolbox, FaDatabase, FaCloud, FaBug } from "react-icons/fa";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const techStack = [
   { category: "Languages", items: "Swift, Objective-C", icon: FaCode },
@@ -26,9 +27,9 @@ export default function TechStack() {
           Our Tech Stack
         
         </Heading>
-        <p className="text-lg text-black mb-12">
+        <Paragraph>
           We leverage the latest technologies to build robust and high-performing iOS applications.
-        </p>
+        </Paragraph>
       </motion.div>
 
       <motion.div 
@@ -48,7 +49,7 @@ export default function TechStack() {
             <div>
             <Subheading>{tech.category}</Subheading>
               
-              <p className="text-md text-black">{tech.items}</p>
+              <Paragraph>{tech.items}</Paragraph>
             </div>
           </motion.div>
         ))}

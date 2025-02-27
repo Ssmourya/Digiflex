@@ -1,17 +1,19 @@
-import React from 'react'
-import ServicesSection from './ServicesSection';
-import PricingPlans from './PricingPlans';
-import GameAceBenefits from './GameAceBenefits';
-import MobileGameFAQ from './MobileGameFAQ';
+import React from "react";
+import ServicesSection from "./ServicesSection";
+import PricingPlans from "./PricingPlans";
+import GameAceBenefits from "./GameAceBenefits";
+import MobileGameFAQ from "./MobileGameFAQ";
+
 const Body = () => {
-    return (
-       <>
+  return (
+    <>
       <ServicesSection />
-      <PricingPlans/>
+
+      <PricingPlans />
       <GameAceBenefits />
       <MobileGameFAQ />
-       </>
-    )
-}
+    </>
+  );
+};
 
-export default Body
+export default Body;

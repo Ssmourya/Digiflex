@@ -5,6 +5,7 @@ import HTML5Services from '../container/Technology/MobileAppDev/HTML5 APP DEVELO
 import TechnologiesSection from '../container/Technology/MobileAppDev/HTML5 APP DEVELOPMENT/TechnologiesSection';
 import DevelopmentProcess from '../container/Technology/MobileAppDev/HTML5 APP DEVELOPMENT/DevelopmentProcess';
 import Html5DevelopmentSection from '../container/Technology/MobileAppDev/HTML5 APP DEVELOPMENT/Html5DevelopmentSection';
+import FrequentlyAskedQuestions from '../container/Technology/MobileAppDev/HTML5 APP DEVELOPMENT/FrequentlyAskedQuestions';
 const HtmlAppDevlopment = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const HtmlAppDevlopment = () => {
       <TechnologiesSection/>
       <Html5DevelopmentSection/>
       <DevelopmentProcess/>
+      <FrequentlyAskedQuestions/>
     </div>
   )
 }

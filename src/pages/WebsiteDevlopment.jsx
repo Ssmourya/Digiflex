@@ -6,6 +6,7 @@ import Website5 from '../container/Services/Custom App/Website Devlopment/Websit
 import { PhoneIcon as WhatsApp } from 'lucide-react';
 import videoBg from '../assets/blockchain_video.mp4'; // Video background
 import WrapperContainer from '../Layout/WrapperContainer';
+import FrequentlyAskedQuestions from '../container/Services/Custom App/Website Devlopment/FrequentlyAskedQuestions';
 
 const Website = () => {
   return (
@@ -29,31 +30,33 @@ const Website = () => {
         {/* Content Section */}
         <div className="relative z-30 text-white max-w-4xl p-8">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-            Modern Website Development Services At Low Prices
+            Modern Website Development Services
           </h1>
           <p className="text-lg leading-relaxed mb-6">
-            Looking to create a modern website for your business or startup? Don’t wait! HireRankON Technologies, 
-            a leading website development company in India, offering affordable and high-quality website development services**. 
-            We specialize in custom, responsive websites that enhance user experience, boost your brand, and drive business growth.
-          </p>
+          Building Future-Ready Websites with Cutting-Edge Technology, Seamless UX, and Scalable Performance.</p>
 
           {/* WhatsApp Button */}
           <div className="flex justify-center">
-            <button className="bg-emerald-500 hover:bg-emerald-600 transition-colors p-3 rounded-full flex items-center gap-2 text-white text-lg font-semibold">
-              <WhatsApp className="w-6 h-6" />
-              <span>Contact Us</span>
-            </button>
+          <div className="flex flex-wrap justify-center space-x-4">
+          <button className="bg-white text-[#172554] px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-transform transform hover:scale-105 duration-300">
+            Get Started
+          </button>
+          <button className="bg-transparent border border-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#172554] transition-transform transform hover:scale-105 duration-300">
+            Learn More
+          </button>
+        </div>
           </div>
         </div>
       </div>
 
       {/* Additional Components */}
      <WrapperContainer>
-       <Website2 />
+      <Website2 />
       <Website3 />
       <Website4 />
       <Website5 />
       </WrapperContainer>
+      <FrequentlyAskedQuestions/>
     </>
   );
 };

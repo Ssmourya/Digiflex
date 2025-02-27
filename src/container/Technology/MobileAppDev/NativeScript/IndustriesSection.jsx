@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 import img1 from "../../../../assets/Healthcare.jpg";
 import img2 from "../../../../assets/Ecomerce.jpg";
 import img3 from "../../../../assets/Automation.jpeg";
@@ -104,7 +105,7 @@ export default function IndustriesSection() {
   const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#F3F4F6] p-4">
+    <div className="flex justify-center items-center min-h-screen bg-white p-4">
       <div className="flex flex-col md:flex-row w-full md:w-3/4 bg-white shadow-lg p-6 rounded-lg border border-gray-300">
         {/* Sidebar */}
         <div className="w-full md:w-1/4 bg-[#172554] text-white shadow-md p-4 rounded-lg mb-4 md:mb-0">
@@ -143,13 +144,13 @@ export default function IndustriesSection() {
               {selectedIndustry.icon}
               <span>{selectedIndustry.name}</span>
             </Heading>
-            <Subheading
+            <Paragraph
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-gray-700 mt-2 text-center max-w-2xl"
             >
               {selectedIndustry.description}
-            </Subheading>
+            </Paragraph>
           </div>
         </div>
       </div>

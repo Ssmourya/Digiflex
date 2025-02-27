@@ -1,15 +1,15 @@
 import React from "react";
 import { Monitor, Server, Wrench, Database } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Heading from "../../../../Layout/Heading";
 
 export default function TechnologiesSection() {
   return (
     <WrapperContainer>
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">
-          Technologies We Use
-        </h2>
+      <Heading>Technologies We Use</Heading>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Front-end */}
           <div className="p-6 border border-gray-300 rounded-lg shadow-sm transition transform hover:scale-105 hover:shadow-lg">

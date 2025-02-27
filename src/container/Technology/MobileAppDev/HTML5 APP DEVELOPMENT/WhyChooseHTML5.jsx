@@ -28,7 +28,7 @@ export default function WhyChooseHTML5() {
   ];
 
   return (
-    <section className="py-12 bg-background">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Image Section */}

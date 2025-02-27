@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaMobileAlt, FaSync, FaPaintBrush, FaServer, FaBug, FaTools, FaUsers, FaRocket, FaLock, FaChartLine, FaCogs, FaHeadset } from "react-icons/fa";
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from "../../../../Layout/Paragraph";
 
 const services = [
   { icon: <FaMobileAlt />, title: "Custom NativeScript App Development", description: "Tailored solutions for businesses" },
@@ -23,14 +24,14 @@ const whyDigiflex = [
 
 export default function NativeScriptServices() {
   return (
-    <section className="py-16 bg-[#F3F4F6]">
+    <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Heading className="text-3xl font-bold text-gray-800 mb-8 flex justify-center items-center gap-2">
+          <Heading >
             🛠 Our NativeScript App Development Services
           </Heading>
         </motion.div>
@@ -77,7 +78,7 @@ export default function NativeScriptServices() {
                 <div className="text-4xl text-green-500 mb-4">{reason.icon}</div>
               </motion.div>
               <Subheading>{reason.title}</Subheading>
-              <p className="text-gray-600">{reason.description}</p>
+              <Paragraph className="text-gray-600">{reason.description}</Paragraph>
             </motion.div>
           ))}
         </div>

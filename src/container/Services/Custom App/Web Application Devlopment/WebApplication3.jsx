@@ -88,34 +88,21 @@ const WebApplication3 = () => {
               </motion.div>
             ))}
           </div>
-
-          {/* Navigation Buttons */}
-          <div className="absolute top-1/2 -translate-y-1/2 -left-4">
-            <button className="p-2 bg-white rounded-full shadow-lg hover:scale-110 transition-all duration-300">
-              <ChevronLeft className="w-6 h-6 text-gray-600" />
-            </button>
-          </div>
-
-          <div className="absolute top-1/2 -translate-y-1/2 -right-4">
-            <button className="p-2 bg-white rounded-full shadow-lg hover:scale-110 transition-all duration-300">
-              <ChevronRight className="w-6 h-6 text-gray-600" />
-            </button>
-          </div>
         </div>
       </motion.div>
 
       {/* Partners Section */}
       <motion.div
-        className="text-center"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-      >
-        
-      <Heading>Trusted by startups and Fortune <span className="text-orange-500">500</span> companies</Heading>
-           
-      
-      </motion.div>
+      className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-indigo-100 py-10 px-4 rounded-lg shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+    >
+      <Heading >
+        Trusted by startups and Fortune <span className="text-indigo-600">500</span> companies
+      </Heading>
+    </motion.div>
+    
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center mt-8">
         {partners.map((partner, index) => (

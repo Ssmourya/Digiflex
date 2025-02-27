@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Heading from '../../../../Layout/Heading'
+
 import img from '../../../../assets/IOS5.jpg';
 import img2 from '../../../../assets/IOS4.jpg';
 import img3 from '../../../../assets/IOS3.jpg';
 import img4 from '../../../../assets/IOS2.jpg';
 import img5 from '../../../../assets/IOS.jpg';
-
+import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 const features = [
   {
     id: "experienced",
@@ -69,22 +71,26 @@ const FeatureContent = ({ feature }) => {
     >
       <div>
         {/* Apply the gradient to the feature title if desired */}
-        <motion.h3 
+        <Subheading
+        
           className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
           {feature.title}
-        </motion.h3>
-        <motion.p 
+       
+        </Subheading>
+        <Paragraph
+        
           className="text-gray-600 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
           {feature.description}
-        </motion.p>
+        
+        </Paragraph>
       </div>
       <motion.div
         className="relative h-80 rounded-lg overflow-hidden shadow-md bg-gray-50"
@@ -106,7 +112,7 @@ export default function WhyChooseDigiflex() {
   const [activeFeature, setActiveFeature] = useState(features[0].id);
 
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="bg-white py-12">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Main Heading & Subheading */}
         <div className="text-center mb-8">

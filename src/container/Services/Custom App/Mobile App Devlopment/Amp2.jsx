@@ -6,23 +6,28 @@ import difi from "../../../../assets/bg11.png";
 import { Shield, Users, FileCheck, Clock } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const Amp2 = () => {
   const features = [
     {
-      icon: <Shield className="w-8 h-8 text-[#172554]" />,
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
       text: "Secure and Scalable Mobile App Solutions",
     },
     {
-      icon: <Users className="w-8 h-8 text-[#172554]" />,
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Users className="w-8 h-8 text-blue-600" />,
       text: "Experienced Team with Deep Industry Knowledge",
     },
     {
-      icon: <FileCheck className="w-8 h-8 text-[#172554]" />,
+      icon: <FileCheck className="w-8 h-8 text-blue-600" />,
+      icon: <FileCheck className="w-8 h-8 text-blue-600" />,
       text: "Custom Mobile Applications Tailored to Your Business Needs",
     },
     {
-      icon: <Clock className="w-8 h-8 text-[#172554]" />,
+      icon: <Clock className="w-8 h-8 text-blue-600" />,
+      icon: <Clock className="w-8 h-8 text-blue-600" />,
       text: "Timely Delivery and Ongoing Support",
     },
   ];
@@ -68,7 +73,8 @@ const Amp2 = () => {
                     transition={{ delay: index * 0.2, duration: 0.6 }}
                   >
                     <div className="mt-1">{feature.icon}</div>
-                    <p className="text-gray-700 text-lg">{feature.text}</p>
+                    <Paragraph>{feature.text}</Paragraph>
+                   
                   </motion.div>
                 ))}
               </div>
@@ -89,15 +95,10 @@ const Amp2 = () => {
               whileHover={{ scale: 1.05 }}
             >
               <Heading>Transparency in Development</Heading>
-              <p className="text-black text-lg">
-                Our mobile app development process is built on transparency, ensuring clear communication, real-time progress updates, and alignment with client expectations. With Digiflex.ai, you get a fully collaborative approach that guarantees high-quality app solutions.
-              </p>
-              <motion.button
-                className="bg-[#3730A3] text-[#0c0c0d] px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all mt-4"
-                whileHover={{ scale: 1.1 }}
-              >
-                Learn More
-              </motion.button>
+              <Paragraph>   Our mobile app development process is built on transparency, ensuring clear communication, real-time progress updates, and alignment with client expectations. With Digiflex.ai, you get a fully collaborative approach that guarantees high-quality app solutions.
+              </Paragraph>
+            
+              
             </motion.div>
             <motion.div
               className="w-full md:w-1/2 flex justify-center"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -40,11 +41,10 @@ const Faq = () => {
   
     <WrapperContainer>
          <div className="max-w-7xl mx-auto px-6  p-10">
-        <Heading>
-        <h1 >
-      Frequently Asked Questions
-      </h1>
-        </Heading>
+         <h3 className="text-4xl font-bold text-center mb-6 text-blue-700">
+         Crypo Currency Wallet :- Frequently Asked Questions
+       </h3>
+
       <div className="space-y-6">
         {faqData.map((faq, index) => {
           const isOpen = openIndex === index;
@@ -57,16 +57,21 @@ const Faq = () => {
                 onClick={() => toggleFaq(index)}
                 className={`w-full text-left px-6 py-4 flex justify-between items-center font-semibold text-lg text-gray-800 ${isOpen ? 'bg-blue-50 text-blue-600' : 'bg-white text-gray-600'} hover:transition-colors duration-300`}
               >
+                <h4>
                 {faq.question}
+                </h4> 
                 <span className={`transform ${isOpen ? 'rotate-180' : ''} transition-transform duration-300`}>
                   &#x25BC;
                 </span>
               </button>
 
               {isOpen && (
+                <Paragraph>
                 <div className="px-6 py-4 bg-gray-50 text-gray-700 text-sm">
                   {faq.answer}
                 </div>
+
+                </Paragraph>
               )}
             </div>
           );

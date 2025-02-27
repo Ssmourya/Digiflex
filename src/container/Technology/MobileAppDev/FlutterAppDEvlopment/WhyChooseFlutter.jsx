@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
-
+import Paragraph from "../../../../Layout/Paragraph";
 const features = [
   {
     title: "Single Codebase, Multi-Platform",
@@ -34,7 +34,7 @@ const features = [
 
 const WhyChooseFlutter = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6">
+    <section className="bg-white py-20 px-6">
       {/* Main Heading with Animated Underline */}
       <Heading 
         initial={{ opacity: 0, y: -30 }}
@@ -71,9 +71,9 @@ const WhyChooseFlutter = () => {
               <Subheading className="text-xl font-semibold text-black">
                 {feature.title}
               </Subheading>
-              <p className="text-gray-600 mt-2 leading-relaxed">
+              <Paragraph>
                 {feature.description}
-              </p>
+              </Paragraph>
             </div>
           </motion.div>
         ))}

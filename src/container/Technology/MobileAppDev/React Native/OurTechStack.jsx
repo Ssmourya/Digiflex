@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { FaCode, FaCogs, FaServer, FaDatabase, FaBug, FaTools } from "react-icons/fa";
 import Heading from "../../../../Layout/Heading";
-
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph'
 const techStack = [
   {
     category: "Programming Languages",
@@ -62,17 +63,18 @@ const OurTechStack = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
           >
-            <Heading
+            <Subheading
               className="text-xl font-medium mb-4 flex items-center text-[#172554]"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
               {stack.icon} {stack.category}
-            </Heading>
+            </Subheading>
             <ul className="space-y-2">
               {stack.items.map((item, idx) => (
-                <motion.li 
+                <Paragraph
+                
                   key={idx} 
                   className="text-lg flex items-center text-gray-700"
                   initial={{ opacity: 0, x: 20 }}
@@ -80,7 +82,8 @@ const OurTechStack = () => {
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                 >
                   <span className="mr-2 text-blue-600">✔</span> {item}
-                </motion.li>
+               
+                </Paragraph>
               ))}
             </ul>
           </motion.div>

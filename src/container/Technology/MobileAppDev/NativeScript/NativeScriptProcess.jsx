@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 const processSteps = [
   {
     id: 1,
@@ -45,7 +47,7 @@ export default function NativeScriptProcess() {
   const [selectedStep, setSelectedStep] = useState(null);
 
   return (
-    <div className="py-16 bg-gray-100">
+    <div className="py-16 bg-white">
       <div className="max-w-6xl mx-auto text-center px-4">
         
        <Heading
@@ -74,9 +76,9 @@ export default function NativeScriptProcess() {
                 }`}
               >
                 <div className="text-5xl mb-4">{step.logo}</div>
-                <h3 className="text-xl font-semibold flex justify-center items-center gap-2">
+                <Subheading className="text-xl font-semibold flex justify-center items-center gap-2">
                   <FaCheckCircle className="text-green-500" /> {step.title}
-                </h3>
+                </Subheading>
                 {selectedStep === step.id && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
@@ -84,7 +86,7 @@ export default function NativeScriptProcess() {
                     transition={{ duration: 0.3 }}
                     className="mt-2 text-gray-700"
                   >
-                    <p className="text-lg">{step.description}</p>
+                    <Paragraph>{step.description}</Paragraph>
                   </motion.div>
                 )}
               </div>

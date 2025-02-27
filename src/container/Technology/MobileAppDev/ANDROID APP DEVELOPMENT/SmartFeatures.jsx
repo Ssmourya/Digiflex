@@ -27,42 +27,42 @@ const SmartFeatures = () => {
             Smart Android App Features We Offer
          
           </Heading>
-          <p className="text-gray-600 text-lg mb-8">
+          <p className="text-gray-700 text-lg mb-8">
             We offer cutting-edge features tailored to enhance user engagement
             and business growth.
           </p>
           <ul className="space-y-6">
             <li className="flex items-start">
               <span className="text-[#1A2E6F] font-bold text-2xl mr-4">💡</span>
-              <p className="text-lg">
+              <p className="text-lg text-gray-800">
                 <strong>AI Chatbots:</strong> Enhance customer engagement with
                 smart assistants.
               </p>
             </li>
             <li className="flex items-start">
               <span className="text-[#1A2E6F] font-bold text-2xl mr-4">📍</span>
-              <p className="text-lg">
+              <p className="text-lg text-gray-800">
                 <strong>Location-Based Services:</strong> GPS tracking,
                 geofencing, and mapping.
               </p>
             </li>
             <li className="flex items-start">
               <span className="text-[#1A2E6F] font-bold text-2xl mr-4">🔔</span>
-              <p className="text-lg">
+              <p className="text-lg text-gray-800">
                 <strong>Push Notifications & Analytics:</strong> Personalized
                 user engagement.
               </p>
             </li>
             <li className="flex items-start">
               <span className="text-[#1A2E6F] font-bold text-2xl mr-4">🔑</span>
-              <p className="text-lg">
+              <p className="text-lg text-gray-800">
                 <strong>Biometric Authentication:</strong> Face unlock &
                 fingerprint security.
               </p>
             </li>
             <li className="flex items-start">
               <span className="text-[#1A2E6F] font-bold text-2xl mr-4">📡</span>
-              <p className="text-lg">
+              <p className="text-lg text-gray-800">
                 <strong>IoT Connectivity:</strong> Smart home automation & device control.
               </p>
             </li>

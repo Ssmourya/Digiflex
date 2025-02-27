@@ -11,6 +11,7 @@ import Com3 from '../assets/Logo4.jpg';
 import Com4 from '../assets/Logo5.jpg';
 import Heading from '../Layout/Heading';
 import WrapperContainer from '../Layout/WrapperContainer';
+import FrequentlyAskedQuestions from '../container/Services/Custom App/Mobile App Devlopment/FrequentlyAskedQuestions';
 
 
 
@@ -39,22 +40,21 @@ const Amp = () => {
             Web and Mobile App Development Company
           </h1>
           <p className="text-lg mt-4">
-            We help you launch and scale your Mobile and Web Apps. Since 2014, we build custom applications loved by millions.
-          </p>
-          <button className="mt-6 bg-white text-[#172554] px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all">
-            Get in touch
+          Empowering businesses by transforming ideas into innovative, high-performing web and mobile applications with seamless functionality, scalability, and user-friendly experiences.          </p>
+          
+          <div className="flex justify-center py-5">
+          <div className="flex flex-wrap justify-center space-x-4">
+          <button className="bg-white text-[#172554] px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-transform transform hover:scale-105 duration-300">
+            Get Started
           </button>
+          <button className="bg-transparent border border-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#172554] transition-transform transform hover:scale-105 duration-300">
+            Learn More
+          </button>
+        </div>
+          </div>
 
           {/* Clients Section */}
-          <div className="mt-12">
-            <p className="text-white mb-4 font-medium">Our Clients</p>
-            <div className="flex flex-wrap gap-6 items-center justify-center">
-              <img src={Com} alt="Google" className="h-8" />
-              <img src={Com2} alt="Calmerry" className="h-8" />
-              <img src={Com3} alt="Qured" className="h-8" />
-              <img src={Com4} alt="COTY" className="h-8" />
-            </div>
-          </div>
+         
         </div>
       </div>
 
@@ -63,6 +63,7 @@ const Amp = () => {
       <Amp2 />
       <Amp3 />
       <Amp5 />
+      <FrequentlyAskedQuestions/>
       
       </WrapperContainer>
      

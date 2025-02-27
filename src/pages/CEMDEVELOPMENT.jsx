@@ -5,6 +5,7 @@ import Thirds from "../container/Services/Custom App/CEM Devlopment/Third";
 import Four from "../container/Services/Custom App/CEM Devlopment/Four";
 import KnowledgeSection from "../container/Services/Custom App/CEM Devlopment/KnowledgeSection";
 import WrapperContainer from "../Layout/WrapperContainer";
+import CemDevelopmentFAQ from "../container/Services/Custom App/CEM Devlopment/CemDevelopmentFAQ";
 
 const Hero = () => {
   return (
@@ -27,16 +28,20 @@ const Hero = () => {
         {/* Content */}
         <div className="relative z-30 max-w-3xl text-white px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Deliver exceptional, omnichannel customer experiences
+          CEM Development
           </h1>
           <p className="text-lg mb-6">
-            Deliver seamless, personalized, and omnichannel customer experiences powered by
-            cutting-edge IT solutions and innovative products. At Digiflex.ai, we ensure every
-            customer interaction is meaningful and efficient across all touchpoints.
-          </p>
-          <button className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-blue-600 transition">
-            Request Demo
+          Customer Experience Management (CEM) Development – Enhancing Engagement, Personalization, and Business Growth.</p>
+          <div className="flex justify-center py-5">
+          <div className="flex flex-wrap justify-center space-x-4">
+          <button className="bg-white text-[#172554] px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-transform transform hover:scale-105 duration-300">
+            Get Started
           </button>
+          <button className="bg-transparent border border-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#172554] transition-transform transform hover:scale-105 duration-300">
+            Learn More
+          </button>
+        </div>
+          </div>
         </div>
       </div>
       <WrapperContainer>
@@ -45,6 +50,7 @@ const Hero = () => {
       <Cards />
       <KnowledgeSection />
     </WrapperContainer>
+    <CemDevelopmentFAQ/>
     </>
   );
 };

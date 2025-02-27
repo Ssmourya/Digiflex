@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import bg14 from "../../../../assets/bg14.jpg";
 import bg6 from "../../../../assets/bg6.png";
 import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 // Import some icons from lucide-react
 import {
@@ -59,7 +60,7 @@ const Mobile3 = () => {
   ];
 
   return (
-    <div className="bg-gray-50 text-black p-8">
+    <div className="bg-white text-black p-8">
       {/* Section Title */}
       <Heading
       
@@ -71,7 +72,8 @@ const Mobile3 = () => {
         How do we achieve success in Integration Migration Services?
       
       </Heading>
-      <motion.p
+      <Paragraph
+      
         className="text-center mb-8 max-w-3xl mx-auto text-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -82,8 +84,8 @@ const Mobile3 = () => {
         and scalable solutions. Our approach includes expertise in data migration tools,
         seamless API integration, client-centric strategies, and a proven track record in
         successful projects.
-      </motion.p>
-
+      
+      </Paragraph>
       {/* Optional Graphic */}
       <div className="flex justify-center mb-8">
         <motion.img
@@ -129,10 +131,10 @@ const Mobile3 = () => {
               <h2 className="text-lg font-bold text-white text-center">
                 {service.text}
               </h2>
-              <p className="text-xs text-white text-center mt-1">
+              <Paragraph >
                 Digiflex.ai specializes in evaluating application ecosystems for
                 seamless porting and migration.
-              </p>
+              </Paragraph>
             </div>
           </motion.div>
         ))}

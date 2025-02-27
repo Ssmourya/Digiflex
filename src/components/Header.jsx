@@ -66,6 +66,7 @@ const Navbar = () => {
   const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
   const [activeMobileSubMenu, setActiveMobileSubMenu] = useState(null);
   const navRef = useRef(null);
+  const searchInputRef = useRef(null);
 
   const navItems = [
     {
@@ -192,37 +193,37 @@ const Navbar = () => {
         {
           icon: ShoppingCart,
           title: "Mobile App Development",
-          path: "/services/custom-apps/MobileAppDevlopment",
+          path: "/mobile-app-development",
         },
         {
           icon: Database,
           title: "Web Application Development",
-          path: "/services/custom-apps/webApplicationDevlopment",
+          path: "/web-application-development",
         },
         {
           icon: ShoppingBag,
           title: "Website Development",
-          path: "/services/custom-apps/WebsiteDevlopment",
+          path: "/website-development-services",
         },
         {
           icon: LineChart,
           title: "SaaS Development",
-          path: "/services/custom-apps/SaasDevlopment",
+          path: "saas-software-development",
         },
         {
           icon: Globe,
           title: "Blockchain Development",
-          path: "/services/custom-apps/block-chain",
+          path: "/blockchain-development-services",
         },
         {
           icon: Server,
           title: "Integration and Migration",
-          path: "/services/custom-apps/IntregrationandMigration",
+          path: "/integration-and-migration-services",
         },
         {
           icon: Server,
           title: "CEM Development",
-          path: "/services/custom-apps/cem-devlopment",
+          path: "/customer-experience-management-development",
         },
       ],
       image:
@@ -419,6 +420,60 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    {
+      id: "SalesForce",
+      icon: Cpu,
+      title: "SalesForce",
+      color: "text-yellow-500",
+      description: "Cutting-edge solutions using blockchain technologies.",
+      features: [
+        {
+          icon: Cpu,
+          title: "Application Architecture",
+          path: "/services/salesforce/applicationarchitecture",
+        },
+        {
+          icon: Database,
+          title: "Initial Coin Offering",
+          path: "/services/blockchain/initialcoinoffering",
+        },
+        {
+          icon: Currency,
+          title: "Cryptocurrency App",
+          path: "/services/blockchain/cryptocurrency",
+        },
+        {
+          icon: Wallet,
+          title: "Cryptocurrency Wallet",
+          path: "/services/blockchain/cryptocurrencywallet",
+        },
+        {
+          icon: Signature,
+          title: "Smart Contract",
+          path: "/services/blockchain/smartcontractdevelopment",
+        },
+        {
+          icon: MessageSquareLock,
+          title: "Nft Marketplace",
+          path: "/services/blockchain/nftmarketplacedevelopment",
+        },
+    
+        {
+          icon: ServerIcon,
+          title: "Defi Development Services",
+          path: "/services/blockchain/defidevelopmentservices",
+        },
+        {
+          icon: ServerIcon,
+          title: "Web3 Development",
+          path: "/services/blockchain/web3development",
+        },
+
+
+      ],
+      image:
+      "https://images.unsplash.com/photo-1640032152000-f273e2ca6922?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
   // Technology dropdown content
   const technologies = [
@@ -433,33 +488,33 @@ const Navbar = () => {
         {
           icon: FaApple,
           title: "IOS App",
-          path: "/tech/mobile/ios",
+          path: "/ios-app-development-services",
         },
         {
           icon: FaAndroid,
           title: "Android App",
-          path: "/tech/AndroidAppDevlopment",
+          path: "/android-app-development-services",
         },
         {
           icon: FaReact,
           title: "React Native",
-          path: "/tech/ReactNative",
+          path: "/react-native-app-development-services",
         },
-        { icon: FaFlutter, title: "Flutter", path: "/tech/FlutterDevlopment" },
+        { icon: FaFlutter, title: "Flutter", path: "/flutter-app-development-services" },
         {
           icon: FaCode,
           title: "NativeScript",
-          path: "/tech/NativeScript",
+          path: "/nativescript-app-development-services",
         },
         {
           icon: FaMicrosoft,
           title: "Xamarin",
-          path: "/tech/XamarinAppDevlopment",
+          path: "/xamarin-app-development-services",
         },
         {
           icon: FaHtml5,
           title: "HTMl APP",
-          path: "/tech/HtmlDevlopment",
+          path: "/html5-app-development-services",
         },
       ],
       image: image,
@@ -502,23 +557,18 @@ const Navbar = () => {
       description:
         "Full-stack website development using modern frameworks and languages.",
       features: [
-        { icon: Globe, title: "MEAN Stack", path: "/tech/web/mean" },
-        { icon: Globe, title: "Java/J2EE", path: "/tech/web/java" },
-        { icon: Globe, title: "Python", path: "/tech/web/python" },
-        { icon: Globe, title: ".NET", path: "/tech/web/dotnet" },
+        { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
+        { icon: Globe, title: "Java/J2EE", path: "/java-j2ee-development-services" },
+        { icon: Globe, title: "Python", path: "/python-development-services" },
+        { icon: Globe, title: ".NET", path: "/dotnet-development-services" },
         {
           icon: Globe,
           title: "Ruby on Rails (ROR)",
-          path: "/tech/web/ruby-on-rails",
+          path: "/ruby-on-rails-development",
         },
-        { icon: Globe, title: "Golang", path: "/tech/web/golang" },
-        { icon: Globe, title: "PHP: Laravel", path: "/tech/web/laravel" },
-        {
-          icon: Globe,
-          title: "PHP: CodeIgniter",
-          path: "/tech/web/codeigniter",
-        },
-      ],
+        { icon: Globe, title: "Golang", path: "/golang-development-services" },
+        { icon: Globe, title: "PHP: Laravel", path: "/php-laravel-codeigniter-development" },
+        ],
       image:
         "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     },
@@ -656,6 +706,21 @@ const Navbar = () => {
     setActiveMobileSubMenu(activeMobileSubMenu === id ? null : id);
   };
 
+  // Set focus on search input when search is activated
+  useEffect(() => {
+    if (isSearchActive && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [isSearchActive]);
+
+  // Toggle search functionality
+  const toggleSearch = () => {
+    setIsSearchActive(!isSearchActive);
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   // Get active content data
   const getActiveContentData = (type) => {
     const content = getDropdownContent(type);
@@ -755,14 +820,19 @@ const Navbar = () => {
   };
 
   return (
+<<<<<<< HEAD
     <nav
       className="sticky top-0 z-50 w-full bg-blue-950 text-white"
       ref={navRef}
     >
       <div className="max-w-7xl mx-auto px-4">
+=======
+    <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navRef}>
+      <div className="max-w-[1275px] mx-auto px-4">
+>>>>>>> 081c1a598b70d6251aa98f7362c91ee2d28bbc76
         <div className="flex items-center h-16 gap-x-4">
-          {/* Logo */}
-          <Link to="/" className="flex items-center no-underline mr-auto">
+          {/* Logo - Hide logo on very small screens when search is active */}
+          <Link to="/" className={`flex items-center no-underline ${isSearchActive ? 'hidden sm:flex sm:mr-2' : 'mr-auto'}`}>
             <img src={logo} alt="logo" className="h-6" />
           </Link>
 
@@ -835,23 +905,29 @@ const Navbar = () => {
               </div>
             </>
           ) : (
-            <div className="flex-1 flex items-center ml-4 md:ml-8">
-              <Search className="h-5 w-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="e.g. Business Intelligence"
-                className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 ml-4"
-                autoFocus
-              />
-              <button className="bg-[#6B7CFF] px-4 md:px-6 py-2 text-sm mr-2 md:mr-4 hover:bg-[#5A6AE6] transition-colors">
-                SEARCH
-              </button>
-              <button
-                onClick={() => setIsSearchActive(false)}
-                className="text-white hover:text-gray-300"
-              >
-                <X className="h-5 w-5" />
-              </button>
+            // Responsive Search Bar
+            <div className="flex-1 flex items-center justify-between w-full">
+              <div className="flex items-center flex-grow">
+                <Search className="h-5 w-5 text-gray-400 min-w-5" />
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  placeholder="Search..."
+                  className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 ml-2 sm:ml-4 text-sm sm:text-base w-full"
+                  autoFocus
+                />
+              </div>
+              <div className="flex items-center">
+                <button className="bg-[#6B7CFF] px-2 sm:px-4 py-2 text-xs sm:text-sm mr-2 hover:bg-[#5A6AE6] transition-colors whitespace-nowrap">
+                  SEARCH
+                </button>
+                <button
+                  onClick={toggleSearch}
+                  className="text-white hover:text-gray-300"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
             </div>
           )}
         </div>

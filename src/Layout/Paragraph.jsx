@@ -2,7 +2,7 @@ import React from "react";
 
 const Paragraph = ({ children, className = "" }) => {
   return (
-    <p className={`text-base text-gray-700 mb-5 text-center ${className}`}>
+    <p className={`text-base text-gray-700 mb-5 text-left  ${className}`}>
       {children}
     </p>
   );

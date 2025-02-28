@@ -5,17 +5,17 @@ import WrapperContainer from "../../../../Layout/WrapperContainer"
 function Engagementsection() {
 
   return (
+    <div className="flex">
     <WrapperContainer>
       {/* Title and Description */}
-      <Heading className=" font-bold text-gray-900">
-        Engagement Model
-      </Heading>
+      <h1 className=" font-bold text-center text-5xl text-black">
+        <span className="text-blue-700">Engagement</span> Model
+      </h1>
       <p className="text-gray-600 mt-3 text-lg max-w-2xl mx-auto text-left sm:text-center">
         As we guarantee the high-quality products and support transparency
         throughout the development journey, our clients are always an active
         part of it.
       </p>
-
 
       {/* Engagement Cards */}
       <div className="mt-10 flex flex-col sm:flex-row justify-center gap-6">
@@ -52,7 +52,7 @@ function Engagementsection() {
             </h2>
           </div>
         </div>
-         <div
+        <div
           className="relative w-full sm:w-80 lg:w-96 bg-white shadow-lg rounded-lg overflow-hidden"
           data-aos="flip-right" // Apply AOS flip-right animation
         >
@@ -69,6 +69,7 @@ function Engagementsection() {
         </div>
       </div>
     </WrapperContainer>
+    </div>
   );
 }
 

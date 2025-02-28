@@ -69,11 +69,11 @@ const ContactForm = () => {
     };
 
     const getInputClassName = (fieldName) => {
-        const baseClasses = "mt-1 block w-full px-3 py-2 border text-black rounded-md shadow-sm text-sm transition-colors duration-200";
-        const validClasses = "border-green-500 focus:ring-green-500 focus:border-green-500";
-        const invalidClasses = "border-red-500 focus:ring-red-500 focus:border-red-500";
-        const defaultClasses = "border-white focus:ring-blue-500 focus:border-red-500";
-
+        const baseClasses = "mt-1 block w-full px-3 py-2 border rounded-md shadow-sm text-sm transition-colors duration-200 outline-none";
+        const validClasses = "border-green-400 focus:ring-green-300 focus:border-green-400";
+        const invalidClasses = "border-red-300 focus:ring-red-200 focus:border-red-300";
+        const defaultClasses = "border-gray-300 focus:ring-blue-300 focus:border-blue-400";
+    
         if (touched[fieldName]) {
             if (errors[fieldName]) {
                 return `${baseClasses} ${invalidClasses}`;
@@ -104,7 +104,7 @@ const ContactForm = () => {
 
     return (
             <WrapperContainer>
-        <div className="flex flex-col justify-between w-full md:flex-row mx-auto bg-white rounded-lg ">
+        <div className="flex flex-col justify-between w-full md:flex-row mx-auto bg-white rounded-lg pb-8 ">
             {/* Left Section */}
             <div className="md:w-1/2 md:pr-8 ">
                 <h1 className="text-5xl md:text-5xl font-bold mb-4 text-blue-700">
@@ -132,7 +132,7 @@ const ContactForm = () => {
                     </li>
                 </ul>
                 
-                <p className="text-xs md:text-sm text-gray-500 mt-6">
+                <p className="text-xs md:text-sm text-gray-500 p-6">
                     Looking for support? Visit{" "}
                     <a href="#" className="text-blue-600 underline">
                         help & documentation
@@ -141,7 +141,7 @@ const ContactForm = () => {
             </div>
 
             {/* Right Section */}
-            <div className="md:w-1/2 mt-8 md:mt-0 p-4">
+            <div className="md:w-1/2 md:mt-0 pb-2">
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>

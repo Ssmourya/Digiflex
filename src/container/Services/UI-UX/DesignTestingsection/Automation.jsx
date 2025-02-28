@@ -5,17 +5,17 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 function AutomationTesting() {
   return (
     <div className=" flex items-center justify-center">
-        <WrapperContainer>
+      <WrapperContainer>
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="text-5xl font-bold">
-            AUTOMATION <span className="text-blue-800">TESTING</span>
+          <h1 className="text-5xl mb-2 font-bold text-black">
+            <span className="text-blue-700">AUTOMATION</span> TESTING
           </h1>
         </div>
 
         {/* Description Section */}
         <div className="text-center">
-          <p className="text-lg py-2">
+          <p className="text-lg ">
             Test Design in Software Testing - A Comprehensive Guide
           </p>
           <p className="text-lg ">
@@ -36,7 +36,7 @@ function AutomationTesting() {
         </div>
 
         {/* Social Media Icons Section */}
-        <div className="flex flex-wrap items-center gap-4 text-gray-700 pt-1 pb-6">
+        <div className="flex flex-wrap items-center gap-4 text-gray-700 pt-1">
           <a
             href="https://facebook.com/digiflex"
             target="_blank"
@@ -62,11 +62,11 @@ function AutomationTesting() {
             <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-blue-700 transition duration-300 hover:scale-110 hover:text-blue-800" />
           </a>
           <span className="text-xs sm:text-sm ml-4">
-            April 4, 2020 | Yamini Priya
+            February 24, 2025 | Digiflex.ai
           </span>
         </div>
-    </WrapperContainer>
-      </div>
+      </WrapperContainer>
+    </div>
   );
 }
 

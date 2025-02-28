@@ -39,11 +39,11 @@ function Technology({ technologies, activeTech, setActiveTech }) {
         </div>
 
         {/* Tech Logos Grid with Fade Transition */}
-        <div className="relative overflow-hidden bg-gray-50">
+        <div className="relative overflow-hidden">
           {Object.entries(technologies).map(([key, tech]) => (
             <motion.div
               key={key}
-              className={`absolute inset-0 transition-opacity duration-500 flex flex-col items-center justify-center ${
+              className={`absolute inset-0 transition-opacity duration-500 flex flex-col items-center p-4 justify-center ${
                 activeTech === key ? "opacity-100" : "opacity-0"
               }`}
               initial={{ opacity: 0 }}

@@ -105,7 +105,7 @@ function App() {
       <WrapperContainer>
         <div className="text-center">
           <h2 className="text-4xl pb-5 sm:text-5xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-            Project Timeline
+            Project Methodology
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Follow our structured approach to delivering exceptional results

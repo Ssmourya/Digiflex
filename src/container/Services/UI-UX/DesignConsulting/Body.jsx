@@ -243,90 +243,109 @@ const Body = () => {
     <div className="relative bg-gradient-to-b from-blue-50 to-white min-h-screen">
       {/* section 1 */}
       <div className="relative w-full bg-white/80 backdrop-blur-lg    ">
-      <WrapperContainer>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left Column */}
-          <div className="flex items-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300 animate-glow">
-              Why Choose Digiflex for{' '}
-              <span className="text-blue-800">UI/UX Design?</span>
-            </h2>
-          </div>
-
-          {/* Right Column */}
-          <div className="flex flex-col space-y-6">
-            <p className="text-xl md:text-xl text-gray-600 leading-relaxed hover:text-gray-800 transition-colors duration-300">
-              Businesses we've partnered with have experienced greater alignment between user needs and business objectives, resulting in enhanced engagement and boosted conversions.
-            </p>
-
-            <div className="text-xl md:text-xl text-gray-600 leading-relaxed">
-              At Digiflex, we specialize in crafting user-centric solutions tailored for:
-              <ul className="list-disc pl-4 mt-4 space-y-2">
-                <li className="hover:text-blue-600 transition-colors duration-300">SaaS Platforms</li>
-                <li className="hover:text-blue-600 transition-colors duration-300">E-commerce Experiences</li>
-                <li className="hover:text-blue-600 transition-colors duration-300">B2B and B2C Applications</li>
-                <li className="hover:text-blue-600 transition-colors duration-300">Mobile and Web Interfaces</li>
-              </ul>
+        <WrapperContainer>
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Left Column */}
+            <div className="flex items-center">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300 animate-glow">
+                Why Choose Digiflex for{" "}
+                <span className="text-blue-800">UI/UX Design?</span>
+              </h2>
             </div>
 
-            <p className="text-xl md:text-xl text-gray-600 leading-relaxed hover:text-gray-800 transition-colors duration-300">
-              Let us help you create intuitive designs that drive meaningful results for your business.
-            </p>
+            {/* Right Column */}
+            <div className="flex flex-col space-y-6">
+              <p className="text-xl md:text-xl text-gray-600 leading-relaxed hover:text-gray-800 transition-colors duration-300">
+                Businesses we've partnered with have experienced greater
+                alignment between user needs and business objectives, resulting
+                in enhanced engagement and boosted conversions.
+              </p>
+
+              <div className="text-xl md:text-xl text-gray-600 leading-relaxed">
+                At Digiflex, we specialize in crafting user-centric solutions
+                tailored for:
+                <ul className="list-disc pl-4 mt-4 space-y-2">
+                  <li className="hover:text-blue-600 transition-colors duration-300">
+                    SaaS Platforms
+                  </li>
+                  <li className="hover:text-blue-600 transition-colors duration-300">
+                    E-commerce Experiences
+                  </li>
+                  <li className="hover:text-blue-600 transition-colors duration-300">
+                    B2B and B2C Applications
+                  </li>
+                  <li className="hover:text-blue-600 transition-colors duration-300">
+                    Mobile and Web Interfaces
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-xl md:text-xl text-gray-600 leading-relaxed hover:text-gray-800 transition-colors duration-300">
+                Let us help you create intuitive designs that drive meaningful
+                results for your business.
+              </p>
+            </div>
           </div>
-        </div>
         </WrapperContainer>
       </div>
 
       {/* section 2 */}
       <div className="w-full bg-white/90 backdrop-blur-lg    ">
         <WrapperContainer>
-        <div className="max-w-6xl mx-auto pb-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 hover:text-blue-600 transition-colors duration-300 animate-glow">
-            What Makes Digiflex Your Ideal{' '}
-            <span className="text-blue-800">Graphic Design</span> Partner?
-          </h2>
-          <div className="flex flex-col md:flex-row md:justify-between md:space-x-12 space-y-12 md:space-y-0">
-            {Cards.map((card, index) => (
-              <FeatureCard
-                key={index}
-                title={card.title}
-                description={card.description}
-                titleColor={card.titleColor}
-              />
-            ))}
+          <div className="max-w-6xl mx-auto pb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 hover:text-blue-600 transition-colors duration-300 animate-glow">
+              What Makes Digiflex Your Ideal{" "}
+              <span className="text-blue-800">Graphic Design</span> Partner?
+            </h2>
+            <div className="flex flex-col md:flex-row md:justify-between md:space-x-12 space-y-12 md:space-y-0">
+              {Cards.map((card, index) => (
+                <FeatureCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                  titleColor={card.titleColor}
+                />
+              ))}
+            </div>
           </div>
-        </div>
         </WrapperContainer>
       </div>
 
       {/* section 3 */}
-      <div className="w-full bg-white/95 backdrop-blur-lg pb-5 ">
-      <WrapperContainer>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 hover:text-blue-600 transition-colors duration-300 animate-glow">
-            Our{' '}
-            <span className="text-blue-800">Design</span>
-            {' '}Process
-          </h2>
+      <div className="w-full bg-white/95 backdrop-blur-lg pb-10">
+        <WrapperContainer>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 hover:text-blue-600 transition-colors duration-300 animate-glow">
+              Our <span className="text-blue-800">Design</span> Process
+            </h2>
 
-          {/* Timeline */}
-          <div className="flex flex-col md:flex-row gap-8 md:gap-4 relative">
-            {timelineItems.map((item, index) => (
-              <TimelineItem key={index} icon={item.icon} title={item.title} items={item.items} />
-            ))}
+            {/* Timeline */}
+            <div className="flex flex-col md:flex-row gap-8 md:gap-4 relative">
+              {timelineItems.map((item, index) => (
+                <TimelineItem
+                  key={index}
+                  icon={item.icon}
+                  title={item.title}
+                  items={item.items}
+                />
+              ))}
+            </div>
           </div>
-
-          {/* Testing Cycle */}
-          <div className="mt-20 max-w-md mx-auto text-center">
-            <div className="relative w-48 h-48 mx-auto mb-8">
-              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-spin-slow">
-                <div className="absolute -right-3 top-1/2 w-6 h-6 bg-blue-500 rounded-full transform -translate-y-1/2"></div>
-              </div>
-              <div className="absolute inset-4 bg-white/90 backdrop-blur-lg rounded-full flex items-center justify-center">
-                <p className="text-sm font-medium text-gray-800 max-w-[120px] leading-tight animate-glow">
-                  User Testing & Observation Cycle
-                </p>
-              </div>
+        </WrapperContainer>
+      </div>
+      {/* section 3 part2 */}
+      <div className='bg-blue-950'>
+        <WrapperContainer>
+        {/* Testing Cycle */}
+        <div className="py-10 max-w-md mx-auto justify-center text-center">
+          <div className="relative w-48 h-48 mx-auto mb-8">
+            <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-spin-slow">
+              <div className="absolute -right-3 top-1/2 w-6 h-6 bg-blue-500 rounded-full transform -translate-y-1/2"></div>
+            </div>
+            <div className="absolute inset-4 bg-blue-950 backdrop-blur-lg rounded-full flex items-center justify-center">
+              <p className="text-sm font-medium text-white max-w-[120px] leading-tight animate-glow">
+                User Testing & Observation Cycle
+              </p>
             </div>
           </div>
         </div>
@@ -335,101 +354,107 @@ const Body = () => {
 
       {/* section 4 */}
       <div className="w-full bg-white/90 backdrop-blur-lg ">
-      <WrapperContainer>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10">
-            <p className="text-blue-600 font-bold text-lg mb-4 animate-pulse">Let's transform your UI/UX</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight animate-glow">
-              WHAT WE <span className="text-blue-800">CAN</span>
-              <br />
-              DO FOR <span className="text-blue-800">YOU?</span>
-            </h2>
-          </div>
+        <WrapperContainer>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-blue-600 font-bold text-lg mb-4 animate-pulse">
+                Let's transform your UI/UX
+              </p>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight animate-glow">
+                WHAT WE <span className="text-blue-800">CAN</span>
+                <br />
+                DO FOR <span className="text-blue-800">YOU?</span>
+              </h2>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicescard2.map((service, index) => (
-              <ServiceCard
-                key={index}
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-              />
-            ))}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {servicescard2.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                />
+              ))}
+            </div>
           </div>
-        </div>
         </WrapperContainer>
       </div>
 
       {/* section 5 */}
       <div className="w-full bg-white/95 backdrop-blur-lg    ">
-      <WrapperContainer>
-        <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
-          <div className="mb-16 max-w-2xl mx-auto text-center">
-            <span className="inline-block   py-2 bg-blue-500 text-white text-sm font-medium rounded-md mb-8 animate-pulse">
-              STRATEGIC UX CONSULTING
-            </span>
+        <WrapperContainer>
+          <div className="max-w-7xl mx-auto">
+            {/* Header Section */}
+            <div className="mb-16 max-w-2xl mx-auto text-center">
+              <span className="inline-block   py-2 text-blue-700 font-bold text-sm rounded-md mb-8 animate-pulse">
+                STRATEGIC UX CONSULTING
+              </span>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 hover:text-blue-600 transition-colors duration-300 animate-glow">
-              Industry-Specific
-              <div className="relative">
-                <span className="text-blue-800">UI/UX</span>
-                <span className="relative">Consulting</span>
-              </div>
-              Solutions
-            </h2>
-
-            <p className="text-lg text-gray-600">
-              Digiflex.ai delivers tailored UI/UX consulting solutions across various industries, creating intuitive interfaces that enhance efficiency, security, and user engagement.
-            </p>
-          </div>
-
-          {/* Industries Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {industries.map((industry, index) => (
-              <div
-                key={index}
-                className="p-8 bg-white/90 backdrop-blur-lg rounded-lg transform transition-all duration-500 hover:scale-105 hover:bg-white group"
-              >
-                <div className="text-blue-500 transition-transform duration-300 group-hover:scale-110 animate-bounce-subtle">
-                  {industry.icon}
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                Industry-Specific
+                <div className="relative">
+                  <span className="text-blue-800">UI/UX</span>
+                  <span className="relative">Consulting</span>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-800 mt-4 mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                  {industry.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                  {industry.description}
-                </p>
-              </div>
-            ))}
+                Solutions
+              </h2>
+
+              <p className="text-lg text-gray-600">
+                Digiflex.ai delivers tailored UI/UX consulting solutions across
+                various industries, creating intuitive interfaces that enhance
+                efficiency, security, and user engagement.
+              </p>
+            </div>
+
+            {/* Industries Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {industries.map((industry, index) => (
+                <div
+                  key={index}
+                  className="p-8 bg-white/90 backdrop-blur-lg rounded-lg transform transition-all duration-500 hover:scale-105 hover:bg-white group"
+                >
+                  <div className="text-blue-500 transition-transform duration-300 group-hover:scale-110 animate-bounce-subtle">
+                    {industry.icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800 mt-4 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                    {industry.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                    {industry.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
         </WrapperContainer>
       </div>
 
       {/* section 6 */}
-      <div className="w-full bg-white/90 backdrop-blur-lg pb-10 ">
-      <WrapperContainer>
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 animate-glow">
-              DIGIFLEX.AI{' '}
-            <span className="text-blue-600">UI/UX Consulting</span>
-            {' '}Process
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="flex flex-col md:flex-row items-center">
-                <ProcessStep
-                  icon={step.icon}
-                  step={index + 1}
-                  title={step.title}
-                  description={step.description}
-                />
-                {index < steps.length - 1 && index % 3 !== 2 && <ArrowIcon />}
-              </div>
-            ))}
+      <div className="w-full bg-white/90 backdrop-blur-lg pb-20 ">
+        <WrapperContainer>
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 animate-glow">
+              DIGIFLEX.AI{" "}
+              <span className="text-blue-600">UI/UX Consulting</span> Process
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {steps.map((step, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row items-center"
+                >
+                  <ProcessStep
+                    icon={step.icon}
+                    step={index + 1}
+                    title={step.title}
+                    description={step.description}
+                  />
+                  {index < steps.length - 1 && index % 3 !== 2 && <ArrowIcon />}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
         </WrapperContainer>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import clutch from '../../../assets/clutch.png'
 import goodfirms from '../../../assets/goodfirms.png'
@@ -8,173 +8,228 @@ import globalSpring from '../../../assets/globalSpring.png'
 import manifest from '../../../assets/manifest.png'
 
 function App() {
+    const sectionRef = useRef(null);
+    const [sectionDimensions, setSectionDimensions] = useState({
+        width: 0,
+        height: 0,
+        top: 0,
+        left: 0
+    });
+
+    useEffect(() => {
+        const updateSectionDimensions = () => {
+            if (sectionRef.current) {
+                const rect = sectionRef.current.getBoundingClientRect();
+                setSectionDimensions({
+                    width: rect.width,
+                    height: rect.height,
+                    top: rect.top + window.scrollY,
+                    left: rect.left
+                });
+            }
+        };
+
+        // Update dimensions on mount and window resize
+        updateSectionDimensions();
+        window.addEventListener('resize', updateSectionDimensions);
+        
+        return () => window.removeEventListener('resize', updateSectionDimensions);
+    }, []);
+
     const awards = [
         {
           id: 1,
           image: clutch,
           alt: "Clutch Award Badge",
           link: "https://clutch.co",
-          sizeMultiplier: 2.0
+          sizeMultiplier: 1.9
         },
         {
           id: 2,
           image: goodfirms,
           alt: "Top Rated Badge",
           link: "https://www.goodfirms.co",
-          sizeMultiplier: 0.9
+          sizeMultiplier: 0.8
         },
         {
           id: 3,
           image: "https://erawebstudio.com/wp-content/uploads/2022/04/upwork-badge.png",
           alt: "Upwork Top Rated Badge",
           link: "https://www.upwork.com",
+          sizeMultiplier: 0.8
+        },
+        {
+          id: 4,
+          image: google,
+          alt: "Upwork Top Rated Badge",
+          link: "https://www.upwork.com",
+          sizeMultiplier: 1.8
+        },
+        {
+          id: 5,
+          image: mobapp,
+          alt: "Top Rated Badge",
+          link: "https://www.goodfirms.co",
           sizeMultiplier: 0.9
         },
         {
-        id: 4,
-        image: google,
-        alt: "Upwork Top Rated Badge",
-        link: "https://www.upwork.com",
-        sizeMultiplier: 2.0
+          id: 6,
+          image: "https://www.softwaresuggest.com/award_logo/customer-choice-winter-2025.png",
+          alt: "Upwork Top Rated Badge",
+          link: "https://www.upwork.com",
+          sizeMultiplier: 1.0
         },
         {
-            id: 5,
-            image: mobapp,
-            alt: "Top Rated Badge",
-            link: "https://www.goodfirms.co",
-            sizeMultiplier: 1.0
-          },
-          {
-            id: 6,
-            image: "https://www.softwaresuggest.com/award_logo/customer-choice-winter-2025.png",
-            alt: "Upwork Top Rated Badge",
-            link: "https://www.upwork.com",
-            sizeMultiplier: 1.1
-          },
-          {
-            id: 7,
-            image: globalSpring,
-            alt: "Top Rated Badge",
-            link: "https://www.goodfirms.co",
-            sizeMultiplier: 1.0
-          },
-          {
-            id: 8,
-            image: manifest,
-            alt: "Upwork Top Rated Badge",
-            link: "https://www.upwork.com",
-            sizeMultiplier: 1.0
-          },
-      ];
+          id: 7,
+          image: globalSpring,
+          alt: "Top Rated Badge",
+          link: "https://www.goodfirms.co",
+          sizeMultiplier: 0.9
+        },
+        {
+          id: 8,
+          image: manifest,
+          alt: "Upwork Top Rated Badge",
+          link: "https://www.upwork.com",
+          sizeMultiplier: 0.9
+        },
+    ];
 
-  const Star = ({ delay = 0, size = 2 }) => (
-    <motion.div
-      className="absolute"
-      initial={{
-        x: Math.random() * window.innerWidth,
-        y: Math.random() * window.innerHeight,
-        scale: 0,
-        rotate: 0,
-      }}
-      animate={{
-        scale: [0, 1, 0],
-        opacity: [0, 1, 0],
-        rotate: 360,
-      }}
-      transition={{
-        duration: 3,
-        repeat: Infinity,
-        delay,
-        ease: "easeInOut",
-      }}
-    >
-      <svg width={size * 16} height={size * 16} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z"
-          fill="currentColor"
-          className="text-yellow-300"
-        />
-      </svg>
-    </motion.div>
-  );
-
-  const Confetti = ({ count = 50 }) => (
-    <>
-      {[...Array(count)].map((_, i) => {
-        const randomX = Math.random() * window.innerWidth;
-        const randomDelay = Math.random() * 20;
-        const randomDuration = 15 + Math.random() * 10;
-        const randomColor = [
-          "bg-blue-400",
-          "bg-purple-400",
-          "bg-pink-400",
-          "bg-yellow-400",
-          "bg-green-400"
-        ][Math.floor(Math.random() * 5)];
-        const size = Math.random() * 8 + 4;
-
-        return (
-          <motion.div
-            key={i}
-            className={`absolute h-2 w-1 rounded-full ${randomColor}`}
-            style={{ width: size, height: size }}
-            initial={{
-              x: randomX,
-              y: -20,
-              rotate: 0,
-            }}
-            animate={{
-              y: window.innerHeight + 20,
-              rotate: 360,
-              x: randomX + (Math.random() - 0.5) * 200,
-            }}
-            transition={{
-              duration: randomDuration,
-              repeat: Infinity,
-              delay: randomDelay,
-              ease: "linear",
-            }}
+  const Star = ({ delay = 0, size = 2 }) => {
+    const randomX = React.useMemo(() => Math.random() * sectionDimensions.width, [sectionDimensions.width]);
+    const randomY = React.useMemo(() => Math.random() * sectionDimensions.height, [sectionDimensions.height]);
+    
+    return (
+      <motion.div
+        className="absolute"
+        style={{
+          left: randomX,
+          top: randomY
+        }}
+        initial={{
+          scale: 0,
+          rotate: 0,
+        }}
+        animate={{
+          scale: [0, 1, 0],
+          opacity: [0, 1, 0],
+          rotate: 360,
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          delay,
+          ease: "easeInOut",
+        }}
+      >
+        <svg width={size * 16} height={size * 16} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z"
+            fill="currentColor"
+            className="text-yellow-300"
           />
-        );
-      })}
-    </>
-  );
+        </svg>
+      </motion.div>
+    );
+  };
+
+  const Confetti = ({ count = 50 }) => {
+    return (
+      <>
+        {[...Array(count)].map((_, i) => {
+          const randomX = Math.random() * sectionDimensions.width;
+          const randomDelay = Math.random() * 20;
+          const randomDuration = 15 + Math.random() * 10;
+          const randomColor = [
+            "bg-blue-400",
+            "bg-purple-400",
+            "bg-pink-400",
+            "bg-yellow-400",
+            "bg-green-400"
+          ][Math.floor(Math.random() * 5)];
+          const size = Math.random() * 8 + 4;
+
+          return (
+            <motion.div
+              key={i}
+              className={`absolute h-2 w-1 rounded-full ${randomColor}`}
+              style={{ 
+                width: size, 
+                height: size,
+                left: randomX
+              }}
+              initial={{
+                y: -20,
+                rotate: 0,
+              }}
+              animate={{
+                y: sectionDimensions.height + 20,
+                rotate: 360,
+                x: randomX + (Math.random() - 0.5) * 100,
+              }}
+              transition={{
+                duration: randomDuration,
+                repeat: Infinity,
+                delay: randomDelay,
+                ease: "linear",
+              }}
+            />
+          );
+        })}
+      </>
+    );
+  };
 
   const CelebrationBackground = () => (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {[...Array(15)].map((_, i) => (
-        <Star key={`star-${i}`} delay={i * 0.2} size={1 + Math.random() * 1.5} />
-      ))}
-      <Confetti count={30} />
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={`circle-${i}`}
-          className="absolute h-32 w-32 rounded-full bg-gradient-to-r from-blue-200 to-purple-200 opacity-20 blur-xl"
-          initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-            scale: 0,
-          }}
-          animate={{
-            scale: [1, 2, 1],
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-          }}
-          transition={{
-            duration: 10 + Math.random() * 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-            delay: i * 2,
-          }}
-        />
-      ))}
+      {sectionDimensions.width > 0 && [
+        // Only render animations when section dimensions are available
+        ...[...Array(15)].map((_, i) => (
+          <Star key={`star-${i}`} delay={i * 0.2} size={1 + Math.random() * 1.5} />
+        )),
+        <Confetti key="confetti" count={30} />,
+        ...[...Array(5)].map((_, i) => {
+          const randomX = Math.random() * sectionDimensions.width;
+          const randomY = Math.random() * sectionDimensions.height;
+          
+          return (
+            <motion.div
+              key={`circle-${i}`}
+              className="absolute rounded-full bg-gradient-to-r from-blue-200 to-purple-200 opacity-20 blur-xl"
+              style={{
+                height: '8rem',
+                width: '8rem',
+                left: randomX,
+                top: randomY
+              }}
+              initial={{
+                scale: 0,
+              }}
+              animate={{
+                scale: [1, 2, 1],
+                x: [0, (Math.random() - 0.5) * 100],
+                y: [0, (Math.random() - 0.5) * 100],
+              }}
+              transition={{
+                duration: 10 + Math.random() * 10,
+                repeat: Infinity,
+                repeatType: "reverse",
+                delay: i * 2,
+              }}
+            />
+          );
+        })
+      ]}
     </div>
   );
 
   return (
     <div className="min-h relative overflow-hidden">
-      <CelebrationBackground />
-      <section className="py-12 sm:py-20 px-4 relative">
+      <section 
+        ref={sectionRef}
+        className="py-12 sm:py-20 px-4 relative"
+      >
+        <CelebrationBackground />
         <div className="max-w-7xl mx-auto">
           <div className="mb-6 sm:mb-10">
             <div className="flex flex-col items-center">
@@ -214,7 +269,7 @@ function App() {
                       style={{ 
                         transform: `scale(${
                           // Smaller scale on mobile, original scale on larger screens
-                          window.innerWidth < 640 
+                          typeof window !== 'undefined' && window.innerWidth < 640 
                             ? Math.min(2, award.sizeMultiplier || 1) 
                             : (award.sizeMultiplier || 1)
                         })`

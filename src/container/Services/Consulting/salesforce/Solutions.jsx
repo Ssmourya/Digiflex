@@ -58,15 +58,15 @@ const solutions = [
 
 function Solutions() {
   return (
-    <div className="container mx-auto ">
-        <WrapperContainer>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <WrapperContainer>
         <Heading>SALESFORCE SOLUTION AREAS</Heading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {solutions.map((solution, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-lg shadow-lg p-4 sm:p-5 lg:p-6 hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
@@ -76,23 +76,23 @@ function Solutions() {
               }}
             >
               <motion.div
-                className="flex justify-center mb-6"
+                className="flex justify-center mb-4 sm:mb-6"
                 whileHover={{ scale: 1.1, rotate: 360 }}
                 transition={{ duration: 0.6, type: "spring" }}
               >
                 {solution.icon}
               </motion.div>
-              <h2 className="text-xl font-semibold text-blue-900 text-center mb-4">
+              <h2 className="text-lg sm:text-xl font-semibold text-blue-900 text-center mb-3 sm:mb-4">
                 {solution.title}
               </h2>
-              <p className="text-gray-600 mb-6 text-center">
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 text-center">
                 {solution.description}
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-1.5 sm:space-y-2">
                 {solution.features.map((feature, featureIndex) => (
                   <motion.li
                     key={featureIndex}
-                    className="text-gray-700 flex items-start"
+                    className="text-sm sm:text-base text-gray-700 flex items-start"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 + featureIndex * 0.05 }}
@@ -105,8 +105,8 @@ function Solutions() {
             </motion.div>
           ))}
         </div>
-    </WrapperContainer>
-      </div>
+      </WrapperContainer>
+    </div>
   );
 }
 

@@ -67,235 +67,303 @@ const tools = [
   
 const ServicesHero = () => {
   return (
-<>
-    {/*Section 1 */}
-    <div className="bg-white min-h-[400px] w-full mb-10 relative overflow-hidden p-4 md:p-8">
-      <WrapperContainer>
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
-        {/* Main Content */}
-        <div className="w-full mt-20 relative z-10">
-          <Heading className="  underline font-bold text-blue-950 ">
+    <>
+      {/*Section 1 */}
+      <div className="bg-white">
+        <WrapperContainer>
+          <h1 className="text-5xl text-center pb-5 font-bold text-blue-950 ">
             UX Research
-          </Heading>
-          <div className="space-y-4">
-            <Paragraph className="text-base  text-black">
-              At DigiFlex, we specialize in UX research and usability testing to ensure financial products are intuitive, accessible, and enjoyable to use. Through in-depth user research, behavioral analysis, and iterative testing, we uncover insights that drive better design decisions and improve user engagement.
-            </Paragraph>
-            <Paragraph className="text-base  text-black">
-              Partner with DigiFlex to create research-driven financial experiences that enhance usability and boost customer satisfaction.
-            </Paragraph>
-            <ul>
-            <li>In-Depth User Research – We conduct qualitative and quantitative research to understand user behaviors, expectations, and challenges.</li><br />
-            <li> Behavioral Analysis – By studying how users interact with financial interfaces, we refine navigation, accessibility, and overall usability.</li><br />
-            <li>Usability Testing – Our rigorous testing ensures seamless interactions, leading to improved trust and engagement.</li><br />
-            <li>Compliance & Accessibility – We align designs with financial industry standards and ensure inclusivity for all users.</li><br />
+          </h1>
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+            {/* Main Content */}
 
-          </ul>
-          </div>
-          <button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-transparent">
-            Discuss details
-          </button>
-        </div>
-
-        {/* Right Image */}
-        <div className="w-full mt-1 lg:mt-0">
-          <div className="relative w-full h-full flex justify-center lg:justify-center">
-            <img 
-              src={uxreasearch43} 
-              alt="UX Research Illustration" 
-              className="w-full max-w-[500px] lg:max-w-none object-center"
-            />
-          </div>
-        </div>
-      </div>
-      </WrapperContainer>
-      </div>
-
-    {/*Section 2 */}
-    <WrapperContainer  >
-      
-      <div className="max-w-7xl mx-auto">
-          <Heading className=" underline underline-blue-950 text-center   font-bold text-blue-950 ">
-            DigiFlex UX Research Services
-        </Heading> 
-        <div className="flex flex-wrap justify-center gap-8">
-          {services.map((service) => (
-            <div 
-              key={service.number} 
-              className="flex flex-col p-6 rounded-xl w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] 
-                        transition-all duration-300 ease-in-out
-                        hover:bg-white shadow-xl shadow-gray-400 hover:shadow-xl hover:-translate-y-2
-                        border border-transparent hover:border-blue-400
-                        cursor-pointer group"
-            >
-              {/* Number */}
-              <span className="text-3xl font-medium text-blue-500 group-hover:text-blue-500 transition-colors duration-300">
-                {service.number}
-              </span>
-              
-              {/* Title */}
-              <h2 className="text-2xl font-bold text-blue-950 mt-4 mb-3
-                           group-hover:text-blue-600 transition-colors duration-300">
-                {service.title}
-              </h2>
-              
-              {/* Description */}
-              <Paragraph className="text-base text-gray-600 leading-relaxed
-                          group-hover:text-black transition-colors duration-300">
-                {service.description}
-              </Paragraph>
-
-              {/* Hover indicator */}
-              <div className="h-1 w-0 bg-blue-500 mt-6 transition-all duration-300 group-hover:w-full rounded-full" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </WrapperContainer>
-
-    {/*Section 3 */}
-    <WrapperContainer>
-       <div className="max-w-7xl mx-auto py-10 px-4">
-      <Heading className=" underline  font-bold text-blue-950  ">
-        DigiFlex UX Research Process
-      </Heading>
-      
-      <p className="text-black mb-6 text-lg">
-        At DigiFlex, we believe UX research should be adaptable, data-driven, and aligned with business goals. We dive deep into user behaviors, pain points, and needs to create meaningful, research-backed design decisions.
-      </p>
-      
-      <div className="flex flex-col my-15 md:flex-col gap-4">
-        {/* Discovery & Understanding */}
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-400 hover:scale-105 hover:shadow-blue-950 hover:shadow-xl transition-all duration-300 ease-in-out">
-          <div className="flex items-center mb-4">
-            <svg className="w-6 h-6 text-blue-950  mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <circle cx="12" cy="12" r="3" />
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-            </svg>
-            <h2 className="text-2xl text-blue-950  font-bold">Discovery & Understanding</h2>
-          </div>
-          <p className="text-gray-600 hover:text-black">
-            Our UX research begins with a broad exploration of the business, users, and industry context. We conduct stakeholder interviews, competitive analysis, and user research to uncover insights that shape the foundation of our strategy. Every detail matters—one key finding can redefine the entire approach.
-          </p>
-        </div>
-
-        {/* Insight & Analysis */}
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-400 hover:scale-105 hover:shadow-blue-950 hover:shadow-xl transition-all duration-300 ease-in-out">
-          <div className="flex items-center mb-4">
-            <svg className="w-6 h-6 text-blue-950  mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-              <path d="M3.27 6.96L12 12.01l8.73-5.05" />
-              <path d="M12 22.08V12" />
-            </svg>
-            <h2 className="text-2xl text-blue-950  font-bold">Insight & Analysis</h2>
-          </div>
-          <p className="text-gray-600 hover:text-black">
-            We systematically analyze qualitative and quantitative data, organizing insights into actionable themes. Through usability testing, surveys, and behavioral mapping, we identify patterns that reveal opportunities for improved user experiences.
-          </p>
-        </div>
-
-        {/* Synthesis & Roadmaps */}
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-400 hover:scale-105 hover:shadow-blue-950 hover:shadow-xl transition-all duration-300 ease-in-out">
-          <div className="flex items-center mb-4">
-            <svg className="w-6 h-6 text-blue-950 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-            <h2 className="text-2xl text-blue-950  font-bold">Synthesis & Roadmaps</h2>
-          </div>
-          <p className="text-gray-600 hover:text-black">
-            We synthesize research findings to define clear UX roadmaps. By pinpointing user pain points, needs, and behaviors, we develop strategic recommendations for seamless, high-performing digital experiences. Our data-driven approach ensures that every design and product decision is rooted in real user insights, not assumptions.
-          </p>
-        </div>
-
-        {/* User Testing & Validation */}
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-400 hover:scale-105 hover:shadow-blue-950 hover:shadow-xl transition-all duration-300 ease-in-out">
-          <div className="flex items-center mb-4">
-            <svg className="w-6 h-6 text-blue-950 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-            <h2 className="text-2xl text-blue-950  font-bold">User Testing & Validation</h2>
-          </div>
-          <p className="text-gray-600 hover:text-black">
-            Before finalizing any UX solution, we conduct iterative user testing and prototype validation to ensure that designs resonate with real users. Our testing includes A/B testing, heatmaps, eye-tracking studies, and usability sessions to refine interactions and optimize engagement.
-          </p>
-        </div>
-
-        {/* Accessibility & Compliance Review */}
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-400 hover:scale-105 hover:shadow-blue-950 hover:shadow-xl transition-all duration-300 ease-in-out">
-          <div className="flex items-center mb-4">
-            <svg className="w-6 h-6 text-blue-950 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-            <h2 className="text-2xl text-blue-950  font-bold">Accessibility & Compliance Review</h2>
-          </div>
-          <p className="text-gray-600 hover:text-black">
-            We ensure that digital experiences are inclusive and accessible for all users, following WCAG standards and industry-specific compliance guidelines. Our research highlights accessibility gaps and provides recommendations to enhance usability for diverse audiences.
-          </p>
-        </div>
-
-        {/* Behavioral & Emotional Analysis */}
-        <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-400 hover:scale-105 hover:shadow-blue-950 hover:shadow-xl transition-all duration-300 ease-in-out">
-          <div className="flex items-center mb-4">
-            <svg className="w-6 h-6 text-blue-950 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-            <h2 className="text-2xl text-blue-950  font-bold">Behavioral & Emotional Analysis</h2>
-          </div>
-          <p className="text-gray-600 hover:text-black">
-            At DigiFlex, UX research isn’t just about collecting data—it’s about transforming insights into action, helping businesses create products that truly connect with their users.
-          </p>
-        </div>
-  
-      </div>
-       </div>
-     </WrapperContainer>
-
-
-   {/* Section 4 */}
-<WrapperContainer  >
-  <div className="max-w-7xl mx-auto">
-    {/* Header Section */}
-    <div className="flex flex-col items-center text-center mb-8 sm:mb-10 md:mb-12">
-      <Heading className="underline font-bold text-blue-950 ">
-        DigiFlex UX Research Tools – 
-      </Heading>
-      <Paragraph className="text-sm sm:text-base text-black">
-        At DigiFlex, we leverage industry-leading UX research tools to uncover meaningful, data-driven insights that represent the voice of the user while aligning with business objectives.
-      </Paragraph>
-    </div>
-
-        {/* Tools Cards Section */}
-        <div className="flex flex-col md:flex-row flex-wrap gap-6">
-          {tools.map((tool) => (
-            <div
-              key={tool.id}
-              className="flex flex-col p-10 rounded-xl w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] 
-                        transition-all duration-300 ease-in-out
-                        hover:bg-white shadow-xl shadow-gray-400 hover:shadow-blue-950 hover:shadow-lg hover:-translate-y-2
-                        border border-transparent hover:border-blue-400
-                        cursor-pointer group my-6"
-            >
-              <div className="flex flex-col h-full">
-                <img
-                  src={tool.logo || "/placeholder.svg"}
-                  alt={`${tool.name} Logo`}
-                  className="h-8 w-auto mb-6 object-contain"
-                />
-                <p className="text-[#1a1a1a] leading-relaxed flex-grow">{tool.description}</p>
+            <div className="w-full relative z-10">
+              <div className="space-y-4">
+                <Paragraph className="text-base  text-black">
+                  At DigiFlex, we specialize in UX research and usability
+                  testing to ensure financial products are intuitive,
+                  accessible, and enjoyable to use. Through in-depth user
+                  research, behavioral analysis, and iterative testing, we
+                  uncover insights that drive better design decisions and
+                  improve user engagement.
+                </Paragraph>
+                <Paragraph className="text-base  text-black">
+                  Partner with DigiFlex to create research-driven financial
+                  experiences that enhance usability and boost customer
+                  satisfaction.
+                </Paragraph>
+                
               </div>
             </div>
-          ))}
-        </div>
-        <p className="text-black my-20">
-            With these advanced research tools, DigiFlex delivers user-centric solutions that drive product success and enhance digital experiences.
-        </p>
+
+            {/* Right Image */}
+            <div className="w-full mt-1 lg:mt-0">
+              <div className="relative w-full h-full flex justify-center lg:justify-center">
+                <img
+                  src={uxreasearch43}
+                  alt="UX Research Illustration"
+                  className="w-full max-w-[500px] lg:max-w-none object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </WrapperContainer>
       </div>
-    </WrapperContainer>
-</>
+
+      {/*Section 2 */}
+        <div className="flex">
+      <WrapperContainer>
+          <Heading className="  text-center   font-bold text-blue-950 ">
+            DigiFlex UX Research Services
+          </Heading>
+          <div className="flex flex-wrap justify-center gap-8">
+            {services.map((service) => (
+              <div
+                key={service.number}
+                className="flex flex-col p-6 rounded-xl w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] 
+                        transition-all duration-300 ease-in-out
+                        hover:bg-white shadow-xl shadow-gray-200 hover:shadow-xl hover:-translate-y-2
+                        border border-transparent hover:border-blue-400
+                        cursor-pointer group"
+              >
+                {/* Number */}
+                <span className="text-3xl font-medium text-blue-500 group-hover:text-blue-500 transition-colors duration-300">
+                  {service.number}
+                </span>
+
+                {/* Title */}
+                <h2
+                  className="text-2xl font-bold text-blue-950 mt-4 mb-3
+                           group-hover:text-blue-600 transition-colors duration-300"
+                >
+                  {service.title}
+                </h2>
+
+                {/* Description */}
+                <Paragraph
+                  className="text-base text-gray-200 leading-relaxed
+                          group-hover:text-black transition-colors duration-300"
+                >
+                  {service.description}
+                </Paragraph>
+
+                {/* Hover indicator */}
+                <div className="h-1 w-0 bg-blue-500 mt-6 transition-all duration-300 group-hover:w-full rounded-full" />
+              </div>
+            ))}
+          </div>
+      </WrapperContainer>
+        </div>
+
+      {/*Section 3 */}
+        <div className="flex">
+      <WrapperContainer>
+          <Heading className="   font-bold text-blue-950  ">
+            DigiFlex UX Research Process
+          </Heading>
+
+          <p className="text-black mb-6 text-lg">
+            At DigiFlex, we believe UX research should be adaptable,
+            data-driven, and aligned with business goals. We dive deep into user
+            behaviors, pain points, and needs to create meaningful,
+            research-backed design decisions.
+          </p>
+
+          <div className="flex flex-col my-15 md:flex-col gap-6">
+            {/* Discovery & Understanding */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950  mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  Discovery & Understanding
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                Our UX research begins with a broad exploration of the business,
+                users, and industry context. We conduct stakeholder interviews,
+                competitive analysis, and user research to uncover insights that
+                shape the foundation of our strategy. Every detail matters—one
+                key finding can redefine the entire approach.
+              </p>
+            </div>
+
+            {/* Insight & Analysis */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200 hover:shadow-blue-200 hover:shadow-xl ">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950  mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <path d="M3.27 6.96L12 12.01l8.73-5.05" />
+                  <path d="M12 22.08V12" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  Insight & Analysis
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                We systematically analyze qualitative and quantitative data,
+                organizing insights into actionable themes. Through usability
+                testing, surveys, and behavioral mapping, we identify patterns
+                that reveal opportunities for improved user experiences.
+              </p>
+            </div>
+
+            {/* Synthesis & Roadmaps */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl ">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950 mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  Synthesis & Roadmaps
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                We synthesize research findings to define clear UX roadmaps. By
+                pinpointing user pain points, needs, and behaviors, we develop
+                strategic recommendations for seamless, high-performing digital
+                experiences. Our data-driven approach ensures that every design
+                and product decision is rooted in real user insights, not
+                assumptions.
+              </p>
+            </div>
+
+            {/* User Testing & Validation */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200 hover:shadow-blue-200 hover:shadow-xl ">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950 mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  User Testing & Validation
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                Before finalizing any UX solution, we conduct iterative user
+                testing and prototype validation to ensure that designs resonate
+                with real users. Our testing includes A/B testing, heatmaps,
+                eye-tracking studies, and usability sessions to refine
+                interactions and optimize engagement.
+              </p>
+            </div>
+
+            {/* Accessibility & Compliance Review */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl ">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950 mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  Accessibility & Compliance Review
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                We ensure that digital experiences are inclusive and accessible
+                for all users, following WCAG standards and industry-specific
+                compliance guidelines. Our research highlights accessibility
+                gaps and provides recommendations to enhance usability for
+                diverse audiences.
+              </p>
+            </div>
+
+            {/* Behavioral & Emotional Analysis */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950 mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  Behavioral & Emotional Analysis
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                At DigiFlex, UX research isn’t just about collecting data—it’s
+                about transforming insights into action, helping businesses
+                create products that truly connect with their users.
+              </p>
+            </div>
+          </div>
+      </WrapperContainer>
+        </div>
+
+      {/* Section 4 */}
+        <div className="flex pb-20">
+      <WrapperContainer>
+          {/* Header Section */}
+          <div className="flex flex-col items-center text-center">
+            <Heading className=" font-bold text-blue-950 ">
+              DigiFlex UX Research Tools
+            </Heading>
+            <Paragraph className="text-sm sm:text-base text-black">
+              At DigiFlex, we leverage industry-leading UX research tools to
+              uncover meaningful, data-driven insights that represent the voice
+              of the user while aligning with business objectives.
+            </Paragraph>
+          </div>
+
+          {/* Tools Cards Section */}
+          <div className="flex flex-col md:flex-row flex-wrap gap-6">
+            {tools.map((tool) => (
+              <div
+                key={tool.id}
+                className="flex flex-col p-10 rounded-xl w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] 
+                        transition-all duration-300 ease-in-out
+                        hover:bg-white shadow-xl shadow-gray-200 hover:shadow-blue-200 hover:shadow-lg hover:-translate-y-2
+                        border border-transparent hover:border-blue-400
+                        cursor-pointer group my-6"
+              >
+                <div className="flex flex-col h-full">
+                  <img
+                    src={tool.logo || "/placeholder.svg"}
+                    alt={`${tool.name} Logo`}
+                    className="h-8 w-auto mb-6 object-contain"
+                  />
+                  <p className="text-[#1a1a1a] leading-relaxed flex-grow">
+                    {tool.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+      </WrapperContainer>
+        </div>
+    </>
   );
 };
 

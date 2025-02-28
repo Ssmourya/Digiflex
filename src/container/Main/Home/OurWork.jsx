@@ -78,7 +78,7 @@ const projects = [
 
 export default function OurWork() {
   return (
-    <div className='bg-white min-h-screen'>
+    <div className='bg-white'>
       <WrapperContainer>
         <div className='pb-10'>
           <div className="text-center p-4 lg:p-8">

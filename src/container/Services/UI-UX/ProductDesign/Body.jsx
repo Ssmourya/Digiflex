@@ -71,275 +71,286 @@ const features = [
 
 const DigitalProducts = () => {
   return (
-<>
-    {/*section 1*/}
-    <div className="relative z-10 flex items-center justify-center min-h-screen bg-white px-4 sm:px-6 md:px-8 py-12 md:py-16">
-       <WrapperContainer  >
-      <div className="w-full max-w-7xl flex flex-col items-start space-y-8">
-        <div className="space-y-4 w-full">
-          <Heading className="  font-bold text-blue-950 leading-tight">
-            Digital Products
-          </Heading>
-        </div>
-        
-        <Paragraph className="text-base  text-black">
-          At Digiflex, we believe that every user deserves an intuitive and seamless experience, whether engaging with a product for work or leisure. We design impactful enterprise and consumer products while developing comprehensive design systems that ensure effortless scalability and innovation.
-        </Paragraph>
-        
-        <div className="space-y-6 w-full">
-          <h3 className="text-xl font-semibold text-blue-950">Our Services</h3>
-          <div className="flex flex-wrap gap-4">
-            {services.map((service, index) => (
-              <div 
-                key={index} 
-                className="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1rem)] flex items-start space-x-4 p-10 rounded-lg bg-white shadow-md shadow-gray-400 hover:scale-105 hover:bg-gray-50 transition-colors duration-200 cursor-pointer hover:shadow-lg hover:shadow-blue-400"
-              >
-                <div className="p-2 sm:p-3 bg-blue-50 rounded-lg shrink-0">
-                  {service.icon}
-                </div>
-                <div className="space-y-2 sm:space-y-4 flex-1">
-                  <SubHeading className=" text-blue-950">{service.title}</SubHeading>
-                  <Paragraph className=" text-gray-600">{service.description}</Paragraph>
-                </div>
+    <>
+      {/* Section 1 */}
+      <div className="relative z-10 flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8 ">
+        <WrapperContainer>
+          <div className="w-full max-w-7xl flex flex-col items-center space-y-8">
+            <div className="w-full text-center">
+              <h1 className="text-4xl sm:text-5xl font-bold text-blue-950 leading-tight">
+                Digital Products
+              </h1>
+            </div>
+
+            <Paragraph className="text-base text-gray-700 max-w-3xl text-center">
+              At Digiflex, we believe that every user deserves an intuitive and
+              seamless experience, whether engaging with a product for work or
+              leisure. We design impactful enterprise and consumer products
+              while developing comprehensive design systems that ensure
+              effortless scalability and innovation.
+            </Paragraph>
+
+            <div className="w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {services.map((service, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start space-x-4 p-6 sm:p-8 rounded-lg bg-white shadow-md shadow-gray-400 
+              transform transition-all duration-300 hover:scale-105 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 cursor-pointer"
+                  >
+                    <div className="p-3 bg-blue-50 rounded-lg shrink-0">
+                      {service.icon}
+                    </div>
+                    <div className="space-y-2 flex-1">
+                      <SubHeading className="text-blue-950">
+                        {service.title}
+                      </SubHeading>
+                      <Paragraph className="text-gray-600">
+                        {service.description}
+                      </Paragraph>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-        </div>
         </WrapperContainer>
       </div>
 
-    {/*section 2*/}
-    <WrapperContainer  >
-      <div className="max-w-7xl flex flex-col items-center justify-center mx-auto">
-        {/* Header Section */}
-        <div className=" mb-16 flex flex-col items-center justify-center ">
-          <Heading className="text-6xl font-bold text-blue-950 mb-6">
-            Our Web Design Services
-          </Heading>
-          <Paragraph className=" text-black ml-6">
-            At the heart of our web design services lies a blend of advanced tools and 
-            forward-thinking techniques that set us apart. Here's what you'll gain by 
-            choosing us:
-          </Paragraph>
-        </div>
-
-
-        {/* Card Section */}
-        {/* Card 1 */}
-        <div className="bg-white rounded-3xl shadow-lg p-8 lg:p-12 duration-300 hover:shadow-lg hover:scale-x-110 hover:shadow-blue-400">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left Content */}
-            <div className="flex-1 space-y-6">
-              <h2 className="text-3xl font-bold text-blue-950">
-                Custom website design
-              </h2>
-              
-              <Paragraph className="text-black leading-relaxed">
-                At Digiflex, we create bespoke web design solutions tailored to your unique business needs. Our expert team ensures that your website not only meets expectations but also drives engagement and delivers a seamless user experience. No matter the complexity, we’re here to help you achieve your goals.
-              </Paragraph>
-
-              <ul className="space-y-3">
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  Product websites
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  Service websites
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  Landing pages
-                </li>
-              </ul>
-
-              <button className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors group mt-4">
-                <span className="mr-2">GET IN TOUCH</span>
-                <svg 
-                  className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" 
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="flex-1 w-full">
-              <img
-                src={productdesign32}
-                alt="Website Design Preview"
-                className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-              />
-            </div>
+      {/*section 2*/}
+      <WrapperContainer>
+        <div className="max-w-7xl flex flex-col items-center justify-center mx-auto">
+          {/* Header Section */}
+          <div className="mb-2 flex flex-col items-center justify-center ">
+            <h1 className="text-5xl font-bold text-blue-950 mb-5">
+              Our Web Design Services
+            </h1>
+            <Paragraph>
+              At the heart of our web design services lies a blend of advanced
+              tools and forward-thinking techniques that set us apart. Here's
+              what you'll gain by choosing us:
+            </Paragraph>
           </div>
-        </div>
 
+          {/* Card Section */}
+          {/* Card 1 */}
+          <div className="bg-white rounded-3xl shadow-lg p-8 lg:p-6 duration-300 hover:shadow-lg  hover:shadow-blue-200">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              {/* Left Content */}
+              <div className="flex-1 space-y-6">
+                <h2 className="text-3xl font-bold text-blue-950">
+                  Custom website design
+                </h2>
 
-        {/* Card 2 */}
-        <div className=" mt-10 bg-white rounded-3xl shadow-lg p-8 lg:p-12 duration-300 hover:shadow-lg hover:scale-x-110 hover:shadow-blue-400">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left Content */}
-            <div className="flex-1 space-y-6">
-              <h2 className="text-3xl font-bold text-blue-950">
-                Custom SaaS Platform Design
-              </h2>
-              
-              <Paragraph className="text-black leading-relaxed">
-                At Digiflex, we specialize in creating tailored SaaS design solutions that align with your business objectives and enhance user experiences. Our expert team ensures seamless functionality, scalability, and intuitive interfaces to help your product stand out in the competitive SaaS market.
-              </Paragraph>
+                <Paragraph className="text-black leading-relaxed">
+                  At Digiflex, we create bespoke web design solutions tailored
+                  to your unique business needs. Our expert team ensures that
+                  your website not only meets expectations but also drives
+                  engagement and delivers a seamless user experience. No matter
+                  the complexity, we’re here to help you achieve your goals.
+                </Paragraph>
 
-              <ul className="space-y-3">
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  SaaS Dashboards
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  Admin Panels
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  User Portals
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  Subscription & Billing Interfaces
-                </li>
-                Let Digiflex help you craft a high-performing SaaS product that drives engagement and growth.
-              </ul>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    Product websites
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    Service websites
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    Landing pages
+                  </li>
+                </ul>
 
-              <button className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors group mt-4">
-                <span className="mr-2">GET IN TOUCH</span>
-                <svg 
-                  className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" 
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="flex-1 w-full">
-              <img
-                src={productdesign33}
-                alt="Website Design Preview"
-                className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-
-
-        {/* Card 3 */}
-        <div className=" mt-10 bg-white rounded-3xl shadow-lg p-8 lg:p-12 duration-300 hover:shadow-lg hover:scale-x-110 hover:shadow-blue-400">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left Content */}
-            <div className="flex-1 space-y-6">
-              <h2 className="text-3xl font-bold text-blue-950">
-                Custom Mobile App Design
-              </h2>
-              
-              <Paragraph className="text-black leading-relaxed">
-                Digiflex crafts seamless and engaging mobile app designs that elevate user interaction and ensure smooth functionality. Whether for iOS, Android, or cross-platform solutions, our team creates intuitive experiences tailored to your audience.
-              </Paragraph>
-
-              <ul className="space-y-3">
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  iOS & Android Apps
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  Mobile UI/UX Design
-                </li>
-                <li className="flex items-center text-black">
-                  <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
-                  App Prototyping & Wireframing
-                </li>
-              </ul>
-
-              <button className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors group mt-4">
-                <span className="mr-2">GET IN TOUCH</span>
-                <svg 
-                  className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" 
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="flex-1 w-full">
-              <img
-                src={productdesign34}
-                alt="Website Design Preview"
-                className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </WrapperContainer>
-
-
-    {/*section 3*/}
-    <WrapperContainer >
-      <div className="max-w-7xl mx-auto">
-        {/* Heading */}
-        <Heading className=" font-sans font-semibold text-blue-950 leading-tight">
-          Why Digiflex is the Right Partner .
-        </Heading>
-
-        {/* Features */}
-        <div className="flex flex-wrap justify-center gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="flex flex-col p-8 bg-white border border-gray-200 duration-300 shadow-lg hover:shadow-lg hover:scale-105 hover:shadow-blue-400 rounded-lg w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]"
-            >
-              <div className="mb-6">
-                {feature.icon}
+                <button className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors group mt-4">
+                  <span className="mr-2">GET IN TOUCH</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
               </div>
-              
-              <SubHeading className="text-xl font-semibold text-blue-950 mb-4">
-                {feature.title}
-              </SubHeading>
-              
-              <Paragraph className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </Paragraph>
+
+              {/* Right Image */}
+              <div className="flex-1 w-full">
+                <img
+                  src={productdesign32}
+                  alt="Website Design Preview"
+                  className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
-          ))}
+          </div>
+
+          {/* Card 2 */}
+          <div className=" mt-10 bg-white rounded-3xl shadow-lg p-8 lg:p-6 duration-300 hover:shadow-lg  hover:shadow-blue-200">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              {/* Left Content */}
+              <div className="flex-1 space-y-6">
+                <h2 className="text-3xl font-bold text-blue-950">
+                  Custom SaaS Platform Design
+                </h2>
+
+                <Paragraph>
+                  At Digiflex, we specialize in creating tailored SaaS design
+                  solutions that align with your business objectives and enhance
+                  user experiences. Our expert team ensures seamless
+                  functionality, scalability, and intuitive interfaces to help
+                  your product stand out in the competitive SaaS market.
+                </Paragraph>
+
+                <ul className="space-y-3">
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    SaaS Dashboards
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    Admin Panels
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    User Portals
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    Subscription & Billing Interfaces
+                  </li>
+                </ul>
+
+                <button className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors group mt-4">
+                  <span className="mr-2">GET IN TOUCH</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Right Image */}
+              <div className="flex-1 w-full">
+                <img
+                  src={productdesign33}
+                  alt="Website Design Preview"
+                  className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className=" mt-10 bg-white rounded-3xl shadow-lg p-8 lg:p-6 duration-300 hover:shadow-lg  hover:shadow-blue-200">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              {/* Left Content */}
+              <div className="flex-1 space-y-6">
+                <h2 className="text-3xl font-bold text-blue-950">
+                  Custom Mobile App Design
+                </h2>
+
+                <Paragraph className="text-black leading-relaxed">
+                  Digiflex crafts seamless and engaging mobile app designs that
+                  elevate user interaction and ensure smooth functionality.
+                  Whether for iOS, Android, or cross-platform solutions, our
+                  team creates intuitive experiences tailored to your audience.
+                </Paragraph>
+
+                <ul className="space-y-3">
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    iOS & Android Apps
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    Mobile UI/UX Design
+                  </li>
+                  <li className="flex items-center text-black">
+                    <span className="w-1.5 h-1.5 bg-gray-700 rounded-full mr-3"></span>
+                    App Prototyping & Wireframing
+                  </li>
+                </ul>
+
+                <button className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors group mt-4">
+                  <span className="mr-2">GET IN TOUCH</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Right Image */}
+              <div className="flex-1 w-full">
+                <img
+                  src={productdesign34}
+                  alt="Website Design Preview"
+                  className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </WrapperContainer>
+
+      {/*section 3*/}
+      <div className="felx-1 justify-center items-center pb-20">
+        <WrapperContainer>
+          {/* Heading */}
+          <h1 className="text-5xl text-center pb-10 font-bold text-blue-950">
+            Why Digiflex is the Right Partner .
+          </h1>
+
+          {/* Features */}
+          <div className="flex flex-wrap justify-center gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="flex flex-col p-8 bg-white border border-gray-200 duration-300 shadow-lg hover:shadow-lg hover:scale-105 hover:shadow-blue-200 rounded-lg w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]"
+              >
+                <div className="mb-6">{feature.icon}</div>
+
+                <SubHeading className="text-xl font-semibold text-blue-950 mb-4">
+                  {feature.title}
+                </SubHeading>
+
+                <Paragraph className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </Paragraph>
+              </div>
+            ))}
+          </div>
+        </WrapperContainer>
       </div>
-    </WrapperContainer>
-</>
+    </>
   );
 };
 

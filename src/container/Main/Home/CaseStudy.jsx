@@ -108,7 +108,7 @@ const KeyFeatures = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-3xl md:text-4xl font-bold text-blue-600 text-center mb-6 md:mb-8"
           >
-            Key Features
+            Key Functions
           </motion.h2>
           
           {/* iPad-specific layout adjustments */}

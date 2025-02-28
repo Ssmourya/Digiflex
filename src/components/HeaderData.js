@@ -84,6 +84,20 @@ export const technologies = [
         ],
         image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
     },
+    {
+        id: "website-dev",
+        icon: Globe,
+        title: "Website",
+        color: "text-blue-500",
+        description: "Responsive and optimized websites tailored to your business needs.",
+        features: [
+            { icon: Code, title: "Frontend Development", path: "/services/website-dev/frontend" },
+            { icon: Server, title: "Backend Development", path: "/services/website-dev/backend" },
+            { icon: ShoppingCart, title: "E-commerce Solutions", path: "/services/website-dev/ecommerce" },
+            { icon: Cloud, title: "Hosting & Maintenance", path: "/services/website-dev/hosting" }
+        ],
+        image: "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80",
+    },
     
     {
         id: "frontend",
@@ -131,8 +145,8 @@ export const technologies = [
         description:
             "Full-stack website development using modern frameworks and languages.",
         features: [
-            { icon: Globe, title: "MEAN Stack", path: "/tech/web/mean" },
-            { icon: Globe, title: "Java/J2EE", path: "/tech/web/java" },
+            { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
+            { icon: Globe, title: "Java/J2EE", path: "/java-j2ee-development-services" },
             { icon: Globe, title: "Python", path: "/tech/web/python" },
             { icon: Globe, title: ".NET", path: "/tech/web/dotnet" },
             {
@@ -432,20 +446,7 @@ export const services = [
         ],
         image: "https://images.unsplash.com/photo-1581092446327-3f94ee1dfd84?auto=format&fit=crop&w=600&q=80",
     },
-    {
-        id: "website-dev",
-        icon: Globe,
-        title: "Website",
-        color: "text-blue-500",
-        description: "Responsive and optimized websites tailored to your business needs.",
-        features: [
-            { icon: Code, title: "Frontend Development", path: "/services/website-dev/frontend" },
-            { icon: Server, title: "Backend Development", path: "/services/website-dev/backend" },
-            { icon: ShoppingCart, title: "E-commerce Solutions", path: "/services/website-dev/ecommerce" },
-            { icon: Cloud, title: "Hosting & Maintenance", path: "/services/website-dev/hosting" }
-        ],
-        image: "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80",
-    },
+   
     {
         id: "frontend-scripting",
         icon: Code,
@@ -489,6 +490,37 @@ export const services = [
             { icon: Cloud, title: "Cloud Integration", path: "/services/salesforce/cloud-integration" }
         ],
         image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+        id: "website-development",
+        icon: Globe,
+        title: "Website Development",
+        color: "text-blue-500",
+        description:
+            "Full-stack website development using modern frameworks and languages.",
+        features: [
+            { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
+            { icon: Globe, title: "Java/J2EE", path: "/java-j2ee-development-services" },
+            { icon: Globe, title: "Python", path: "/tech/web/python" },
+            { icon: Globe, title: ".NET", path: "/tech/web/dotnet" },
+            {
+                icon: Globe,
+                title: "Ruby on Rails (ROR)",
+                path: "/tech/web/ruby-on-rails",
+            },
+            { icon: Globe, title: "Golang", path: "/tech/web/golang" },
+            {
+                icon: Globe,
+                title: "PHP: Laravel",
+                path: "/tech/web/laravel",
+            },
+            {
+                icon: Globe,
+                title: "PHP: CodeIgniter",
+                path: "/tech/web/codeigniter",
+            },
+        ],
+        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     },
     {
         id: "mobile-app",

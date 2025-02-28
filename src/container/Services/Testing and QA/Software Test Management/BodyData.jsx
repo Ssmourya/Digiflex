@@ -1,11 +1,73 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import  Automation from "../../../../assets/Automation.jpeg"
+import  Automation from "../../../../assets/Automation-2.jpeg"
 import  Cybersecurity from "../../../../assets/Cybersecurity.jpeg"
 import  Shield from "../../../../assets/Shield.jpeg"
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
+
+
+const ParaComponent = ({section}) => {
+    return (
+        <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="px-10 w-[65%]"
+    >
+        <motion.Heading
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2 }}
+            className="text-5xl text-[#1A2E6F] md:text-6xl font-semibold leading-tight mb-8 flex"
+        >
+            <Heading>{section.title}</Heading>
+        </motion.Heading>
+
+        <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            className="mb-5 mx-auto"
+        >
+            <Paragraph className="text-start">{section.description}  </Paragraph> 
+        </motion.p>
+
+        {
+            Object.values(section.points).map((point, pointIndex) => (
+                <div key={pointIndex}>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1.5 }}
+                        className="text-lg mx-auto"
+                    >
+                        <Paragraph className="text-start">
+                            <span className="text-[#1A2E6F] text-lh font-bold">{'>> '}</span>
+                            {point}
+                        </Paragraph>
+                    </motion.div>
+                </div>
+            ))
+        }
+    </motion.div>
+    )
+}
+
+const ImageComponent = ({section}) => {
+    return (
+        <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="overflow-hidden w-[40%] h-[40%] rounded-xl object-cover"
+        >
+            <img src={section.image}  alt="Key Image" loading="lazy" className="w-full h-full rounded-md object-contain shadow-lg" />
+        </motion.div>
+    )
+}
 const Body = () => {
 
     const sections = [
@@ -42,138 +104,40 @@ const Body = () => {
     ];
 
     return (
-        <WrapperContainer>
-
         
-        <div>
-            <div >
-                {sections.map((section, index) => (
-                    <motion.div 
-                        key={index} 
-                        className='flex justify-center items-center w-11/12 mx-auto'
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1 }}
-                    >
-                        <motion.div className='flex flex-col md:flex-row justify-between items-center p-10'>
-                            {
-                                index % 2 === 0 ? (
-                                    // Even indices: Image on left
-                                    <>
-                                        <motion.div
-                                            initial={{ opacity: 0, x: -50 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            whileHover={{ scale: 1.05 }}
-                                            transition={{ duration: 1.2, ease: "easeOut" }}
-                                            className="overflow-hidden w-[40%] rounded-xl "
-                                        >
-                                            <img src={section.image} width={"400px"} alt="Key Image" loading="lazy" className="rounded-md shadow-lg" />
-                                        </motion.div>
-
-                                        <motion.div
-                                            initial={{ opacity: 0, x: 50 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            transition={{ duration: 1 }}
-                                            className="px-10 w-[65%]"
-                                        >
-                                            <motion.Heading
-                                                initial={{ opacity: 0, scale: 0.9 }}
-                                                whileInView={{ opacity: 1, scale: 1 }}
-                                                transition={{ duration: 1.2 }}
-                                                className="text-5xl text-[#1A2E6F] md:text-6xl font-semibold leading-tight mb-8 flex"
-                                            >
-                                                {section.title}
-                                            </motion.Heading>
-
-                                            <motion.Paragraph
-                                                initial={{ opacity: 0 }}
-                                                whileInView={{ opacity: 1 }}
-                                                transition={{ duration: 1.5 }}
-                                                className="text-xl mb-6 mx-auto"
-                                            >
-                                                {section.description}
-                                            </motion.Paragraph>
-
-                                            {
-                                                Object.values(section.points).map((point, pointIndex) => (
-                                                    <div key={pointIndex}>
-                                                        <motion.p
-                                                            initial={{ opacity: 0 }}
-                                                            whileInView={{ opacity: 1 }}
-                                                            transition={{ duration: 1.5 }}
-                                                            className="text-lg mb-1 mx-auto"
-                                                        >
-                                                            <span className="text-[#1A2E6F] text-xl font-bold">{'>> '}</span>
-                                                            {point}
-                                                        </motion.p>
-                                                    </div>
-                                                ))
-                                            }
-                                        </motion.div>
-                                    </>
-                                ) : (
-                                    // Odd indices: Image on right
-                                    <>
-                                        <motion.div
-                                            initial={{ opacity: 0, x: 50 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            transition={{ duration: 1 }}
-                                            className="px-10 w-[65%]"
-                                        >
-                                            <motion.h1
-                                                initial={{ opacity: 0, scale: 0.9 }}
-                                                whileInView={{ opacity: 1, scale: 1 }}
-                                                transition={{ duration: 1.2 }}
-                                                className="text-4xl md:text-5xl text-[#1A2E6F] font-semibold leading-tight mb-8"
-                                            >
-                                                {section.title}
-                                            </motion.h1>
-
-                                            <motion.p
-                                                initial={{ opacity: 0 }}
-                                                whileInView={{ opacity: 1 }}
-                                                transition={{ duration: 1.5 }}
-                                                className="text-xl mb-6 mx-auto"
-                                            >
-                                                {section.description}
-                                            </motion.p>
-
-                                            {Object.values(section.points).map((point, pointIndex) => (
-                                                <div key={pointIndex}>
-                                                    <motion.p
-                                                        initial={{ opacity: 0 }}
-                                                        whileInView={{ opacity: 1 }}
-                                                        transition={{ duration: 1.5 }}
-                                                        className="text-lg mb-1 mx-auto"
-                                                    >
-                                                        <span className="text-[#1A2E6F] text-1xl font-bold">{'>> '}</span>
-                                                        {point}
-                                                    </motion.p>
-                                                    
-                                                
-                                                </div>
-                                            ))}
-                                        </motion.div>
-
-                                        <motion.div
-                                            initial={{ opacity: 0, x: -50 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            whileHover={{ scale: 1.05 }}
-                                            transition={{ duration: 1.2, ease: "easeOut" }}
-                                            className="overflow-hidden w-[40%] rounded-xl "
-                                        >
-                                            <img src={section.image} width={"400px"} alt="Key Image" loading="lazy" className="rounded-md shadow-lg" />
-                                        </motion.div>
-                                    </>
-                                )
-                            }
-                        </motion.div>
-                    </motion.div>
-                ))}
+        <WrapperContainer>
+            <div>
+                <div>
+                    {
+                        sections.map((section, index) => (
+                            <motion.div 
+                                key={index} 
+                                className='flex justify-center items-center w-11/12 mx-auto'
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
+                                <motion.div className='flex flex-col md:flex-row justify-between items-center p-10'>
+                                    {
+                                        index % 2 === 0 ? (
+                                            <>
+                                                <ImageComponent section={section} />
+                                                <ParaComponent section={section} />
+                                            </>
+                                        ) : (
+                                            <>
+                                                <ParaComponent section={section} />
+                                                <ImageComponent section={section} />
+                                            </>
+                                        )
+                                    }
+                                </motion.div>
+                            </motion.div>
+                        ))
+                    }
+                </div>
             </div>
-        </div>
-
         </WrapperContainer>
     );
 }

@@ -69,14 +69,15 @@ const NavItem = ({ service }) => {
 
     // Handle hover with delay for better UX
     const handleMouseEnter = () => {
+        // setIsOpen(close);
         clearTimeout(timeoutRef.current);
         setIsOpen(true);
     };
 
     const handleMouseLeave = () => {
-        // timeoutRef.current = setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
             setIsOpen(false);
-        // }, 500); // Small delay before closing
+        }, 10); // Small delay before closing
     };
 
     return (
@@ -165,7 +166,7 @@ const NavItem = ({ service }) => {
 
 const MegaMenu = ({ services }) => {
     return (
-        <nav className="fixed left-0 top-16 w-full bg-white shadow-sm z-40 px-4 py-1">
+        <nav className="fixed left-0 top-[85px] w-full bg-white shadow-sm z-40 px-4 py-1">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-start">
             {/* <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> */}
                 {services.map((service, index) => (

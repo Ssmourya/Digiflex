@@ -25,7 +25,7 @@ const FeaturesList = ({ features }) => {
                             d="M5 13l4 4L19 7"
                             />
                         </svg>
-                        {feature}
+                        <Paragraph className='text-start'>{feature}</Paragraph> 
                     </li>
                 ))
             }
@@ -42,16 +42,16 @@ const featuresData = [
 const ScalableAutomation = () => {
     return (
         <WrapperContainer>
-        <div className="flex flex-col justify-between md:flex-row  w-11/12 mx-auto bg-white px-4">
+        <div className="flex flex-col justify-between md:flex-row bg-white">
             
             {/* Left Section */}
             <div className="md:w-1/2 md:pr-8 py-4">
                 <Heading>
                     <div>Scalable Automation Cloud Infrastructure</div>
                 </Heading>
-                <Paragraph>
+                <Paragraph className="text-start">
                     <span>
-                    Effortlessly scale test configurations in the cloud and seamlessly test across diverse real devices, browsers, and OS versions.
+                        Effortlessly scale test configurations in the cloud and seamlessly test across diverse real devices, browsers, and OS versions.
                     </span>
                 </Paragraph>
                 

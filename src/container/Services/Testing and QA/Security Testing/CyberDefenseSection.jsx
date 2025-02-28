@@ -1,14 +1,15 @@
 import { PlayCircle } from "lucide-react";
 import TechnicalPeople from "../../../../assets/TechnicalPeople.jpeg"
+import Heading from "../../../../Layout/Heading";
 const CyberDefenseSection = () => {
      return (
           <div className="w-11/12 mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-8 p-6 md:p-12">
                {/* Text Content */}
                <div className="md:w-1/2 space-y-4">
-                    <p className="text-red-500 text-xl font-bold">what we do</p>
-                    <h2 className="text-5xl font-semibold text-[#1A2E6F]">
+                    <p className="text-red-500 text-xl font-bold text-center">what we do</p>
+                    <Heading className="text-5xl font-semibold text-[#1A2E6F]">
                          Build adaptive, flexible, and scalable cyber defense solutions
-                    </h2>
+                    </Heading>
                     <p className="text-xl">
                          digiflex.ai provides businesses with cutting-edge security solutions that are 
                          adaptive, flexible, and designed to scale seamlessly. our ai-driven cybersecurity 

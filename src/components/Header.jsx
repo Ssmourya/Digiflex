@@ -4,6 +4,7 @@ import { Search, X, Menu, ChevronDown } from "lucide-react";
 import logo from "../assets/digiflex.png";
 import { mainNavItems, serviceCategories, services, productCategories } from "./HeaderData";
 import MegaMenu from "./MegaMenu";
+import TopBar from "./ui/TopBar";
 
 const Navbar = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -87,6 +88,7 @@ const Navbar = () => {
 
     return (
         <nav className="sticky top-0 z-50 w-full  bg-blue-950 text-white" ref={navbarRef}>
+            <TopBar/>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex items-center h-16 gap-x-10">
 

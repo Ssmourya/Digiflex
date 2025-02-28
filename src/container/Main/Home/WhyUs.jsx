@@ -41,7 +41,7 @@ function App() {
               </div>
             </div>
             
-            <button className="bg-gradient-to-r from-blue-500 to-blue-500 text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/25 transition-all">
+            <button className="bg-gradient-to-r from-blue-500 to-blue-500 text-white px-8 py-2 mb-6 rounded-full font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/25 transition-all">
               Get Started
               <ArrowRight className="h-5 w-5" />
             </button>

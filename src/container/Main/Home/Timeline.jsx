@@ -71,7 +71,7 @@ function App() {
           }
         });
         
-        if (closestId == activeId) {
+        if (closestId === activeId) {
           setActiveId(closestId);
         }
       }, 100);
@@ -120,11 +120,17 @@ function App() {
                   key={item.id}
                   ref={(el) => (timelineRefs.current[index] = el)}
                   initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-20%", amount: 0.3 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  whileInView={{ 
+                    opacity: 1, 
+                    x: 0 
+                  }}
+                  viewport={{ once: true, margin: "-10%", amount: 0.3 }}
+                  transition={{ 
+                    duration: 0.7, 
+                    ease: "easeInOut" 
+                  }}
                   onClick={() => handleItemClick(item.id)}
-                  className={`p-6 rounded-xl cursor-pointer transition-all duration-300 ${
+                  className={`p-6 rounded-xl cursor-pointer transition-all duration-500 ${
                     activeId === item.id && !isScrolling
                       ? 'bg-blue-50 shadow-lg transform scale-105'
                       : 'hover:bg-gray-50 hover:shadow-md'
@@ -138,7 +144,8 @@ function App() {
             </div>
           </div>
 
-          <div className="relative h-[600px] rounded-2xl overflow-hidden bg-gray-100">
+          {/* Image container - hidden on mobile, visible on lg screens */}
+          <div className="hidden lg:block relative h-[600px] rounded-2xl overflow-hidden bg-gray-100">
             <AnimatePresence mode="wait">
               <motion.img
                 key={activeId}
@@ -147,7 +154,7 @@ function App() {
                 initial={{ opacity: 0, scale: 1.1 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+                transition={{ duration: 0.7, ease: "easeInOut" }}
                 className="w-full h-full object-cover"
               />
             </AnimatePresence>

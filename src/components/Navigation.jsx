@@ -48,7 +48,7 @@ const Navigation = () => {
     <div className="flex justify-center items-center bg-blue-950 ">
       <WrapperContainer>
         <div className="text-white py-12">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {Object.entries(footerLinks).map(([category, links]) => (
                 <div key={category} className="space-y-4">

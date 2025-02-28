@@ -1,65 +1,28 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import {
-  BrainCircuit,
-  Boxes,
-  MoveUpRight,
-  Search,
-  Cloudy ,
-  X,
-  Menu,
-  Globe,
-  Smartphone,
-  ShoppingCart,
-  Database,
-  Cpu,
-  Trello,
-  Blocks,
-  Cloud,
-  Code,
-  Server,
-  LineChart,
-  Rocket,
-  ShoppingBag,
-  Clock,
-  Joystick,
-  Monitor,
-  PenTool,
-  Glasses,
-  UserCheck,
-  Signature,
-  Currency,
-  Wallet,
-  MessageSquareLock,
-  ServerIcon,
-  Code2Icon,
-  CodeSquareIcon,
-  ChevronDown,
-  ChevronRight
-} from "lucide-react";
+import { Search, X, Menu, ChevronDown } from "lucide-react";
 import logo from "../assets/digiflex.png";
+<<<<<<< HEAD
 import image from "../assets/mobileappdev.jpg"
 import { FaAngular, FaBootstrap, FaReact, FaVuejs, FaApple, FaAndroid,  FaCode, FaMicrosoft, FaHtml5 } from "react-icons/fa";
 import { FaFlutter } from "react-icons/fa6";
 import { icon } from "@fortawesome/fontawesome-svg-core";
+=======
+import { mainNavItems, serviceCategories, services, productCategories } from "./HeaderData";
+import MegaMenu from "./MegaMenu";
+>>>>>>> 594f10bf235bbb21515931aa7031fe48128ec240
 
 const Navbar = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [activeItems, setActiveItems] = useState({
-    services: "Consulting",
-    technology: "frontend",
-    industries: "healthcare",
-    insights: "blog",
-  });
-  const [isSearchActive, setIsSearchActive] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const timeoutRef = useRef(null);
-  const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
-  const [activeMobileSubMenu, setActiveMobileSubMenu] = useState(null);
-  const navRef = useRef(null);
+    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [isSearchVisible, setIsSearchVisible] = useState(false);
+    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
+    const [hoveredCategory, setHoveredCategory] = useState(null);
 
+    const navbarRef = useRef(null);
+    const timeoutRef = useRef(null);
 
+<<<<<<< HEAD
   const navItems = [
     {
       label: "Services",
@@ -640,269 +603,267 @@ const Navbar = () => {
       if (navRef.current && !navRef.current.contains(event.target)) {
         setIsMobileMenuOpen(false);
       }
+=======
+    const handleMouseEnter = () => {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current); // Prevent closing if hovered back
+        }
+>>>>>>> 594f10bf235bbb21515931aa7031fe48128ec240
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
+    const handleMouseLeave = () => {
+        timeoutRef.current = setTimeout(() => {
+            setActiveDropdown(null);
+            setHoveredCategory(null);
+        }, 3000);
     };
-  }, []);
 
-  // Dropdown component
-  const DropdownContent = ({ type }) => {
-    const content = getDropdownContent(type);
-    const activeContentData = getActiveContentData(type);
+    const handleDropdownClick = (dropdownType) => {
+        setActiveDropdown(activeDropdown === dropdownType ? null : dropdownType);
+    };
 
-    if (!content.length) return null;
+    // Helper function to find features for a category
+    const getFeaturesForCategory = (categoryType) => {
+        // First try to find an exact match by id
+        const exactMatch = services.find(
+            (service) => service.id.toLowerCase() === categoryType.toLowerCase()
+        );
+        if (exactMatch) return exactMatch.features;
+
+        // If no exact match, try to match by titles (more flexible)
+        const matchByTitle = services.find(
+            (service) =>
+                service.title.toLowerCase().includes(categoryType.toLowerCase()) ||
+                categoryType.toLowerCase().includes(service.title.toLowerCase())
+        );
+
+        return matchByTitle ? matchByTitle.features : [];
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setIsMobileMenuVisible(false);
+                setActiveDropdown(null);
+                setHoveredCategory(null);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (activeDropdown) {
+            getDropdownItems(activeDropdown);
+        }
+    }, [activeDropdown]);
+
+    // Function to get the appropriate items for the dropdown based on type
+    const getDropdownItems = (dropdownType) => {
+        switch (dropdownType) {
+            case "services":
+                return services;
+
+            case "products":
+                return productCategories;
+
+            default:
+                return [];
+        }
+    };
 
     return (
-      <div 
-  className="absolute lg:w-[75vw] md:w-[90vw] top-8 mt-3 left-0 transform -translate-x-1/2 max-w-7xl bg-white shadow-xl rounded-lg overflow-hidden z-60" 
-  onMouseEnter={() => handleMouseEnter(type)} 
-  onMouseLeave={handleMouseLeave}
-> 
-  <div className="grid grid-cols-12 p-4 md:p-8"> 
-    <div className="col-span-12 md:col-span-3 bg-gray-50 rounded-lg p-4"> 
-      <h3 className="text-lg font-semibold mb-4 text-gray-900"> 
-        {type.charAt(0).toUpperCase() + type.slice(1)} 
-      </h3> 
-      <div className="space-y-2"> 
-        {content.map((item) => ( 
-          <button 
-            key={item.id} 
-            className={`flex items-center w-full gap-3 p-2 rounded-lg hover:bg-white transition-colors duration-200 ${ 
-              item.id === activeItems[type] ? "bg-white shadow-sm" : "" 
-            }`} 
-            onMouseEnter={() => handleItemSelect(type, item.id)} 
-          > 
-            <item.icon className={`h-5 w-5 ${item.color}`} /> 
-            <span className="text-sm font-medium text-gray-700"> 
-              {item.title} 
-            </span> 
-          </button> 
-        ))} 
-      </div> 
-    </div>
+        <nav className="sticky top-0 z-50 w-full  bg-blue-950 text-white" ref={navbarRef}>
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="flex items-center h-16 gap-x-10">
 
-  <div className="col-span-12 md:col-span-9 p-4">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <h3 className="text-xl font-bold text-gray-900 mb-4">
-          {activeContentData.title}
-        </h3>
-        <p className="text-gray-600 mb-6">
-          {activeContentData.description}
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {activeContentData.features.map((feature, index) => (
-            <Link
-              key={index}
-              to={feature.path}
-              className="flex items-center gap-2 text-gray-700 hover:bg-gray-50 p-2 rounded-lg transition-colors"
-              onClick={handleFeatureClick}
-            >
-              <feature.icon className={`h-5 w-5 ${activeContentData.color}`} />
-              <span>{feature.title}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div className="hidden md:block rounded-lg overflow-hidden">
-        <img
-          src={activeContentData.image}
-          alt={activeContentData.title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
-      </div>
-    );
-  };
-
-  return (
-    <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navRef}>
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center h-16 gap-x-4">
-          {/* Logo */}
-          <Link to="/" className="flex items-center no-underline mr-auto">
-            <img src={logo} alt="logo" className="h-6" />
-          </Link>
-
-          {!isSearchActive ? (
-            <>
-              {/* Desktop Navigation Items */}
-              <div className="hidden lg:flex items-center space-x-5">
-                {navItems.map((item) => (
-                  <div key={item.label} className="relative group">
-                    <div
-                      className="flex items-center space-x-1 cursor-pointer"
-                      onMouseEnter={
-                        item.hasDropdown
-                          ? () => handleMouseEnter(item.dropdownType)
-                          : undefined
-                      }
-                      onMouseLeave={
-                        item.hasDropdown ? handleMouseLeave : undefined
-                      }
-                    >
-                      <Link
-                        to={item.href}
-                        className="text-white hover:text-gray-300 transition-colors text-sm"
-                      >
-                        {item.label}
-                      </Link>
-                      {item.hasDropdown && (
-                        <ChevronDown className="h-4 w-4 text-gray-400" />
-                      )}
-                    </div>
-
-                    {item.hasDropdown &&
-                      activeDropdown === item.dropdownType && (
-                        <DropdownContent type={item.dropdownType} />
-                      )}
-                  </div>
-                ))}
-              </div>
-
-              {/* Right side items - visible on desktop and tablet */}
-              <div className="hidden md:flex items-center space-x-6">
-                <button
-                  onClick={() => setIsSearchActive(true)}
-                  className="text-white hover:text-gray-300"
-                >
-                  <Search className="h-5 w-5" />
-                </button>
-                <Link
-                  to="/contact-us"
-                  className="border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm"
-                >
-                  CONTACT US
-                </Link>
-              </div>
-
-              {/* Mobile and tablet burger menu */}
-              <div className="lg:hidden flex items-center space-x-4">
-                <button
-                  onClick={() => setIsSearchActive(true)}
-                  className="text-white hover:text-gray-300 md:hidden"
-                >
-                  <Search className="h-5 w-5" />
-                </button>
-                <button
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  className="text-white hover:text-gray-300"
-                >
-                  <Menu className="h-6 w-6" />
-                </button>
-              </div>
-            </>
-          ) : (
-            <div className="flex-1 flex items-center ml-4 md:ml-8">
-              <Search className="h-5 w-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="e.g. Business Intelligence"
-                className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 ml-4"
-                autoFocus
-              />
-              <button className="bg-[#6B7CFF] px-4 md:px-6 py-2 text-sm mr-2 md:mr-4 hover:bg-[#5A6AE6] transition-colors">
-                SEARCH
-              </button>
-              <button
-                onClick={() => setIsSearchActive(false)}
-                className="text-white hover:text-gray-300"
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
-          )}
-        </div>
-
-        {/* Mobile and Tablet Menu */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-700 bg-blue-950">
-            <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <div key={item.label} className="relative">
-                  {item.hasDropdown ? (
-                    <div>
-                      <button
-                        onClick={() => toggleMobileDropdown(item.dropdownType)}
-                        className="flex items-center justify-between w-full py-2 px-4 text-white hover:bg-blue-900 transition-colors text-sm"
-                      >
-                        <span>{item.label}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
-                          activeMobileDropdown === item.dropdownType ? 'rotate-180' : ''
-                        }`} />
-                      </button>
-                      
-                      {activeMobileDropdown === item.dropdownType && (
-                        <div className="pl-4 py-2 bg-blue-900">
-                          {getDropdownContent(item.dropdownType).map((content) => (
-                            <div key={content.id} className="mb-2">
-                              <button
-                                onClick={() => toggleMobileSubMenu(content.id)}
-                                className="flex items-center justify-between w-full py-2 px-4 text-white hover:bg-blue-800 transition-colors text-sm"
-                              >
-                                <div className="flex items-center">
-                                  <content.icon className={`h-4 w-4 ${content.color} mr-2`} />
-                                  <span>{content.title}</span>
-                                </div>
-                                <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${
-                                  activeMobileSubMenu === content.id ? 'rotate-90' : ''
-                                }`} />
-                              </button>
-                              
-                              {activeMobileSubMenu === content.id && (
-                                <div className="pl-4 py-2 bg-blue-800">
-                                  {content.features.map((feature, index) => (
-                                    <Link
-                                      key={index}
-                                      to={feature.path}
-                                      className="flex items-center py-2 px-4 text-white hover:bg-blue-700 transition-colors text-sm"
-                                      onClick={handleFeatureClick}
-                                    >
-                                      <feature.icon className={`h-4 w-4 mr-2 ${content.color}`} />
-                                      <span>{feature.title}</span>
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <Link
-                      to={item.href}
-                      className="block py-2 px-4 text-white hover:bg-blue-900 transition-colors text-sm"
-                    >
-                      {item.label}
+                    <Link to="/" className="flex items-center no-underline">
+                        <img src={logo} alt="logo" className="h-6" />
                     </Link>
-                  )}
+
+                    {!isSearchVisible ? (
+                        <>
+                            <div className="hidden md:flex items-center space-x-6 mr-auto">
+                                {mainNavItems.map((navItem) => (
+                                    <div
+                                        key={navItem.label}
+                                        className="relative group"
+                                        onMouseEnter={handleMouseEnter}
+                                        onMouseLeave={handleMouseLeave}
+                                    >
+                                        <div
+                                            className="flex items-center space-x-1 cursor-pointer"
+                                            onClick={() =>
+                                                handleDropdownClick(navItem.dropdownType)
+                                            }
+                                        >
+                                            <Link
+                                                to={navItem.href}
+                                                className="text-white hover:text-white transition-colors text-md"
+                                                onClick={(e) =>
+                                                    navItem.hasDropdown && e.preventDefault()
+                                                }
+                                            >
+                                                {navItem.label}
+                                            </Link>
+
+                                            {navItem.hasDropdown && (
+                                                <ChevronDown
+                                                    className={`h-4 w-4 text-gray-400 transition-transform duration-300
+                                                        ${activeDropdown === navItem.dropdownType ? "rotate-180" : ""}`}
+                                                />
+                                            )}
+
+                                        </div>
+
+                                        {navItem.hasDropdown &&
+                                            activeDropdown === navItem.dropdownType && (
+                                                <MegaMenu services={getDropdownItems(navItem.dropdownType)} />
+                                            )}
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="hidden md:flex items-center space-x-6">
+                                <button
+                                    onClick={() => setIsSearchVisible(true)}
+                                    className="text-white hover:text-gray-300"
+                                    aria-label="Open search"
+                                >
+                                    <Search className="h-5 w-5" />
+                                </button>
+                                <Link
+                                    to="/contact-us"
+                                    className="border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm"
+                                >
+                                    CONTACT US
+                                </Link>
+                            </div>
+
+                            <div className="md:hidden flex items-center ml-auto space-x-4">
+                                <button
+                                    onClick={() => setIsSearchVisible(true)}
+                                    className="text-white hover:text-gray-300"
+                                    aria-label="Open search"
+                                >
+                                    <Search className="h-5 w-5" />
+                                </button>
+                                <button
+                                    onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
+                                    className="text-white hover:text-gray-300"
+                                    aria-label="Toggle mobile menu"
+                                    aria-expanded={isMobileMenuVisible}
+                                >
+                                    <Menu className="h-6 w-6" />
+                                </button>
+                            </div>
+                        </>
+                    ) : (
+                        <div className="flex-1 flex items-center ml-4 md:ml-8">
+                            <Search className="h-5 w-5 text-gray-400" />
+                            <input
+                                type="text"
+                                placeholder="e.g. Business Intelligence"
+                                className="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-400 ml-4"
+                                autoFocus
+                                aria-label="Search input"
+                            />
+                            <button
+                                className="bg-[#6B7CFF] px-4 md:px-6 py-2 text-sm mr-2 md:mr-4 hover:bg-[#5A6AE6] transition-colors"
+                                aria-label="Submit search"
+                            >
+                                SEARCH
+                            </button>
+                            <button
+                                onClick={() => setIsSearchVisible(false)}
+                                className="text-white hover:text-gray-300"
+                                aria-label="Close search"
+                            >
+                                <X className="h-5 w-5" />
+                            </button>
+                        </div>
+                    )}
                 </div>
-              ))}
-              <div className="py-4 px-4">
-                <Link
-                  to="/contact-us"
-                  className="block border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-600 hover:text-white transition-colors text-sm text-center"
-                >
-                  CONTACT US
-                </Link>
-              </div>
             </div>
-          </div>
-        )}
-      </div>
-    </nav>
-  );
+
+            {/* {/ Mobile menu /} */}
+            {isMobileMenuVisible && (
+                <div className="md:hidden bg-blue-900 py-4 px-4">
+                    {mainNavItems.map((navItem) => (
+                        <div key={navItem.label} className="mb-4">
+                            <div
+                                className="flex items-center justify-between"
+                                onClick={() => handleDropdownClick(navItem.dropdownType)}
+                            >
+                                <span className="text-white font-medium">{navItem.label}</span>
+                                {navItem.hasDropdown && (
+                                    <ChevronDown
+                                        className={`h-4 w-4 text-gray-400 transition-transform duration-300 ${
+                                            activeDropdown === navItem.dropdownType ? "rotate-180" : ""
+                                        }`}
+                                    />
+                                )}
+                            </div>
+
+                            {navItem.hasDropdown && activeDropdown === navItem.dropdownType && (
+                                <div className="mt-2 ml-4">
+                                    {getDropdownItems(navItem.dropdownType).map((category) => (
+                                        <div key={category.id} className="mb-2">
+                                            <div
+                                                className="flex items-center justify-between"
+                                                onClick={() =>
+                                                    setHoveredCategory(
+                                                        hoveredCategory === category.id
+                                                            ? null
+                                                            : category.id
+                                                    )
+                                                }
+                                            >
+                                                <span className="text-white text-sm">
+                                                    {category.title}
+                                                </span>
+                                                <ChevronDown 
+                                                    className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${
+                                                        hoveredCategory === category.id ? "rotate-180" : ""
+                                                    }`}
+                                                />
+                                            </div>
+
+                                            {hoveredCategory === category.id && (
+                                                <div className="mt-1 ml-4">
+                                                    {getFeaturesForCategory(
+                                                        category.dropdownType || category.id
+                                                    ).map((feature) => (
+                                                        <Link
+                                                            key={feature.path}
+                                                            to={feature.path}
+                                                            className="block py-1 text-gray-300 text-xs hover:text-white"
+                                                        >
+                                                            {feature.title}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+
+                    <Link
+                        to="/contact-us"
+                        className="block w-full text-center border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm mt-4"
+                    >
+                        CONTACT US
+                    </Link>
+                </div>
+            )}
+        </nav>
+    );
 };
 
 export default Navbar;

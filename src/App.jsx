@@ -1,23 +1,23 @@
 import { Route, Routes, useLocation, useMatch } from "react-router-dom";
 import { useEffect } from "react";
 
-import Home from './pages/Home'
+import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 
-import CemDevlopment from "./pages/Cem-devlopment";
-import IntregrationandMigration from "./pages/Intregration-and-Migration";
+import CEMDEVELOPMENT from "./pages/CemDevelopment";
+import IntregrationandMigration from "./pages/IntregrationAndMigration";
 import BlockChainDevlopment from "./pages/BlockChainDevlopment";
-import SaasDeclopment from "./pages/Saas-Devlopment";
+import SAASDEVELOPMENT from "./pages/SaasDevelopment";
 import WebsiteDevlopment from "./pages/WebsiteDevlopment";
-import MobileAppDevlopment from "./pages/Mobile-App-Devlopment";
+import MobileAppDevlopment from "./pages/MobileAppDevlopment";
 import WebApplicationDevlopment from "./pages/WebApplicationDevlopment";
 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import { ReviewsSection} from "./components/Reviews";
+import { ReviewsSection } from "./components/Reviews";
 
 import SoftwareTestManagement from "./pages/SoftwareTestManagement";
 import TestAutomation from "./pages/TestAutomation";
@@ -46,10 +46,11 @@ import VR_XRSimulation from "./pages/VR_XRSimulation";
 import ResourceAugmentation from "./pages/ResourceAugmentation";
 import UnrealGameDevelopment from "./pages/UnrealGameDevelopment";
 import GameArtServices from "./pages/GameArtServices";
-import PCGameDevelopment from './pages/PCGameDevelopment';
+import PCGameDevelopment from "./pages/PCGameDevelopment";
 
 // Game Development end here
 
+// Blockchain start
 import ExchangeShoftware from "./pages/ExchangeShoftware";
 import InitialCoinOffering from "./pages/InitialCoinOffering";
 import CryptocurrencyApp from "./pages/CryptocurrencyApp";
@@ -58,6 +59,12 @@ import SmartContractDevelopment from "./pages/SmartContractDevelopment";
 import DefiDevelopment from "./pages/DefiDevelopment";
 import Web3 from "./pages/Web3";
 import NftMarketplace from "./pages/NftMarketplace";
+// Blockchain end
+
+// salesforce start
+import ApplicationArchitecture from "./pages/ApplicationArchitecture";
+import ConsultingAssesment from "./pages/ConsultingAssesment";
+
 
 // Frontend Technology
 
@@ -75,10 +82,15 @@ import AndroidAppDevlopment from "./pages/AndroidAppDevlopment";
 import ReactNative from "./pages/ReactNative";
 import FlutterAppDevlopment from "./pages/FlutterAppDevlopment";
 import NativeScript from "./pages/NativeScript";
-import XamarinAppDEvlopment from "./pages/XamarinAppDEvlopment";
+import XamarinAppDEvlopment from "./pages/XamarinAppDevelopment";
 import HtmlDevlopment from "./pages/HtmlAppDevlopment"
 import CloudOptimization from './pages/CloudOptimization';
-import WebsiteTechDevlopmet from './pages/WebsiteTechDevlopmet'
+
+//websitedevelopment
+
+import WebsiteTechDevlopmet from './pages/Mern'
+import Java from "./pages/JavaDevelopemt"
+import PythonDevelopment from "./pages/PythonDevelopment";
 
 //Cloud
 
@@ -87,13 +99,17 @@ import Cloud_Migration from "./pages/Cloud_Migration";
 import Google from "./pages/Google";
 import Intercloud_Migration from "./pages/Intercloud";
 import AWS from "./pages/AWS";
-import CloudNative from "./pages/CloudNative"
+import CloudNative from "./pages/CloudNative";
 
 //AI app
 
 import Ai_development from "./pages/Ai_development"
 import Ai_software from "./pages/Ai_software";
 import Llm_development from "./pages/Llm_development"
+
+
+
+
 
 function App() {
   const location = useLocation();
@@ -106,16 +122,19 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-   const match = useMatch("/:path");
+  const match = useMatch("/:path");
 
-if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
-  console.log(match);
-}
+  if (
+    match?.params.path === "about-us" ||
+    match?.params.path === "contact-us"
+  ) {
+    console.log(match);
+  }
 
   return (
     <div className=" w-full ">
       <Header />
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
@@ -143,56 +162,56 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
         />
 
         <Route
-          path="/services/custom-apps/IntregrationandMigration"
+          path="/integration-and-migration-services"
           element={<IntregrationandMigration />}
         />
         <Route
-          path="/services/custom-apps/cem-devlopment"
-          element={<CemDevlopment />}
+          path="/customer-experience-management-development"
+          element={<CEMDEVELOPMENT/>}
         />
         <Route
-          path="/services/custom-apps/SaasDevlopment"
-          element={<SaasDeclopment />}
+          path="saas-software-development"
+          element={<SAASDEVELOPMENT/>}
         />
         <Route
-          path="/services/custom-apps/WebsiteDevlopment"
+          path="/website-development-services"
           element={<WebsiteDevlopment />}
         />
         <Route
-          path="/services/custom-apps/block-chain"
+          path="/blockchain-development-services"
           element={<BlockChainDevlopment />}
         />
         <Route
-          path="/services/custom-apps/MobileAppDevlopment"
+          path="/mobile-app-development"
           element={<MobileAppDevlopment />}
         />
         <Route
-          path="/services/custom-apps/webApplicationDevlopment"
+          path="/web-application-development"
           element={<WebApplicationDevlopment />}
         />
 
         <Route
-          path="/services/consulting/mobile-consulting"
+          path="/services/consulting/mobile-web-app-consulting-services"
           element={<MobileConsulting />}
         />
         <Route
-          path="/services/consulting/web-consulting"
+          path="/services/consulting//website-consulting-solutions"
           element={<WebConsulting />}
         />
         <Route
-          path="/services/consulting/salesforce-consulting"
+          path="/services/consulting/salesforce-consulting-company"
           element={<SalesforceConsulting />}
         />
         <Route
-          path="/services/consulting/devops-consulting"
+          path="/services/consulting/devops-consulting-services"
           element={<DevopsConsulting />}
         />
         <Route
-          path="/services/consulting/testing-consulting"
+          path="/services/consulting/software-testing-consulting"
           element={<TestingConsulting />}
         />
         <Route
-          path="/services/consulting/ai-consulting"
+          path="/services/consulting/ai-consulting-experts"
           element={<AiConsulting />}
         />
 
@@ -214,126 +233,157 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
           path="/services/ui-ux/design-testing"
           element={<DesignTesting />}
         />
-         {/* Blockchain development start*/}
+        {/* Blockchain development start*/}
         <Route
-          path="/services/blockchain/exchangesoftware"
+          path="/crypto-exchange-software-development"
           element={<ExchangeShoftware />}
         />
         <Route
-          path="/services/blockchain/initialcoinoffering"
+          path="/initial-coin-offering-ico-development"
           element={<InitialCoinOffering />}
         />
         <Route
-          path="/services/blockchain/cryptocurrency"
+          path="/cryptocurrency-app-development"
           element={<CryptocurrencyApp />}
         />
 
         <Route
-          path="/services/blockchain/smartcontractdevelopment"
+          path="/smart-contract-development-services"
           element={<SmartContractDevelopment />}
         />
 
         <Route
-          path="/services/blockchain/cryptocurrencywallet"
+          path="/cryptocurrency-wallet-development"
           element={<CryptocurrencyWallet />}
         />
 
-<Route path="/services/blockchain/nftmarketplacedevelopment" element={<NftMarketplace/>}/> 
+        <Route
+          path="/services/blockchain/nftmarketplacedevelopment"
+          element={<NftMarketplace />}
+        />
 
-<Route path="/services/blockchain/defidevelopmentservices" element={<DefiDevelopment/>}/>
+        <Route
+          path="/services/blockchain/defidevelopmentservices"
+          element={<DefiDevelopment />}
+        />
 
 
-<Route path="/services/blockchain/web3development" element={<Web3/>}/>
+<Route path="/web3-development-services" element={<Web3/>}/>
 
 {/* Blockchain development end */}
 
+{/* salesforce start */}
+<Route path="/application-architecture-design" element={<ApplicationArchitecture/>} />
+<Route path="/salesforce-consulting-assessment" element={<ConsultingAssesment/>} />
+
 
         {/* Frontend Technology */}
-        <Route path="/tech/frontend/angular" element={<AngularDevelopment />} />
-        <Route path="/tech/frontend/react" element={<ReactDevelopment />} />
-        <Route path="/tech/frontend/vue" element={<VueDevelopment />} />
         <Route
-          path="/tech/frontend/bootstrap"
+          path="/tech/frontend/angular-development-services"
+          element={<AngularDevelopment />}
+        />
+        <Route
+          path="/tech/frontend/reactjs-development-services"
+          element={<ReactDevelopment />}
+        />
+        <Route
+          path="/tech/frontend/vuejs-development-services"
+          element={<VueDevelopment />}
+        />
+        <Route
+          path="/tech/frontend/bootstrap-development-services"
           element={<BootstrapDevelopment />}
         />
-        <Route
-          path="/tech/frontend/knockout"
+        <Route 
+          path="/tech/frontend/knockoutjs-development-services"
           element={<KnowkoutjsDevelopment />}
         />
-        <Route path="/tech/frontend/nextjs" element={<NextjsDevelopment />} />
+        <Route
+          path="/tech/frontend/nextjs-development-services"
+          element={<NextjsDevelopment />}
+        />
 
         {/* Mobile Technology */}
-        <Route path="/tech/mobile/ios" element={<IosDevelopmentTech />} />
+        <Route path="/ios-app-development-services" element={<IosDevelopmentTech />} />
         <Route
-          path="/tech/AndroidAppDevlopment"
+          path="/android-app-development-services"
           element={<AndroidAppDevlopment />}
         />
-        <Route path="/tech/ReactNative" element={<ReactNative />} />
+        <Route path="/react-native-app-development-services" element={<ReactNative />} />
         <Route
-          path="/tech/FlutterDevlopment"
+          path="/flutter-app-development-services"
           element={<FlutterAppDevlopment />}
         />
-        <Route path="/tech/NativeScript" element={<NativeScript />} />
+        <Route path="/nativescript-app-development-services" element={<NativeScript />} />
         <Route
-          path="/tech/XamarinAppDevlopment"
+          path="/xamarin-app-development-services"
           element={<XamarinAppDEvlopment />}
         />
         <Route
-        path="/tech/HtmlDevlopment"
+        path="/html5-app-development-services"
         element={<HtmlDevlopment/>}
       />
+       {/* Website Development */}
       <Route
-      path="/tech/web/mean"
+      path="/mean-stack-development"
       element={<WebsiteTechDevlopmet/>}
+    />
+      <Route
+      path="/java-j2ee-development-services"
+      element={<Java/>}
+    />
+      <Route
+      path="/python-development-services"
+      element={<PythonDevelopment/>}
     />
         {/* Game development */}
 
         <Route
-          path="/services/game-development/mobile-game-development"
+          path="/mobile-game-development"
           element={<MobileGameDevelopment />}
         />
         <Route
-          path="/services/game-development/unity3d-game-development"
+          path="/unity3d-game-development"
           element={<Unity3dGameDevelopment />}
         />
         <Route
-          path="/services/game-development/unreal-game-development"
+          path="/unreal-game-development"
           element={<UnrealGameDevelopment />}
         />
         <Route
-          path="/services/game-development/pc-game-development"
+          path="/pc-game-development-services"
           element={<PCGameDevelopment />}
         />
         <Route
-          path="/services/game-development/game-art-services"
+          path="/game-art-design-services"
           element={<GameArtServices />}
         />
         <Route
-          path="/services/game-development/vr-xr-simulation"
+          path="/vr-xr-simulation-development"
           element={<VR_XRSimulation />}
         />
         <Route 
-          path="/services/game-development/resource-augmentation"
+          path="/game-development-resource-augmentation"
           element={<ResourceAugmentation />}
         />
-      
 
       {/* Cloud */}
-      <Route path="/services/cloud/azure" element={<Azure/>} />
-      <Route path="/services/cloud/cloud_migration" element={<Cloud_Migration/>}/>
-      <Route path="/services/cloud/google_components" element={<Google/>} />
-      <Route path="/services/cloud/intercloud_Migration" element={<Intercloud_Migration/>}/>
-      <Route path="/services/cloud/AWS" element={<AWS/>}/>
-      <Route path="/services/cloud/CloudNative" element={<CloudNative/>}/>
-      <Route path="/services/cloud/CloudOptimization" element={<CloudOptimization/>}/>
+      <Route path="/microsoft-azure-cloud-services" element={<Azure/>} />
+      <Route path="/legacy-to-cloud-migration-services" element={<Cloud_Migration/>}/>
+      <Route path="/google-cloud-platform-services" element={<Google/>} />
+      <Route path="/intercloud-migration-solutions" element={<Intercloud_Migration/>}/>
+      <Route path="/aws-cloud-services" element={<AWS/>}/>
+      <Route path="/cloud-native-development-services" element={<CloudNative/>}/>
+      <Route path="/cloud-optimization-services" element={<CloudOptimization/>}/>
 
-      {/*Ai app*/}
+        {/*Ai app*/}
 
       <Route path="/ai-app-development" element={<Ai_development/>}/>
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
 
       
+
       </Routes>
 
    <ReviewsSection/>

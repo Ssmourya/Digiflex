@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FaMobileAlt, FaBolt, FaLock, FaRobot, FaRocket, FaCloud } from 'react-icons/fa';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
-
+import Paragraph from '../../../../Layout/Paragraph'
 const features = [
   {
     icon: <FaMobileAlt className="text-green-400 text-6xl" />,
@@ -61,7 +61,8 @@ export default function WhyDigiflex() {
             {feature.icon}
             <Subheading>
             {feature.title}</Subheading>
-            <p className="text-gray-900 text-lg">{feature.description}</p>
+            <Paragraph>{feature.description}</Paragraph>
+            
           </motion.div>
         ))}
       </div>

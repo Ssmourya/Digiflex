@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, MessageSquare, UserCheck, Zap, Settings } from 'lucide-react';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const Cards = () => {
   return (
@@ -29,9 +30,9 @@ const Cards = () => {
               <MessageSquare className="h-8 w-8 text-blue-500" />
             </div>
             <Subheading>Omni-Channel Engagement</Subheading>
-            <p className="text-gray-500 text-sm mb-3">
+            <Paragraph>
               Deliver seamless interactions across chat, email, voice, and social media, ensuring consistent support at every touchpoint.
-            </p>
+            </Paragraph>
           </div>
           <button className="px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-md hover:bg-blue-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
@@ -52,9 +53,9 @@ const Cards = () => {
               <UserCheck className="h-8 w-8 text-green-500" />
             </div>
             <Subheading>AI-Powered Self-Service</Subheading>
-            <p className="text-gray-500 text-sm mb-3">
+            <Paragraph>
               Enable customers to resolve issues instantly with intelligent chatbots, FAQs, and interactive knowledge bases.
-            </p>
+            </Paragraph>
           </div>
           <button className="px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-md hover:bg-green-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
@@ -75,9 +76,9 @@ const Cards = () => {
               <Zap className="h-8 w-8 text-yellow-500" />
             </div>
             <Subheading>Predictive Analytics & AI Insights</Subheading>
-            <p className="text-gray-500 text-sm mb-3">
+            <Paragraph>
               Use AI-driven insights to predict customer needs, personalize support, and optimize service strategies.
-            </p>
+            </Paragraph>
           </div>
           <button className="px-4 py-2 bg-yellow-500 text-white text-sm font-medium rounded-md hover:bg-yellow-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />
@@ -98,9 +99,9 @@ const Cards = () => {
               <Settings className="h-8 w-8 text-purple-500" />
             </div>
             <Subheading>Automated Workflows & Process Optimization</Subheading>
-            <p className="text-gray-500 text-sm mb-3">
+            <Paragraph>
               Streamline service operations with AI-driven automation, reducing response times and improving agent efficiency.
-            </p>
+            </Paragraph>
           </div>
           <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 transition-all duration-300 flex items-center justify-center mx-auto mt-auto">
             Learn More <ArrowRight className="ml-1 h-4 w-4" />

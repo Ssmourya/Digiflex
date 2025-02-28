@@ -1,5 +1,6 @@
 import React from 'react';
 import Heading from "../../../../Layout/Heading";
+import Paragrph from "../../../../Layout/Paragraph"
 
 const Button = ({ children, className, ...props }) => {
   return (
@@ -54,9 +55,9 @@ const Website2 = () => {
           <h1 className="text-gray-900 text-3xl sm:text-5xl font-bold leading-tight">
             Build Your Digital Success with <span className="text-blue-600">Digiflex.ai</span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-700 mt-4 max-w-3xl mx-auto">
-            We create stunning, high-performance websites tailored to your business needs. Elevate your online presence with our expert development solutions.
-          </p>
+          <Paragrph>  We create stunning, high-performance websites tailored to your business needs. Elevate your online presence with our expert development solutions.
+          </Paragrph>
+          
         </div>
 
         {/* CTA Button */}

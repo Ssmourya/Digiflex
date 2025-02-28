@@ -5,6 +5,7 @@ import Mobile2 from "../container/Services/Custom App/Intregation and Migration/
 import Mobile3 from "../container/Services/Custom App/Intregation and Migration/Mobile3";
 import Mobile4 from "../container/Services/Custom App/Intregation and Migration/mobile4";
 import WrapperContainer from "../Layout/WrapperContainer";
+import IntegrationMigrationFAQ from "../container/Services/Custom App/Intregation and Migration/IntegrationMigrationFAQ";
 
 const Mobile = () => {
   return (
@@ -31,49 +32,31 @@ const Mobile = () => {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Integration and Migration Made Easier!!
           </h1>
+          
           <p className="mt-4 text-lg">
-            At Digiflex.ai, we deliver cutting-edge, risk-mitigated migration
-            and integration solutions tailored to meet the unique needs of our
-            clients across the globe.
-          </p>
-          <p className="mt-4 text-lg">
-            Our expertise lies in ensuring a seamless transition to advanced technologies,
-            minimizing disruptions, and maximizing efficiency.
-          </p>
-          <div className="mt-6 flex flex-col md:flex-row items-center justify-center">
-            <motion.button
-              className="bg-white text-black px-6 py-3 m-2 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
-              whileHover={{ scale: 1.05 }}
-            >
-              LEARN MORE
-            </motion.button>
-            <motion.button
-              className="bg-white text-black px-6 py-3 m-2 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
-              whileHover={{ scale: 1.05 }}
-            >
-              CONTACT US
-            </motion.button>
+          Seamless Integration & Hassle-Free Migration for a Smoother Digital Transformation! </p>
+          <div className="flex justify-center py-5">
+          <div className="flex flex-wrap justify-center space-x-4">
+          <button className="bg-white text-[#172554] px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-transform transform hover:scale-105 duration-300">
+            Get Started
+          </button>
+          <button className="bg-transparent border border-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#172554] transition-transform transform hover:scale-105 duration-300">
+            Learn More
+          </button>
+        </div>
           </div>
         </motion.div>
       </div>
 
-      {/* Chat Button */}
-      <motion.div
-        className="fixed bottom-4 right-4 md:bottom-8 md:right-8"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <button className="bg-white text-black px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
-          Chat with us!
-        </button>
-      </motion.div>
+      
+      
 
       <WrapperContainer>
       <Mobile2 />
       <Mobile3 />
       <Mobile4 />
       </WrapperContainer>
+      <IntegrationMigrationFAQ/>
     </>
   );
 };

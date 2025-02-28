@@ -3,6 +3,7 @@ import { Code, ShieldCheck, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const WebApplication2 = () => {
   const services = [
@@ -43,9 +44,9 @@ const WebApplication2 = () => {
           for Business Excellence
         </Heading>
 
-        <p className="mb-12 text-gray-700 max-w-3xl text-center md:text-left mx-auto md:mx-0">
+        <Paragraph>
           We specialize in creating high-performance, secure, and scalable web applications tailored to your business goals. Our expert team leverages modern technologies to drive innovation and efficiency.
-        </p>
+        </Paragraph>
 
         {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -60,7 +61,7 @@ const WebApplication2 = () => {
             >
               <div className="mb-4">{service.icon}</div>
               <Subheading>{service.title}</Subheading>
-              <p className="text-gray-700">{service.description}</p>
+              <Paragraph className="text-gray-700">{service.description}</Paragraph>
             </motion.div>
           ))}
         </div>
@@ -74,9 +75,6 @@ const WebApplication2 = () => {
             Learn More
           </button>
         </div>
-
-        {/* Extra Content for Laptops & Desktops */}
-       
       </motion.div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { Smartphone, Layers, Brain, Glasses, Watch, ShoppingBag } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const services = [
   { icon: Smartphone, title: "Native Android", description: "Kotlin & Java-based apps" },
@@ -18,7 +19,7 @@ const AndroidServices = () => {
      
     <Heading> 
    
-        Our Android Development Services
+        Our Android Development Services at Digiflex.ai
    
       </Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl">
@@ -32,7 +33,8 @@ const AndroidServices = () => {
             </div>
             <Subheading>
             {service.title}</Subheading>
-            <p className="text-gray-900 text-lg">{service.description}</p>
+            <Paragraph>{service.description}</Paragraph>
+           
           </div>
         ))}
       </div>

@@ -43,7 +43,7 @@ const InfiniteMovingCards = ({ items, direction = "left", speed = "fast", pauseO
       >
         <ul
           ref={scrollerRef}
-          className={`flex min-w-full gap-6 py-8 w-max flex-nowrap ${
+          className={`flex min-w-full gap-4 md:gap-6 py-4 md:py-8 w-max flex-nowrap ${
             start ? "animate-scroll" : ""
           } ${pauseOnHover ? "hover:[animation-play-state:paused]" : ""}`}
           style={{
@@ -54,20 +54,20 @@ const InfiniteMovingCards = ({ items, direction = "left", speed = "fast", pauseO
           {items.map((item, idx) => (
             <li
               key={idx}
-              className="w-[350px] max-w-full relative flex-shrink-0"
+              className="w-[280px] sm:w-[320px] md:w-[350px] max-w-full relative flex-shrink-0"
             >
               <div className="h-full w-full">
-                <blockquote className="h-full p-8 rounded-2xl flex flex-col bg-white dark:from-blue-700 dark:via-blue-600 dark:to-blue-500">
+                <blockquote className="h-full p-4 md:p-8 rounded-2xl flex flex-col bg-white dark:from-blue-700 dark:via-blue-600 dark:to-blue-500">
                   <div className="flex-1">
-                    <p className="text-lg font-normal text-blue-900 dark:text-blue-100">
+                    <p className="text-base md:text-lg font-normal text-blue-900 dark:text-blue-100">
                       "{item.quote}"
                     </p>
                   </div>
-                  <footer className="mt-8">
-                    <p className="text-base font-semibold text-blue-800 dark:text-blue-200">
+                  <footer className="mt-4 md:mt-8">
+                    <p className="text-sm md:text-base font-semibold text-blue-800 dark:text-blue-200">
                       {item.name}
                     </p>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">
+                    <p className="text-xs md:text-sm text-blue-700 dark:text-blue-300">
                       {item.title}
                     </p>
                   </footer>

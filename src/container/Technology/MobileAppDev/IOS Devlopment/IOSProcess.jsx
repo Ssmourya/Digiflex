@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaSearch, FaPaintBrush, FaCode, FaBug, FaCloudUploadAlt, FaTools } from "react-icons/fa";
-
+import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 const discoveryImg = "https://i.pinimg.com/736x/35/96/d3/3596d3d1164775e3bf9d0961c906d574.jpg";
 const designImg = "https://i.pinimg.com/736x/82/7f/8c/827f8c8170a5842d2560da75249117af.jpg";
 const developmentImg = "https://i.pinimg.com/736x/fc/d8/31/fcd8310354601ee5a6f161324cee0ada.jpg";
@@ -20,7 +22,7 @@ const steps = [
 
 const ProcessSidebar = ({ activeStep, setActiveStep }) => {
   return (
-    <div className="w-1/4 bg-blue-50 p-6 rounded-lg shadow-md">
+    <div className="w-1/4 bg-white p-6 rounded-lg shadow-md">
       {steps.map((step) => (
         <motion.div
           key={step.id}
@@ -71,7 +73,7 @@ export default function IOSProcess() {
     const [activeStep, setActiveStep] = useState("discovery");
   
     return (
-      <div className="bg-gray-100 min-h-screen flex items-center justify-center py-12 px-6">
+      <div className="bg-white min-h-screen flex items-center justify-center py-12 px-6">
         <div className="max-w-6xl w-full flex gap-6">
           <ProcessSidebar activeStep={activeStep} setActiveStep={setActiveStep} />
           <AnimatePresence initial={false}>

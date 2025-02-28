@@ -4,6 +4,7 @@ import TypesAndExampleSection from "./TypesAndExampleSection";
 import TechnologiesSection from "./TechnologiesSection";
 import IndustriesSection from "./IndustriesSection";
 import { BenefitsSection } from "./BenefitsSection";
+import FAQ from "./FAQ";
 
 function Body() {
   return (
@@ -22,6 +23,8 @@ function Body() {
 
       {/* Industries Section */}
       <IndustriesSection />
+
+      <FAQ />
     </>
   );
 }

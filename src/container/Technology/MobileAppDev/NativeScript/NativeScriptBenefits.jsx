@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const features = [
   "True Native Performance – Full access to iOS and Android APIs",
@@ -12,7 +14,7 @@ const features = [
 
 export default function NativeScriptBenefits() {
   return (
-    <section className="bg-[#F3F4F6] py-16 px-6 text-#172554 text-center">
+    <section className="bg-white py-16 px-6 text-#172554 text-center">
       
       <Heading
         initial={{ opacity: 0, y: -50 }}
@@ -20,7 +22,7 @@ export default function NativeScriptBenefits() {
         transition={{ duration: 0.8 }}
         className="text-4xl font-bold mb-6 text-[#172554]"
       >
-        🚀 Why Choose NativeScript for App Development?
+        🚀 Why Choose NativeScript for App Development at digiflex?
         </Heading>
      
       <div className="max-w-6xl mx-auto">
@@ -32,8 +34,8 @@ export default function NativeScriptBenefits() {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className="flex items-center gap-4 bg-#172554 text-[#172554] rounded-xl p-4 mb-4 shadow-lg backdrop-blur-lg"
           >
-            <CheckCircle className="text-green-400 w-6 h-6" />
-            <p className="text-lg">{feature}</p>
+            <CheckCircle className="text-blue-600 w-6 h-6" />
+            <Paragraph>{feature}</Paragraph>
           </motion.div>
         ))}
       </div>

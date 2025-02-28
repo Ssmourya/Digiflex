@@ -3,6 +3,7 @@ import { Code, Clipboard, CheckCircle, Coffee, ShoppingCart, Globe, Shield, Laye
 import bussse from "../../../../assets/Busssensss.png";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragrph from "../../../../Layout/Paragraph"
 import { motion } from "framer-motion";
 
 const processSteps = [
@@ -68,12 +69,12 @@ const Card = ({ icon, title, subtitle, description, button }) => (
     whileHover={{ scale: 1.05 }}
     className="bg-white rounded-lg shadow-md p-6 text-center transform transition-all hover:shadow-xl duration-300"
   >
-    <div className="mx-auto bg-[#3730A3] rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-md">
+    <div className="mx-auto bg-blue-600 rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-md">
       {icon}
     </div>
     <h3 className="text-xl font-bold mt-4 text-gray-800">{title}</h3>
     {subtitle && <p className="text-sm text-gray-500 mt-1">{subtitle}</p>}
-    <p className="text-gray-600 mt-2">{description}</p>
+    <Paragrph>{description}</Paragrph>
     {button && <div className="mt-4">{button}</div>}
   </motion.div>
 );
@@ -91,7 +92,7 @@ export default function Website4() {
               title={pkg.title}
               subtitle={pkg.subtitle}
               description={pkg.description}
-              button={<Button className="bg-[#3730A3] hover:bg-indigo-700">{pkg.buttonText}</Button>}
+              button={<Button className="bg-blue-600 hover:bg-indigo-700">{pkg.buttonText}</Button>}
             />
           ))}
         </div>

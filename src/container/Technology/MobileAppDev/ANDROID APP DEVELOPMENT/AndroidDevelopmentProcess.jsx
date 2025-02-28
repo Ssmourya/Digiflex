@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
-
+import Paragraph from "../../../../Layout/Paragraph";
 const steps = [
   {
     id: "1️⃣",
@@ -52,7 +52,7 @@ const AndroidDevelopmentProcess = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Our Android Development Process
+        Our Android Development Process at Digiflex.ai
      
       </Heading>
 
@@ -74,7 +74,8 @@ const AndroidDevelopmentProcess = () => {
               {step.title}
               
             </Subheading>
-            <p className="text-gray-900 text-lg mt-3">{step.description}</p>
+            <Paragraph>{step.description}</Paragraph>
+           
           </motion.div>
         ))}
       </div>

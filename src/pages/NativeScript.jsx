@@ -4,6 +4,7 @@ import NativeScriptBenefits from '../container/Technology/MobileAppDev/NativeScr
 import NativeScriptServices from '../container/Technology/MobileAppDev/NativeScript/NativeScriptServices'
 import NativeScriptProcess from '../container/Technology/MobileAppDev/NativeScript/NativeScriptProcess'
 import IndustriesSection from '../container/Technology/MobileAppDev/NativeScript/IndustriesSection'
+import FAQ from '../container/Technology/MobileAppDev/NativeScript/FAQ'
 
 
 const NativeScript = () => {
@@ -16,6 +17,7 @@ const NativeScript = () => {
       <NativeScriptServices/>
       <NativeScriptProcess/>
       <IndustriesSection/>
+      <FAQ/>
       
       
       

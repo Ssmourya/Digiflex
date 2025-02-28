@@ -3,6 +3,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 
+
 const reasons = [
   "Single Codebase for iOS, Android & Windows – Code once, deploy everywhere",
   "Native-Like UI & Performance – Full access to native APIs & controls",
@@ -33,7 +34,7 @@ const WhyChooseXamarin = () => {
                   className="flex items-start space-x-4 p-4 border rounded-lg hover:shadow-lg transition-shadow duration-300"
                 >
                   <FaCheckCircle className="text-blue-600 text-3xl mt-1" />
-                  <p className="text-gray-800 text-lg">{reason}</p>
+                  <Subheading>{reason}</Subheading>
                 </div>
               ))}
             </div>

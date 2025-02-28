@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Code, Download, HeadphonesIcon, Shield, Workflow } from "lucide-react";
 import Subheading from "../../../../Layout/Subheading";
 import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const features = [
   {
@@ -52,27 +53,26 @@ const FeatureCard = ({ feature, index }) => (
     transition={{ duration: 0.5, delay: index * 0.1 }}
   >
     <div className="flex items-center justify-center md:justify-start">
-      <div className="bg-[#3730A3] rounded-full p-3 w-16 h-16 flex items-center justify-center shadow-md">
+      <div className="bg-blue-600 rounded-full p-3 w-16 h-16 flex items-center justify-center shadow-md">
         {feature.icon}
       </div>
-      <h3 className="text-xl font-bold text-blue-600 ml-4">
-        {feature.title}
-      </h3>
+      
+       <Subheading>{feature.title}</Subheading>
+      
+     
     </div>
-    <p className="text-gray-600 text-sm mt-4">
-      {feature.description}
-    </p>
+    <Paragraph>{feature.description}</Paragraph>
+   
   </motion.div>
 );
 
 export default function Amp() {
   return (
-    <section className="w-full py-12 bg-gray-50">
+    <section className="w-full py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         
-      <Heading>Our Key Features</Heading>
-          
-      
+        <Heading>Our Key Features</Heading>
+
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <FeatureCard key={feature.title} feature={feature} index={index} />

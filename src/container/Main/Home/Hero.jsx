@@ -10,7 +10,7 @@ function Hero() {
         loop
         muted
       >
-        <source src="HeroBg.mp4" type="video/mp4" />
+        <source src="DigiflexHero.mp4" type="video/mp4" />
       </video>
 
     </div>

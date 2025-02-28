@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Subheading from '../../../../Layout/Subheading';
 import Heading from "../../../../Layout/Heading";
+import Paragraph from '../../../../Layout/Paragraph'
 const industries = [
   {
     icon: "🏥",
@@ -37,7 +38,7 @@ const industries = [
 const IndustriesWeServe = () => {
   return (
     <motion.div
-      className="w-full py-16 bg-gray-50 text-[#172554] px-6 md:px-12"
+      className="w-full py-16 bg-white text-[#172554] px-6 md:px-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -51,7 +52,7 @@ const IndustriesWeServe = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Industries We Serve with React Native Apps
+        Industries We Serve with React Native Apps at Digiflex.ai
       </motion.h1>
       </Heading>
 
@@ -76,9 +77,9 @@ const IndustriesWeServe = () => {
               {industry.title} </Subheading>
 
               {/* Industry Description */}
-              <p className="text-base text-center text-gray-700">
+              <Paragraph>
                 {industry.description}
-              </p>
+              </Paragraph>
             </div>
           </motion.div>
         ))}

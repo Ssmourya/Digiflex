@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph'
 const IndustriesWeServe = () => {
   const industries = [
     {
@@ -37,7 +38,7 @@ const IndustriesWeServe = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto text-center px-4">
         {/* Section Header */}
        
@@ -47,7 +48,7 @@ const IndustriesWeServe = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-           Industries We Serve with Xamarin Apps
+           Industries We Serve with Xamarin Apps at Digiflex.ai
           </Heading>
       
 
@@ -69,9 +70,9 @@ const IndustriesWeServe = () => {
                 
                
                 
-                <p className="text-gray-700 text-center mt-2">
+                <Paragraph>
                   {industry.description}
-                </p>
+                </Paragraph>
               </div>
             </motion.div>
           ))}

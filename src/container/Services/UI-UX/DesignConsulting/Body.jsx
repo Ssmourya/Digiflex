@@ -411,11 +411,11 @@ const Body = () => {
       <div className="w-full bg-white/90 backdrop-blur-lg pb-10 ">
       <WrapperContainer>
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 animate-glow">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 animate-glow">
               DIGIFLEX.AI{' '}
             <span className="text-blue-600">UI/UX Consulting</span>
             {' '}Process
-          </h1>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="flex flex-col md:flex-row items-center">

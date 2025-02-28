@@ -1,15 +1,16 @@
 import React from 'react';
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph';
 const XamarinAppServices = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
          <Heading>
          
-            🛠  Our Xamarin App Development Services
+            🛠  Our Xamarin App Development Services at Digiflex.ai
         </Heading>
           <p className="text-gray-700 text-lg">
             Discover how our specialized services can elevate your mobile strategy.
@@ -24,9 +25,9 @@ const XamarinAppServices = () => {
               <Subheading>
                 Custom Xamarin App Development
               </Subheading>
-              <p className="text-gray-600 mt-2">
+              <Paragraph>
                 Tailor-made business solutions.
-              </p>
+              </Paragraph>
             </div>
           </div>
           {/* Service Card 2 */}
@@ -36,9 +37,9 @@ const XamarinAppServices = () => {
               <Subheading>
                 Xamarin App Migration & Modernization
               </Subheading>
-              <p className="text-gray-600 mt-2">
+              <Paragraph>
                 Upgrade legacy apps to Xamarin.
-              </p>
+              </Paragraph>
             </div>
           </div>
           {/* Service Card 3 */}
@@ -48,9 +49,9 @@ const XamarinAppServices = () => {
               <Subheading>
                 Native UI/UX with Xamarin.Forms
               </Subheading>
-              <p className="text-gray-600 mt-2">
+              <Paragraph>
                 Stunning, high-performing user interfaces.
-              </p>
+              </Paragraph>
             </div>
           </div>
           {/* Service Card 4 */}
@@ -60,9 +61,9 @@ const XamarinAppServices = () => {
               <Subheading>
                 Backend & API Integration
               </Subheading>
-              <p className="text-gray-600 mt-2">
+              <Paragraph>
                 Azure, REST APIs, GraphQL, Firebase.
-              </p>
+              </Paragraph>
             </div>
           </div>
           {/* Service Card 5 */}
@@ -72,9 +73,9 @@ const XamarinAppServices = () => {
               <Subheading>
                 Xamarin App Testing & Debugging
               </Subheading>
-              <p className="text-gray-600 mt-2">
+              <Paragraph>
                 Performance tuning & security audits.
-              </p>
+              </Paragraph>
             </div>
           </div>
           {/* Service Card 6 */}
@@ -84,9 +85,9 @@ const XamarinAppServices = () => {
               <Subheading>
                 Post-Launch Maintenance & Support
               </Subheading>
-              <p className="text-gray-600 mt-2">
+              <Paragraph>
                 Continuous improvements & updates.
-              </p>
+              </Paragraph>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { PhoneCall, ArrowUp, MoveRight } from 'lucide-react';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
-
+import Paragraph from '../../../../Layout/Paragraph'
 const Saas3 = () => {
   const caseStudies = [
     {
@@ -59,9 +59,9 @@ const Saas3 = () => {
                   </span>
                 </div>
                 <div className="absolute bottom-4 left-4">
-                  <Subheading className="text-white text-lg font-medium">
+                  <h3 className='text-black'>
                     {study.title}
-                  </Subheading>
+                  </h3>
                 </div>
               </div>
             </div>

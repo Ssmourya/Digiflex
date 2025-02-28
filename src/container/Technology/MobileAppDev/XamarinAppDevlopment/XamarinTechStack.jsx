@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from '../../../../Layout/Paragraph';
 const techStackData = [
   {
     icon: '💻',
@@ -36,7 +37,7 @@ const techStackData = [
 
 const XamarinTechStack = () => {
   return (
-    <section className="py-20 bg-[#F9FAFB]">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -44,7 +45,7 @@ const XamarinTechStack = () => {
             🔹  Our Xamarin Tech Stack
           </Heading>
           <p className="text-gray-700 text-lg">
-            Empowering mobile solutions with a robust and modern tech stack.
+            Empowering mobile solutions with Digiflex.ai a robust and modern tech stack.
           </p>
         </div>
         {/* Cards Grid */}
@@ -65,7 +66,7 @@ const XamarinTechStack = () => {
                 
                   <Subheading>{tech.title}</Subheading>
               
-                <p className="text-gray-600">{tech.description}</p>
+                <Paragraph className="text-gray-600">{tech.description}</Paragraph>
               </div>
             </div>
           ))}

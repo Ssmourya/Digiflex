@@ -1,6 +1,8 @@
 import React from "react";
 import { Code, Gamepad, Laptop, Smartphone, Zap, ArrowRight } from "lucide-react";
-
+import Paragraph from "../../../../Layout/Paragraph";
+import Heading from "../../../../Layout/Heading";
+import Subheading from '../../../../Layout/Subheading'
 const services = [
   {
     title: "Custom HTML5 Web Apps",
@@ -38,9 +40,9 @@ export default function HTML5Services() {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-blue-600 text-center mb-12">
+        <Heading>
           Our HTML5 App Development Services
-        </h2>
+        </Heading>
         <div className="relative">
           {/* Vertical line in the center */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-blue-100"></div>
@@ -51,8 +53,8 @@ export default function HTML5Services() {
                   <>
                     {/* Left side content */}
                     <div className="w-full md:w-5/12 text-right">
-                      <h3 className="text-2xl font-bold text-black">{service.title}</h3>
-                      <p className="text-black mt-2">{service.description}</p>
+                      <Subheading>{service.title}</Subheading>
+                      <Paragraph>{service.description}</Paragraph>
                       <a
                         href="#"
                         className="inline-flex items-center text-blue-600 transition-colors duration-300 hover:text-black mt-2"

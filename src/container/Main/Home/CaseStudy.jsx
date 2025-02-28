@@ -31,7 +31,7 @@ const technologies = [
 
 const Marquee = ({ images, direction }) => {
   return (
-    <div className="overflow-hidden h-[400px] w-[160px] relative">
+    <div className="overflow-hidden h-[300px] md:h-[350px] lg:h-[400px] w-[140px] md:w-[150px] lg:w-[160px] relative">
       <motion.div
         animate={{ y: direction === "up" ? [-400, 0] : [0, -400] }}
         transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
@@ -42,7 +42,7 @@ const Marquee = ({ images, direction }) => {
             key={index}
             src={img}
             alt="Marquee Image"
-            className="w-[150px] h-[150px] object-cover rounded-lg shadow-lg"
+            className="w-full h-[130px] md:h-[140px] lg:h-[150px] object-cover rounded-lg shadow-lg"
           />
         ))}
       </motion.div>
@@ -52,16 +52,16 @@ const Marquee = ({ images, direction }) => {
 
 const TechnologyCards = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 p-3 md:p-4 w-full">
       {technologies.map((tech, index) => (
         <div
           key={index}
-          className="p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 bg-white text-black flex items-center gap-4"
+          className="p-3 md:p-4 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 bg-white text-black flex items-center gap-3 md:gap-4"
         >
-          <div className="text-blue-600 text-2xl">{tech.icon}</div>
+          <div className="text-blue-600 text-xl md:text-2xl">{tech.icon}</div>
           <div>
-            <h3 className="font-bold text-lg">{tech.name}</h3>
-            <p className="text-gray-600 text-sm">{tech.description}</p>
+            <h3 className="font-bold text-base md:text-lg">{tech.name}</h3>
+            <p className="text-gray-600 text-xs md:text-sm">{tech.description}</p>
           </div>
         </div>
       ))}
@@ -69,31 +69,51 @@ const TechnologyCards = () => {
   );
 };
 
+// Custom breakpoint for iPads
+const useIpadBreakpoint = () => {
+  const [isIpad, setIsIpad] = React.useState(false);
+  
+  React.useEffect(() => {
+    const checkIfIpad = () => {
+      // iPad Mini is 768px width, iPad Air is 820px width in portrait mode
+      const width = window.innerWidth;
+      setIsIpad(width >= 768 && width <= 1024);
+    };
+    
+    checkIfIpad();
+    window.addEventListener('resize', checkIfIpad);
+    return () => window.removeEventListener('resize', checkIfIpad);
+  }, []);
+  
+  return isIpad;
+};
+
 const KeyFeatures = () => {
+  const isIpad = useIpadBreakpoint();
+  
   return (
     <WrapperContainer>
       <div className="relative w-full max-w-[1400px] rounded-[2.5rem] p-0.5 overflow-hidden bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-500/20">
         {/* Animated gradient overlays */}
         <div className="absolute inset-0">
-            {/* <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2" /> */}
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2" />
-            {/* <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 translate-x-1/2 translate-y-1/2" /> */}
+            <div className="absolute top-0 right-0 w-[250px] md:w-[300px] lg:w-[400px] h-[250px] md:h-[300px] lg:h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute bottom-0 left-0 w-[250px] md:w-64 lg:w-96 h-[250px] md:h-64 lg:h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2" />
         </div>
         
         {/* Inner Content */}
-        <div className="relative bg-white rounded-[2.4rem] p-8 sm:p-12 lg:p-10 overflow-hidden">
+        <div className="relative bg-white rounded-[2.4rem] p-6 md:p-8 lg:p-12 overflow-hidden">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl font-bold text-blue-600 text-center"
+            className="text-3xl md:text-4xl font-bold text-blue-600 text-center mb-6 md:mb-8"
           >
             Key Features
           </motion.h2>
           
-          <div className="flex flex-col md:flex-row gap-10 items-center">
-            <div className="flex gap-4">
+          {/* iPad-specific layout adjustments */}
+          <div className={`flex ${isIpad ? 'flex-col' : 'flex-col lg:flex-row'} gap-6 md:gap-8 items-center`}>
+            <div className="flex gap-4 justify-center">
               <Marquee images={images1} direction="up" />
               <Marquee images={images2} direction="down" />
             </div>

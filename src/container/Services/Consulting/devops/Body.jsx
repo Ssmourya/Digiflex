@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 
 import devops from "../../../../assets/devops2.png";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import FAQ from "./FAQ";
+
 
 function Body() {
   return (
@@ -64,6 +66,10 @@ function Body() {
 
       {/* Industries Section */}
       <IndustriesSection />
+
+      {/* FAQ Section */}
+      <FAQ/>
+
     </div>
   );
 }

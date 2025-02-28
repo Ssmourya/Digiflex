@@ -28,7 +28,7 @@ export default function WhyChooseHTML5() {
   ];
 
   return (
-    <section className="py-12 bg-background">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Image Section */}
@@ -42,7 +42,7 @@ export default function WhyChooseHTML5() {
           {/* Benefits Section */}
           <div className="md:w-1/2">
             <Heading className="text-center">
-              Why Choose HTML5 for App Development?
+              Why Choose digiflex.ai for HTML5 App Development?
             </Heading>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               {benefits.map((benefit, index) => (

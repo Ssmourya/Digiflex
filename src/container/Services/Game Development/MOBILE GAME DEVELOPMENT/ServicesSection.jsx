@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
@@ -44,6 +43,49 @@ const services = [
   },
 ];
 
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
+const cardHover = {
+  scale: 1.05,
+  transition: {
+    duration: 0.3,
+    ease: "easeInOut",
+  },
+};
+
+const lineEffect = {
+  before: { width: "0%", opacity: 0 },
+  after: {
+    width: "100%",
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 const ServicesSection = () => {
   return (
     <WrapperContainer>
@@ -51,18 +93,32 @@ const ServicesSection = () => {
         <Heading>Digiflex Mobile Game Development Services</Heading>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="p-6 bg-gray-100 rounded-lg shadow-lg text-center flex flex-col items-center"
+            className="p-6 bg-gray-100 rounded-lg shadow-lg text-center flex flex-col items-center relative overflow-hidden"
+            variants={cardVariants}
+            whileHover={cardHover}
           >
+            <motion.div
+              className="absolute bottom-0 left-0 h-1 bg-blue-500"
+              initial="before"
+              animate="after"
+              variants={lineEffect}
+            ></motion.div>
             <div className="text-5xl mb-4">{service.icon}</div>
             <Subheading>{service.title}</Subheading>
             <p className="text-gray-600">{service.description}</p>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </WrapperContainer>
   );
 };

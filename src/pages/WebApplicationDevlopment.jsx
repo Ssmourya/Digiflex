@@ -4,6 +4,8 @@ import WebApplication2 from "../container/Services/Custom App/Web Application De
 import WebApplication3 from "../container/Services/Custom App/Web Application Devlopment/WebApplication3";
 import WebApplication4 from "../container/Services/Custom App/Web Application Devlopment/WebApplication4";
 import WebApplication5 from "../container/Services/Custom App/Web Application Devlopment/WebApplication5";
+import FrequentlyAskedQuestions from "../container/Services/Custom App/Web Application Devlopment/FrequentlyAskedQuestions";
+
 
 export default function Application() {
   return (
@@ -30,14 +32,9 @@ export default function Application() {
             Custom Web App Development Services
           </h2>
           <p className="text-lg leading-relaxed mb-6">
-            At **Digiflex**, we specialize in building **scalable and secure custom web applications** tailored to meet your business needs. 
-            Our expert team ensures **seamless functionality, user-friendly interfaces, and innovative solutions** to drive success.
-          </p>
+          Tailored Web Solutions for Seamless Performance, Scalability, and Business Growth.</p>
 
-          <p className="text-gray-300 text-md mb-6">
-            We integrate **the latest technologies, cloud solutions, and AI-driven insights** to optimize your applications for **performance and scalability**.
-            Whether it's **eCommerce, enterprise solutions, or SaaS platforms**, we build **customized web apps** for your business growth.
-          </p>
+          
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center space-x-4">
@@ -52,10 +49,14 @@ export default function Application() {
       </div>
 
       {/* Additional Sections */}
+     
       <WebApplication2 />
       <WebApplication3 />
       <WebApplication4 />
       <WebApplication5 />
+      
+      <FrequentlyAskedQuestions/>
+      
     </>
   );
 }

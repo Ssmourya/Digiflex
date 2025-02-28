@@ -2,7 +2,7 @@ import React from "react";
 import { Data2 } from "./Data";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
-const Cardparten2 = () => {
+const Blockchain_application  = () => {
   return (
     <div className="flex flex-col items-center">
     <WrapperContainer>
@@ -26,4 +26,4 @@ const Cardparten2 = () => {
   );
 };
 
-export default Cardparten2;
+export default Blockchain_application ;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
+import Fontheading from '../../../../Layout/Fontheading';
 
 const data = [
   {
@@ -53,7 +54,9 @@ function Intercloud_need() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="font-semibold">{item.title}</div>
+            <Fontheading>
+              <div>{item.title}</div>
+              </Fontheading>
               {hoveredIndex === index && (
                 <p className="mt-2 transition-opacity duration-500">{item.details}</p>
               )}

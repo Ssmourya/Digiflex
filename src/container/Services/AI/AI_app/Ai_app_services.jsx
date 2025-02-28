@@ -10,6 +10,7 @@ import AI_Machine from '../../../../assets/AI_Machine.jpg';
 import AI_Healthcare from '../../../../assets/AI_Healthcare.jpeg';
 import AI_Computer_vision from '../../../../assets/AI_Computer_vision.jpeg';
 import AI_Automation_Business from '../../../../assets/AI_Automation_Business.jpg';
+import Fontheading from "../../../../Layout/Fontheading";
 
 const services = [
   {
@@ -98,9 +99,9 @@ function AiAppServices() {
 
           {/* Right Side - Text (Resizes for Smaller Screens) */}
           <div className="w-full lg:w-1/2 p-6 sm:p-8 flex flex-col justify-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+            <Fontheading><h2 className=" sm:text-2xl md:text-3xl lg:text-4xl mb-4">
               {services[currentSlide].title}
-            </h2>
+            </h2></Fontheading>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
               {services[currentSlide].description}
             </p>

@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Cardpart1 } from "../container/Services/Custom App/BlockChain/Cardpart1";
-import Cardparten2 from "../container/Services/Custom App/BlockChain/Cardparten2";
-import Cardpart3 from "../container/Services/Custom App/BlockChain/Cardpart3";
-import Cardpart4 from "../container/Services/Custom App/BlockChain/Cardpart4";
-import Cardpart5 from "../container/Services/Custom App/BlockChain/Cardpart5";
-import Card6part from "../container/Services/Custom App/BlockChain/Card6part";
+import { Blockchain_intro } from "../container/Services/Custom App/BlockChain/Blockchain_intro";
+import Blockchain_application  from "../container/Services/Custom App/BlockChain/Blockchain_application ";
+import Blockchain_application_development from "../container/Services/Custom App/BlockChain/Blockchain_application_development";
+import Blockchain_platforms from "../container/Services/Custom App/BlockChain/Blockchain_platforms";
+import Blockchain_services from "../container/Services/Custom App/BlockChain/Blockchain_services";
+import Blockchain_support  from "../container/Services/Custom App/BlockChain/Blockchain_support ";
 import videoBg from "../assets/blockchain_video.mp4";
 import WrapperContainer from "../Layout/WrapperContainer";
 import BlockchainDevelopmentFAQ from "../container/Services/Custom App/BlockChain/BlockchainDevelopmentFAQ";
@@ -62,6 +62,16 @@ function Home() {
       </div>
 
       {/* Blockchain Service Components */}
+<<<<<<< HEAD
+      <div>
+      <WrapperContainer>
+        <Blockchain_intro />
+        <Blockchain_application  />
+        <Blockchain_application_development />
+        <Blockchain_platforms />
+        <Blockchain_services />
+        <Blockchain_support  />
+=======
      
         <WrapperContainer>
           <Cardpart1 />
@@ -70,6 +80,7 @@ function Home() {
           <Cardpart4 />
           <Cardpart5 />
           <Card6part />
+>>>>>>> 594f10bf235bbb21515931aa7031fe48128ec240
         </WrapperContainer>
         <BlockchainDevelopmentFAQ/>
       

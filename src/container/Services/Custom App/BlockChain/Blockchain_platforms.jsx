@@ -23,7 +23,7 @@ const platforms = [
   { img: img9, name: "Polkadot" },
 ];
 
-const Cardpart4 = () => {
+const Blockchain_platforms = () => {
   return (
     <WrapperContainer>
     <div className="">
@@ -61,4 +61,4 @@ const Cardpart4 = () => {
   );
 };
 
-export default Cardpart4;
+export default Blockchain_platforms;

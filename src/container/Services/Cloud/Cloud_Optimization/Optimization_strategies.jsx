@@ -3,6 +3,7 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import optimizationimg from "../../../../assets/optimizationimg.avif";
 import Paragraph from "../../../../Layout/Paragraph";
+import Fontheading from "../../../../Layout/Fontheading";
 
 const StrategiesData = [
   {
@@ -60,11 +61,12 @@ function OptimizationStrategies() {
               className="w-full duration-300 border-b border-gray-600 relative overflow-hidden"
             >
               <div
-                className="p-4 cursor-pointer transition-transform duration-300 text-2xl hover:translate-y-2 text-blue-800"
+                className="p-4 cursor-pointer transition-transform duration-300  hover:translate-y-2 "
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(null)}
-              >
+              ><Fontheading>
                 {strategy.title}
+                </Fontheading>
               </div>
               {activeIndex === index && (
                 <Paragraph>

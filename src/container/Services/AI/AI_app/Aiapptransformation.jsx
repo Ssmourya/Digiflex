@@ -1,6 +1,7 @@
 import React from "react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Fontheading from "../../../../Layout/Fontheading";
 
 const benefits = [
   {
@@ -48,12 +49,14 @@ function Aiapptransformation() {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row w-full max-w-4xl bg-white border border-gray-300 rounded-lg p-6 mb-4 shadow-md "
+                  className="flex gap-5 flex-col md:flex-row w-full max-w-4xl bg-white border border-gray-300 rounded-lg p-6 mb-4 shadow-md h-32"
                 >
-                  <h2 className="text-4xl font-semibold text-gray-800 w-1/3">
+                <Fontheading>
+                <h1 className="w-[300px]">
                     {benefit.title}
-                  </h2>
-                  <p className="text-gray-600 w-2/3">{benefit.description}</p>
+                    </h1>
+                  </Fontheading>
+                  <p className="text-gray-600">{benefit.description}</p>
                 </div>
               ))}
             </div>

@@ -62,7 +62,6 @@ function Home() {
       </div>
 
       {/* Blockchain Service Components */}
-<<<<<<< HEAD
       <div>
       <WrapperContainer>
         <Blockchain_intro />
@@ -71,19 +70,9 @@ function Home() {
         <Blockchain_platforms />
         <Blockchain_services />
         <Blockchain_support  />
-=======
-     
-        <WrapperContainer>
-          <Cardpart1 />
-          <Cardparten2 />
-          <Cardpart3 />
-          <Cardpart4 />
-          <Cardpart5 />
-          <Card6part />
->>>>>>> 594f10bf235bbb21515931aa7031fe48128ec240
         </WrapperContainer>
         <BlockchainDevelopmentFAQ/>
-      
+      </div>
     </>
   );
 }

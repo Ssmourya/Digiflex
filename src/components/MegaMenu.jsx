@@ -77,7 +77,7 @@ const NavItem = ({ service }) => {
     const handleMouseLeave = () => {
         timeoutRef.current = setTimeout(() => {
             setIsOpen(false);
-        }, 10); // Small delay before closing
+        }, 100); // Small delay before closing
     };
 
     return (

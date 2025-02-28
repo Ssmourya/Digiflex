@@ -266,53 +266,33 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
     },
-    {
-      id: "CS",
-      icon: Cloudy,
-      title: "Cloud",
-      color: "text-[#00C8D5]",
-      description:
-        "Cloud services offer online computing resources like storage, servers, and software, enabling scalability and cost-efficiency. ",
+
+    // Cloud start
+    { id: 'CS', 
+      icon: Cloudy, 
+      title: 'Cloud',
+      color: 'text-[#00C8D5]',
+      description: 'Cloud services offer online computing resources like storage, servers, and software, enabling scalability and cost-efficiency. ',
       features: [
-        {
-          icon: Cloud,
-          title: "Google Cloud",
-          path: "/services/cloud/google_components",
-        },
-        { icon: Cloud, title: "Azure Cloud", path: "/services/cloud/azure" },
-        { icon: Server, title: "AWS", path: "/services/cloud/AWS" },
-        {
-          icon: MoveUpRight,
-          title: "Cloud Migration",
-          path: "/services/cloud/cloud_migration",
-        },
-        {
-          icon: MoveUpRight,
-          title: "Intercloud Migration",
-          path: "/services/cloud/intercloud_Migration",
-        },
-        {
-          icon: Boxes,
-          title: "Cloud Native",
-          path: "/services/cloud/CloudNative",
-        },
-        {
-          icon: Database,
-          title: "Cloud Optimization",
-          path: "/services/cloud/CloudOptimization",
-        },
-      ],
-      image:
-        "https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg",
+        { icon: Cloud, title: 'Google Cloud', path: '/google-cloud-platform-services' },
+        { icon: Cloud, title: 'Azure Cloud', path: '/microsoft-azure-cloud-services'},
+        { icon: Server, title: 'AWS', path: '/aws-cloud-services'},      
+        { icon: MoveUpRight, title: 'Cloud Migration', path: '/legacy-to-cloud-migration-services'},
+        { icon: MoveUpRight, title: 'Intercloud Migration', path: '/intercloud-migration-solutions'},
+        { icon: Boxes, title: 'Cloud Native', path: '/cloud-native-development-services'},
+        { icon: Database, title: 'Cloud Optimization', path: '/cloud-optimization-services'},    
+
+        ],
+      image: 'https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg'
     },
 
-    {
-      id: "AI",
-      icon: BrainCircuit,
-      title: "AI DEVELOPMENT",
-      color: "text-[#00C8D5]",
-      description:
-        "AI development involves machine learning, deep learning, NLP, and computer vision. Key steps: data collection, model training, testing, and deployment. Used in automation, healthcare, finance, and robotics.",
+    // Cloud End 
+
+    { id: 'AI', 
+      icon: BrainCircuit, 
+      title: 'AI DEVELOPMENT',
+      color: 'text-[#00C8D5]',
+      description: 'AI development involves machine learning, deep learning, NLP, and computer vision. Key steps: data collection, model training, testing, and deployment. Used in automation, healthcare, finance, and robotics.',
       features: [
         { icon: Cloud, title: "AI App", path: "/services/AI/Ai_development" },
       ],
@@ -330,43 +310,43 @@ const Navbar = () => {
         {
           icon: Cpu,
           title: "Exhange Software",
-          path: "/services/blockchain/exchangesoftware",
+          path: "/crypto-exchange-software-development",
         },
         {
           icon: Database,
           title: "Initial Coin Offering",
-          path: "/services/blockchain/initialcoinoffering",
+          path: "/initial-coin-offering-ico-development",
         },
         {
           icon: Currency,
           title: "Cryptocurrency App",
-          path: "/services/blockchain/cryptocurrency",
+          path: "/cryptocurrency-app-development",
         },
         {
           icon: Wallet,
           title: "Cryptocurrency Wallet",
-          path: "/services/blockchain/cryptocurrencywallet",
+          path: "/cryptocurrency-wallet-development",
         },
         {
           icon: Signature,
           title: "Smart Contract",
-          path: "/services/blockchain/smartcontractdevelopment",
+          path: "/smart-contract-development-services",
         },
         {
           icon: MessageSquareLock,
           title: "Nft Marketplace",
-          path: "/services/blockchain/nftmarketplacedevelopment",
+          path: "/nft-marketplace-development",
         },
 
         {
           icon: ServerIcon,
           title: "Defi Development Services",
-          path: "/services/blockchain/defidevelopmentservices",
+          path: "/defi-development-services",
         },
         {
           icon: ServerIcon,
           title: "Web3 Development",
-          path: "/services/blockchain/web3development",
+          path: "/web3-development-services",
         },
       ],
       image:
@@ -430,46 +410,14 @@ const Navbar = () => {
         {
           icon: Cpu,
           title: "Application Architecture",
-          path: "/services/salesforce/applicationarchitecture",
+          path: "/application-architecture-design",
         },
         {
-          icon: Database,
-          title: "Initial Coin Offering",
-          path: "/services/blockchain/initialcoinoffering",
+          icon: Cpu,
+          title: "Consulting & Assesment",
+          path: "/salesforce-consulting-assessment",
         },
-        {
-          icon: Currency,
-          title: "Cryptocurrency App",
-          path: "/services/blockchain/cryptocurrency",
-        },
-        {
-          icon: Wallet,
-          title: "Cryptocurrency Wallet",
-          path: "/services/blockchain/cryptocurrencywallet",
-        },
-        {
-          icon: Signature,
-          title: "Smart Contract",
-          path: "/services/blockchain/smartcontractdevelopment",
-        },
-        {
-          icon: MessageSquareLock,
-          title: "Nft Marketplace",
-          path: "/services/blockchain/nftmarketplacedevelopment",
-        },
-    
-        {
-          icon: ServerIcon,
-          title: "Defi Development Services",
-          path: "/services/blockchain/defidevelopmentservices",
-        },
-        {
-          icon: ServerIcon,
-          title: "Web3 Development",
-          path: "/services/blockchain/web3development",
-        },
-
-
+     
       ],
       image:
       "https://images.unsplash.com/photo-1640032152000-f273e2ca6922?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

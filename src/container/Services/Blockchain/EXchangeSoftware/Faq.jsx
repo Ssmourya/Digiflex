@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-// import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 

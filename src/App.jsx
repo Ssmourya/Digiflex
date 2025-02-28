@@ -101,6 +101,8 @@ import CloudNative from "./pages/CloudNative";
 //AI app
 
 import Ai_development from "./pages/Ai_development"
+import ConsultingAssesment from "./pages/ConsultingAssesment";
+
 
 function App() {
   const location = useLocation();
@@ -226,25 +228,25 @@ function App() {
         />
         {/* Blockchain development start*/}
         <Route
-          path="/services/blockchain/exchangesoftware"
+          path="/crypto-exchange-software-development"
           element={<ExchangeShoftware />}
         />
         <Route
-          path="/services/blockchain/initialcoinoffering"
+          path="/initial-coin-offering-ico-development"
           element={<InitialCoinOffering />}
         />
         <Route
-          path="/services/blockchain/cryptocurrency"
+          path="/cryptocurrency-app-development"
           element={<CryptocurrencyApp />}
         />
 
         <Route
-          path="/services/blockchain/smartcontractdevelopment"
+          path="/smart-contract-development-services"
           element={<SmartContractDevelopment />}
         />
 
         <Route
-          path="/services/blockchain/cryptocurrencywallet"
+          path="/cryptocurrency-wallet-development"
           element={<CryptocurrencyWallet />}
         />
 
@@ -258,9 +260,14 @@ function App() {
           element={<DefiDevelopment />}
         />
 
-        <Route path="/services/blockchain/web3development" element={<Web3 />} />
+
+<Route path="/web3-development-services" element={<Web3/>}/>
 
 {/* Blockchain development end */}
+
+{/* salesforce start */}
+<Route path="/application-architecture-design" element={<ApplicationArchitecture/>} />
+<Route path="/salesforce-consulting-assessment" element={<ConsultingAssesment/>} />
 
 
         {/* Frontend Technology */}
@@ -349,23 +356,14 @@ function App() {
           element={<ResourceAugmentation />}
         />
 
-        {/* Cloud */}
-        <Route path="/services/cloud/azure" element={<Azure />} />
-        <Route
-          path="/services/cloud/cloud_migration"
-          element={<Cloud_Migration />}
-        />
-        <Route path="/services/cloud/google_components" element={<Google />} />
-        <Route
-          path="/services/cloud/intercloud_Migration"
-          element={<Intercloud_Migration />}
-        />
-        <Route path="/services/cloud/AWS" element={<AWS />} />
-        <Route path="/services/cloud/CloudNative" element={<CloudNative />} />
-        <Route
-          path="/services/cloud/CloudOptimization"
-          element={<CloudOptimization />}
-        />
+      {/* Cloud */}
+      <Route path="/microsoft-azure-cloud-services" element={<Azure/>} />
+      <Route path="/legacy-to-cloud-migration-services" element={<Cloud_Migration/>}/>
+      <Route path="/google-cloud-platform-services" element={<Google/>} />
+      <Route path="/intercloud-migration-solutions" element={<Intercloud_Migration/>}/>
+      <Route path="/aws-cloud-services" element={<AWS/>}/>
+      <Route path="/cloud-native-development-services" element={<CloudNative/>}/>
+      <Route path="/cloud-optimization-services" element={<CloudOptimization/>}/>
 
         {/*Ai app*/}
 

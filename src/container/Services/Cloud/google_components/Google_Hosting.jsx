@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Google_hosting from "../../../../assets/google_hosting.jpg";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Fontheading from "../../../../Layout/Fontheading";
+
 
 function Google_Hosting() {
   const [hoveredIndexes, setHoveredIndexes] = useState([]);
@@ -43,7 +45,9 @@ function Google_Hosting() {
             >
               {/* Service Name */}
               <p className="border-l-4 border-[#0B57D0] pl-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold cursor-pointer">
+                <Fontheading>
                 {service.name}
+                </Fontheading>
               </p>
 
               {/* Description Appears Below on Hover with Smooth Expand Animation */}

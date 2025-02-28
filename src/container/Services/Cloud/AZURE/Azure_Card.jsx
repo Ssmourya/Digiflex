@@ -2,6 +2,7 @@ import React from 'react'
 import Heading from '../../../../Layout/Heading'
 import WrapperContainer from '../../../../Layout/WrapperContainer'
 import Subheading from '../../../../Layout/Subheading'
+import Fontheading from '../../../../Layout/Fontheading'
 
 function Azure_Card() {
   return (
@@ -14,7 +15,7 @@ function Azure_Card() {
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-6">
        {/* Card 1 */}
        <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px] flex flex-col justify-between">
-       <Subheading><h2 className="text-xl font-semibold">Get Started for Free with Digiflex</h2></Subheading>
+       <Fontheading>Get Started for Free with Digiflex</Fontheading>
          <p className="text-gray-600 mt-2">
            Experience Azure with Digiflex’s expertise and enjoy free services with a USD 200 credit for up to 30 days.
          </p>
@@ -27,7 +28,7 @@ function Azure_Card() {
 
        {/* Card 2 */}
        <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px] flex flex-col justify-between">
-         <Subheading><h2 className="text-xl font-semibold">Flexible Pay-As-You-Go with Digiflex</h2></Subheading>
+       <Fontheading>Flexible Pay-As-You-Go with Digiflex</Fontheading>
          <p className="text-gray-600 mt-2">
            Scale effortlessly and pay only for what you use beyond free service limits with Digiflex’s Azure solutions.
          </p>

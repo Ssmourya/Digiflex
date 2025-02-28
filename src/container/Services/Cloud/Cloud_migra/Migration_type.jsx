@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
+import Fontheading from '../../../../Layout/Fontheading';
 
 const strategies = [
     { title: "Rehosting (\"Lift and Shift\")", description: "Moving applications to the cloud without changes." },
@@ -27,11 +28,12 @@ function Migration_type() {
       {strategies.map((strategy, index) => (
         <div key={index} className="w-full duration-300 border-b border-gray-600 relative overflow-hidden">
           <div
-            className="p-4 cursor-pointer transition-transform duration-300 text-2xl hover:translate-y-2 text-blue-800"
+            className="p-4 cursor-pointer transition-transform duration-300 hover:translate-y-2 "
             onMouseEnter={() => setActiveIndex(index)}
             onMouseLeave={() => setActiveIndex(null)}
-          >
+          ><Fontheading>
             {strategy.title}
+            </Fontheading>
           </div>
           {activeIndex === index && (
             <div className="p-4 bg-gray-800 transition-opacity duration-300 text-xl opacity-100">

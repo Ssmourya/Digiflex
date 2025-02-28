@@ -1,6 +1,7 @@
 import React from "react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Fontheading from "../../../../Layout/Fontheading";
 
 const steps = [
   {
@@ -38,9 +39,11 @@ function MigrationSteps() {
             key={index}
             className="group bg-white border border-gray-200 p-6 rounded-2xl shadow-lg transition ease-in-out transform hover:bg-blue-600 duration-400 hover:scale-105"
           >
-            <h2 className="text-2xl font-semibold mb-2 transition duration-400 ease-in-out group-hover:text-white">
+            <Fontheading>
+            <h2 className=" mb-2 transition duration-400 ease-in-out group-hover:text-white">
               {step.title}
             </h2>
+              </Fontheading>
             <p className="text-gray-700 transition duration-400 ease-in-out  group-hover:text-white">
               {step.description}
             </p>

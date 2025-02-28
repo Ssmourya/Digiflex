@@ -4,7 +4,7 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 
-const Card6part = () => {
+const Blockchain_support  = () => {
   return (
    <>
    <WrapperContainer>
@@ -41,4 +41,4 @@ const Card6part = () => {
   );
 };
 
-export default Card6part;
+export default Blockchain_support ;

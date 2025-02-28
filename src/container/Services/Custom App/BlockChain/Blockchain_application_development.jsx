@@ -5,7 +5,7 @@ import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 import Subheading from "../../../../Layout/Subheading";
 
-const Cardpart3 = () => {
+const Blockchain_application_development = () => {
   return (
     <WrapperContainer>
       <div>
@@ -51,4 +51,4 @@ const Cardpart3 = () => {
   );
 };
 
-export default Cardpart3;
+export default Blockchain_application_development;

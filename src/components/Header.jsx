@@ -41,6 +41,7 @@ import logo from "../assets/digiflex.png";
 import image from "../assets/mobileappdev.jpg"
 import { FaAngular, FaBootstrap, FaReact, FaVuejs, FaApple, FaAndroid,  FaCode, FaMicrosoft, FaHtml5 } from "react-icons/fa";
 import { FaFlutter } from "react-icons/fa6";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -281,8 +282,9 @@ const Navbar = () => {
       color: 'text-[#00C8D5]',
       description: 'AI development involves machine learning, deep learning, NLP, and computer vision. Key steps: data collection, model training, testing, and deployment. Used in automation, healthcare, finance, and robotics.',
       features: [
-        { icon: Cloud, title: 'AI App', path: '/services/AI/Ai_development' },  
-
+        { icon: Cloud, title: 'AI App Development', path: '/ai-app-development' },
+        { icon: Cloud, title: 'Ai Softwae Development', path: '/ai-software-development'}, 
+        { icon: Cloud, title: 'LLM Development', path: '/large-language-model-development '},
         ],
       image: 'https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg'
     },

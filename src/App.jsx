@@ -92,6 +92,8 @@ import CloudNative from "./pages/CloudNative"
 //AI app
 
 import Ai_development from "./pages/Ai_development"
+import Ai_software from "./pages/Ai_software";
+import Llm_development from "./pages/Llm_development"
 
 function App() {
   const location = useLocation();
@@ -327,7 +329,11 @@ if (match?.params.path === "about-us" || match?.params.path === "contact-us") {
 
       {/*Ai app*/}
 
-      <Route path="/services/AI/Ai_development" element={<Ai_development/>}/>
+      <Route path="/ai-app-development" element={<Ai_development/>}/>
+      <Route path="/ai-software-development" element={<Ai_software/>}/>
+      <Route path="/large-language-model-development" element={<Llm_development/>}/>
+
+      
       </Routes>
 
    <ReviewsSection/>

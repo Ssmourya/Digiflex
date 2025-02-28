@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import exchangesoftware from "../../../../assets/Google_video.mp4";
+import video2 from '../../../../assets/video2.mp4';
 import AWS_logo from "../../../../assets/AWS_logo.avif";
 
 function AwsHero() {
@@ -17,7 +17,6 @@ function AwsHero() {
   return (
     <>
       <div className="relative w-full min-h-screen overflow-hidden bg-black">
-        {/* Background Video */}
         <div className="absolute inset-0 w-full h-full z-0">
           <video
             autoPlay
@@ -27,7 +26,7 @@ function AwsHero() {
             style={{ position: "absolute", top: "0", left: "0" }}
           >
             <source
-              src={exchangesoftware} // Replace with your video URL
+              src={video2} // Replace with your video URL
               type="video/mp4"
             />
           </video>

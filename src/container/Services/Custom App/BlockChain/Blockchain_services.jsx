@@ -4,7 +4,7 @@ import img10 from "../../../../assets/blockchain.jpg";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 
-const Cardpart5 = () => {
+const Blockchain_services = () => {
   return (
     <WrapperContainer>
       <div className="text-center md:text-left">
@@ -46,4 +46,4 @@ const Cardpart5 = () => {
   );
 };
 
-export default Cardpart5;
+export default Blockchain_services;

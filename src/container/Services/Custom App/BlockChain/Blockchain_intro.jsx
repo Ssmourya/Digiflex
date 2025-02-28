@@ -3,7 +3,7 @@ import { Data, newData } from "./Data";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Subheading from "../../../../Layout/Subheading";
 
-export const Cardpart1 = () => {
+export const Blockchain_intro = () => {
   return (
     <>
       <WrapperContainer>

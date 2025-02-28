@@ -328,31 +328,31 @@ function App() {
         {/* Game development */}
 
         <Route
-          path="/services/game-development/mobile-game-development"
+          path="/mobile-game-development"
           element={<MobileGameDevelopment />}
         />
         <Route
-          path="/services/game-development/unity3d-game-development"
+          path="/unity3d-game-development"
           element={<Unity3dGameDevelopment />}
         />
         <Route
-          path="/services/game-development/unreal-game-development"
+          path="/unreal-game-development"
           element={<UnrealGameDevelopment />}
         />
         <Route
-          path="/services/game-development/pc-game-development"
+          path="/pc-game-development-services"
           element={<PCGameDevelopment />}
         />
         <Route
-          path="/services/game-development/game-art-services"
+          path="/game-art-design-services"
           element={<GameArtServices />}
         />
         <Route
-          path="/services/game-development/vr-xr-simulation"
+          path="/vr-xr-simulation-development"
           element={<VR_XRSimulation />}
         />
-        <Route
-          path="/services/game-development/resource-augmentation"
+        <Route 
+          path="/game-development-resource-augmentation"
           element={<ResourceAugmentation />}
         />
 

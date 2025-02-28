@@ -401,22 +401,53 @@ export const services = [
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
     },
     {
-        id: "game-dev",
+        id: "GameDev",
         icon: Joystick,
         title: "Game Development",
         color: "text-purple-500",
-        description: "Immersive game development services for mobile, PC, and VR/AR experiences.",
+        description:
+          "Immersive game development services for mobile, PC, and VR/AR experiences.",
         features: [
-            { icon: Smartphone, title: "Mobile Game Development", path: "/services/game-development/mobile-game-development" },
-            { icon: Joystick, title: "Unity3D Game Development", path: "/services/game-development/unity3d-game-development" },
-            { icon: Joystick, title: "Unreal Game Development", path: "/services/game-development/unreal-game-development" },
-            { icon: Monitor, title: "PC Game Development", path: "/services/game-development/pc-game-development" },
-            { icon: PenTool, title: "Game Art Services", path: "/services/game-development/game-art-services" },
-            { icon: Glasses, title: "VR/XR Simulation", path: "/services/game-development/vr-xr-simulation" },
-            { icon: UserCheck, title: "Resource Augmentation", path: "/services/game-development/resource-augmentation" },
+          {
+            title: "Mobile Game Development",
+            icon: Smartphone,
+            path: "/mobile-game-development",
+          },
+          {
+            title: "Unity3D Game Development",
+            icon: Joystick,
+            path: "/unity3d-game-development",
+          },
+          {
+            title: "Unreal Game Development",
+            icon: Joystick,
+            path: "/unreal-game-development",
+          },
+          {
+            title: "PC Game Development",
+            icon: Monitor,
+            path: "/pc-game-development-services",
+          },
+          {
+            title: "Game Art Services",
+            icon: PenTool,
+            path: "/game-art-design-services",
+          },
+          {
+            title: "VR/XR Simulation",
+            icon: Glasses,
+            path: "/vr-xr-simulation-development",
+          },
+          {
+            title: "Resource Augmentation",
+            icon: UserCheck,
+            path: "/game-development-resource-augmentation",
+          },
         ],
-        image: "https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=2070&auto=format&fit=crop",
-    },
+        image:
+          "https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+  
     {
         id: "devops",
         icon: Server,

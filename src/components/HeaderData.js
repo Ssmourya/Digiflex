@@ -501,18 +501,18 @@ export const services = [
         features: [
             { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
             { icon: Globe, title: "Java/J2EE", path: "/java-j2ee-development-services" },
-            { icon: Globe, title: "Python", path: "/tech/web/python" },
-            { icon: Globe, title: ".NET", path: "/tech/web/dotnet" },
+            { icon: Globe, title: "Python", path: "/python-development-services" },
+            { icon: Globe, title: ".NET", path: "/dotnet-development-services" },
             {
                 icon: Globe,
                 title: "Ruby on Rails (ROR)",
-                path: "/tech/web/ruby-on-rails",
+                path: "/ruby-on-rails-development",
             },
-            { icon: Globe, title: "Golang", path: "/tech/web/golang" },
+            { icon: Globe, title: "Golang", path: "/golang-development-services" },
             {
                 icon: Globe,
                 title: "PHP: Laravel",
-                path: "/tech/web/laravel",
+                path: "/php-laravel-codeigniter-development",
             },
             {
                 icon: Globe,

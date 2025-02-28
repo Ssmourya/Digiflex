@@ -88,6 +88,7 @@ import CloudOptimization from './pages/CloudOptimization';
 
 import WebsiteTechDevlopmet from './pages/Mern'
 import Java from "./pages/JavaDevelopemt"
+import PythonDevelopment from "./pages/PythonDevelopment";
 
 //Cloud
 
@@ -324,6 +325,10 @@ function App() {
       <Route
       path="/java-j2ee-development-services"
       element={<Java/>}
+    />
+      <Route
+      path="/python-development-services"
+      element={<PythonDevelopment/>}
     />
         {/* Game development */}
 

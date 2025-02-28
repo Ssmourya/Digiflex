@@ -55,7 +55,7 @@ const IndustriesWeServe = () => {
         transition={{ duration: 1 }}
         className="text-5xl font-extrabold mb-2 text-[#172554]"
       >
-        Industries We Serve with Flutter Apps
+        Industries We Serve at Digiflex.ai with Flutter Apps
       </Heading>
       
       {/* Subheading in Title */}

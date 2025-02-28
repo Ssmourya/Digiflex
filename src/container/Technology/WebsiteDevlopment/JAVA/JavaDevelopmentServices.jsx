@@ -14,7 +14,7 @@ const services = [
     image: 'https://i.pinimg.com/originals/28/35/b0/2835b06c053a1fdab58a4b8d7006f73b.gif',
   },
   {
-    title: 'Full Stack Development', 
+    title: 'Full Stack Development',
     description: [
       'Building end-to-end applications with frontend and backend integration.',
       'Efficient and scalable solutions with Java and modern frameworks.',
@@ -81,38 +81,37 @@ const services = [
 
 export default function JavaDevelopmentServices() {
   return (
-     
-      <div className="py-16 px-8 bg-white">
-        <Heading
-          className="text-5xl font-bold text-center mb-12 text-blue-600"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Our Java Development Services
-        </Heading>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              className="bg-gray-50 text-black rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 relative"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <motion.img
-                src={service.image}
-                alt={service.title} 
-                className="w-full h-56 object-cover"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.5 }}
-              />
-              <div className="p-8">
-                <Subheading>
-                  <h3>{service.title}</h3>
-                </Subheading>
-                <Paragraph>
+    <div className="py-16 px-8 bg-white">
+      <Heading
+        className="text-5xl font-bold text-center mb-12 text-blue-600"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Digiflex.ai - Our Java Development Services
+      </Heading>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {services.map((service, index) => (
+          <motion.div
+            key={index}
+            className="bg-gray-50 text-black rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 relative"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <motion.img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-56 object-cover"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.5 }}
+            />
+            <div className="p-8">
+              <Subheading>
+                <h3>{service.title}</h3>
+              </Subheading>
+              <Paragraph>
                 <ul className="space-y-3">
                   {service.description.map((desc, i) => (
                     <li key={i} className="flex items-start">
@@ -120,12 +119,11 @@ export default function JavaDevelopmentServices() {
                     </li>
                   ))}
                 </ul>
-                </Paragraph>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+              </Paragraph>
+            </div>
+          </motion.div>
+        ))}
       </div>
-    
+    </div>
   );
 }

@@ -29,7 +29,7 @@ export default function DevelopmentProcess() {
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
-          Our Development Process (Steps)
+          Our Development Process at Digiflex.ai (Steps)
         </h2>
         <div className="relative">
           {/* Horizontal connector line */}

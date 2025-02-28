@@ -15,12 +15,12 @@ const HeroSection = () => {
         {/* Heading */}
         <div className="space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-[fadeIn_1s_ease-in]">
-            MERN Stack Development
+            Quest Digiflex - MERN Stack Development
           </h1>
           
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-gray-200 mb-12 animate-[fadeIn_1s_ease-in_0.3s]">
-            Building powerful web applications with MongoDB, Express.js, React.js, and Node.js
+            Building powerful web applications with MongoDB, Express.js, React.js, and Node.js at Quest Digiflex
           </p>
 
           {/* CTA button */}

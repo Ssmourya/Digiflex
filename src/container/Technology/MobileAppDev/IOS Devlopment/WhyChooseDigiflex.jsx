@@ -125,7 +125,7 @@ export default function WhyChooseDigiflex() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Why Choose Digiflex?
+            Why Choose Digiflex.ai For businesses ?
             </Heading>
          
           {/* Subheading with Black Text */}

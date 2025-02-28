@@ -45,7 +45,7 @@ const XamarinTechStack = () => {
             🔹  Our Xamarin Tech Stack
           </Heading>
           <p className="text-gray-700 text-lg">
-            Empowering mobile solutions with a robust and modern tech stack.
+            Empowering mobile solutions with Digiflex.ai a robust and modern tech stack.
           </p>
         </div>
         {/* Cards Grid */}

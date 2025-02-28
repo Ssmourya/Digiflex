@@ -43,7 +43,7 @@ const WhyChooseFlutter = () => {
         className="text-5xl font-extrabold text-center mb-4"
         style={{ color: "var(--theme-color, #007bff)" }} // Fallback color
       >
-        Why Choose Flutter for App Development?
+        Why Choose Flutter for App Development for Digiflex.ai
       </Heading>
 
       <motion.div

@@ -306,13 +306,17 @@ function App() {
           element={<XamarinAppDEvlopment />}
         />
         <Route
-        path="/tech/HtmlDevlopment"
+        path="/html5-app-development-services"
         element={<HtmlDevlopment/>}
       />
        {/* Website Development */}
       <Route
-      path="/tech/web/mean"
+      path="/mean-stack-development"
       element={<WebsiteTechDevlopmet/>}
+    />
+      <Route
+      path="/java-j2ee-development-services"
+      element={<Java/>}
     />
         {/* Game development */}
 

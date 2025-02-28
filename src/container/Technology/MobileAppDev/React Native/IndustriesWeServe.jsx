@@ -52,7 +52,7 @@ const IndustriesWeServe = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Industries We Serve with React Native Apps
+        Industries We Serve with React Native Apps at Digiflex.ai
       </motion.h1>
       </Heading>
 

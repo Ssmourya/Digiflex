@@ -36,9 +36,9 @@ const JavaDevelopmentFAQ = () => {
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Main Heading */}
       <div className="mb-12 text-center">
-        <h3 className="text-5xl font-extrabold text-center text-blue-600">
-          FAQs - Java Development
-        </h3>
+      <h3 className="text-5xl font-extrabold text-center text-blue-600">
+      FAQs - Java Development by Quest Digiflex
+    </h3>
         <p className="text-blue-900 text-lg mt-4">
           Got questions? We're here to help.
         </p>

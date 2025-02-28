@@ -46,7 +46,7 @@ export default function CaseStudiesPortfolio() {
               Case Studies & Portfolio
             </Heading>
             <Paragraph>
-              Explore our Java development projects that highlight our expertise in building secure, scalable, and high-performance applications.
+              Explore our Java development projects that highlight our expertise in building secure, scalable, and high-performance applications. Powered by <span className="font-bold text-blue-600">Digiflex.ai</span>.
             </Paragraph>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,7 +63,6 @@ export default function CaseStudiesPortfolio() {
                 <div className="p-6">
                   <Subheading className="text-xl font-bold mb-2">{project.title}</Subheading>
                   <Paragraph className="text-gray-700 mb-4">{project.description}</Paragraph>
-                 
                   <Paragraph>
                     "{project.testimonial}"
                   </Paragraph>
@@ -73,7 +72,6 @@ export default function CaseStudiesPortfolio() {
           </div>
         </div>
       </section>
-      
     </>
   );
 }

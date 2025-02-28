@@ -48,7 +48,7 @@ const IndustriesWeServe = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-           Industries We Serve with Xamarin Apps
+           Industries We Serve with Xamarin Apps at Digiflex.ai
           </Heading>
       
 

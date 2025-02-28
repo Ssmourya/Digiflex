@@ -22,7 +22,7 @@ export default function NativeScriptBenefits() {
         transition={{ duration: 0.8 }}
         className="text-4xl font-bold mb-6 text-[#172554]"
       >
-        🚀 Why Choose NativeScript for App Development?
+        🚀 Why Choose NativeScript for App Development at digiflex?
         </Heading>
      
       <div className="max-w-6xl mx-auto">

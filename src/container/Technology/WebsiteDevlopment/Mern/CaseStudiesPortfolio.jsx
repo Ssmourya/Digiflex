@@ -3,6 +3,7 @@ import Heading from '../../../../Layout/Heading';
 import MeanStackDevelopmentFAQ from './MeanStackDevelopmentFAQ';
 import Subheading from "../../../../Layout/Subheading";
 import Paragraph from '../../../../Layout/Paragraph';
+
 export default function CaseStudiesPortfolio() {
   const projects = [
     {
@@ -45,7 +46,7 @@ export default function CaseStudiesPortfolio() {
         <Heading>
           Case Studies & Portfolio</Heading>
           <p className="text-gray-600">
-            Explore our selected projects that showcase the power and versatility of the MERN stack. Each project is a testament to our commitment to quality and innovation.
+            Explore our selected projects that showcase the power and versatility of the MERN stack. Each project is a testament to Quest Digiflex's commitment to quality and innovation.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

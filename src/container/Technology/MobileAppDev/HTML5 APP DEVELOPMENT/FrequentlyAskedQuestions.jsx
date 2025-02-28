@@ -64,7 +64,7 @@ const FrequentlyAskedQuestions = () => {
         {/* Section Heading */}
         <div className="text-center mb-8">
           <h3 className="text-5xl font-extrabold text-center text-blue-600" >
-            ❓ Frequently Asked Questions (FAQs)
+            ❓ Frequently Asked Questions at Digiflex.ai (FAQs)
           </h3>
           <Subheading>
             Got questions? We're here to help.

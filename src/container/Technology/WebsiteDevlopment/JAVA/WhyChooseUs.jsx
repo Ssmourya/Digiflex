@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-        <Heading> Why Choose Us for Java Development?</Heading>
+          <Heading> Why Choose Digiflex.ai for Java Development?</Heading>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Partner with a team that delivers robust, scalable, and efficient Java solutions
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
 
         <div className="mt-12 text-center">
           <button className="bg-blue-600 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg flex items-center mx-auto">
-            <span>Discuss Your Java Project</span>
+            <span>Discuss Your Java Project with Digiflex.ai</span>
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>

@@ -5,6 +5,7 @@ import Azure_security from "../../../../assets/Azore_security.jpg";
 import Azure_time from "../../../../assets/Azure_time.jpg";
 import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Fontheading from "../../../../Layout/Fontheading";
 
 const advantages = [
   {
@@ -59,8 +60,8 @@ function AzureServices() {
               >
                 {/* Text Section */}
                 <div className="w-full md:w-1/2">
-                  <h2 className="text-3xl font-bold mb-4">{advantage.title}</h2>
-                  <ul className="list-disc list-inside text-lg space-y-2">
+                  <Fontheading>{advantage.title}</Fontheading>
+                  <ul className="mt-5 list-disc list-inside text-lg space-y-2">
                     {advantage.points.map((point, i) => (
                       <li key={i}>{point}</li>
                     ))}

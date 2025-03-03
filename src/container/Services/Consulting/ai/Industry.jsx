@@ -144,7 +144,7 @@ export default function Industry() {
 
           {/* Content Area */}
           <div className="col-span-12 lg:col-span-9">
-            <div className="grid grid-cols-12 gap-8">
+            <div className="grid grid-cols-12 gap-8 ">
               {/* Image */}
               <div className="col-span-12 lg:col-span-6 relative group">
                 <div className="relative h-[400px] rounded-lg overflow-hidden transition-all duration-500 transform group-hover:scale-110">
@@ -158,33 +158,13 @@ export default function Industry() {
               </div>
 
               {/* Content */}
-              <div className="col-span-12 lg:col-span-6">
+              <div className="col-span-12 lg:col-span-6 mt-20 ">
                 <h2 className="text-3xl font-bold mb-4 text-blue-800 animate__animated animate__fadeIn animate__delay-1s">
                   {industries[activeIndustry].title}
                 </h2>
                 <p className="text-gray-700 mb-8 animate__animated animate__fadeIn animate__delay-2s">
                   {industries[activeIndustry].description}
                 </p>
-
-                {/* Solutions List */}
-                <div className="space-y-3">
-                  {industries[activeIndustry].solutions.map(
-                    (solution, index) => (
-                      <div
-                        key={index}
-                        className="border-b border-gray-200 pb-2 hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
-                      >
-                        <a
-                          href="#"
-                          className="flex items-center justify-between"
-                        >
-                          {solution}
-                          <ArrowRight className="h-4 w-4 transition-transform transform group-hover:translate-x-2" />
-                        </a>
-                      </div>
-                    )
-                  )}
-                </div>
               </div>
             </div>
           </div>

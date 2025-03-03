@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 
 
@@ -18,8 +21,8 @@ const Card = ({index, icon, title, description}) => {
             transition={{ duration: 0.3}}
         >
             <div className="text-3xl mb-4">{icon}</div>
-            <h2 className="text-xl font-semibold mb-2">{title}</h2>
-            <p className="text-lg">{description}</p>
+            <Subheading className="mb-2">{title}</Subheading>
+            <Paragraph className="text-start">{description}</Paragraph>
         </motion.div>
     )
 }
@@ -60,36 +63,35 @@ const Benifits = () => {
     ];
 
     return (
- <WrapperContainer>
-        <div >
+    <WrapperContainer>
+            <div>
+                <motion.Heading
+                    className="text-5xl font-semibold text-center text-[#1A2E6F] mb-20 "
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                >
+                  <Heading> Benefits of Test Management</Heading> 
+                </motion.Heading>
 
-            <motion.h1
-                className="text-5xl font-semibold text-center text-[#1A2E6F] mb-20 "
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-            >
-                Benefits of Test Management
-            </motion.h1>
+                <motion.div
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                        hidden: { opacity: 0, scale: 0.8 },
+                        visible: { opacity: 1, scale: 1, transition: { staggerChildren: 0.2 } },
+                    }}
+                >
+                    {
+                        benefits.map((benefit, index) => (
+                            <Card index={index} icon={benefit.icon} title={benefit.title} description={benefit.description} />
+                        ))
+                    }
+                </motion.div>
 
-            <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-                initial="hidden"
-                animate="visible"
-                variants={{
-                    hidden: { opacity: 0, scale: 0.8 },
-                    visible: { opacity: 1, scale: 1, transition: { staggerChildren: 0.2 } },
-                }}
-            >
-                {
-                    benefits.map((benefit, index) => (
-                        <Card index={index} icon={benefit.icon} title={benefit.title} description={benefit.description} />
-                    ))
-                }
-            </motion.div>
-
-        </div>
- </WrapperContainer>
+            </div>
+    </WrapperContainer>
     );
 };
 

@@ -22,7 +22,7 @@ const ServiceCard = ({ title, description, icon: Icon }) => {
 
 const TabContent = ({ activeTab }) => (
   <motion.p
-    className="text-gray-600 text-center max-w-3xl mx-auto mb-12 text-lg"
+    className="text-gray-600 text-center max-w-3xl mx-auto mb-6 text-lg"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 0.2, duration: 0.5 }}
@@ -46,7 +46,7 @@ export const ServicesSection = () => {
 
         <TabContent activeTab={activeTab} />
 
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 mb-4">
           {tabs.map((tab) => (
             <button
               key={tab.id}

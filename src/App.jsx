@@ -63,6 +63,8 @@ import NftMarketplace from "./pages/NftMarketplace";
 
 // salesforce start
 import ApplicationArchitecture from "./pages/ApplicationArchitecture";
+import ConsultingAssesment from "./pages/ConsultingAssesment";
+
 
 // Frontend Technology
 
@@ -102,7 +104,11 @@ import CloudNative from "./pages/CloudNative";
 //AI app
 
 import Ai_development from "./pages/Ai_development"
-import ConsultingAssesment from "./pages/ConsultingAssesment";
+import Ai_software from "./pages/Ai_software";
+import Llm_development from "./pages/Llm_development"
+
+
+
 
 
 function App() {
@@ -372,10 +378,12 @@ function App() {
 
         {/*Ai app*/}
 
-        <Route
-          path="/services/AI/Ai_development"
-          element={<Ai_development />}
-        />
+      <Route path="/ai-app-development" element={<Ai_development/>}/>
+      <Route path="/ai-software-development" element={<Ai_software/>}/>
+      <Route path="/large-language-model-development" element={<Llm_development/>}/>
+
+      
+
       </Routes>
 
    <ReviewsSection/>

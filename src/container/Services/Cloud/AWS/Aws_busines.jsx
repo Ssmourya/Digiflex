@@ -4,6 +4,7 @@ import Aws_intro_img from "../../../../assets/Aws_intro.avif";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
+import Fontheading from "../../../../Layout/Fontheading";
 
 function Aws_busines() {
   const benefits = [
@@ -54,9 +55,9 @@ function Aws_busines() {
                 className="p-4 bg-white hover:shadow-lg transition duration-700 
                           rounded-lg border border-gray-100"
               >
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-700 font-medium">
+              <Fontheading>
                   {benefit}
-                </p>
+                  </Fontheading>
               </li>
             ))}
           </ul>

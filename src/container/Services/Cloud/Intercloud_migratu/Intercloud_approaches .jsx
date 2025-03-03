@@ -2,6 +2,7 @@ import React from 'react'
 import WrapperContainer from '../../../../Layout/WrapperContainer'
 import Heading from '../../../../Layout/Heading'
 import Paragraph from '../../../../Layout/Paragraph'
+import Fontheading from '../../../../Layout/Fontheading';
 
 const advantages = [
   {
@@ -75,9 +76,9 @@ function Intercloud_approaches () {
                 className="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-medium text-gray-900">
+                 <Fontheading>
                     {item.title}
-                  </h3>
+                    </Fontheading>
                   <svg
                     className="w-5 h-5 text-blue-500"
                     fill="none"

@@ -37,7 +37,7 @@ function Body() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center"
         >
           <Heading>Software Quality Assurance Consulting</Heading>
           <motion.div

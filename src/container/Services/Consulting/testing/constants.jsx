@@ -148,12 +148,6 @@ export const servicesData = {
         "Outsource your testing needs to Digiflex.ai team of skilled experts, ensuring high-quality results and seamless integration with your development process.",
       icon: Globe,
     },
-    {
-      title: "Testing Consulting",
-      description:
-        "Overhaul your QA processes with Digiflex.ai to achieve unparalleled testing efficiency, ensuring faster delivery, higher quality, and optimal performance for your software projects.",
-      icon: Wrench,
-    },
   ],
   platform: [
     {
@@ -174,12 +168,6 @@ export const servicesData = {
         "Expand your reach and engage more customers with a high-quality web application. At Digiflex.ai, we ensure your web solutions are thoroughly tested for performance and functionality.",
       icon: PanelsTopLeft,
     },
-    {
-      title: "Desktop Testing",
-      description:
-        "At Digiflex.ai, we ensure your desktop applications meet the highest standards of stability, compatibility, and performance across various operating systems.",
-      icon: Monitor,
-    },
   ],
   type: [
     {
@@ -199,12 +187,6 @@ export const servicesData = {
       description:
         "At Digiflex.ai, we ensure your software delivers an intuitive and engaging user experience. Our usability testing identifies friction points and enhances accessibility.",
       icon: MousePointer,
-    },
-    {
-      title: "UI",
-      description:
-        "At Digiflex.ai, we ensure your applicationlkjnb kjb s UI logic is intuitive, accessible, and responsive for all user categories across all devices and platforms.",
-      icon: LayoutTemplate,
     },
   ],
 };

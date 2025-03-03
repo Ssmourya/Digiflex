@@ -3,6 +3,7 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 import Paragraph from "../../../../Layout/Paragraph";
+import Fontheading from "../../../../Layout/Fontheading";
 
 const data = [
   {
@@ -57,11 +58,11 @@ export default function Sidebar() {
         {/* Full Screen Card with Divider */}
         <div className="w-full h-full flex">
           {/* Left Sidebar */}
-          <div className="w-1/2 p-4">
-            <Subheading>
-              <h2 className="text-xl font-bold mb-4">Topics</h2>
-            </Subheading>
-            <ul className="space-y-2">
+          <div className="w-1/2 ">
+           <Fontheading>
+              Topics
+              </Fontheading>
+            <ul className="space-y-5 pt-5">
               {data.map((item, index) => (
                 <li
                   key={index}
@@ -70,7 +71,9 @@ export default function Sidebar() {
                     selected.title === item.title ? "bg-blue-200" : ""
                   }`}
                 >
+                <Fontheading>
                   {item.title}
+                  </Fontheading>
                 </li>
               ))}
             </ul>

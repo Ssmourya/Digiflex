@@ -11,7 +11,7 @@ function App() {
       <div className="container mx-auto relative">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Content Section */}
-          <div className="lg:w-1/2 space-y-8">
+          <div className="lg:w-1/2 space-y-8 mb-4">
             <div className="inline-block">
               <span className="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-medium">
                 WHY CHOOSE US
@@ -52,7 +52,7 @@ function App() {
             <img 
               src="https://html.designingmedia.com/artelligence/assets/images/choose-image.png"
               alt="AI Technology Visualization"
-              className="rounded-4xl "
+              className="rounded-4xl translate-y-4"
             />
           </div>
         </div>

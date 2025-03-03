@@ -281,123 +281,114 @@ const benefits = [
 
 function Body() {
   return (
-  <>
-    {/*Section 1*/}
-      <div className="bg-gray-900 text-white min-h-[500px] w-full py-16 px-4 md:px-8">
-      <WrapperContainer>
-      <div className="max-w-7xl mx-auto">
-        {/* What We Do section */}
-        <div className="mb-6">
-          <span className="text-gray-300 uppercase tracking-wider text-sm">
-            WHAT WE DO
-          </span>
-        </div>
-                
-        {/* Main content container */}
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
-          {/* Left side - Heading */}
-          <div className="lg:w-3/5">
-            <Heading>
-                SOLUTIONS TO ENHANCE USER EXPERIENCE WITH CUSTOM UI & ANIMATION
-              </Heading>
-          </div>
-
-            {/* Right side - Description and CTA */}
-            <div className="lg:w-2/5 flex flex-col gap-6">
-              <Paragraph className=" text-black">
-                Don't let static, unengaging interfaces hold back your digital success! At DigiFlex, we specialize in creating dynamic, visually stunning UI designs enhanced with smooth animations that bring products to life. Our custom UI & animation solutions ensure seamless interactions, intuitive navigation, and engaging motion effects—turning visitors into loyal customers.
-              </Paragraph>
-
-              <button className=" bg-blue-800 text-white hover:bg-blue-600 transition-colors  px-8 py-3 rounded w-fit">
-                Let's Talk Solutions
-              </button>
-            </div>
-          </div>
-        </div>
-      </WrapperContainer>
-        </div>
-      
-
-    {/*Section 2*/}
-    <div className="bg-white w-full p-4 sm:p-6 md:p-8 lg:p-16">
-      <WrapperContainer>
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-12">
-          {/* Left Content Section */}
-          <div className="flex flex-col gap-6 w-full lg:w-1/3">
-            {/* Logo */}
-            <div className="text-[#172554] text-3xl sm:text-4xl font-bold">
-              <span className="flex items-center gap-1">
-               Book
-                <span className="relative">
-                live
-                <div className="absolute -top-1 left-1/2 w-3 h-3 sm:w-4 sm:h-4 bg-[#172554] rounded-full"></div>
-                </span>
+    <>
+      {/* Section 1 */}
+      <div className="bg-white text-black px-6 ">
+        <WrapperContainer>
+          <div className="max-w-7xl mx-auto">
+            {/* What We Do Section */}
+            <div className="mb-4 text-center lg:text-left">
+              <span className="text-black font-bold uppercase tracking-wider text-sm">
+                WHAT WE DO
               </span>
             </div>
 
-            {/* Description */}
-            <Paragraph className=" text-base leading-relaxed">
-              We build digital products to help businesses grow and reach their goals.
-              So far, we've done it with more than 100 companies worldwide.
-            </Paragraph>
-
-            {/* Divider Line */}
-            <div className="w-full h-px bg-[#2D3648] opacity-20 my-2 sm:my-4"></div>
-
-            {/* Tools Section */}
-            <div className="flex items-center gap-6 sm:gap-8">
-              {/* Figma */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-6 h-6 sm:w-8 sm:h-8">
-                  <svg viewBox="0 0 38 57" className="w-full h-full" fill="#172554">
-                    <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" />
-                    <path d="M0 47.5a9.5 9.5 0 0 1 9.5-9.5H19v9.5a9.5 9.5 0 1 1-19 0z" />
-                    <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z" />
-                    <path d="M0 9.5a9.5 9.5 0 0 0 9.5 9.5H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" />
-                    <path d="M0 28.5a9.5 9.5 0 0 0 9.5 9.5H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" />
-                  </svg>
-                </div>
-                <span className="text-[#172554] text-xs sm:text-sm">Figma</span>
+            {/* Main Content Container */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
+              {/* Left Side - Heading */}
+              <div className="lg:w-3/5 text-center lg:text-left">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl text-blue-950 font-bold mb-6 leading-tight">
+                  SOLUTIONS TO ENHANCE USER EXPERIENCE WITH CUSTOM UI &
+                  ANIMATION
+                </h1>
               </div>
 
-              {/* Photoshop */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#172554] flex items-center justify-center">
-                  <span className="text-white font-bold text-xs sm:text-sm">Ps</span>
-                </div>
-                <span className="text-[#172554] text-xs sm:text-sm">Photoshop</span>
+              {/* Right Side - Description and CTA */}
+              <div className="lg:w-2/5 flex flex-col gap-6 text-center lg:text-left">
+                <Paragraph className="text-gray-700 max-w-xl mx-auto lg:mx-0">
+                  Don't let static, unengaging interfaces hold back your digital
+                  success! At DigiFlex, we specialize in creating dynamic,
+                  visually stunning UI designs enhanced with smooth animations
+                  that bring products to life. Our custom UI & animation
+                  solutions ensure seamless interactions, intuitive navigation,
+                  and engaging motion effects—turning visitors into loyal
+                  customers.
+                </Paragraph>
               </div>
             </div>
           </div>
+        </WrapperContainer>
+      </div>
+      {/*Section 2*/}
+      <div className="flex">
+        <WrapperContainer>
+          <h1 className=" text-5xl text-center text-blue-950 font-bold mb-6">
+            Our Process
+          </h1>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+              {/* Creative Section */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:shadow-blue-200">
+                <h2 className="text-2xl font-bold text-blue-600 mb-4">
+                  CREATIVE
+                </h2>
+                <p className="text-gray-700">
+                  We have perfected our process of “Creative Production”,
+                  integrating the right people at the right time.
+                </p>
+              </div>
 
-          {/* Right Mobile Screens Section */}
-          <div className="relative w-full lg:w-2/3 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] mt-6 lg:mt-0">
-            <div className="absolute right-0 flex items-center justify-end w-full h-full">
-              <div className="h-full w-full max-w-[800px] rounded-3xl overflow-hidden transform">
-                <img
-                  src={uianimation51}
-                  alt="Mobile screen"
-                  className="w-full h-full object-cover bg-[#2D3648]"
-                />
+              {/* Innovative Section */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:shadow-blue-200">
+                <h2 className="text-2xl font-bold text-blue-500 mb-4">
+                  INNOVATIVE
+                </h2>
+                <p className="text-gray-700">
+                  We create for the present with a focus on the future; today’s
+                  message must inspire tomorrow’s ideas.
+                </p>
+              </div>
+
+              {/* Personalised Section */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:shadow-blue-200">
+                <h2 className="text-2xl font-bold text-blue-500 mb-4">
+                  PERSONALISED
+                </h2>
+                <p className="text-gray-700">
+                  All our videos are bespoke and made from scratch by a
+                  dedicated team of professionals. We do not use templates or
+                  stock elements, ensuring your video is unique and outstanding.
+                </p>
+              </div>
+
+              {/* Awarded Section */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:shadow-blue-200">
+                <h2 className="text-2xl font-bold text-blue-500 mb-4">
+                  AWARDED
+                </h2>
+                <p className="text-gray-700">
+                  Our work as an animation company has received critical acclaim
+                  and recognition through various prestigious awards.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </WrapperContainer>
-    </div>
-
+        </WrapperContainer>
+      </div>
       {/*Section 3*/}
-        <div className="max-w-7xl mx-auto">
-      <WrapperContainer>
+      <div className="max-w-7xl mx-auto">
+        <WrapperContainer>
           {/* Header Section */}
-          <div className="flex flex-col gap-6 mb-16">
-            <Heading className=" text-blue-950 font-bold">
-              Our Approach as a Leading UI & Animation Design Company</Heading>
-            <Paragraph className="text-black ">
-              At DigiFlex, we specialize in UI & animation design, crafting visually compelling and interactive digital experiences. Our approach integrates branding, responsive UI design, and motion graphics to enhance user engagement and usability across web and mobile platforms.
-            </Paragraph>
-            <Paragraph className="text-black ">
-              Over the last four years, we’ve refined a motion-driven design approach that creates fluid, immersive, and intuitive user experiences. As a creative agency, we focus on human-centered animations and user-centric interactions, ensuring every motion element serves a purpose—whether guiding users, providing feedback, or enhancing storytelling.
+          <div className="flex flex-col gap-6 mb-6">
+            <h1 className=" text-5xl text-center text-blue-950 font-bold">
+              Our Approach
+            </h1>
+            <Paragraph>
+              At DigiFlex, we specialize in UI & animation design, crafting
+              visually compelling and interactive digital experiences. Our
+              approach integrates branding, responsive UI design, and motion
+              graphics to enhance user engagement and usability across web and
+              mobile platforms.
             </Paragraph>
           </div>
 
@@ -408,7 +399,7 @@ function Body() {
                 key={approach.id}
                 className="flex-1 min-w-[280px] p-6 border border-blue-400/20 rounded-lg
                        hover:border-blue-400/40 transition-all duration-300
-                       hover:bg-blue-400/5 group shadow-xl shadow-gray-400 hover:scale-105"
+                       hover:bg-blue-400/5 group shadow-xl shadow-gray-200 "
               >
                 <div className="flex flex-col gap-4">
                   {/* Icon */}
@@ -421,94 +412,79 @@ function Body() {
                   </div>
 
                   {/* Content */}
-                  <SubHeading className="text-xl font-semibold text-black">{approach.title}</SubHeading>
-                  <Paragraph className="text-black leading-relaxed">{approach.description}</Paragraph>
+                  <SubHeading>{approach.title}</SubHeading>
+                  {approach.description}
                 </div>
               </div>
             ))}
           </div>
-      </WrapperContainer>
-        </div>
+        </WrapperContainer>
+      </div>
 
       {/*Section 4*/}
-        <div className="max-w-7xl mx-auto">
-      <WrapperContainer >
-          <div className="flex flex-col items-center mb-12">
-            <Heading className=" font-bold text-blue-950 ">
+      <div className="max-w-7xl mx-auto px-4">
+        <WrapperContainer>
+          {/* Section Heading */}
+          <div className="flex flex-col items-center text-center mb-12">
+            <h1 className=" text-5xl text-center text-blue-950 font-bold">
               UI Design Process
-            </Heading>
-            <div className="w-16 h-1 bg-blue-500"></div>
+            </h1>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 px-4">
+
+          {/* Steps Container - Linear Flow */}
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-10">
             {processSteps.map((step, index) => (
-              <div key={step.id} className="group flex flex-col items-center relative w-full md:w-auto">
+              <div
+                key={step.id}
+                className="group flex flex-col items-center text-center relative"
+              >
                 {/* Step Number */}
                 <div
-                  className="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-blue-500 text-white 
-                            flex items-center justify-center text-sm font-bold
-                            group-hover:bg-blue-600 group-hover:scale-110 
-                            transform transition-all duration-300 z-10
-                            shadow-lg"
+                  className="w-8 h-8 rounded-full bg-blue-500 text-white 
+                flex items-center justify-center text-sm font-bold mb-2
+                group-hover:bg-blue-600 group-hover:scale-110 
+                transition-transform duration-300 shadow-lg"
                 >
                   {step.id}
                 </div>
 
                 {/* Icon Container */}
                 <div
-                  className="w-28 h-28 rounded-full border-2 border-dashed border-blue-500 
-                            flex items-center justify-center bg-white relative mb-4
-                            group-hover:border-solid group-hover:bg-blue-500 
-                            group-hover:scale-105 group-hover:shadow-xl
-                            transform transition-all duration-300
-                            cursor-pointer"
+                  className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-dashed border-blue-500 
+                flex items-center justify-center bg-white mb-4
+                group-hover:border-solid group-hover:bg-blue-500 
+                group-hover:scale-105 group-hover:shadow-xl
+                transition-all duration-300 cursor-pointer"
                 >
                   {step.icon}
                 </div>
 
                 {/* Title */}
                 <SubHeading
-                  className=" font-medium text-gray-900 text-center
-                           group-hover:text-blue-600 transition-colors duration-300
-                           leading-tight"
+                  className="text-gray-900 font-medium leading-tight
+                group-hover:text-blue-600 transition-colors duration-300"
                 >
                   {step.title}
                 </SubHeading>
 
-                {/* Arrow */}
+                {/* Connecting Line (for larger screens) */}
                 {index < processSteps.length - 1 && (
-                  <div className="hidden md:block absolute -right-4 top-1/2 -translate-y-1/2 transform">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="text-blue-500 group-hover:translate-x-1 transition-transform duration-300"
-                      stroke="currentColor"
-                    >
-                      <path
-                        d="M5 12H19M19 12L12 5M19 12L12 19"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
+                  <div className="hidden md:block absolute top-1/2 left-full w-16 h-1 bg-blue-500"></div>
                 )}
               </div>
             ))}
           </div>
-      </WrapperContainer>
-        </div>
+        </WrapperContainer>
+      </div>
 
       {/*Section 5*/}
-        <div className="max-w-7xl mx-auto">
-      <WrapperContainer>
+      <div className="flex">
+        <WrapperContainer>
           {/* Header */}
-          <div className="flex flex-col items-center mb-10 sm:mb-12">
-            <Heading className=" font-bold text-blue-950 ">
+          <div className="flex flex-col items-center ">
+            <h1 className=" text-5xl font-bold text-blue-950 mb-6 ">
               Tools We Use
-            </Heading>
-            <div className="w-14 sm:w-16 h-1 bg-blue-500 rounded-full"></div>
+            </h1>
           </div>
 
           {/* Tools Grid */}
@@ -517,7 +493,7 @@ function Body() {
               <div
                 key={index}
                 className="flex flex-col items-center max-w-sm sm:max-w-[240px] w-full bg-white rounded-lg p-6 sm:p-8
-                     shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-blue-300 transition-all duration-300"
+                     shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-blue-200 transition-all duration-300"
               >
                 {/* Icon */}
                 {tool.icon}
@@ -529,23 +505,20 @@ function Body() {
               </div>
             ))}
           </div>
-      </WrapperContainer>
-        </div>
-
-
+        </WrapperContainer>
+      </div>
       {/*Section 6*/}
-        <div className="max-w-7xl mx-auto">
-      <WrapperContainer>
+      <div className="max-w-7xl mx-auto">
+        <WrapperContainer>
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
-            <Heading className=" font-bold text-blue-950 ">
+            <h1 className=" text-5xl  font-bold text-blue-950 ">
               Benefits of UI/UX Design
-            </Heading>
-            <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full"></div>
+            </h1>
           </div>
 
           {/* Benefits Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 pb-20">
             {benefits.map((benefit) => (
               <div
                 key={benefit.id}
@@ -565,27 +538,26 @@ function Body() {
                   {benefit.icon}
                 </div>
 
-              {/* Content */}
-              <h3
-                className="text-xl font-semibold text-blue-950 text-center mb-4 
+                {/* Content */}
+                <h3
+                  className="text-xl font-semibold text-blue-950 text-center mb-4 
                            group-hover:text-white transition-colors duration-300"
-              >
-                {benefit.title}
-              </h3>
-              <p
-                className="text-gray-600 text-center leading-relaxed
+                >
+                  {benefit.title}
+                </h3>
+                <p
+                  className="text-gray-600 text-center leading-relaxed
                           group-hover:text-white/90 transition-colors duration-300"
-              >
-                {benefit.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </WrapperContainer>
+                >
+                  {benefit.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </WrapperContainer>
       </div>
-
-  </>
-  )
+    </>
+  );
 }
 
 export default Body

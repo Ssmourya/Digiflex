@@ -3,6 +3,8 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 import Paragraph from "../../../../Layout/Paragraph";
+import Fontheading from "../../../../Layout/Fontheading";
+
 
 const IndustriesData = [
   {
@@ -55,7 +57,9 @@ function Ai_app_Industries() {
                   select.title === item.title ? "text-[#203d8c] bg-white shadow-md" : "hover:bg-white/70"
                 }`}
               >
-                <Subheading>{item.title}</Subheading>
+              <Fontheading>
+              {item.title}
+              </Fontheading>
               </li>
             ))}
           </ol>

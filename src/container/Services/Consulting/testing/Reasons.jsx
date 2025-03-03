@@ -57,7 +57,6 @@ export const Reasons = () => {
 
   return (
     <WrapperContainer>
-      <div className="mt-10">
         <Heading> Reasons To Choose Consultation In Software Testing</Heading>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -93,7 +92,7 @@ export const Reasons = () => {
             ))}
           </motion.div>
         </div>
-      </div>
+      
     </WrapperContainer>
   );
 };

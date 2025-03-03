@@ -27,13 +27,14 @@ const IndustryCard = ({ title, icon: Icon }) => {
 
 export const IndustriesSection = () => {
   return (
+    <div className="mb-6">
     <WrapperContainer>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-center mb-16"
+        className="text-center"
       >
         <Heading>Some of the Industries We Serve</Heading>
         <Paragraph>
@@ -57,5 +58,6 @@ export const IndustriesSection = () => {
         ))}
       </motion.div>
     </WrapperContainer>
+    </div>
   );
 };

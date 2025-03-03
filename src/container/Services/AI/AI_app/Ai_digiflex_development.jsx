@@ -6,6 +6,7 @@ import AI_Scable from "../../../../assets/AI_Scable.jpg";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 
+
 const data = [
   {
     title: "AI-First Approach",

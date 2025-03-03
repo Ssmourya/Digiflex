@@ -2,8 +2,12 @@ import react from "react";
 import { motion } from 'framer-motion';
 // import security from "../images/security.jpg"
 import left_logo from "../../../../assets/left-logo.jpeg"
-import { Heading } from "lucide-react";
+
 import WrapperContainer from "../../../../Layout/WrapperContainer"
+import Heading from "../../../../Layout/Heading";
+import Subheading from "../../../../Layout/Subheading"
+import Paragraph from "../../../../Layout/Paragraph"
+
 
 const Overview = () => {
     
@@ -39,10 +43,10 @@ const Overview = () => {
         return (
             <div className="relative flex flex-row items-start space-x-4 w-full max-w-md">
             
-                <div className="relative mt-3">
+                <div className="relative mt-6">
 
                     {/* Line */}
-                    <div className="absolute left-[0.3rem]  h-full w-[2px] bg-black"></div>
+                    <div className="absolute left-[0.3rem] h-full w-[2px] bg-black"></div>
 
                     <div className="flex flex-col space-y-5">
                         {/* Diamonds */}
@@ -61,8 +65,8 @@ const Overview = () => {
                     transition={{ duration: 1 }}
                     className=""
                 >
-                    <h2 className="text-3xl text-[#1A2E6F] font-semibold mb-2">{secondHeading}</h2>
-                    <p className="text-black text-lg">{secondDescription}</p>
+                    <Subheading>{secondHeading}</Subheading>
+                    <Paragraph className="text-start">{secondDescription}</Paragraph>
                 </motion.div>
             </div>
         );
@@ -84,17 +88,17 @@ const Overview = () => {
                     transition={{ duration: 1.2 }}
                     className="text-4xl md:text-4xl font-semibold text-[#1A2E6F] leading-tight mb-8"
                 >
-                  <Heading> {title}   </Heading>
+                  <Subheading>{title}</Subheading>
                 </motion.Heading>
 
-                <motion.p
+                <motion.Paragraph
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
                     className="text-xl text-black mb-6 mx-auto"
                 >
-                    {description}
-                </motion.p>
+                    <Paragraph className="text-start">{description}</Paragraph>
+                </motion.Paragraph>
 
                 <DiamondSection secondHeading={secondHeading} secondDescription={secondDescription}/>
 
@@ -107,7 +111,7 @@ const Overview = () => {
      <WrapperContainer>
 
     
-        <div className="relative bg-white  w-11/12 mx-auto  flex flex-col items-center justify-center">
+        <div className="relative bg-white flex flex-col items-center justify-center">
 
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -123,7 +127,7 @@ const Overview = () => {
                     transition={{ duration: 1.2 }}
                     className="text-4xl md:text-5xl font-semibold leading-tight text-center text-[#1A2E6F]"
                 >
-                    Overview
+                    <Heading>Overview</Heading> 
                 </motion.Heading>
 
                 {/* Underline */}

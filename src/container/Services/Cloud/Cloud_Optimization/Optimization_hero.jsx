@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import exchangesoftware from "../../../../assets/Google_video.mp4";
+import exchangesoftware from "../../../../assets/video2.mp4";
 import Azore_intro from "../../../../assets/Azore_intro.png";
 import Google_Cloud_Logo from "../../../../assets/Google-Cloud-Logo.png";
 

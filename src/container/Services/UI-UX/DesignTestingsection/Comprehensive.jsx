@@ -9,7 +9,7 @@ function ComprehensiveSection() {
         <h1 className="text-5xl text-center font-bold">
           Comprehensive <span className="text-blue-800">Exploratory</span> Testing
         </h1>
-        <div className=" text-black py-12 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div className=" text-black pb-20 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Left Section (Text Content) */}
 
           <div className="w-full lg:w-1/2 text-center lg:text-left">

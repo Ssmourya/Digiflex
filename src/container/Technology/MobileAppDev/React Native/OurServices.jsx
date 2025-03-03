@@ -45,7 +45,7 @@ const OurServices = () => {
 
       {/* Services List */}
       <motion.div
-        className="flex flex-col space-y-6 w-full max-w-[950px]"
+        className="flex flex-col space-y-6 w-full max-w-6xl]"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}

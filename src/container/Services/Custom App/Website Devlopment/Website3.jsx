@@ -86,7 +86,7 @@ export default function Website3() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <Heading className="text-center text-3xl font-bold mb-10">
           Our Services
         </Heading>

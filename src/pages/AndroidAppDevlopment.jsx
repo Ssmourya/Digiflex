@@ -17,8 +17,9 @@ const AndroidAppDevlopment = () => {
       <TechStack/>
       <SmartFeatures/>
       <AndroidDevelopmentProcess/>
-      <FAQ/>
+      
       </WrapperContainer>
+      <FAQ/>
     </>
   )
 }

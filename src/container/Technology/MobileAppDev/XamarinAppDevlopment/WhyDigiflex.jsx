@@ -5,7 +5,7 @@ import Paragraph from "../../../../Layout/Paragraph";
 const WhyDigiflex = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
           <Heading>📌 Why Digiflex for Xamarin Development? </Heading>

@@ -46,7 +46,7 @@ const partners = [
 
 const WebApplication3 = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Industries Section */}
       <motion.div
         className="mb-20"

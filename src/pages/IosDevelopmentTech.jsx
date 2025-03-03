@@ -17,8 +17,8 @@ const IosDevelopmentTech = () => {
       <WhyChooseDigiflex/>
       <Industries/>
       <TechStack/>  
-      <FAQItem/>
       </WrapperContainer> 
+      <FAQItem/>
     </>
   );
 };

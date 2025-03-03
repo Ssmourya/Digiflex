@@ -14,7 +14,7 @@ const WebApplication5 = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="max-w-6xl mx-auto px-4 py-16">
       {/* Process Section */}
       <motion.div 
         initial={{ opacity: 0, y: 50 }}

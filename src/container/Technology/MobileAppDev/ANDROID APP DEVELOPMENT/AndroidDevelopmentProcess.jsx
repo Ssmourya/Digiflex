@@ -56,7 +56,7 @@ const AndroidDevelopmentProcess = () => {
      
       </Heading>
 
-      <div className="max-w-5xl mx-auto grid gap-8">
+      <div className="max-w-6xl mx-auto grid gap-8">
         {steps.map((step, index) => (
           <motion.div
             key={step.id}

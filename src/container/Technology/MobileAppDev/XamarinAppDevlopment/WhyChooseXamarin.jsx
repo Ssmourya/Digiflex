@@ -15,7 +15,7 @@ const reasons = [
 const WhyChooseXamarin = () => {
   return (
     <section className="py-16 bg-gradient-to-r from-white-500 to-white-200">
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           {/* Header Section */}
           <div className=" px-8 py-6">

@@ -8,7 +8,7 @@ export default function MernStackServices() {
   return (
     <>    
     <section className="bg-white  py-12 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         <Heading>Our MERN Stack Services</Heading>
         <p className="text-lg text-gray-700 mb-6">Offered by <span className="font-bold text-blue-600">Digiflex.ai</span></p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -29,7 +29,7 @@ export default function MernStackServices() {
     </section>
     
     <section className="bg-white text-black py-12 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         <Heading>Why Choose MERN Stack?</Heading>
         <p className="text-lg text-gray-700 mb-6">Why businesses trust <span className="font-bold text-blue-600">Digiflex.ai</span> for MERN development</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

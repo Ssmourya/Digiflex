@@ -70,7 +70,7 @@ const FAQ = () => {
           Android App Development FAQ
         </h3>
       </header>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {faqData.map((item, index) => (
           <FAQItem key={index} question={item.question} answer={item.answer} />
         ))}

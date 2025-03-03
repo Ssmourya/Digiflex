@@ -64,13 +64,13 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white p-8">
+    <div className="max-w-6xl mx-auto  bg-white p-8">
       <header className="mb-10">
         <h3 className="text-5xl font-extrabold text-center text-blue-600">
           iOS Development FAQ
         </h3>
       </header>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {faqData.map((item, index) => (
           <FAQItem key={index} question={item.question} answer={item.answer} />
         ))}

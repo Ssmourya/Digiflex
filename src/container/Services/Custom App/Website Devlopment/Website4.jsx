@@ -82,7 +82,7 @@ const Card = ({ icon, title, subtitle, description, button }) => (
 export default function Website4() {
   return (
     <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-6xl mx-auto space-y-16">
         <Heading> Expert Website Development Services </Heading>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {packages.map((pkg, index) => (

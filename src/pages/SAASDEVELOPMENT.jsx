@@ -91,7 +91,7 @@ const Saas = () => {
       </div>
 
      
-      <div className="bg-gray-100 py-16">
+      <div className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
          <Heading>Why Choose Our SaaS Solutions?</Heading>
           <div className="grid md:grid-cols-3 gap-8">

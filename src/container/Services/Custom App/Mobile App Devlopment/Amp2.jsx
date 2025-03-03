@@ -11,22 +11,22 @@ import Paragraph from "../../../../Layout/Paragraph";
 const Amp2 = () => {
   const features = [
     {
-      icon: <Shield className="w-8 h-8 text-blue-600" />,
+     
       icon: <Shield className="w-8 h-8 text-blue-600" />,
       text: "Secure and Scalable Mobile App Solutions",
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      
       icon: <Users className="w-8 h-8 text-blue-600" />,
       text: "Experienced Team with Deep Industry Knowledge",
     },
     {
-      icon: <FileCheck className="w-8 h-8 text-blue-600" />,
+     
       icon: <FileCheck className="w-8 h-8 text-blue-600" />,
       text: "Custom Mobile Applications Tailored to Your Business Needs",
     },
     {
-      icon: <Clock className="w-8 h-8 text-blue-600" />,
+     
       icon: <Clock className="w-8 h-8 text-blue-600" />,
       text: "Timely Delivery and Ongoing Support",
     },

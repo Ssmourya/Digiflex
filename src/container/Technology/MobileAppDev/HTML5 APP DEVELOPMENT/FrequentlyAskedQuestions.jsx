@@ -60,7 +60,7 @@ const FrequentlyAskedQuestions = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-[90%] md:max-w-5xl mx-auto px-4 fade-in">
+      <div className="max-w-[90%] md:max-w-6xl mx-auto px-4 fade-in">
         {/* Section Heading */}
         <div className="text-center mb-8">
           <h3 className="text-5xl font-extrabold text-center text-blue-600" >

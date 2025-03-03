@@ -325,7 +325,7 @@ function App() {
       />
        {/* Website Development */}
       <Route
-      path="/mean-stack-development"
+      path="/mern-stack-development"
       element={<WebsiteTechDevlopmet/>}
     />
       <Route

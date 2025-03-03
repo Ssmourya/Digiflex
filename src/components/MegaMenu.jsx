@@ -128,6 +128,8 @@ const NavItem = ({ setActiveDropdown, service }) => {
                             </div>
                         </div>
 
+                        
+
                         {/* {/ Right side - Image /} */}
                         <div className="hidden md:flex items-center justify-center h-full mt-6 md:mt-0">
                             {

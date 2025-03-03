@@ -14,6 +14,19 @@ const Navbar = () => {
     const [hoveredCategory, setHoveredCategory] = useState(null);
 
     const navbarRef = useRef(null);
+    const timeoutRef = useRef(null);
+
+    const handleMouseEnter = () => {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current); // Prevent closing if hovered back
+        }
+    };
+
+    const handleMouseLeave = () => {
+        timeoutRef.current = setTimeout(() => {
+            setActiveDropdown(null);
+        }, 3000);
+    };
 
     const handleDropdownClick = (dropdownType) => {
         setActiveDropdown(activeDropdown === dropdownType ? null : dropdownType);
@@ -99,7 +112,9 @@ const Navbar = () => {
 
                     {!isSearchVisible ? (
                         <>
-                            <div className="hidden md:flex items-center space-x-6 mr-auto">
+                            <div className="hidden lg:flex items-center space-x-6 mr-auto"
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}>
                                 {mainNavItems.map((navItem) => (
                                     <div
                                         key={navItem.label}
@@ -138,7 +153,7 @@ const Navbar = () => {
                                 ))}
                             </div>
 
-                            <div className="hidden md:flex items-center space-x-6">
+                            <div className="hidden lg:flex items-center space-x-6">
                                 <button
                                     onClick={() => setIsSearchVisible(true)}
                                     className="text-white hover:text-gray-300"
@@ -159,7 +174,7 @@ const Navbar = () => {
 
                             </div>
 
-                            <div className="md:hidden flex items-center ml-auto space-x-4">
+                            <div className="lg:hidden flex items-center ml-auto space-x-4">
                                 <button
                                     onClick={() => setIsSearchVisible(true)}
                                     className="text-white hover:text-gray-300"
@@ -188,11 +203,6 @@ const Navbar = () => {
                                 aria-label="Search input"
                             />
                             <button
-                                // className="bg-[#6B7CFF] px-4 md:px-6 py-2 text-sm mr-2 md:mr-4 hover:bg-[#5A6AE6] transition-colors"
-                                // className="border border-blue-600 text-blue-600 px-4 md:px-6 py-2 mr-2 text-sm font-medium 
-                                //     rounded-md hover:bg-blue-600 hover:text-white transition-all duration-300 
-                                //     shadow-md hover:shadow-lg"
-                                // aria-label="Submit search"
                                 className="border border-blue-600 text-blue-600 px-4 md:px-6 py-2 text-sm mr-2 md:mr-4  font-medium 
                                     rounded-md hover:bg-white hover:text-blue-600 transition-all duration-300 
                                     shadow-md hover:shadow-lg"
@@ -214,7 +224,7 @@ const Navbar = () => {
             {/* Mobile menu */}
             {
                 isMobileMenuVisible && (
-                    <div className="md:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen">
+                    <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen">
                         {
                             mainNavItems.map( (navItem) => (
 

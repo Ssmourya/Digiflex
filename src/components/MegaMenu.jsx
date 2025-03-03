@@ -99,17 +99,17 @@ const NavItem = ({ service }) => {
                     className="fixed z-50 animate-fadeIn"
                     style={{ animationDuration: '500ms' }}
                 >
-                    {/* Notch */}
+                    {/* {/ Notch /} */}
                     <div className="dropdown-notch absolute -top-2 w-4 h-4 rotate-45 bg-blue-950 z-10" />
 
-                    {/* Dropdown Content */}
+                    {/* {/ Dropdown Content /} */}
                     <div
                         ref={contentRef}
                         className="relative grid grid-cols-1 md:grid-cols-2 p-6 rounded-xl bg-blue-950 shadow-xl 
                         border border-gray-100
                         "   
                     >
-                        {/* Left side - Features */}
+                        {/* {/ Left side - Features /} */}
                         <div className="w-full pr-0 md:pr-6">
                             <h3 className="text-lg font-bold text-white mb-4">{service.title} Services</h3>
                             <div className={`${service.features?.length > 4 ? 'grid grid-cols-1 md:grid-cols-2 gap-3' : 'space-y-3'}`}>
@@ -131,7 +131,7 @@ const NavItem = ({ service }) => {
                             </div>
                         </div>
 
-                        {/* Right side - Image */}
+                        {/* {/ Right side - Image /} */}
                         <div className="hidden md:flex items-center justify-center h-full mt-6 md:mt-0">
                             {
                                 service.image ? (
@@ -168,7 +168,7 @@ const MegaMenu = ({ services }) => {
     return (
         <nav className="fixed left-0 top-[85px] w-full bg-white shadow-sm z-40 px-4 py-1">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-start">
-            {/* <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> */}
+            {/* {/ <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> /} */}
                 {services.map((service, index) => (
                     <NavItem key={index} service={service} />
                 ))}

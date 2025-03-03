@@ -14,20 +14,6 @@ const Navbar = () => {
     const [hoveredCategory, setHoveredCategory] = useState(null);
 
     const navbarRef = useRef(null);
-    const timeoutRef = useRef(null);
-
-    const handleMouseEnter = () => {
-        if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current); // Prevent closing if hovered back
-        }
-    };
-
-    const handleMouseLeave = () => {
-        timeoutRef.current = setTimeout(() => {
-            setActiveDropdown(null);
-            setHoveredCategory(null);
-        }, 3000);
-    };
 
     const handleDropdownClick = (dropdownType) => {
         setActiveDropdown(activeDropdown === dropdownType ? null : dropdownType);
@@ -51,7 +37,7 @@ const Navbar = () => {
         return matchByTitle ? matchByTitle.features : [];
     };
 
-    useEffect(() => {
+    useEffect( () => {
         const handleClickOutside = (event) => {
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 setIsMobileMenuVisible(false);
@@ -118,8 +104,6 @@ const Navbar = () => {
                                     <div
                                         key={navItem.label}
                                         className="relative group"
-                                        onMouseEnter={handleMouseEnter}
-                                        onMouseLeave={handleMouseLeave}
                                     >
                                         <div
                                             className="flex items-center space-x-1 cursor-pointer"
@@ -148,7 +132,7 @@ const Navbar = () => {
 
                                         {navItem.hasDropdown &&
                                             activeDropdown === navItem.dropdownType && (
-                                                <MegaMenu services={getDropdownItems(navItem.dropdownType)} />
+                                                <MegaMenu setActiveDropdown={setActiveDropdown} services={getDropdownItems(navItem.dropdownType)} />
                                             )}
                                     </div>
                                 ))}
@@ -162,12 +146,7 @@ const Navbar = () => {
                                 >
                                     <Search className="h-5 w-5" />
                                 </button>
-                                {/* <Link
-                                    to="/contact-us"
-                                    className="border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm"
-                                >
-                                    CONTACT US
-                                </Link> */}
+                                
 
                                 <Link
                                     to="/contact-us"
@@ -177,15 +156,6 @@ const Navbar = () => {
                                 >
                                     CONTACT US
                                 </Link>
-
-                                {/* <Link
-                                    to="/contact-us"
-                                    className="border border-blue-600 text-blue-600 px-6 py-2 text-sm font-medium 
-                                    rounded-md hover:bg-blue-600 hover:text-white transition-all duration-300 
-                                    shadow-md hover:shadow-lg"
-                                >
-                                    CONTACT US
-                                </Link> */}
 
                             </div>
 

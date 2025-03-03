@@ -4,7 +4,9 @@ import PC_develoopment from "./PC_develoopment";
 import GameDevelopmentProcess from "./GameDevelopmentProcess";
 import GameDevTools from "./GameDevTools";
 import Benefits from "./Benefits";
-import PCGameFAQ from "./PCGameFAQ";
+import { PC_develoopmentFAQData } from "../FAQData";
+import Faq from '../../../../components/Faq'
+
 
 const Body = () => {
   return (
@@ -14,7 +16,7 @@ const Body = () => {
       <GameDevelopmentProcess />
       <GameDevTools />
       <Benefits />
-      <PCGameFAQ />
+      <Faq faqs={PC_develoopmentFAQData} />
     </div>
   );
 };

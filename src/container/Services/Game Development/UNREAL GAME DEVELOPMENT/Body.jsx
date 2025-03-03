@@ -2,7 +2,9 @@ import React from 'react'
 import GameServices from './GameServices';
 import UnrealBenefits from './UnrealBenefits';
 import UnrealTeam from './UnrealTeam'
-import UnrealGameFAQ from './UnrealGameFAQ'
+import { UnrealGameFAQData } from '../FAQData';
+import Faq from '../../../../components/Faq'
+
 
 
 const Body = () => {
@@ -11,7 +13,8 @@ const Body = () => {
             <GameServices />
             <UnrealBenefits />
             <UnrealTeam />
-            <UnrealGameFAQ />
+            <Faq faqs={UnrealGameFAQData} />
+    
         </div>
     )
 }

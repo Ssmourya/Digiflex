@@ -71,7 +71,7 @@ const ResourceAugmentation = () => {
           {resources.map((resource, index) => (
             <div 
               key={index} 
-              className="bg-[#f3f4f6] p-6 rounded-xl hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
+              className="bg-white p-6 rounded-xl hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
             >
               <div className="mb-4 p-3 rounded-full bg-blue-50">{resource.icon}</div>
               <h3 className="text-xl font-semibold mb-2 text-blue-900">{resource.name}</h3>

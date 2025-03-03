@@ -2,7 +2,9 @@ import React from 'react'
 import VrXrServices from './VrXrServices'
 import DevelopmentServices from './DevelopmentServices'
 import Tools from './Tools'
-import VRXRSimulationFAQ from './VRXRSimulationFAQ'
+import { VRXRSimulationFAQData } from '../FAQData'
+import Faq from '../../../../components/Faq'
+
 
 const Body = () => {
     return (
@@ -10,7 +12,9 @@ const Body = () => {
             <VrXrServices />
             <DevelopmentServices/>
             <Tools />
-            <VRXRSimulationFAQ />
+            <Faq faqs={VRXRSimulationFAQData} />
+    
+            
         </div>
     )
 }

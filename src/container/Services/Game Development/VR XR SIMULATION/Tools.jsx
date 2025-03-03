@@ -45,7 +45,7 @@ const TechCard = memo(({ stack, isSelected, onClick }) => {
       onClick={onClick}
       className={`relative overflow-hidden rounded-xl p-6 cursor-pointer
         transition-all duration-300 transform hover:-translate-y-1
-        ${isSelected ? 'shadow-2xl ring-2 ring-blue-500 bg-[#f3f4f6]' : 'shadow-lg hover:shadow-xl bg-[#f3f4f6]'}`}
+        ${isSelected ? 'shadow-2xl ring-2 ring-blue-500 bg-white' : 'shadow-lg hover:shadow-xl bg-white'}`}
       aria-selected={isSelected}
       role="button"
       aria-label={`View ${stack.title} technologies`}

@@ -2,7 +2,8 @@ import React from "react";
 import ServicesSection from "./ServicesSection";
 import PricingPlans from "./PricingPlans";
 import GameAceBenefits from "./GameAceBenefits";
-import MobileGameFAQ from "./MobileGameFAQ";
+import Faq from "../../../../components/Faq";
+import { MobileGameFAQData } from "../FAQData";
 
 const Body = () => {
   return (
@@ -11,7 +12,7 @@ const Body = () => {
 
       <PricingPlans />
       <GameAceBenefits />
-      <MobileGameFAQ />
+      <Faq faqs={MobileGameFAQData} />
     </>
   );
 };

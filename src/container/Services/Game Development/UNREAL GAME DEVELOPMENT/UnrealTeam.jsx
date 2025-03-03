@@ -5,7 +5,7 @@ import Paragraph from '../../../../Layout/Paragraph';
 import Subheading from '../../../../Layout/Subheading';
 
 const TeamMemberCard = ({ icon, title, description }) => (
-  <div className="bg-[#f3f4f6] rounded-lg p-6 transition-all duration-300 hover:shadow-xl group text-center border border-gray-300 shadow-md hover:shadow-2xl hover:border-white hover:bg-blue-500 transform hover:-translate-y-1">
+  <div className="bg-white rounded-lg p-6 transition-all duration-300 hover:shadow-xl group text-center border border-gray-300 shadow-md hover:shadow-2xl hover:border-white hover:bg-blue-500 transform hover:-translate-y-1">
     <div className="mb-4 w-12 h-12 mx-auto text-[#f59e0b] group-hover:text-white group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>

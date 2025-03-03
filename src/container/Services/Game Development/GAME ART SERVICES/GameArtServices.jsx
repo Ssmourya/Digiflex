@@ -72,7 +72,7 @@ const GameArtServices = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="bg-[#f3f4f6] shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300"
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

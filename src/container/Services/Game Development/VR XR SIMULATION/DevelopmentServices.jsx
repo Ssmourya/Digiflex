@@ -43,7 +43,7 @@ const DevelopmentServices = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex items-start space-x-4 p-6 border rounded-xl shadow-md hover:shadow-lg transition bg-[#f3f4f6]"
+              className="flex items-start space-x-4 p-6 border rounded-xl shadow-md hover:shadow-lg transition bg-white"
             >
               <span className="text-4xl text-blue-500">{service.icon}</span>
               <div>

@@ -55,7 +55,7 @@ const NavItem = ({ setActiveDropdown, service }) => {
             // Position notch at the center of the button
             const notchEl = dropdownEl.querySelector('.dropdown-notch');
             if (notchEl) {
-                const notchPosition = buttonCenter - leftPosition - 8; // 8 is half the notch width
+                const notchPosition = buttonCenter - leftPosition - (8); // 8 is half the notch width
                 notchEl.style.left = `${notchPosition}px`;
             }
         };
@@ -97,7 +97,7 @@ const NavItem = ({ setActiveDropdown, service }) => {
                     style={{ animationDuration: '500ms' }}
                 >
                     {/* {/ Notch /} */}
-                    <div className="dropdown-notch absolute -top-2 w-4 h-4 rotate-45 bg-blue-950 z-10" />
+                    <div className="dropdown-notch absolute top-[-0.41rem] w-4 h-4 rotate-45 bg-blue-950 z-10" />
 
                     {/* {/ Dropdown Content /} */}
                     <div
@@ -163,7 +163,7 @@ const NavItem = ({ setActiveDropdown, service }) => {
 
 const MegaMenu = ({ setActiveDropdown, services }) => {
     return (
-        <nav className="fixed left-0 top-[85px] w-full bg-white shadow-sm z-40 px-4 py-1">
+        <nav className="fixed left-0 top-[107px] w-full bg-white shadow-sm z-40 px-4 py-1">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-start">
                 {/* {/ <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> /} */}
                 {services.map((service, index) => (

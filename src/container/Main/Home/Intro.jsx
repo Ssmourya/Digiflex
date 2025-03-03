@@ -3,6 +3,12 @@ import { ArrowRight, Star } from 'lucide-react';
 import WrapperContainer from '../../../Layout/WrapperContainer';
 
 function App() {
+  const scrollToReviews = () => {
+    const reviewsSection = document.getElementById('reviews-section');
+    if (reviewsSection) {
+      reviewsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="bg-white">
       <WrapperContainer>
@@ -64,7 +70,8 @@ function App() {
               {/* Review Section - Responsive layout */}
               <div className="bg-slate-900 text-white p-4 sm:p-6 lg:p-4 xl:p-6 rounded-xl sm:rounded-2xl mt-8 sm:mt-12 lg:mt-8 xl:mt-12">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 lg:gap-4 xl:gap-8">
-                  <button className="text-blue-400 font-medium flex items-center gap-1 sm:gap-2 lg:gap-1 xl:gap-2 hover:gap-3 transition-all">
+                  <button className="text-blue-400 font-medium flex items-center gap-1 sm:gap-2 lg:gap-1 xl:gap-2 hover:gap-3 transition-all"
+                  onClick={scrollToReviews}>
                     READ MORE <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5" />
                   </button>
                   

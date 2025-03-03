@@ -33,7 +33,7 @@ const testimonials = [
 
 export function ReviewsSection() {
     return (
-      <section className="bg-gradient-to-b from-blue-50 to-blue-200 pb-10">
+      <section id="reviews-section" className="bg-gradient-to-b  from-blue-50 to-blue-200 pb-10">
         <WrapperContainer>
           <div className="text-center ">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">

@@ -25,22 +25,22 @@ const contacts = {
 
 const socialLinks = [
   { 
-    url: 'https://instagram.com/digiflex', 
+    url: 'https://www.instagram.com/questdigiflex', 
     network: 'instagram',
     ariaLabel: 'Instagram' 
   },
   { 
-    url: 'https://facebook.com/digiflex', 
+    url: 'https://www.facebook.com/questdigiflex', 
     network: 'facebook',
     ariaLabel: 'Facebook' 
   },
   { 
-    url: 'https://twitter.com/digiflex', 
+    url: 'https://x.com/QuestDigiflex', 
     network: 'x',
     ariaLabel: 'x' 
   },
   { 
-    url: 'https://linkedin.com/company/digiflex', 
+    url: 'https://linkedin.com/company/quest-digiflex', 
     network: 'linkedin',
     ariaLabel: 'LinkedIn' 
   },
@@ -50,12 +50,12 @@ const socialLinks = [
     ariaLabel: 'Discord'
   },
   {
-    url: 'https://wa.me/1234567890',
+    url: 'https://wa.me/9111454949',
     network: 'whatsapp',
     ariaLabel: 'WhatsApp'
   },
   {
-    url: 'https://www.youtube.com/digiflex',
+    url: 'https://www.youtube.com/@QuestDigiflex',
     network: 'youtube',
     ariaLabel: 'YouTube'
   },
@@ -117,7 +117,7 @@ function Footer() {
                           key={flagIndex} 
                           src={flag.flagUrl} 
                           alt={flag.alt} 
-                          className="h-10 w-16"
+                          className="h-8 w-14"
                         />
                       ))}
                     </div>

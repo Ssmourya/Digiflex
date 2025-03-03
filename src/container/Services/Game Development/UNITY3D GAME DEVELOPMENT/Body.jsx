@@ -2,7 +2,9 @@ import React from 'react'
 import ServicesSection from './ServicesSection '
 import WhyChooseUs from './WhyChooseUs'
 import GameGenres from './GameGenres'
-import Unity3DGameDevelopmentFAQ from './Unity3DGameDevelopmentFAQ'
+import { Unity3DGameFAQData } from '../FAQData'
+import Faq from '../../../../components/Faq'
+
 
 
 const Body = () => {
@@ -11,8 +13,8 @@ const Body = () => {
           <ServicesSection />
           <WhyChooseUs/>
           <GameGenres/>
-          <Unity3DGameDevelopmentFAQ />
-          
+          <Faq faqs={Unity3DGameFAQData} />
+      
       
         </div>
     )

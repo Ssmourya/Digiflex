@@ -11,7 +11,7 @@ const FeatureCard = ({ icon: Icon, title, description, index }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.2 }}
-      className="bg-[#f3f4f6] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden flex flex-col items-center text-center"
+      className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden flex flex-col items-center text-center"
     >
       <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
         <Icon className="w-8 h-8 text-white" />

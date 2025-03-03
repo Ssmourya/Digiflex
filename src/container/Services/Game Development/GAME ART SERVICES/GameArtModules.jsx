@@ -13,22 +13,27 @@ import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const ModuleCard = ({ title, description, icon: Icon }) => (
-  <div className="relative bg-[#f3f4f6] border border-gray-300 shadow-md rounded-lg overflow-hidden hover:bg-gray-100 transition-all duration-300 cursor-pointer group">
-    <div className="p-6">
-      <div className="flex flex-col items-center text-center space-y-4">
-        <div className="p-4 bg-blue-100 rounded-xl group-hover:bg-blue-200 transition-all duration-300">
-          <Icon size={28} className="text-blue-500 group-hover:text-blue-600" />
-        </div>
-        <h3 className="text-lg font-semibold text-gray-700 group-hover:text-gray-900">
-          {title}
-        </h3>
-        <p className="text-gray-600 text-sm group-hover:text-gray-800">
-          {description}
-        </p>
+  <div className="relative bg-white border border-gray-200 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group">
+    <div className="p-6 flex flex-col items-center text-center space-y-4">
+      {/* Icon with blue background */}
+      <div className="p-4 bg-blue-100 rounded-xl group-hover:bg-blue-200 transition-all duration-300">
+        <Icon size={28} className="text-blue-500 group-hover:text-blue-600" />
       </div>
+
+      {/* Title */}
+      <h3 className="text-lg font-semibold text-gray-700 group-hover:text-gray-900">
+        {title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-600 text-sm group-hover:text-gray-800">
+        {description}
+      </p>
     </div>
   </div>
 );
+
+
 
 function GameArtModules() {
   const modules = [

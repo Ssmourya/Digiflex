@@ -4,19 +4,17 @@ import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
-const ServiceCard = ({ icon: Icon, title, description }) => {
-  return (
-    <div className="flex flex-col h-full p-6 bg-[#f3f4f6] rounded-xl hover:shadow-lg transition-all duration-300">
-      <div className="mb-6">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
-          <Icon className="w-6 h-6 text-white" />
-        </div>
+const ServiceCard = ({ icon: Icon, title, description }) => (
+  <div className="flex flex-col h-full p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-[1.03]">
+    <div className="mb-5 flex items-center justify-center">
+      <div className="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
+        <Icon className="w-7 h-7 text-white" />
       </div>
-      <Subheading>{title}</Subheading>
-      <p className="text-gray-700 text-sm leading-relaxed flex-grow">{description}</p>
     </div>
-  );
-};
+    <Subheading className="mb-2">{title}</Subheading>
+    <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
+  </div>
+);
 
 const ServicesSection = () => {
   const services = [
@@ -42,22 +40,16 @@ const ServicesSection = () => {
 
   return (
     <WrapperContainer>
-      {/* Header Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-10">
         <Heading>Digiflex Unity3D Game Development Services</Heading>
+        <Subheading>
+          We create innovative, high-performance Unity games using cutting-edge
+          technology and creative solutions.
+        </Subheading>
       </div>
-      <Subheading>
-        At Digiflex, we craft innovative gaming experiences using the latest technology and creative solutions.
-        Our Unity game developers bring your vision to life with engaging, high-performance games for all platforms.
-      </Subheading>
-      <br />
-
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
-          <div key={index} className="h-full">
-            <ServiceCard icon={service.icon} title={service.title} description={service.description} />
-          </div>
+          <ServiceCard key={index} {...service} />
         ))}
       </div>
     </WrapperContainer>

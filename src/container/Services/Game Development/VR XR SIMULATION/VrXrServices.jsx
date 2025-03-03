@@ -43,7 +43,7 @@ const VrXrServices = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-6 border rounded-lg shadow-md bg-[#f3f4f6] min-h-[150px] w-full sm:w-auto"
+              className="flex flex-col items-center justify-center p-6 border rounded-lg shadow-md bg-white min-h-[150px] w-full sm:w-auto"
             >
               <div className="text-4xl text-blue-500 mb-3">{feature.icon}</div>
               <p className="text-center font-semibold">{feature.title}</p>

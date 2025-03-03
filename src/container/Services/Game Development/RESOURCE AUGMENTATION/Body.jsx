@@ -2,7 +2,9 @@ import React from "react";
 import ResourceAugmentationServices from "./ResourceAugmentationServices";
 import BenefitsSection from "./BenefitsSection";
 import ResourceAugmentation from "./ResourceAugmentation";
-import ResourceAugmentationFAQ from "./ResourceAugmentationFAQ";
+import { ResourceAugmentationFAQData } from "../FAQData";
+import Faq from '../../../../components/Faq'
+
 
 const Body = () => {
   return (
@@ -10,7 +12,8 @@ const Body = () => {
       <ResourceAugmentationServices />
       <BenefitsSection />
       <ResourceAugmentation />
-      <ResourceAugmentationFAQ />
+      <Faq faqs={ResourceAugmentationFAQData} />
+    
     </div>
   );
 };

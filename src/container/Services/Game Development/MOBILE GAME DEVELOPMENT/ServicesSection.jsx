@@ -103,7 +103,7 @@ const ServicesSection = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="p-6 bg-gray-100 rounded-lg shadow-lg text-center flex flex-col items-center relative overflow-hidden"
+            className="p-6 bg-white rounded-lg shadow-lg text-center flex flex-col items-center relative overflow-hidden"
             variants={cardVariants}
             whileHover={cardHover}
           >

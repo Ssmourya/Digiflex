@@ -132,7 +132,7 @@ const TopFeature = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-4 sm:p-6 rounded-xl text-center border-[#6D4A2D] transition-all duration-500 hover:shadow-2xl hover:border-white hover:bg-blue-500 group transform hover:-translate-y-1 bg-[#f3f4f6]"
+              className="p-4 sm:p-6 rounded-xl text-center border-[#6D4A2D] transition-all duration-500 hover:shadow-2xl hover:border-white hover:bg-blue-500 group transform hover:-translate-y-1 bg-white"
             >
               <div className="text-amber-500 mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}

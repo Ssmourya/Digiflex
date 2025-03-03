@@ -1,307 +1,332 @@
 import {
-    BrainCircuit,
-    Boxes,
-    MoveUpRight,
-    Cloudy,
-    Globe,
-    Smartphone,
-    ShoppingCart,
-    Database,
-    Cpu,
-    Trello,
-    Blocks,
-    Cloud,
-    Code,
-    Server,
-    LineChart,
-    Rocket,
-    ShoppingBag,
-    Clock,
-    Joystick,
-    Monitor,
-    PenTool,
-    Glasses,
-    UserCheck,
-    Signature,
-    Currency,
-    Wallet,
-    MessageSquareLock,
-    ServerIcon,
-    Code2Icon,
-    CodeSquareIcon,
-    Shield,
-    Palette,
-    CreditCard,
-    Layers,
-    ChartBar
+  BrainCircuit,
+  Boxes,
+  MoveUpRight,
+  Cloudy,
+  Globe,
+  Smartphone,
+  ShoppingCart,
+  Database,
+  Cpu,
+  Trello,
+  Blocks,
+  Cloud,
+  Code,
+  Server,
+  LineChart,
+  Rocket,
+  ShoppingBag,
+  Clock,
+  Joystick,
+  Monitor,
+  PenTool,
+  Glasses,
+  UserCheck,
+  Signature,
+  Currency,
+  Wallet,
+  MessageSquareLock,
+  ServerIcon,
+  Code2Icon,
+  CodeSquareIcon,
+  Shield,
+  Palette,
+  CreditCard,
+  Layers,
+  ChartBar,
 } from "lucide-react";
 
 import { FaAngular, FaBootstrap, FaReact, FaVuejs } from "react-icons/fa";
 export const technologies = [
-    {
-        id: "mobile",
+  {
+    id: "mobile",
+    icon: Smartphone,
+    title: "Mobile App Development",
+    color: "text-blue-500",
+    description:
+      "Build high-performance mobile applications for various platforms.",
+    features: [
+      {
         icon: Smartphone,
-        title: "Mobile App Development",
-        color: "text-blue-500",
-        description:
-            "Build high-performance mobile applications for various platforms.",
-        features: [
-            {
-                icon: Smartphone,
-                title: "IOS App",
-                path: "/tech/mobile/ios",
-            },
-            {
-                icon: Smartphone,
-                title: "Android App",
-                path: "/tech/AndroidAppDevlopment",
-            },
-            {
-                icon: Smartphone,
-                title: "React Native",
-                path: "/tech/ReactNative",
-            },
-            {
-                icon: Smartphone,
-                title: "Flutter",
-                path: "/tech/FlutterDevlopment",
-            },
-            {
-                icon: Smartphone,
-                title: "NativeScript",
-                path: "/tech/NativeScript",
-            },
-            {
-                icon: Smartphone,
-                title: "Xamarin",
-                path: "/tech/XamarinAppDevlopment",
-            },
-            {
-                icon: Smartphone,
-                title: "HTMl APP",
-                path: "/tech/HtmlDevlopment",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-        id: "website-dev",
-        icon: Globe,
-        title: "Website",
-        color: "text-blue-500",
-        description: "Responsive and optimized websites tailored to your business needs.",
-        features: [
-            { icon: Code, title: "Frontend Development", path: "/services/website-dev/frontend" },
-            { icon: Server, title: "Backend Development", path: "/services/website-dev/backend" },
-            { icon: ShoppingCart, title: "E-commerce Solutions", path: "/services/website-dev/ecommerce" },
-            { icon: Cloud, title: "Hosting & Maintenance", path: "/services/website-dev/hosting" }
-        ],
-        image: "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80",
-    },
-    
-    {
-        id: "frontend",
+        title: "IOS App",
+        path: "/tech/mobile/ios",
+      },
+      {
+        icon: Smartphone,
+        title: "Android App",
+        path: "/tech/AndroidAppDevlopment",
+      },
+      {
+        icon: Smartphone,
+        title: "React Native",
+        path: "/tech/ReactNative",
+      },
+      {
+        icon: Smartphone,
+        title: "Flutter",
+        path: "/tech/FlutterDevlopment",
+      },
+      {
+        icon: Smartphone,
+        title: "NativeScript",
+        path: "/tech/NativeScript",
+      },
+      {
+        icon: Smartphone,
+        title: "Xamarin",
+        path: "/tech/XamarinAppDevlopment",
+      },
+      {
+        icon: Smartphone,
+        title: "HTMl APP",
+        path: "/tech/HtmlDevlopment",
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    id: "website-dev",
+    icon: Globe,
+    title: "Website",
+    color: "text-blue-500",
+    description:
+      "Responsive and optimized websites tailored to your business needs.",
+    features: [
+      {
         icon: Code,
-        title: "Frontend Technologies",
-        color: "text-purple-500",
-        description:
-            "Modern frontend frameworks and libraries for building responsive web applications.",
-        features: [
-            {
-                icon: FaAngular,
-                title: "Angular",
-                path: "/tech/frontend/angular",
-            },
-            {
-                icon: FaReact,
-                title: "React.js",
-                path: "/tech/frontend/react",
-            },
-            { icon: FaVuejs, title: "Vue.js", path: "/tech/frontend/vue" },
-            {
-                icon: FaBootstrap,
-                title: "Bootstrap",
-                path: "/tech/frontend/bootstrap",
-            },
-            {
-                icon: Code2Icon,
-                title: "Knockout.js",
-                path: "/tech/frontend/knockout",
-            },
-            {
-                icon: CodeSquareIcon,
-                title: "Next.js",
-                path: "/tech/frontend/nextjs",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1555066931-bf19f8fd1085?auto=format&fit=crop&w=600&q=80",
-    },
-    
-    {
-        id: "website-development",
+        title: "Frontend Development",
+        path: "/services/website-dev/frontend",
+      },
+      {
+        icon: Server,
+        title: "Backend Development",
+        path: "/services/website-dev/backend",
+      },
+      {
+        icon: ShoppingCart,
+        title: "E-commerce Solutions",
+        path: "/services/website-dev/ecommerce",
+      },
+      {
+        icon: Cloud,
+        title: "Hosting & Maintenance",
+        path: "/services/website-dev/hosting",
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80",
+  },
+
+  {
+    id: "frontend",
+    icon: Code,
+    title: "Frontend Technologies",
+    color: "text-purple-500",
+    description:
+      "Modern frontend frameworks and libraries for building responsive web applications.",
+    features: [
+      {
+        icon: FaAngular,
+        title: "Angular",
+        path: "/tech/frontend/angular",
+      },
+      {
+        icon: FaReact,
+        title: "React.js",
+        path: "/tech/frontend/react",
+      },
+      { icon: FaVuejs, title: "Vue.js", path: "/tech/frontend/vue" },
+      {
+        icon: FaBootstrap,
+        title: "Bootstrap",
+        path: "/tech/frontend/bootstrap",
+      },
+      {
+        icon: Code2Icon,
+        title: "Knockout.js",
+        path: "/tech/frontend/knockout",
+      },
+      {
+        icon: CodeSquareIcon,
+        title: "Next.js",
+        path: "/tech/frontend/nextjs",
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1555066931-bf19f8fd1085?auto=format&fit=crop&w=600&q=80",
+  },
+
+  {
+    id: "website-development",
+    icon: Globe,
+    title: "Website Development",
+    color: "text-blue-500",
+    description:
+      "Full-stack website development using modern frameworks and languages.",
+    features: [
+      { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
+      {
         icon: Globe,
-        title: "Website Development",
-        color: "text-blue-500",
-        description:
-            "Full-stack website development using modern frameworks and languages.",
-        features: [
-            { icon: Globe, title: "MEAN Stack", path: "/mean-stack-development" },
-            { icon: Globe, title: "Java/J2EE", path: "/java-j2ee-development-services" },
-            { icon: Globe, title: "Python", path: "/tech/web/python" },
-            { icon: Globe, title: ".NET", path: "/tech/web/dotnet" },
-            {
-                icon: Globe,
-                title: "Ruby on Rails (ROR)",
-                path: "/tech/web/ruby-on-rails",
-            },
-            { icon: Globe, title: "Golang", path: "/tech/web/golang" },
-            {
-                icon: Globe,
-                title: "PHP: Laravel",
-                path: "/tech/web/laravel",
-            },
-            {
-                icon: Globe,
-                title: "PHP: CodeIgniter",
-                path: "/tech/web/codeigniter",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
-    },
+        title: "Java/J2EE",
+        path: "/java-j2ee-development-services",
+      },
+      { icon: Globe, title: "Python", path: "/tech/web/python" },
+      { icon: Globe, title: ".NET", path: "/tech/web/dotnet" },
+      {
+        icon: Globe,
+        title: "Ruby on Rails (ROR)",
+        path: "/tech/web/ruby-on-rails",
+      },
+      { icon: Globe, title: "Golang", path: "/tech/web/golang" },
+      {
+        icon: Globe,
+        title: "PHP: Laravel",
+        path: "/tech/web/laravel",
+      },
+      {
+        icon: Globe,
+        title: "PHP: CodeIgniter",
+        path: "/tech/web/codeigniter",
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
+  },
 
-    {
-        id: "devops",
+  {
+    id: "devops",
+    icon: Cloud,
+    title: "DevOps & Cloud Services",
+    color: "text-yellow-500",
+    description:
+      "Scalable cloud platforms and DevOps solutions for continuous integration and deployment.",
+    features: [
+      {
         icon: Cloud,
-        title: "DevOps & Cloud Services",
-        color: "text-yellow-500",
-        description:
-            "Scalable cloud platforms and DevOps solutions for continuous integration and deployment.",
-        features: [
-            {
-                icon: Cloud,
-                title: "Amazon Web Services (AWS)",
-                path: "/tech/devops/aws",
-            },
-            {
-                icon: Cloud,
-                title: "Google App Engine",
-                path: "/tech/devops/google-app-engine",
-            },
-            {
-                icon: Cloud,
-                title: "Microsoft Azure",
-                path: "/tech/devops/azure",
-            },
-            {
-                icon: Cloud,
-                title: "CI/CD Automation",
-                path: "/tech/devops/cicd",
-            },
-            {
-                icon: Cloud,
-                title: "Serverless Computing",
-                path: "/tech/devops/serverless",
-            },
-        ],
-        image: "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2b3BzfGVufDB8fDB8fHww",
-    },
+        title: "Amazon Web Services (AWS)",
+        path: "/tech/devops/aws",
+      },
+      {
+        icon: Cloud,
+        title: "Google App Engine",
+        path: "/tech/devops/google-app-engine",
+      },
+      {
+        icon: Cloud,
+        title: "Microsoft Azure",
+        path: "/tech/devops/azure",
+      },
+      {
+        icon: Cloud,
+        title: "CI/CD Automation",
+        path: "/tech/devops/cicd",
+      },
+      {
+        icon: Cloud,
+        title: "Serverless Computing",
+        path: "/tech/devops/serverless",
+      },
+    ],
+    image:
+      "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2b3BzfGVufDB8fDB8fHww",
+  },
 
-    {
-        id: "salesforce",
+  {
+    id: "salesforce",
+    icon: Cloud,
+    title: "Salesforce Solutions",
+    color: "text-blue-600",
+    description:
+      "Comprehensive Salesforce solutions for CRM, automation, and business intelligence.",
+    features: [
+      {
         icon: Cloud,
-        title: "Salesforce Solutions",
-        color: "text-blue-600",
-        description:
-            "Comprehensive Salesforce solutions for CRM, automation, and business intelligence.",
-        features: [
-            {
-                icon: Cloud,
-                title: "Sales Cloud",
-                path: "/tech/salesforce/sales-cloud",
-            },
-            {
-                icon: Cloud,
-                title: "Marketing Cloud & Pardot",
-                path: "/tech/salesforce/marketing-cloud",
-            },
-            {
-                icon: Cloud,
-                title: "Service Cloud",
-                path: "/tech/salesforce/service-cloud",
-            },
-            {
-                icon: Cloud,
-                title: "Community/Experience Cloud",
-                path: "/tech/salesforce/community-cloud",
-            },
-            {
-                icon: Cloud,
-                title: "Force.com",
-                path: "/tech/salesforce/force-com",
-            },
-            {
-                icon: Cloud,
-                title: "Einstein Analytics & Discovery",
-                path: "/tech/salesforce/einstein-analytics",
-            },
-            {
-                icon: Cloud,
-                title: "Commerce Cloud",
-                path: "/tech/salesforce/commerce-cloud",
-            },
-            {
-                icon: Cloud,
-                title: "Revenue Cloud/CPQ",
-                path: "/tech/salesforce/revenue-cloud",
-            },
-            {
-                icon: Cloud,
-                title: "Lightning Experience",
-                path: "/tech/salesforce/lightning-experience",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1558623869-d6f8763a24f9?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+        title: "Sales Cloud",
+        path: "/tech/salesforce/sales-cloud",
+      },
+      {
+        icon: Cloud,
+        title: "Marketing Cloud & Pardot",
+        path: "/tech/salesforce/marketing-cloud",
+      },
+      {
+        icon: Cloud,
+        title: "Service Cloud",
+        path: "/tech/salesforce/service-cloud",
+      },
+      {
+        icon: Cloud,
+        title: "Community/Experience Cloud",
+        path: "/tech/salesforce/community-cloud",
+      },
+      {
+        icon: Cloud,
+        title: "Force.com",
+        path: "/tech/salesforce/force-com",
+      },
+      {
+        icon: Cloud,
+        title: "Einstein Analytics & Discovery",
+        path: "/tech/salesforce/einstein-analytics",
+      },
+      {
+        icon: Cloud,
+        title: "Commerce Cloud",
+        path: "/tech/salesforce/commerce-cloud",
+      },
+      {
+        icon: Cloud,
+        title: "Revenue Cloud/CPQ",
+        path: "/tech/salesforce/revenue-cloud",
+      },
+      {
+        icon: Cloud,
+        title: "Lightning Experience",
+        path: "/tech/salesforce/lightning-experience",
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1558623869-d6f8763a24f9?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
-
 
 export const mainNavItems = [
-        {
-            label: "Services",
-            href: "#",
-            hasDropdown: true,
-            dropdownType: "services",
-        },
-        {
-            label: "Products",
-            href: "#",
-            hasDropdown: true,
-            dropdownType: "products",
-        },
-        // {
-        //     label: "Industries",
-        //     href: "#",
-        //     hasDropdown: true,
-        //     dropdownType: "industries",
-        // },
-        // {   label: "Clients", 
-        //     href: "#" 
-        // },
-        // {
-        //     label: "Insights",
-        //     href: "#",
-        //     hasDropdown: true,
-        //     dropdownType: "insights",
-        // },
-        // { 
-        //     label: "Approach", 
-        //     href: "#" 
-        // },
-        // {   label: "About us", 
-        //     href: "about-us" 
-        // },
+  {
+    label: "Services",
+    href: "#",
+    hasDropdown: true,
+    dropdownType: "services",
+  },
+  {
+    label: "Products",
+    href: "#",
+    hasDropdown: true,
+    dropdownType: "products",
+  },
+  // {
+  //     label: "Industries",
+  //     href: "#",
+  //     hasDropdown: true,
+  //     dropdownType: "industries",
+  // },
+  // {   label: "Clients",
+  //     href: "#"
+  // },
+  // {
+  //     label: "Insights",
+  //     href: "#",
+  //     hasDropdown: true,
+  //     dropdownType: "insights",
+  // },
+  // {
+  //     label: "Approach",
+  //     href: "#"
+  // },
+  // {   label: "About us",
+  //     href: "about-us"
+  // },
 ];
-
 
 export const services = [
     {
@@ -572,26 +597,84 @@ export const services = [
     }
 ];
 
-
 export const serviceCategories = [
-    { id: "consulting", title: "Consulting", hasDropdown: true, dropdownType: "consulting" },
-    { id: "uiux", title: "UI/UX", hasDropdown: true, dropdownType: "uiux" },
-    { id: "custom-apps", title: "Custom Apps", hasDropdown: true, dropdownType: "custom-apps" },
-    { id: "testing", title: "Testing", hasDropdown: true, dropdownType: "testing" },
-    { id: "salesforce", title: "Salesforce", hasDropdown: true, dropdownType: "salesforce" },
-    { id: "cloud", title: "Cloud", hasDropdown: true, dropdownType: "cloud" },
-    { id: "game-dev", title: "Game Development", hasDropdown: true, dropdownType: "game-dev" },
-    { id: "blockchain", title: "Blockchain", hasDropdown: true, dropdownType: "blockchain" },
-    { id: "e-commerce", title: "Ecommerce", hasDropdown: true, dropdownType: "e-commerce" },
-    { id: "ai", title: "AI Development", hasDropdown: true, dropdownType: "ai" },
-    { id: "mobile-app", title: "Mobile App", hasDropdown: true, dropdownType: "mobile-app" },
-    { id: "frontend-scripting", title: "Frontend", hasDropdown: true, dropdownType: "frontend-scripting" },
-    { id: "website-dev", title: "Website", hasDropdown: true, dropdownType: "website-dev" },
-    { id: "devops", title: "DevOps", hasDropdown: true, dropdownType: "devops" }
+  {
+    id: "consulting",
+    title: "Consulting",
+    hasDropdown: true,
+    dropdownType: "consulting",
+  },
+  { id: "uiux", title: "UI/UX", hasDropdown: true, dropdownType: "uiux" },
+  {
+    id: "custom-apps",
+    title: "Custom Apps",
+    hasDropdown: true,
+    dropdownType: "custom-apps",
+  },
+  {
+    id: "testing",
+    title: "Testing",
+    hasDropdown: true,
+    dropdownType: "testing",
+  },
+  {
+    id: "salesforce",
+    title: "Salesforce",
+    hasDropdown: true,
+    dropdownType: "salesforce",
+  },
+  { id: "cloud", title: "Cloud", hasDropdown: true, dropdownType: "cloud" },
+  {
+    id: "game-dev",
+    title: "Game Development",
+    hasDropdown: true,
+    dropdownType: "game-dev",
+  },
+  {
+    id: "blockchain",
+    title: "Blockchain",
+    hasDropdown: true,
+    dropdownType: "blockchain",
+  },
+  {
+    id: "e-commerce",
+    title: "Ecommerce",
+    hasDropdown: true,
+    dropdownType: "e-commerce",
+  },
+  { id: "ai", title: "AI Development", hasDropdown: true, dropdownType: "ai" },
+  {
+    id: "mobile-app",
+    title: "Mobile App",
+    hasDropdown: true,
+    dropdownType: "mobile-app",
+  },
+  {
+    id: "frontend-scripting",
+    title: "Frontend",
+    hasDropdown: true,
+    dropdownType: "frontend-scripting",
+  },
+  {
+    id: "website-dev",
+    title: "Website",
+    hasDropdown: true,
+    dropdownType: "website-dev",
+  },
+  { id: "devops", title: "DevOps", hasDropdown: true, dropdownType: "devops" },
 ];
 
-
 export const productCategories = [
-    { id: "white-lebal", title: "White Lebal", hasDropdown: true, dropdownType: "white-lebal" },
-    { id: "ready-made", title: " Ready Made", hasDropdown: true, dropdownType: "ready-made" },
+  {
+    id: "white-lebal",
+    title: "White Lebal",
+    hasDropdown: true,
+    dropdownType: "white-lebal",
+  },
+  {
+    id: "ready-made",
+    title: " Ready Made",
+    hasDropdown: true,
+    dropdownType: "ready-made",
+  },
 ];

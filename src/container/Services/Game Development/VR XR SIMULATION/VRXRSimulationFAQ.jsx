@@ -9,7 +9,7 @@ const FAQItem = ({ question, answer, isOpen, onToggle, index }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
-      className="border-b border-gray-200 last:border-none bg-[#f3f4f6] rounded-lg mb-4"
+      className="border-b border-gray-200 last:border-none bg-white rounded-lg mb-4"
     >
       <button
         onClick={onToggle}

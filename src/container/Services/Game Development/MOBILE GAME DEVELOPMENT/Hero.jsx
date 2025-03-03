@@ -8,7 +8,7 @@ const Hero = () => {
   const [activeTab, setActiveTab] = useState("services");
 
   const navItems = ["Services", "Portfolio", "About", "Contact"];
-  const headingText = "Mobile Game App Development Services";
+  const headingText = "Mobile Game App Development";
 
   // Function to generate animation delay for typewriter effect
   const getTypewriterStyle = (index) => {
@@ -56,8 +56,7 @@ const Hero = () => {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           
           
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            {headingText.split("").map((char, index) => (
+        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">           {headingText.split("").map((char, index) => (
               <span
                 key={index}
                 className="inline-block"

@@ -12,7 +12,7 @@ export default function TopBar() {
           
           <div className="hidden md:flex items-center space-x-2 group">
             <Mail size={16} className="text-[#172554] group-hover:text-blue-800  transition-colors duration-200" />
-            <span className="text-sm cursor-pointer md:text-base font-medium text-[#172554]">hr@digiflex.ai</span>
+            <span className="text-sm cursor-pointer md:text-base font-medium text-[#172554]">info@digiflex.ai</span>
           </div>
         </div>
         </div>

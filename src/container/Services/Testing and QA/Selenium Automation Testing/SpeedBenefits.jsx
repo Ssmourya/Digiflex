@@ -29,42 +29,42 @@ const SpeedBenefits = () => {
 
     return (
         <WrapperContainer>
-        <div className=" mx-auto ">
-            <div className="text-center mb-16">
-            <Heading>
-                <h2>why digiflex.ai ?</h2>
-                </Heading>
-                <Subheading>
-                <h1>speed redefines success</h1>
-                </Subheading>
-                <Paragraph>
-                    at digiflex.ai, we empower businesses with next-gen automation and AI-driven solutions. experience unparalleled speed, accuracy, and efficiency like never before.
+            <div>
+                <div className="text-center mb-16">
+                    <Heading>
+                        why digiflex.ai ?
+                    </Heading>
+                    <Subheading>
+                        speed redefines success
+                    </Subheading>
+                    <Paragraph>
+                        at digiflex.ai, we empower businesses with next-gen automation and AI-driven solutions. experience unparalleled speed, accuracy, and efficiency like never before.
                     </Paragraph>
-            </div>
+                </div>
 
-            {/* Stats Grid */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-                {
-                    statsData.map((stat, index) => (
-                        <div key={index} className="text-center">
-                            <div className="flex items-baseline justify-center">
-                                <span className={`text-6xl font-bold text-[#1A2E6F]`}>{stat.value}</span>
+                {/* Stats Grid */}
+                <div className="grid md:grid-cols-3 gap-8 mb-12">
+                    {
+                        statsData.map((stat, index) => (
+                            <div key={index} className="text-center">
+                                <div className="flex items-baseline justify-center">
+                                    <span className={`text-6xl font-bold text-blue-700`}>{stat.value}</span>
+                                </div>
+                                <h3 className={`text-xl font-semibold text-blue-700 mb-3`}>{stat.title}</h3>
+                                <h4 className="text-lg font-semibold text-blue-700 mb-2">{stat.subtitle}</h4>
+                                <p className="text-gray-600">{stat.description}</p>
                             </div>
-                            <h3 className={`text-xl font-semibold text-[#1A2E6F] mb-3`}>{stat.title}</h3>
-                            <h4 className="text-lg font-semibold text-[#1A2E6F] mb-2">{stat.subtitle}</h4>
-                            <p className="text-gray-600">{stat.description}</p>
-                        </div>
-                    ))
-                }
-            </div>
+                        ))
+                    }
+                </div>
 
-            {/* CTA Button */}
-            <div className="text-center">
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors">
-                    explore our AI solutions
-                </button>
+                {/* CTA Button */}
+                <div className="text-center">
+                    <button className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors">
+                        explore our AI solutions
+                    </button>
+                </div>
             </div>
-        </div>
         </WrapperContainer>
     );
 };

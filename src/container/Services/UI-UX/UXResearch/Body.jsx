@@ -156,44 +156,44 @@ const ServicesHero = () => {
         </div>
 
       {/*Section 3 */}
-        <div className="flex">
-      <WrapperContainer>
-          <Heading className="   font-bold text-blue-950  ">
-            DigiFlex UX Research Process
-          </Heading>
+                  <div className="flex">
+                <WrapperContainer>
+                    <Heading className="   font-bold text-blue-950  ">
+                      DigiFlex UX Research Process
+                    </Heading>
 
-          <p className="text-black mb-6 text-lg">
-            At DigiFlex, we believe UX research should be adaptable,
-            data-driven, and aligned with business goals. We dive deep into user
-            behaviors, pain points, and needs to create meaningful,
-            research-backed design decisions.
-          </p>
+                    <p className="text-black mb-6 text-lg">
+                      At DigiFlex, we believe UX research should be adaptable,
+                      data-driven, and aligned with business goals. We dive deep into user
+                      behaviors, pain points, and needs to create meaningful,
+                      research-backed design decisions.
+                    </p>
 
-          <div className="flex flex-col my-15 md:flex-col gap-6">
-            {/* Discovery & Understanding */}
-            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl">
-              <div className="flex items-center mb-4">
-                <svg
-                  className="w-6 h-6 text-blue-950  mr-3"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <circle cx="12" cy="12" r="3" />
-                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                </svg>
-                <h2 className="text-2xl text-blue-950  font-bold">
-                  Discovery & Understanding
-                </h2>
-              </div>
-              <p className="text-gray-600 hover:text-black">
-                Our UX research begins with a broad exploration of the business,
-                users, and industry context. We conduct stakeholder interviews,
-                competitive analysis, and user research to uncover insights that
-                shape the foundation of our strategy. Every detail matters—one
-                key finding can redefine the entire approach.
-              </p>
-            </div>
+                    <div className="flex flex-col my-15 md:flex-col gap-6">
+                      {/* Discovery & Understanding */}
+                      <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl">
+                        <div className="flex items-center mb-4">
+                          <svg
+                            className="w-6 h-6 text-blue-950  mr-3"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                          >
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                          </svg>
+                          <h2 className="text-2xl text-blue-950  font-bold">
+                            Discovery & Understanding
+                          </h2>
+                        </div>
+                        <p className="text-gray-600 hover:text-black">
+                          Our UX research begins with a broad exploration of the business,
+                          users, and industry context. We conduct stakeholder interviews,
+                          competitive analysis, and user research to uncover insights that
+                          shape the foundation of our strategy. Every detail matters—one
+                          key finding can redefine the entire approach.
+                        </p>
+                      </div>
 
             {/* Insight & Analysis */}
             <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200 hover:shadow-blue-200 hover:shadow-xl ">

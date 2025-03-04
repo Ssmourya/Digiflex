@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Search, X, Menu, ChevronDown } from "lucide-react";
 import logo from "../assets/digiflex.png";
-import { mainNavItems, serviceCategories, services, productCategories, technologies } from "./HeaderData";
+import { mainNavItems, serviceCategories, productCategories, technologies } from "./HeaderData";
 import MegaMenu from "./MegaMenu";
 import { Phone, Mail } from "lucide-react";
 

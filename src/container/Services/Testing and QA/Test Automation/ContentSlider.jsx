@@ -28,12 +28,11 @@ const ContentBlock = ({ title, description, image, hyperlink }) => {
             </div>
 
             {/* Left Content Section */}
-            <div className="w-full md:w-1/2 space-y-6 py-3">
+            <div className="w-full md:w-1/2 space-y-2 py-3">
                 {/* Title Section */}
-                <div className="space-y-2">
-                    <div className="inline-block">
-                        <Subheading>{title}</Subheading>
-                    </div>
+            
+                <div className="inline-block">
+                    <Subheading>{title}</Subheading>
                 </div>
 
                 {/* Description Section */}

@@ -83,13 +83,11 @@ const TestManagementSystem = () => {
                     Key features of Test Management System
                 </Heading>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {
-                        features.map((feature, index) => (
-                            <Card index={index} icon={feature.icon} title={feature.title} description={feature.description} />
-                        ))
-                    }
-                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map((feature, index) => (
+                <Card key={index} icon={feature.icon} title={feature.title} description={feature.description} />
+            ))}
+        </div>
 
             </div>
 

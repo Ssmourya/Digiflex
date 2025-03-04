@@ -4,6 +4,9 @@ import software from "../../../../assets/Software _Testing.jpeg"; // Image impor
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Subheading from '../../../../Layout/Subheading';
+import Paragraph from '../../../../Layout/Paragraph';
 
 // ContentBlock component to display each content
 const ContentBlock = ({ title, description, image, hyperlink }) => {
@@ -29,15 +32,14 @@ const ContentBlock = ({ title, description, image, hyperlink }) => {
                 {/* Title Section */}
                 <div className="space-y-2">
                     <div className="inline-block">
-                        <h3 className="text-2xl font-medium text-[#1A2E6F]">{title}</h3>
-                        <div className="h-1 w-48 bg-red-500 mt-2"></div>
+                        <Subheading>{title}</Subheading>
                     </div>
                 </div>
 
                 {/* Description Section */}
-                <p className="text-lg text-black leading-relaxed">
+                <Paragraph>
                     {truncateDescription(description)}
-                </p>
+                </Paragraph>
 
                 {/* Hyperlink Section */}
                 <div>
@@ -120,9 +122,9 @@ const ContentSlider = () => {
     };
 
     return (
-        <div className="relative w-full bg-white px-4 py-12">
+        <WrapperContainer className="relative w-full bg-white">
             {/* Slider component */}
-            <Slider {...sliderSettings} ref={sliderRef} className="mx-auto">
+            <Slider {...sliderSettings} ref={sliderRef}>
                 {
                     contentData.map((item, index) => (
                         <ContentBlock
@@ -135,7 +137,7 @@ const ContentSlider = () => {
                     ))
                 }
             </Slider>
-        </div>
+        </WrapperContainer>
     );
 };
 

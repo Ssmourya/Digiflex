@@ -49,24 +49,22 @@ const features = [
 
 function Google_Services() {
   return (
+    <>
     <WrapperContainer>
       {/* Key Services */}
       <div>
         <Heading>
-        <div>
-          <h1>
             Key Services of Google Cloud
-          </h1>
-          </div>
         </Heading>
-        <Paragraph><div>
-        <p className="text-center sm:text-lg md:text-xl mt-4 mb-10">
-        Google Cloud provides a comprehensive suite of services that empower organizations to build, deploy, and scale modern applications. Its compute offerings, data services, and AI tools ensure reliable performance and security. Digiflex leverages these powerful capabilities to develop innovative AI-driven applications, delivering scalable, secure, and high-performance solutions for businesses.
+      <Subheading>
+      <div>
+        <p className="text-center">
+        Digiflex leverages Google Cloud's AI and data services to build scalable, secure, and high-performance solutions, driving business innovation. 
         </p>
-        </div></Paragraph>
-
+      </div>
+        </Subheading>
         {/* Steps Section */}
-        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-8">
+        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 pt-5">
           <div className="flex flex-wrap items-center justify-center sm:justify-between gap-4 sm:gap-2">
             {steps.map((step, index) => (
               <React.Fragment key={step.id}>
@@ -88,9 +86,11 @@ function Google_Services() {
           </div>
         </div>
       </div>
+      </WrapperContainer>
 
+      <WrapperContainer>
       {/* Features Section */}
-      <div className="mt-20">
+      <div>
         <Heading>
         <div>
           <h1>
@@ -98,17 +98,18 @@ function Google_Services() {
           </h1>
           </div>
         </Heading>
-          <Paragraph><div>
-          <p className="text-center sm:text-lg md:text-xl mt-4 mb-10">
+          <Subheading>
+          <div>
+          <p className="text-center ">
           Google Cloud boasts features like scalable computing, robust storage,
           and advanced analytics, all backed by a secure, global
           infrastructure.
         </p>
-          </div></Paragraph>
+          </div></Subheading>
        
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8 pt-5">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -128,6 +129,7 @@ function Google_Services() {
         </div>
       </div>
     </WrapperContainer>
+    </>
   );
 }
 

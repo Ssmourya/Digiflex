@@ -14,13 +14,11 @@ function Aws_deploy() {
     <WrapperContainer>
       <Heading>
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-center px-4">
             Deploy Your Project on AWS with Digiflex
-          </h1>
         </div>
       </Heading>
 
-      <div className="mt-8 mb-20 md:mt-16 px-4 max-w-6xl mx-auto">
+      <div className="mt-8 mb-10 md:mt-10 max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-0">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col md:flex-row items-center">

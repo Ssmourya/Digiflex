@@ -29,11 +29,11 @@ const industries = [
 
 function LlmFuture() {
   return (
-    <div className="w-full bg-white/95 backdrop-blur-lg py-16">
+    <>
       <WrapperContainer>
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto ">
           {/* Header Section */}
-          <div className="mb-16 max-w-2xl mx-auto text-center">
+          <div className=" max-w-2xl mx-auto text-center">
           <Heading>
             <h2>
               Digiflex  
@@ -46,13 +46,13 @@ function LlmFuture() {
           </div>
 
           {/* Industries Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-1">
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="p-6 md:p-8 bg-white transform transition-all duration-500 hover:scale-105 group flex flex-col items-center text-center"
+                className="p-6 md:p-3 bg-white transform transition-all duration-500 hover:scale-105 group flex flex-col items-center text-center"
               >
-                <div className="mb-4">{industry.icon}</div>
+                <div className="">{industry.icon}</div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                   {industry.title}
                 </h3>
@@ -64,7 +64,7 @@ function LlmFuture() {
           </div>
         </div>
       </WrapperContainer>
-    </div>
+      </>
   );
 }
 

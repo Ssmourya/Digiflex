@@ -417,7 +417,9 @@ export const services = [
         color: "text-[#00C8D5]",
         description: "AI development involves machine learning, deep learning, NLP, and computer vision.",
         features: [
-            { icon: Cloud, title: "Google Cloud AI", path: "/services/AI/Ai_development" },
+            { icon: Cloud, title: "Google Cloud AI", path: "/ai-app-development" },
+            { icon: Cloud, title: "AI Software Development", path: "/ai-software-development" },
+            { icon: Cloud, title: "LLM Development", path: "/large-language-model-development" },
         ],
         image: "https://img.freepik.com/premium-vector/cloud-computing-technology-with-circuit-cloud-white-background-vector-illustration_493806-13570.jpg",
     },

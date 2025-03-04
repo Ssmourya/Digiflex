@@ -11,7 +11,7 @@ function Azure_info() {
       <div className="flex flex-col items-center justify-center text-center">
         <img src={Azure_intro} alt="AZURE MICROSOFT LOGO" className="w-40" />
         <Heading>
-          <p className="text-[50px] font-bold">AZURE</p>
+          AZURE
         </Heading>
       </div>
       

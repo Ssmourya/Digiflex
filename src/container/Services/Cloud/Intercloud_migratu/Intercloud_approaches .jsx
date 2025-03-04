@@ -3,6 +3,7 @@ import WrapperContainer from '../../../../Layout/WrapperContainer'
 import Heading from '../../../../Layout/Heading'
 import Paragraph from '../../../../Layout/Paragraph'
 import Fontheading from '../../../../Layout/Fontheading';
+import Subheading from '../../../../Layout/Subheading';
 
 const advantages = [
   {
@@ -61,15 +62,13 @@ function Intercloud_approaches () {
 <>
     <WrapperContainer>
         <Heading>
-            <h1>Approaches for Intercloud Migration
-            </h1>
+            Approaches for Intercloud Migration
         </Heading>
-        <Paragraph>
-          <p>Intercloud migration refers to the process of moving applications, data, or workloads from one cloud provider to another. This can be driven by cost optimization, performance improvements, regulatory compliance, or vendor lock-in concerns. Several approaches can be used for intercloud migration</p>
-        </Paragraph>
-        <div className='mb-20'>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-[80px] gap-10">
+        <Subheading className='text-center'>
+          Intercloud migration transfers applications, data, or workloads between cloud providers, driven by cost, performance, compliance, or vendor flexibility, using various strategic approaches for seamless transition.
+          </Subheading>
+        <div className='mb-10'>
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-10">
             {advantages.map((item, index) => (
               <div
                 key={index}

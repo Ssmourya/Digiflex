@@ -49,7 +49,7 @@ function OptimizationWork() {
       <Heading>
         Cloud Optimization Strategies by Digiflex
       </Heading>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {optimizationData.map((item, index) => (
           <div key={index} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border border-gray-200 hover:scale-105 hover:shadow-lg">
             <div className="mb-4">{item.icon}</div>

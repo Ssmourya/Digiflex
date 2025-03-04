@@ -2,6 +2,7 @@ import React from 'react';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Paragraph from '../../../../Layout/Paragraph';
 import Heading from '../../../../Layout/Heading';
+import Subheading from '../../../../Layout/Subheading';
 
 function Aws_intro() {
     const useCases = [
@@ -38,29 +39,27 @@ function Aws_intro() {
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center w-full">
             <WrapperContainer>
+        
                 {/* AWS Introduction Section */}
-                <div className="text-center px-4 sm:px-6 lg:px-8">
+                
                     <Heading>
                         <h1>About AWS Cloud Services by Digiflex</h1>
                     </Heading>
-                    <div>
-                        <Paragraph>
-                            Digiflex, a leading provider of cloud solutions, harnesses the power of AWS Cloud to offer computing, storage, databases, networking, security, AI, and analytics services. 
-                            Our solutions enable businesses, developers, and enterprises to build, deploy, and manage applications globally with unmatched reliability, security, and cost efficiency.
-                        </Paragraph>
+                    <div className='text-center'>
+                       <Subheading>
+                       Digiflex leverages AWS Cloud to deliver secure, scalable, and cost-efficient solutions, empowering businesses to build, deploy, and manage applications with advanced computing, AI, and analytics services.
+                        </Subheading>
                     </div>
-                </div>
 
                 {/* AWS Use Cases Section */}
-                <div className="w-full px-4 sm:px-6 lg:px-8 mt-8 sm:mt-10">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                <div className="w-full mt-5 sm:mt-10">
+                    <div className="max-w-7xl mx-auto ">
+                        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                             {useCases.map((useCase, index) => (
                                 <div 
                                     key={index} 
-                                    className="flex flex-col h-full border border-gray-300 rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl"
+                                    className="h-48 flex flex-col  border border-gray-300 rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl"
                                 >
                                     {/* Header */}
                                     <div className="bg-blue-900 text-white font-bold p-3 sm:p-4 text-center text-sm sm:text-base">
@@ -81,8 +80,8 @@ function Aws_intro() {
                         </div>
                     </div>
                 </div>
+    
             </WrapperContainer>
-        </div>
     );
 }
 

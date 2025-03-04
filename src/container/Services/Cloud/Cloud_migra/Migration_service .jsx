@@ -39,9 +39,9 @@ function Migration_service () {
         <Heading>
           <h1>Cloud Service Models for Migration</h1>
         </Heading>
-        <div className="mx-10 mt-20 mb-20">
+        <div className="mt-5 mb-10">
 
-      <div className="space-y-20">
+      <div className="">
         {advantages.map((advantage, index) => (
           <div
             key={index}

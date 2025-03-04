@@ -227,6 +227,7 @@ const Navbar = () => {
                     <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen">
                         {
                             mainNavItems.map( (navItem) => (
+           
 
                                 <div key={navItem.label} className="mb-4">
                                     

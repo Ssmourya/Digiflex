@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import TestingQAbg from "../assets/TestingQAbg.mp4";
 
-const HeroPageForAll = ({ title, description, image, videoSrc }) => {
+const HeroPageForAll = ({ title, description, videoSrc }) => {
   return (
     <div className="relative w-full min-h-screen text-white flex flex-col justify-end pb-12">
       {/* Background Video */}
@@ -12,12 +13,8 @@ const HeroPageForAll = ({ title, description, image, videoSrc }) => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source
-          src="https://videocdn.cdnpk.net/videos/cee6f817-6ff8-57fe-8d9e-59d685efc178/horizontal/previews/clear/large.mp4?token=exp=1741089679~hmac=c6753d90dae3322193fc4ca37f58710e466d95fb5a3f0d1999d79a2317706896" 
-          type="video/mp4"
-        />
+        <source src={TestingQAbg} type="video/mp4" />
       </video>
-
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
 

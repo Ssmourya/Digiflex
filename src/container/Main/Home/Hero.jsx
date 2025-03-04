@@ -76,11 +76,7 @@ export default function HomeTextEffect() {
         />
 
         <div className="w-full h-full flex justify-center items-center relative">
-          {textImageData ? (
-            <MetallicPaint imageData={textImageData} />
-          ) : (
-            <p className="text-4xl font-bold">Loading...</p>
-          )}
+          <MetallicPaint imageData={textImageData} />
         </div>
       </motion.div>
 

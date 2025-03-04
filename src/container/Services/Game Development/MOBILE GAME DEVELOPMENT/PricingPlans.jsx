@@ -10,11 +10,12 @@ const PricingPlans = () => {
     {
       name: "STARTER",
       icon: "◇",
-      title: "Begin your game development journey with Digiflex.",
-      price: 0,
+      title: "Begin your game development journey.",
+      monthlyPrice: 0,
+      yearlyPrice: 0,
       features: [
         "Access to Digiflex's game engine",
-        "Basic publishing on Android & Desktop",
+        "Basic publishing on Android & Desktop", 
         "Community support and learning resources",
         "Access to free game assets",
       ],
@@ -22,10 +23,11 @@ const PricingPlans = () => {
       buttonVariant: "black",
     },
     {
-      name: "PROFESSIONAL",
+      name: "PROFESSIONAL", 
       icon: "◆",
-      title: "Unlock advanced features to create and launch games effortlessly.",
-      price: 19.99,
+      title: "Unlock advanced features.",
+      monthlyPrice: 19.99,
+      yearlyPrice: 199.99,
       features: [
         "Full publishing support on Android, iOS & Web",
         "Cloud storage for up to 50 game projects",
@@ -40,9 +42,10 @@ const PricingPlans = () => {
     {
       name: "BUSINESS",
       icon: "⬧",
-      iconColor: "text-yellow-400",
-      title: "Scale your game development with powerful tools and marketing support.",
-      price: 39.99,
+      iconColor: "text-yellow-400", 
+      title: "Scale your game development.",
+      monthlyPrice: 39.99,
+      yearlyPrice: 399.99,
       features: [
         "Publish games on all major platforms, including iOS",
         "Priority support with dedicated Discord channel",
@@ -56,10 +59,11 @@ const PricingPlans = () => {
     },
     {
       name: "ENTERPRISE",
-      icon: "⬢",
+      icon: "⬢", 
       iconColor: "text-red-500",
-      title: "Comprehensive solutions for professional game studios and enterprises.",
-      price: 299,
+      title: "Comprehensive solutions for studios.",
+      monthlyPrice: 299,
+      yearlyPrice: 2999,
       features: [
         "Personalized support with a dedicated account manager",
         "Collaborative tools for team-based game development",
@@ -120,11 +124,21 @@ const PricingPlans = () => {
     },
   };
 
+  // Calculate price based on billing cycle
+  const getPrice = (plan) => {
+    if (plan.monthlyPrice === 0) return "Free";
+    
+    const price = billingCycle === "monthly" ? plan.monthlyPrice : plan.yearlyPrice;
+    const period = billingCycle === "monthly" ? "mo" : "yr";
+    
+    return `$${price}/${period}`;
+  };
+
   return (
     <WrapperContainer>
       <div className="max-w-7xl mx-auto">
         {/* Billing Toggle */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-8">
           <div className="bg-gray-100 p-1 rounded-full inline-flex shadow">
             <motion.button
               className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
@@ -149,7 +163,7 @@ const PricingPlans = () => {
 
         {/* Pricing Cards */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -158,45 +172,50 @@ const PricingPlans = () => {
           {plans.map((plan) => (
             <motion.div
               key={plan.name}
-              className="bg-white rounded-xl p-6 flex flex-col border border-gray-200 text-center"
+              className="bg-white rounded-lg p-4 flex flex-col border border-gray-200 text-center"
               variants={cardVariants}
               whileHover={cardHover}
             >
-              <div className="flex flex-col items-center space-y-3">
+              <div className="flex flex-col items-center space-y-2">
                 {/* Plan Icon & Name */}
-                <span className={`text-3xl ${plan.iconColor || "text-gray-500"}`}>
+                <span className={`text-2xl ${plan.iconColor || "text-gray-500"}`}>
                   {plan.icon}
                 </span>
                 <span className="text-sm font-semibold text-gray-500">{plan.name}</span>
 
                 {/* Plan Title */}
-                <Subheading className="text-lg font-bold">{plan.title}</Subheading>
+                <Subheading className="text-base font-bold">{plan.title}</Subheading>
               </div>
 
               {/* Features List */}
-              <ul className="space-y-4 text-left mt-4">
+              <ul className="space-y-2 text-left mt-3">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0"
+                      className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700 text-sm">{feature}</span>
+                    <span className="text-gray-700 text-xs">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               {/* Price & Button */}
-              <div className="mt-auto pt-4">
-                <span className="text-xl font-bold text-gray-900">
-                  {plan.price === 0 ? "Free" : `$${plan.price}/mo`}
+              <div className="mt-auto pt-3">
+                <span className="text-lg font-bold text-gray-900">
+                  {getPrice(plan)}
                 </span>
+                {billingCycle === "yearly" && plan.monthlyPrice !== 0 && (
+                  <div className="text-sm text-green-600 mt-1">
+                    Save {Math.round((1 - (plan.yearlyPrice / (plan.monthlyPrice * 12))) * 100)}%
+                  </div>
+                )}
                 <motion.button
-                  className={`w-full py-2 px-3 mt-4 rounded-md text-sm font-medium transition-all duration-200
+                  className={`w-full py-1.5 px-3 mt-3 rounded text-xs font-medium transition-all duration-200
                     ${
                       plan.buttonVariant === "black"
                         ? "bg-black text-white hover:bg-gray-800"
@@ -215,7 +234,5 @@ const PricingPlans = () => {
     </WrapperContainer>
   );
 };
-
-
 
 export default PricingPlans;

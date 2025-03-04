@@ -293,10 +293,20 @@ export const technologies = [
 
 export const mainNavItems = [
   {
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "Services",
     href: "#",
     hasDropdown: true,
     dropdownType: "services",
+  },
+  {
+    label: "Technology",
+    href: "#",
+    hasDropdown: true,
+    dropdownType: "technology",
   },
   {
     label: "Products",
@@ -304,28 +314,26 @@ export const mainNavItems = [
     hasDropdown: true,
     dropdownType: "products",
   },
-  // {
-  //     label: "Industries",
-  //     href: "#",
-  //     hasDropdown: true,
-  //     dropdownType: "industries",
-  // },
-  // {   label: "Clients",
-  //     href: "#"
-  // },
-  // {
-  //     label: "Insights",
-  //     href: "#",
-  //     hasDropdown: true,
-  //     dropdownType: "insights",
-  // },
-  // {
-  //     label: "Approach",
-  //     href: "#"
-  // },
-  // {   label: "About us",
-  //     href: "about-us"
-  // },
+  {
+      label: "Industy",
+      href: "#",
+      hasDropdown: true,
+      dropdownType: "industries",
+  },
+  {   label: "Marketing",
+      href: "#"
+  },
+  {
+      label: "Portfolio",
+      href: "#",
+  },
+  {
+      label: "Blog",
+      href: "#"
+  },
+  {   label: "About us",
+      href: "about-us"
+  },
 ];
 
 export const services = [

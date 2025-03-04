@@ -27,7 +27,7 @@ const BusinessSolutions = () => {
 
     return (
         <WrapperContainer>
-            <div className="px-4 sm:px-6 lg:px-8">
+            <div className="flex">
                 {/* Title Section */}
                 <div className="text-center mb-12 md:mb-16">
                     <Heading>Solutions for Businesses</Heading>

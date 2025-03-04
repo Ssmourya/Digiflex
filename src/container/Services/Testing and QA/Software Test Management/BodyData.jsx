@@ -12,7 +12,7 @@ const ParaComponent = ({ section }) => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="px-4 md:px-6 lg:px-10 w-full md:w-[50%]"
+            className=" w-full md:w-[50%]"
         >
             <Heading
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -109,7 +109,7 @@ const Body = () => {
 
     return (
         <WrapperContainer>
-            <div className="w-11/12 mx-auto">
+            <div>
                 {sections.map((section, index) => (
                     <div
                         key={index}

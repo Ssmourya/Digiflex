@@ -101,8 +101,9 @@ const Navbar = () => {
     
 
     return (
-        <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navbarRef}>
+        <>
             <TopBar/>
+        <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navbarRef}>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex items-center h-16 gap-x-10">
 
@@ -312,6 +313,7 @@ const Navbar = () => {
             }
             
         </nav>
+        </>
     );
 };
 

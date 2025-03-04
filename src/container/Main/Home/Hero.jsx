@@ -60,10 +60,10 @@ export default function HomeTextEffect() {
   }, []);
 
   return (
-    <div className="relative w-full h-[70vh] md:h-screen flex flex-col md:flex-row bg-[#021B3B] overflow-hidden transition-all duration-500 ease-in-out">
+    <div className="relative w-full h-[90vh] md:h-screen flex flex-col md:flex-row bg-[#021B3B] overflow-hidden transition-all duration-500 ease-in-out">
       {/* Left side - Text Section */}
       <motion.div
-        className="w-full md:w-1/2 h-[70vh] md:h-full flex flex-col items-center justify-center text-white relative z-20 p-6 sm:p-8 md:p-10 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+        className="w-full md:w-1/2 h-[100vh] md:h-full flex flex-col items-center justify-center text-white relative z-20 p-6 sm:p-8 md:p-10 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -82,7 +82,7 @@ export default function HomeTextEffect() {
 
       {/* Right side - Video Section */}
       <motion.div
-        className="relative w-full md:w-1/2 h-full overflow-hidden"
+        className="relative hidden md:block w-full md:w-1/2 h-full overflow-hidden"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

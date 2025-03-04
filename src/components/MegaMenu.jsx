@@ -163,11 +163,10 @@ const NavItem = ({ setActiveDropdown, service }) => {
     );
 };
 
-const MegaMenu = ({ setActiveDropdown, services }) => {
+const MegaMenu = ({ setActiveDropdown, services, topbarHeight }) => {
     return (
-        <nav className="fixed left-0 top-[107px] w-full bg-white shadow-sm z-40 px-4 py-1">
+        <nav style={{ top: `${topbarHeight+65}px` }} className="absolute left-0 w-full bg-white shadow-sm z-40 px-4 py-1">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-start">
-                {/* {/ <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> /} */}
                 {services.map((service, index) => (
                     <NavItem key={index} service={service} setActiveDropdown={setActiveDropdown} />
                 ))}

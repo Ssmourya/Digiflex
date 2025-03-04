@@ -15,10 +15,11 @@ import {
 
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer'
+import Paragraph from '../../../../Layout/Paragraph';
 
 
 const ServiceCard = ({ title, description, icon: Icon }) => (
-  <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
+  <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer">
     <div className="p-6 flex flex-col items-center text-center space-y-4">
       <div className="p-5 bg-blue-100 rounded-full">
         <Icon size={32} className="text-blue-500" />
@@ -86,9 +87,13 @@ const CoverServices = () => {
         <h1>
           What We Cover In Cryptocurrency Services
         </h1>
-        </Heading>
-        
+        </Heading> 
       </div>
+      <Paragraph>
+          <div className='text-center' > 
+          We cover trading, security, wallet development, ICO, blockchain integration, and consulting.
+          </div>
+        </Paragraph>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (

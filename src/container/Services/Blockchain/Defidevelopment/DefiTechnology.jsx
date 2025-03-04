@@ -69,6 +69,11 @@ const DefiTechnology = () => {
     Our Technology Expertise
     </div>
  </Heading>
+ <Paragraph>
+  <span className='block text-center'>
+  We specialize in blockchain, smart contracts, liquidity, security, and DeFi solutions.
+  </span>
+ </Paragraph>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {technologies.map((tech, index) => (

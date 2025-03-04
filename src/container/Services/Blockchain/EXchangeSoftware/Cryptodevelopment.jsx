@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { FaExchangeAlt, FaWallet, FaLayerGroup, FaStore, FaCubes, FaBitcoin } from "react-icons/fa";
 import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Paragraph from "../../../../Layout/Paragraph"    
 
 const Cryptodevelopment = () => {
   const cards = [
@@ -55,6 +56,12 @@ const Cryptodevelopment = () => {
         <Heading>
           <h1>Our Crypto Exchange Development Solutions </h1>
         </Heading>
+
+        <Paragraph>
+          <div className="text-center">
+          We provide secure, scalable, and feature-rich crypto exchange development solutions.
+          </div>
+        </Paragraph>
       {/* </div> */}
 
       <div className="bg-white" ref={sectionRef}>

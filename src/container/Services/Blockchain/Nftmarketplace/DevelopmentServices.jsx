@@ -53,6 +53,11 @@ const  DevelopmentServices = () => {
         Our NFT Marketplace Development Services
         </div>
      </Heading>
+     <Paragraph>
+      <span className="block text-center">
+      We offer secure, scalable, customizable, and feature-rich NFT marketplace development services.
+      </span>
+     </Paragraph>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {services.map((service, index) => (

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Paragraph from '../../../../Layout/Paragraph';
 
 
 const GridCard = ({ title, description, icon, index }) => {
@@ -248,9 +249,14 @@ const AnimatedGrid = () => {
     <div>
       <Heading>
         <div>
-        Our Services
+        Types Of CryptoCurrency App
         </div>
       </Heading>
+      <Paragraph>
+        <div className='text-center'>
+        Our crypto app supports exchange, wallet, payment, staking, and investment types.
+        </div>
+      </Paragraph>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (

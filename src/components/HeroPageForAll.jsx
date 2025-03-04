@@ -1,25 +1,41 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HeroPageForAll = ({ title, description, image }) => {
+const HeroPageForAll = ({ title, description, image, videoSrc }) => {
   return (
-    <div className="relative bg-gradient-to-br from-blue-800 via-blue-900 to-blue-950 text-white w-full min-h-screen px-4 py-12 mx-auto">
-      <div className="w-11/12 mx-auto flex flex-col space-y-36 px-4 py-12">
-        {/* Hero Content */}
+    <div className="relative w-full min-h-[90vh] text-white flex flex-col justify-end pb-12">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source
+          src="https://videocdn.cdnpk.net/videos/cee6f817-6ff8-57fe-8d9e-59d685efc178/horizontal/previews/clear/large.mp4?token=exp=1741089679~hmac=c6753d90dae3322193fc4ca37f58710e466d95fb5a3f0d1999d79a2317706896"
+          type="video/mp4"
+        />
+      </video>
 
+      {/* Overlay */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+
+      <div className="relative w-11/12 mx-auto flex flex-col px-4">
+        {/* Hero Content */}
         <motion.div className="flex justify-center items-center">
           <motion.div className="flex flex-col md:flex-row justify-between items-center">
             <motion.div
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="px-8 w-[65%]"
+              className="px-16 w-[65%] text-left"
             >
               <motion.h1
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2 }}
-                className="text-4xl md:text-7xl font-bold leading-tight mb-8"
+                className="text-4xl md:text-6xl font-bold leading-tight mb-8"
               >
                 {title}
               </motion.h1>
@@ -33,45 +49,6 @@ const HeroPageForAll = ({ title, description, image }) => {
                 {description}
               </motion.p>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              className="overflow-hidden width-1/2"
-            >
-              <img
-                src={image}
-                width={"550px"}
-                alt="Company Logo"
-                loading="lazy"
-                className="rounded-md shadow-lg"
-              />
-            </motion.div>
-          </motion.div>
-        </motion.div>
-
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="flex justify-between items-center"
-        >
-          <motion.div whileHover={{ scale: 1.1 }} className="text-center">
-            <p className="text-2xl font-bold">15x</p>
-            <p className="text-white">AVG ROI</p>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.1 }} className="text-center">
-            <p className="text-2xl font-bold">200,100</p>
-            <p className="text-white">Participants</p>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.1 }} className="text-center">
-            <p className="text-2xl font-bold">$1 billion+</p>
-            <p className="text-white">Total Assets Connected</p>
           </motion.div>
         </motion.div>
       </div>

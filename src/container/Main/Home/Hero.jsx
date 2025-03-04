@@ -10,7 +10,7 @@ function renderTextToImageData(lines, options = {}) {
     fillStyle = "#000",
     backgroundColor = "#fff",
     textAlign = "center",
-    lineHeight = 400, // Adjust line spacing
+    lineHeight = 400,
   } = options;
 
   const canvas = document.createElement("canvas");
@@ -48,28 +48,26 @@ export default function HomeTextEffect() {
     ];
 
     const imageData = renderTextToImageData(lines, {
-      width: 3000,
-      height: 2100,
+      width: 3600,
+      height: 2060,
       font: "bold 500px sans-serif",
       fillStyle: "#000",
       backgroundColor: "#fff",
-      lineHeight: 460, // Adjusted for better spacing
+      lineHeight: 460,
     });
 
     setTextImageData(imageData);
   }, []);
 
-  if (!textImageData)
-    return (
-      <div className="flex justify-center items-center h-screen text-white">
-        Loading...
-      </div>
-    );
-
   return (
     <div className="relative w-full h-[70vh] md:h-screen flex flex-col md:flex-row bg-[#021B3B] overflow-hidden transition-all duration-500 ease-in-out">
       {/* Left side - Text Section */}
-      <motion.div className="w-full md:w-1/2 h-[70vh] md:h-full flex flex-col items-center justify-center text-white relative z-20 p-6 sm:p-8 md:p-10 text-center transition-all duration-500 ease-in-out text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+      <motion.div
+        className="w-full md:w-1/2 h-[70vh] md:h-full flex flex-col items-center justify-center text-white relative z-20 p-6 sm:p-8 md:p-10 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         {/* Background image for screens < 720px */}
         <img
           className="absolute inset-0 w-full h-full object-cover md:hidden"
@@ -78,12 +76,21 @@ export default function HomeTextEffect() {
         />
 
         <div className="w-full h-full flex justify-center items-center relative">
-          <MetallicPaint imageData={textImageData} />
+          {textImageData ? (
+            <MetallicPaint imageData={textImageData} />
+          ) : (
+            <p className="text-4xl font-bold">Loading...</p>
+          )}
         </div>
       </motion.div>
 
       {/* Right side - Video Section */}
-      <motion.div className="hidden md:block relative w-full md:w-1/2 h-full overflow-hidden transition-all duration-500 ease-in-out">
+      <motion.div
+        className="relative w-full md:w-1/2 h-full overflow-hidden"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <video
           className="absolute top-0 left-0 w-full h-full object-cover opacity-80 transition-opacity duration-500 ease-in-out"
           autoPlay
@@ -93,7 +100,7 @@ export default function HomeTextEffect() {
         >
           <source src="HeroBg4.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-t md:bg-gradient-to-l from-transparent to-[#021B3B] w-full sm:w-2/3 md:w-1/4 transition-all duration-500 ease-in-out"></div>
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-t md:bg-gradient-to-l from-transparent to-[#021B3B] w-full sm:w-2/3 md:w-1/4"></div>
       </motion.div>
     </div>
   );

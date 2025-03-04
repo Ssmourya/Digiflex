@@ -33,7 +33,7 @@ function MigrationSteps() {
     <Heading>
       <h1>Cloud Migration Steps</h1>
       </Heading>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl">
+      <div className="pt-5 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl">
         {steps.map((step, index) => (
           <div
             key={index}

@@ -9,7 +9,7 @@ import Aws_deploy from '../container/Services/Cloud/AWS/Aws_deploy'
 function AWS() {
   return (
     <>
-        <Aws_hero/>
+  <Aws_hero/>
   <Aws_intro/>
   <Aws_busines/>
   <AWS_services/>

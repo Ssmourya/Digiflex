@@ -40,7 +40,7 @@ const AWS_services = () => {
     return (
         <>
         <WrapperContainer>
-            <div className="bg-gray-100 p-10 rounded-xl ">
+            <div className="bg-gray-100 p-5 rounded-xl ">
             <Heading>
                 <h1>Digiflex AWS Cloud Services</h1>
                 </Heading>

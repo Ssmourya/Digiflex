@@ -7,13 +7,13 @@ import Optimization from '../../../../assets/Optimization.webp';
 function OptimizationOverview() {
   return (
     <WrapperContainer>
-      <h1 className="text-2xl md:text-3xl font-semibold text-center md:text-left">
+     
         <Heading>
           Cloud Optimization Strategies by Digiflex
         </Heading>
-      </h1>
+    
       
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mt-6">
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 ">
         <img 
           src={Optimization} 
           alt="Cloud Optimization" 

@@ -58,6 +58,7 @@ const Llm_services = () => {
   };
 
   return (
+    <>
     <WrapperContainer>
     <Heading>Quest Digiflex - Your Trusted Partner in LLM Development</Heading>
     <Paragraph>At Quest Digiflex, we specialize in creating cutting-edge AI-driven LLM solutions to help businesses harness the true power of artificial intelligence. Whether you need a custom AI model, a fine-tuned chatbot, or an AI-powered automation tool, our expert team is here to bring your vision to life.</Paragraph>
@@ -69,7 +70,7 @@ const Llm_services = () => {
         >
           {slides.map((slide, index) => (
             <div key={index} className="min-w-[33.333%] px-2">
-              <div className="bg-white rounded-lg overflow-hidden  h-full">
+              <div className="bg-white rounded-lg overflow-hidden  h-80">
                 <div className="relative h-48 bg-blue-100">
                   <img 
                     src={slide.image} 
@@ -102,6 +103,7 @@ const Llm_services = () => {
       </button>
     </div>
     </WrapperContainer>
+    </>
   );
 };
 export default Llm_services;

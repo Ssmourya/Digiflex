@@ -3,7 +3,7 @@ import React from 'react'
 const Fontheading = ({ children, className = '' }) => {
     return (
       <h1
-        className={`text-2xl font-semibold text-blue-700 ${className}`}
+        className={`text-2xl font-semibold text-black ${className}`}
       >
         {children}
       </h1>

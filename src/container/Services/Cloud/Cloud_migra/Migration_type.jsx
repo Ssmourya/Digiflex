@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
 import Fontheading from '../../../../Layout/Fontheading';
+import Subheading from '../../../../Layout/Subheading';
 
 const strategies = [
     { title: "Rehosting (\"Lift and Shift\")", description: "Moving applications to the cloud without changes." },
@@ -22,28 +23,25 @@ function Migration_type() {
     <Heading>           
     <h1>Migration Strategies types (6 R's)</h1>
     </Heading>
-    <h2 className='mt-4 text-xl'>Organizations can choose different cloud migration approaches based on their needs:</h2>
+    <Subheading className='text-center'>Organizations can choose different cloud migration approaches based on their needs:</Subheading>
     
-    <div className="flex flex-col w-full mt-10  text-white">
-      {strategies.map((strategy, index) => (
-        <div key={index} className="w-full duration-300 border-b border-gray-600 relative overflow-hidden">
-          <div
-            className="p-4 cursor-pointer transition-transform duration-300 hover:translate-y-2 "
-            onMouseEnter={() => setActiveIndex(index)}
-            onMouseLeave={() => setActiveIndex(null)}
-          ><Fontheading>
-            {strategy.title}
-            </Fontheading>
+    <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+            {strategies.map((industry, index) => (
+              <div
+                key={index}
+                className="p-6 md:p-3 bg-white transform transition-all duration-500 hover:scale-105 group flex flex-col items-center text-center"
+              >
+                
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                  {industry.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                  {industry.description}
+                </p>
+              </div>
+            ))}
           </div>
-          {activeIndex === index && (
-            <div className="p-4 bg-gray-800 transition-opacity duration-300 text-xl opacity-100">
-              {strategy.description}
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-    </div>
+          </div>
     </WrapperContainer>
     </>
   )

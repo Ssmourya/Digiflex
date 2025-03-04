@@ -47,11 +47,11 @@ function Google_Advantage() {
       <Heading>
         <h1>Advantage of Google Cloud</h1>
       </Heading>
-      <div className="mb-10 grid grid-cols-1 md:grid-cols-2 mt-[80px] gap-6 md:gap-8 lg:gap-10">
+      <div className="mb-10 pt-5 grid grid-cols-1 md:grid-cols-2  gap-6 md:gap-8 ">
         {advantages.map((item, index) => (
           <div
             key={index}
-            className="p-4 md:p-5 lg:p-6 bg-white rounded-lg border border-gray-200 hover:shadow-xl transform transition-all duration-300 ease-in-out hover:scale-105 w-11/12 mx-auto"
+            className="p-4 md:p-5 lg:p-6 bg-white rounded-lg border border-gray-200 hover:shadow-xl transform transition-all duration-300 ease-in-out hover:scale-105 w-full mx-auto"
           >
             <div className="flex items-center justify-between mb-3">
               <Subheading>

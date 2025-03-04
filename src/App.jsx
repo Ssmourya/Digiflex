@@ -136,7 +136,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<ContactPage />} />
 
@@ -388,11 +388,10 @@ function App() {
 
    <ReviewsSection/>
        <Contact/>
-      <Navigation />
-      
-     
+      <Navigation/>
       <Footer />
     </div>
+    
   );
 }
 

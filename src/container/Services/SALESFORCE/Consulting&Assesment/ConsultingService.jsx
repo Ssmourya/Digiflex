@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Shield, BarChart3, FileCheck, Bitcoin, ArrowRight, CheckCircle } from 'lucide-react';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
+import Paragraph from '../../../../Layout/Paragraph';
+import Subheading from '../../../../Layout/Subheading';
 
 const ConsultingServices = () => {
   const [activeService, setActiveService] = useState(null);
@@ -68,11 +71,19 @@ const ConsultingServices = () => {
     <WrapperContainer>
 
     
-    <div className="font-sans antialiased bg-gray-50 flex justify-center  px-6">
+    <div className="font-sans antialiased  flex justify-center  px-6">
       <section className="w-full max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-600">Our Consulting & Assessment Services</h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Expert solutions tailored to your business needs, delivered with precision and professionalism.</p>
+          <Heading>
+            <div>
+            Our Consulting & Assessment Services
+            </div>
+          </Heading>
+          <Paragraph>
+            <span className='block text-center'>
+            Expert solutions tailored to your business needs, delivered with precision and professionalism.
+            </span>
+          </Paragraph>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -88,8 +99,14 @@ const ConsultingServices = () => {
                 <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mb-4 shadow-md">
                   <IconComponent size={28} className="text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-blue-700">{service.title}</h3>
-                <p className="mt-2 text-sm text-gray-700">{service.description}</p>
+                <Subheading>
+                {service.title}
+                </Subheading>
+                <Paragraph>
+                <span className='block text-center'>
+                {service.description}
+                </span>
+                </Paragraph>
                 
                 <button 
                   onClick={() => handleServiceClick(index)}

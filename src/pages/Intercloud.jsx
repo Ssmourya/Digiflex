@@ -5,6 +5,8 @@ import Intercloud_type from '../container/Services/Cloud/Intercloud_migratu/Inte
 import Intercloudpopular from '../container/Services/Cloud/Intercloud_migratu/Intercloudpopular'
 import Intercloud_need from '../container/Services/Cloud/Intercloud_migratu/Intercloud_need'
 import Intercloud_approaches from '../container/Services/Cloud/Intercloud_migratu/Intercloud_approaches '
+import Faq from '../components/Faq'
+import { IntercloudMigrationFAQData } from '../container/Services/Cloud/Faqdata'
 
 
 
@@ -17,6 +19,7 @@ function Ntercloud() {
       <Intercloudpopular/> 
       <Intercloud_need/>
       <Intercloud_approaches/>
+      <Faq faqs={IntercloudMigrationFAQData}/>
     </>
   )
 }

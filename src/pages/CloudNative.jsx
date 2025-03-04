@@ -6,6 +6,8 @@ import Native_services from '../container/Services/Cloud/Cloud_Native/Native_ser
 import Native_advantage from '../container/Services/Cloud/Cloud_Native/Native_advantage'
 import Native_usecase from '../container/Services/Cloud/Cloud_Native/Native_usecase'
 import Native_feature from '../container/Services/Cloud/Cloud_Native/Native_feature'
+import Faq from '../components/Faq'
+import { CloudNativeServicesFAQData } from '../container/Services/Cloud/Faqdata'
 
 function CloudNative() {
   return (
@@ -17,6 +19,7 @@ function CloudNative() {
         <Native_advantage/>
         <Native_usecase/>
         <Native_feature/>
+        <Faq faqs={CloudNativeServicesFAQData}/>
     </>
   )
 }

@@ -5,6 +5,8 @@ import Migration_Legacy from '../container/Services/Cloud/Cloud_migra/Migration_
 import Migration_type from '../container/Services/Cloud/Cloud_migra/Migration_type'
 import Migration_Legacy_Systems from '../container/Services/Cloud/Cloud_migra/Migration_Legacy_Systems'
 import Migration_service from '../container/Services/Cloud/Cloud_migra/Migration_service '
+import Faq from '../components/Faq'
+import { CloudMigrationFAQData } from '../container/Services/Cloud/Faqdata'
 
 function Cloud_Migration() {
   return (
@@ -15,6 +17,7 @@ function Cloud_Migration() {
     <Migration_type/>
     <Migration_Legacy_Systems/>
     <Migration_service/>
+    <Faq faqs={CloudMigrationFAQData}/>
    </>
   )
 }

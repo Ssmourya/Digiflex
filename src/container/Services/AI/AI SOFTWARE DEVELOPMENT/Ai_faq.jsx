@@ -5,29 +5,6 @@ import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
-const faqs = [
-    {
-      question: "How can AI benefit my business?",
-      answer: "Automating repetitive tasks to improve efficiency and providing data-driven insights for better decision-making also enhancing customer experience through chatbots & personalization.",
-    },
-    {
-      question: "Does Digiflex provide custom AI solutions?",
-      answer: "Yes! Digiflex offers tailor-made AI software solutions based on your business needs. Our team will analyze your requirements and develop a custom AI-powered application that aligns with your goals.",
-    },
-    {
-      question: "Does Digiflex offer AI consulting services?",
-      answer: "Yes! We provide AI consulting services to help businesses understand how AI can be implemented for business automation, predictive analytics, and digital transformation.",
-    },
-    {
-      question: "Can Digiflex integrate AI into my existing software?",
-      answer: "Yes! Digiflex specializes in AI integration with existing business applications. Whether it's a website, mobile app, or enterprise software, we can integrate AI features such as automation, predictive analytics, and chatbots.",
-    },
-    {
-      question: "What AI services does Digiflex offer?",
-      answer: "At Digiflex, we provide a wide range of AI services, including: AI-powered application development ,Machine learning & deep learning solutions,Business automation with AI,Cloud-based AI solutions ,AI in blockchain & Web3 ",
-    },
-    
-  ];
 
   const Ai_faq = () => {
     const [openIndex, setOpenIndex] = useState(null);

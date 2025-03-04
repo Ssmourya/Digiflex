@@ -18,7 +18,7 @@ function Aws_deploy() {
         </div>
       </Heading>
 
-      <div className="mt-8 mb-10 md:mt-10 max-w-6xl mx-auto">
+      <div className="mt-8 md:mt-10 max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-0">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col md:flex-row items-center">

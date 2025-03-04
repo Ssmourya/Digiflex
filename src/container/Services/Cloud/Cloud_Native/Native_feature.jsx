@@ -37,7 +37,7 @@ function NativeFeature() {
     <>
     <WrapperContainer>
     <Heading>Cloud-Native Innovations by Digiflex</Heading>
-    <div className="mb-20 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+    <div className=" mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
       {topics.map((topic, index) => (
         <div
           key={index}

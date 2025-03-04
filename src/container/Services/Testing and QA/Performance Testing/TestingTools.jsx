@@ -6,59 +6,30 @@ import Paragraph from "../../../../Layout/Paragraph";
 export default function TestingTools() {
     return (
         <WrapperContainer>
-            
             <Heading>
                 Our Expertise In Some of The Leading Testing Tools
             </Heading>
             
-            <div className="grid grid-cols-4 gap-20">
-                {/* Card 1 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <GitPullRequest className="text-green-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">GitPullRequest</Paragraph>
-                </div>
-                
-                {/* Card 2 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <Code className="text-orange-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">Code</Paragraph>
-                </div>
-                
-                {/* Card 3 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <Database className="text-purple-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">Database</Paragraph>
-                </div>
-                
-                {/* Card 4 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <Monitor className="text-green-600 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">Monitor</Paragraph>
-                </div>
-                
-                {/* Card 5 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <CheckCircle className="text-green-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">CheckCircle</Paragraph>
-                </div>
-                
-                {/* Card 6 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <Feather className="text-orange-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">Feather</Paragraph>
-                </div>
-                
-                {/* Card 7 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <Settings className="text-gray-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">Settings</Paragraph>
-                </div>
-                
-                {/* Card 8 */}
-                <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <Bug className="text-red-500 w-16 h-16 mb-4" />
-                    <Paragraph className="text-lg font-medium text-gray-700">Bug</Paragraph>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10 lg:gap-20">
+                {/** Card Data */}
+                {[
+                    { icon: GitPullRequest, color: "text-green-500", label: "GitPullRequest" },
+                    { icon: Code, color: "text-orange-500", label: "Code" },
+                    { icon: Database, color: "text-purple-500", label: "Database" },
+                    { icon: Monitor, color: "text-green-600", label: "Monitor" },
+                    { icon: CheckCircle, color: "text-green-500", label: "CheckCircle" },
+                    { icon: Feather, color: "text-orange-500", label: "Feather" },
+                    { icon: Settings, color: "text-gray-500", label: "Settings" },
+                    { icon: Bug, color: "text-red-500", label: "Bug" },
+                ].map(({ icon: Icon, color, label }, index) => (
+                    <div 
+                        key={index} 
+                        className="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition"
+                    >
+                        <Icon className={`${color} w-16 h-16 mb-4`} />
+                        <Paragraph className="text-lg font-medium text-gray-700">{label}</Paragraph>
+                    </div>
+                ))}
             </div>
         </WrapperContainer>
     );

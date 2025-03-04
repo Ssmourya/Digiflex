@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-const NavItem = ({ setActiveDropdown, service }) => {
+const NavItem = ({ setActiveDropdown, service, topbarHeight }) => {
     
     const [isOpen, setIsOpen] = useState(false);
     const buttonRef = useRef(null);
@@ -13,60 +13,66 @@ const NavItem = ({ setActiveDropdown, service }) => {
     // Handle positioning of the dropdown
     useEffect(() => {
         if (!isOpen || !dropdownRef.current || !buttonRef.current || !contentRef.current) return;
-
+    
         const handlePosition = () => {
             const buttonRect = buttonRef.current.getBoundingClientRect();
             const dropdownEl = dropdownRef.current;
             const contentEl = contentRef.current;
             const viewportWidth = window.innerWidth;
-
-            // Calculate content width (80% of viewport on mobile, 90% on larger screens)
+    
+            // calculate content width (80% of viewport on mobile, 90% on larger screens)
             const contentWidth = Math.min(
                 Math.floor(viewportWidth * (viewportWidth < 768 ? 0.8 : 0.9)),
-                1200 // Max width
+                1200 // max width
             );
-
+    
             contentEl.style.width = `${contentWidth}px`;
             contentEl.style.maxWidth = `${contentWidth}px`;
-
-            // Set dropdown width to match content
+    
+            // set dropdown width to match content
             dropdownEl.style.width = `${contentWidth}px`;
-
-            // Calculate the center position of the button
+    
+            // calculate the center position of the button
             const buttonCenter = buttonRect.left + buttonRect.width / 2;
-
-            // Position dropdown
-            let leftPosition = buttonCenter - (contentWidth / 2);
-
-            // Adjust if overflowing right edge
+    
+            // position dropdown
+            let leftPosition = buttonCenter - contentWidth / 2;
+    
+            // adjust if overflowing right edge
             if (leftPosition + contentWidth > viewportWidth - 20) {
                 leftPosition = viewportWidth - contentWidth - 20;
             }
-
-            // Adjust if overflowing left edge
+    
+            // adjust if overflowing left edge
             if (leftPosition < 20) {
                 leftPosition = 20;
             }
-
-            // Position dropdown
+    
+            // ✅ dynamically update top position when scrolling
             dropdownEl.style.left = `${leftPosition}px`;
-            dropdownEl.style.top = `${buttonRect.bottom + 10}px`;
-
-            // Position notch at the center of the button
+            dropdownEl.style.top = `${buttonRect.bottom + Number(topbarHeight) + 10}px`;
+    
+            // position notch at the center of the button
             const notchEl = dropdownEl.querySelector('.dropdown-notch');
             if (notchEl) {
-                const notchPosition = buttonCenter - leftPosition - (8); // 8 is half the notch width
+                const notchPosition = buttonCenter - leftPosition - 8; // 8 is half the notch width
                 notchEl.style.left = `${notchPosition}px`;
             }
         };
-
-        handlePosition();
+    
+        // update position on scroll & resize
+        window.addEventListener('scroll', handlePosition, { passive: true });
         window.addEventListener('resize', handlePosition);
-
+    
+        // run once when dropdown opens
+        handlePosition();
+    
         return () => {
+            window.removeEventListener('scroll', handlePosition);
             window.removeEventListener('resize', handlePosition);
         };
-    }, [isOpen]);
+    }, [isOpen, topbarHeight]); // ✅ listens for topbarHeight updates
+    
 
 
 
@@ -168,7 +174,7 @@ const MegaMenu = ({ setActiveDropdown, services, topbarHeight }) => {
         <nav style={{ top: `${topbarHeight+65}px` }} className="absolute left-0 w-full bg-white shadow-sm z-40 px-4 py-1">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-start">
                 {services.map((service, index) => (
-                    <NavItem key={index} service={service} setActiveDropdown={setActiveDropdown} />
+                    <NavItem key={index} service={service} setActiveDropdown={setActiveDropdown} topbarHeight={topbarHeight} />
                 ))}
             </div>
         </nav>

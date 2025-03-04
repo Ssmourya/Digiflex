@@ -44,7 +44,7 @@ const FAQ = () => {
         className="text-center mb-12"
       >
         <Heading>Salesforce Consulting Services FAQ</Heading>
-        <Paragraph>
+        <Paragraph className="text-center">
           Common questions about Salesforce consulting services answered
         </Paragraph>
       </motion.div>

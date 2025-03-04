@@ -216,7 +216,7 @@ function App() {
   const isNextDisabled = activeIndex >= limitedIndustries.length - visibleCount || isAnimating;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className=" bg-white">
       <WrapperContainer>
         <div className="flex flex-col items-center text-center mb-8 md:mb-12 px-4 sm:px-6">
           {/* Header Section with Navigation */}

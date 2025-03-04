@@ -10,7 +10,7 @@ import FAQ from "./FAQ";
 
 function Body() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       <WrapperContainer>
         <Heading>A game-changing strategy for your app idea</Heading>
         <Paragraph>

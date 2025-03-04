@@ -3,20 +3,20 @@ import WrapperContainer from '../Layout/WrapperContainer'
 
 const footerLinks = {
   'CONSULTING': [
-    { name: 'Web Consulting', url: '/services/consulting/website-consulting-solutions' },
-    { name: 'Mobile Consulting', url: '/services/consulting/mobile-web-app-consulting-services' },
-    { name: 'Salesforce Consulting', url: '/services/consulting/salesforce-consulting-company' },
-    { name: 'DevOps Consulting', url: '/services/consulting/devops-consulting-services' },
-    { name: 'Testing Consulting', url: '/services/consulting/software-testing-consulting' },
-    { name: 'AI Consulting', url: '/services/consulting/ai-consulting-experts' }
+    { name: 'Web Consulting', url: '/website-consulting-solutions' },
+    { name: 'Mobile Consulting', url: '/mobile-web-app-consulting-services' },
+    { name: 'Salesforce Consulting', url: '/salesforce-consulting-company' },
+    { name: 'DevOps Consulting', url: '/devops-consulting-services' },
+    { name: 'Testing Consulting', url: '/software-testing-consulting' },
+    { name: 'AI Consulting', url: '/ai-consulting-experts' }
   ],
   'UI/UX': [
-    { name: 'Brand Strategy', url: '/services/ui-ux/brandStrategy' },
-    { name: 'Design Consulting', url: '/services/ui-ux/designconsulting' },
-    { name: 'Product Design', url: '/services/ui-ux/productdesign' },
-    { name: 'UX Research', url: '/services/ui-ux/uxresearch' },
-    { name: 'UI Animation', url: '/services/ui-ux/uianimation' },
-    { name: 'Design Testing', url: '/services/ui-ux/design-testing' }
+    { name: 'Brand Strategy', url: '/brand-strategy-consulting' },
+    { name: 'Design Consulting', url: '/design-consulting-services' },
+    { name: 'Product Design', url: '/product-design-consulting' },
+    { name: 'UX Research', url: '/ux-research-services' },
+    { name: 'UI Animation', url: '/ui-design-and-animation-services' },
+    { name: 'Design Testing', url: '/design-testing-services' }
   ],
   'CUSTOM APPS': [
     { name: 'Web Application Development', url: '/web-application-development' },
@@ -26,29 +26,29 @@ const footerLinks = {
     { name: 'CEM Development', url: '/customer-experience-management-development' }
   ],
   'TESTING & QA': [
-    { name: 'Software Test Management', url: '/services/testing/software-test-management' },
-    { name: 'Test Automation', url: '/services/testing/test-automation' },
-    { name: 'Performance Testing', url: '/services/testing/performance-testing' },
-    { name: 'Security Testing', url: '/services/testing/security-testing' },
-    { name: 'Selenium Testing', url: '/services/testing/selenium-automation-testing' }
+    { name: 'Software Test Management', url: '/software-test-management-services' },
+    { name: 'Test Automation', url: '/test-automation-services' },
+    { name: 'Performance Testing', url: '/performance-testing-services' },
+    { name: 'Security Testing', url: '/security-testing-services' },
+    { name: 'Selenium Testing', url: '/selenium-automation-testing-services' }
   ],
   'CLOUD': [
     { name: 'Azure Cloud Services', url: '/microsoft-azure-cloud-services' },
     { name: 'AWS Cloud Services', url: '/aws-cloud-services' },
     { name: 'Google Cloud Platform', url: '/google-cloud-platform-services' },
     { name: 'Cloud Migration', url: '/legacy-to-cloud-migration-services' },
-    { name: 'Cloud Native Development', url: '/cloud-native-development-services' },
+    { name: 'Intercloud Migration', url: '/intercloud-migration-solutions' },
+    { name: 'Cloud Native', url: '/cloud-native-development-services' },
     { name: 'Cloud Optimization', url: '/cloud-optimization-services' }
   ],
-  'AI': [
-    { name: 'AI App Development', url: '/ai-app-development' },
-    { name: 'AI Software Development', url: '/ai-software-development' },
-    { name: 'LLM Development', url: '/large-language-model-development' }
-  ],
+  // 'AI': [
+  //   { name: 'AI Development', url: '/services/AI/Ai_development' }
+  // ],
   'BLOCKCHAIN': [
     { name: 'Exchange Software', url: '/crypto-exchange-software-development' },
     { name: 'ICO Development', url: '/initial-coin-offering-ico-development' },
     { name: 'Cryptocurrency App', url: '/cryptocurrency-app-development' },
+    { name: 'Cryptocurrency Wallet', url: '/cryptocurrency-wallet-development' },
     { name: 'Smart Contract', url: '/smart-contract-development-services' },
     { name: 'NFT Marketplace', url: '/services/blockchain/nftmarketplacedevelopment' },
     { name: 'DeFi Development', url: '/services/blockchain/defidevelopmentservices' },
@@ -75,6 +75,10 @@ const footerLinks = {
     { name: 'MERN Stack Development', url: '/mern-stack-development' },
     { name: 'Java Development', url: '/java-j2ee-development-services' },
     { name: 'Python Development', url: '/python-development-services' },
+    { name: '.NET Development', url: '/dotnet-development-services' },
+    { name: 'Ruby on Rails', url: '/ruby-on-rails-development' },
+    { name: 'Golang Development', url: '/golang-development-services' },
+    { name: 'PHP Laravel', url: '/php-laravel-codeigniter-development' },
     { name: 'Website Development', url: '/website-development-services' }
   ],
   'MOBILE APP': [
@@ -85,6 +89,13 @@ const footerLinks = {
     { name: 'NativeScript Development', url: '/nativescript-app-development-services' },
     { name: 'Xamarin Development', url: '/xamarin-app-development-services' },
     { name: 'HTML5 App Development', url: '/html5-app-development-services' }
+  ],
+  'DEVOPS': [
+    { name: 'CI/CD Implementation', url: '/services/devops/ci-cd' },
+    { name: 'Infrastructure as Code', url: '/services/devops/infrastructure-as-code' },
+    { name: 'Security & Compliance', url: '/services/devops/security-compliance' },
+    { name: 'Cloud Automation', url: '/services/devops/cloud-automation' },
+    { name: 'Monitoring & Logging', url: '/services/devops/monitoring-logging' }
   ],
   'RESOURCES': [
     { name: 'About Us', url: '/about-us' },

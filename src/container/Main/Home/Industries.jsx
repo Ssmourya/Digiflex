@@ -227,7 +227,7 @@ function App() {
               </span>
             </div>
             
-            <div className="flex flex-col items-center w-full mb-6">
+            <div className="flex flex-col items-center w-full">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 leading-tight mb-4 text-center">
                 Industries We Serve.
               </h2>

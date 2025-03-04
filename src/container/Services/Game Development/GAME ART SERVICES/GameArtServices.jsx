@@ -59,30 +59,32 @@ const GameArtServices = () => {
   return (
     <WrapperContainer>
       <Heading>
-        <div>Acquire Our Best Game Art Services</div>
+        <div className="text-center text-3xl font-bold text-gray-900">
+          Acquire Our Best Game Art Services
+        </div>
       </Heading>
       <Paragraph>
-        <span className="flex justify-center">
+        <span className="flex justify-center text-lg text-gray-700">
           We offer top-tier game art services, empowering game developers to
           create visually stunning and immersive experiences across platforms.
         </span>
       </Paragraph>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12">
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300"
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, y: 20 }}
+            className="bg-gradient-to-r from-blue-50 to-blue-100 shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300"
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
           >
-            <div className="text-4xl">{service.icon}</div>
-            <h3 className="mt-4 text-xl font-semibold text-gray-800">
+            <div className="text-5xl mb-4">{service.icon}</div>
+            <h3 className="text-2xl font-semibold text-gray-800">
               {service.title}
             </h3>
-            <p className="mt-2 text-gray-600 text-sm">
+            <p className="mt-3 text-gray-600 text-base">
               {service.description}
             </p>
           </motion.div>

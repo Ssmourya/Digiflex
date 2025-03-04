@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Search, X, Menu, ChevronDown } from "lucide-react";
 import logo from "../assets/digiflex.png";
-import { mainNavItems, serviceCategories, services, productCategories } from "./HeaderData";
+import { mainNavItems, serviceCategories, productCategories, technologies } from "./HeaderData";
 import MegaMenu from "./MegaMenu";
 import { Phone, Mail } from "lucide-react";
 
@@ -86,7 +86,10 @@ const Navbar = () => {
     const getDropdownItems = (dropdownType) => {
         switch (dropdownType) {
             case "services":
-                return services;
+                return serviceCategories;
+
+            case "technology" :
+                return technologies;
 
             case "products":
                 return productCategories;

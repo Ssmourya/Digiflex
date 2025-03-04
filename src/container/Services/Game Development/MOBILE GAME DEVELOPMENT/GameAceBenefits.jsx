@@ -2,48 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Clock, Users, Code, Scale, Lightbulb } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
-import Subheading from "../../../../Layout/Subheading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
-const BenefitCard = ({ icon: Icon, title, description, index }) => {
-  const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const hoverEffect = {
-    scale: 1.03,
-    transition: {
-      duration: 0.3,
-      ease: "easeInOut",
-    },
-  };
-
+const BenefitCard = ({ icon: Icon, title, description }) => {
   return (
-    <motion.div
-      variants={cardVariants}
-      whileHover={hoverEffect}
-      className="bg-white p-6 rounded-lg shadow-lg transition-shadow duration-300 relative overflow-hidden"
-    >
+    <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="flex items-center gap-4 mb-4">
-        <motion.div
-          className="p-3 bg-blue-600 rounded-lg"
-          whileHover={{ rotate: 10, scale: 1.1 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Icon className="w-6 h-6 text-white" />
-        </motion.div>
-        <Subheading>{title}</Subheading>
+        <div className="p-4 bg-blue-600 rounded-full">
+          <Icon className="w-8 h-8 text-white" />
+        </div>
+        <h3 className="text-xl font-bold text-gray-800">{title}</h3>
       </div>
-      <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
-    </motion.div>
+      <p className="text-gray-700 text-base leading-relaxed">{description}</p>
+    </div>
   );
 };
 
@@ -87,85 +58,30 @@ const DigiflexBenefits = () => {
     },
   ];
 
-  // Container animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const headingVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const buttonVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
     <WrapperContainer>
-      <motion.div className="mx-auto">
-        <motion.div
-          variants={headingVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="text-center mb-12"
-        >
+      <div className="mx-auto">
+        <div className="text-center mb-12">
           <Heading>Why Choose Digiflex for Mobile Game Development?</Heading>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Digiflex specializes in creating high-performance, cross-platform mobile games that engage, entertain, and drive success.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <BenefitCard key={index} {...benefit} index={index} />
+            <BenefitCard key={index} {...benefit} />
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={buttonVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="text-center mt-12"
-        >
-          <motion.button
+        <div className="text-center mt-12">
+          <button
             className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             Get Started with Digiflex
-          </motion.button>
-        </motion.div>
-      </motion.div>
+          </button>
+        </div>
+      </div>
     </WrapperContainer>
   );
 };

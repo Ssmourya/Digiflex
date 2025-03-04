@@ -128,9 +128,7 @@ export default function ConsultingAssessment() {
     
       <>
       <WrapperContainer>
-      
       <div className="max-w-6xl mx-auto text-center relative z-10">
-   
    <Heading>
     <div>
       Why Choose Quest Digiflex.ai
@@ -170,7 +168,7 @@ export default function ConsultingAssessment() {
       </div>
       
       {/* Metrics Section */}
-      <div className="bg-blue-50 rounded-xl p-8 max-w-6xl mx-auto mb-16">
+      <div className="bg-blue-50 rounded-xl p-8 max-w-6xl mx-auto ">
         <div className="text-center mb-8">
         <Heading>
           <div>
@@ -178,7 +176,7 @@ export default function ConsultingAssessment() {
           </div>
         </Heading>
          <Paragraph>
-          <span>
+          <span className='block text-center'>
           Delivering measurable results for our clients
           </span>
          </Paragraph>
@@ -203,21 +201,6 @@ export default function ConsultingAssessment() {
         </div>
       </div>
       
-      {/* Testimonial */}
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg overflow-hidden ">
-        <div className="p-8 md:p-12 text-center">
-          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-            <span className="text-blue-600 text-3xl font-serif">"</span>
-          </div>
-          <p className="text-white text-lg md:text-xl mb-6 italic">
-            Quest Digiflex.ai transformed our approach to data analytics, resulting in a 45% increase in operational efficiency and substantial cost savings.
-          </p>
-          <div className="mt-8">
-            <p className="text-white font-semibold">Sarah Johnson</p>
-            <p className="text-blue-200">CTO, TechInnovate</p>
-          </div>
-        </div>
-      </div>
       
       {/* Assessment Modal */}
       {showAssessment && (

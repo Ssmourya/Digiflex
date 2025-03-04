@@ -1,22 +1,42 @@
-import React from "react";
-import { Circle, X, Square } from "lucide-react";
-import Heading from "../../../../Layout/Heading";
-import Subheading from "../../../../Layout/Subheading";
+import React, { useState } from "react";
+import { Circle, X, Square, Hexagon, Star } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
+import Subheading from "../../../../Layout/Subheading";
+import { motion } from "framer-motion";
 
-const ServiceCard = ({ icon: Icon, title, description }) => (
-  <div className="flex flex-col h-full p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-[1.03]">
-    <div className="mb-5 flex items-center justify-center">
-      <div className="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
-        <Icon className="w-7 h-7 text-white" />
+const ServiceCard = ({ icon: Icon, title, description, isSelected, onClick, index }) => {
+  const isLeft = index % 2 === 0;
+  return (
+    <motion.div
+      onClick={onClick}
+      initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      className={`border rounded-lg overflow-hidden shadow-md bg-white cursor-pointer transition-colors duration-300 ${
+        isSelected ? "bg-blue-100" : "hover:bg-gray-200"
+      }`}
+    >
+      <div className="flex flex-col items-center p-4">
+        <div className="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center mb-3">
+          <Icon className="w-7 h-7 text-white" />
+        </div>
+        <Subheading className="text-xl font-semibold text-center">{title}</Subheading>
       </div>
-    </div>
-    <Subheading className="mb-2">{title}</Subheading>
-    <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
-  </div>
-);
+      {isSelected && (
+        <div className="p-4 bg-white">
+          <Paragraph className="text-gray-700 text-lg leading-relaxed">{description}</Paragraph>
+        </div>
+      )}
+    </motion.div>
+  );
+};
 
 const ServicesSection = () => {
+  const [selectedService, setSelectedService] = useState(null);
+
   const services = [
     {
       icon: Circle,
@@ -36,21 +56,41 @@ const ServicesSection = () => {
       description:
         "Our LiveOps services keep your game fresh and engaging with regular updates, new content, and performance optimizations. We ensure long-term success with analytics-driven improvements and post-launch support.",
     },
+    {
+      icon: Hexagon,
+      title: "Game Analytics & Insights",
+      description:
+        "Utilize advanced analytics to gain insights into player behavior and game performance, driving data-driven decisions for game improvements.",
+    },
+    {
+      icon: Star,
+      title: "Custom Game Engines",
+      description:
+        "Create custom game engines tailored to your specific needs, providing unique features and optimizations for your game projects.",
+    },
   ];
 
   return (
     <WrapperContainer>
-      <div className="text-center mb-10">
-        <Heading>Digiflex Unity3D Game Development Services</Heading>
-        <Subheading>
-          We create innovative, high-performance Unity games using cutting-edge
-          technology and creative solutions.
-        </Subheading>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
-        ))}
+      <div className="max-w-full p-6 space-y-6">
+        <Heading>
+          <h1 className="text-3xl font-bold text-center mb-6">
+            Digiflex Unity3D Game Development Services
+          </h1>
+        </Heading>
+        <div className="flex flex-col space-y-8">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              {...service}
+              index={index}
+              isSelected={selectedService === index}
+              onClick={() =>
+                setSelectedService(selectedService === index ? null : index)
+              }
+            />
+          ))}
+        </div>
       </div>
     </WrapperContainer>
   );

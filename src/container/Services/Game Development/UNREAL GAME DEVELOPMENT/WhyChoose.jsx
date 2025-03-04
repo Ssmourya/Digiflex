@@ -53,15 +53,15 @@ const WhyChoose = () => {
                 }`}
                 onClick={() => setActiveSection(section.id)}
               >
-                <span className="text-3xl font-semibold">✔</span>
-                <Subheading>{section.title}</Subheading>
+                <span className={`text-4xl font-semibold ${activeSection === section.id ? "text-white" : ""}`}>✔</span>
+                <Subheading className={`${activeSection === section.id ? "text-white" : ""} text-lg`}>{section.title}</Subheading>
               </div>
             ))}
           </div>
 
           {/* Right Section - Description */}
           <div className="p-6 rounded-lg shadow-md flex items-center justify-center bg-gray-50">
-            <Paragraph>
+            <Paragraph className="text-lg">
               {sections.find((section) => section.id === activeSection)?.description}
             </Paragraph>
           </div>

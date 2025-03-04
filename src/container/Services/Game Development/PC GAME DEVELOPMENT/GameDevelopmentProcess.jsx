@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import WrapperContainer from '../../../../Layout/WrapperContainer'
-import Heading from '../../../../Layout/Heading'
+import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Heading from '../../../../Layout/Heading';
 
 import { 
   ChevronDown, 
@@ -16,7 +16,7 @@ const GameDevProcess = () => {
 
   const sections = {
     'pre-production': {
-      icon: <Pencil className="w-6 h-6" />,
+      icon: <Pencil className="w-6 h-6 text-blue-500" />,
       title: 'Pre-production',
       items: [
         { title: 'Storyboarding', description: 'Plan game mechanics and narrative.' },
@@ -25,7 +25,7 @@ const GameDevProcess = () => {
       ]
     },
     'development': {
-      icon: <Code className="w-6 h-6" />,
+      icon: <Code className="w-6 h-6 text-green-500" />,
       title: 'Development',
       items: [
         { title: 'Coding', description: 'Implement game logic, physics, and AI.' },
@@ -35,7 +35,7 @@ const GameDevProcess = () => {
       ]
     },
     'testing': {
-      icon: <TestTube className="w-6 h-6" />,
+      icon: <TestTube className="w-6 h-6 text-yellow-500" />,
       title: 'Testing & Debugging',
       items: [
         { title: 'Bug Fixing', description: 'Identify and fix bugs, glitches, and performance issues.' },
@@ -43,7 +43,7 @@ const GameDevProcess = () => {
       ]
     },
     'deployment': {
-      icon: <Upload className="w-6 h-6" />,
+      icon: <Upload className="w-6 h-6 text-red-500" />,
       title: 'Deployment & Distribution',
       items: [
         { title: 'Platforms', description: 'Choose distribution platforms like Steam, Epic Games Store, or Itch.io.' },
@@ -54,47 +54,47 @@ const GameDevProcess = () => {
 
   return (
     <WrapperContainer>
-    <div className="max-w-full p-6 space-y-4">
-    <Heading>
-      <h1>Game Development Process</h1>
-      </Heading>
-      <div className="grid gap-4">
-        {Object.entries(sections).map(([key, section]) => (
-          <div key={key} className="border rounded-lg overflow-hidden shadow-sm bg-gray-100">
-            <div 
-              className={`cursor-pointer p-4 transition-colors duration-200 ${
-                expandedSection === key ? 'bg-blue-50' : 'hover:bg-gray-50'
-              }`}
-              onClick={() => setExpandedSection(expandedSection === key ? null : key)}
-            >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-3">
-                  {section.icon}
-                  <h2 className="text-xl font-semibold">{section.title}</h2>
+      <div className="max-w-full p-6 space-y-6">
+        <Heading>
+          <h1 className="text-3xl font-bold text-center mb-6">Game Development Process</h1>
+        </Heading>
+        <div className="grid gap-6">
+          {Object.entries(sections).map(([key, section]) => (
+            <div key={key} className="border rounded-lg overflow-hidden shadow-md bg-white">
+              <div 
+                className={`cursor-pointer p-4 transition-colors duration-300 ${
+                  expandedSection === key ? 'bg-blue-100' : 'hover:bg-gray-200'
+                }`}
+                onClick={() => setExpandedSection(expandedSection === key ? null : key)}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    {section.icon}
+                    <h2 className="text-xl font-semibold">{section.title}</h2>
+                  </div>
+                  {expandedSection === key ? 
+                    <ChevronDown className="w-5 h-5" /> : 
+                    <ChevronRight className="w-5 h-5" />
+                  }
                 </div>
-                {expandedSection === key ? 
-                  <ChevronDown className="w-5 h-5" /> : 
-                  <ChevronRight className="w-5 h-5" />
-                }
               </div>
+              
+              {expandedSection === key && (
+                <div className="p-4 bg-white">
+                  <div className="space-y-4">
+                    {section.items.map((item, index) => (
+                      <div key={index} className="border-l-4 border-blue-500 pl-4">
+                        <h3 className="font-semibold text-lg">{item.title}</h3>
+                        <p className="text-gray-600">{item.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
-            
-            {expandedSection === key && (
-              <div className="p-4 bg-white">
-                <div className="space-y-4">
-                  {section.items.map((item, index) => (
-                    <div key={index} className="border-l-4 border-blue-500 pl-4">
-                      <h3 className="font-semibold text-lg">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </WrapperContainer>
   );
 };

@@ -1,60 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import { 
+  Gamepad, 
+  Wrench, 
+  Film, 
+  Globe 
+} from 'lucide-react';
 
-const services = [
-  {
-    icon: "\ud83c\udfae", // Game Controller Icon
+const services = {
+  'environment-design': {
+    icon: <Gamepad className="w-6 h-6 text-blue-500" />,
     title: "VR/XR Game Environment Design",
-    description:
-      "We create immersive VR/XR environments with high-end 3D graphics and seamless interactions, ensuring a rich user experience.",
+    description: "We create immersive VR/XR environments with high-end 3D graphics and seamless interactions, ensuring a rich user experience."
   },
-  {
-    icon: "\ud83d\udee0", // Wrench Icon
+  'development-integration': {
+    icon: <Wrench className="w-6 h-6 text-green-500" />,
     title: "VR/XR Game Development & Integration",
-    description:
-      "Our team specializes in building VR/XR simulation games with real-time physics, AI-driven NPCs, and multi-platform support.",
+    description: "Our team specializes in building VR/XR simulation games with real-time physics, AI-driven NPCs, and multi-platform support."
   },
-  {
-    icon: "\ud83d\udcfc", // Film Projector Icon
+  'content-creation': {
+    icon: <Film className="w-6 h-6 text-yellow-500" />,
     title: "XR Content Creation & Optimization",
-    description:
-      "We develop and optimize interactive XR content for training simulations, educational applications, and entertainment.",
+    description: "We develop and optimize interactive XR content for training simulations, educational applications, and entertainment."
   },
-  {
-    icon: "\ud83c\udf10", // Globe Icon
+  'cross-platform': {
+    icon: <Globe className="w-6 h-6 text-red-500" />,
     title: "Cross-Platform VR/XR Compatibility",
-    description:
-      "Our VR/XR solutions are designed to work seamlessly across multiple devices, including Oculus, HTC Vive, and mobile AR platforms.",
-  },
-];
+    description: "Our VR/XR solutions are designed to work seamlessly across multiple devices, including Oculus, HTC Vive, and mobile AR platforms."
+  }
+};
 
 const DevelopmentServices = () => {
+  const [expandedService, setExpandedService] = useState(null);
+
   return (
     <WrapperContainer>
       <div className="max-w-6xl mx-auto px-2 py-12">
         <Heading>
-          <div>
-            Our VR/XR Simulation Game Development Services
-          </div>
+          <h1 className="text-3xl font-bold text-center mb-6">Our VR/XR Simulation Game Development Services</h1>
         </Heading>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {services.map((service, index) => (
+        <div className="space-y-8">
+          {Object.entries(services).map(([key, service]) => (
             <div
-              key={index}
-              className="flex items-start space-x-4 p-6 border rounded-xl shadow-md hover:shadow-lg transition bg-white"
+              key={key}
+              className={`flex flex-col items-start p-6 border rounded-xl shadow-md hover:shadow-lg transition bg-white cursor-pointer ${
+                expandedService === key ? 'bg-blue-100' : 'hover:bg-gray-200'
+              }`}
+              onClick={() => setExpandedService(expandedService === key ? null : key)}
             >
-              <span className="text-4xl text-blue-500">{service.icon}</span>
-              <div>
-                <h3 className="text-lg font-semibold">{service.title}</h3>
+              <span className="text-4xl mb-4">{service.icon}</span>
+              <h3 className="text-lg font-semibold">{service.title}</h3>
+              {expandedService === key && (
                 <p className="text-gray-600 mt-2">{service.description}</p>
-              </div>
+              )}
             </div>
           ))}
         </div>
       </div>
-    </WrapperContainer> 
+    </WrapperContainer>
   );
 };
 

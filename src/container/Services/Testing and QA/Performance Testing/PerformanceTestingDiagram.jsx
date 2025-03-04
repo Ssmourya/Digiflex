@@ -2,10 +2,8 @@ import { CircleCheck, Server, Settings, FileBarChart } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
-import Subheading from "../../../../Layout/Subheading"
 
 export default function PerformanceTestingDiagram() {
-
     const steps = [
         {
             number: "01",
@@ -28,38 +26,36 @@ export default function PerformanceTestingDiagram() {
     ];
 
     const Step = ({ number, title, description, bgColor }) => (
-        <div className="flex items-center space-x-4">
-            <div className={`w-12 h-12 flex items-center justify-center ${bgColor} text-white rounded-full text-lg font-bold`}>
+        <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-2 sm:space-y-0">
+            <div className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center ${bgColor} text-white rounded-full text-sm sm:text-lg font-bold`}>
                 {number}
             </div>
-            <div>
-                <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-                <Paragraph className="text-start">{description}</Paragraph>
+            <div className="text-center sm:text-left">
+                <h3 className="text-sm sm:text-lg font-semibold text-gray-900">{title}</h3>
+                <Paragraph className="text-xs sm:text-sm">{description}</Paragraph>
             </div>
         </div>
     );
 
-
     return (
         <WrapperContainer>
-            
-            
             {/* Title */}
-            <Heading>
+            <Heading className="text-2xl sm:text-3xl font-bold text-center sm:text-left">
                 Performance Testing Approach
             </Heading>
 
-            <div className="flex items-center space-x-16">
+            <div className="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0 sm:space-x-16 mt-8">
 
                 {/* Left - Central Icon */}
-                <div className="flex flex-col items-center p-6 border-2 border-dashed border-gray-300 rounded-full w-40 h-40">
-                    <Settings className="text-gray-600 w-16 h-16" />
-                    <Paragraph className="text-lg font-medium text-gray-700 mt-2 text-center">Performance Testing</Paragraph>
+                <div className="flex flex-col items-center p-4 sm:p-6 border-2 border-dashed border-gray-300 rounded-full w-24 h-24 sm:w-40 sm:h-40">
+                    <Settings className="text-gray-600 w-12 h-12 sm:w-16 sm:h-16" />
+                    <Paragraph className="text-xs sm:text-lg font-medium text-gray-700 mt-2 text-center">
+                        Performance Testing
+                    </Paragraph>
                 </div>
 
                 {/* Right - Steps */}
-                <div className="flex flex-col space-y-6">
-
+                <div className="flex flex-col space-y-4 sm:space-y-6">
                     {steps.map((step, index) => (
                         <Step
                             key={index}
@@ -69,8 +65,8 @@ export default function PerformanceTestingDiagram() {
                             bgColor={step.bgColor}
                         />
                     ))}
-
                 </div>
+
             </div>
         </WrapperContainer>
     );

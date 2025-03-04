@@ -1,10 +1,11 @@
 import React from 'react';
 
-import devops_Solutions from "../../../../assets/devops_Solutions.jpeg"
-import quality_assurance from "../../../../assets/quality_assurance.jpeg"
-import software_dev from "../../../../assets/software_dev.jpeg"
+import devops_Solutions from "../../../../assets/devops_Solutions.jpeg";
+import quality_assurance from "../../../../assets/quality_assurance.jpeg";
+import software_dev from "../../../../assets/software_dev.jpeg";
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
+
 const BusinessSolutions = () => {
     const solutions = [
         {
@@ -25,32 +26,31 @@ const BusinessSolutions = () => {
     ];
 
     return (
-
         <WrapperContainer>
-            <div>
+            <div className="px-4 sm:px-6 lg:px-8">
                 {/* Title Section */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-12 md:mb-16">
                     <Heading>Solutions for Businesses</Heading>
-                    <div className="w-48 h-1 bg-orange-500 mx-auto"></div>
+                    <div className="w-24 h-1 bg-orange-500 mx-auto mt-2"></div>
                 </div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
                     {solutions.map((solution, index) => (
-                        <div key={index} className="    relative group overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105">
+                        <div key={index} className="relative group overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105">
                             {/* Background Image */}
                             <img 
                                 src={solution.image} 
                                 alt={solution.title}
-                                className="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-64 md:h-72 lg:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                             
                             {/* Base Overlay */}
                             <div className="absolute inset-0 bg-[#1a1a4e] bg-opacity-75 transition-all duration-300 group-hover:bg-opacity-90"></div>
                             
                             {/* Content */}
-                            <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
-                                <h3 className="text-2xl font-semibold mb-4 text-center transform transition-transform duration-300 group-hover:-translate-y-2">
+                            <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 sm:p-6">
+                                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-center transform transition-transform duration-300 group-hover:-translate-y-2">
                                     {solution.title}
                                 </h3>
                                 <div className="transform transition-all duration-300 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
@@ -80,7 +80,6 @@ const BusinessSolutions = () => {
                 </div>
             </div>
         </WrapperContainer>
-      
     );
 };
 

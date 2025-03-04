@@ -14,7 +14,7 @@ const locations = [
 
 const contacts = {
   phones: [
-    '+91 9111453332',
+    '+91 9039383183',
     '+91 9111454949'
   ],
   emails: [

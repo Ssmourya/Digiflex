@@ -54,11 +54,15 @@ function App() {
               
               {/* Success Rate Badge */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                <div className="bg-blue-900 text-white rounded-full h-24 w-24 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40 flex flex-col items-center justify-center shadow-2xl border-4 sm:border-[6px] border-white">
-                  <span className="text-3xl sm:text-4xl md:text-5xl font-bold">80%</span>
-                  <span className="text-xs sm:text-sm font-medium mt-1">Success Project</span>
-                </div>
-              </div>
+  <div className="bg-blue-900 text-white rounded-full flex flex-col items-center justify-center shadow-2xl border-white
+              h-20 w-20 border-2
+              sm:h-24 sm:w-24 sm:border-3
+              md:h-32 md:w-32 md:border-4
+              lg:h-40 lg:w-40 lg:border-6">
+    <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold translate-y-2">80%</span>
+    <span className="text-xs md:text-sm font-medium mt-0.5 md:mt-1 translate-x-5">Success Project</span>
+  </div>
+</div>
             </div>
 
             {/* Right Side - Services List */}

@@ -15,33 +15,33 @@ function App() {
         <div className="container mx-auto py-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-8 xl:gap-12 items-center">
             {/* Left Side - Images (Stack on mobile) */}
-            <div className="relative h-[400px] sm:h-[500px] md:h-[550px] lg:h-[500px] xl:h-[600px] order-2 lg:order-1 mt-8 lg:mt-0">
-              {/* Main image */}
-              <div className="relative z-10 h-[300px] sm:h-[400px] md:h-[450px] lg:h-[400px] xl:h-[500px]">
-                <img 
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1200&h=800&q=80"
-                  alt="Team Meeting"
-                  className="rounded-lg w-full h-full object-cover"
-                />
-                {/* Experience badge - responsive positioning */}
-                <div className="absolute right-4 top-1/3 bg-blue-500 text-white px-4 sm:px-6 lg:px-4 xl:px-6 py-3 sm:py-4 lg:py-3 xl:py-4 rounded-xl z-30">
-                  <div className="text-center">
-                    <div className="text-2xl sm:text-3xl lg:text-2xl xl:text-3xl font-bold">+25 Years</div>
-                    <div className="text-xs sm:text-sm">Of Experience</div>
-                  </div>
-                </div>
-              </div>
-              {/* Bottom image - responsive sizing */}
-              <div className="absolute bottom-0 right-0 transform translate-x-3 sm:translate-x-5 lg:translate-x-3 xl:translate-x-5 -translate-y-1 z-10 w-3/4 h-[150px] sm:h-[180px] md:h-[200px] lg:h-[160px] xl:h-[200px]">
-                <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=800&q=80"
-                  alt="Team Collaboration"
-                  className="rounded-lg w-full h-full object-cover grayscale"
-                />
-              </div>
-              {/* Accent line */}
-              <div className="absolute left-0 bottom-0 w-16 sm:w-20 md:w-24 lg:w-16 xl:w-24 h-2 bg-blue-500 transform -translate-y-20"></div>
-            </div>
+           <div className="relative h-[300px] sm:h-[500px] md:h-[550px] lg:h-[500px] xl:h-[600px] order-2 lg:order-1 mt-8 lg:mt-0">
+  {/* Main image - reduced height for mobile */}
+  <div className="relative z-10 h-[220px] sm:h-[400px] md:h-[450px] lg:h-[400px] xl:h-[500px]">
+    <img 
+      src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1200&h=800&q=80"
+      alt="Team Meeting"
+      className="rounded-lg w-full h-full object-cover"
+    />
+    {/* Experience badge - adjusted for better mobile positioning */}
+    <div className="absolute right-10 sm:right-4 top-1/4 sm:top-1/3 bg-blue-500 text-white px-3 sm:px-6 lg:px-4 xl:px-6 py-2 sm:py-4 lg:py-3 xl:py-4 rounded-xl z-30 translate-y-14">
+      <div className="text-center">
+        <div className="text-xl sm:text-3xl lg:text-2xl xl:text-3xl font-bold">+25 Years</div>
+        <div className="text-xs sm:text-sm">Of Experience</div>
+      </div>
+    </div>
+  </div>
+  {/* Bottom image - reduced size for mobile */}
+  <div className="absolute bottom-0 right-0 transform translate-x-2 sm:translate-x-5 lg:translate-x-3 xl:translate-x-5 -translate-y-1 z-10 w-3/4 h-[120px] sm:h-[180px] md:h-[200px] lg:h-[160px] xl:h-[200px]">
+    <img 
+      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=800&q=80"
+      alt="Team Collaboration"
+      className="rounded-lg w-full h-full object-cover grayscale"
+    />
+  </div>
+  {/* Accent line - adjusted for mobile */}
+  <div className="absolute left-0 bottom-0 w-12 sm:w-20 md:w-24 lg:w-16 xl:w-24 h-1 sm:h-2 bg-blue-500 transform -translate-y-16 sm:-translate-y-20"></div>
+</div>
 
             {/* Right Side - Content */}
             <div className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-4 xl:space-y-6 lg:pl-6 xl:pl-8 order-1 lg:order-2">

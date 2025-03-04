@@ -46,7 +46,7 @@ import { Phone, Mail } from "lucide-react";
 
 export default function TopBar() {
   return (
-    <div className=" relative w-full bg-blue-950 border-b border-blue-800 px-4 md:px-8 py-2">
+    <div className="w-full bg-blue-950 border-b border-blue-800 px-4 md:px-8 py-2">
       <div className="flex justify-end items-center">
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-2 group hover:bg-blue-900 px-2 py-1 rounded transition-colors duration-200">

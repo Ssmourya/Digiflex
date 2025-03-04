@@ -1,21 +1,21 @@
 import React from 'react';
-import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
-import Paragraph from '../../../../Layout/Paragraph';
-import Subheading from '../../../../Layout/Subheading';
+import Heading from "../../../../Layout/Heading";
+
+const toolsData = [
+  { category: "Game Engines", tools: ["Unity", "Unreal Engine", "Godot"] },
+  { category: "Programming", tools: ["Visual Studio", "JetBrains Rider"] },
+  { category: "3D Modeling", tools: ["Blender", "Maya", "3ds Max"] },
+  { category: "2D Art & UI", tools: ["Photoshop", "GIMP", "Krita"] },
+  { category: "Audio Editing", tools: ["Audacity", "FL Studio", "Ableton"] },
+  { category: "Version Control", tools: ["Git", "GitHub", "GitLab"] },
+];
 
 const TeamMemberCard = ({ icon, title, description }) => (
-  <div className="bg-white rounded-lg p-6 transition-all duration-300 hover:shadow-xl group text-center border border-gray-300 shadow-md hover:shadow-2xl hover:border-white hover:bg-blue-500 transform hover:-translate-y-1">
-    <div className="mb-4 w-12 h-12 mx-auto text-[#f59e0b] group-hover:text-white group-hover:scale-110 transition-transform duration-300">
-      {icon}
-    </div>
-    <h3 className="text-lg sm:text-xl font-semibold text-[#1E3A8A] group-hover:text-white transition-colors duration-300">
-      {title}
-    </h3>
-    <p className="text-gray-600 mt-2 text-sm sm:text-base group-hover:text-white transition-colors duration-300">
-      {description}
-    </p>
-  </div>
+  <tr className="border border-gray-300 hover:bg-gray-100 transition-colors duration-200">
+    <td className="border border-gray-300 px-6 py-3 font-semibold">{title}</td>
+    <td className="border border-gray-300 px-6 py-3">{description}</td>
+  </tr>
 );
 
 const UnrealTeam = () => {
@@ -54,16 +54,25 @@ const UnrealTeam = () => {
 
   return (
     <WrapperContainer>
-      <div className="text-center mb-16">
-        <Heading>Unreal Engine Development Team</Heading>
-        <Subheading>
-          iLogos' expert game dev team thrives on challenges. With over 17 years in the industry, we handle projects of any complexity. Our highly skilled members, committed to continuous learning and professional growth, are ready for any task.
-        </Subheading>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
-        {teamMembers.map((member, index) => (
-          <TeamMemberCard key={index} icon={member.icon} title={member.title} description={member.description} />
-        ))}
+      <div className="container mx-auto p-6">
+        <Heading>
+          <h2 className="text-3xl font-bold mb-4">Unreal Engine Development Team</h2>
+        </Heading>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
+                <th className="border border-gray-300 px-6 py-3 text-left font-semibold">Role</th>
+                <th className="border border-gray-300 px-6 py-3 text-left font-semibold">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {teamMembers.map((member, index) => (
+                <TeamMemberCard key={index} icon={member.icon} title={member.title} description={member.description} />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </WrapperContainer>
   );

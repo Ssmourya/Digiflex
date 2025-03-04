@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from "react";
-//import videoGame from "../../../../assets/videoGame.mp4";
 import videoGame from "../../../../assets/unrealGame.mp4";
-
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("services");
-
-  const navItems = ["Services", "Portfolio", "About", "Contact"];
   const headingText = "Mobile Game App Development";
 
   // Function to generate animation delay for typewriter effect
   const getTypewriterStyle = (index) => {
     const delay = index * 0.1; // Incremental delay for each character
     return {
-      animation: `typewriter 0.5s ease-out ${delay}s forwards, bounce 0.3s ${delay + 0.2}s ease-out`,
+      animation: `typewriter 0.5s ease-out ${delay}s forwards, bounce 0.3s ${delay + 0.2}s ease-out, colorChange 1s ${delay + 0.4}s infinite alternate`,
       opacity: 0, // Start invisible
     };
   };
@@ -32,31 +27,32 @@ const Hero = () => {
         50% { transform: translateY(-5px); }
         100% { transform: translateY(0); }
       }
+      @keyframes colorChange {
+        from { color: #ffffff; }
+        to { color: #ffcc00; }
+      }
     `;
     document.head.appendChild(styleSheet);
   }, []);
 
   return (
     <div className="min-h-screen text-white">
-      
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-16">
-       <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover filter"
-        style={{ filter: "blur(1px)" }}
-      >
-        <source src={videoGame} type="video/mp4" />
-      </video>
-       
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover filter"
+          style={{ filter: "blur(1px)" }}
+        >
+          <source src={videoGame} type="video/mp4" />
+        </video>
+
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          
-          
-        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">           {headingText.split("").map((char, index) => (
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            {headingText.split("").map((char, index) => (
               <span
                 key={index}
                 className="inline-block"

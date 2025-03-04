@@ -1,28 +1,53 @@
-import React from "react";
-import { Circle } from "lucide-react";
+import React, { useState } from "react";
+import { Circle, CheckCircle } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 
-const GenreButton = ({ genre }) => {
+const GenreButton = ({ genre, isSelected, onClick }) => {
   return (
-    <button className="group flex items-center space-x-3 p-4 rounded-full border border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 w-full">
-      <div className="flex-shrink-0">
-        <Circle className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors duration-300" />
+    <button
+      onClick={onClick}
+      className={`group flex items-center justify-between space-x-3 p-4 rounded-full border ${
+        isSelected ? "bg-blue-600 text-white" : "border-blue-600 hover:bg-blue-600 hover:text-white"
+      } transition-all duration-300 w-full`}
+    >
+      <div className="flex items-center space-x-3">
+        <span
+          className={`text-gray-700 font-semibold ${
+            isSelected ? "text-white" : "group-hover:text-white"
+          } transition-colors duration-300`}
+        >
+          {genre}
+        </span>
       </div>
-      <span className="text-gray-700 font-semibold group-hover:text-white transition-colors duration-300">
-        {genre}
-      </span>
+      <div className="flex items-center">
+        {isSelected ? (
+          <CheckCircle className="w-6 h-6 text-white" />
+        ) : (
+          <Circle className="w-6 h-6 text-blue-600 group-hover:text-white" />
+        )}
+      </div>
     </button>
   );
 };
 
 const GameGenres = () => {
+  const [selectedGenres, setSelectedGenres] = useState([]);
+
   const genres = [
     "Strategy", "Arcade", "RPG", "Shooter", "Multiplayer", "Single-Player",
     "Sports", "Board", "Casino", "Puzzle", "Action", "MOBA",
     "MMORPG", "AR", "Simulation", "Trivia", "Adventure", "Card"
   ];
+
+  const toggleGenreSelection = (genre) => {
+    setSelectedGenres((prevSelectedGenres) =>
+      prevSelectedGenres.includes(genre)
+        ? prevSelectedGenres.filter((g) => g !== genre)
+        : [...prevSelectedGenres, genre]
+    );
+  };
 
   return (
     <WrapperContainer>
@@ -31,8 +56,7 @@ const GameGenres = () => {
         <div className="text-center mb-16">
           <Heading>Game Genres Developed by Digiflex</Heading>
           <Subheading>
-            At Digiflex, we specialize in creating immersive and engaging games across multiple genres. 
-            Whether it's strategy, action, or simulation, we bring your vision to life with cutting-edge development.
+            We create immersive games in various genres, bringing your vision to life.
           </Subheading>
         </div>
 
@@ -40,7 +64,11 @@ const GameGenres = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {genres.map((genre, index) => (
             <div key={index} className="w-full">
-              <GenreButton genre={genre} />
+              <GenreButton
+                genre={genre}
+                isSelected={selectedGenres.includes(genre)}
+                onClick={() => toggleGenreSelection(genre)}
+              />
             </div>
           ))}
         </div>

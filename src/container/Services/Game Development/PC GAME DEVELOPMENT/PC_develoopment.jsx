@@ -58,7 +58,7 @@ function PC_development() {
         {topics.map(({ icon: Icon, title, description }, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center text-center p-6 rounded-lg border border-gray-300 bg-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+            className="relative flex flex-col items-center text-center p-6 rounded-lg border border-gray-300 bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
           >
             {/* Icon - Centered at the top inside a bordered circle */}
             <div className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-blue-500 bg-white absolute -top-10">

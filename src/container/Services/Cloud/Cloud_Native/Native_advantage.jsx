@@ -7,7 +7,7 @@ function NativeAdvantage() {
   return (
     <WrapperContainer>
       <Heading>Advantages of Digiflex Cloud-Native Solutions</Heading>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-6 bg-gray-50 rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-6 mt-10 bg-gray-50 rounded-xl shadow-lg">
         {/* Advantages List - Left */}
         <div className="flex flex-col gap-4 text-lg font-medium text-gray-700">
           <p className="bg-blue-100 px-4 py-2 rounded-lg shadow">Seamless Scalability</p>

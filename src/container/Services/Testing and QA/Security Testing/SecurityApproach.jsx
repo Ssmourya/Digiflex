@@ -1,4 +1,8 @@
 import "./hexagon.css";
+import WrapperContainer from "../../../../Layout/WrapperContainer"
+import Heading from "../../../../Layout/Heading"
+import Subheading from "../../../../Layout/Subheading"
+import Paragraph from "../../../../Layout/Paragraph"
 
 const steps = [
     { id: "01", title: "Threat Modelling" },
@@ -20,11 +24,11 @@ const tools = [
 ];
 export default function SecurityApproach() {
     return (
-        <div className="w-11/12 mx-auto px-4 py-12 bg-white text-center">
+        <WrapperContainer ClassName="px-4 py-12 bg-white text-center">
             
-            <h2 className="text-5xl font-semibold text-[#1A2E6F] mb-10">
+            <Heading>
                 Our Approach To Ensure Complete Security
-            </h2>
+            </Heading>
             
             <div className="flex flex-wrap max-w-5xl mx-auto gap-2 mt-10">
                 {
@@ -40,17 +44,17 @@ export default function SecurityApproach() {
                 }
             </div>
             
-            <h3 className="text-3xl font-semibold text-[#1A2E6F] mt-10">Tools We Use</h3>
-            <p className="text-gray-600 mb-4">We leverage the latest and best tools for web test automation.</p>
+            <Subheading className="mt-10">Tools We Use</Subheading>
+            <Paragraph className="mb-4">We leverage the latest and best tools for web test automation.</Paragraph>
             <div className="flex flex-wrap justify-center gap-4">
                 {
                     tools.map((tool) => (
-                        <div key={tool} className="px-4 py-2 border rounded-lg shadow-sm text-purple-700 border-purple-500">
+                        <div key={tool} className="px-4 py-2 border rounded-lg shadow-sm text-blue-600 border-blue-600">
                             {tool}
                         </div>
                     ))
                 }
             </div>
-        </div>
+        </WrapperContainer>
     );
 }

@@ -50,7 +50,7 @@ function AzureServices() {
           <Heading>
             <h1>Advantages of Azure with Digiflex</h1>
           </Heading>
-          <div className="space-y-20">
+          <div className="">
             {advantages.map((advantage, index) => (
               <div
                 key={index}

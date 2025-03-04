@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
+import Paragraph from '../../../../Layout/Paragraph';
 
 const FeatureCard = ({ icon, title, description }) => (
   <div className="flex items-start space-x-4 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300 bg-white">
@@ -100,9 +101,14 @@ const Features = () => {
         <div >
         <Heading>
         <div>
-        Unique Features Of Cryptocurrency Wallet Development Solutions
+         Features Of Cryptocurrency Wallet Development
         </div>
         </Heading>
+        <Paragraph>
+          <span className='block text-center'>
+          Secure, decentralized, multi-chain support, fast transactions, and user control.
+          </span>
+        </Paragraph>
     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {features.map((feature, index) => (

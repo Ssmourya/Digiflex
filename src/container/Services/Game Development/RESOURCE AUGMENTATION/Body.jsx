@@ -1,16 +1,15 @@
 import React from "react";
 import ResourceAugmentationServices from "./ResourceAugmentationServices";
-import BenefitsSection from "./BenefitsSection";
 import ResourceAugmentation from "./ResourceAugmentation";
 import { ResourceAugmentationFAQData } from "../FAQData";
 import Faq from '../../../../components/Faq'
-
+import ResourceAugmentationBenefits from "./ResourceAugmentationBenefits";
 
 const Body = () => {
   return (
     <div>
       <ResourceAugmentationServices />
-      <BenefitsSection />
+      <ResourceAugmentationBenefits />
       <ResourceAugmentation />
       <Faq faqs={ResourceAugmentationFAQData} />
     

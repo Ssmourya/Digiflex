@@ -23,12 +23,10 @@ function Intercloudpopular() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold">
           Popular Tools for Intercloud Migration
-        </h1>
       </Heading>
 
-      <div className="flex flex-col items-center space-y-10 px-4 py-10 w-full">
+      <div className="pt-5 flex flex-col items-center space-y-10 w-full">
         {/* First Row - 4 images */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full max-w-5xl">
           {images.slice(0, 4).map((img, index) => (

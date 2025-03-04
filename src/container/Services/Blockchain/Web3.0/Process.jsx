@@ -50,7 +50,7 @@ const Process = () => {
         initial="hidden"
         animate="visible"
       >
-        {/* Header Section */}
+        {/* Header  Section */}
         <div className="text-center mb-16">
           <Heading>
             <motion.div

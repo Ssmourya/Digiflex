@@ -51,6 +51,11 @@ const Web3Features = () => {
          Why Should You Go For Web3 Development?
          </div>
         </Heading>
+        <Paragraph>
+          <span className='block text-center'>
+          Web3 ensures decentralization, security, transparency, user control, and blockchain innovation.
+          </span>
+        </Paragraph>
 
         <div className="mt-16 relative z-10 space-y-8">
           {features.map((feature, index) => (

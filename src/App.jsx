@@ -108,7 +108,12 @@ import Ai_software from "./pages/Ai_software";
 import Llm_development from "./pages/Llm_development"
 
 
-
+import Shopify from "./pages/Shopifydevlopment";
+import Woo from './pages/WooDevelopment';
+import Opencart from "./pages/OpencartDevelopment";
+import Magento from './pages/MagentoDevelopment'
+import Pestrashop from "./pages/PestrashopDevelopment";
+import Odoo from './pages/OdooDevelopment';
 
 
 function App() {
@@ -136,7 +141,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<ContactPage />} />
 
@@ -382,17 +387,23 @@ function App() {
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
 
-      
+       {/*E-Commerce*/}
+
+      <Route path="/shopify-development-services" element={<Shopify/>} />
+      <Route path="/woocommerce-development-services" element={<Woo/>}/>
+      <Route path="/opencart-development-services" element={<Opencart/>}/>
+      <Route path="/magento-development-services" element={<Magento/>}/>
+      <Route path="/prestashop-development-services" element={<Pestrashop/>}/>
+      <Route path="/odoo-development-services" element={<Odoo/>}/>
 
       </Routes>
 
    <ReviewsSection/>
        <Contact/>
-      <Navigation />
-      
-     
+      <Navigation/>
       <Footer />
     </div>
+    
   );
 }
 

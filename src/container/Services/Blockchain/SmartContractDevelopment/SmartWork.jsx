@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const steps = [
   {
@@ -85,16 +86,20 @@ const SmartContractWorkflow = () => {
           <div>
             How Does a Smart Contract Work?
           </div>
-
             </Heading>
 
         </div>
+        <Paragraph>
+          <span className="block text-center">
+          Smart contracts execute automatically using blockchain, ensuring transparency, security, and trust.
+          </span>
+        </Paragraph>
         
 
         <div className="relative">
           <div className="hidden md:block absolute left-1/2 w-1 h-full bg-gray-300 transform -translate-x-1/2"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  mb-12">
             {steps.map((step, index) => (
               <StepCard key={`top-${index}`} step={step} index={index} />
             ))}

@@ -14,7 +14,7 @@ function CloudNativeUseCases() {
   return (
     <WrapperContainer>
       <Heading>Digiflex Cloud-Native Use Cases</Heading>
-      <div className="relative flex flex-col items-center text-center justify-center gap-6 rounded-xl">
+      <div className="mt-10 relative flex flex-col items-center text-center justify-center gap-6 rounded-xl">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 h-[400px] w-1 bg-gray-300"></div>
         

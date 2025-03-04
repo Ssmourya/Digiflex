@@ -5,6 +5,9 @@ import Next_Gen_Technologies from "../../../../assets/Next_Gen_Technologies.jpeg
 import Digital_Engineering from "../../../../assets/Digital_Engineering.jpeg";
 import agile from "../../../../assets/agile.jpeg";
 import Innovation from "../../../../assets/Innovation.jpeg";
+import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
+import Subheading from "../../../../Layout/Subheading";
 
 const cardData = [
     {
@@ -78,9 +81,9 @@ const Card = ({ image, alt, heading, description, icon }) => {
             <div className="p-6">
                 <div className="flex items-center mb-4">
                     <div className="flex-shrink-0">{icon}</div>
-                    <h2 className="ml-3 text-xl font-semibold text-gray-800">{heading}</h2>
+                    <Subheading className="ml-3 text-xl font-semibold text-gray-800">{heading}</Subheading>
                 </div>
-                <p className="text-gray-600 text-sm">{description}</p>
+                <Paragraph className="text-sm">{description}</Paragraph>
             </div>
         </div>
     );
@@ -91,14 +94,14 @@ const DigitalTransformation = () => {
         <div className="bg-white w-11/12 mx-auto px-4 py-12 text-black">
             {/* Header Section */}
             <div className="mb-8 flex flex-col lg:flex-row lg:justify-between gap-8">
-                <h1 className="text-5xl font-semibold lg:w-2/5 text-[#1A2E6F]">
+                <Heading>
                     Fuelling your digital transformation and assurance goals
-                </h1>
-                <p className="mt-3 lg:w-2/5">
+                </Heading>
+                <Paragraph>
                     We lead with innovation to deliver resilient solutions with maximum impact.
                     We instill quality throughout the product development lifecycle with end-to-end
                     service capabilities, converging development and quality assurance domains.
-                </p>
+                </Paragraph>
             </div>
             {/* Cards Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

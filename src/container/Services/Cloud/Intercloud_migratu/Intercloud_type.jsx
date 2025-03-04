@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
-import Paragraph from '../../../../Layout/Paragraph';
+import Subheading from '../../../../Layout/Subheading';
 import IntercloudCloud from '../../../../assets/IntercloudCloud.avif';
 import Intercloudimg from '../../../../assets/Intercloudimg.avif';
 import IntercloudHybrid from '../../../../assets/IntercloudHybrid.avif';
@@ -33,14 +33,14 @@ function IntercloudType() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1>Intercloud Migration Services by Digiflex</h1>
+        Intercloud Migration Services by Digiflex
       </Heading>
-      <Paragraph>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto">
+      <Subheading>
+        <p className="text-center ">
           Digiflex provides cutting-edge intercloud migration solutions to help businesses optimize their cloud strategy efficiently and securely.
         </p>
-      </Paragraph>
-      <div className="flex flex-wrap justify-center gap-6 p-6">
+        </Subheading>
+      <div className="flex flex-wrap justify-center gap-6 pt-5">
         {data.map((item, index) => (
           <div
             key={index}

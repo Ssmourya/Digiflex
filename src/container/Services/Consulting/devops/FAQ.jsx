@@ -44,7 +44,7 @@ const FAQ = () => {
         className="text-center mb-12"
       >
         <Heading>DevOps Consulting Services FAQ</Heading>
-        <Paragraph>
+        <Paragraph className="text-center">
           Common questions about DevOps consulting services answered
         </Paragraph>
       </motion.div>

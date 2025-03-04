@@ -108,7 +108,12 @@ import Ai_software from "./pages/Ai_software";
 import Llm_development from "./pages/Llm_development"
 
 
-
+import Shopify from "./pages/Shopifydevlopment";
+import Woo from './pages/WooDevelopment';
+import Opencart from "./pages/OpencartDevelopment";
+import Magento from './pages/MagentoDevelopment'
+import Pestrashop from "./pages/PestrashopDevelopment";
+import Odoo from './pages/OdooDevelopment';
 
 
 function App() {
@@ -141,23 +146,23 @@ function App() {
         <Route path="/contact-us" element={<ContactPage />} />
 
         <Route
-          path="/services/testing/software-test-management"
+          path="/software-test-management-services"
           element={<SoftwareTestManagement />}
         />
         <Route
-          path="/services/testing/test-automation"
+          path="/test-automation-services"
           element={<TestAutomation />}
         />
         <Route
-          path="/services/testing/performance-testing"
+          path="/performance-testing-services"
           element={<PerformanceTesting />}
         />
         <Route
-          path="/services/testing/security-testing"
+          path="/security-testing-services"
           element={<SecurityTesting />}
         />
         <Route
-          path="/services/testing/selenium-automation-testing"
+          path="/selenium-automation-testing-services"
           element={<SeleniumAutomationTesting />}
         />
 
@@ -191,46 +196,46 @@ function App() {
         />
 
         <Route
-          path="/services/consulting/mobile-web-app-consulting-services"
+          path="/mobile-web-app-consulting-services"
           element={<MobileConsulting />}
         />
         <Route
-          path="/services/consulting//website-consulting-solutions"
+          path="/website-consulting-solutions"
           element={<WebConsulting />}
         />
         <Route
-          path="/services/consulting/salesforce-consulting-company"
+          path="/salesforce-consulting-company"
           element={<SalesforceConsulting />}
         />
         <Route
-          path="/services/consulting/devops-consulting-services"
+          path="/devops-consulting-services"
           element={<DevopsConsulting />}
         />
         <Route
-          path="/services/consulting/software-testing-consulting"
+          path="/software-testing-consulting"
           element={<TestingConsulting />}
         />
         <Route
-          path="/services/consulting/ai-consulting-experts"
+          path="/ai-consulting-experts"
           element={<AiConsulting />}
         />
 
         <Route
-          path="/services/ui-ux/brandStrategy"
+          path="/brand-strategy-consulting"
           element={<BrandStrategy />}
         />
         <Route
-          path="/services/ui-ux/designconsulting"
+          path="/design-consulting-services"
           element={<DesignConsulting />}
         />
         <Route
-          path="/services/ui-ux/productdesign"
+          path="/product-design-consulting"
           element={<ProductDesign />}
         />
-        <Route path="/services/ui-ux/uxresearch" element={<UxResearch />} />
-        <Route path="/services/ui-ux/uianimation" element={<UiAnimation />} />
+        <Route path="/ux-research-services" element={<UxResearch />} />
+        <Route path="/ui-design-and-animation-services" element={<UiAnimation />} />
         <Route
-          path="/services/ui-ux/design-testing"
+          path="/design-testing-services"
           element={<DesignTesting />}
         />
         {/* Blockchain development start*/}
@@ -382,7 +387,14 @@ function App() {
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
 
-      
+       {/*E-Commerce*/}
+
+      <Route path="/shopify-development-services" element={<Shopify/>} />
+      <Route path="/woocommerce-development-services" element={<Woo/>}/>
+      <Route path="/opencart-development-services" element={<Opencart/>}/>
+      <Route path="/magento-development-services" element={<Magento/>}/>
+      <Route path="/prestashop-development-services" element={<Pestrashop/>}/>
+      <Route path="/odoo-development-services" element={<Odoo/>}/>
 
       </Routes>
 

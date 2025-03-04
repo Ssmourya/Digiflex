@@ -5,7 +5,7 @@ import Paragraph from '../../../../Layout/Paragraph';
 import Subheading from '../../../../Layout/Subheading';
 
 const ServiceCard = ({ icon, title, description }) => (
-  <div className="bg-[#f3f4f6] p-6 rounded-xl text-center border border-gray-300 shadow-md transition-all duration-500 hover:shadow-2xl hover:border-white hover:bg-blue-500 group transform hover:-translate-y-1">
+  <div className="bg-white p-6 rounded-xl text-center border border-gray-300 shadow-md transition-all duration-500 hover:shadow-2xl hover:border-white hover:bg-blue-500 group transform hover:-translate-y-1">
     <div className="text-amber-500 mb-4 group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>

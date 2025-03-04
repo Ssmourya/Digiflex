@@ -25,7 +25,7 @@ function OptimizationBenefits() {
         <Heading>
           <h1>Key Benefits of Cloud Optimization</h1>
         </Heading>
-        <div className="flex flex-wrap justify-center items-center mt-[40px]">
+        <div className="flex flex-wrap justify-center items-center mt-10">
           <div className="flex flex-wrap gap-10 justify-center">
             {features.map((feature, index) => (
               <div
@@ -44,7 +44,7 @@ function OptimizationBenefits() {
       </WrapperContainer>
       <WrapperContainer>
         <Heading>Importance of Cloud Optimization</Heading>
-        <Paragraph>
+        <Paragraph className="mt-10">
           Cloud optimization is essential for businesses aiming to maximize the value of their cloud investments. By fine-tuning cost, performance, and scalability, organizations can prevent unnecessary expenses and ensure efficient resource utilization. Optimization strategies like rightsizing, autoscaling, and load balancing help align cloud resources with actual usage, preventing over-provisioning while maintaining peak performance.
         </Paragraph>
         <Paragraph>

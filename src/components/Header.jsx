@@ -25,7 +25,6 @@ const Navbar = () => {
     const handleMouseLeave = () => {
         timeoutRef.current = setTimeout(() => {
             setActiveDropdown(null);
-            setHoveredCategory(null);
         }, 3000);
     };
 
@@ -51,7 +50,7 @@ const Navbar = () => {
         return matchByTitle ? matchByTitle.features : [];
     };
 
-    useEffect(() => {
+    useEffect( () => {
         const handleClickOutside = (event) => {
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 setIsMobileMenuVisible(false);
@@ -72,6 +71,8 @@ const Navbar = () => {
         }
     }, [activeDropdown]);
 
+   
+
     // Function to get the appropriate items for the dropdown based on type
     const getDropdownItems = (dropdownType) => {
         switch (dropdownType) {
@@ -86,6 +87,19 @@ const Navbar = () => {
         }
     };
 
+    useEffect(() => {
+        if (isMobileMenuVisible) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+    
+        return () => {
+            document.body.classList.remove("overflow-hidden"); // Cleanup on unmount
+        };
+    }, [isMobileMenuVisible]);
+    
+
     return (
         <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navbarRef}>
             <TopBar/>
@@ -98,13 +112,13 @@ const Navbar = () => {
 
                     {!isSearchVisible ? (
                         <>
-                            <div className="hidden md:flex items-center space-x-6 mr-auto">
+                            <div className="hidden lg:flex items-center space-x-6 mr-auto"
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}>
                                 {mainNavItems.map((navItem) => (
                                     <div
                                         key={navItem.label}
                                         className="relative group"
-                                        onMouseEnter={handleMouseEnter}
-                                        onMouseLeave={handleMouseLeave}
                                     >
                                         <div
                                             className="flex items-center space-x-1 cursor-pointer"
@@ -133,13 +147,13 @@ const Navbar = () => {
 
                                         {navItem.hasDropdown &&
                                             activeDropdown === navItem.dropdownType && (
-                                                <MegaMenu services={getDropdownItems(navItem.dropdownType)} />
+                                                <MegaMenu setActiveDropdown={setActiveDropdown} services={getDropdownItems(navItem.dropdownType)} />
                                             )}
                                     </div>
                                 ))}
                             </div>
 
-                            <div className="hidden md:flex items-center space-x-6">
+                            <div className="hidden lg:flex items-center space-x-6">
                                 <button
                                     onClick={() => setIsSearchVisible(true)}
                                     className="text-white hover:text-gray-300"
@@ -147,15 +161,20 @@ const Navbar = () => {
                                 >
                                     <Search className="h-5 w-5" />
                                 </button>
+                                
+
                                 <Link
                                     to="/contact-us"
-                                    className="border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm"
+                                    className="border border-blue-600 text-blue-600 px-6 py-2 text-sm font-medium 
+                                    rounded-md hover:bg-white hover:text-blue-600 transition-all duration-300 
+                                    shadow-md hover:shadow-lg"
                                 >
                                     CONTACT US
                                 </Link>
+
                             </div>
 
-                            <div className="md:hidden flex items-center ml-auto space-x-4">
+                            <div className="lg:hidden flex items-center ml-auto space-x-4">
                                 <button
                                     onClick={() => setIsSearchVisible(true)}
                                     className="text-white hover:text-gray-300"
@@ -184,8 +203,9 @@ const Navbar = () => {
                                 aria-label="Search input"
                             />
                             <button
-                                className="bg-[#6B7CFF] px-4 md:px-6 py-2 text-sm mr-2 md:mr-4 hover:bg-[#5A6AE6] transition-colors"
-                                aria-label="Submit search"
+                                className="border border-blue-600 text-blue-600 px-4 md:px-6 py-2 text-sm mr-2 md:mr-4  font-medium 
+                                    rounded-md hover:bg-white hover:text-blue-600 transition-all duration-300 
+                                    shadow-md hover:shadow-lg"
                             >
                                 SEARCH
                             </button>
@@ -202,78 +222,95 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu */}
-            {isMobileMenuVisible && (
-                <div className="md:hidden bg-blue-900 py-4 px-4">
-                    {mainNavItems.map((navItem) => (
-                        <div key={navItem.label} className="mb-4">
-                            <div
-                                className="flex items-center justify-between"
-                                onClick={() => handleDropdownClick(navItem.dropdownType)}
-                            >
-                                <span className="text-white font-medium">{navItem.label}</span>
-                                {navItem.hasDropdown && (
-                                    <ChevronDown
-                                        className={`h-4 w-4 text-gray-400 transition-transform duration-300 ${
-                                            activeDropdown === navItem.dropdownType ? "rotate-180" : ""
-                                        }`}
-                                    />
-                                )}
-                            </div>
+            {
+                isMobileMenuVisible && (
+                    <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen">
+                        {
+                            mainNavItems.map( (navItem) => (
+           
 
-                            {navItem.hasDropdown && activeDropdown === navItem.dropdownType && (
-                                <div className="mt-2 ml-4">
-                                    {getDropdownItems(navItem.dropdownType).map((category) => (
-                                        <div key={category.id} className="mb-2">
-                                            <div
-                                                className="flex items-center justify-between"
-                                                onClick={() =>
-                                                    setHoveredCategory(
-                                                        hoveredCategory === category.id
-                                                            ? null
-                                                            : category.id
-                                                    )
-                                                }
-                                            >
-                                                <span className="text-white text-sm">
-                                                    {category.title}
-                                                </span>
-                                                <ChevronDown 
-                                                    className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${
-                                                        hoveredCategory === category.id ? "rotate-180" : ""
-                                                    }`}
-                                                />
-                                            </div>
+                                <div key={navItem.label} className="mb-4">
+                                    
+                                    <div
+                                        className="flex items-center justify-between"
+                                        onClick={() => handleDropdownClick(navItem.dropdownType)}
+                                    >
+                                        <span className="text-white font-medium">{navItem.label}</span>
+                                            {
+                                                navItem.hasDropdown && (
+                                                    <ChevronDown
+                                                        className={`h-4 w-4 text-gray-400 transition-transform duration-300 ${
+                                                            activeDropdown === navItem.dropdownType ? "rotate-180" : ""
+                                                        }`}
+                                                    />
+                                                )
+                                            }
+                                    </div>
 
-                                            {hoveredCategory === category.id && (
-                                                <div className="mt-1 ml-4">
-                                                    {getFeaturesForCategory(
-                                                        category.dropdownType || category.id
-                                                    ).map((feature) => (
-                                                        <Link
-                                                            key={feature.path}
-                                                            to={feature.path}
-                                                            className="block py-1 text-gray-300 text-xs hover:text-white"
-                                                        >
-                                                            {feature.title}
-                                                        </Link>
-                                                    ))}
+                                    {navItem.hasDropdown && activeDropdown === navItem.dropdownType && (
+                                        <div className="mt-2 ml-4">
+                                            {getDropdownItems(navItem.dropdownType).map((category) => (
+                                                <div key={category.id} className="mb-2">
+                                                    <div
+                                                        className="flex items-center justify-between"
+                                                        onClick={() =>
+                                                            setHoveredCategory(
+                                                                hoveredCategory === category.id
+                                                                    ? null
+                                                                    : category.id
+                                                            )
+                                                        }
+                                                    >
+                                                        <span className="text-white text-sm">
+                                                            {category.title}
+                                                        </span>
+                                                        <ChevronDown 
+                                                            className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${
+                                                                hoveredCategory === category.id ? "rotate-180" : ""
+                                                            }`}
+                                                        />
+                                                    </div>
+
+                                                    {hoveredCategory === category.id && (
+                                                        <div className="mt-1 ml-4">
+                                                            {
+                                                                getFeaturesForCategory(
+                                                                    category.dropdownType || category.id
+                                                                ).map((feature) => (
+
+                                                                
+                                                                    <Link
+                                                                        key={feature.path}
+                                                                        onClick={ () => setIsMobileMenuVisible(false)}
+                                                                        to={feature.path}
+                                                                        className="flex py-1 text-gray-300 text-xs hover:text-white"
+                                                                    >
+                                                                        <feature.icon className="w-4 h-4 text-blue-600 mr-2" />
+                                                                        {feature.title}
+                                                                    </Link>
+                                                                    
+                                                                ))
+                                                            }
+                                                        </div>
+                                                    )}
                                                 </div>
-                                            )}
+                                            ))}
                                         </div>
-                                    ))}
+                                    )}
                                 </div>
-                            )}
-                        </div>
-                    ))}
+                            ))
+                        }
 
-                    <Link
-                        to="/contact-us"
-                        className="block w-full text-center border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm mt-4"
-                    >
-                        CONTACT US
-                    </Link>
-                </div>
-            )}
+                        <Link
+                            to="/contact-us"
+                            className="block w-full text-center border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm mt-4"
+                        >
+                            CONTACT US
+                        </Link>
+                    </div>
+                )
+            }
+            
         </nav>
     );
 };

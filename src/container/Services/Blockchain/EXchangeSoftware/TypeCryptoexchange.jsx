@@ -10,6 +10,7 @@ import PeertoPeer from "../../../../assets/Peertopeer.webp";
 import CryptoDerivativesExchange from "../../../../assets/Crypto Derivatives Exchange.avif";
 import MarginExchanges from "../../../../assets/Margin Exchanges.avif";
 import Subheading from "../../../../Layout/Subheading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const services = [
   {
@@ -70,6 +71,12 @@ function AiAppServices() {
         <Heading>
           <div>Types of Crypto Exchange Development</div>
         </Heading>
+
+        <Paragraph>
+          <div className="text-center">
+          Crypto exchange development includes centralized, decentralized, hybrid, and P2P models.
+          </div>
+        </Paragraph>
 
         {/* Responsive Card */}
         <div className="bg-[#F2F2F2] rounded-2xl overflow-hidden max-w-7xl flex flex-col md:flex-row-reverse">

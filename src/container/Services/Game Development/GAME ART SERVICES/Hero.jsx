@@ -8,7 +8,7 @@ const Hero = () => {
   const [activeTab, setActiveTab] = useState("services");
 
   const navItems = ["Services", "Portfolio", "About", "Contact"];
-  const headingText = "Game Art Services App Development";
+  const headingText = "Game Art App Development";
 
   // Function to generate animation delay for typewriter effect
   const getTypewriterStyle = (index) => {

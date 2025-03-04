@@ -2,6 +2,7 @@ import React from "react";
 import { Handshake, Eye, Shield, Settings, DollarSign, Crosshair, BarChart, Activity } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const benefits = [
   { title: "Trust", icon: <Handshake className="w-8 h-8 text-white" /> },
@@ -29,6 +30,11 @@ const SmartContractBenefits = () => {
       </div>
     
       </Heading>
+      <Paragraph>
+        <span className="block text-center">
+        Smart contracts offer automation, security, transparency, efficiency, speed, and trust.
+        </span>
+      </Paragraph>
      
 
       <div className="relative flex flex-col md:flex-row items-center md:items-start justify-center w-full max-w-6xl">

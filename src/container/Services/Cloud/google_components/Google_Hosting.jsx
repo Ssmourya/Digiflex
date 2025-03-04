@@ -28,12 +28,12 @@ function Google_Hosting() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1 className="sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold">
+        <h1>
           Types of Google Cloud Hosting
         </h1>
       </Heading>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center p-4 sm:p-6 md:p-10 gap-6 lg:gap-10">
+      <div className="pt-5 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
         {/* Services List */}
         <div className="w-full lg:w-1/2">
           {services.map((service, index) => (

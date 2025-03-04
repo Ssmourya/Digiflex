@@ -1,50 +1,132 @@
 import React from 'react';
-import Heading from "../../../../Layout/Heading";
+import { ArrowRight, Lightbulb,  Code, Map, Link, Gauge } from 'lucide-react';
 import WrapperContainer from "../../../../Layout/WrapperContainer";
-import Paragraph from '../../../../Layout/Paragraph';
-import Subheading from '../../../../Layout/Subheading';
+import Heading from "../../../../Layout/Heading";
 
-const ServiceCard = ({ icon, title, description }) => (
-  <div className="bg-[#f3f4f6] p-6 rounded-xl text-center border border-gray-300 shadow-md transition-all duration-500 hover:shadow-2xl hover:border-white hover:bg-blue-500 group transform hover:-translate-y-1">
-    <div className="text-amber-500 mb-4 group-hover:scale-110 transition-transform duration-300">
-      {icon}
-    </div>
-    <h3 className="text-lg sm:text-xl font-semibold text-[#1E3A8A] group-hover:text-white transition-colors duration-300">
-      {title}
-    </h3>
-    <p className="text-gray-600 mt-2 text-sm sm:text-base group-hover:text-white transition-colors duration-300">
-      {description}
-    </p>
-  </div>
-);
 
 const GameServices = () => {
   const services = [
-    { title: "UNREAL GAME DEVELOPMENT", description: "We offer complete Unreal game development services, turning your idea into a polished game.", icon: <svg className="w-10 h-10 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/></svg> },
-    { title: "AR/VR/MR-BASED DEVELOPMENT", description: "We deliver high-performance products with AR/VR/MR integration, ensuring an immersive user experience.", icon: <svg className="w-10 h-10 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z M4 22v-7"/></svg> },
-    { title: "GAME PORTING TO UNREAL ENGINE", description: "We help port your game to Unreal Engine, ensuring smooth gameplay across platforms.", icon: <svg className="w-10 h-10 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8 M12 17v4"/></svg> },
-    { title: "ART AND ANIMATION", description: "Our artists create stunning visuals and animations to bring your game to life.", icon: <svg className="w-10 h-10 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z M2 17l10 5 10-5 M2 12l10 5 10-5"/></svg> },
-    { title: "PORTING UE4 TO UE5", description: "We seamlessly port projects from Unreal Engine 4 to Unreal Engine 5 for enhanced performance.", icon: <svg className="w-10 h-10 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> },
-    { title: "GAME TESTING", description: "We ensure smooth gameplay by rigorously testing for bugs and performance issues.", icon: <svg className="w-10 h-10 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg> },
+    {
+      id: 1,
+      title: "Game Concept and Design",
+      description: "Bring your game ideas to life with our expert design team. We specialize in creating immersive and engaging game concepts tailored to your vision.",
+      icon: <Lightbulb className="w-8 h-8" />,
+      color: "bg-yellow-100",
+      iconColor: "text-yellow-600",
+      details: [
+        "Narrative and story development",
+        "Gameplay mechanics and systems design",
+        "Prototyping and playtesting",
+        "User experience and interface planning"
+      ]
+    },
+    {
+      id: 2,
+      title: "3D Asset Creation",
+      description: "Craft stunning 3D models and environments. Our artists create high-quality assets optimized for Unreal Engine.",
+      icon: <Code className="w-8 h-8" />,
+      color: "bg-blue-100",
+      iconColor: "text-blue-600",
+      details: [
+        "Character and creature modeling",
+        "Environment and prop creation",
+        "Texturing and material design",
+        "Asset optimization for performance"
+      ]
+    },
+    {
+      id: 3,
+      title: "Gameplay Programming",
+      description: "Implement robust and engaging gameplay mechanics. Our programmers bring your game to life with clean, efficient code.",
+      icon: <Code className="w-8 h-8" />,
+      color: "bg-green-100",
+      iconColor: "text-green-600",
+      details: [
+        "Player controls and interactions",
+        "Game logic and rules",
+        "UI/UX implementation",
+        "Integration with Unreal Engine"
+      ]
+    },
+    {
+      id: 4,
+      title: "Level Design and World Building",
+      description: "Create immersive game worlds and levels. We design environments that enhance gameplay and storytelling.",
+      icon: <Map className="w-8 h-8" />,
+      color: "bg-purple-100",
+      iconColor: "text-purple-600",
+      details: [
+        "Environment layout and architecture",
+        "Lighting and atmosphere",
+        "Interactive elements and puzzles",
+        "Narrative integration"
+      ]
+    },
+    {
+      id: 5,
+      title: "Multiplayer Implementation",
+      description: "Enable seamless multiplayer experiences. We handle networking and synchronization for your game.",
+      icon: <Link className="w-8 h-8" />,
+      color: "bg-red-100",
+      iconColor: "text-red-600",
+      details: [
+        "Networking architecture",
+        "Player synchronization",
+        "Matchmaking systems",
+        "Latency optimization"
+      ]
+    },
+    {
+      id: 6,
+      title: "Performance Optimization",
+      description: "Ensure your game runs smoothly across platforms. We optimize for frame rate, memory, and load times.",
+      icon: <Gauge className="w-8 h-8" />,
+      color: "bg-indigo-100",
+      iconColor: "text-indigo-600",
+      details: [
+        "Profiling and bottleneck identification",
+        "Graphics optimization",
+        "Memory management",
+        "Platform-specific tuning"
+      ]
+    }
   ];
 
   return (
-    <WrapperContainer>
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center p-6">
+    <>
+      <WrapperContainer>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Heading>
-            <h1>OUR UNREAL GAME DEVELOPMENT SERVICES</h1>
+            <div>Our Services</div>
           </Heading>
-        </div>
-        <div className="p-4 sm:p-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl mx-auto">
-            {services.map((service, index) => (
-              <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
+          <div className="space-y-16">
+            {services.map((service) => (
+              <div key={service.id} className="relative">
+                <div className="flex flex-col md:flex-row items-start gap-8">
+                  <div className={`flex-shrink-0 p-6 rounded-full ${service.color} ${service.iconColor} mb-4 md:mb-0`}>
+                    {service.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="text-2xl font-bold mb-3">{service.title}</h2>
+                    <p className="text-gray-600 mb-6 text-lg">{service.description}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                      {service.details.map((detail, index) => (
+                        <div key={index} className="flex items-start">
+                          <div className={`mt-1 mr-3 ${service.iconColor}`}>
+                            <ArrowRight className="w-4 h-4" />
+                          </div>
+                          <span className="text-gray-700">{detail}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-      </div>
-    </WrapperContainer>
+      </WrapperContainer>
+    </>
   );
 };
 

@@ -2,7 +2,8 @@ import { ArrowRight } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-const NavItem = ({ service }) => {
+const NavItem = ({ setActiveDropdown, service }) => {
+    
     const [isOpen, setIsOpen] = useState(false);
     const buttonRef = useRef(null);
     const dropdownRef = useRef(null);
@@ -24,7 +25,7 @@ const NavItem = ({ service }) => {
                 Math.floor(viewportWidth * (viewportWidth < 768 ? 0.8 : 0.9)),
                 1200 // Max width
             );
-            
+
             contentEl.style.width = `${contentWidth}px`;
             contentEl.style.maxWidth = `${contentWidth}px`;
 
@@ -54,7 +55,7 @@ const NavItem = ({ service }) => {
             // Position notch at the center of the button
             const notchEl = dropdownEl.querySelector('.dropdown-notch');
             if (notchEl) {
-                const notchPosition = buttonCenter - leftPosition - 8; // 8 is half the notch width
+                const notchPosition = buttonCenter - leftPosition - (8); // 8 is half the notch width
                 notchEl.style.left = `${notchPosition}px`;
             }
         };
@@ -67,24 +68,20 @@ const NavItem = ({ service }) => {
         };
     }, [isOpen]);
 
-    // Handle hover with delay for better UX
-    const handleMouseEnter = () => {
-        // setIsOpen(close);
-        clearTimeout(timeoutRef.current);
-        setIsOpen(true);
-    };
 
-    const handleMouseLeave = () => {
-        timeoutRef.current = setTimeout(() => {
-            setIsOpen(false);
-        }, 50); // Small delay before closing
-    };
 
     return (
         <div
             className="relative px-1 py-1"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={() => {
+                clearTimeout(timeoutRef.current);
+                setIsOpen(true);
+            }}
+            onMouseLeave={() => {
+                timeoutRef.current = setTimeout(() => {
+                    setIsOpen(false);
+                }, 50); // Small delay before closing
+            }}
         >
             <button
                 ref={buttonRef}
@@ -100,14 +97,14 @@ const NavItem = ({ service }) => {
                     style={{ animationDuration: '500ms' }}
                 >
                     {/* {/ Notch /} */}
-                    <div className="dropdown-notch absolute -top-2 w-4 h-4 rotate-45 bg-blue-950 z-10" />
+                    <div className="dropdown-notch absolute top-[-0.41rem] w-4 h-4 rotate-45 bg-blue-950 z-10" />
 
                     {/* {/ Dropdown Content /} */}
                     <div
                         ref={contentRef}
                         className="relative grid grid-cols-1 md:grid-cols-2 p-6 rounded-xl bg-blue-950 shadow-xl 
                         border border-gray-100
-                        "   
+                        "
                     >
                         {/* {/ Left side - Features /} */}
                         <div className="w-full pr-0 md:pr-6">
@@ -117,7 +114,7 @@ const NavItem = ({ service }) => {
                                     service.features?.map((feature, index) => (
                                         <Link to={feature.path}
                                             key={index}
-                                            onClick={handleMouseLeave}
+                                            onClick={() => setActiveDropdown(false)}
                                             className="flex items-center group p-3 rounded-lg w-full bg-white border border-gray-100 hover:border-blue-200 hover:bg-blue-50 shadow-sm hover:shadow transition-all duration-200"
                                         >
                                             <div className="flex-shrink-0 w-10 h-10 rounded-md bg-blue-50 flex items-center justify-center mr-3 group-hover:bg-blue-100">
@@ -130,6 +127,8 @@ const NavItem = ({ service }) => {
                                 }
                             </div>
                         </div>
+
+                        
 
                         {/* {/ Right side - Image /} */}
                         <div className="hidden md:flex items-center justify-center h-full mt-6 md:mt-0">
@@ -164,13 +163,13 @@ const NavItem = ({ service }) => {
     );
 };
 
-const MegaMenu = ({ services }) => {
+const MegaMenu = ({ setActiveDropdown, services }) => {
     return (
-        <nav className="fixed left-0 top-[85px] w-full bg-white shadow-sm z-40 px-4 py-1">
+        <nav className="fixed left-0 top-[107px] w-full bg-white shadow-sm z-40 px-4 py-1">
             <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-start">
-            {/* {/ <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> /} */}
+                {/* {/ <div className="max-w-7xl mx-auto grid grid-cols-7 grid-"> /} */}
                 {services.map((service, index) => (
-                    <NavItem key={index} service={service} />
+                    <NavItem key={index} service={service} setActiveDropdown={setActiveDropdown} />
                 ))}
             </div>
         </nav>

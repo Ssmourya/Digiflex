@@ -1,17 +1,21 @@
 import React from 'react';
 import { Settings, Shield, Zap, GitBranch, BarChart, Lock, RefreshCw, Boxes } from 'lucide-react';
+import Heading from "../../../../Layout/Heading"
+import Paragraph from "../../../../Layout/Paragraph"
+import Subheading from "../../../../Layout/Subheading"
+import WrapperContainer from '../../../../Layout/WrapperContainer';
 
 const ServiceCard = ({ title, description, icon: Icon }) => {
     return (
         <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300 space-y-4">
             <div className="flex items-center gap-4 mb-2">
                 <div className="p-3 rounded-lg bg-[#1A2E6F]/10">
-                    <Icon className="w-6 h-6 text-[#1A2E6F]" />
+                    <Icon className="w-6 h-6 text-blue-700" />
                 </div>
             </div>
             <div className="h-[1px] bg-gray-200 w-full my-4"></div>
-            <h3 className="text-2xl text-black font-medium">{title}</h3>
-            <p className="text-black leading-relaxed">{description}</p>
+            <Subheading className="text-2xl text-black font-medium">{title}</Subheading>
+            <Paragraph className="leading-relaxed">{description}</Paragraph>
         </div>
     );
 };
@@ -66,20 +70,20 @@ const AutomationServices = () => {
     ];
 
     return (
-        <div className="w-11/12 mx-auto bg-white px-4 py-12">
+        <WrapperContainer className="bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Main Heading and Description */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
                     <div className="lg:col-span-1 place-items-center text-center flex items-center">
-                        <h2 className="text-5xl font-medium mb-8 text-[#1A2E6F]">
+                        <Heading>
                             Our Automation Services
-                        </h2>
+                        </Heading>
                     </div>
 
                     <div className="lg:col-span-1">
-                        <p className="text-black text-xl leading-relaxed">
+                        <Paragraph>
                             At Digiflex, we streamline your software delivery with customized, high-quality test automation solutions. Our expert team leverages the latest technologies and methodologies to deliver robust automation solutions that reduce time to market, improve product quality, and minimize manual testing efforts.
-                        </p>
+                        </Paragraph>
                     </div>
                 </div>
 
@@ -95,7 +99,7 @@ const AutomationServices = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </WrapperContainer>
     );
 };
 

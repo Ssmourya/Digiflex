@@ -5,7 +5,7 @@ import videoGame from "../../../../assets/unrealGame.mp4";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-   const headingText = "Unity3D Game Development Services";
+   const headingText = "Unity3D Game Development";
 
   // Function to generate animation delay for typewriter effect
   const getTypewriterStyle = (index) => {

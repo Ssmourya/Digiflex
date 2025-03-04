@@ -41,13 +41,13 @@ const Faq = () => {
         
         
        <h3 className="text-4xl font-bold text-center mb-6 text-blue-700">
-          Exchange Softwate :- Frequently Asked Questions
+           Frequently Asked Questions
        </h3>
       
           <Paragraph>
-          <span>
-              Get answers to the most common questions about NFT Marketplace development.
-          </span>
+          <div className="text-center">
+          Security, fees, trading pairs, withdrawal limits, KYC, liquidity, and support.
+          </div>
           </Paragraph>
         </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Paragraph from "../../../../Layout/Paragraph";
 
 
 const TopFeature = () => {
@@ -85,6 +86,11 @@ const TopFeature = () => {
           Top Features of Exchange Software
         </div>
         </Heading>
+        <Paragraph>
+          <div className="text-center">
+          Our exchange software includes security, scalability, multi-currency support, and liquidity solutions.
+          </div>
+        </Paragraph>
       </div>
       <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl mx-auto">

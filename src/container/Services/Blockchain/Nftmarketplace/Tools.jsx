@@ -196,7 +196,7 @@ const Tools = () => {
               </div>
             </Heading>
             <Paragraph>
-              <span>
+              <span className='block text-center'>
                 A comprehensive suite of technologies powering next-generation NFT marketplaces
               </span>             
             </Paragraph>

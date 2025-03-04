@@ -1,14 +1,10 @@
-// import React from 'react'
-
-// const WhyChoose = () => {
-//   return (
-//     <div>WhyChoose</div>
-//   )
-// }
-
-// export default WhyChoose
 import React, { useState } from 'react';
 import { BarChart2, Users, TrendingUp, CheckCircle, ArrowRight, X, ChevronRight } from 'lucide-react';
+
+import Heading from "../../../../Layout/Heading";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Paragraph from '../../../../Layout/Paragraph';
+import Subheading from "../../../../Layout/Subheading"
 
 export default function ConsultingAssessment() {
   const [activeService, setActiveService] = useState(null);
@@ -129,26 +125,23 @@ export default function ConsultingAssessment() {
   };
 
   return (
-    <section className="bg-white py-12 px-6 md:px-16 lg:px-24 relative">
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full opacity-50 -mr-32 -mt-32"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50 rounded-full opacity-50 -ml-48 -mb-48"></div>
+    
+      <>
+      <WrapperContainer>
       
       <div className="max-w-6xl mx-auto text-center relative z-10">
-        <div className="inline-block bg-blue-50 px-4 py-1 rounded-full mb-4">
-          <span className="text-blue-700 font-medium text-sm">Industry-Leading Consulting</span>
-        </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Why Choose <span className="text-blue-600 relative">
-            Quest Digiflex<span className="text-blue-800">.ai</span>
-            <svg className="absolute w-full h-2 -bottom-1 left-0" viewBox="0 0 200 8" preserveAspectRatio="none">
-              <path d="M0,5 C50,0 150,10 200,5" stroke="currentColor" strokeWidth="3" fill="none" />
-            </svg>
-          </span>
-        </h2>
-        <p className="text-gray-600 text-lg md:text-xl mb-12">
-          Empowering businesses with data-driven insights and expert strategies.
-        </p>
+   
+   <Heading>
+    <div>
+      Why Choose Quest Digiflex.ai
+    </div>
+   </Heading>
+
+     <Paragraph>
+      <span className='inline-flex items-center justify-center'>
+      Empowering businesses with data-driven insights and expert strategies.
+      </span>
+     </Paragraph>
       </div>
       
       {/* Service Cards */}
@@ -179,8 +172,16 @@ export default function ConsultingAssessment() {
       {/* Metrics Section */}
       <div className="bg-blue-50 rounded-xl p-8 max-w-6xl mx-auto mb-16">
         <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
-          <p className="text-gray-600">Delivering measurable results for our clients</p>
+        <Heading>
+          <div>
+            Our Impact
+          </div>
+        </Heading>
+         <Paragraph>
+          <span>
+          Delivering measurable results for our clients
+          </span>
+         </Paragraph>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -203,7 +204,7 @@ export default function ConsultingAssessment() {
       </div>
       
       {/* Testimonial */}
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg overflow-hidden mb-16">
+      <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg overflow-hidden ">
         <div className="p-8 md:p-12 text-center">
           <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
             <span className="text-blue-600 text-3xl font-serif">"</span>
@@ -216,15 +217,6 @@ export default function ConsultingAssessment() {
             <p className="text-blue-200">CTO, TechInnovate</p>
           </div>
         </div>
-      </div>
-      
-      {/* CTA */}
-      <div className="max-w-4xl mx-auto text-center bg-white shadow-lg rounded-xl border border-blue-100 p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">Ready to transform your business?</h3>
-        <p className="text-gray-600 mb-6">Schedule a free consultation with our experts today.</p>
-        <button className="inline-flex items-center bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-          Get Started <ArrowRight className="ml-2 h-5 w-5" />
-        </button>
       </div>
       
       {/* Assessment Modal */}
@@ -284,6 +276,9 @@ export default function ConsultingAssessment() {
           </div>
         </div>
       )}
-    </section>
+  </WrapperContainer>
+
+  </>
+     
   );
 }

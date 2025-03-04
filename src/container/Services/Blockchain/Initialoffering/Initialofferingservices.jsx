@@ -35,9 +35,14 @@ const StepSlider = () => {
         Our Services
         </div>
       </Heading>
+      <Paragraph>
+        <div className="text-center">
+        We provide secure, scalable, and customized Initial Coin Offering solutions.
+        </div>
+      </Paragraph>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl w-full">
         {steps.map((step, index) => (
           <motion.div
             key={index}

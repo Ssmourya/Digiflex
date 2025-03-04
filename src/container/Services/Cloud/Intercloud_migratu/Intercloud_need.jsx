@@ -37,33 +37,28 @@ const data = [
 ];
 
 function Intercloud_need() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <WrapperContainer>
       <Heading>
         <h1>Why Choose Digiflex for Intercloud Migration?</h1>
       </Heading>
-      <div className="">
-        <ul className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
-          {data.map((item, index) => (
-            <li
-              key={index}
-              className="p-4 border-b last:border-b-0 cursor-pointer transition-all duration-300 
-              hover:bg-blue-900 hover:text-white"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-            <Fontheading>
-              <div>{item.title}</div>
-              </Fontheading>
-              {hoveredIndex === index && (
-                <p className="mt-2 transition-opacity duration-500">{item.details}</p>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+            {data.map((industry, index) => (
+              <div
+                key={index}
+                className="p-6 md:p-3 bg-white transform transition-all duration-500 hover:scale-105 group flex flex-col items-center text-center"
+              >
+                
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                  {industry.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                  {industry.details}
+                </p>
+              </div>
+            ))}
+          </div>
     </WrapperContainer>
   );
 }

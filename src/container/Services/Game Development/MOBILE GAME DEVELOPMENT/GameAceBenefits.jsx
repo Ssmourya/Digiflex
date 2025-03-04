@@ -30,7 +30,7 @@ const BenefitCard = ({ icon: Icon, title, description, index }) => {
     <motion.div
       variants={cardVariants}
       whileHover={hoverEffect}
-      className="bg-[#f3f4f6] p-6 rounded-lg shadow-lg transition-shadow duration-300 relative overflow-hidden"
+      className="bg-white p-6 rounded-lg shadow-lg transition-shadow duration-300 relative overflow-hidden"
     >
       <div className="flex items-center gap-4 mb-4">
         <motion.div

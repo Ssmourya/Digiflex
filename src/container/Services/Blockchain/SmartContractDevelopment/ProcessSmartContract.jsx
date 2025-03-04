@@ -48,7 +48,9 @@ const ProcessSmartContract = () => {
             From Concept to a Reliable Smart Contract
           </Subheading>
           <Paragraph>
+            <span className='block text-center'>
             Smart contracts are categorized into two main types: Simple Contracts for managing basic agreements and Complex Contracts designed for DAOs and Application Logic Contracts (ALCs). These contracts enable sophisticated operations and integrate with IoT technologies.
+            </span>
           </Paragraph>
         </div>
 

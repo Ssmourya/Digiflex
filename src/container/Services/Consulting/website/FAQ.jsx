@@ -44,7 +44,7 @@ const FAQ = () => {
         className="text-center mb-12"
       >
         <Heading>Website Consulting Services FAQ</Heading>
-        <Paragraph>
+        <Paragraph className="text-center">
           Common questions about website consulting services answered
         </Paragraph>
       </motion.div>

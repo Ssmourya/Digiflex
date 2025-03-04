@@ -1,7 +1,7 @@
 import React from "react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
-import Paragraph from "../../../../Layout/Paragraph";
+import Subheading from "../../../../Layout/Subheading";
 
 const features = [
   {
@@ -36,16 +36,13 @@ function FeatureCircles() {
           Why Migrate from Legacy Systems to the Cloud?
         </h1>
         </Heading>
-        <Paragraph>
+        <Subheading>
         <p className="text-center">
-          Many businesses rely on legacy systems—old applications and hardware
-          that are expensive to maintain, difficult to scale, and vulnerable to
-          security risks. Migrating to the cloud addresses these challenges by
-          providing:
+        Legacy systems are costly, hard to scale, and pose security risks. Cloud migration enhances scalability, security, and efficiency, ensuring modern, cost-effective, and future-ready business operations.
         </p>
-        </Paragraph>
+        </Subheading>
       </div>
-      <div className="flex flex-wrap justify-center items-center mt-[40px]">
+      <div className="flex flex-wrap justify-center items-center mt-10">
         <div className="flex flex-wrap gap-6 justify-center">
           {features.map((feature, index) => (
             <div key={index} className="relative group">

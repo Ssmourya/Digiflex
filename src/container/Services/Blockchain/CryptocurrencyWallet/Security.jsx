@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../../../../Layout/Heading";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Paragraph from "../../../../Layout/Paragraph";
 
 const securityFeatures = [
   { title: "Biometric Authentication", icon: "👤" },
@@ -21,17 +22,22 @@ const SecurityFeatures = () => {
       <div className="container mx-auto lg:w-[78vw] md:w-[80vw] px-4 sm:px-6">
         {/* Section Heading */}
         <Heading>
-          <h1>
-            Security Features Of Our Cryptocurrency Wallet Development
-          </h1>
+          <div>
+            Security Features 
+          </div>
         </Heading>
+        <Paragraph>
+          <span className="block text-center">
+          Encryption, two-factor authentication, biometrics, multi-signature, and private key security.
+          </span>
+        </Paragraph>
 
         {/* Security Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
           {securityFeatures.map((feature, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center justify-between p-6 border border-gray-300 rounded-xl shadow-md bg-white h-[320px] w-full max-w-[280px] sm:h-[350px] sm:max-w-[300px] md:h-auto md:max-w-none"
+              className="flex flex-col items-center justify-between p-6 border border-gray-300 rounded-xl shadow-md bg-white h-[145px] w-full max-w-[280px] sm:h-[350px] sm:max-w-[300px] md:h-auto md:max-w-none"
               whileHover={{ scale: 1.02, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}
               transition={{ type: "spring", stiffness: 120, damping: 15 }}
             >

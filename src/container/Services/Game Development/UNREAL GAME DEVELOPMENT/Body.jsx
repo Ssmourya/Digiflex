@@ -2,16 +2,19 @@ import React from 'react'
 import GameServices from './GameServices';
 import UnrealBenefits from './UnrealBenefits';
 import UnrealTeam from './UnrealTeam'
-import UnrealGameFAQ from './UnrealGameFAQ'
-
+import { UnrealGameFAQData } from '../FAQData';
+import Faq from '../../../../components/Faq'
+import WhyChoose from './WhyChoose';
 
 const Body = () => {
     return (
         <div>
             <GameServices />
             <UnrealBenefits />
+            <WhyChoose />
             <UnrealTeam />
-            <UnrealGameFAQ />
+            <Faq faqs={UnrealGameFAQData} />
+    
         </div>
     )
 }

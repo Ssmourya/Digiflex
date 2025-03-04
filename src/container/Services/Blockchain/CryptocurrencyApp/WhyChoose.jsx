@@ -61,16 +61,16 @@ const WhyChoose = () => {
   return (
     <WrapperContainer>
       <section>
-        <div className="max-w-5xl mx-auto text-center px-4 mb-12">
+        <div className="max-w-5xl mx-auto text-center px-4 mb-10 ">
           <Heading>
           <div>
-          Why Choose Digiflex for Cryptocurrency App Development?
+          Why Choose Digiflex for Cryptocurrency App?
           </div>
           </Heading>
           <Paragraph>
-            <span>
+            <div className='text-center'>
             Leverage our expertise and cutting-edge solutions to power your cryptocurrency application with robust security, scalability, and global reach.
-            </span>
+            </div>
           </Paragraph>
           
           

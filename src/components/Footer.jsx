@@ -5,7 +5,6 @@ import WrapperContainer from '../Layout/WrapperContainer';
 
 const locations = [
   {
-    id: 'IN',
     city: 'Indore',
     address: '1206 , Skye Earth Corporate Park',
     location: 'Indore , Madhya Pradesh',
@@ -26,22 +25,22 @@ const contacts = {
 
 const socialLinks = [
   { 
-    url: 'https://instagram.com/digiflex', 
+    url: 'https://www.instagram.com/questdigiflex', 
     network: 'instagram',
     ariaLabel: 'Instagram' 
   },
   { 
-    url: 'https://facebook.com/digiflex', 
+    url: 'https://www.facebook.com/questdigiflex', 
     network: 'facebook',
     ariaLabel: 'Facebook' 
   },
   { 
-    url: 'https://twitter.com/digiflex', 
+    url: 'https://x.com/QuestDigiflex', 
     network: 'x',
     ariaLabel: 'x' 
   },
   { 
-    url: 'https://linkedin.com/company/digiflex', 
+    url: 'https://linkedin.com/company/quest-digiflex', 
     network: 'linkedin',
     ariaLabel: 'LinkedIn' 
   },
@@ -51,12 +50,12 @@ const socialLinks = [
     ariaLabel: 'Discord'
   },
   {
-    url: 'https://wa.me/1234567890',
+    url: 'https://wa.me/9111454949',
     network: 'whatsapp',
     ariaLabel: 'WhatsApp'
   },
   {
-    url: 'https://www.youtube.com/digiflex',
+    url: 'https://www.youtube.com/@QuestDigiflex',
     network: 'youtube',
     ariaLabel: 'YouTube'
   },
@@ -67,10 +66,28 @@ const socialLinks = [
   }
 ];
 
+// Country flags data
+const countryFlags = [
+  {
+    country: 'India',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/in.svg',
+    alt: 'India Flag'
+  },
+  {
+    country: 'USA',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/us.svg',
+    alt: 'USA Flag'
+  },
+  {
+    country: 'UAE',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/ae.svg',
+    alt: 'UAE Flag'
+  }
+];
+
 function Footer() {
   return (
-    
-    <footer className="bg-blue-950 text-white ">
+    <footer className="bg-blue-950 text-white">
       <div className="container mx-auto px-4 py-4">
         {/* Logo - reduced margin bottom */}
         <div className="mb-4 max-w-[1240px] mx-auto">
@@ -83,16 +100,27 @@ function Footer() {
         {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-4 max-w-[1200px] mx-auto">
           {/* Locations Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-grow ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-grow">
             {locations.map((loc, index) => (
-              <React.Fragment key={loc.id}>
+              <React.Fragment key={index}>
                 <div className="space-y-0.5">
-                  <div className="text-5xl font-bold opacity-20 mb-1 text-blue-700">{loc.id}</div>
                   <h2 className="text-lg font-semibold text-white">{loc.city}</h2>
                   <div className="space-y-0 text-sm text-gray-300">
                     <p>{loc.address}</p>
                     <p>{loc.location}</p>
                     {loc.PostalCode && <p>{loc.PostalCode}</p>}
+                    
+                    {/* Country Flags */}
+                    <div className="flex pt-4">
+                      {countryFlags.map((flag, flagIndex) => (
+                        <img 
+                          key={flagIndex} 
+                          src={flag.flagUrl} 
+                          alt={flag.alt} 
+                          className="h-8 w-14"
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
                 {index < locations.length - 1 && (
@@ -103,7 +131,7 @@ function Footer() {
           </div>
 
           {/* Contacts Section */}
-          <div className="lg:w-72 ">
+          <div className="lg:w-72">
             <h2 className="text-xl font-bold mb-4 text-white">Contacts</h2>
             <div className="space-y-6">
               <div className="space-y-2">

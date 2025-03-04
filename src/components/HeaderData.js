@@ -522,18 +522,46 @@ export const services = [
         image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=600&q=80",
     },
     {
-        id: "e-commerce",
-        icon: ShoppingCart,
-        title: "Ecommerce",
-        color: "text-green-500",
-        description: "Scalable e-commerce platforms with secure payment and inventory management.",
-        features: [
-            { icon: ShoppingBag, title: "Custom E-commerce Development", path: "/services/e-commerce/custom-dev" },
-            { icon: CreditCard, title: "Payment Gateway Integration", path: "/services/e-commerce/payment-integration" },
-            { icon: ChartBar, title: "Analytics & SEO", path: "/services/e-commerce/analytics-seo" }
-        ],
-        image: "https://images.unsplash.com/photo-1530658011974-0f42ea1cfbcc?auto=format&fit=crop&w=600&q=80",
-    },
+      id: "E-Commerce",
+      title: "E-Commerce Development",
+      icon: ShoppingCart, // Added missing icon
+      color: "text-blue-600",
+      description: "Cutting-edge solutions using blockchain technologies.",
+      features: [
+        {
+          title: "Shopify Development",
+          icon: ShoppingCart, // Added missing icon
+          path: "/shopify-development-services",
+        },
+        {
+          title: "WooCommerce Development",
+          icon: ShoppingCart, // Added missing icon
+          path: "/woocommerce-development-services",
+        },
+        {
+          title: "OpenCart Development",
+          icon: ShoppingCart, // Added missing icon
+          path: "/opencart-development-services",
+        },
+        {
+          title: "Magento Development",
+          icon: ShoppingCart, // Added missing icon
+          path: "/magento-development-services",
+        },
+        {
+          title: "PrestaShop Development",
+          icon: ShoppingCart, // Added missing icon
+          path: "/prestashop-development-services",
+        },
+        {
+          title: "Odoo Development",
+          icon: ShoppingCart, // Added missing icon
+          path: "/odoo-development-services",
+        },
+       
+      ],
+      image: 'https://i.pinimg.com/736x/81/12/a7/8112a764174b72479ac2afdd0a9fb458.jpg'
+      },
     {
         id: "salesforce",
         icon: Database,

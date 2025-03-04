@@ -1,6 +1,6 @@
 import React from "react";
 import GameArtServices from "./GameArtServices";
-import TopFeature from "./TopFeature";
+import TopGameArtFeatures from "./TopGameArtFeatures";
 import GameArtModules from "./GameArtModules";
 import Faq from '../../../../components/Faq'
 
@@ -11,7 +11,7 @@ const Body = () => {
   return (
     <div>
       <GameArtServices />
-      <TopFeature />
+      <TopGameArtFeatures />
       <GameArtModules />
       <Faq faqs={GameArtServicesFAQData} />
     

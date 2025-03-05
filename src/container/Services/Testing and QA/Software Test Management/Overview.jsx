@@ -104,7 +104,7 @@ const Overview = () => {
 
     return (
         <WrapperContainer>
-            <div className="relative bg-white flex flex-col items-center justify-center px-4 sm:px-6">
+            <div className="relative bg-white flex flex-col items-center justify-center">
                 <div
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -121,8 +121,7 @@ const Overview = () => {
                         <Heading>Overview</Heading> 
                     </Heading>
 
-                    {/* Underline */}
-                    <div className="w-40 h-1 bg-[#64a2e2] mt-2"></div>
+                   
                 </div>
 
                 {/* Sections */}

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MetallicPaint from "../../../components/ui/MetallicPaint"; // Ensure this is the correct path
-
+import bg from "../../../assets/HeroBg4.mp4"
+import bg2 from "../../../assets/HomeBg.jpg"
 function renderTextToImageData(lines, options = {}) {
   const {
     width = 3400,
@@ -71,7 +72,7 @@ export default function HomeTextEffect() {
         {/* Background image for screens < 720px */}
         <img
           className="absolute inset-0 w-full h-full object-cover md:hidden"
-          src="./HomeBg.jpg"
+          src={bg2}
           alt="Background"
         />
 
@@ -94,7 +95,7 @@ export default function HomeTextEffect() {
           muted
           playsInline
         >
-          <source src="HeroBg4.mp4" type="video/mp4" />
+          <source src={bg} type="video/mp4" />
         </video>
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-t md:bg-gradient-to-l from-transparent to-[#021B3B] w-full sm:w-2/3 md:w-1/4"></div>
       </motion.div>

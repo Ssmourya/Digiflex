@@ -3,7 +3,7 @@ import videoGame from "../../../../assets/unrealGame.mp4";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const headingText = "Resource Augmentation Development";
+    const headingText = "Resource Augmentation Development ✨";  
 
   // Function to generate animation delay for typewriter effect
   const getTypewriterStyle = (index) => {
@@ -121,4 +121,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+  export default Hero;

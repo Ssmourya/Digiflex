@@ -1,18 +1,20 @@
-import React from "react";
-import ResourceAugmentationServices from "./ResourceAugmentationServices";
-import ResourceAugmentation from "./ResourceAugmentation";
+import React, { Suspense, lazy } from "react";
 import { ResourceAugmentationFAQData } from "../FAQData";
-import Faq from '../../../../components/Faq'
-import ResourceAugmentationBenefits from "./ResourceAugmentationBenefits";
+
+const ResourceAugmentationServices = lazy(() => import("./ResourceAugmentationServices"));
+const ResourceAugmentation = lazy(() => import("./ResourceAugmentation"));
+const ResourceAugmentationBenefits = lazy(() => import("./ResourceAugmentationBenefits"));
+const Faq = lazy(() => import("../../../../components/Faq"));
 
 const Body = () => {
   return (
     <div>
-      <ResourceAugmentationServices />
-      <ResourceAugmentationBenefits />
-      <ResourceAugmentation />
-      <Faq faqs={ResourceAugmentationFAQData} />
-    
+      <Suspense fallback={<div>Loading...</div>}>
+        <ResourceAugmentationServices />
+        <ResourceAugmentationBenefits />
+        <ResourceAugmentation />
+        <Faq faqs={ResourceAugmentationFAQData} />
+      </Suspense>
     </div>
   );
 };

@@ -54,7 +54,6 @@ const GameDevProcess = () => {
 
   return (
     <WrapperContainer>
-      <div className="max-w-full p-6 space-y-6">
         <Heading>
           <h1 className="text-3xl font-bold text-center mb-6">Game Development Process</h1>
         </Heading>
@@ -94,7 +93,7 @@ const GameDevProcess = () => {
             </div>
           ))}
         </div>
-      </div>
+      
     </WrapperContainer>
   );
 };

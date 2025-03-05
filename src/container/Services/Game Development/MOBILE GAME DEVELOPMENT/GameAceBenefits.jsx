@@ -6,15 +6,19 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const BenefitCard = ({ icon: Icon, title, description }) => {
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+    <motion.div
+      className="bg-white rounded-lg p-3 flex flex-col border border-gray-200"
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
       <div className="flex items-center gap-4 mb-4">
-        <div className="p-4 bg-blue-600 rounded-full">
-          <Icon className="w-8 h-8 text-white" />
+        <div className="p-3 bg-purple-600 rounded-full">
+          <Icon className="w-6 h-6 text-white" />
         </div>
-        <h3 className="text-xl font-bold text-gray-800">{title}</h3>
+        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
       </div>
-      <p className="text-gray-700 text-base leading-relaxed">{description}</p>
-    </div>
+      <p className="text-gray-700 text-sm">{description}</p>
+    </motion.div>
   );
 };
 
@@ -28,7 +32,7 @@ const DigiflexBenefits = () => {
     },
     {
       icon: Users,
-      title: "Player-Centric Approach",
+      title: "Player-Centric Approach", 
       description:
         "We prioritize user experience by creating games that captivate, entertain, and provide seamless interactions across multiple platforms.",
     },
@@ -58,29 +62,48 @@ const DigiflexBenefits = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
   return (
     <WrapperContainer>
-      <div className="mx-auto">
-        <div className="text-center mb-12">
+          <div className="text-center mb-12">
           <Heading>Why Choose Digiflex for Mobile Game Development?</Heading>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm">
             Digiflex specializes in creating high-performance, cross-platform
             mobile games that engage, entertain, and drive success.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {benefits.map((benefit, index) => (
             <BenefitCard key={index} {...benefit} />
           ))}
-        </div>
+        </motion.div>
 
-        <div className="text-center mt-12">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
+        <div className="text-center mt-8">
+          <motion.button
+            className="bg-purple-600 text-white px-8 py-3 rounded text-sm font-medium hover:bg-purple-700 transition-colors duration-200"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Get Started with Digiflex
-          </button>
+          </motion.button>
         </div>
-      </div>
+          
     </WrapperContainer>
   );
 };

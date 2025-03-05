@@ -28,7 +28,6 @@ const services = [
 const ResourceAugmentationServices = () => {
   return (
     <WrapperContainer>
-      <div className="max-w-6xl mx-auto">
         <Heading>Resource Augmentation for Game Development</Heading>
         <Paragraph>
           Scale your game development team efficiently with our expert augmentation services tailored to your project needs.
@@ -38,7 +37,7 @@ const ResourceAugmentationServices = () => {
             <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
           ))}
         </div>
-      </div>
+     
     </WrapperContainer>
   );
 };

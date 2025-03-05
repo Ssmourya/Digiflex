@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+  import React, { useState, useEffect } from "react";
 import videoGame from "../../../../assets/unrealGame.mp4";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const headingText = "Unity3D Game App Development";
+    const headingText = "Unity3D Game Development ✨";  
 
   // Function to generate animation delay for typewriter effect
   const getTypewriterStyle = (index) => {
@@ -121,4 +121,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+  export default Hero;

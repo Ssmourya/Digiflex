@@ -1,17 +1,18 @@
-import React from "react";
-import ServicesSection from "./ServicesSection";
-import PricingPlans from "./PricingPlans";
-import GameAceBenefits from "./GameAceBenefits";
-import Faq from "../../../../components/Faq";
+import React, { Suspense, lazy } from "react";
 import { MobileGameFAQData } from "../FAQData";
 
+const ServicesSection = lazy(() => import("./ServicesSection"));
+const PricingPlans = lazy(() => import("./PricingPlans"));
+const GameAceBenefits = lazy(() => import("./GameAceBenefits"));
+const Faq = lazy(() => import("../../../../components/Faq"));
+
 const Body = () => (
-  <>
+  <Suspense fallback={<div>Loading...</div>}>
     <ServicesSection />
     <PricingPlans />
     <GameAceBenefits />
     <Faq faqs={MobileGameFAQData} />
-  </>
+  </Suspense>
 );
 
 export default Body;

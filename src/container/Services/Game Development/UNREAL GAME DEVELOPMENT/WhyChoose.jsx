@@ -37,7 +37,7 @@ const WhyChoose = () => {
 
   return (
     <WrapperContainer>
-      <div className="bg-white flex flex-col justify-center items-center">
+        
         <Heading>
           <div>Why Choose Digiflex for Unreal Game Development?</div>
         </Heading>
@@ -66,7 +66,7 @@ const WhyChoose = () => {
             </Paragraph>
           </div>
         </div>
-      </div>
+      
     </WrapperContainer>
   );
 };

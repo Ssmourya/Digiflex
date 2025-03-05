@@ -54,8 +54,7 @@ const UnrealTeam = () => {
 
   return (
     <WrapperContainer>
-      <div className="container mx-auto p-6">
-        <Heading>
+          <Heading>
           <h2 className="text-3xl font-bold mb-4">Unreal Engine Development Team</h2>
         </Heading>
         <div className="overflow-x-auto shadow-lg rounded-lg">
@@ -73,7 +72,7 @@ const UnrealTeam = () => {
             </tbody>
           </table>
         </div>
-      </div>
+        
     </WrapperContainer>
   );
 };

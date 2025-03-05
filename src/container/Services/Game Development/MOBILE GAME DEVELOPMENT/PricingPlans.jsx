@@ -136,8 +136,7 @@ const PricingPlans = () => {
 
   return (
     <WrapperContainer>
-      <div className="max-w-6xl mx-auto">
-        {/* Billing Toggle */}
+          {/* Billing Toggle */}
         <div className="flex justify-center mb-6">
           <div className="bg-gray-100 p-1 rounded-full inline-flex shadow">
             <motion.button
@@ -230,7 +229,6 @@ const PricingPlans = () => {
             </motion.div>
           ))}
         </motion.div>
-      </div>
     </WrapperContainer>
   );
 };

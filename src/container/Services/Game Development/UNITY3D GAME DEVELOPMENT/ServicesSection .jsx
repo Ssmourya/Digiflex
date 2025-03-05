@@ -72,7 +72,7 @@ const ServicesSection = () => {
 
   return (
     <WrapperContainer>
-      <div className="max-w-full p-6 space-y-6">
+      <div className="max-w-full space-y-6">
         <Heading>
           <h1 className="text-3xl font-bold text-center mb-6">
             Digiflex Unity3D Game Development Services

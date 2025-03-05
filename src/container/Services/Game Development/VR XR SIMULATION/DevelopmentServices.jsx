@@ -36,7 +36,6 @@ const DevelopmentServices = () => {
 
   return (
     <WrapperContainer>
-      <div className="max-w-6xl mx-auto px-2 py-12">
         <Heading>
           <h1 className="text-3xl font-bold text-center mb-6">Our VR/XR Simulation Game Development Services</h1>
         </Heading>
@@ -58,7 +57,7 @@ const DevelopmentServices = () => {
             </div>
           ))}
         </div>
-      </div>
+      
     </WrapperContainer>
   );
 };

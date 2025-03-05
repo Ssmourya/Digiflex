@@ -14,7 +14,7 @@ const toolsData = [
 const GameDevTools = () => {
   return (
     <WrapperContainer>
-      <div className="container mx-auto p-6">
+    
         <Heading>
           <h2 className="text-3xl font-bold mb-4">Tools & Software for PC Game Development</h2>
         </Heading>
@@ -41,7 +41,7 @@ const GameDevTools = () => {
             </tbody>
           </table>
         </div>
-      </div>
+        
     </WrapperContainer>
   );
 }

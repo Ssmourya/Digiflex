@@ -1,20 +1,22 @@
-import React from 'react'
-import GameServices from './GameServices';
-import UnrealBenefits from './UnrealBenefits';
-import UnrealTeam from './UnrealTeam'
+import React, { Suspense, lazy } from 'react'
 import { UnrealGameFAQData } from '../FAQData';
-import Faq from '../../../../components/Faq'
-import WhyChoose from './WhyChoose';
+
+const GameServices = lazy(() => import('./GameServices'));
+const UnrealBenefits = lazy(() => import('./UnrealBenefits'));
+const UnrealTeam = lazy(() => import('./UnrealTeam'));
+const WhyChoose = lazy(() => import('./WhyChoose'));
+const Faq = lazy(() => import('../../../../components/Faq'));
 
 const Body = () => {
     return (
         <div>
-            <GameServices />
-            <UnrealBenefits />
-            <WhyChoose />
-            <UnrealTeam />
-            <Faq faqs={UnrealGameFAQData} />
-    
+            <Suspense fallback={<div>Loading...</div>}>
+                <GameServices />
+                <UnrealBenefits />
+                <WhyChoose />
+                <UnrealTeam />
+                <Faq faqs={UnrealGameFAQData} />
+            </Suspense>
         </div>
     )
 }

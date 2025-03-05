@@ -12,15 +12,15 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Paragraph from "../../../../Layout/Paragraph";
 
 const FeatureItem = ({ title, description, icon: Icon }) => (
-  <div className="flex items-center space-x-4 p-4 hover:bg-blue-50 rounded-lg transition-colors duration-300">
-    <div className="flex-shrink-0">
-      <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
-        <Icon className="h-6 w-6 text-blue-600" aria-hidden="true" />
+  <div className="relative pl-16">
+    <div className="absolute left-0 top-0">
+      <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
+        <Icon className="h-6 w-6 text-white" aria-hidden="true" />
       </div>
     </div>
-    <div>
-      <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-      <p className="mt-1 text-gray-600">{description}</p>
+    <div className="border-l-2 border-blue-200 pl-8 pb-8">
+      <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </div>
   </div>
 );
@@ -67,29 +67,31 @@ const TopGameArtFeatures = () => {
 
   return (
     <WrapperContainer>
-      <section>
-        <div className="max-w-5xl mx-auto text-center px-4 mb-10">
-          <Heading>
-            <div>Top Features of Game Art Services</div>
-          </Heading>
-          <Paragraph>
-            <div className="text-center">
-              Elevate your game with top-tier game art services, delivering
-              exceptional visual quality and performance.
-            </div>
-          </Paragraph>
+      <div className="max-w-5xl mx-auto px-4 mb-16">
+        <Heading>
+          <div className="text-center">Top Features of Game Art Services</div>
+        </Heading>
+        <Paragraph>
+          <div className="text-center mb-12">
+            Elevate your game with top-tier game art services, delivering
+            exceptional visual quality and performance.
+          </div>
+        </Paragraph>
+        
+        <div className="relative">
+          <div className="absolute top-0 bottom-0 left-[76px] w-0.5 bg-blue-100"></div>
+          <div className="space-y-12">
+            {features.map((feature, index) => (
+              <FeatureItem
+                key={index}
+                title={feature.title}
+                description={feature.description}
+                icon={feature.icon}
+              />
+            ))}
+          </div>
         </div>
-        <div className="max-w-3xl mx-auto space-y-4 px-4">
-          {features.map((feature, index) => (
-            <FeatureItem
-              key={index}
-              title={feature.title}
-              description={feature.description}
-              icon={feature.icon}
-            />
-          ))}
-        </div>
-      </section>
+      </div>
     </WrapperContainer>
   );
 };

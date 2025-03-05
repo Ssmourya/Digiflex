@@ -1,21 +1,23 @@
-import React from 'react'
-import VrXrServices from './VrXrServices'
-import DevelopmentServices from './DevelopmentServices'
-import Tools from './Tools'
+import React, { Suspense, lazy } from 'react'
 import { VRXRSimulationFAQData } from '../FAQData'
-import Faq from '../../../../components/Faq'
-import WhyChoose from './WhyChoose'
+
+const VrXrServices = lazy(() => import('./VrXrServices'))
+const DevelopmentServices = lazy(() => import('./DevelopmentServices'))
+const Tools = lazy(() => import('./Tools'))
+const WhyChoose = lazy(() => import('./WhyChoose'))
+const Faq = lazy(() => import('../../../../components/Faq'))
 
 const Body = () => {
     return (
         <div>
-            <VrXrServices />
-            <DevelopmentServices/>
-            <WhyChoose />
-            <Tools />
-            <Faq faqs={VRXRSimulationFAQData} />
-    
-            
+            <Suspense fallback={<div>Loading...</div>}>
+                <VrXrServices />
+                <DevelopmentServices/>
+                <Tools />
+                <WhyChoose />
+                    
+                <Faq faqs={VRXRSimulationFAQData} />
+            </Suspense>
         </div>
     )
 }

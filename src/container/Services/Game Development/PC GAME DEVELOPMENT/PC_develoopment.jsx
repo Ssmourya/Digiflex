@@ -1,6 +1,7 @@
 import React from "react";
 import { Cpu, Code, Image, Brain, Users, CheckCircle } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Heading from "../../../../Layout/Heading";
 
 const topics = [
   {
@@ -45,16 +46,15 @@ function PC_development() {
   return (
     <WrapperContainer>
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 leading-relaxed">
-          Game Development
-        </h2>
+        <Heading>Game Development</Heading>
+
         <p className="text-gray-600 text-lg leading-loose">
           Exploring key aspects of game development, from coding to design.
         </p>
       </div>
 
       {/* Grid Layout for Topics */}
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 max-w-6xl mx-auto">
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {topics.map(({ icon: Icon, title, description }, index) => (
           <div
             key={index}

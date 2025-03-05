@@ -1,23 +1,23 @@
-import React from "react";
-import PCgame_intro from "./PCgame_intro";
-import PC_develoopment from "./PC_develoopment";
-import GameDevelopmentProcess from "./GameDevelopmentProcess";
-import GameDevTools from "./GameDevTools";
-import Benefits from "./Benefits";
+import React, { Suspense, lazy } from "react";
 import { PC_develoopmentFAQData } from "../FAQData";
-import Faq from '../../../../components/Faq'
 
+const PCgame_intro = lazy(() => import("./PCgame_intro"));
+const PC_develoopment = lazy(() => import("./PC_develoopment"));
+const GameDevelopmentProcess = lazy(() => import("./GameDevelopmentProcess"));
+const GameDevTools = lazy(() => import("./GameDevTools"));
+const Benefits = lazy(() => import("./Benefits"));
+const Faq = lazy(() => import("../../../../components/Faq"));
 
 const Body = () => {
   return (
-    <div>
+    <Suspense fallback={<div>Loading...</div>}>
       <PCgame_intro />
       <PC_develoopment />
       <GameDevelopmentProcess />
       <GameDevTools />
       <Benefits />
       <Faq faqs={PC_develoopmentFAQData} />
-    </div>
+    </Suspense>
   );
 };
 

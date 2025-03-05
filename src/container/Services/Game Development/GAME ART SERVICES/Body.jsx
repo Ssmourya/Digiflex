@@ -1,16 +1,19 @@
-import React from "react";
-import GameArtServices from "./GameArtServices";
-import TopGameArtFeatures from "./TopGameArtFeatures";
-import GameArtModules from "./GameArtModules";
-import Faq from "../../../../components/Faq";
+import React, { Suspense, lazy } from "react";
 import { GameArtServicesFAQData } from "../FAQData";
+
+const GameArtServices = lazy(() => import("./GameArtServices"));
+const TopGameArtFeatures = lazy(() => import("./TopGameArtFeatures")); 
+const GameArtModules = lazy(() => import("./GameArtModules"));
+const Faq = lazy(() => import("../../../../components/Faq"));
 
 const Body = () => (
   <div>
-    <GameArtServices />
-    <TopGameArtFeatures />
-    <GameArtModules />
-    <Faq faqs={GameArtServicesFAQData} />
+    <Suspense fallback={<div>Loading...</div>}>
+      <GameArtServices />
+      <TopGameArtFeatures />
+      <GameArtModules />
+      <Faq faqs={GameArtServicesFAQData} />
+    </Suspense>
   </div>
 );
 

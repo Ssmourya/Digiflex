@@ -4,6 +4,8 @@ import Azure_info from "../container/Services/Cloud/AZURE/Azure_info";
 import Azure_feature from "../container/Services/Cloud/AZURE/Azure_feature";
 import Azure_services from "../container/Services/Cloud/AZURE/Azure_services";
 import Azure_Card from "../container/Services/Cloud/AZURE/Azure_Card";
+import Faq from "../components/Faq";
+import { AzureCloudServicesFAQData } from "../container/Services/Cloud/Faqdata";
 
 function Azure() {
   return (
@@ -13,6 +15,7 @@ function Azure() {
       <Azure_feature />
       <Azure_services />
       <Azure_Card />
+      <Faq faqs={AzureCloudServicesFAQData}/>
     </>
   );
 }

@@ -6,6 +6,8 @@ import Ai_TechnologiesUsed from '../container/Services/AI/AI SOFTWARE DEVELOPMEN
 import Ai_IndustryServices from '../container/Services/AI/AI SOFTWARE DEVELOPMENT/Ai_IndustryServices'
 import Ai_software_choose from '../container/Services/AI/AI SOFTWARE DEVELOPMENT/Ai_software_choose '
 import Ai_faq from '../container/Services/AI/AI SOFTWARE DEVELOPMENT/Ai_faq'
+import Faq from '../components/Faq'
+import { faqsques } from '../container/Services/AI/Faqdata'
 
 function Ai_software() {
   return (
@@ -16,7 +18,7 @@ function Ai_software() {
         <Ai_TechnologiesUsed/>
         <Ai_IndustryServices/>
         <Ai_software_choose/>
-        <Ai_faq/>
+        <Faq faqs={faqsques}/>
     </>
   )
 }

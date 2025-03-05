@@ -6,6 +6,8 @@ import Ai_digiflex_development from '../container/Services/AI/AI_app/Ai_digiflex
 import Ai_app_Industries from '../container/Services/AI/AI_app/Ai_app_Industries '
 import AITechStack from '../container/Services/AI/AI_app/AITechStack'
 import Aiapphero from '../container/Services/AI/AI_app/Aiapphero'
+import Faq from '../components/Faq';
+import { AIPoweredAppsFAQData } from '../container/Services/AI/Faqdata'
 
 function Ai_development() {
   return (
@@ -17,6 +19,7 @@ function Ai_development() {
         <Ai_digiflex_development/>
         <Ai_app_Industries/>
         <AITechStack/>
+        <Faq faqs={AIPoweredAppsFAQData}/>
     </>
   )
 }

@@ -11,7 +11,7 @@ function Azure_Card() {
         <Heading>
         <p>Start Your Cloud Journey with Digiflex</p>
         </Heading>
-   <div className="flex justify-center items-center mt-5 mb-10">
+   <div className="flex justify-center items-center mt-5">
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-6">
        {/* Card 1 */}
        <div className="bg-white rounded-xl border border-gray-300 p-8 w-full max-w-[500px] flex flex-col justify-between">

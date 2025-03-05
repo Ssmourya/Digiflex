@@ -67,7 +67,7 @@ function Intercloud_approaches () {
         <Subheading className='text-center'>
           Intercloud migration transfers applications, data, or workloads between cloud providers, driven by cost, performance, compliance, or vendor flexibility, using various strategic approaches for seamless transition.
           </Subheading>
-        <div className='mb-10'>
+        <div className=''>
           <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-10">
             {advantages.map((item, index) => (
               <div

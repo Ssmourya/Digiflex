@@ -101,7 +101,6 @@ import Intercloud_Migration from "./pages/Intercloud";
 import AWS from "./pages/AWS";
 import CloudNative from "./pages/CloudNative";
 
-//AI app
 
 import Ai_development from "./pages/Ai_development"
 import Ai_software from "./pages/Ai_software";
@@ -114,6 +113,8 @@ import Opencart from "./pages/OpencartDevelopment";
 import Magento from './pages/MagentoDevelopment'
 import Pestrashop from "./pages/PestrashopDevelopment";
 import Odoo from './pages/OdooDevelopment';
+
+import Ai_enterprise from './pages/Ai_enterprise'
 
 
 function App() {
@@ -386,6 +387,7 @@ function App() {
       <Route path="/ai-app-development" element={<Ai_development/>}/>
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
+{/* <<<<<<< Updated upstream */}
 
        {/*E-Commerce*/}
 
@@ -395,6 +397,10 @@ function App() {
       <Route path="/magento-development-services" element={<Magento/>}/>
       <Route path="/prestashop-development-services" element={<Pestrashop/>}/>
       <Route path="/odoo-development-services" element={<Odoo/>}/>
+{/* ======= */}
+      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>
+      
+{/* >>>>>>> Stashed changes */}
 
       </Routes>
 

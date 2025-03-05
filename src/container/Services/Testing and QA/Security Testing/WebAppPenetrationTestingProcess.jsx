@@ -8,7 +8,6 @@ import reporting from "../../../../assets/reporting.jpeg";
 import Remediation_Testing from "../../../../assets/Remediation_Testing.jpeg";
 
 const PentestProgress = () => {
-    
     const [currentSlide, setCurrentSlide] = useState(4); // Starting at "Reporting"
 
     const steps = [
@@ -32,7 +31,7 @@ const PentestProgress = () => {
         },
         { 
             name: 'Attack and Penetration',
-            description: 'During this critical phase, controlled attacks are carefully executed to validate security weaknesses and potential impacts. We attempt to exploit vulnerabilities found in previous phases, using both automated tools and manual techniques. This process includes privilege escalation, lateral movement, and testing the effectiveness of security controls like firewalls, intrusion detection systems (IDS), and web application security measures. We ensure that all attacks are conducted in a safe and ethical manner without causing disruptions.',
+            description: 'During this critical phase, controlled attacks are carefully executed to validate security weaknesses and potential impacts. We attempt to exploit vulnerabilities found in previous phases, using both automated tools and manual techniques. This process includes privilege escalation, lateral movement, and testing the effectiveness of security controls like firewalls, intrusion detection systems (IDS), and web application security measures. We ensure that all attacks are conducted in a safe and ethical manner without disruptions.',
             image: Attack_and_Penetration,
             status: 'completed' 
         },
@@ -48,7 +47,7 @@ const PentestProgress = () => {
             image: Remediation_Testing,
             status: 'upcoming' 
         }
-      ];
+    ];
       
     const handlePrevious = () => {
         setCurrentSlide((current) => Math.max(0, current - 1));
@@ -59,71 +58,79 @@ const PentestProgress = () => {
     };
 
     return (
-        <div className="w-11/12 max-w-6xl mx-auto space-y-8">
-
+        <div className="w-full px-4 md:px-6 lg:px-8 max-w-7xl mx-auto py-8 md:py-12 space-y-6 md:space-y-8">
             {/* Progress Steps */}
-            <div className="overflow-x-auto w-full">
-                <div className="flex items-center justify-between w-max gap-2">
-                    {
-                        steps.map((step, index) => (
-                            <div key={step.name} className="flex items-center">
-                                <div className="relative flex items-center">
-                                    {/* Step Connector */}
-                                    <div
-                                        className={`w-24 h-[2px] transition-colors duration-300 ${
+            <div className="relative overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0">
+                <div className="flex items-center justify-start md:justify-between min-w-max gap-2 md:gap-4">
+                    {steps.map((step, index) => (
+                        <div key={step.name} className="flex items-center">
+                            <div className="relative flex items-center">
+                                {/* Step Connector */}
+                                <div
+                                    className={`hidden md:block w-12 lg:w-24 h-[2px] transition-colors duration-300 ${
                                         index === 0 ? 'hidden' : 
-                                        index < currentSlide ? 'bg-gradient-to-r from-blue-500 to-purple-500' :
-                                        'bg-gray-200'}`}
-                                    />
+                                        index <= currentSlide ? 'bg-gradient-to-r from-blue-500 to-purple-500' :
+                                        'bg-gray-200'
+                                    }`}
+                                />
 
-                                    {/* Step Button */}
-                                    <button
-                                        onClick={() => setCurrentSlide(index)}
-                                        className={`w-auto min-w-[70px] max-w-[100px] px-2 py-1 rounded-full border text-sm truncate whitespace-nowrap transition-all duration-300
+                                {/* Step Button */}
+                                <button
+                                    onClick={() => setCurrentSlide(index)}
+                                    className={`w-auto min-w-[60px] md:min-w-[80px] lg:min-w-[100px] px-2 py-1 rounded-full border text-xs md:text-sm truncate whitespace-nowrap transition-all duration-300
                                         ${
-                                        index === currentSlide ? 'bg-blue-500 text-white border-blue-500' :
-                                        index < currentSlide ? 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50' :
-                                        'bg-white text-gray-400 border-gray-200'
+                                            index === currentSlide 
+                                                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent' 
+                                                : index < currentSlide 
+                                                ? 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50' 
+                                                : 'bg-white text-gray-400 border-gray-200'
                                         }`}
-                                    >
-                                        {step.name}
-                                    </button>
-                                </div>
+                                >
+                                    {step.name}
+                                </button>
                             </div>
-                        ))
-                    }
+                        </div>
+                    ))}
                 </div>
             </div>
 
-            {/* Content Card with Fixed Image Size */}
-            <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-8 rounded-lg text-white flex flex-wrap lg:flex-nowrap items-center gap-8 min-h-[300px] transition-all duration-500">
-                
-                {/* Image Section (Fixed Size) */}
-                <div className="w-full lg:w-1/3 flex">
-                    <img 
-                        src={steps[currentSlide].image} 
-                        alt={steps[currentSlide].name} 
-                        className="rounded-lg shadow-lg w-64 h-64 object-cover"
-                    />
-                </div>
+            {/* Content Card */}
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg overflow-hidden shadow-xl">
+                <div className="p-4 md:p-6 lg:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+                    {/* Image Section */}
+                    <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
+                        <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64">
+                            <img 
+                                src={steps[currentSlide].image} 
+                                alt={steps[currentSlide].name} 
+                                className="rounded-lg shadow-lg w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
 
-                {/* Text Content */}
-                <div className="w-full lg:w-2/3 space-y-4 text-center lg:text-left">
-                    <h2 className="text-3xl font-semibold">{steps[currentSlide].name}</h2>
-                    <p className="text-lg text-white">{steps[currentSlide].description}</p>
+                    {/* Text Content */}
+                    <div className="w-full lg:w-2/3 space-y-3 md:space-y-4 text-center lg:text-left">
+                        <h2 className="text-2xl md:text-3xl font-semibold text-white">
+                            {steps[currentSlide].name}
+                        </h2>
+                        <p className="text-base md:text-lg text-white/90">
+                            {steps[currentSlide].description}
+                        </p>
+                    </div>
                 </div>
-
             </div>
 
             {/* Navigation Arrows */}
-            <div className="flex justify-end gap-2">
+            <div className="flex justify-center md:justify-end gap-3">
                 <button 
                     onClick={handlePrevious}
                     disabled={currentSlide === 0}
-                    className={`p-2 rounded-full border border-gray-300 transition-all duration-300 
-                    ${currentSlide === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'}`}
+                    className={`p-2 rounded-full border bg-white shadow-sm transition-all duration-300 
+                        ${currentSlide === 0 
+                            ? 'opacity-50 cursor-not-allowed border-gray-200' 
+                            : 'border-gray-300 hover:bg-gray-50 active:bg-gray-100'}`}
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
@@ -131,10 +138,12 @@ const PentestProgress = () => {
                 <button 
                     onClick={handleNext}
                     disabled={currentSlide === steps.length - 1}
-                    className={`p-2 rounded-full border border-gray-300 transition-all duration-300
-                    ${currentSlide === steps.length - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'}`}
+                    className={`p-2 rounded-full border bg-white shadow-sm transition-all duration-300
+                        ${currentSlide === steps.length - 1 
+                            ? 'opacity-50 cursor-not-allowed border-gray-200' 
+                            : 'border-gray-300 hover:bg-gray-50 active:bg-gray-100'}`}
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </button>

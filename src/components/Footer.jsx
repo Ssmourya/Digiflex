@@ -8,7 +8,33 @@ const locations = [
     city: 'Indore',
     address: '1206 , Skye Earth Corporate Park',
     location: 'Indore , Madhya Pradesh',
-    PostalCode: '452010'
+    postalCode: '452010',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/in.svg',
+    alt: 'India Flag'
+  },
+  {
+    city: 'Dubai',
+    address: 'Duja Towers, Sheikh Zayed Road',
+    location: 'Dubai',
+    postalCode: 'UAE',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/ae.svg',
+    alt: 'UAE Flag'
+  },
+  {
+    city: 'USA',
+    address: '5101 34th St #A Lubbock,',
+    location: 'Texas',
+    postalCode: '79410',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/us.svg',
+    alt: 'USA Flag'
+  },
+  {
+    city: 'UK',
+    address: '135 Junction Rd, Archway',
+    location: 'London',
+    postalCode: 'N19 5PX',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/gb.svg',
+    alt: 'UK Flag'
   }
 ];
 
@@ -44,11 +70,6 @@ const socialLinks = [
     network: 'linkedin',
     ariaLabel: 'LinkedIn' 
   },
-  // {
-  //   url: 'https://discord.gg/digiflex',
-  //   network: 'discord',
-  //   ariaLabel: 'Discord'
-  // },
   {
     url: 'https://wa.me/9111454949',
     network: 'whatsapp',
@@ -59,12 +80,6 @@ const socialLinks = [
     network: 'youtube',
     ariaLabel: 'YouTube'
   },
-  // {
-  //   url: 'https://t.me/digiflex',
-  //   network: 'telegram',
-  //   ariaLabel: 'Telegram'
-  // }
-
   {
     url: 'https://in.pinterest.com/questdigiflex/',
     network: 'pinterest',
@@ -88,8 +103,6 @@ const socialLinks = [
         <path d="M 15.492188 4 C 10.201187 4 5 8.2304531 5 14.439453 C 5 21.556453 11.968844 26.19875 18.214844 24.46875 C 19.260844 26.25175 20.638625 28 23.265625 28 C 27.606625 28 28 24 28 23 L 26.445312 23 C 26.365313 23.716 25.877594 24.457031 24.683594 24.457031 C 23.595594 24.457031 22.810641 23.704594 22.056641 22.558594 C 24.402641 20.743594 25.949219 17.9135 25.949219 14.4375 C 25.954219 8.2025 20.894188 4 15.492188 4 z M 15.492188 6 C 19.536188 6 21.261719 8.9094531 21.261719 14.439453 C 21.266719 16.657453 20.973047 18.450484 20.373047 19.771484 C 19.338047 18.221484 18.054578 17.001953 15.517578 17.001953 C 13.898578 17.001953 12.792719 17.473344 12.011719 18.152344 L 12.658203 19.443359 C 12.987203 19.284359 13.193688 19.289062 13.554688 19.289062 C 15.438688 19.289062 16.404562 20.924969 17.226562 22.542969 C 16.695563 22.701969 16.126234 22.765625 15.490234 22.765625 C 11.510234 22.765625 9.7851563 19.952219 9.7851562 14.449219 C 9.7861563 8.9082188 11.512187 6 15.492188 6 z"></path>
       </svg>
     )
-    
-
   },
   {
     url: 'https://medium.com/@questdigiflex',
@@ -98,7 +111,7 @@ const socialLinks = [
   }
 ];
 
-// Country flags data
+// Country flags data (updated to match new locations)
 const countryFlags = [
   {
     country: 'India',
@@ -106,61 +119,44 @@ const countryFlags = [
     alt: 'India Flag'
   },
   {
+    country: 'UAE',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/ae.svg',
+    alt: 'UAE Flag'
+  },
+  {
     country: 'USA',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/us.svg',
     alt: 'USA Flag'
   },
   {
-    country: 'UAE',
-    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/ae.svg',
-    alt: 'UAE Flag'
+    country: 'UK',
+    flagUrl: 'https://flagicons.lipis.dev/flags/4x3/gb.svg',
+    alt: 'UK Flag'
   }
 ];
 
 function Footer() {
   return (
     <footer className="bg-blue-950 text-white">
-      <div className="container mx-auto px-4 py-4">
-        {/* Logo - reduced margin bottom */}
+      <div className="container px-4 py-4">
         <div className="mb-4 max-w-[1240px] mx-auto">
-          <h1 className="text-3xl font-bold tracking-tight text-white">DIGIFLEX</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-white">DIGIFLEX.AI</h1>
         </div>
-
-        {/* Horizontal Line - reduced margin bottom */}
         <div className="w-full h-px bg-blue-800 mb-4"></div>
-
-        {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-4 max-w-[1200px] mx-auto">
-          {/* Locations Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-grow">
-            {locations.map((loc, index) => (
-              <React.Fragment key={index}>
-                <div className="space-y-0.5">
-                  <h2 className="text-lg font-semibold text-white">{loc.city}</h2>
-                  <div className="space-y-0 text-sm text-gray-300">
-                    <p>{loc.address}</p>
-                    <p>{loc.location}</p>
-                    {loc.PostalCode && <p>{loc.PostalCode}</p>}
-                    
-                    {/* Country Flags */}
-                    <div className="flex pt-4">
-                      {countryFlags.map((flag, flagIndex) => (
-                        <img 
-                          key={flagIndex} 
-                          src={flag.flagUrl} 
-                          alt={flag.alt} 
-                          className="h-8 w-14"
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                {index < locations.length - 1 && (
-                  <div className="hidden lg:block w-px bg-blue-800 absolute right-0 top-0 h-full"></div>
-                )}
-              </React.Fragment>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-4 max-w-[1200px] mx-auto mt-10">
+          {locations.map((loc, index) => (
+            <div key={index} className="rounded-none flex flex-col items-start">
+              <div className="flex items-center gap-2">
+                <h2 className="text-lg font-semibold">{loc.city}</h2>
+                <img src={loc.flagUrl} alt={loc.alt} className="h-6 w-10" />
+              </div>
+              <p className="text-sm">{loc.address}</p>
+              {loc.location && <p className="text-sm">{loc.location}</p>}
+              {loc.postalCode && <p className="text-sm">{loc.postalCode}</p>}
+            </div>
+          ))}
+        </div>
 
           {/* Contacts Section */}
           <div className="lg:w-72">
@@ -203,29 +199,29 @@ function Footer() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-        {socialLinks.map((link, index) => (
-          link.icon ? (
-            <a 
-              key={index} 
-              href={link.url} 
-              aria-label={link.ariaLabel} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
-            >
-              {link.icon}
-            </a>
-          ) : (
-            <SocialIcon 
-              key={index}
-              url={link.url}
-              network={link.network}
-              aria-label={link.ariaLabel}
-              style={{ height: 28, width: 28 }}
-              bgColor="#1e40af" // Tailwind blue-800
-              fgColor="white"
-            />
-          )
+            {socialLinks.map((link, index) => (
+              link.icon ? (
+                <a 
+                  key={index} 
+                  href={link.url} 
+                  aria-label={link.ariaLabel} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  {link.icon}
+                </a>
+              ) : (
+                <SocialIcon 
+                  key={index}
+                  url={link.url}
+                  network={link.network}
+                  aria-label={link.ariaLabel}
+                  style={{ height: 28, width: 28 }}
+                  bgColor="#1e40af" // Tailwind blue-800
+                  fgColor="white"
+                />
+              )
             ))}
           </div>
         </div>

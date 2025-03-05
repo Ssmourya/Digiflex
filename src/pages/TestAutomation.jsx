@@ -13,14 +13,12 @@ const TestAutomation = () => {
     return (
         <div>
             <TestAutomationHeroSection/>
-			<WrapperContainer>
 			<Body/>
 			<TestAutomationFeatures/>
 			<ImprovementSection/>
 			<AutomationServices/>
 			<ContentSlider/>
 			<TestingCapabilities/>
-			</WrapperContainer>
         </div>
     )
 }

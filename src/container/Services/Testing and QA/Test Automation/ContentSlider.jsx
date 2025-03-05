@@ -9,6 +9,7 @@ import Subheading from '../../../../Layout/Subheading';
 import Paragraph from '../../../../Layout/Paragraph';
 
 const ContentBlock = ({ title, description, image, hyperlink }) => {
+    
     const truncateDescription = (desc) => {
         const words = desc.split(' ');
         if (words.length > 20) {
@@ -33,7 +34,9 @@ const ContentBlock = ({ title, description, image, hyperlink }) => {
             </div>
     
             <Paragraph className="text-xs sm:text-sm md:text-base">
-                {truncateDescription(description)}
+                {
+                    truncateDescription(description)
+                }
             </Paragraph>
     
             <div className="pt-1 sm:pt-2">
@@ -162,7 +165,7 @@ const ContentSlider = () => {
     };
 
     return (
-        <WrapperContainer className="relative w-full bg-white overflow-hidden">
+        <WrapperContainer className="relative w-full overflow-hidden">
             <div className="max-w-[1920px] mx-auto">
                 <Slider {...sliderSettings} ref={sliderRef}>
                     {contentData.map((item, index) => (

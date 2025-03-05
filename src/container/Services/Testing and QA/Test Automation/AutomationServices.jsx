@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, icon: Icon }) => {
         </div>
       </div>
       <div className="h-[1px] bg-gray-200 w-full my-4"></div>
-      <Subheading className="text-2xl text-black font-medium">{title}</Subheading>
+      <Subheading className="text-2xl font-medium">{title}</Subheading>
       <Paragraph className="leading-relaxed">{description}</Paragraph>
     </div>
   );
@@ -74,9 +74,9 @@ const AutomationServices = () => {
 
   return (
     <WrapperContainer className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div>
         {/* Heading Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="lg:col-span-1 flex items-center justify-center text-center lg:text-left">
             <Heading>Our Automation Services</Heading>
           </div>

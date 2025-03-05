@@ -31,7 +31,7 @@ const ImprovementSection = () => {
 
         
         <WrapperContainer className="bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Left Column */}
                     <div className="space-y-6">
@@ -55,7 +55,7 @@ const ImprovementSection = () => {
                                 <div key={index} className="relative">
                                     <div className="flex items-start gap-4 py-1">
                                         <CheckIcon />
-                                        <Paragraph className="text-[#6C63FF] text-sm">{benefit}</Paragraph>
+                                        <Paragraph className="text-[#6C63FF] text-md">{benefit}</Paragraph>
                                         {
                                             index < benefits.length - 1 && (
                                                 <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#EEF2FF]" />

@@ -15,10 +15,13 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 const ModuleCard = ({ title, description, icon: Icon }) => (
   <div className="relative p-6 bg-gradient-to-br from-white to-blue-50 rounded-xl border border-blue-100 hover:border-blue-300 transition-all duration-300 group">
     <div className="absolute top-0 right-0 w-20 h-20 bg-blue-50 rounded-bl-full opacity-50 group-hover:bg-blue-100"></div>
-    
+
     {/* Icon floating in top-right */}
     <div className="absolute top-4 right-4">
-      <Icon size={24} className="text-blue-500 group-hover:text-blue-600 transform group-hover:scale-110 transition-transform duration-300" />
+      <Icon
+        size={24}
+        className="text-blue-500 group-hover:text-blue-600 transform group-hover:scale-110 transition-transform duration-300"
+      />
     </div>
 
     <div className="space-y-4">

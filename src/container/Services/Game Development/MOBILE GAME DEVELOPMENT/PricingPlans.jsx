@@ -136,12 +136,12 @@ const PricingPlans = () => {
 
   return (
     <WrapperContainer>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Billing Toggle */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-6">
           <div className="bg-gray-100 p-1 rounded-full inline-flex shadow">
             <motion.button
-              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
+              className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 
                 ${billingCycle === "monthly" ? "bg-white shadow-md text-black" : "text-gray-600"}`}
               onClick={() => setBillingCycle("monthly")}
               variants={buttonVariants}
@@ -150,7 +150,7 @@ const PricingPlans = () => {
               Monthly
             </motion.button>
             <motion.button
-              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 
+              className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 
                 ${billingCycle === "yearly" ? "bg-purple-600 text-white shadow-md" : "text-gray-600"}`}
               onClick={() => setBillingCycle("yearly")}
               variants={buttonVariants}
@@ -163,7 +163,7 @@ const PricingPlans = () => {
 
         {/* Pricing Cards */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -172,27 +172,27 @@ const PricingPlans = () => {
           {plans.map((plan) => (
             <motion.div
               key={plan.name}
-              className="bg-white rounded-lg p-4 flex flex-col border border-gray-200 text-center"
+              className="bg-white rounded-lg p-3 flex flex-col border border-gray-200 text-center"
               variants={cardVariants}
               whileHover={cardHover}
             >
-              <div className="flex flex-col items-center space-y-2">
+              <div className="flex flex-col items-center space-y-1.5">
                 {/* Plan Icon & Name */}
-                <span className={`text-2xl ${plan.iconColor || "text-gray-500"}`}>
+                <span className={`text-xl ${plan.iconColor || "text-gray-500"}`}>
                   {plan.icon}
                 </span>
-                <span className="text-sm font-semibold text-gray-500">{plan.name}</span>
+                <span className="text-xs font-semibold text-gray-500">{plan.name}</span>
 
                 {/* Plan Title */}
-                <Subheading className="text-base font-bold">{plan.title}</Subheading>
+                <Subheading className="text-sm font-bold">{plan.title}</Subheading>
               </div>
 
               {/* Features List */}
-              <ul className="space-y-2 text-left mt-3">
+              <ul className="space-y-1.5 text-left mt-2">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start">
                     <svg
-                      className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0"
+                      className="w-3.5 h-3.5 text-green-500 mt-0.5 mr-1.5 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -205,17 +205,17 @@ const PricingPlans = () => {
               </ul>
 
               {/* Price & Button */}
-              <div className="mt-auto pt-3">
-                <span className="text-lg font-bold text-gray-900">
+              <div className="mt-auto pt-2">
+                <span className="text-base font-bold text-gray-900">
                   {getPrice(plan)}
                 </span>
                 {billingCycle === "yearly" && plan.monthlyPrice !== 0 && (
-                  <div className="text-sm text-green-600 mt-1">
+                  <div className="text-xs text-green-600 mt-0.5">
                     Save {Math.round((1 - (plan.yearlyPrice / (plan.monthlyPrice * 12))) * 100)}%
                   </div>
                 )}
                 <motion.button
-                  className={`w-full py-1.5 px-3 mt-3 rounded text-xs font-medium transition-all duration-200
+                  className={`w-full py-1 px-2 mt-2 rounded text-xs font-medium transition-all duration-200
                     ${
                       plan.buttonVariant === "black"
                         ? "bg-black text-white hover:bg-gray-800"

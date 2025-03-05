@@ -38,13 +38,13 @@ const Navbar = () => {
     // Helper function to find features for a category
     const getFeaturesForCategory = (categoryType) => {
         // First try to find an exact match by id
-        const exactMatch = services.find(
+        const exactMatch = serviceCategories.find(
             (service) => service.id.toLowerCase() === categoryType.toLowerCase()
         );
         if (exactMatch) return exactMatch.features;
 
         // If no exact match, try to match by titles (more flexible)
-        const matchByTitle = services.find(
+        const matchByTitle = serviceCategories.find(
             (service) =>
                 service.title.toLowerCase().includes(categoryType.toLowerCase()) ||
                 categoryType.toLowerCase().includes(service.title.toLowerCase())
@@ -207,13 +207,13 @@ const Navbar = () => {
                                 </div>
 
                                 <div className="lg:hidden flex items-center ml-auto space-x-4">
-                                    <button
+                                    {/* <button
                                         onClick={() => setIsSearchVisible(true)}
                                         className="text-white hover:text-gray-300"
                                         aria-label="Open search"
                                     >
                                         <Search className="h-5 w-5" />
-                                    </button>
+                                    </button> */}
                                     <button
                                         onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
                                         className="text-white hover:text-gray-300"

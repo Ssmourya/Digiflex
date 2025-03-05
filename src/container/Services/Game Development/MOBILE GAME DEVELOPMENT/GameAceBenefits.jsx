@@ -64,7 +64,8 @@ const DigiflexBenefits = () => {
         <div className="text-center mb-12">
           <Heading>Why Choose Digiflex for Mobile Game Development?</Heading>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Digiflex specializes in creating high-performance, cross-platform mobile games that engage, entertain, and drive success.
+            Digiflex specializes in creating high-performance, cross-platform
+            mobile games that engage, entertain, and drive success.
           </p>
         </div>
 
@@ -75,9 +76,7 @@ const DigiflexBenefits = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
-          >
+          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
             Get Started with Digiflex
           </button>
         </div>

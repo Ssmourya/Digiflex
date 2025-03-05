@@ -9,7 +9,9 @@ const Hero = () => {
   const getTypewriterStyle = (index) => {
     const delay = index * 0.1; // Incremental delay for each character
     return {
-      animation: `typewriter 0.5s ease-out ${delay}s forwards, bounce 0.3s ${delay + 0.2}s ease-out, colorChange 1s ${delay + 0.4}s infinite alternate`,
+      animation: `typewriter 0.5s ease-out ${delay}s forwards, bounce 0.3s ${
+        delay + 0.2
+      }s ease-out, colorChange 1s ${delay + 0.4}s infinite alternate`,
       opacity: 0, // Start invisible
     };
   };

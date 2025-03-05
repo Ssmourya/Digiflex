@@ -5,16 +5,13 @@ import GameAceBenefits from "./GameAceBenefits";
 import Faq from "../../../../components/Faq";
 import { MobileGameFAQData } from "../FAQData";
 
-const Body = () => {
-  return (
-    <>
-      <ServicesSection />
-
-      <PricingPlans />
-      <GameAceBenefits />
-      <Faq faqs={MobileGameFAQData} />
-    </>
-  );
-};
+const Body = () => (
+  <>
+    <ServicesSection />
+    <PricingPlans />
+    <GameAceBenefits />
+    <Faq faqs={MobileGameFAQData} />
+  </>
+);
 
 export default Body;

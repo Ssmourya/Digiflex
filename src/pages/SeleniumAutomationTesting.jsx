@@ -20,7 +20,6 @@ const SeleniumAutomationTesting = () => {
             <SpeedBenefits/>
             <ProductShowcase/>
             <IntegrationShowcase/>
-            
         </div>
     )
 }

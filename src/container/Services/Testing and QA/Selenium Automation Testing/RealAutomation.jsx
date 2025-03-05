@@ -57,7 +57,7 @@ const RealAutomation = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="md:w-1/2 flex items-center justify-center">
+                <div className="sm:w-3/4 md:w-1/2   flex items-center justify-center">
                     <div className="w-full h-full relative">
                         <img
                             src={RealAutomationImg}

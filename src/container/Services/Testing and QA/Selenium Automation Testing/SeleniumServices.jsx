@@ -7,33 +7,33 @@ import Paragraph from '../../../../Layout/Paragraph';
 
 const features = [
     {
-        icon: <Cog className="w-8 h-8 text-blue-600" />, 
-        title: "Build-Test-Deploy Automation", 
+        icon: <Cog className="w-8 h-8 text-blue-600" />,
+        title: "Build-Test-Deploy Automation",
         description: "Streamline software delivery pipelines with seamless automation. Minimize manual intervention, reduce errors, and enhance CI/CD processes for rapid deployments."
     },
     {
-        icon: <Database className="w-8 h-8 text-blue-600" />, 
-        title: "Component/Data Driven Automation", 
+        icon: <Database className="w-8 h-8 text-blue-600" />,
+        title: "Component/Data Driven Automation",
         description: "Leverage reusable test components and dynamic data sets for scalable automation. Increase efficiency by reducing redundant scripts and enhancing adaptability to changes."
     },
     {
-        icon: <CheckCircle className="w-8 h-8 text-blue-600" />, 
-        title: "Built-in Automation Expertise", 
+        icon: <CheckCircle className="w-8 h-8 text-blue-600" />,
+        title: "Built-in Automation Expertise",
         description: "Quickly adapt to evolving business requirements with a robust automation framework. Improve test accuracy and consistency while reducing manual intervention."
     },
     {
-        icon: <Layout className="w-8 h-8 text-blue-600" />, 
-        title: "Easy Updating & Reusability", 
+        icon: <Layout className="w-8 h-8 text-blue-600" />,
+        title: "Easy Updating & Reusability",
         description: "Reduce maintenance costs and effort with a modular automation approach. Ensure high reusability of test scripts, minimizing redundancy and maximizing efficiency."
     },
     {
-        icon: <BarChart3 className="w-8 h-8 text-blue-600" />, 
-        title: "Advanced Reporting & Analysis", 
+        icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+        title: "Advanced Reporting & Analysis",
         description: "Gain real-time insights with detailed reports and analytics dashboards. Identify performance bottlenecks, improve decision-making, and enhance test transparency."
     },
     {
-        icon: <Code className="w-8 h-8 text-blue-600" />, 
-        title: "Comprehensive Test Framework", 
+        icon: <Code className="w-8 h-8 text-blue-600" />,
+        title: "Comprehensive Test Framework",
         description: "Integrate seamlessly with various automation tools and technologies. Simplify test case management and enhance collaboration across teams."
     }
 ];
@@ -43,19 +43,17 @@ const SeleniumServices = () => {
         <WrapperContainer>
             <div>
                 {/* Header Section */}
-                <div className="mb-12">
-                <Heading>
-                        OUR OFFERING
-                        </Heading>
-                        <Subheading>
-                    <h2  className='text-center'>
-                        END-TO-END SELENIUM TESTING SERVICES
-                    </h2>
+                <div>
+                    <Heading>
+                        Our Offering
+                    </Heading>
+                    <Subheading  className='text-center'>                       
+                        End To End Selenium Testing Services                    
                     </Subheading>
-                    <Paragraph>
-                        Our Selenium Testing Services Framework provides a comprehensive solution to 
+                    <Paragraph  className='text-center'>
+                        Our Selenium Testing Services Framework provides a comprehensive solution to
                         accelerate QA cycles and enhance digital service levels.
-                        </Paragraph>
+                    </Paragraph>
                 </div>
 
                 {/* Features Grid */}
@@ -67,19 +65,19 @@ const SeleniumServices = () => {
                                     <div className="bg-blue-50 p-3 rounded-lg group-hover:bg-blue-100 transition-colors">
                                         {feature.icon}
                                     </div>
-                                        <Subheading>
+                                    <Subheading>
                                         {feature.title}
-                                        </Subheading>
+                                    </Subheading>
                                 </div>
                                 <Paragraph>
                                     {feature.description}
-                                    </Paragraph>
+                                </Paragraph>
                             </div>
                         ))
                     }
                 </div>
             </div>
-            </WrapperContainer>
+        </WrapperContainer>
     );
 };
 

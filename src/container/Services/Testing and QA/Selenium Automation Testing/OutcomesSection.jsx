@@ -11,16 +11,14 @@ const OutcomesSection = () => {
             <div>
 
                 {/* Header Section */}
-                <div className="mb-10">
+                <div>
                     <Heading>
                         The outcomes we deliver
                     </Heading>
-                    <Subheading>
-                        {/* <h2 className="text-3xl text-center font-semibold "> */}
+                    <Subheading className='text-center'>
                             Faster product delivery cycles & increased customer satisfaction
-                        {/* </h2> */}
                     </Subheading>
-                    <Paragraph>
+                    <Paragraph className='text-center'>
                         Apexon Selenium testing services deliver significant business advantages:
                     </Paragraph>
                 </div>

@@ -30,20 +30,20 @@ const SpeedBenefits = () => {
     return (
         <WrapperContainer>
             <div>
-                <div className="text-center mb-16">
+                <div>
                     <Heading>
                         why digiflex.ai ?
                     </Heading>
-                    <Subheading>
+                    <Subheading className='text-center'>
                         speed redefines success
                     </Subheading>
-                    <Paragraph>
+                    <Paragraph className='text-center'>
                         at digiflex.ai, we empower businesses with next-gen automation and AI-driven solutions. experience unparalleled speed, accuracy, and efficiency like never before.
                     </Paragraph>
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid md:grid-cols-3 gap-8 mb-12">
+                <div className="grid md:grid-cols-3 gap-8 mb-8">
                     {
                         statsData.map((stat, index) => (
                             <div key={index} className="text-center">
@@ -52,7 +52,7 @@ const SpeedBenefits = () => {
                                 </div>
                                 <h3 className={`text-xl font-semibold text-blue-700 mb-3`}>{stat.title}</h3>
                                 <h4 className="text-lg font-semibold text-blue-700 mb-2">{stat.subtitle}</h4>
-                                <p className="text-gray-600">{stat.description}</p>
+                                <Paragraph className='text-center'>{stat.description}</Paragraph>
                             </div>
                         ))
                     }

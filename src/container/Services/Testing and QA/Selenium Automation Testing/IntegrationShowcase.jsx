@@ -90,13 +90,13 @@ const IntegrationShowcase = () => {
     return (
 
         <WrapperContainer>
-            <div>
+            <div className="text-center mb-10">
                 <Heading>
                     Enterprise-Ready Integrations
                 </Heading>
 
                 
-                <div className="text-center mb-16">
+                <div className="text-center mb-8">
                     <Paragraph className='text-center'>
                         Connect your essential tools and automate workflows with our pre-built integrations
                     </Paragraph>

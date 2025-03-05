@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import Slider from 'react-slick'; // Import Slider from react-slick
-import software from "../../../../assets/Software _Testing.jpeg"; // Image import (make sure the path is correct)
+import Slider from 'react-slick';
+import software from "../../../../assets/Software _Testing.jpeg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,53 +8,50 @@ import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Subheading from '../../../../Layout/Subheading';
 import Paragraph from '../../../../Layout/Paragraph';
 
-// ContentBlock component to display each content
 const ContentBlock = ({ title, description, image, hyperlink }) => {
-    // Function to truncate the description if it exceeds 20 words
     const truncateDescription = (desc) => {
         const words = desc.split(' ');
         if (words.length > 20) {
-            return words.slice(0, 20).join(' ') + '...'; // Truncate and add "..."
+            return words.slice(0, 20).join(' ') + '...';
         }
         return desc;
     };
 
     return (
-        <div className="flex flex-col md:flex-row items-center gap-8 w-11/12 max-h-[42vh] mx-auto my-12 p-6 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-shadow ease-in-out">
-
-            {/* Right Image Section */}
-            <div className="w-full md:w-1/2 flex justify-center items-center">
-                <img src={image} alt={title} className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300" />
+        <div className="lg:h-[400px] flex flex-col md:flex-row items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 w-11/12 mx-auto my-2 sm:my-4 md:my-6 lg:my-12 p-2 sm:p-3 md:p-4 lg:p-6 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-shadow ease-in-out">
+        <div className="w-full md:w-1/2 flex justify-center items-center mb-2 sm:mb-3 md:mb-0">
+            <img 
+                src={image} 
+                alt={title} 
+                className="w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" 
+            />
+        </div>
+    
+        <div className="w-full md:w-1/2 space-y-1 sm:space-y-2 py-1 sm:py-2 md:py-3">
+            <div className="inline-block">
+                <Subheading className="text-base sm:text-lg md:text-xl lg:text-2xl">{title}</Subheading>
             </div>
-
-            {/* Left Content Section */}
-            <div className="w-full md:w-1/2 space-y-2 py-3">
-                {/* Title Section */}
-            
-                <div className="inline-block">
-                    <Subheading>{title}</Subheading>
-                </div>
-
-                {/* Description Section */}
-                <Paragraph>
-                    {truncateDescription(description)}
-                </Paragraph>
-
-                {/* Hyperlink Section */}
-                <div>
-                    <a href={hyperlink} className="text-blue-500 hover:text-blue-700 font-semibold">Know More {"->"}</a>
-                </div>
+    
+            <Paragraph className="text-xs sm:text-sm md:text-base">
+                {truncateDescription(description)}
+            </Paragraph>
+    
+            <div className="pt-1 sm:pt-2">
+                <a 
+                    href={hyperlink} 
+                    className="text-blue-500 hover:text-blue-700 font-semibold text-xs sm:text-sm md:text-base inline-flex items-center"
+                >
+                    Know More 
+                    <span className="ml-1">→</span>
+                </a>
             </div>
         </div>
+    </div>
     );
 };
 
-
-
-// Main ContentSlider component
 const ContentSlider = () => {
-    
-    const sliderRef = useRef(null); // Ref to access slider instance
+    const sliderRef = useRef(null);
     const contentData = [
         {
             img: software,
@@ -106,26 +103,69 @@ const ContentSlider = () => {
         }
     ];
     
-    
-  // Slider settings
     const sliderSettings = {
-        // dots: true, // Show navigation dots
-        infinite: true, // Infinite loop
-        speed: 500, // Transition speed
-        slidesToShow: 1.7, // Show 1 slide at a time
-        slidesToScroll: 1, // Scroll 1 slide at a time
-        autoplay: true, // Enable auto play
-        autoplaySpeed: 3000, // Auto play speed
-        arrows: false, // Hide arrows 
-        pauseOnHover: true, // Pause autoplay on hover
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        responsive: [
+            {
+                breakpoint: 3000,
+                settings: {
+                    slidesToShow: 1.6,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '10%',
+                }
+            },
+            {
+                breakpoint: 1536,
+                settings: {
+                    slidesToShow: 1.6,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '5%',
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '15%',
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '10%',
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '20px',
+                }
+            }
+        ]
     };
 
     return (
-        <WrapperContainer className="relative w-full bg-white">
-            {/* Slider component */}
-            <Slider {...sliderSettings} ref={sliderRef}>
-                {
-                    contentData.map((item, index) => (
+        <WrapperContainer className="relative w-full bg-white overflow-hidden">
+            <div className="max-w-[1920px] mx-auto">
+                <Slider {...sliderSettings} ref={sliderRef}>
+                    {contentData.map((item, index) => (
                         <ContentBlock
                             key={index}
                             title={item.title}
@@ -133,9 +173,9 @@ const ContentSlider = () => {
                             image={item.img}
                             hyperlink={item.hyperlink}
                         />
-                    ))
-                }
-            </Slider>
+                    ))}
+                </Slider>
+            </div>
         </WrapperContainer>
     );
 };

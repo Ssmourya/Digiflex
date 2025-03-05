@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 import Define_Scope from "../../../../assets/Define_Scope.jpeg";
 import Information_Gathering from "../../../../assets/Information_Gathering.jpeg";
@@ -6,11 +6,14 @@ import Enumeration from "../../../../assets/Enumeration.jpeg";
 import Attack_and_Penetration from "../../../../assets/Attack_and_Penetration.jpeg";
 import reporting from "../../../../assets/reporting.jpeg";
 import Remediation_Testing from "../../../../assets/Remediation_Testing.jpeg";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
+import Subheading from "../../../../Layout/Subheading";
 
 const PentestProgress = () => {
-    const [currentSlide, setCurrentSlide] = useState(4); // Starting at "Reporting"
+  const [currentSlide, setCurrentSlide] = useState(4); // Starting at "Reporting"
+  const progressRef = useRef(null);
 
-    const steps = [
+      const steps = [
         { 
             name: 'Define Scope',
             description: 'We work with you to clearly define the boundaries and objectives of the security assessment. This step ensures that both parties agree on the systems, applications, and networks that will be tested. It also includes determining the rules of engagement, legal considerations, and testing methodologies to be used. A well-defined scope helps avoid misunderstandings and ensures a smooth testing process.',
@@ -48,108 +51,161 @@ const PentestProgress = () => {
             status: 'upcoming' 
         }
     ];
-      
-    const handlePrevious = () => {
-        setCurrentSlide((current) => Math.max(0, current - 1));
-    };
 
-    const handleNext = () => {
-        setCurrentSlide((current) => Math.min(steps.length - 1, current + 1));
-    };
 
-    return (
-        <div className="w-full px-4 md:px-6 lg:px-8 max-w-7xl mx-auto py-8 md:py-12 space-y-6 md:space-y-8">
-            {/* Progress Steps */}
-            <div className="relative overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0">
-                <div className="flex items-center justify-start md:justify-between min-w-max gap-2 md:gap-4">
-                    {steps.map((step, index) => (
-                        <div key={step.name} className="flex items-center">
-                            <div className="relative flex items-center">
-                                {/* Step Connector */}
-                                <div
-                                    className={`hidden md:block w-12 lg:w-24 h-[2px] transition-colors duration-300 ${
-                                        index === 0 ? 'hidden' : 
-                                        index <= currentSlide ? 'bg-gradient-to-r from-blue-500 to-purple-500' :
-                                        'bg-gray-200'
-                                    }`}
-                                />
+  useEffect(() => {
+    if (progressRef.current) {
+      progressRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+    }
+  }, [currentSlide]);
 
-                                {/* Step Button */}
-                                <button
-                                    onClick={() => setCurrentSlide(index)}
-                                    className={`w-auto min-w-[60px] md:min-w-[80px] lg:min-w-[100px] px-2 py-1 rounded-full border text-xs md:text-sm truncate whitespace-nowrap transition-all duration-300
-                                        ${
-                                            index === currentSlide 
-                                                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent' 
-                                                : index < currentSlide 
-                                                ? 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50' 
-                                                : 'bg-white text-gray-400 border-gray-200'
-                                        }`}
-                                >
-                                    {step.name}
-                                </button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+  // Ensure first button is visible on mount
+  useEffect(() => {
+    if (progressRef.current && currentSlide === 0) {
+      progressRef.current.scrollIntoView({
+        behavior: "smooth",
+        inline: "start",
+      });
+    }
+  }, []);
 
-            {/* Content Card */}
-            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg overflow-hidden shadow-xl">
-                <div className="p-4 md:p-6 lg:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
-                    {/* Image Section */}
-                    <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
-                        <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64">
-                            <img 
-                                src={steps[currentSlide].image} 
-                                alt={steps[currentSlide].name} 
-                                className="rounded-lg shadow-lg w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
+  const handlePrevious = () => {
+    setCurrentSlide((current) => Math.max(0, current - 1));
+  };
 
-                    {/* Text Content */}
-                    <div className="w-full lg:w-2/3 space-y-3 md:space-y-4 text-center lg:text-left">
-                        <h2 className="text-2xl md:text-3xl font-semibold text-white">
-                            {steps[currentSlide].name}
-                        </h2>
-                        <p className="text-base md:text-lg text-white/90">
-                            {steps[currentSlide].description}
-                        </p>
-                    </div>
-                </div>
-            </div>
+  const handleNext = () => {
+    setCurrentSlide((current) => Math.min(steps.length - 1, current + 1));
+  };
 
-            {/* Navigation Arrows */}
-            <div className="flex justify-center md:justify-end gap-3">
-                <button 
-                    onClick={handlePrevious}
-                    disabled={currentSlide === 0}
-                    className={`p-2 rounded-full border bg-white shadow-sm transition-all duration-300 
-                        ${currentSlide === 0 
-                            ? 'opacity-50 cursor-not-allowed border-gray-200' 
-                            : 'border-gray-300 hover:bg-gray-50 active:bg-gray-100'}`}
-                >
-                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                
-                <button 
-                    onClick={handleNext}
-                    disabled={currentSlide === steps.length - 1}
-                    className={`p-2 rounded-full border bg-white shadow-sm transition-all duration-300
-                        ${currentSlide === steps.length - 1 
-                            ? 'opacity-50 cursor-not-allowed border-gray-200' 
-                            : 'border-gray-300 hover:bg-gray-50 active:bg-gray-100'}`}
-                >
-                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
-            </div>
+  return (
+    <WrapperContainer className="flex items-center justify-center custom-scrollbar w-full">
+      <div className="w-full bg-white rounded-2xl shadow-2xl overflow-hidden">
+        {/* Progress Steps - Scrollable on Small Screens */}
+        <div className="bg-blue-700 py-4">
+          <div className="flex items-center justify-start space-x-2 md:space-x-4 overflow-x-auto pb-2 no-scrollbar snap-x snap-mandatory">
+            {steps.map((step, index) => (
+              <button
+                key={step.name}
+                ref={index === currentSlide ? progressRef : null}
+                onClick={() => setCurrentSlide(index)}
+                className={`relative px-10 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 flex-shrink-0 snap-center
+                  ${
+                    index === currentSlide
+                      ? "bg-white text-indigo-700 shadow-lg"
+                      : "text-white/80 hover:bg-white/10"
+                  }
+                  ${index < currentSlide ? "opacity-100" : "opacity-60"}
+                `}
+              >
+                {step.name}
+              </button>
+            ))}
+          </div>
         </div>
-    );
+
+        {/* Content Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 md:p-8">
+          {/* Image Section */}
+          <div className="flex items-center justify-center order-2 md:order-1">
+            <div className="w-full max-w-xs md:max-w-sm h-60 md:h-80 rounded-xl overflow-hidden shadow-xl">
+              <img
+                src={steps[currentSlide].image}
+                alt={steps[currentSlide].name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="space-y-4 order-1 md:order-2">
+            <Subheading className="text-2xl md:text-3xl font-bold">
+              {steps[currentSlide].name}
+            </Subheading>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              {steps[currentSlide].description}
+            </p>
+          </div>
+        </div>
+
+        {/* Navigation Buttons */}
+        <div className="flex justify-between p-4 bg-gray-100">
+          <button
+            onClick={handlePrevious}
+            disabled={currentSlide === 0}
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full flex items-center space-x-2 text-xs md:text-base
+              ${
+                currentSlide === 0
+                  ? "text-gray-400 cursor-not-allowed"
+                  : "bg-indigo-600 text-white hover:bg-indigo-700"
+              }
+            `}
+          >
+            <svg
+              className="w-4 h-4 md:w-5 md:h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            <span>Previous</span>
+          </button>
+
+          <button
+            onClick={handleNext}
+            disabled={currentSlide === steps.length - 1}
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full flex items-center space-x-2 text-xs md:text-base
+              ${
+                currentSlide === steps.length - 1
+                  ? "text-gray-400 cursor-not-allowed"
+                  : "bg-indigo-600 text-white hover:bg-indigo-700"
+              }
+            `}
+          >
+            <span>Next</span>
+            <svg
+              className="w-4 h-4 md:w-5 md:h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Custom Scrollbar Styles */}
+      <style jsx global>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 12px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+    </WrapperContainer>
+  );
 };
 
 export default PentestProgress;

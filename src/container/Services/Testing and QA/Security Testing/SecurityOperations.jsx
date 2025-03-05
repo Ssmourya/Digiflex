@@ -9,17 +9,17 @@ import Subheading from "../../../../Layout/Subheading";
 
 const SecurityOperations = () => {
     return (
-        <WrapperContainer className="flex flex-col md:flex-row gap-8 py-8 bg-white">
+        <WrapperContainer className="flex flex-col md:flex-row gap-8 bg-white">
             {/* Security Operations Center */}
             <div className="bg-gray-100 p-6 rounded-2xl shadow-lg w-full md:w-1/2">
                 <div className="w-full h-64 mb-4"> {/* Fixed height wrapper for image */}
-                <img
-                    src={security_1}
-                    alt="Security Operations Center"
-                    className="rounded-xl w-full h-full object-cover"
-                />
+                    <img
+                        src={security_1}
+                        alt="Security Operations Center"
+                        className="rounded-xl w-full h-full object-cover"
+                    />
                 </div>
-                <Subheading className="text-2xl text-blue-600 font-semibold mb-2">Security Operations Center</Subheading>
+                <Subheading className="cursor-pointer">Security Operations Center</Subheading>
                 <Paragraph className="mb-4">
                     Kyndryl Security Operations Center provides comprehensive support and
                     protection throughout the entire lifecycle of cyber threats using AI,
@@ -29,37 +29,37 @@ const SecurityOperations = () => {
                     operations to us.
                 </Paragraph>
                 <a
-                href="#"
-                className="text-blue-600  font-semibold hover:underline"
+                    href="#"
+                    className="text-blue-600  font-semibold hover:underline"
                 >
-                Explore Security Operations Center &gt;
+                    Explore Security Operations Center &gt;
                 </a>
             </div>
 
             {/* Security Operations as a Platform */}
             <div className="bg-gray-100 p-6 rounded-2xl shadow-lg w-full md:w-1/2">
-    <div className="w-full h-64 mb-4"> {/* Fixed height wrapper for image */}
-        <img
-            src={security_2}
-            alt="Security Operations as a Platform"
-            className="rounded-xl w-full h-full object-cover"
-        />
-    </div>
-    <Subheading className="text-2xl text-blue-600 font-semibold mb-2">
-        Security Operations as a Platform
-    </Subheading>
-    <Paragraph className="mb-4">
-        Security Operations as a platform provides a secure infrastructure
-        that integrates key components of modern security, including SOAR,
-        SIEM, endpoint detection response, and vulnerability management.
-        Kyndryl supports customers at any stage of their cyber resilience
-        journey, offering centralized insights to quickly detect threats and
-        automate responses.
-    </Paragraph>
-    <a href="#" className="text-blue-600 font-semibold hover:underline">
-        Explore Security Operations as a Platform &gt;
-    </a>
-</div>
+                <div className="w-full h-64 mb-4"> {/* Fixed height wrapper for image */}
+                    <img
+                        src={security_2}
+                        alt="Security Operations as a Platform"
+                        className="rounded-xl w-full h-full object-cover"
+                    />
+                </div>
+                <Subheading className="cursor-pointer">
+                    Security Operations as a Platform
+                </Subheading>
+                <Paragraph className="mb-4">
+                    Security Operations as a platform provides a secure infrastructure
+                    that integrates key components of modern security, including SOAR,
+                    SIEM, endpoint detection response, and vulnerability management.
+                    Kyndryl supports customers at any stage of their cyber resilience
+                    journey, offering centralized insights to quickly detect threats and
+                    automate responses.
+                </Paragraph>
+                <a href="#" className="text-blue-600 font-semibold hover:underline">
+                    Explore Security Operations as a Platform &gt;
+                </a>
+            </div>
 
         </WrapperContainer>
     );

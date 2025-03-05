@@ -43,7 +43,7 @@
         ];
 
         return (
-            <WrapperContainer className="bg-white mb-20">   
+            <WrapperContainer className="bg-white">   
                 <Heading className="mb-8">
                     Comprehensive Web Application Penetration Testing Services
                 </Heading>
@@ -51,7 +51,7 @@
                     At DigiFlex.ai, we deliver tailored penetration testing services to protect your applications against evolving cyber threats. Our methods ensure the security and integrity of your digital assets.
                 </Paragraph>
 
-                <div className="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div className="w-14/15 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {testingData.map((test, index) => (
                         <TestingMethodCard
                             key={index}

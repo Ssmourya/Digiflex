@@ -13,14 +13,12 @@ const SecurityTestingServices = () => {
   return (
     <div>
         <HeroSection/>
-        <WrapperContainer>
         <CyberDefenseSection/>
         <SecurityOperations/>
         <DigitalTransformation/>
         <WebAppPenetrationTesting/>
         <WebAppPenetrationTestingProcess/>
         <SecurityApproach/>
-        </WrapperContainer>
     </div>
   )
 }

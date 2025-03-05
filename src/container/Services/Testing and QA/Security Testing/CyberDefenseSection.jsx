@@ -11,7 +11,7 @@ const CyberDefenseSection = () => {
                     <Heading>
                          Build adaptive, flexible, and scalable cyber defense solutions
                     </Heading>
-                    <Paragraph className="text-sm sm:text-base">
+                    <Paragraph>
                          digiflex.ai provides businesses with cutting-edge security solutions that are 
                          adaptive, flexible, and designed to scale seamlessly. our ai-driven cybersecurity 
                          and incident response services empower organizations to assess, protect, and recover 
@@ -21,7 +21,7 @@ const CyberDefenseSection = () => {
                          with digiflex.ai's expertise, businesses can customize tools and operational models 
                          to meet unique challenges and regional requirements. our solutions are designed to 
                          streamline operations while adhering to regional mandates and {" "}
-                         <a href="#" className="text-blue-700 hover:text-blue-800 underline">cyber regulations.</a>
+                         <a href="#" className="text-blue-700 font-semibold hover:text-blue-800 underline">cyber regulations.</a>
                     </Paragraph>
                </div>
 

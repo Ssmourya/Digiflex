@@ -8,6 +8,7 @@ import Innovation from "../../../../assets/Innovation.jpeg";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 import Subheading from "../../../../Layout/Subheading";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 
 const cardData = [
     {
@@ -81,9 +82,9 @@ const Card = ({ image, alt, heading, description, icon }) => {
             <div className="p-6">
                 <div className="flex items-center mb-4">
                     <div className="flex-shrink-0">{icon}</div>
-                    <Subheading className="ml-3 text-xl font-semibold text-gray-800">{heading}</Subheading>
+                    <Subheading className="ml-3 text-xl font-semibold">{heading}</Subheading>
                 </div>
-                <Paragraph className="text-sm">{description}</Paragraph>
+                <Paragraph className="text-md">{description}</Paragraph>
             </div>
         </div>
     );
@@ -91,7 +92,7 @@ const Card = ({ image, alt, heading, description, icon }) => {
 
 const DigitalTransformation = () => {
     return (
-        <div className="bg-white w-11/12 mx-auto px-4 py-12 text-black">
+        <WrapperContainer>
             {/* Header Section */}
             <div className="mb-8 flex flex-col lg:flex-row lg:justify-between gap-8">
                 <Heading>
@@ -116,7 +117,7 @@ const DigitalTransformation = () => {
                     />
                 ))}
             </div>
-        </div>
+        </WrapperContainer> 
     );
 };
 

@@ -40,7 +40,7 @@ export default function PerformanceTestingDiagram() {
     return (
         <WrapperContainer>
             {/* Title */}
-            <Heading className="text-2xl sm:text-3xl font-bold text-center sm:text-left">
+            <Heading>
                 Performance Testing Approach
             </Heading>
 

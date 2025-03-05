@@ -45,9 +45,9 @@ const AnalystRecognition = () => {
 
     return (
         <WrapperContainer>
-            <div className="bg-white py-10">
+            <div className="bg-white">
                 {/* Heading Section */}
-                <div className="flex flex-col items-center justify-center mb-8">
+                <div className="flex flex-col items-center justify-center">
                     {/* <div className="flex flex-row items-center justify-start space-x-4">
                         <span className="w-2 h-2 rounded-full bg-[#E42525]"></span>
                         <p className="text-[#E42525] font-bold text-2xl">Our Value</p>

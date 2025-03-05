@@ -27,22 +27,23 @@ const BusinessSolutions = () => {
 
     return (
         <WrapperContainer>
-            <div className="flex">
-                {/* Title Section */}
-                <div className="text-center mb-12 md:mb-16">
-                    <Heading>Solutions for Businesses</Heading>
-                    <div className="w-24 h-1 bg-orange-500 mx-auto mt-2"></div>
-                </div>
+            <div >
+               
+                <Heading>Solutions for Businesses</Heading>
+             
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-7xl">
                     {solutions.map((solution, index) => (
-                        <div key={index} className="relative group overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105">
+                        <div 
+                            key={index} 
+                            className="relative group overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
+                        >
                             {/* Background Image */}
                             <img 
                                 src={solution.image} 
                                 alt={solution.title}
-                                className="w-full h-64 md:h-72 lg:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                             
                             {/* Base Overlay */}

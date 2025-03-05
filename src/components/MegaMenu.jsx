@@ -145,6 +145,7 @@ const NavItem = ({ setActiveDropdown, service, topbarHeight }) => {
                                             src={service.image}
                                             alt={service.title}
                                             className="w-full h-full object-cover rounded-xl"
+                                            style={{ maxHeight:'400px' }}
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-blue-950/50 to-transparent flex items-end">
                                             <div className="p-6">

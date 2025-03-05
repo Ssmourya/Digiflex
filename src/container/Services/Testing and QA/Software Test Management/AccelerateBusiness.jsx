@@ -44,7 +44,7 @@ const AccelerateBusiness = () => {
     ];
 
     return (
-        <WrapperContainer>
+        <WrapperContainer className='mb-10'>
             <div className="bg-white text-center">
                 <Heading>What we do?</Heading>
                 <Subheading className="text-center">Accelerate your business</Subheading>

@@ -164,6 +164,7 @@ const Navbar = () => {
                                                     onClick={(e) =>
                                                         navItem.hasDropdown && e.preventDefault()
                                                     }
+                                                    target = {navItem.href === "digiflex.ai/blog" ? "_blank" : "_self"}
                                                 >
                                                     {navItem.label}
                                                 </Link>

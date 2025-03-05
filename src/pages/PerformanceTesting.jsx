@@ -13,14 +13,12 @@ const PerformanceTesting = () => {
     return (
         <div>
             <PerformanceTestingHero/>
-			<WrapperContainer>
 			<PerformanceTestingSection/>
 			<Services/>
 			<PerformanceTestingDiagram/>
 			<TestingTools/>
 			<BusinessSolutions/>
 			<PerformanceChallenges/>
-			</WrapperContainer>
         </div>
     )
 }

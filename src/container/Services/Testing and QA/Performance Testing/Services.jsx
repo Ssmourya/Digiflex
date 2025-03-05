@@ -72,7 +72,7 @@ const Services = () => {
 
     return (
         <WrapperContainer>
-            <div className="bg-white px-4 sm:px-6 lg:px-8">
+            <div>
                 <Heading>Services We Provide</Heading>
 
                 <div className="flex justify-center">

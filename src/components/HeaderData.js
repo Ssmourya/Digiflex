@@ -161,7 +161,7 @@ export const mainNavItems = [
   },
   {
     label: "Blog",
-    href: "#"
+    href: "/digiflex/blog"
   },
   {
     label: "About us",

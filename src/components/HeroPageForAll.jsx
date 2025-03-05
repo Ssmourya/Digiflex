@@ -4,7 +4,7 @@ import TestingQAbg from "../assets/TestingQAbg.mp4";
 
 const HeroPageForAll = ({ title, description, videoSrc }) => {
   return (
-    <div className="relative w-full min-h-screen text-white flex flex-col justify-end pb-12">
+    <div className="relative w-full min-h-screen text-white flex flex-col justify-end">
       {/* Background Video */}
       <video
         autoPlay

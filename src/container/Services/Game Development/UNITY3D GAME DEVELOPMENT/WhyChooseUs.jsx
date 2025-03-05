@@ -26,18 +26,18 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: Users,
-      title: "Seasoned Unity Developers",
-      description: "Our experts harness Unity's full potential to create high-quality, customized games.",
+      title: "Experienced Unity Developers",
+      description: "Digiflex's experts leverage Unity's capabilities to craft high-quality, tailored games.",
     },
     {
       icon: CheckCircle,
-      title: "Full-Stack Unity Team",
-      description: "From game design to animation, our skilled team handles every aspect of development.",
+      title: "Comprehensive Unity Team",
+      description: "From game design to animation, Digiflex's proficient team manages every development aspect.",
     },
     {
       icon: Briefcase,
-      title: "Proven Track Record",
-      description: "With top-tier brand partnerships, we consistently deliver outstanding gaming experiences.",
+      title: "Established Success",
+      description: "With partnerships with leading brands, Digiflex consistently delivers exceptional gaming experiences.",
     },
   ];
 
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
     <WrapperContainer>
       {/* Enhanced Header */}
       <div className="text-center mb-16">
-        <Heading >Why Choose Our Unity Game Development Company</Heading>
+        <Heading>Why Choose Digiflex for Unity Game Development</Heading>
       </div>
 
       {/* Enhanced Cards Grid */}

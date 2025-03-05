@@ -54,9 +54,9 @@ const GameGenres = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <Heading>Game Genres Developed by Digiflex</Heading>
+          <Heading>Game Genres Crafted by Digiflex</Heading>
           <Subheading>
-            We create immersive games in various genres, bringing your vision to life.
+            Digiflex specializes in creating immersive games across a wide range of genres, turning your ideas into reality.
           </Subheading>
         </div>
 

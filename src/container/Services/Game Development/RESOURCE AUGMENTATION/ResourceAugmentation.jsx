@@ -16,42 +16,42 @@ const ResourceAugmentation = () => {
   const resources = [
     {
       name: "3D Artists",
-      description: "Enhance your game visuals with experienced 3D artists who specialize in character, environment, and asset creation.",
+      description: "Digiflex offers experienced 3D artists to enhance your game visuals, specializing in character, environment, and asset creation.",
       icon: <GameDevIcon paths={
         <path d="M12 2L2 12l10 10 10-10L12 2zm0 18.5L3.5 12 12 3.5l8.5 8.5-8.5 8.5zm0-4.5a4 4 0 100-8 4 4 0 000 8z" />
       } />
     },
     {
       name: "Game Developers",
-      description: "Expand your team with skilled developers proficient in Unity, Unreal Engine, and other game development frameworks.",
+      description: "Expand your team with Digiflex's skilled developers proficient in Unity, Unreal Engine, and other game development frameworks.",
       icon: <GameDevIcon paths={
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z" />
       } />
     },
     {
       name: "Animators",
-      description: "Get top-notch animators to create lifelike movements, cutscenes, and interactive animations for your game.",
+      description: "Digiflex provides top-notch animators to create lifelike movements, cutscenes, and interactive animations for your game.",
       icon: <GameDevIcon paths={
         <path d="M4 8h16v8H4V8zm2 2v4h12v-4H6zm14-6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z" />
       } />
     },
     {
       name: "UI/UX Designers",
-      description: "Improve player experience with professional UI/UX designers who specialize in intuitive game interfaces.",
+      description: "Improve player experience with Digiflex's professional UI/UX designers who specialize in intuitive game interfaces.",
       icon: <GameDevIcon paths={
         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z" />
       } />
     },
     {
       name: "Sound Designers",
-      description: "Elevate your game's audio with expert sound designers who create immersive sound effects and music.",
+      description: "Elevate your game's audio with Digiflex's expert sound designers who create immersive sound effects and music.",
       icon: <GameDevIcon paths={
         <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
       } />
     },
     {
       name: "QA Testers",
-      description: "Ensure high-quality gameplay with professional QA testers who specialize in bug detection and playability testing.",
+      description: "Ensure high-quality gameplay with Digiflex's professional QA testers who specialize in bug detection and playability testing.",
       icon: <GameDevIcon paths={
         <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" />
       } />

@@ -128,8 +128,8 @@ const Tools = () => {
       <div className={`p-4 transition-all duration-500 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
         {/* Header */}
         <div className="text-center mb-8">
-          <Heading>VR/XR Development Tools</Heading>
-          <Paragraph className='text-center'>Advanced tools and technologies for immersive experiences</Paragraph>
+          <Heading>Digiflex VR/XR Development Tools</Heading>
+          <Paragraph className='text-center'>Digiflex provides advanced tools and technologies for creating immersive experiences</Paragraph>
         </div>
         
         {/* Category tabs */}

@@ -17,21 +17,20 @@ const ServiceCard = memo(({ icon, title, description }) => (
 ));
 
 const services = [
-  { title: "On-Demand Game Development Teams", description: "Get access to skilled game developers, designers, and testers to scale your development team based on project needs.", icon: "🎮" },
-  { title: "Specialized Game Development Roles", description: "Hire expert developers for specific roles such as AI programming, physics simulation, and multiplayer networking.", icon: "🧠" },
-  { title: "VR & AR Game Development Support", description: "Enhance your development process with augmented reality and virtual reality experts to create immersive experiences.", icon: "🕶️" },
-  { title: "Game Art & Animation Augmentation", description: "Expand your creative team with skilled artists, animators, and UI/UX designers for stunning visuals and game assets.", icon: "🎨" },
-  { title: "Live Game Operations & Support", description: "Ensure smooth game operations with dedicated teams handling server management, bug fixes, and feature updates.", icon: "⚙️" },
-  { title: "Cloud Gaming Infrastructure Support", description: "Optimize your game performance with scalable cloud gaming solutions, including server setup, management, and maintenance.", icon: "☁️" },
+  { title: "On-Demand Game Development Teams", description: "Digiflex provides access to skilled game developers, designers, and testers to scale your development team based on project needs.", icon: "🎮" },
+  { title: "Specialized Game Development Roles", description: "Hire expert developers from Digiflex for specific roles such as AI programming, physics simulation, and multiplayer networking.", icon: "🧠" },
+  { title: "VR & AR Game Development Support", description: "Enhance your development process with Digiflex's augmented reality and virtual reality experts to create immersive experiences.", icon: "🕶️" },
+  { title: "Game Art & Animation Augmentation", description: "Expand your creative team with Digiflex's skilled artists, animators, and UI/UX designers for stunning visuals and game assets.", icon: "🎨" },
+  { title: "Live Game Operations & Support", description: "Ensure smooth game operations with Digiflex's dedicated teams handling server management, bug fixes, and feature updates.", icon: "⚙️" },
+  { title: "Cloud Gaming Infrastructure Support", description: "Optimize your game performance with Digiflex's scalable cloud gaming solutions, including server setup, management, and maintenance.", icon: "☁️" },
 ];
 
 const ResourceAugmentationServices = () => {
   return (
     <WrapperContainer>
         <Heading>Resource Augmentation for Game Development</Heading>
-        <Paragraph>
-          Scale your game development team efficiently with our expert augmentation services tailored to your project needs.
-        </Paragraph>
+        <Paragraph className='text-center'>Scale your game development team efficiently with Digiflex's expert augmentation services tailored to your project needs.</Paragraph>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
           {services.map((service, index) => (
             <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
@@ -42,5 +41,4 @@ const ResourceAugmentationServices = () => {
   );
 };
 
-  
 export default ResourceAugmentationServices;

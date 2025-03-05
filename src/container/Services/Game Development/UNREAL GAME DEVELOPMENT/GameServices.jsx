@@ -1,15 +1,14 @@
 import React from 'react';
-import { ArrowRight, Lightbulb,  Code, Map, Link, Gauge } from 'lucide-react';
+import { ArrowRight, Lightbulb, Code, Map, Link, Gauge } from 'lucide-react';
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
-
 
 const GameServices = () => {
   const services = [
     {
       id: 1,
       title: "Game Concept and Design",
-      description: "Bring your game ideas to life with our expert design team. We specialize in creating immersive and engaging game concepts tailored to your vision.",
+      description: "Digiflex brings your game ideas to life with our expert design team. We specialize in creating immersive and engaging game concepts tailored to your vision.",
       icon: <Lightbulb className="w-8 h-8" />,
       color: "bg-yellow-100",
       iconColor: "text-yellow-600",
@@ -23,7 +22,7 @@ const GameServices = () => {
     {
       id: 2,
       title: "3D Asset Creation",
-      description: "Craft stunning 3D models and environments. Our artists create high-quality assets optimized for Unreal Engine.",
+      description: "Craft stunning 3D models and environments with Digiflex. Our artists create high-quality assets optimized for Unreal Engine.",
       icon: <Code className="w-8 h-8" />,
       color: "bg-blue-100",
       iconColor: "text-blue-600",
@@ -37,7 +36,7 @@ const GameServices = () => {
     {
       id: 3,
       title: "Gameplay Programming",
-      description: "Implement robust and engaging gameplay mechanics. Our programmers bring your game to life with clean, efficient code.",
+      description: "Implement robust and engaging gameplay mechanics with Digiflex. Our programmers bring your game to life with clean, efficient code.",
       icon: <Code className="w-8 h-8" />,
       color: "bg-green-100",
       iconColor: "text-green-600",
@@ -51,7 +50,7 @@ const GameServices = () => {
     {
       id: 4,
       title: "Level Design and World Building",
-      description: "Create immersive game worlds and levels. We design environments that enhance gameplay and storytelling.",
+      description: "Create immersive game worlds and levels with Digiflex. We design environments that enhance gameplay and storytelling.",
       icon: <Map className="w-8 h-8" />,
       color: "bg-purple-100",
       iconColor: "text-purple-600",
@@ -65,7 +64,7 @@ const GameServices = () => {
     {
       id: 5,
       title: "Multiplayer Implementation",
-      description: "Enable seamless multiplayer experiences. We handle networking and synchronization for your game.",
+      description: "Enable seamless multiplayer experiences with Digiflex. We handle networking and synchronization for your game.",
       icon: <Link className="w-8 h-8" />,
       color: "bg-red-100",
       iconColor: "text-red-600",
@@ -79,7 +78,7 @@ const GameServices = () => {
     {
       id: 6,
       title: "Performance Optimization",
-      description: "Ensure your game runs smoothly across platforms. We optimize for frame rate, memory, and load times.",
+      description: "Ensure your game runs smoothly across platforms with Digiflex. We optimize for frame rate, memory, and load times.",
       icon: <Gauge className="w-8 h-8" />,
       color: "bg-indigo-100",
       iconColor: "text-indigo-600",
@@ -97,7 +96,7 @@ const GameServices = () => {
       <WrapperContainer>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Heading>
-            <div>Our Services</div>
+            <div>Our Services in Unreal Game Development</div>
           </Heading>
           <div className="space-y-16">
             {services.map((service) => (

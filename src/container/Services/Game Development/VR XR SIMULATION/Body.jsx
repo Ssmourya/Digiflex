@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react'
 import { VRXRSimulationFAQData } from '../FAQData'
-
 const VrXrServices = lazy(() => import('./VrXrServices'))
 const DevelopmentServices = lazy(() => import('./DevelopmentServices'))
 const Tools = lazy(() => import('./Tools'))
@@ -15,7 +14,7 @@ const Body = () => {
                 <DevelopmentServices/>
                 <Tools />
                 <WhyChoose />
-                    
+                
                 <Faq faqs={VRXRSimulationFAQData} />
             </Suspense>
         </div>

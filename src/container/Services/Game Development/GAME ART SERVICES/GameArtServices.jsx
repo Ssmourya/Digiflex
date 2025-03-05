@@ -8,56 +8,56 @@ const services = [
   {
     title: "2D Concept Art",
     description:
-      "Transform your game ideas into stunning 2D concepts, including characters, environments, and props, tailored to your creative vision.",
+      "Digiflex's expert artists transform your game ideas into stunning 2D concepts, including characters, environments, and props, with industry-leading quality and attention to detail.",
     icon: "✏️",
     gradient: "from-pink-500 to-purple-500"
   },
   {
     title: "3D Modeling & Texturing",
     description:
-      "Bring your game to life with high-quality 3D models and detailed textures, optimized for performance across various platforms.",
+      "Our specialized 3D team brings your game to life with high-quality models and detailed textures, optimized for performance across all platforms using cutting-edge tools and techniques.",
     icon: "🗿",
     gradient: "from-blue-500 to-cyan-500"
   },
   {
     title: "Character Design",
     description:
-      "Create unique and memorable characters with detailed designs, from stylized heroes to realistic NPCs, enhancing player immersion.",
+      "Digiflex's character artists create unique and memorable characters with detailed designs, from stylized heroes to realistic NPCs, backed by years of gaming industry experience.",
     icon: "👤",
     gradient: "from-green-500 to-teal-500"
   },
   {
     title: "Environment Art",
     description:
-      "Craft immersive game worlds with breathtaking environments, from lush forests to futuristic cities, designed to captivate players.",
+      "Our environment artists craft immersive game worlds with breathtaking detail, from lush forests to futuristic cities, leveraging the latest tools and rendering technologies.",
     icon: "🌍",
     gradient: "from-yellow-500 to-orange-500"
   },
   {
     title: "Animation Services",
     description:
-      "Add fluidity and personality to your game with custom animations, including rigging, keyframing, and motion capture integration.",
+      "Digiflex's animation team adds fluidity and personality to your game with custom animations, including advanced rigging, keyframing, and state-of-the-art motion capture integration.",
     icon: "🏃",
     gradient: "from-red-500 to-pink-500"
   },
   {
     title: "UI/UX Design",
     description:
-      "Design intuitive and visually appealing user interfaces that enhance gameplay experience and ensure seamless player interaction.",
+      "Our UI/UX specialists design intuitive and visually appealing interfaces that enhance gameplay experience, following modern gaming standards and user-centered design principles.",
     icon: "📱",
     gradient: "from-indigo-500 to-purple-500"
   },
   {
     title: "Visual Effects (VFX)",
     description:
-      "Enhance your game with stunning visual effects like particle systems, shaders, and dynamic lighting to elevate the overall experience.",
+      "Digiflex's VFX artists enhance your game with stunning visual effects using advanced particle systems, custom shaders, and dynamic lighting to create unforgettable gaming moments.",
     icon: "✨",
     gradient: "from-purple-500 to-blue-500"
   },
   {
     title: "Promotional Art",
     description:
-      "Boost your game's visibility with eye-catching promotional assets, including trailers, key art, and store visuals for platforms like Steam.",
+      "Our marketing art team boosts your game's visibility with eye-catching promotional assets, including cinematic trailers, key art, and platform-optimized store visuals.",
     icon: "🎨",
     gradient: "from-cyan-500 to-green-500"
   },
@@ -71,9 +71,9 @@ const GameArtServices = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <Heading>Game Art Services</Heading>
+        <Heading>Digiflex Game Art Services</Heading>
         <Paragraph>
-          Elevate your game's visual appeal with our comprehensive art services designed to create immersive and engaging experiences.
+          Partner with Digiflex to elevate your game's visual appeal with our comprehensive art services. Our award-winning team combines creativity and technical expertise to create immersive and engaging experiences that captivate players worldwide.
         </Paragraph>
       </motion.div>
 

@@ -51,6 +51,9 @@ function PC_development() {
         <p className="text-gray-600 text-lg leading-loose">
           Exploring key aspects of game development, from coding to design.
         </p>
+        <p className="text-gray-600 text-lg leading-loose mt-4">
+          At Digiflex, we provide top-notch game development services, helping you bring your game ideas to life with our expertise and innovative solutions.
+        </p>
       </div>
 
       {/* Grid Layout for Topics */}

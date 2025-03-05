@@ -11,27 +11,27 @@ const WhyChoose = () => {
     { 
       id: 1, 
       title: "Unreal Game Development", 
-      description: "We specialize in Unreal Engine game development, delivering high-fidelity graphics, real-time rendering, and immersive experiences. Our expertise includes multiplayer integration, VR/AR solutions, and cross-platform support for PC, console, and mobile gaming." 
+      description: "Digiflex excels in Unreal Engine game development, providing top-notch graphics, real-time rendering, and immersive experiences. Our services include multiplayer integration, VR/AR solutions, and cross-platform support for PC, console, and mobile gaming." 
     },
     { 
       id: 2, 
       title: "Advanced Physics & AI", 
-      description: "Utilizing Unreal Engine’s advanced physics and AI capabilities, we create realistic character movements, dynamic environments, and intelligent NPC behaviors that enhance gameplay experiences." 
+      description: "With Unreal Engine’s advanced physics and AI capabilities, Digiflex creates realistic character movements, dynamic environments, and intelligent NPC behaviors that elevate gameplay experiences." 
     },
     { 
       id: 3, 
       title: "Seamless Multiplayer", 
-      description: "We develop scalable multiplayer experiences with smooth networking, low-latency performance, and real-time synchronization, ensuring engaging online gameplay across different platforms." 
+      description: "Digiflex develops scalable multiplayer experiences with smooth networking, low-latency performance, and real-time synchronization, ensuring engaging online gameplay across various platforms." 
     },
     { 
       id: 4, 
       title: "VR & AR Integration", 
-      description: "Our Unreal Engine solutions extend to Virtual Reality (VR) and Augmented Reality (AR), offering interactive simulations, immersive training modules, and next-gen gaming experiences." 
+      description: "Our Unreal Engine solutions at Digiflex extend to Virtual Reality (VR) and Augmented Reality (AR), offering interactive simulations, immersive training modules, and next-gen gaming experiences." 
     },
     { 
       id: 5, 
       title: "Optimized Performance", 
-      description: "We optimize Unreal Engine applications for maximum performance, ensuring high frame rates, efficient memory usage, and smooth gameplay across all supported devices." 
+      description: "Digiflex optimizes Unreal Engine applications for peak performance, ensuring high frame rates, efficient memory usage, and smooth gameplay across all supported devices." 
     },
   ];
 

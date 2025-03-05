@@ -12,22 +12,22 @@ const services = {
   'environment-design': {
     icon: <Gamepad className="w-6 h-6 text-blue-500" />,
     title: "VR/XR Game Environment Design",
-    description: "We create immersive VR/XR environments with high-end 3D graphics and seamless interactions, ensuring a rich user experience."
+    description: "Digiflex creates immersive VR/XR environments with high-end 3D graphics and seamless interactions, ensuring a rich user experience."
   },
   'development-integration': {
     icon: <Wrench className="w-6 h-6 text-green-500" />,
     title: "VR/XR Game Development & Integration",
-    description: "Our team specializes in building VR/XR simulation games with real-time physics, AI-driven NPCs, and multi-platform support."
+    description: "Digiflex specializes in building VR/XR simulation games with real-time physics, AI-driven NPCs, and multi-platform support."
   },
   'content-creation': {
     icon: <Film className="w-6 h-6 text-yellow-500" />,
     title: "XR Content Creation & Optimization",
-    description: "We develop and optimize interactive XR content for training simulations, educational applications, and entertainment."
+    description: "Digiflex develops and optimizes interactive XR content for training simulations, educational applications, and entertainment."
   },
   'cross-platform': {
     icon: <Globe className="w-6 h-6 text-red-500" />,
     title: "Cross-Platform VR/XR Compatibility",
-    description: "Our VR/XR solutions are designed to work seamlessly across multiple devices, including Oculus, HTC Vive, and mobile AR platforms."
+    description: "Digiflex's VR/XR solutions are designed to work seamlessly across multiple devices, including Oculus, HTC Vive, and mobile AR platforms."
   }
 };
 
@@ -37,7 +37,7 @@ const DevelopmentServices = () => {
   return (
     <WrapperContainer>
         <Heading>
-          <h1 className="text-3xl font-bold text-center mb-6">Our VR/XR Simulation Game Development Services</h1>
+          <h1 className="text-3xl font-bold text-center mb-6">Digiflex VR/XR Simulation Game Development Services</h1>
         </Heading>
 
         <div className="space-y-8">

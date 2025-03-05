@@ -47,49 +47,49 @@ function GameArtModules() {
     {
       title: "Concept Art Creation",
       description:
-        "Develop initial 2D sketches and designs to establish the visual style and tone of your game.",
+        "Digiflex develops initial 2D sketches and designs to establish the visual style and tone of your game, ensuring a strong foundation for your creative vision.",
       icon: Code,
     },
     {
       title: "3D Modeling & Texturing",
       description:
-        "Craft high-quality 3D models with detailed textures, optimized for game engines like Unity or Unreal.",
+        "Digiflex crafts high-quality 3D models with detailed textures, optimized for game engines like Unity or Unreal, bringing your game to life with precision.",
       icon: Rocket,
     },
     {
       title: "Character Design",
       description:
-        "Create unique and engaging characters, from concept to fully realized 3D models, enhancing player immersion.",
+        "Digiflex creates unique and engaging characters, from concept to fully realized 3D models, enhancing player immersion and storytelling.",
       icon: Users,
     },
     {
       title: "Environment Art",
       description:
-        "Design immersive game worlds with detailed landscapes and atmospheric settings for a captivating experience.",
+        "Digiflex designs immersive game worlds with detailed landscapes and atmospheric settings for a captivating experience that draws players in.",
       icon: Key,
     },
     {
       title: "Animation Services",
       description:
-        "Produce smooth animations with rigging and keyframing to bring characters and objects to life.",
+        "Digiflex produces smooth animations with rigging and keyframing to bring characters and objects to life, adding dynamic movement to your game.",
       icon: Coins,
     },
     {
       title: "UI/UX Design",
       description:
-        "Design intuitive and visually appealing interfaces to enhance player navigation and interaction.",
+        "Digiflex designs intuitive and visually appealing interfaces to enhance player navigation and interaction, ensuring a seamless user experience.",
       icon: CreditCard,
     },
     {
       title: "Visual Effects (VFX)",
       description:
-        "Add stunning effects like particles and shaders to elevate gameplay and visual appeal.",
+        "Digiflex adds stunning effects like particles and shaders to elevate gameplay and visual appeal, making your game stand out.",
       icon: Wallet,
     },
     {
       title: "Promotional Art",
       description:
-        "Create eye-catching promotional materials like trailers and key art to showcase your game.",
+        "Digiflex creates eye-catching promotional materials like trailers and key art to showcase your game and attract your target audience.",
       icon: MessageSquare,
     },
   ];

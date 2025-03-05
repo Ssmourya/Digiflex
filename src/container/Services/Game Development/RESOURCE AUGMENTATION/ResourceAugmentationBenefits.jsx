@@ -6,15 +6,15 @@ import Paragraph from "../../../../Layout/Paragraph";
 import Subheading from "../../../../Layout/Subheading";
 
 const benefits = [
-  { title: "Access to Skilled Talent", icon: <Users className="w-6 h-6" />, description: "Quickly onboard experienced game developers, designers, and testers without the hassle of long hiring processes." },
-  { title: "Cost Efficiency", icon: <BarChart className="w-6 h-6" />, description: "Reduce overhead costs by hiring resources as needed instead of maintaining a full-time in-house team." },
-  { title: "Faster Time to Market", icon: <Clock className="w-6 h-6" />, description: "Accelerate game development with on-demand experts who can integrate seamlessly into your workflow." },
-  { title: "Scalability & Flexibility", icon: <Layers className="w-6 h-6" />, description: "Easily scale your development team up or down based on project requirements without long-term commitments." },
-  { title: "Expertise in Niche Areas", icon: <Cpu className="w-6 h-6" />, description: "Hire specialists for AI, physics simulation, AR/VR, and multiplayer networking to enhance game mechanics." },
-  { title: "Enhanced Security & Compliance", icon: <ShieldCheck className="w-6 h-6" />, description: "Ensure game security with experienced developers following best practices and compliance standards." },
-  { title: "Seamless Integration", icon: <Monitor className="w-6 h-6" />, description: "Work with professionals who adapt to your development environment, tools, and methodologies effortlessly." },
-  { title: "Improved Productivity", icon: <TrendingUp className="w-6 h-6" />, description: "Boost development speed and quality with specialized teams focused on delivering high-performance games." },
-  { title: "Focus on Core Business", icon: <Code className="w-6 h-6" />, description: "Let external experts handle technical complexities while you concentrate on game vision and business growth." },
+  { title: "Access to Skilled Talent", icon: <Users className="w-6 h-6" />, description: "Digiflex enables you to quickly onboard experienced game developers, designers, and testers without the hassle of long hiring processes." },
+  { title: "Cost Efficiency", icon: <BarChart className="w-6 h-6" />, description: "With Digiflex, reduce overhead costs by hiring resources as needed instead of maintaining a full-time in-house team." },
+  { title: "Faster Time to Market", icon: <Clock className="w-6 h-6" />, description: "Accelerate game development with Digiflex's on-demand experts who can integrate seamlessly into your workflow." },
+  { title: "Scalability & Flexibility", icon: <Layers className="w-6 h-6" />, description: "Easily scale your development team up or down based on project requirements with Digiflex, without long-term commitments." },
+  { title: "Expertise in Niche Areas", icon: <Cpu className="w-6 h-6" />, description: "Hire specialists from Digiflex for AI, physics simulation, AR/VR, and multiplayer networking to enhance game mechanics." },
+  { title: "Enhanced Security & Compliance", icon: <ShieldCheck className="w-6 h-6" />, description: "Ensure game security with Digiflex's experienced developers following best practices and compliance standards." },
+  { title: "Seamless Integration", icon: <Monitor className="w-6 h-6" />, description: "Work with Digiflex professionals who adapt to your development environment, tools, and methodologies effortlessly." },
+  { title: "Improved Productivity", icon: <TrendingUp className="w-6 h-6" />, description: "Boost development speed and quality with Digiflex's specialized teams focused on delivering high-performance games." },
+  { title: "Focus on Core Business", icon: <Code className="w-6 h-6" />, description: "Let Digiflex's external experts handle technical complexities while you concentrate on game vision and business growth." },
 ];
 
 const ResourceAugmentationBenefits = () => {
@@ -26,7 +26,7 @@ const ResourceAugmentationBenefits = () => {
         </Heading>
         <Paragraph>
           <span className="block text-center">
-            Unlock efficiency, cost savings, and flexibility by leveraging resource augmentation for game development.
+            Unlock efficiency, cost savings, and flexibility by leveraging Digiflex's resource augmentation for game development.
           </span>
         </Paragraph>
 

@@ -23,39 +23,39 @@ const UnrealTeam = () => {
     {
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><polygon points="12 2 2 7 12 12 22 7 12 2" /><polyline points="2 17 12 22 22 17" /><polyline points="2 12 12 17 22 12" /></svg>,
       title: "Game Designer",
-      description: "Defines the game's core mechanics, world-building, and player experience. Works closely with narrative designers to develop the plot and gameplay."
+      description: "At Digiflex, our Game Designers define the core mechanics, world-building, and player experience. They collaborate closely with narrative designers to develop compelling plots and engaging gameplay."
     },
     {
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><path d="M12 2l7 20-7-5-7 5z" /></svg>,
       title: "Unreal Tech Lead",
-      description: "Expert in Unreal Engine, responsible for game architecture, coding, and mentoring developers. Ensures high-quality code and optimal performance."
+      description: "Our Unreal Tech Leads are experts in Unreal Engine, responsible for game architecture, coding, and mentoring developers. They ensure high-quality code and optimal performance in all Digiflex projects."
     },
     {
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>,
       title: "QA Specialist",
-      description: "Ensures game quality by identifying design inconsistencies, bugs, and errors. Works closely with developers to enhance gameplay and user experience."
+      description: "Digiflex's QA Specialists ensure game quality by identifying design inconsistencies, bugs, and errors. They work closely with developers to enhance gameplay and user experience."
     },
     {
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><path d="M4 4h16v16H4z" /></svg>,
       title: "3D Artist",
-      description: "Creates high-quality 3D assets, characters, and environments, ensuring the game world is visually stunning and immersive."
+      description: "Our 3D Artists at Digiflex create high-quality 3D assets, characters, and environments, ensuring the game world is visually stunning and immersive."
     },
     {
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><path d="M12 2L19 21H5L12 2z" /></svg>,
       title: "Animator",
-      description: "Brings characters and objects to life with fluid and realistic animations, ensuring smooth and engaging gameplay."
+      description: "Digiflex Animators bring characters and objects to life with fluid and realistic animations, ensuring smooth and engaging gameplay."
     },
     {
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mx-auto"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l2 2" /></svg>,
       title: "Audio Engineer",
-      description: "Designs and implements immersive sound effects and music to enhance the player's emotional and auditory experience."
+      description: "Our Audio Engineers at Digiflex design and implement immersive sound effects and music to enhance the player's emotional and auditory experience."
     }
   ];
 
   return (
     <WrapperContainer>
           <Heading>
-          <h2 className="text-3xl font-bold mb-4">Unreal Engine Development Team</h2>
+          <h2 className="text-3xl font-bold mb-4">Digiflex Unreal Engine Development Team</h2>
         </Heading>
         <div className="overflow-x-auto shadow-lg rounded-lg">
           <table className="min-w-full border-collapse border border-gray-300">

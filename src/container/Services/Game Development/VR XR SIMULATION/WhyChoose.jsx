@@ -42,14 +42,11 @@ function WhyChoose() {
     <WrapperContainer>
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <Heading>Why Choose Our VR/XR Simulation Services?</Heading>
+          <Heading>Why Choose Digiflex for VR/XR Simulation Services?</Heading>
           <Paragraph>
-            Our VR and XR simulation services leverage state-of-the-art 
-            technology to create highly immersive and interactive experiences. 
-            Whether for training, education, or entertainment, we design 
-            realistic simulations that enhance engagement and effectiveness. 
-            With our expertise, businesses can explore new possibilities in 
-            virtual environments, ensuring seamless integration and scalability.
+            At Digiflex, we leverage state-of-the-art technology to create highly immersive and interactive VR and XR experiences. 
+            Whether for training, education, or entertainment, we design realistic simulations that enhance engagement and effectiveness. 
+            With our expertise, businesses can explore new possibilities in virtual environments, ensuring seamless integration and scalability.
           </Paragraph>
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature, index) => (

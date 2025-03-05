@@ -57,6 +57,11 @@ const GameDevProcess = () => {
         <Heading>
           <h1 className="text-3xl font-bold text-center mb-6">Game Development Process</h1>
         </Heading>
+        <div className="text-center mb-8">
+          <p className="text-lg text-gray-700">
+            At Digiflex, we specialize in providing top-notch game development services. Our team is dedicated to bringing your game ideas to life with precision and creativity.
+          </p>
+        </div>
         <div className="grid gap-6">
           {Object.entries(sections).map(([key, section]) => (
             <div key={key} className="border rounded-lg overflow-hidden shadow-md bg-white">

@@ -104,21 +104,21 @@ export const technologies = [
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
   },
 
-  {
-    id: "devops",
-    icon: Server,
-    title: "DevOps",
-    color: "text-gray-500",
-    description: "Automation, CI/CD, and cloud infrastructure solutions for seamless deployment and monitoring.",
-    features: [
-      { icon: Cloud, title: "CI/CD Implementation", path: "/services/devops/ci-cd" },
-      { icon: Server, title: "Infrastructure as Code", path: "/services/devops/infrastructure-as-code" },
-      { icon: Shield, title: "Security & Compliance", path: "/services/devops/security-compliance" },
-      { icon: Cloud, title: "Cloud Automation", path: "/services/devops/cloud-automation" },
-      { icon: Database, title: "Monitoring & Logging", path: "/services/devops/monitoring-logging" }
-    ],
-    image: "https://images.unsplash.com/photo-1581092446327-3f94ee1dfd84?auto=format&fit=crop&w=600&q=80",
-  },
+  // {
+  //   id: "devops",
+  //   icon: Server,
+  //   title: "DevOps",
+  //   color: "text-gray-500",
+  //   description: "Automation, CI/CD, and cloud infrastructure solutions for seamless deployment and monitoring.",
+  //   features: [
+  //     { icon: Cloud, title: "CI/CD Implementation", path: "/services/devops/ci-cd" },
+  //     { icon: Server, title: "Infrastructure as Code", path: "/services/devops/infrastructure-as-code" },
+  //     { icon: Shield, title: "Security & Compliance", path: "/services/devops/security-compliance" },
+  //     { icon: Cloud, title: "Cloud Automation", path: "/services/devops/cloud-automation" },
+  //     { icon: Database, title: "Monitoring & Logging", path: "/services/devops/monitoring-logging" }
+  //   ],
+  //   image: "https://images.unsplash.com/photo-1581092446327-3f94ee1dfd84?auto=format&fit=crop&w=600&q=80",
+  // },
 
 ];
 
@@ -329,10 +329,6 @@ export const serviceCategories = [
     image:
       "https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
-
-
-
   {
     id: "E-Commerce",
     title: "E-Commerce Development",

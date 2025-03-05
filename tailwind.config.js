@@ -84,6 +84,9 @@ export const theme = {
         ring: '#0D6EFD',
       },
     },
+    scrollBehavior: {
+      smooth: 'smooth',
+    },
     borderRadius: {
       sm: '0.125rem',
     },

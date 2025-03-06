@@ -12,7 +12,7 @@ import Faq from "../../../../components/Faq";
 
 
 const Card = ({ image, title, description, points }) => (
-    <div className="relative w-full sm:w-72 bg-black border border-green-500 text-white rounded-xl overflow-hidden shadow-2xl group transition-all duration-300 hover:scale-105">
+    <div className="relative w-full h-56 sm:w-72 bg-black border border-green-500 text-white rounded-xl overflow-hidden shadow-2xl group transition-all duration-300 hover:scale-105">
         <div className="relative">
             <img
                 src={image}

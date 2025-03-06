@@ -89,6 +89,7 @@ const Navbar = () => {
                 return serviceCategories;
 
             case "technology" :
+                // console.log(technologies);
                 return technologies;
 
             case "products":
@@ -114,23 +115,27 @@ const Navbar = () => {
 
     return (
         <>
+
             <div className="w-full bg-blue-950 border-b border-blue-800 px-4 md:px-8 py-2">
-                <div className="flex justify-end items-center">
-                    <div className="flex items-center space-x-6">
-                        <div className="flex items-center space-x-2 group hover:bg-blue-900 px-2 py-1 rounded transition-colors duration-200">
+                <div className="flex xs:justify-between justify-end items-center">
+                    <div className="flex flex-row items-center">
+                        {/* Phone Section */}
+                        <div className="flex items-center space-x-2 group hover:bg-blue-900 px-3 py-1 rounded transition-colors duration-200">
                             <Phone size={16} className="text-white group-hover:text-blue-300" />
                             <span className="text-xs md:text-sm font-medium cursor-pointer text-white">
                                 +91 90393 83183
                             </span>
                         </div>
-                        <div className="hidden md:flex items-center space-x-2 group hover:bg-blue-900 px-2 py-1 rounded transition-colors duration-200">
+                        
+                        {/* Email Section */}
+                        <div className="flex items-center space-x-2 group hover:bg-blue-900 px-3 py-1 rounded transition-colors duration-200">
                             <Mail size={16} className="text-white group-hover:text-blue-300" />
                             <span className="text-xs md:text-sm font-medium cursor-pointer text-white">
                                 info@digiflex.ai
                             </span>
                         </div>
                     </div>
-                </div>
+                        </div>
             </div>
 
             <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navbarRef}>
@@ -257,7 +262,7 @@ const Navbar = () => {
                 {/* Mobile menu */}
                 {
                     isMobileMenuVisible && (
-                        <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen">
+                        <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen pb-48">
                             {
                                 mainNavItems.map((navItem) => (
 
@@ -281,33 +286,32 @@ const Navbar = () => {
 
                                         {navItem.hasDropdown && activeDropdown === navItem.dropdownType && (
                                             <div className="mt-2 ml-4">
-                                                {getDropdownItems(navItem.dropdownType).map((category) => (
-                                                    <div key={category.id} className="mb-2">
+                                                {
+                                                    getDropdownItems(navItem.dropdownType).map( (service) => (
+                                                    <div key={service.id} className="mb-2">
                                                         <div
                                                             className="flex items-center justify-between"
                                                             onClick={() =>
                                                                 setHoveredCategory(
-                                                                    hoveredCategory === category.id
+                                                                    hoveredCategory === service.id
                                                                         ? null
-                                                                        : category.id
+                                                                        : service.id
                                                                 )
                                                             }
                                                         >
                                                             <span className="text-white text-sm">
-                                                                {category.title}
+                                                                {service.title}
                                                             </span>
                                                             <ChevronDown
-                                                                className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${hoveredCategory === category.id ? "rotate-180" : ""
+                                                                className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${hoveredCategory === service.id ? "rotate-180" : ""
                                                                     }`}
                                                             />
                                                         </div>
 
-                                                        {hoveredCategory === category.id && (
+                                                        {hoveredCategory === service.id && (
                                                             <div className="mt-1 ml-4">
                                                                 {
-                                                                    getFeaturesForCategory(
-                                                                        category.dropdownType || category.id
-                                                                    ).map((feature) => (
+                                                                    service.features.map((feature) => (
 
 
                                                                         <Link

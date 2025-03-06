@@ -5,13 +5,9 @@ import videoBg from '../assets/blockchain_video.mp4';
 import Amp2 from '../container/Services/Custom App/Mobile App Devlopment/Amp2';
 import Amp3 from '../container/Services/Custom App/Mobile App Devlopment/Amp3';
 import Amp5 from '../container/Services/Custom App/Mobile App Devlopment/Amp5';
-import Com from '../assets/Logo2.jpg';
-import Com2 from '../assets/Logo3.jpg';
-import Com3 from '../assets/Logo4.jpg';
-import Com4 from '../assets/Logo5.jpg';
-import Heading from '../Layout/Heading';
+
 import WrapperContainer from '../Layout/WrapperContainer';
-import FrequentlyAskedQuestions from '../container/Services/Custom App/Mobile App Devlopment/FrequentlyAskedQuestions';
+import { Mobilefaqs } from "../container/Services/Cloud/Faqdata";import Faq from '../components/Faq';
 
 
 
@@ -58,12 +54,14 @@ const Amp = () => {
         </div>
       </div>
 
+     
       
-      <WrapperContainer>
       <Amp2 />
       <Amp3 />
+      <WrapperContainer>
+      
       <Amp5 />
-      <FrequentlyAskedQuestions/>
+      <Faq faqs={Mobilefaqs}/>
       
       </WrapperContainer>
      

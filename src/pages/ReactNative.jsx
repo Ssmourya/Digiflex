@@ -5,8 +5,9 @@ import OurServices from '../container/Technology/MobileAppDev/React Native/OurSe
 import OurTechStack from '../container/Technology/MobileAppDev/React Native/OurTechStack'
 import SmartFeatures from '../container/Technology/MobileAppDev/React Native/SmartFeatures'
 import IndustriesWeServe from '../container/Technology/MobileAppDev/React Native/IndustriesWeServe'
-import FAQ from '../container/Technology/MobileAppDev/React Native/FAQ'
+import { ReactfaqData } from "../container/Services/Cloud/Faqdata";
 import WrapperContainer from '../Layout/WrapperContainer'
+import Faq from '../components/Faq'
 const ReactNative = () => {
   return (
     <div>
@@ -19,8 +20,9 @@ const ReactNative = () => {
       <OurServices/>
       <IndustriesWeServe/>
       <SmartFeatures/>
+      <Faq faqs={ReactfaqData}/>
       </WrapperContainer>
-      <FAQ/>
+      
       
     </div>
   )

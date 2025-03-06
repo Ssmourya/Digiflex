@@ -57,7 +57,7 @@ const Mobile2 = () => {
               Automated Data Transfer
             </Subheading>
             <Paragraph>
-              Algoworks focuses on an automated tool-based data migration approach offering minimal code changes, leaving the investment in business logic intact.
+              Digiflex.ai focuses on an automated tool-based data migration approach offering minimal code changes, leaving the investment in business logic intact.
             </Paragraph>
           </motion.div>
           

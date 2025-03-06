@@ -8,7 +8,8 @@ import Blockchain_services from "../container/Services/Custom App/BlockChain/Blo
 import Blockchain_support from "../container/Services/Custom App/BlockChain/Blockchain_support ";
 import videoBg from "../assets/blockchain_video.mp4";
 import WrapperContainer from "../Layout/WrapperContainer";
-import BlockchainDevelopmentFAQ from "../container/Services/Custom App/BlockChain/BlockchainDevelopmentFAQ";
+import { BlockchainDevFaqs } from "../container/Services/Cloud/Faqdata";
+import Faq from "../components/Faq";
 
 function Home() {
   return (
@@ -71,7 +72,7 @@ function Home() {
           <Blockchain_services />
           <Blockchain_support />
         </WrapperContainer>
-        <BlockchainDevelopmentFAQ />
+       <Faq faqs={BlockchainDevFaqs}/>
       </div>
     </>
   );

@@ -63,6 +63,7 @@ const FrequentlyAskedQuestions = () => {
       <div className="max-w-[90%] md:max-w-6xl mx-auto px-4 fade-in">
         {/* Section Heading */}
         <div className="text-center mb-8">
+        
           <h3 className="text-5xl font-extrabold text-center text-blue-600">
             ❓ Frequently Asked Questions (FAQs)
           </h3>

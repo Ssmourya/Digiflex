@@ -5,7 +5,8 @@ import Industries from "../container/Technology/MobileAppDev/IOS Devlopment/Indu
 import TechStack from "../container/Technology/MobileAppDev/IOS Devlopment/TechStack";
 import FAQItem from "../container/Technology/MobileAppDev/IOS Devlopment/FAQItem";
 import WrapperContainer from '../Layout/WrapperContainer'
-
+import Faq from "../components/Faq";
+import { IosfaqData} from "../container/Services/Cloud/Faqdata";
 const IosDevelopmentTech = () => {
   return (
    
@@ -17,8 +18,9 @@ const IosDevelopmentTech = () => {
       <WhyChooseDigiflex/>
       <Industries/>
       <TechStack/>  
+      <Faq faqs={IosfaqData}/>
       </WrapperContainer> 
-      <FAQItem/>
+     
     </>
   );
 };

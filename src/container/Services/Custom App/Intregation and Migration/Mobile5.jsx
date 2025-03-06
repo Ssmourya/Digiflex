@@ -52,7 +52,7 @@ const Mobile5 = () => {
           transition={{ duration: 1, delay: 0.9 }}
         >
           <Subheading>
-            Mindbowser's Augmented Team Helped an E-learning Platform Add New Features at a Faster Pace
+           Digiflex.ai Team Helped an E-learning Platform Add New Features at a Faster Pace
           </Subheading>
           <Paragraph>
             The e-learning platform provides STEM-focused courses and tech camps for a deeper education in technology for school students. 

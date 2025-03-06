@@ -5,7 +5,7 @@ import WrapperContainer from '../Layout/WrapperContainer'
 import TechnologiesSection from '../container/Technology/WebsiteDevlopment/Python/TechnologiesSection'
 import DevelopmentProcess from '../container/Technology/WebsiteDevlopment/Python/DevelopmentProcess'
 import WhyChooseUsSection from '../container/Technology/WebsiteDevlopment/Python/WhyChooseUsSection'
-import PythonDevelopmentFAQ from '../container/Technology/WebsiteDevlopment/Python/PythonDevelopmentFAQ'
+import { Pythonfaqs } from "../container/Services/Cloud/Faqdata";import Faq from '../components/Faq'
 const PythonDevelopment = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const PythonDevelopment = () => {
       <TechnologiesSection/>
       <DevelopmentProcess/>
       <WhyChooseUsSection/>
-      <PythonDevelopmentFAQ/>
+     <Faq faqs={Pythonfaqs}/>
      
       </WrapperContainer>
     </div>

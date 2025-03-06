@@ -21,11 +21,11 @@ const SecurityOperations = () => {
                 </div>
                 <Subheading className="cursor-pointer">Security Operations Center</Subheading>
                 <Paragraph className="mb-4">
-                    Kyndryl Security Operations Center provides comprehensive support and
+                    Digiflex Security Operations Center provides comprehensive support and
                     protection throughout the entire lifecycle of cyber threats using AI,
                     machine learning, and integrated automation systems. Our hybrid model
                     allows businesses to integrate their existing security teams with
-                    Kyndryl's cybersecurity experts or fully outsource their cybersecurity
+                    Digiflex's cybersecurity experts or fully outsource their cybersecurity
                     operations to us.
                 </Paragraph>
                 <a
@@ -52,7 +52,7 @@ const SecurityOperations = () => {
                     Security Operations as a platform provides a secure infrastructure
                     that integrates key components of modern security, including SOAR,
                     SIEM, endpoint detection response, and vulnerability management.
-                    Kyndryl supports customers at any stage of their cyber resilience
+                    Digiflex supports customers at any stage of their cyber resilience
                     journey, offering centralized insights to quickly detect threats and
                     automate responses.
                 </Paragraph>

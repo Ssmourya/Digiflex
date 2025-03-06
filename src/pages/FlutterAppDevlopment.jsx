@@ -4,8 +4,8 @@ import WhyChooseFlutter from '../container/Technology/MobileAppDev/FlutterAppDEv
 import OurServices from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/OurServices';
 import OurTechStack from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/OurTechStack'
 import IndustriesWeServe from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/IndustriesWeServe'
-import FAQ from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/FAQ';
-import WrapperContainer from '../Layout/WrapperContainer';
+import { FlutterfaqData } from "../container/Services/Cloud/Faqdata";import WrapperContainer from '../Layout/WrapperContainer';
+import Faq from '../components/Faq';
 const FlutterAppDevlopment = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const FlutterAppDevlopment = () => {
       <OurTechStack/>
       <IndustriesWeServe/>
       </WrapperContainer>
-      <FAQ/>
+     <Faq faqs={FlutterfaqData}/>
       
     </div>
   )

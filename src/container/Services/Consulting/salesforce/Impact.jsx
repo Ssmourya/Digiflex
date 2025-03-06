@@ -75,7 +75,7 @@ const ImpactCard = ({ number, title, description }) => {
 function Impact() {
   return (
     <WrapperContainer>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto">
      <Heading>
      The Impact Of Our Salesforce Consulting Services
      </Heading>

@@ -37,7 +37,7 @@ const Amp2 = () => {
       {/* 🔒 Mobile App Security Section */}
       <div className="min-h-[60vh] w-full bg-white flex items-center justify-center">
         <div className="container mx-auto px-4 py-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
             <motion.div
               className="md:w-1/2 flex justify-center"
               initial={{ opacity: 0, x: -50 }}
@@ -84,38 +84,7 @@ const Amp2 = () => {
       </div>
 
       {/* 📢 Transparency in Mobile Development */}
-      <div className="min-h-[50vh] w-full flex items-center justify-center">
-        <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <motion.div
-              className="px-4 py-6 w-full md:w-1/2 text-center md:text-left"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              whileHover={{ scale: 1.05 }}
-            >
-              <Heading>Transparency in Development</Heading>
-              <Paragraph>   Our mobile app development process is built on transparency, ensuring clear communication, real-time progress updates, and alignment with client expectations. With Digiflex.ai, you get a fully collaborative approach that guarantees high-quality app solutions.
-              </Paragraph>
-            
-              
-            </motion.div>
-            <motion.div
-              className="w-full md:w-1/2 flex justify-center"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              whileHover={{ scale: 1.05 }}
-            >
-              <img
-                src={Rob}
-                alt="Transparency Illustration"
-                className="w-full h-full object-contain"
-              />
-            </motion.div>
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 };

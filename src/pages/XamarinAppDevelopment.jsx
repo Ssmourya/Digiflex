@@ -5,7 +5,7 @@ import XamarinAppServices from '../container/Technology/MobileAppDev/XamarinAppD
 import WhyDigiflex from '../container/Technology/MobileAppDev/XamarinAppDevlopment/WhyDigiflex'
 import XamarinTechStack from '../container/Technology/MobileAppDev/XamarinAppDevlopment/XamarinTechStack'
 import IndustriesWeServe from '../container/Technology/MobileAppDev/XamarinAppDevlopment/IndustriesWeServe'
-import FrequentlyAskedQuestions from '../container/Technology/MobileAppDev/XamarinAppDevlopment/FrequentlyAskedQuestions'
+import { Xamarinfaqs } from "../container/Services/Cloud/Faqdata";import Faq from '../components/Faq'
 
 const XamarinAppDEvlopment = () => {
   return (
@@ -16,7 +16,7 @@ const XamarinAppDEvlopment = () => {
       <WhyDigiflex/>
       <XamarinTechStack/>
       <IndustriesWeServe/>
-      <FrequentlyAskedQuestions/>
+      <Faq faqs={Xamarinfaqs}/>
     </div>
   )
 }

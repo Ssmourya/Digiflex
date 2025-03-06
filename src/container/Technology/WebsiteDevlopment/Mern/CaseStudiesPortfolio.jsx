@@ -1,8 +1,10 @@
 import React from 'react';
 import Heading from '../../../../Layout/Heading';
-import MeanStackDevelopmentFAQ from './MeanStackDevelopmentFAQ';
+
 import Subheading from "../../../../Layout/Subheading";
 import Paragraph from '../../../../Layout/Paragraph';
+import Faq from "../../../../components/Faq";
+import { Mernfaqs } from "../../../../container/Services/Cloud/Faqdata";
 
 export default function CaseStudiesPortfolio() {
   const projects = [
@@ -73,7 +75,7 @@ export default function CaseStudiesPortfolio() {
         </div>
       </div>
     </section>
-    <MeanStackDevelopmentFAQ/>
+       <Faq faqs={Mernfaqs}/>
     </>
   );
 }

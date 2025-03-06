@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Menu, Mail, Phone } from 'lucide-react';
 import { SocialIcon } from 'react-social-icons';
-import WrapperContainer from '../Layout/WrapperContainer';
+import logo from "../assets/digiflex.png";
 
 const locations = [
   {
@@ -9,6 +10,7 @@ const locations = [
     address: '1206 , Skye Earth Corporate Park',
     location: 'Indore , Madhya Pradesh',
     postalCode: '452010',
+    phone: '+91 9039383183',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/in.svg',
     alt: 'India Flag'
   },
@@ -17,6 +19,7 @@ const locations = [
     address: 'Duja Towers, Sheikh Zayed Road',
     location: 'Dubai',
     postalCode: 'UAE',
+    phone: '+971-522627630',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/ae.svg',
     alt: 'UAE Flag'
   },
@@ -25,6 +28,7 @@ const locations = [
     address: '5101 34th St #A Lubbock,',
     location: 'Texas',
     postalCode: '79410',
+    phone: '+971-522627630',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/us.svg',
     alt: 'USA Flag'
   },
@@ -33,6 +37,7 @@ const locations = [
     address: '135 Junction Rd, Archway',
     location: 'London',
     postalCode: 'N19 5PX',
+    phone: '+971-522627630',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/gb.svg',
     alt: 'UK Flag'
   }
@@ -140,7 +145,9 @@ function Footer() {
     <footer className="bg-blue-950 text-white">
       <div className="container px-4 py-4">
         <div className="mb-4 max-w-[1240px] mx-auto">
-          <h1 className="text-3xl font-bold tracking-tight text-white">DIGIFLEX.AI</h1>
+        <Link to="/" className="flex items-center no-underline">
+          <img src={logo} alt="logo" className="h-6" />
+        </Link>
         </div>
         <div className="w-full h-px bg-blue-800 mb-4"></div>
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-4 max-w-[1200px] mx-auto">
@@ -154,36 +161,50 @@ function Footer() {
               <p className="text-sm">{loc.address}</p>
               {loc.location && <p className="text-sm">{loc.location}</p>}
               {loc.postalCode && <p className="text-sm">{loc.postalCode}</p>}
+              {loc.phone && (
+              <div className="flex items-center gap-1 text-sm">
+              <Phone className="w-4 h-4 text-blue-400" /> 
+              <span>{loc.phone}</span>
+              </div>
+              )}
             </div>
           ))}
         </div>
 
           {/* Contacts Section */}
-          <div className="lg:w-72">
-            <h2 className="text-xl font-bold mb-4 text-white">Contacts</h2>
-            <div className="space-y-6">
-              <div className="space-y-2">
-                {contacts.phones.map((phone, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    {index === 0 && <Phone className="w-5 h-5 text-blue-400" />}
-                    <a href={`tel:${phone.replace(/[^\d+]/g, '')}`} className="hover:text-blue-300 transition-colors text-gray-200">
-                      {phone}
-                    </a>
-                  </div>
-                ))}
-              </div>
-              <div className="space-y-2">
-                {contacts.emails.map((email, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    {index === 0 && <Mail className="w-5 h-5 text-blue-400" />}
-                    <a href={`mailto:${email}`} className="hover:text-blue-300 transition-colors text-gray-200">
-                      {email}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+<div className="lg:w-72">
+  <h2 className="text-xl font-bold mb-4 text-white">Contacts</h2>
+  <div className="space-y-6">
+    <div className="space-y-2">
+      {contacts.phones.map((phone, index) => (
+        <div key={index} className="flex items-start">
+          {index === 0 ? (
+            <Phone className="w-5 h-5 text-blue-400 mr-2 flex-shrink-0" />
+          ) : (
+            <div className="w-5 h-5 mr-2 flex-shrink-0"></div>
+          )}
+          <a href={`tel:${phone.replace(/[^\d+]/g, '')}`} className="hover:text-blue-300 transition-colors text-gray-200">
+            {phone}
+          </a>
+        </div>
+      ))}
+    </div>
+    <div className="space-y-2">
+      {contacts.emails.map((email, index) => (
+        <div key={index} className="flex items-start">
+          {index === 0 ? (
+            <Mail className="w-5 h-5 text-blue-400 mr-2 flex-shrink-0" />
+          ) : (
+            <div className="w-5 h-5 mr-2 flex-shrink-0"></div>
+          )}
+          <a href={`mailto:${email}`} className="hover:text-blue-300 transition-colors text-gray-200">
+            {email}
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
         </div>
 
         {/* Horizontal Line - reduced margin bottom */}

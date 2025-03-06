@@ -4,38 +4,40 @@ import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 
-
 export const BenefitsSection = () => {
   return (
     <WrapperContainer>
+      <div className="text-center mb-8 md:mb-12">
         <Heading>Why do you need website consulting?</Heading>
-        <Paragraph>
+        <Paragraph className="max-w-3xl mx-auto px-4">
           There are several benefits of website consulting services, including:
         </Paragraph>
-      <div className="relative container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12">
+      </div>
+      
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         {/* Benefits List */}
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8 order-2 md:order-1">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="flex items-start space-x-4 p-6 rounded-xl bg-white shadow-md transition-all duration-500 hover:bg-blue-50 hover:shadow-lg hover:-translate-y-1"
+              className="flex flex-col sm:flex-row items-start sm:space-x-4 p-4 sm:p-6 rounded-xl bg-white shadow-md transition-all duration-500 hover:bg-blue-50 hover:shadow-lg hover:-translate-y-1"
             >
               {/* Animated Icon */}
               <motion.div
                 whileHover={{ scale: 1.3, rotate: 10 }}
-                className="text-blue-600 w-10 h-10 p-2 rounded-full bg-blue-100 flex justify-center items-center shadow-md transition-transform"
+                className="text-blue-600 w-10 h-10 p-2 rounded-full bg-blue-100 flex justify-center items-center shadow-md transition-transform mb-3 sm:mb-0"
               >
                 {benefit.icon}
               </motion.div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 transition-all duration-300 hover:text-blue-600">
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-800 transition-all duration-300 hover:text-blue-600">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -48,12 +50,12 @@ export const BenefitsSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-gray-100 rounded-xl p-8 overflow-hidden relative shadow-lg"
+          className="overflow-hidden relative h-64 sm:h-80 md:h-auto order-1 md:order-2 mb-8 md:mb-0"
         >
           <motion.img
             src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
             alt="Team working"
-            className="rounded-xl shadow-lg w-full transition-transform duration-500 hover:scale-110 hover:shadow-2xl"
+            className="rounded-xl w-full h-full object-cover md:translate-y-0  transition-transform duration-500 hover:scale-110 hover:shadow-2xl"
           />
           {/* Glowing Effect on Hover */}
           <div className="absolute inset-0 bg-white opacity-10 transition-opacity duration-500 hover:opacity-20"></div>
@@ -90,3 +92,5 @@ const benefits = [
       "Digiflex.ai builds high-converting websites with optimized CTAs to transform visitors into customers.",
   },
 ];
+
+export default BenefitsSection;

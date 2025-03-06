@@ -1,5 +1,6 @@
 import React from 'react';
 import WrapperContainer from '../Layout/WrapperContainer'
+import { Link } from 'react-router-dom';
 
 const footerLinks = {
   'CONSULTING': [
@@ -122,12 +123,11 @@ const Navigation = () => {
                   <ul className="space-y-2">
                     {links.map((link) => (
                       <li key={link.name}>
-                        <a
-                          href={link.url}
+                        <Link to={link.url}
                           className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-200"
                         >
                           {link.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

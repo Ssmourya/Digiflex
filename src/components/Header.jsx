@@ -35,23 +35,7 @@ const Navbar = () => {
         setActiveDropdown(activeDropdown === dropdownType ? null : dropdownType);
     };
 
-    // Helper function to find features for a category
-    const getFeaturesForCategory = (categoryType) => {
-        // First try to find an exact match by id
-        const exactMatch = serviceCategories.find(
-            (service) => service.id.toLowerCase() === categoryType.toLowerCase()
-        );
-        if (exactMatch) return exactMatch.features;
 
-        // If no exact match, try to match by titles (more flexible)
-        const matchByTitle = serviceCategories.find(
-            (service) =>
-                service.title.toLowerCase().includes(categoryType.toLowerCase()) ||
-                categoryType.toLowerCase().includes(service.title.toLowerCase())
-        );
-
-        return matchByTitle ? matchByTitle.features : [];
-    };
 
     useEffect(() => {
         if (topbarRef.current) {
@@ -80,11 +64,17 @@ const Navbar = () => {
         }
     }, [activeDropdown]);
 
+    useEffect(() => {
+       
+    }, [isMobileMenuVisible]);
+
 
 
     // Function to get the appropriate items for the dropdown based on type
     const getDropdownItems = (dropdownType) => {
+
         switch (dropdownType) {
+            
             case "services":
                 return serviceCategories;
 
@@ -100,6 +90,11 @@ const Navbar = () => {
     };
 
     useEffect(() => {
+
+        setHoveredCategory(null);
+        setActiveDropdown(null);
+
+        
         if (isMobileMenuVisible) {
             document.body.classList.add("overflow-hidden");
         } else {
@@ -109,6 +104,8 @@ const Navbar = () => {
         return () => {
             document.body.classList.remove("overflow-hidden"); // Cleanup on unmount
         };
+
+
     }, [isMobileMenuVisible]);
 
 
@@ -139,7 +136,11 @@ const Navbar = () => {
 
             <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navbarRef}>
 
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4"
+                    onClick={ () => {
+                        isMobileMenuVisible ? setIsMobileMenuVisible(false) : 1 ;
+                    }}
+                >
                     <div className="flex items-center h-16 gap-x-10">
 
                         <Link to="/" className="flex items-center no-underline">
@@ -148,7 +149,7 @@ const Navbar = () => {
 
                         {!isSearchVisible ? (
                             <>
-                                <div className="hidden lg:flex items-center space-x-6 mr-auto"
+                                <div className="hidden lg:flex items-center space-x-6 mr-auto" 
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
                                     {mainNavItems.map((navItem) => (
@@ -212,13 +213,6 @@ const Navbar = () => {
                                 </div>
 
                                 <div className="lg:hidden flex items-center ml-auto space-x-4">
-                                    {/* <button
-                                        onClick={() => setIsSearchVisible(true)}
-                                        className="text-white hover:text-gray-300"
-                                        aria-label="Open search"
-                                    >
-                                        <Search className="h-5 w-5" />
-                                    </button> */}
                                     <button
                                         onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
                                         className="text-white hover:text-gray-300"
@@ -268,7 +262,7 @@ const Navbar = () => {
 
                                     <div key={navItem.label} className="mb-4">
 
-                                        <div
+                                        {/* <div
                                             className="flex items-center justify-between"
                                             onClick={() => handleDropdownClick(navItem.dropdownType)}
                                         >
@@ -281,7 +275,37 @@ const Navbar = () => {
                                                     />
                                                 )
                                             }
-                                        </div>
+                                        </div> */}
+
+                                        <div
+                                                className="flex items-center justify-between"
+                                                onClick={ (e) => {
+                                                       
+                                                    navItem.hasDropdown && e.preventDefault();
+                                                    navItem.href === "/" ? setIsMobileMenuVisible(false) :
+                                                    handleDropdownClick(navItem.dropdownType);
+                                                }}
+                                            >
+                                                <Link
+                                                    to={navItem.href}
+                                                    className="text-white font-medium"
+                                                   
+
+                                                    target = {navItem.href === "/digiflex.ai/blog" ? "_blank" : "_self"}
+                                                >
+                                                    {navItem.label}
+                                                </Link>
+
+                                                {
+                                                    navItem.hasDropdown && (
+                                                        <ChevronDown
+                                                            className={`h-4 w-4 text-gray-400 transition-transform duration-300 ${activeDropdown === navItem.dropdownType ? "rotate-180" : ""
+                                                                }`}
+                                                        />
+                                                    )
+                                                }   
+
+                                            </div>
 
                                         {navItem.hasDropdown && activeDropdown === navItem.dropdownType && (
                                             <div className="mt-2 ml-4">

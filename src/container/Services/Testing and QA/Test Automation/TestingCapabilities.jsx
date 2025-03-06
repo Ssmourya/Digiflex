@@ -6,7 +6,6 @@ import Paragraph from "../../../../Layout/Paragraph";
 import { TestAutomationFAQData } from "../FAQData";
 import Faq from "../../../../components/Faq";
 
-
 const categories = {
   "TEST AUTOMATION": [
     "Automation Testing - Selenium",
@@ -47,7 +46,7 @@ const TestingCapabilities = () => {
   const [selectedCategory, setSelectedCategory] = useState("TEST AUTOMATION");
 
   return (
-    <WrapperContainer className="mb-10">
+    <WrapperContainer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Title Section */}
         <div className="text-center">

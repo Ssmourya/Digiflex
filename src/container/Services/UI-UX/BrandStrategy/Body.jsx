@@ -12,7 +12,7 @@ import Faq from '../../../../components/Faq';
 
 const Body = () => {
   return (
-    <div className=" bg-gray-50 pb-10">
+    <div className=" bg-gray-50 ">
       {/* Why Us Section */}
       <WrapperContainer>
         <h1 className="font-bold text-black text-5xl text-center mb-6">

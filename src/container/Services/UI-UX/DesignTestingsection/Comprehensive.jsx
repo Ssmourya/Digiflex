@@ -7,7 +7,7 @@ import Faq from "../../../../components/Faq";
 
 function ComprehensiveSection() {
   return (
-    <div className="flex pb-10">
+    <div className="flex">
       <WrapperContainer>
         <h1 className="text-5xl text-center font-bold">
           Comprehensive <span className="text-blue-800">Exploratory</span>{" "}

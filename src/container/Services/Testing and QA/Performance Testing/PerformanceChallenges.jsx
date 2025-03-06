@@ -47,7 +47,7 @@ const Card = ({ title, items, color, Icon }) => (
 
 const PerformanceChallenges = () => {
     return (
-      <WrapperContainer className="mb-10">
+      <WrapperContainer>
         {/* Heading and Image Row */}
         <div className="flex flex-wrap flex-col-reverse lg:flex-row justify-between items-center w-full lg:mb-10 gap-8 lg:gap-12">
           <Heading className="text-center lg:text-left">

@@ -285,7 +285,7 @@ function Body() {
   return (
     <>
       {/* Section 1 */}
-      <div className="bg-white text-black px-6 pb-10 ">
+      <div className="bg-white text-black px-6">
         <WrapperContainer>
           <div className="max-w-7xl mx-auto">
             {/* What We Do Section */}

@@ -28,7 +28,7 @@ const tools = [
 
 export default function SecurityApproach() {
     return (
-      <WrapperContainer className="mb-10">
+      <WrapperContainer>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Heading>Our Approach To Ensure Complete Security</Heading>

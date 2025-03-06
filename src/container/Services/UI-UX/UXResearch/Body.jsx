@@ -75,7 +75,7 @@ const ServicesHero = () => {
   return (
     <>
       {/*Section 1 */}
-      <div className="bg-white pb-10">
+      <div className="bg-white">
         <WrapperContainer>
           <h1 className="text-5xl text-center pb-5 font-bold text-blue-950 ">
             UX Research

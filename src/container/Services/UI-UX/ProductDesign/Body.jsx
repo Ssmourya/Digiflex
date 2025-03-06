@@ -76,7 +76,7 @@ const DigitalProducts = () => {
   return (
     <>
       {/* Section 1 */}
-      <div className="relative z-10 flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8 pb-10">
+      <div className="relative z-10 flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8">
         <WrapperContainer>
           <div className="w-full max-w-7xl flex flex-col items-center space-y-8">
             <div className="w-full text-center">

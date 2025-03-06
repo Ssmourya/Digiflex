@@ -242,7 +242,7 @@ const steps = [
 
 const Body = () => {
   return (
-    <div className="relative bg-gradient-to-b from-blue-50 to-white min-h-screen pb-10">
+    <div className="relative bg-gradient-to-b from-blue-50 to-white min-h-screen">
       {/* section 1 */}
       <div className="relative w-full bg-white/80 backdrop-blur-lg    ">
         <WrapperContainer>

@@ -8,58 +8,29 @@ import Paragraph from "../../../../Layout/Paragraph";
 
 const ParaComponent = ({ section }) => {
     return (
-        <div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className=" w-full md:w-[50%]"
-        >
-            <Heading
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.2 }}
-                className="text-2xl md:text-4xl lg:text-5xl text-[#1A2E6F] font-semibold leading-tight mb-6"
-            >
+        <div className="w-full md:w-[50%]">
+
+            <Heading>
                 {section.title}
             </Heading>
 
-            <p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.5 }}
-                className="mb-4 text-base md:text-lg"
-            >
-                <Paragraph>{section.description}</Paragraph>
-            </p>
+            <Paragraph className="text-md">{section.description}</Paragraph>
 
-            {Object.values(section.points).map((point, pointIndex) => (
-                <div key={pointIndex}>
-                    <div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 1.5 }}
-                        className="text-base md:text-lg"
-                    >
-                        <Paragraph>
-                            <span className="text-[#1A2E6F] font-bold">{'>> '}</span>
-                            {point}
-                        </Paragraph>
-                    </div>
-                </div>
-            ))}
+            {
+                Object.values(section.points).map((point, pointIndex) => (
+                    <li key={pointIndex} className="flex items-center gap-2 text-base md:text-lg text-gray-700">
+                        <span className="text-blue-600 text-lg -mt-5">➜</span>
+                        <Paragraph className="text-start">{point}</Paragraph>
+                    </li>
+                ))
+            }
         </div>
     );
 };
 
 const ImageComponent = ({ section }) => {
     return (
-        <div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className=" md:w-[384px] sm:w-1/4 h-auto rounded-xl overflow-hidden"
-        >
+        <div className=" md:w-[384px] sm:w-1/4 h-auto rounded-xl overflow-hidden">
             <img
                 src={section.image}
                 alt="Key Image"
@@ -113,11 +84,7 @@ const Body = () => {
                 {sections.map((section, index) => (
                     <div
                         key={index}
-                        className="flex flex-col md:flex-row justify-between items-center gap-10 p-6 md:p-10"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1 }}
+                        className="flex flex-col md:flex-row justify-between items-center gap-10 p-3"
                     >
                         {index % 2 === 0 ? (
                             <div className="flex flex-col md:flex-row justify-between items-center w-full gap-10">

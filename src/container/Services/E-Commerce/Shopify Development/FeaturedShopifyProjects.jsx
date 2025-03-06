@@ -29,7 +29,7 @@ const projects = [
 const FeaturedShopifyProjects = () => {
   return (
     <WrapperContainer>
-      <section className="relative w-full flex flex-col items-center bg-white text-gray-900 px-0 py-0 pt-0 pt-0 mt-0 mb-0">
+      <section className="relative w-full flex flex-col items-center bg-white text-gray-900 px-0 py-0 pt-0 mt-0 mb-0">
         <div className="text-center relative z-10 mb-12">
           <Heading>Our Shopify Creations</Heading>
           <Paragraph className="text-gray-600 max-w-2xl mx-auto">

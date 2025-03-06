@@ -62,7 +62,7 @@ export const mainNavItems = [
         dropdownType: "products",
     },
     {
-        label: "Industy",
+        label: "Industry",
         href: "#",
         hasDropdown: false,
         dropdownType: "industries",

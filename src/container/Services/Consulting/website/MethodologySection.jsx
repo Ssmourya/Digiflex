@@ -1,11 +1,62 @@
-import React from "react";
+import React, { useState, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
 
+// Memoized card component to prevent unnecessary re-renders
+const MethodologyCard = memo(({ 
+  item, 
+  details, 
+  isActive, 
+  onClick 
+}) => {
+  return (
+    <div
+      className={`relative p-4 sm:p-6 rounded-xl cursor-pointer transition-all duration-300 shadow-md
+        ${isActive
+          ? "bg-blue-700 text-white shadow-lg"
+          : "bg-white hover:bg-blue-50"
+        }`}
+      onClick={onClick}
+    >
+      <h3 className="text-base sm:text-lg font-semibold mb-3">{item}</h3>
+      <div className="w-10 sm:w-12 h-1 bg-current"></div>
+
+      {isActive && (
+        <div className="mt-3 sm:mt-4">
+          <p className="text-xs sm:text-sm mb-2">
+            {details.description}
+          </p>
+          <div className="mt-2">
+            <p className="font-semibold text-xs sm:text-sm mb-1">Key Aspects:</p>
+            <ul className="list-disc list-inside text-xs">
+              {details.details.map((detail, idx) => (
+                <li key={idx} className="ml-1 mb-1">{detail}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-2 text-xs sm:text-sm">
+            <p className="font-semibold">Impact:</p>
+            <p className="text-yellow-200">
+              {details.impact}
+            </p>
+          </div>
+        </div>
+      )}
+
+      <div 
+        className={`absolute inset-0 border-2 rounded-xl transition-colors duration-300 pointer-events-none
+          ${isActive ? "border-blue-500" : "border-transparent"}`}
+      />
+    </div>
+  );
+});
+
+MethodologyCard.displayName = 'MethodologyCard';
+
 const MethodologySection = () => {
-  const [activeItem, setActiveItem] = React.useState(null);
+  const [activeItem, setActiveItem] = useState(null);
 
   const methodologyDetails = {
     "UX-BASED WEB DESIGN": {
@@ -53,85 +104,28 @@ const MethodologySection = () => {
     },
   };
 
+  const handleToggleItem = (item) => {
+    setActiveItem(prevItem => prevItem === item ? null : item);
+  };
+
   return (
     <WrapperContainer>
-      <div className="container mx-auto px-6">
-        <Heading>Our Web Consultants Best Practices</Heading>
+      <div className="container mx-auto px-4 sm:px-6">
+        <Heading >Our Web Consultants Best Practices</Heading>
         <Paragraph>
           We utilize data-driven best practices and industry insights to inform
           our consulting strategy.
         </Paragraph>
 
-        <div className="grid md:grid-cols-4 gap-8 relative">
-          {Object.keys(methodologyDetails).map((item, index) => (
-            <motion.div
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {Object.keys(methodologyDetails).map((item) => (
+            <MethodologyCard
               key={item}
-              layout
-              className={`relative p-6 rounded-xl cursor-pointer transition-all duration-300 group shadow-md
-                ${
-                  activeItem === item
-                    ? "bg-blue-700 text-white scale-105 shadow-2xl"
-                    : "bg-white hover:bg-blue-50 hover:shadow-lg"
-                }`}
-              onHoverStart={() => setActiveItem(item)}
-              onHoverEnd={() => setActiveItem(null)}
-              initial={{ opacity: 1, scale: 1 }}
-              animate={{
-                opacity: activeItem && activeItem !== item ? 0.6 : 1,
-                scale: activeItem && activeItem !== item ? 0.95 : 1,
-              }}
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.3 },
-              }}
-            >
-              <h3 className="text-lg font-semibold mb-4">{item}</h3>
-              <div className="w-12 h-1 bg-current"></div>
-
-              <AnimatePresence>
-                {activeItem === item && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{
-                      opacity: 1,
-                      height: "auto",
-                      transition: { duration: 0.3, ease: "easeInOut" },
-                    }}
-                    exit={{
-                      opacity: 0,
-                      height: 0,
-                      transition: { duration: 0.2, ease: "easeInOut" },
-                    }}
-                    className="overflow-hidden mt-4"
-                  >
-                    <p className="text-sm mb-2">
-                      {methodologyDetails[item].description}
-                    </p>
-                    <div className="mt-2">
-                      <p className="font-semibold text-sm mb-1">Key Aspects:</p>
-                      <ul className="list-disc list-inside text-xs">
-                        {methodologyDetails[item].details.map((detail, idx) => (
-                          <li key={idx}>{detail}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="mt-2 text-sm">
-                      <p className="font-semibold">Impact:</p>
-                      <p className="text-yellow-200">
-                        {methodologyDetails[item].impact}
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <motion.div
-                className="absolute inset-0 border-2 border-transparent rounded-xl group-hover:border-blue-500 transition-all duration-300"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeItem === item ? 1 : 0 }}
-                exit={{ opacity: 0 }}
-              />
-            </motion.div>
+              item={item}
+              details={methodologyDetails[item]}
+              isActive={activeItem === item}
+              onClick={() => handleToggleItem(item)}
+            />
           ))}
         </div>
       </div>

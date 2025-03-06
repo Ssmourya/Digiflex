@@ -19,7 +19,7 @@ const OutcomesSection = () => {
                             Faster product delivery cycles & increased customer satisfaction
                     </Subheading>
                     <Paragraph className='text-center'>
-                        Apexon Selenium testing services deliver significant business advantages:
+                        Digiflex Selenium testing services deliver significant business advantages:
                     </Paragraph>
                 </div>
 

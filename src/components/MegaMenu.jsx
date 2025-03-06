@@ -140,21 +140,13 @@ const NavItem = ({ setActiveDropdown, service, topbarHeight }) => {
                         <div className="hidden md:flex items-center justify-center h-full mt-6 md:mt-0">
                             {
                                 service.image ? (
-                                    <div className="relative w-full h-full overflow-hidden rounded-xl">
+                                    <div className="w-full h-full overflow-hidden rounded-xl">
                                         <img
                                             src={service.image}
                                             alt={service.title}
                                             className="w-full h-full object-cover rounded-xl"
                                             style={{ maxHeight:'400px' }}
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-blue-950/50 to-transparent flex items-end">
-                                            <div className="p-6">
-                                                <h3 className="text-xl font-bold text-white mb-2">Explore {service.title}</h3>
-                                                <button className="flex items-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
-                                                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
-                                                </button>
-                                            </div>
-                                        </div>
                                     </div>
                                 ) : (
                                     <div className="flex items-center justify-center h-full w-full bg-gray-100 rounded-xl">

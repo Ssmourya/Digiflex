@@ -1,5 +1,4 @@
 import React from 'react';
-
 import devops_Solutions from "../../../../assets/devops_Solutions.jpeg";
 import quality_assurance from "../../../../assets/quality_assurance.jpeg";
 import software_dev from "../../../../assets/software_dev.jpeg";

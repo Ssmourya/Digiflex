@@ -8,9 +8,9 @@ const FeaturesList = ({ features }) => {
     return (
         <ul className="mb-4">
             {features.map((feature, index) => (
-                <li key={index} className="flex items-center mb-2 text-lg">
+                <li key={index} className="flex items-center text-lg">
                     <svg
-                        className="w-5 h-5 mr-2 text-green-500"
+                        className="w-5 h-5 -mt-5 mr-2 text-green-500"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ const ScalableAutomation = () => {
             <div className="flex flex-col md:flex-row items-center bg-white px-4 py-6 md:px-8 lg:px-12">
                 
                 {/* Left Section */}
-                <div className="w-full md:w-1/2 md:pr-8 py-4">
+                <div className="w-full md:w-1/2">
                     <Heading>
                         <div>Scalable Automation Cloud Infrastructure</div>
                     </Heading>
@@ -53,7 +53,7 @@ const ScalableAutomation = () => {
                     </Paragraph>
                     
                     <FeaturesList features={featuresData} />
-                    <button className="text-blue-500 hover:text-blue-600 font-medium py-2">
+                    <button className="text-blue-500 hover:text-blue-600 font-medium">
                         Get Started For Free 
                         <span className="ml-1">&rarr;</span>
                     </button>

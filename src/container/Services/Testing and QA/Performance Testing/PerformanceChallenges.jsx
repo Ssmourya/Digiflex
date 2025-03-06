@@ -5,6 +5,9 @@ import Heading from '../../../../Layout/Heading';
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Subheading from '../../../../Layout/Subheading';
 import Paragraph from '../../../../Layout/Paragraph';
+import { PerformanceTestingFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
+
 
 const challenges = [
     "Identifying performance bottlenecks",
@@ -44,28 +47,33 @@ const Card = ({ title, items, color, Icon }) => (
 
 const PerformanceChallenges = () => {
     return (
-        <WrapperContainer className='mb-10'>
-            {/* Heading and Image Row */}
-            <div className="flex flex-wrap flex-col-reverse lg:flex-row justify-between items-center w-full lg:mb-10 gap-8 lg:gap-12">
-                <Heading className="text-center lg:text-left">
-                    Performance Testing Challenges <br/>
-                    and Solutions
-                </Heading>
-                <div className="w-full sm:w-[75%] md:w-[60%] lg:w-[35%] overflow-hidden">
-                    <img
-                        src={perfo_test_and_sol}
-                        alt="Performance Testing Challenges and Solutions"
-                        className="w-full object-cover rounded-xl shadow-md"
-                    />
-                </div>
-            </div>
-            
-            {/* Challenges and Solutions Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl mx-auto">
-                <Card title="Challenges" items={challenges} color="red" Icon={Minus} />
-                <Card title="Solutions" items={solutions} color="green" Icon={Plus} />
-            </div>
-        </WrapperContainer>
+      <WrapperContainer>
+        {/* Heading and Image Row */}
+        <div className="flex flex-wrap flex-col-reverse lg:flex-row justify-between items-center w-full lg:mb-10 gap-8 lg:gap-12">
+          <Heading className="text-center lg:text-left">
+            Performance Testing Challenges <br />
+            and Solutions
+          </Heading>
+          <div className="w-full sm:w-[75%] md:w-[60%] lg:w-[35%] overflow-hidden">
+            <img
+              src={perfo_test_and_sol}
+              alt="Performance Testing Challenges and Solutions"
+              className="w-full object-cover rounded-xl shadow-md"
+            />
+          </div>
+        </div>
+        {/* Challenges and Solutions Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl mx-auto">
+          <Card
+            title="Challenges"
+            items={challenges}
+            color="red"
+            Icon={Minus}
+          />
+          <Card title="Solutions" items={solutions} color="green" Icon={Plus} />
+        </div>
+        <Faq faqs={PerformanceTestingFAQData} />;
+      </WrapperContainer>
     );
 };
 

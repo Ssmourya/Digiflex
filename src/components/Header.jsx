@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Search, X, Menu, ChevronDown } from "lucide-react";
 import logo from "../assets/digiflex.png";
-import { mainNavItems, serviceCategories, productCategories, technologies } from "./HeaderData";
+import { mainNavItems, serviceCategories, productCategories, technologyCategories } from "./HeaderData";
 import MegaMenu from "./MegaMenu";
 import { Phone, Mail } from "lucide-react";
 
@@ -35,23 +35,7 @@ const Navbar = () => {
         setActiveDropdown(activeDropdown === dropdownType ? null : dropdownType);
     };
 
-    // Helper function to find features for a category
-    const getFeaturesForCategory = (categoryType) => {
-        // First try to find an exact match by id
-        const exactMatch = serviceCategories.find(
-            (service) => service.id.toLowerCase() === categoryType.toLowerCase()
-        );
-        if (exactMatch) return exactMatch.features;
 
-        // If no exact match, try to match by titles (more flexible)
-        const matchByTitle = serviceCategories.find(
-            (service) =>
-                service.title.toLowerCase().includes(categoryType.toLowerCase()) ||
-                categoryType.toLowerCase().includes(service.title.toLowerCase())
-        );
-
-        return matchByTitle ? matchByTitle.features : [];
-    };
 
     useEffect(() => {
         if (topbarRef.current) {
@@ -80,16 +64,22 @@ const Navbar = () => {
         }
     }, [activeDropdown]);
 
+    useEffect(() => {
+       
+    }, [isMobileMenuVisible]);
+
 
 
     // Function to get the appropriate items for the dropdown based on type
     const getDropdownItems = (dropdownType) => {
+
         switch (dropdownType) {
+            
             case "services":
                 return serviceCategories;
 
             case "technology" :
-                return technologies;
+                return technologyCategories;
 
             case "products":
                 return productCategories;
@@ -100,6 +90,11 @@ const Navbar = () => {
     };
 
     useEffect(() => {
+
+        setHoveredCategory(null);
+        setActiveDropdown(null);
+
+        
         if (isMobileMenuVisible) {
             document.body.classList.add("overflow-hidden");
         } else {
@@ -109,33 +104,43 @@ const Navbar = () => {
         return () => {
             document.body.classList.remove("overflow-hidden"); // Cleanup on unmount
         };
+
+
     }, [isMobileMenuVisible]);
 
 
     return (
         <>
+
             <div className="w-full bg-blue-950 border-b border-blue-800 px-4 md:px-8 py-2">
-                <div className="flex justify-end items-center">
-                    <div className="flex items-center space-x-6">
-                        <div className="flex items-center space-x-2 group hover:bg-blue-900 px-2 py-1 rounded transition-colors duration-200">
+                <div className="flex xs:justify-between justify-end items-center">
+                    <div className="flex flex-row items-center">
+                        {/* Phone Section */}
+                        <div className="flex items-center space-x-2 group hover:bg-blue-900 px-3 py-1 rounded transition-colors duration-200">
                             <Phone size={16} className="text-white group-hover:text-blue-300" />
                             <span className="text-xs md:text-sm font-medium cursor-pointer text-white">
                                 +91 90393 83183
                             </span>
                         </div>
-                        <div className="hidden md:flex items-center space-x-2 group hover:bg-blue-900 px-2 py-1 rounded transition-colors duration-200">
+                        
+                        {/* Email Section */}
+                        <div className="flex items-center space-x-2 group hover:bg-blue-900 px-3 py-1 rounded transition-colors duration-200">
                             <Mail size={16} className="text-white group-hover:text-blue-300" />
                             <span className="text-xs md:text-sm font-medium cursor-pointer text-white">
                                 info@digiflex.ai
                             </span>
                         </div>
                     </div>
-                </div>
+                        </div>
             </div>
 
             <nav className="sticky top-0 z-50 w-full bg-blue-950 text-white" ref={navbarRef}>
 
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4"
+                    onClick={ () => {
+                        isMobileMenuVisible ? setIsMobileMenuVisible(false) : 1 ;
+                    }}
+                >
                     <div className="flex items-center h-16 gap-x-10">
 
                         <Link to="/" className="flex items-center no-underline">
@@ -144,7 +149,7 @@ const Navbar = () => {
 
                         {!isSearchVisible ? (
                             <>
-                                <div className="hidden lg:flex items-center space-x-6 mr-auto"
+                                <div className="hidden lg:flex items-center space-x-6 mr-auto" 
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
                                     {mainNavItems.map((navItem) => (
@@ -208,13 +213,6 @@ const Navbar = () => {
                                 </div>
 
                                 <div className="lg:hidden flex items-center ml-auto space-x-4">
-                                    {/* <button
-                                        onClick={() => setIsSearchVisible(true)}
-                                        className="text-white hover:text-gray-300"
-                                        aria-label="Open search"
-                                    >
-                                        <Search className="h-5 w-5" />
-                                    </button> */}
                                     <button
                                         onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
                                         className="text-white hover:text-gray-300"
@@ -257,14 +255,14 @@ const Navbar = () => {
                 {/* Mobile menu */}
                 {
                     isMobileMenuVisible && (
-                        <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen">
+                        <div className="lg:hidden bg-blue-900 py-4 px-4 inset-0 z-50 overflow-y-auto h-screen pb-48">
                             {
                                 mainNavItems.map((navItem) => (
 
 
                                     <div key={navItem.label} className="mb-4">
 
-                                        <div
+                                        {/* <div
                                             className="flex items-center justify-between"
                                             onClick={() => handleDropdownClick(navItem.dropdownType)}
                                         >
@@ -277,37 +275,66 @@ const Navbar = () => {
                                                     />
                                                 )
                                             }
-                                        </div>
+                                        </div> */}
+
+                                        <div
+                                                className="flex items-center justify-between"
+                                                onClick={ (e) => {
+                                                       
+                                                    navItem.hasDropdown && e.preventDefault();
+                                                    navItem.href === "/" ? setIsMobileMenuVisible(false) :
+                                                    handleDropdownClick(navItem.dropdownType);
+                                                }}
+                                            >
+                                                <Link
+                                                    to={navItem.href}
+                                                    className="text-white font-medium"
+                                                   
+
+                                                    target = {navItem.href === "/digiflex.ai/blog" ? "_blank" : "_self"}
+                                                >
+                                                    {navItem.label}
+                                                </Link>
+
+                                                {
+                                                    navItem.hasDropdown && (
+                                                        <ChevronDown
+                                                            className={`h-4 w-4 text-gray-400 transition-transform duration-300 ${activeDropdown === navItem.dropdownType ? "rotate-180" : ""
+                                                                }`}
+                                                        />
+                                                    )
+                                                }   
+
+                                            </div>
 
                                         {navItem.hasDropdown && activeDropdown === navItem.dropdownType && (
                                             <div className="mt-2 ml-4">
-                                                {getDropdownItems(navItem.dropdownType).map((category) => (
-                                                    <div key={category.id} className="mb-2">
+                                                {
+                                                    getDropdownItems(navItem.dropdownType).map( (service) => (
+                                                    <div key={service.id} className="mb-2">
                                                         <div
                                                             className="flex items-center justify-between"
                                                             onClick={() =>
                                                                 setHoveredCategory(
-                                                                    hoveredCategory === category.id
+                                                                    hoveredCategory === service.id
                                                                         ? null
-                                                                        : category.id
+                                                                        : service.id
                                                                 )
                                                             }
                                                         >
                                                             <span className="text-white text-sm">
-                                                                {category.title}
+                                                                {service.title}
                                                             </span>
                                                             <ChevronDown
-                                                                className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${hoveredCategory === category.id ? "rotate-180" : ""
+                                                                className={`h-3 w-3 text-gray-400 transition-transform duration-300 ${hoveredCategory === service.id ? "rotate-180" : ""
                                                                     }`}
                                                             />
                                                         </div>
 
-                                                        {hoveredCategory === category.id && (
+                                                        {hoveredCategory === service.id && (
                                                             <div className="mt-1 ml-4">
                                                                 {
-                                                                    getFeaturesForCategory(
-                                                                        category.dropdownType || category.id
-                                                                    ).map((feature) => (
+                                                                    service.features.map((feature) => (
 
 
                                                                         <Link

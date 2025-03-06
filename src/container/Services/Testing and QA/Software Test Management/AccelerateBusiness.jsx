@@ -6,9 +6,13 @@ import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
 import Subheading from '../../../../Layout/Subheading';
 import Paragraph from '../../../../Layout/Paragraph';
+import { SoftwareTestManagementFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
+
+
 
 const Card = ({ image, title, description, points }) => (
-    <div className="relative w-full sm:w-72 bg-black border border-green-500 text-white rounded-xl overflow-hidden shadow-2xl group transition-all duration-300 hover:scale-105">
+    <div className="relative w-full h-56 sm:w-72 bg-black border border-green-500 text-white rounded-xl overflow-hidden shadow-2xl group transition-all duration-300 hover:scale-105">
         <div className="relative">
             <img
                 src={image}
@@ -44,24 +48,32 @@ const AccelerateBusiness = () => {
     ];
 
     return (
-        <WrapperContainer className='mb-10'>
-            <div className="bg-white text-center">
-                <Heading>What we do?</Heading>
-                <Subheading className="text-center">Accelerate your business</Subheading>
-                <Paragraph className="text-center">
-                    We strengthen enterprises for digital transformation.
-                </Paragraph>
+      <WrapperContainer>
+        <div className="bg-white text-center">
+          <Heading>What we do?</Heading>
+          <Subheading className="text-center">
+            Accelerate your business
+          </Subheading>
+          <Paragraph className="text-center">
+            We strengthen enterprises for digital transformation.
+          </Paragraph>
 
-                <div className="flex justify-center">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 max-w-6xl">
-                        {cards.map((card, index) => (
-                            <Card key={index} image={card.image} title={card.title} description={card.description} points={card.points} />
-                        ))}
-                    </div>
-                </div>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 max-w-6xl">
+              {cards.map((card, index) => (
+                <Card
+                  key={index}
+                  image={card.image}
+                  title={card.title}
+                  description={card.description}
+                  points={card.points}
+                />
+              ))}
             </div>
-        </WrapperContainer>
-
+          </div>
+        </div>
+        <Faq faqs={SoftwareTestManagementFAQData} />;
+      </WrapperContainer>
     );
 };
 

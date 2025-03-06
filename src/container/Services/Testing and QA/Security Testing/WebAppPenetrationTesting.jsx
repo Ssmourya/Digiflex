@@ -7,14 +7,15 @@
 
     const TestingMethodCard = ({ title, description, bgColor, icon: Icon }) => {
         return (
-            <div className="flex flex-col items-start space-y-4">
-                <div className={`${bgColor} rounded-full w-12 h-12 flex items-center justify-center mb-4`}>
-                    <Icon className="text-white w-6 h-6" />
-                </div>
-                <Subheading className>{title}</Subheading>
-                <Paragraph>{description}</Paragraph>
+            <div className="flex flex-col items-center text-center space-y-3">
+              <div className={`${bgColor} rounded-full w-14 h-14 flex items-center justify-center`}>
+                <Icon className="text-white w-7 h-7" />
+              </div>
+              <Subheading className="text-lg font-semibold">{title}</Subheading>
+              <Paragraph className="text-gray-600">{description}</Paragraph>
             </div>
-        );
+          );
+          
     };
 
     function WebAppPenetrationTesting() {

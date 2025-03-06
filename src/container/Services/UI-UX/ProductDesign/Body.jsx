@@ -8,6 +8,9 @@ import Heading from '../../../../Layout/Heading';
 import Paragraph from '../../../../Layout/Paragraph';
 import WrapperContainer from "../../../../Layout/WrapperContainer"
 import SubHeading from "../../../../Layout/Subheading"
+import { ProductDesignFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
+
 
 // section 1 
 const services = [
@@ -73,7 +76,7 @@ const DigitalProducts = () => {
   return (
     <>
       {/* Section 1 */}
-      <div className="relative z-10 flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8 ">
+      <div className="relative z-10 flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8 pb-10">
         <WrapperContainer>
           <div className="w-full max-w-7xl flex flex-col items-center space-y-8">
             <div className="w-full text-center">
@@ -322,7 +325,7 @@ const DigitalProducts = () => {
       </WrapperContainer>
 
       {/*section 3*/}
-      <div className="felx-1 justify-center items-center pb-20">
+      <div className="felx-1 justify-center items-cente">
         <WrapperContainer>
           {/* Heading */}
           <h1 className="text-5xl text-center pb-10 font-bold text-blue-950">
@@ -348,6 +351,7 @@ const DigitalProducts = () => {
               </div>
             ))}
           </div>
+          <Faq faqs={ProductDesignFAQData} />
         </WrapperContainer>
       </div>
     </>

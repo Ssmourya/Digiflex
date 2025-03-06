@@ -3,6 +3,9 @@ import { CheckCircle } from "lucide-react";
 import WrapperContainer from "../../../../Layout/WrapperContainer";
 import Heading from "../../../../Layout/Heading";
 import Paragraph from "../../../../Layout/Paragraph";
+import { TestAutomationFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
+
 
 const categories = {
   "TEST AUTOMATION": [
@@ -48,11 +51,10 @@ const TestingCapabilities = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Title Section */}
         <div className="text-center">
-          <Heading>
-            Our Testing Capabilities
-          </Heading>
+          <Heading>Our Testing Capabilities</Heading>
           <Paragraph className="text-center">
-            Comprehensive testing solutions to ensure quality, performance, and reliability
+            Comprehensive testing solutions to ensure quality, performance, and
+            reliability
           </Paragraph>
         </div>
 
@@ -89,19 +91,33 @@ const TestingCapabilities = () => {
                 </h3>
               </div>
             </div>
-            
+
             {/* Content Section */}
             <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
               <h4 className="text-xl font-semibold text-blue-700 mb-6 hidden lg:block">
                 Key Capabilities
               </h4>
               <ListSection items={categories[selectedCategory]} />
-              
+
               <div className="mt-8 pt-6 border-t border-gray-100">
-                <a href="#" className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                <a
+                  href="#"
+                  className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"
+                >
                   Learn more about our {selectedCategory.toLowerCase()} services
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -109,6 +125,7 @@ const TestingCapabilities = () => {
           </div>
         </div>
       </div>
+      <Faq faqs={TestAutomationFAQData} />;
     </WrapperContainer>
   );
 };

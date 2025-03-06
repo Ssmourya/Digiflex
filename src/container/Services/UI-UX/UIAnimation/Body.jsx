@@ -4,6 +4,8 @@ import Heading from '../../../../Layout/Heading';
 import Paragraph from '../../../../Layout/Paragraph';
 import WrapperContainer from "../../../../Layout/WrapperContainer"
 import SubHeading from "../../../../Layout/Subheading"
+import { UIAnimationFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
 
 // Section 3
 const approaches = [
@@ -283,7 +285,7 @@ function Body() {
   return (
     <>
       {/* Section 1 */}
-      <div className="bg-white text-black px-6 ">
+      <div className="bg-white text-black px-6 pb-10 ">
         <WrapperContainer>
           <div className="max-w-7xl mx-auto">
             {/* What We Do Section */}
@@ -554,6 +556,7 @@ function Body() {
               </div>
             ))}
           </div>
+          <Faq faqs={UIAnimationFAQData} />
         </WrapperContainer>
       </div>
     </>

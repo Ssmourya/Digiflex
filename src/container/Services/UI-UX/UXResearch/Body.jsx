@@ -1,75 +1,81 @@
-import {React, useState} from 'react';
-import uxreasearch43 from '../../../../assets/uxreasearch43.jpg'
-import Heading from '../../../../Layout/Heading';
-import Paragraph from '../../../../Layout/Paragraph';
-import WrapperContainer from "../../../../Layout/WrapperContainer"
-
+import { React, useState } from "react";
+import uxreasearch43 from "../../../../assets/uxreasearch43.jpg";
+import Heading from "../../../../Layout/Heading";
+import Paragraph from "../../../../Layout/Paragraph";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
+import { DesignConsultingFAQData, UXResearchFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
 
 // section 2
 const services = [
-    {
-      number: "01",
-      title: "Ad-hoc prototyping",
-      description: "Do you have more ideas than the capacity of an internal design team or want an alternative product concept? Rapid product prototyping, visual concept design, plastic card branding and design are how we can help."
-    },
-    {
-      number: "02",
-      title: "Product UX/UI design",
-      description: "A complete cycle of product design, starting from UX benchmarking and customer research through prototyping, visual concept, UI elements development, mandatory Usability Testing, and development team support. Mobile applications, web platforms, payment kiosks."
-    },
-    {
-      number: "03",
-      title: "Corporate & product websites",
-      description: "World-class UX/UI design and development services for corporate and product websites that help you highlight the value of your brand and effectively convert visitors into customers."
-    },
-    {
-      number: "04",
-      title: "Usability & Accessibility Audits",
-      description: "Ensure your digital products meet usability best practices and are fully accessible to all users, including those with disabilities. Our in-depth audits identify friction points, improve navigation, and align with WCAG and industry standards."
-    },
-    {
-      number: "05",
-      title: "User Testing & Behavioral Analysis",
-      description: "Understand how users interact with your platform through real-time usability testing, heatmaps, and behavior tracking. Our research helps refine user flows, reduce friction, and create seamless, high-performing experiences."
-    },
-    {
-      number: "06",
-      title: "Data-Driven UX Strategy",
-      description: "Transform insights into action with data-backed UX strategies that drive engagement and retention. We analyze customer pain points, industry trends, and user behavior to craft solutions that increase conversion rates and customer satisfaction."
-    }
-  ];
+  {
+    number: "01",
+    title: "Ad-hoc prototyping",
+    description:
+      "Do you have more ideas than the capacity of an internal design team or want an alternative product concept? Rapid product prototyping, visual concept design, plastic card branding and design are how we can help.",
+  },
+  {
+    number: "02",
+    title: "Product UX/UI design",
+    description:
+      "A complete cycle of product design, starting from UX benchmarking and customer research through prototyping, visual concept, UI elements development, mandatory Usability Testing, and development team support. Mobile applications, web platforms, payment kiosks.",
+  },
+  {
+    number: "03",
+    title: "Corporate & product websites",
+    description:
+      "World-class UX/UI design and development services for corporate and product websites that help you highlight the value of your brand and effectively convert visitors into customers.",
+  },
+  {
+    number: "04",
+    title: "Usability & Accessibility Audits",
+    description:
+      "Ensure your digital products meet usability best practices and are fully accessible to all users, including those with disabilities. Our in-depth audits identify friction points, improve navigation, and align with WCAG and industry standards.",
+  },
+  {
+    number: "05",
+    title: "User Testing & Behavioral Analysis",
+    description:
+      "Understand how users interact with your platform through real-time usability testing, heatmaps, and behavior tracking. Our research helps refine user flows, reduce friction, and create seamless, high-performing experiences.",
+  },
+  {
+    number: "06",
+    title: "Data-Driven UX Strategy",
+    description:
+      "Transform insights into action with data-backed UX strategies that drive engagement and retention. We analyze customer pain points, industry trends, and user behavior to craft solutions that increase conversion rates and customer satisfaction.",
+  },
+];
 
 // section 4
 const tools = [
-    {
-      id: 1,
-      logo: "https://img.icons8.com/ios/150/google-cloud-platform.png",
-      name: "Dovetail",
-      description:
-        "A powerful qualitative research platform that helps us analyze and synthesize user feedback, ensuring every insight is actionable.",
-    },
-    {
-      id: 2,
-      logo: "https://img.icons8.com/material-outlined/24/workshop.png",
-      name: "Miro",
-      description:
-        "An interactive collaborative whiteboard that enables our team to map out user journeys, brainstorm ideas, and facilitate agile UX workshops.",
-    },
-    {
-      id: 3,
-      logo: "https://img.icons8.com/material-sharp/96/positive-dynamic.png",
-      name: "Notion",
-      description:
-        "A productivity tool that helps us organize research findings, track usability insights, and streamline project collaboration for maximum efficiency.",
-    },
-]
- 
-  
+  {
+    id: 1,
+    logo: "https://img.icons8.com/ios/150/google-cloud-platform.png",
+    name: "Dovetail",
+    description:
+      "A powerful qualitative research platform that helps us analyze and synthesize user feedback, ensuring every insight is actionable.",
+  },
+  {
+    id: 2,
+    logo: "https://img.icons8.com/material-outlined/24/workshop.png",
+    name: "Miro",
+    description:
+      "An interactive collaborative whiteboard that enables our team to map out user journeys, brainstorm ideas, and facilitate agile UX workshops.",
+  },
+  {
+    id: 3,
+    logo: "https://img.icons8.com/material-sharp/96/positive-dynamic.png",
+    name: "Notion",
+    description:
+      "A productivity tool that helps us organize research findings, track usability insights, and streamline project collaboration for maximum efficiency.",
+  },
+];
+
 const ServicesHero = () => {
   return (
     <>
       {/*Section 1 */}
-      <div className="bg-white">
+      <div className="bg-white pb-10">
         <WrapperContainer>
           <h1 className="text-5xl text-center pb-5 font-bold text-blue-950 ">
             UX Research
@@ -92,7 +98,6 @@ const ServicesHero = () => {
                   experiences that enhance usability and boost customer
                   satisfaction.
                 </Paragraph>
-                
               </div>
             </div>
 
@@ -111,8 +116,8 @@ const ServicesHero = () => {
       </div>
 
       {/*Section 2 */}
-        <div className="flex">
-      <WrapperContainer>
+      <div className="flex">
+        <WrapperContainer>
           <Heading className="  text-center   font-bold text-blue-950 ">
             DigiFlex UX Research Services
           </Heading>
@@ -152,48 +157,48 @@ const ServicesHero = () => {
               </div>
             ))}
           </div>
-      </WrapperContainer>
-        </div>
+        </WrapperContainer>
+      </div>
 
       {/*Section 3 */}
-                  <div className="flex">
-                <WrapperContainer>
-                    <Heading className="   font-bold text-blue-950  ">
-                      DigiFlex UX Research Process
-                    </Heading>
+      <div className="flex">
+        <WrapperContainer>
+          <Heading className="   font-bold text-blue-950  ">
+            DigiFlex UX Research Process
+          </Heading>
 
-                    <p className="text-black mb-6 text-lg">
-                      At DigiFlex, we believe UX research should be adaptable,
-                      data-driven, and aligned with business goals. We dive deep into user
-                      behaviors, pain points, and needs to create meaningful,
-                      research-backed design decisions.
-                    </p>
+          <p className="text-black mb-6 text-lg">
+            At DigiFlex, we believe UX research should be adaptable,
+            data-driven, and aligned with business goals. We dive deep into user
+            behaviors, pain points, and needs to create meaningful,
+            research-backed design decisions.
+          </p>
 
-                    <div className="flex flex-col my-15 md:flex-col gap-6">
-                      {/* Discovery & Understanding */}
-                      <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl">
-                        <div className="flex items-center mb-4">
-                          <svg
-                            className="w-6 h-6 text-blue-950  mr-3"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                          >
-                            <circle cx="12" cy="12" r="3" />
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                          </svg>
-                          <h2 className="text-2xl text-blue-950  font-bold">
-                            Discovery & Understanding
-                          </h2>
-                        </div>
-                        <p className="text-gray-600 hover:text-black">
-                          Our UX research begins with a broad exploration of the business,
-                          users, and industry context. We conduct stakeholder interviews,
-                          competitive analysis, and user research to uncover insights that
-                          shape the foundation of our strategy. Every detail matters—one
-                          key finding can redefine the entire approach.
-                        </p>
-                      </div>
+          <div className="flex flex-col my-15 md:flex-col gap-6">
+            {/* Discovery & Understanding */}
+            <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200  hover:shadow-blue-200 hover:shadow-xl">
+              <div className="flex items-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-950  mr-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg>
+                <h2 className="text-2xl text-blue-950  font-bold">
+                  Discovery & Understanding
+                </h2>
+              </div>
+              <p className="text-gray-600 hover:text-black">
+                Our UX research begins with a broad exploration of the business,
+                users, and industry context. We conduct stakeholder interviews,
+                competitive analysis, and user research to uncover insights that
+                shape the foundation of our strategy. Every detail matters—one
+                key finding can redefine the entire approach.
+              </p>
+            </div>
 
             {/* Insight & Analysis */}
             <div className="flex-1 bg-white p-6 rounded-lg shadow-xl shadow-gray-200 hover:shadow-blue-200 hover:shadow-xl ">
@@ -319,12 +324,12 @@ const ServicesHero = () => {
               </p>
             </div>
           </div>
-      </WrapperContainer>
-        </div>
+        </WrapperContainer>
+      </div>
 
       {/* Section 4 */}
-        <div className="flex pb-20">
-      <WrapperContainer>
+      <div className="flex">
+        <WrapperContainer>
           {/* Header Section */}
           <div className="flex flex-col items-center text-center">
             <Heading className=" font-bold text-blue-950 ">
@@ -361,8 +366,9 @@ const ServicesHero = () => {
               </div>
             ))}
           </div>
-      </WrapperContainer>
-        </div>
+          <Faq faqs={UXResearchFAQData} />
+        </WrapperContainer>
+      </div>
     </>
   );
 };

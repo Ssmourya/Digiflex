@@ -3,6 +3,8 @@ import { RefreshCw, Search, Layout, Palette, Send } from "lucide-react";
 import { RefreshCcw, Code, Users, Smartphone } from "lucide-react";
 import { Brain, Building2, ShoppingCart, Heart } from 'lucide-react';
 import WrapperContainer from "../../../../Layout/WrapperContainer"
+import { DesignConsultingFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
 
 
 // FeatureCard Component
@@ -240,7 +242,7 @@ const steps = [
 
 const Body = () => {
   return (
-    <div className="relative bg-gradient-to-b from-blue-50 to-white min-h-screen">
+    <div className="relative bg-gradient-to-b from-blue-50 to-white min-h-screen pb-10">
       {/* section 1 */}
       <div className="relative w-full bg-white/80 backdrop-blur-lg    ">
         <WrapperContainer>
@@ -334,21 +336,21 @@ const Body = () => {
         </WrapperContainer>
       </div>
       {/* section 3 part2 */}
-      <div className='bg-blue-950'>
+      <div className="bg-blue-950">
         <WrapperContainer>
-        {/* Testing Cycle */}
-        <div className="py-10 max-w-md mx-auto justify-center text-center">
-          <div className="relative w-48 h-48 mx-auto mb-8">
-            <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-spin-slow">
-              <div className="absolute -right-3 top-1/2 w-6 h-6 bg-blue-500 rounded-full transform -translate-y-1/2"></div>
-            </div>
-            <div className="absolute inset-4 bg-blue-950 backdrop-blur-lg rounded-full flex items-center justify-center">
-              <p className="text-sm font-medium text-white max-w-[120px] leading-tight animate-glow">
-                User Testing & Observation Cycle
-              </p>
+          {/* Testing Cycle */}
+          <div className="py-10 max-w-md mx-auto justify-center text-center">
+            <div className="relative w-48 h-48 mx-auto mb-8">
+              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-spin-slow">
+                <div className="absolute -right-3 top-1/2 w-6 h-6 bg-blue-500 rounded-full transform -translate-y-1/2"></div>
+              </div>
+              <div className="absolute inset-4 bg-blue-950 backdrop-blur-lg rounded-full flex items-center justify-center">
+                <p className="text-sm font-medium text-white max-w-[120px] leading-tight animate-glow">
+                  User Testing & Observation Cycle
+                </p>
+              </div>
             </div>
           </div>
-        </div>
         </WrapperContainer>
       </div>
 
@@ -431,7 +433,7 @@ const Body = () => {
       </div>
 
       {/* section 6 */}
-      <div className="w-full bg-white/90 backdrop-blur-lg pb-20 ">
+      <div className="w-full bg-white/90 backdrop-blur-lg ">
         <WrapperContainer>
           <div className="max-w-7xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16 animate-glow">
@@ -455,6 +457,7 @@ const Body = () => {
               ))}
             </div>
           </div>
+          <Faq faqs={DesignConsultingFAQData} />
         </WrapperContainer>
       </div>
     </div>

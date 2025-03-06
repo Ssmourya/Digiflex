@@ -28,6 +28,9 @@ import {
 import WrapperContainer from '../../../../Layout/WrapperContainer';
 import Heading from '../../../../Layout/Heading';
 import Paragraph from '../../../../Layout/Paragraph';
+import { SecurityTestingFAQData, SeleniumAutomationTestingFAQData } from "../FAQData";
+import Faq from "../../../../components/Faq";
+
 
 const IntegrationShowcase = () => {
     const categories = [
@@ -89,7 +92,7 @@ const IntegrationShowcase = () => {
 
     return (
 
-        <WrapperContainer>
+        <WrapperContainer className='mb-10'>
             <div className="text-center mb-10">
                 <Heading>
                     Enterprise-Ready Integrations
@@ -137,6 +140,7 @@ const IntegrationShowcase = () => {
                     }
                 </div>
             </div>
+            <Faq faqs={SeleniumAutomationTestingFAQData}/>
         </WrapperContainer>
     );
 };

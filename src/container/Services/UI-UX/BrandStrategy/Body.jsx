@@ -5,12 +5,14 @@ import Heading from '../../../../Layout/Heading';
 import Paragraph from '../../../../Layout/Paragraph';
 import WrapperContainer from "../../../../Layout/WrapperContainer"
 import SubHeading from '../../../../Layout/Subheading';
+import { BrandStrategyFAQData } from "../FAQData";
+import Faq from '../../../../components/Faq';
 
 
 
 const Body = () => {
   return (
-    <div className=" bg-gray-50">
+    <div className=" bg-gray-50 pb-10">
       {/* Why Us Section */}
       <WrapperContainer>
         <h1 className="font-bold text-black text-5xl text-center mb-6">
@@ -201,38 +203,39 @@ const Body = () => {
 
       {/* Brand Purpose Section */}
       <div className="bg-white">
-      <WrapperContainer>
+        <WrapperContainer>
           <h1 className=" font-bold text-5xl text-black  text-center">
             <span className="text-blue-700">Brand</span> Purpose
           </h1>
           <div className=" my-6 text-gray-600">
-              <Paragraph>
-                At Digiflex, we believe that flourishing businesses are built on a
-                strong foundation of brand architecture, identity, and meaningful
-                associations. Our brand strategy services act as the guiding light
-                behind every decision, ensuring your brand resonates with purpose
-                and clarity.
-              </Paragraph>
-            </div>
-      </WrapperContainer>
-      <WrapperContainer>
-            <div className="bg-white rounded-lg shadow-sm pb-20 ">
-              <h1 className=" font-bold text-5xl mb-6 text-black  text-center">
-                <span className="text-blue-700">Our</span> approach
-              </h1>
-                <Paragraph>
-                  We examine the DNA of your brand – the why you exist, speaking
-                  with founders, leaders, team members, and customers to gain a
-                  complete understanding.
-                </Paragraph>
-                <Paragraph>
-                  We examine every touchpoint your brand has with customers –
-                  from pre-purchase interactions to purchase experiences and
-                  post-purchase engagement.
-                </Paragraph>
-              </div>
-      </WrapperContainer>
-        </div>
+            <Paragraph>
+              At Digiflex, we believe that flourishing businesses are built on a
+              strong foundation of brand architecture, identity, and meaningful
+              associations. Our brand strategy services act as the guiding light
+              behind every decision, ensuring your brand resonates with purpose
+              and clarity.
+            </Paragraph>
+          </div>
+        </WrapperContainer>
+        <WrapperContainer>
+          <div className="bg-white rounded-lg shadow-sm ">
+            <h1 className=" font-bold text-5xl mb-6 text-black  text-center">
+              <span className="text-blue-700">Our</span> approach
+            </h1>
+            <Paragraph>
+              We examine the DNA of your brand – the why you exist, speaking
+              with founders, leaders, team members, and customers to gain a
+              complete understanding.
+            </Paragraph>
+            <Paragraph>
+              We examine every touchpoint your brand has with customers – from
+              pre-purchase interactions to purchase experiences and
+              post-purchase engagement.
+            </Paragraph>
+          </div>
+          <Faq faqs={BrandStrategyFAQData} />;
+        </WrapperContainer>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import react from "react";
 // import security from "../images/security.jpg"
 import left_logo from "../../../../assets/left-logo.jpeg"
-
 import WrapperContainer from "../../../../Layout/WrapperContainer"
 import Heading from "../../../../Layout/Heading";
 import Subheading from "../../../../Layout/Subheading"

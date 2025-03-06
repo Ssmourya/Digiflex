@@ -35,7 +35,7 @@ function App() {
               </div>
 
               {/* Top Right Image */}
-              <div className="absolute right-0 sm:-right-4 lg:-right-8 top-[10%] w-[35%] h-[45%] sm:h-[50%] border-4 sm:border-8 border-white">
+              <div className="absolute right-0 sm:-right-4 lg:-right-8 top-[10%] w-[35%] h-[45%] sm:h-[50%] -translate-x-12 rounded-2xl border-4 sm:border-8 border-white">
                 <img 
                   src="https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&q=80&w=400"
                   alt="Data Analysis"
@@ -44,7 +44,7 @@ function App() {
               </div>
 
               {/* Bottom Right Image */}
-              <div className="absolute right-0 sm:-right-6 lg:-right-10 bottom-0 w-[55%] sm:w-[60%] h-[45%] sm:h-[50%] border-4 sm:border-8 border-white rounded-3xl shadow-lg">
+              <div className="absolute right-0 sm:-right-6 lg:-right-10 bottom-0 w-[55%] sm:w-[60%] h-[45%] sm:h-[50%] border-4 sm:border-8 border-white  shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400"
                   alt="Machine Learning"

@@ -105,6 +105,7 @@ import CloudNative from "./pages/CloudNative";
 import Ai_development from "./pages/Ai_development"
 import Ai_software from "./pages/Ai_software";
 import Llm_development from "./pages/Llm_development"
+import Ai_chatbot from "./pages/Ai_chatbot";
 
 
 import Shopify from "./pages/Shopifydevlopment";
@@ -114,7 +115,6 @@ import Magento from './pages/MagentoDevelopment'
 import Pestrashop from "./pages/PestrashopDevelopment";
 import Odoo from './pages/OdooDevelopment';
 
-import Ai_enterprise from './pages/Ai_enterprise'
 
 
 function App() {
@@ -128,14 +128,13 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // This matches any single-segment path
   const match = useMatch("/:path");
-
-  if (
-    match?.params.path === "about-us" ||
-    match?.params.path === "contact-us"
-  ) {
-    console.log(match);
-  }
+  
+  // Check if we're on about-us or contact-us pages
+  const isAboutOrContactPage = 
+    match?.params.path === "about-us" || 
+    match?.params.path === "contact-us";
 
   return (
     <div className=" w-full ">
@@ -283,31 +282,31 @@ function App() {
 <Route path="/salesforce-consulting-assessment" element={<ConsultingAssesment/>} />
 
 
-        {/* Frontend Technology */}
-        <Route
-          path="/tech/frontend/angular-development-services"
-          element={<AngularDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/reactjs-development-services"
-          element={<ReactDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/vuejs-development-services"
-          element={<VueDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/bootstrap-development-services"
-          element={<BootstrapDevelopment />}
-        />
-        <Route 
-          path="/tech/frontend/knockoutjs-development-services"
-          element={<KnowkoutjsDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/nextjs-development-services"
-          element={<NextjsDevelopment />}
-        />
+  {  /* Frontend Technology */}
+  <Route
+  path="/angular-development-services"
+  element={<AngularDevelopment />}
+  />
+  <Route
+  path="/reactjs-development-services"
+  element={<ReactDevelopment />}
+  />
+  <Route
+  path="/vuejs-development-services"
+  element={<VueDevelopment />}
+  />
+  <Route
+  path="/bootstrap-development-services"
+  element={<BootstrapDevelopment />}
+  />
+  <Route 
+  path="/knockoutjs-development-services"
+  element={<KnowkoutjsDevelopment />}
+  />
+  <Route
+  path="/nextjs-development-services"
+  element={<NextjsDevelopment />}
+  />
 
         {/* Mobile Technology */}
         <Route path="/ios-app-development-services" element={<IosDevelopmentTech />} />
@@ -387,8 +386,7 @@ function App() {
       <Route path="/ai-app-development" element={<Ai_development/>}/>
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
-      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>        
-{/* <<<<<<< Updated upstream */}
+      <Route path="/enterprise-ai-chatbot-development" element={<Ai_chatbot/>}/>        
 
        {/*E-Commerce*/}
 
@@ -398,15 +396,15 @@ function App() {
       <Route path="/magento-development-services" element={<Magento/>}/>
       <Route path="/prestashop-development-services" element={<Pestrashop/>}/>
       <Route path="/odoo-development-services" element={<Odoo/>}/>
-{/* ======= */}
-      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>
-      
-{/* >>>>>>> Stashed changes */}
 
       </Routes>
 
-   <ReviewsSection/>
-       <Contact/>
+      {!isAboutOrContactPage && (
+        <>
+          <ReviewsSection />
+          <Contact />
+        </>
+      )}
       <Navigation/>
       <Footer />
     </div>

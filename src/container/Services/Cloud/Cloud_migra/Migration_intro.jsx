@@ -1,26 +1,25 @@
 import Heading from "../../../../Layout/Heading";
-import WrapperContainer  from "../../../../Layout/WrapperContainer";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 import React from "react";
-import Paragraph from '../../../../Layout/Paragraph'
+import Paragraph from "../../../../Layout/Paragraph";
 
 function Migration_intro() {
   return (
-  <>
-  <WrapperContainer> 
-    <div>
-    <Heading>
-        <h1>Legacy to Cloud Migration</h1>
-        </Heading>
-        <Paragraph>
-        <p className="text-center">Legacy to Cloud Migration is the process of transferring applications, databases, and IT infrastructure from outdated, on-premise systems to modern cloud environments like AWS, Microsoft Azure, or Google Cloud. This transition allows organizations to improve scalability, cost efficiency, security, and disaster recovery while enabling greater flexibility and innovation. By moving to the cloud, businesses can scale resources up or down based on demand, optimize IT expenses with a pay-as-you-go pricing model, and leverage advanced security measures to protect their data. Additionally, cloud platforms offer reliable disaster recovery solutions, reducing downtime and ensuring business continuity. The migration process also accelerates digital transformation, allowing organizations to adopt modern technologies and enhance operational efficiency.</p>
-        </Paragraph>
-    </div>
-    </WrapperContainer>
-  </>
-  )
+    <>
+      <WrapperContainer>
+        <div>
+          <Heading>
+            <h1>AI-Powered Cloud Migration by Digiflex.ai</h1>
+          </Heading>
+          <Paragraph>
+            <p className="text-center">
+              At <strong>Digiflex.ai</strong>, we specialize in seamless **AI-powered cloud migration**, ensuring smooth transitions from legacy systems to modern cloud environments. Our expertise spans **AWS, Microsoft Azure, and Google Cloud**, helping businesses achieve **scalability, security, and cost-efficiency**. By leveraging automation and AI-driven insights, we optimize IT infrastructure, minimize downtime, and enhance performance. Digiflex.ai ensures businesses can scale dynamically, reduce operational costs, and adopt cutting-edge cloud innovations for a competitive edge.
+            </p>
+          </Paragraph>
+        </div>
+      </WrapperContainer>
+    </>
+  );
 }
 
 export default Migration_intro;
-
-
-

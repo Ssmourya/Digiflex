@@ -9,27 +9,27 @@ const industries = [
   {
     title: "Healthcare ",
     description:
-      "Artificial Intelligence is revolutionizing healthcare, enabling better diagnostics, improved patient care, and streamlined operations. Digiflex's AI solutions for healthcare include AI-powered diagnostics & medical imaging – Enhancing accuracy in disease detection, from X-rays to MRI analysis. AI chatbots for virtual health consultations – Enabling 24/7 patient support and initial medical assessments, reducing wait times and improving healthcare accessibility.",
+      "Artificial Intelligence is revolutionizing healthcare, enabling better diagnostics, improved patient care, and streamlined operations. Digiflex.ai's AI solutions for healthcare include AI-powered diagnostics & medical imaging – Enhancing accuracy in disease detection, from X-rays to MRI analysis. AI chatbots for virtual health consultations – Enabling 24/7 patient support and initial medical assessments, reducing wait times and improving healthcare accessibility.",
   },
   {
     title: "E-commerce & Retail ",
     description:
-      "AI is transforming online and offline shopping experiences by making them smarter and more personalized. At Digiflex, we provide AI recommendation engines for personalized shopping – Delivering tailored product suggestions based on customer preferences. AI-powered customer behavior analysis – Understanding shopping patterns to optimize marketing strategies and improve customer retention.",
+      "AI is transforming online and offline shopping experiences by making them smarter and more personalized. At Digiflex.ai, we provide AI recommendation engines for personalized shopping – Delivering tailored product suggestions based on customer preferences. AI-powered customer behavior analysis – Understanding shopping patterns to optimize marketing strategies and improve customer retention.",
   },
   {
     title: "Finance & Banking ",
     description:
-      "Security and automation are crucial in financial services. Digiflex integrates AI to enhance banking operations with AI-driven fraud detection & risk management – Analyzing patterns in real time to prevent fraudulent transactions. Automated AI-based trading & investment solutions – Leveraging AI algorithms for market analysis and smart investment decisions.",
+      "Security and automation are crucial in financial services. Digiflex.ai integrates AI to enhance banking operations with AI-driven fraud detection & risk management – Analyzing patterns in real time to prevent fraudulent transactions. Automated AI-based trading & investment solutions – Leveraging AI algorithms for market analysis and smart investment decisions.",
   },
   {
     title: "Manufacturing & Automation ",
     description:
-      "AI is driving efficiency and innovation in manufacturing. Digiflex's AI solutions include AI-powered robotics & automation in production – Increasing efficiency and precision in manufacturing processes. Quality control with AI-driven defect detection – Using machine learning to identify defects and maintain high production standards.",
+      "AI is driving efficiency and innovation in manufacturing. Digiflex.ai's AI solutions include AI-powered robotics & automation in production – Increasing efficiency and precision in manufacturing processes. Quality control with AI-driven defect detection – Using machine learning to identify defects and maintain high production standards.",
   },
   {
     title: "Smart Cities & IoT ",
     description:
-      "AI plays a vital role in making cities smarter and more efficient. Digiflex contributes to smart city advancements through AI-powered traffic management & predictive analytics – Optimizing traffic flow and reducing congestion using AI-driven insights. AI in energy efficiency & smart grid management – Improving power distribution and consumption for a more sustainable future.",
+      "AI plays a vital role in making cities smarter and more efficient. Digiflex.ai contributes to smart city advancements through AI-powered traffic management & predictive analytics – Optimizing traffic flow and reducing congestion using AI-driven insights. AI in energy efficiency & smart grid management – Improving power distribution and consumption for a more sustainable future.",
   },
 ];
 

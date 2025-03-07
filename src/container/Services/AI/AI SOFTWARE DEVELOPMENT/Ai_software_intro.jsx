@@ -16,7 +16,7 @@ function AiSoftwareIntro() {
   return (
     <WrapperContainer>
       <div className="text-center mb-8">
-        <Heading>Welcome to Digiflex – AI Software Development Experts</Heading>
+        <Heading>Welcome to Digiflex.ai – AI Software Development Experts</Heading>
         <Subheading>Empowering Businesses with Intelligent AI Solutions</Subheading>
       </div>
 
@@ -24,10 +24,10 @@ function AiSoftwareIntro() {
         {/* Left Section */}
         <div>
           <Paragraph>
-            <span className="text-xl font-semibold">Digiflex</span> is a leading AI software development company dedicated to building intelligent, scalable, and high-performance AI-driven applications. We help businesses integrate AI into their software solutions to enhance efficiency, security, and innovation.
+            <span className="text-xl font-semibold">Digiflex.ai</span> is a leading AI software development company dedicated to building intelligent, scalable, and high-performance AI-driven applications. We help businesses integrate AI into their software solutions to enhance efficiency, security, and innovation.
           </Paragraph>
           <div className='mt-5 text-center md:text-left'>
-            <h1 className='text-2xl hover:text-[#1D4ED8] cursor-pointer w-full md:w-[350px]'>Get Started with Digiflex Today!</h1>
+            <h1 className='text-2xl hover:text-[#1D4ED8] cursor-pointer w-full md:w-[350px]'>Get Started with Digiflex.ai Today!</h1>
           </div>
         </div>
 

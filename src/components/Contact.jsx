@@ -107,9 +107,9 @@ const ContactForm = () => {
         <div className="flex flex-col justify-between w-full md:flex-row mx-auto bg-white rounded-lg pb-8 ">
             {/* Left Section */}
             <div className="md:w-1/2 md:pr-8 ">
-                <h1 className="text-5xl md:text-5xl font-bold mb-4 text-blue-700">
+                <h2 className="text-5xl md:text-5xl font-bold mb-4 text-blue-700">
                     Get in Touch 
-                </h1>
+                </h2>
 
                 <p className="text-sm md:text-base text-gray-600 mb-6">
                     Let's explore how Digiflex.ai can transform your IT infrastructure.

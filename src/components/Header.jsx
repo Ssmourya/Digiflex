@@ -169,7 +169,7 @@ const Navbar = () => {
                                                     onClick={(e) =>
                                                         navItem.hasDropdown && e.preventDefault()
                                                     }
-                                                    target = {navItem.href === "/digiflex.ai/blog" ? "_blank" : "_self"}
+                                                    target = {navItem.href === "/blog" ? "_blank" : "_self"}
                                                 >
                                                     {navItem.label}
                                                 </Link>
@@ -214,7 +214,9 @@ const Navbar = () => {
 
                                 <div className="lg:hidden flex items-center ml-auto space-x-4">
                                     <button
-                                        onClick={() => setIsMobileMenuVisible(!isMobileMenuVisible)}
+                                        onClick={ () => 
+                                            setIsMobileMenuVisible(!isMobileMenuVisible)
+                                        }
                                         className="text-white hover:text-gray-300"
                                         aria-label="Toggle mobile menu"
                                         aria-expanded={isMobileMenuVisible}
@@ -262,36 +264,28 @@ const Navbar = () => {
 
                                     <div key={navItem.label} className="mb-4">
 
-                                        {/* <div
-                                            className="flex items-center justify-between"
-                                            onClick={() => handleDropdownClick(navItem.dropdownType)}
-                                        >
-                                            <span className="text-white font-medium">{navItem.label}</span>
-                                            {
-                                                navItem.hasDropdown && (
-                                                    <ChevronDown
-                                                        className={`h-4 w-4 text-gray-400 transition-transform duration-300 ${activeDropdown === navItem.dropdownType ? "rotate-180" : ""
-                                                            }`}
-                                                    />
-                                                )
-                                            }
-                                        </div> */}
-
                                         <div
-                                                className="flex items-center justify-between"
-                                                onClick={ (e) => {
-                                                       
-                                                    navItem.hasDropdown && e.preventDefault();
-                                                    navItem.href === "/" ? setIsMobileMenuVisible(false) :
-                                                    handleDropdownClick(navItem.dropdownType);
-                                                }}
-                                            >
+                                            className="flex items-center justify-between"
+                                            onClick={ (e) => {
+                                        
+                                                if (navItem.hasDropdown) {
+                                                    e.preventDefault();  
+                                                }
+                                                
+                                                const paths = ["/", "/marketing", "/portfolio", "/about-us"];  
+                                                
+                                                if (paths.includes(navItem.href)) {  
+                                                    setIsMobileMenuVisible(false);  
+                                                } 
+                                                else {  
+                                                    handleDropdownClick(navItem.dropdownType);  
+                                                }  
+                                            }}
+                                        >
                                                 <Link
                                                     to={navItem.href}
                                                     className="text-white font-medium"
-                                                   
-
-                                                    target = {navItem.href === "/digiflex.ai/blog" ? "_blank" : "_self"}
+                                                    target = {navItem.href === "/blog" ? "_blank" : "_self"}
                                                 >
                                                     {navItem.label}
                                                 </Link>
@@ -314,13 +308,10 @@ const Navbar = () => {
                                                     <div key={service.id} className="mb-2">
                                                         <div
                                                             className="flex items-center justify-between"
-                                                            onClick={() =>
-                                                                setHoveredCategory(
-                                                                    hoveredCategory === service.id
-                                                                        ? null
-                                                                        : service.id
-                                                                )
-                                                            }
+                                                            onClick={() =>{
+                                                                setHoveredCategory( hoveredCategory === service.id ? null : service.id);
+                                                                
+                                                            }}
                                                         >
                                                             <span className="text-white text-sm">
                                                                 {service.title}
@@ -361,6 +352,10 @@ const Navbar = () => {
 
                             <Link
                                 to="/contact-us"
+                                onClick={ () => {
+                                    setIsMobileMenuVisible(false);
+                                }}
+                               
                                 className="block w-full text-center border border-blue-600 text-blue-600 px-6 py-2 hover:bg-blue-500 hover:text-white transition-colors text-sm mt-4"
                             >
                                 CONTACT US

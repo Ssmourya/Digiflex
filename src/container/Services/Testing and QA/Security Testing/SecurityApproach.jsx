@@ -73,7 +73,7 @@ export default function SecurityApproach() {
             </div>
           </div>
         </div>
-        <Faq faqs={SecurityTestingFAQData} />;
+        <Faq faqs={SecurityTestingFAQData} />
       </WrapperContainer>
     );
 }

@@ -18,7 +18,7 @@ function Google_info() {
         </div></Heading>
           <Paragraph>
           <p className="text-left mt-4 ">
-          Digiflex leverages the power of Google Cloud to deliver cutting-edge AI app development services. With Google Cloud’s robust computing power, flexible storage options, advanced data analytics, and machine learning tools, Digiflrx ensures high-performance, scalable, and secure solutions for businesses worldwide. By utilizing the same infrastructure that powers Google’s own products, Digiflrx helps organizations build, deploy, and scale applications efficiently, driving innovation and digital transformation.
+          Digiflex.ai leverages the power of Google Cloud to deliver cutting-edge AI app development services. With Google Cloud’s robust computing power, flexible storage options, advanced data analytics, and machine learning tools, Digiflex.ai ensures high-performance, scalable, and secure solutions for businesses worldwide. By utilizing the same infrastructure that powers Google’s own products, Digiflex.ai helps organizations build, deploy, and scale applications efficiently, driving innovation and digital transformation.
           </p>
           </Paragraph>
         </div>

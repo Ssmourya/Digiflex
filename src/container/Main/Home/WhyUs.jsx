@@ -28,9 +28,9 @@ function App() {
                 </span>
               </div>
               
-              <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Transforming Business Through Advanced AI Solutions
-              </h1>
+              </h2>
               
               <p className="text-gray-300 text-lg">
                 Leverage the power of artificial intelligence to streamline operations, enhance decision-making, and drive innovation across your organization with our cutting-edge solutions.

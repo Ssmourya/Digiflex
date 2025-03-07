@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Cloud,
   Package,
@@ -23,131 +23,108 @@ import AI_Cutting_Edge from "../../../../assets/AI_Cutting-Edge.jpeg";
 const data = [
   {
     title: "Microservices Architecture",
-    icon: <Cloud size={24} className="text-white" />,
+    icon: <Cloud size={32} />,
     image: Archivetecture,
     description:
-      "Digiflex enables applications to be built as small, independent services that communicate via APIs. Each microservice can be developed, deployed, and scaled independently, ensuring faster updates, modularity, and high availability.",
+      "Digiflex enables applications to be built as small, independent services that communicate via APIs.",
   },
   {
     title: "Containerization & Orchestration",
-    icon: <Package size={24} className="text-white" />,
+    icon: <Package size={32} />,
     image: Ai_Containerization,
     description:
-      "Digiflex leverages Docker for standardized application packaging and Kubernetes for automated management, scaling, and orchestration. Helm simplifies Kubernetes application deployment, enhancing operational efficiency.",
+      "Digiflex leverages Docker for standardized application packaging and Kubernetes for management.",
   },
   {
     title: "Serverless Computing",
-    icon: <Server size={24} className="text-white" />,
+    icon: <Server size={32} />,
     image: perfo_test_and_sol,
     description:
-      "Digiflex eliminates infrastructure management with serverless solutions like AWS Lambda, Azure Functions, and Google Cloud Functions. This ensures cost-efficiency by charging only for actual execution time.",
+      "Digiflex eliminates infrastructure management with serverless solutions like AWS Lambda and Azure Functions.",
   },
   {
-    title: "CI/CD (Continuous Integration & Continuous Deployment)",
-    icon: <RefreshCcw size={24} className="text-white" />,
+    title: "CI/CD Automation",
+    icon: <RefreshCcw size={32} />,
     image: AI_Powered,
     description:
-      "Digiflex automates software development pipelines using tools like Jenkins, GitHub Actions, GitLab CI/CD, and AWS CodePipeline. This reduces manual effort and accelerates software delivery.",
+      "Digiflex automates software pipelines using Jenkins, GitHub Actions, and AWS CodePipeline.",
   },
   {
     title: "Scalability & Elasticity",
-    icon: <TrendingUp size={24} className="text-white" />,
+    icon: <TrendingUp size={32} />,
     image: AI_Elasticity,
     description:
-      "Digiflex optimizes auto-scaling strategies to meet traffic demands dynamically. Horizontal and vertical scaling techniques, along with load balancing, ensure performance optimization.",
+      "Digiflex optimizes auto-scaling strategies with horizontal and vertical scaling techniques.",
   },
   {
     title: "Observability & Monitoring",
-    icon: <Eye size={24} className="text-white" />,
+    icon: <Eye size={32} />,
     image: AI_Cutting_Edge,
     description:
-      "Digiflex provides real-time insights using tools like Prometheus, Grafana, AWS CloudWatch, and Datadog. This ensures proactive issue detection and resolution.",
+      "Digiflex provides real-time insights using Prometheus, Grafana, and AWS CloudWatch.",
   },
   {
-    title: "Service Mesh for Secure Communication",
-    icon: <ShieldCheck size={24} className="text-white" />,
+    title: "Service Mesh Security",
+    icon: <ShieldCheck size={32} />,
     image: Automation_2,
     description:
-      "Digiflex ensures secure, encrypted, and optimized communication between microservices with Istio, Linkerd, and Consul, providing enhanced traffic control, security, and observability.",
+      "Digiflex ensures secure, encrypted communication between microservices using Istio and Linkerd.",
   },
   {
     title: "Security & Compliance",
-    icon: <Lock size={24} className="text-white" />,
+    icon: <Lock size={32} />,
     image: AI_Automation_Business,
     description:
-      "Digiflex enforces the Zero Trust Security Model with least privilege access, Identity & Access Management (IAM), and data encryption via TLS to ensure complete protection of sensitive information.",
+      "Digiflex enforces the Zero Trust Security Model with IAM and TLS encryption.",
   },
 ];
 
-const Sidebar = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
-
+const CloudServicesCards = () => {
   return (
-    <div className="pt-12 sm:pt-16 md:pt-20">
-      <div className="bg-blue-900  pb-12 sm:pb-16 md:pb-20">
-        <WrapperContainer>
-          <Heading>
-            <h1 className="text-white">Digiflex Cloud-Native Services</h1>
-          </Heading>
-          <div className=" bg-blue-950">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              {/* Left Column - Features List */}
-              <div className="flex flex-col">
-                {data.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`p-4 border-b border-blue-800 flex flex-col md:flex-row md:items-center gap-3 cursor-pointer transition duration-300 hover:bg-blue-700 ${
-                      selectedItem === index ? "bg-blue-600" : ""
-                    }`}
-                    onClick={() => setSelectedItem(index)} // Only sets the selected index
-                  >
-                    <div className="flex items-center gap-3">
-                      {item.icon}
-                      <p className="text-white hover:underline">{item.title}</p>
-                    </div>
-                    {selectedItem === index && (
-                      <div className="mt-2 md:hidden bg-blue-800 p-3 rounded-lg">
-                        <img
-                          src={item.image}
-                          alt={item.title}
-                          className="w-full h-40 object-cover rounded-lg mb-2"
-                        />
-                        <p className="text-white text-sm">{item.description}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
+    <WrapperContainer>
+      <Heading>
+        <h1 className="text-blue-900 text-center text-3xl font-bold mb-6">
+          Digiflex Cloud-Native Services
+        </h1>
+      </Heading>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-lg shadow-lg transition duration-300 cursor-pointer"
+          >
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-all duration-500 ease-in-out group-hover:scale-110"
+              style={{ backgroundImage: `url(${item.image})` }}
+            ></div>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-500 group-hover:bg-opacity-70"></div>
+
+            {/* Content */}
+            <div className="relative z-10 p-6 flex flex-col items-center justify-center h-full text-center transition-all duration-500 group-hover:h-full">
+              {/* Icon */}
+              <div className="mb-3 text-white opacity-100 transition-all duration-300 group-hover:opacity-0">
+                {item.icon}
               </div>
 
-              {/* Right Column - Display Dynamic Content for Larger Screens */}
-              <div
-                className={`hidden md:flex flex-col p-4 transition-all duration-300 ${
-                  selectedItem !== null ? "h-auto" : "h-64"
-                }`}
-              >
-                <div className="bg-blue-800 rounded-lg min-h-64 mb-4 flex items-center justify-center text-white overflow-hidden">
-                  {selectedItem !== null ? (
-                    <img
-                      src={data[selectedItem].image}
-                      alt={data[selectedItem].title}
-                      className="w-full h-96 object-cover rounded-lg"
-                    />
-                  ) : (
-                    <p>Your image will go here</p>
-                  )}
-                </div>
-                <p className="text-white text-center">
-                  {selectedItem !== null
-                    ? data[selectedItem].description
-                    : "Click on a feature to learn more."}
-                </p>
-              </div>
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-white transition-all duration-500">
+                {item.title}
+              </h3>
+
+              {/* Description (Hidden by Default) */}
+              <p className="text-white text-sm opacity-0 transition-opacity duration-500 group-hover:opacity-100 mt-3">
+                {item.description}
+              </p>
             </div>
           </div>
-        </WrapperContainer>
+        ))}
       </div>
-    </div>
+    </WrapperContainer>
   );
 };
 
-export default Sidebar;
+export default CloudServicesCards;

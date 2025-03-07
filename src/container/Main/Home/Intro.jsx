@@ -51,9 +51,9 @@ function App() {
                 </span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-3xl xl:text-5xl font-bold text-slate-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-3xl xl:text-5xl font-bold text-blue-700 leading-tight">
                 Professional And Dedicated IT Services
-              </h1>
+              </h2>
 
               <p className="text-slate-600 text-base sm:text-lg lg:text-base xl:text-lg">
                 Empowering businesses through cutting-edge technology solutions and strategic consulting. We deliver comprehensive IT services that drive growth and innovation in the digital age.

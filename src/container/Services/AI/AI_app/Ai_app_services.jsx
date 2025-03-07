@@ -22,7 +22,7 @@ const services = [
   {
     title: "AI-Powered Mobile & Web Apps",
     description:
-      "Whether you need an intelligent e-commerce platform, fintech solution, or enterprise-grade AI app, Digiflex develops cutting-edge mobile and web applications that offer smart functionalities.",
+      "Whether you need an intelligent e-commerce platform, fintech solution, or enterprise-grade AI app, Digiflex.ai develops cutting-edge mobile and web applications that offer smart functionalities.",
     image: AI_ML_Mobility,
   },
   {

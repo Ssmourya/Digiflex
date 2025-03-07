@@ -5,8 +5,8 @@ import Heading from "../../../../Layout/Heading";
 function Aws_deploy() {
   const steps = [
     { title: "Select Deployment Strategy" },
-    { title: "Deploy Frontend with Digiflex" },
-    { title: "Deploy Backend with Digiflex" },
+    { title: "Deploy Frontend with Digiflex.ai" },
+    { title: "Deploy Backend with Digiflex.ai" },
     { title: "Integrate Frontend & Backend Seamlessly" },
   ];
 
@@ -14,7 +14,7 @@ function Aws_deploy() {
     <WrapperContainer>
       <Heading>
         <div>
-            Deploy Your Project on AWS with Digiflex
+            Deploy Your Project on AWS with Digiflex.ai
         </div>
       </Heading>
 
@@ -23,7 +23,7 @@ function Aws_deploy() {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col md:flex-row items-center">
               <div className="relative group">
-                <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center 
+                <div className="w-28 h-28 md:w-36 md:h-36 flex items-center justify-center 
                               bg-[#1F2937] text-white font-bold text-center rounded-full 
                               text-sm md:text-lg p-3 md:p-4 transition-all duration-300 
                               hover:bg-[#374151] hover:scale-105 relative z-10">

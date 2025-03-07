@@ -72,7 +72,7 @@ const PerformanceChallenges = () => {
           />
           <Card title="Solutions" items={solutions} color="green" Icon={Plus} />
         </div>
-        <Faq faqs={PerformanceTestingFAQData} />;
+        <Faq faqs={PerformanceTestingFAQData} />
       </WrapperContainer>
     );
 };

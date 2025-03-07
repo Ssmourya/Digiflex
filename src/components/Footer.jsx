@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, Mail, Phone } from 'lucide-react';
 import { SocialIcon } from 'react-social-icons';
 import logo from "../assets/digiflex.png";
+import WrapperContainer from '../Layout/WrapperContainer';
 
 const locations = [
   {
@@ -28,7 +29,7 @@ const locations = [
     address: '5101 34th St #A Lubbock,',
     location: 'Texas',
     postalCode: '79410',
-    phone: '+971-522627630',
+    phone: '+1(438) 802-8521',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/us.svg',
     alt: 'USA Flag'
   },
@@ -37,7 +38,7 @@ const locations = [
     address: '135 Junction Rd, Archway',
     location: 'London',
     postalCode: 'N19 5PX',
-    phone: '+971-522627630',
+    phone: '+44-7727731075',
     flagUrl: 'https://flagicons.lipis.dev/flags/4x3/gb.svg',
     alt: 'UK Flag'
   }
@@ -143,17 +144,18 @@ const countryFlags = [
 function Footer() {
   return (
     <footer className="bg-blue-950 text-white">
-      <div className="container px-4 py-4">
+      <WrapperContainer>
+      <div className="container -mt-4">
         <div className="mb-4 max-w-[1240px] mx-auto">
         <Link to="/" className="flex items-center no-underline">
           <img src={logo} alt="logo" className="h-6" />
         </Link>
         </div>
         <div className="w-full h-px bg-blue-800 mb-4"></div>
-        <div className="flex flex-col lg:flex-row justify-between gap-8 mb-4 max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-4 max-w-[1200px] mx-auto mt-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 mb-4 max-w-[1275px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1275px] pt-10">
           {locations.map((loc, index) => (
-            <div key={index} className="rounded-none flex flex-col items-start">
+            <div key={index} className="rounded-none flex flex-col text-left">
               <div className="flex items-center gap-2">
                 <h2 className="text-lg font-semibold">{loc.city}</h2>
                 <img src={loc.flagUrl} alt={loc.alt} className="h-6 w-10" />
@@ -247,6 +249,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      </WrapperContainer>
     </footer>
   );
 }

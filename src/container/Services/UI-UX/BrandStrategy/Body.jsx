@@ -1,95 +1,117 @@
-import React from 'react';
-import brandwhy from '../../../../assets/brandwhy.jpg';
-import brandstrategy from '../../../../assets/brandstrategy.jpg';
-import Heading from '../../../../Layout/Heading';
-import Paragraph from '../../../../Layout/Paragraph';
-import WrapperContainer from "../../../../Layout/WrapperContainer"
-import SubHeading from '../../../../Layout/Subheading';
+import React from "react";
+import { motion } from "framer-motion";
+import why from "../../../../assets/BrandStrategy.jpg";
+import strategy from "../../../../assets/BrandStrategyWhyUs.jpg";
+import Paragraph from "../../../../Layout/Paragraph";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
+import SubHeading from "../../../../Layout/Subheading";
 import { BrandStrategyFAQData } from "../FAQData";
-import Faq from '../../../../components/Faq';
+import Faq from "../../../../components/Faq";
+import { CheckCircle, Sparkles, Rocket, TrendingUp } from "lucide-react";
 
+const features = [
+  {
+    icon: <Sparkles className="text-blue-600" size={28} />,
+    title: "Innovative UI & UX",
+    text: "We craft seamless user experiences with cutting-edge animations, transitions, and micro-interactions.",
+  },
+  {
+    icon: <CheckCircle className="text-green-600" size={28} />,
+    title: "Research-Driven Design",
+    text: "Every UI element is backed by behavioral research, ensuring an intuitive and effective design.",
+  },
+  {
+    icon: <Rocket className="text-purple-600" size={28} />,
+    title: "Optimized for Speed",
+    text: "Our lightweight animations and UI components ensure smooth, fast, and responsive performance.",
+  },
+  {
+    icon: <TrendingUp className="text-red-600" size={28} />,
+    title: "Future-Ready Solutions",
+    text: "Our designs scale effortlessly with evolving trends in motion design and UI innovation.",
+  },
+];
 
+const featureVariants = {
+  initial: { rotate: 0, scale: 1 },
+  hover: { rotate: 360, scale: 1.2 },
+};
 
 const Body = () => {
   return (
-    <div className=" bg-gray-50 ">
+    <div>
       {/* Why Us Section */}
-      <WrapperContainer>
-        <h1 className="font-bold text-black text-5xl text-center mb-6">
-          Why <span className="text-blue-700">Us?</span>
-        </h1>
-        {/* Description */}
-        <Paragraph>
-          Digiflex is a UX design agency with over a decade of experience in
-          user-centered design, usability, and information architecture. We
-          create seamless, engaging experiences that delight customers and drive
-          major client successes like acquisitions and record-breaking funding
-          rounds.
-        </Paragraph>
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-          <div className="w-full lg:w-1/2 space-y-8 text-center">
-            {/* Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
-              {[
-                {
-                  number: "1",
-                  text: "We integrate smooth animations, transitions, and micro-interactions that enhance usability and create fluid, engaging experiences for web and mobile applications.",
-                },
-                {
-                  number: "2",
-                  text: "Every animation and UI element is rooted in behavioral research and user testing, ensuring that our designs are not only visually stunning but also intuitive and effective.",
-                },
-                {
-                  number: "3",
-                  text: "Our lightweight animations and optimized UI components ensure that digital experiences remain fast, smooth, and responsive without compromising on aesthetics or functionality.",
-                },
-                {
-                  number: "4",
-                  text: "From interactive web platforms to immersive mobile experiences, our designs are built to scale, adapting to future trends in motion design and UI innovation.",
-                },
-              ].map((stat, index) => (
-                <div
-                  key={index}
-                  className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <h2 className="text-2xl font-bold mb-2 text-[#1A2E6F]">
-                    {stat.number}
-                  </h2>
-                  <Paragraph>{stat.text}</Paragraph>
-                </div>
-              ))}
+      <div>
+        <WrapperContainer>
+          {/* Centered Heading */}
+          <h1 className="font-bold text-black text-3xl md:text-5xl text-center mb-6">
+            Why <span className="text-blue-700">Us?</span>
+          </h1>
+
+          <div className="flex flex-col lg:flex-row items-stretch justify-between gap-12">
+            {/* Left Section (Image with Background Effect) */}
+            <div className="w-full lg:w-1/2 flex justify-center items-center relative">
+              {/* Background Effect */}
+              <div className="absolute w-[90%] h-[85%] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
+
+              {/* Image */}
+              <img
+                src={why}
+                alt="Brand Why"
+                className="relative w-full h-full max-w-lg md:max-w-xl lg:max-w-2xl object-cover rounded-xl shadow-2xl"
+              />
+            </div>
+
+            {/* Right Section (Content) */}
+            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+              {/* Features Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                {features.map((feature, index) => (
+                  <motion.div
+                    key={index}
+                    className="p-6 bg-white/80 backdrop-blur-md rounded-xl shadow-lg hover:shadow-blue-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200"
+                    whileHover="hover" // This activates hover effects
+                    initial="initial"
+                  >
+                    <div className="flex items-center gap-3">
+                      <motion.div
+                        variants={featureVariants} // Using variants for cleaner animation
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                      >
+                        {feature.icon}
+                      </motion.div>
+                      <h2 className="text-lg font-semibold text-gray-900">
+                        {feature.title}
+                      </h2>
+                    </div>
+                    <Paragraph className="mt-2 text-gray-600">
+                      {feature.text}
+                    </Paragraph>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
-
-          {/* Right Content - Image Section */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <img
-              src={brandwhy}
-              alt="Brand Why"
-              className="max-w-full h-auto "
-            />
-          </div>
-        </div>
-      </WrapperContainer>
-
+        </WrapperContainer>
+      </div>
       {/* Brand Strategy Section */}
-      <div className="bg-white">
+      <div className="bg-white py-12">
         <WrapperContainer>
-          <h1 className="text-4xl md:text-5xl text-center font-bold mb-6 text-black">
+          <h1 className="text-3xl md:text-5xl text-center font-bold mb-6 text-black">
             Brand <span className="text-blue-700">Strategy</span>
           </h1>
-          <div className="flex flex-col lg:flex-row items-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-8">
             {/* Image Section */}
-            <div className="w-[500px]  flex justify-center">
+            <div className="w-full md:w-[450px] flex justify-center">
               <img
-                src={brandstrategy}
+                src={strategy}
                 alt="Brand Strategy"
                 className="max-w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
             </div>
 
             {/* Text Section */}
-            <div className="w-full lg:w-1/2 text-left">
+            <div className="w-full md:w-[90%] lg:w-1/2 text-left px-4">
               <SubHeading>Building Connections That Last</SubHeading>
               <Paragraph>
                 At Digiflex, we believe brands find their place in customers'
@@ -122,11 +144,10 @@ const Body = () => {
           </div>
         </WrapperContainer>
       </div>
-
       {/* Workflow Section */}
       <WrapperContainer>
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className=" font-bold  mb-8 text-black text-5xl">
+          <h1 className="font-bold mb-8 text-black text-5xl">
             We adapt to your <span className="text-blue-700">workflow</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -178,12 +199,11 @@ const Body = () => {
           </div>
         </div>
       </WrapperContainer>
-
       {/* Principles Section */}
       <WrapperContainer>
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
-            <h1 className=" font-bold text-black text-5xl md:text-left">
+            <h1 className="font-bold text-black text-5xl md:text-left">
               STAND-OUT <span className="text-blue-700">BRANDS</span> ARE BUILT
               ON 3 PRINCIPLES
             </h1>
@@ -200,14 +220,13 @@ const Body = () => {
           </div>
         </div>
       </WrapperContainer>
-
       {/* Brand Purpose Section */}
       <div className="bg-white">
         <WrapperContainer>
-          <h1 className=" font-bold text-5xl text-black  text-center">
+          <h1 className="font-bold text-5xl text-black text-center">
             <span className="text-blue-700">Brand</span> Purpose
           </h1>
-          <div className=" my-6 text-gray-600">
+          <div className="my-6 text-gray-600">
             <Paragraph>
               At Digiflex, we believe that flourishing businesses are built on a
               strong foundation of brand architecture, identity, and meaningful
@@ -218,8 +237,8 @@ const Body = () => {
           </div>
         </WrapperContainer>
         <WrapperContainer>
-          <div className="bg-white rounded-lg shadow-sm ">
-            <h1 className=" font-bold text-5xl mb-6 text-black  text-center">
+          <div className="bg-white rounded-lg shadow-sm">
+            <h1 className="font-bold text-5xl mb-6 text-black text-center">
               <span className="text-blue-700">Our</span> approach
             </h1>
             <Paragraph>
@@ -233,7 +252,7 @@ const Body = () => {
               post-purchase engagement.
             </Paragraph>
           </div>
-          <Faq faqs={BrandStrategyFAQData} />;
+          <Faq faqs={BrandStrategyFAQData} />
         </WrapperContainer>
       </div>
     </div>

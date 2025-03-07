@@ -6,21 +6,21 @@ import Aiappintroimg from '../../../../assets/Aiappintro.png';
 
 function Aiappintro() {
   return (
-    <div className='pb-20'>
+    <div>
     <WrapperContainer>
       <div className='flex flex-col lg:flex-row gap-8'>
         <div className='flex-1'>
           <Heading>
             <span>
             <h1 className='text-left'>
-              Welcome to Quest Digiflex – Pioneering AI App Development
+              Welcome to Quest Digiflex.ai – Pioneering AI App Development
               </h1>
               </span>
           </Heading>
           <Paragraph>
             <span>
             <p className='text-xl text-left text-black leading-7'>
-              At Digiflex, we transform businesses with cutting-edge AI-powered applications that enhance efficiency, automate processes, and unlock new opportunities. Our team of expert developers, data scientists, and AI engineers specialize in crafting intelligent applications that revolutionize industries.
+              At Digiflex.ai, we transform businesses with cutting-edge AI-powered applications that enhance efficiency, automate processes, and unlock new opportunities. Our team of expert developers, data scientists, and AI engineers specialize in crafting intelligent applications that revolutionize industries.
               </p>
               </span>
           </Paragraph>

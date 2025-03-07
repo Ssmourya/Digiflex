@@ -34,7 +34,7 @@ const Amp2 = () => {
 
   return (
     <>
-      {/* 🔒 Mobile App Security Section */}
+      
       <div className="min-h-[60vh] w-full bg-white flex items-center justify-center">
         <div className="container mx-auto px-4 py-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2">
@@ -83,8 +83,8 @@ const Amp2 = () => {
         </div>
       </div>
 
-      {/* 📢 Transparency in Mobile Development */}
-      
+     
+     
     </>
   );
 };

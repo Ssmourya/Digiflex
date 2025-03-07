@@ -11,19 +11,19 @@ const data = [
     img: IntercloudCloud,
     title: "Cloud-to-Cloud Migration",
     description:
-      "Digiflex ensures smooth migration of applications, workloads, and data between cloud platforms like AWS and Azure, optimizing performance and cost-efficiency.",
+      "Digiflex.ai ensures smooth migration of applications, workloads, and data between cloud platforms like AWS and Azure, optimizing performance and cost-efficiency.",
   },
   {
     img: Intercloudimg,
     title: "Hybrid Cloud Migration",
     description: 
-      "With Digiflex, businesses can seamlessly move data between private and public clouds, ensuring security, scalability, and operational efficiency.",
+      "With Digiflex.ai, businesses can seamlessly move data between private and public clouds, ensuring security, scalability, and operational efficiency.",
   },
   {
     img: IntercloudHybrid,
     title: "Multi-Cloud Deployment",
     description:
-      "Digiflex enables businesses to leverage multiple cloud providers simultaneously, distributing workloads for enhanced reliability and flexibility.",
+      "Digiflex.ai enables businesses to leverage multiple cloud providers simultaneously, distributing workloads for enhanced reliability and flexibility.",
   },
 ];
 
@@ -33,11 +33,11 @@ function IntercloudType() {
   return (
     <WrapperContainer>
       <Heading>
-        Intercloud Migration Services by Digiflex
+        Intercloud Migration Services by Digiflex.ai
       </Heading>
       <Subheading>
         <p className="text-center ">
-          Digiflex provides cutting-edge intercloud migration solutions to help businesses optimize their cloud strategy efficiently and securely.
+          Digiflex.ai provides cutting-edge intercloud migration solutions to help businesses optimize their cloud strategy efficiently and securely.
         </p>
         </Subheading>
       <div className="flex flex-wrap justify-center gap-6 pt-5">

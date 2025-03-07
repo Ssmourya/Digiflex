@@ -47,7 +47,7 @@ function OptimizationWork() {
   return (
     <WrapperContainer>
       <Heading>
-        Cloud Optimization Strategies by Digiflex
+        Cloud Optimization Strategies by Digiflex.ai
       </Heading>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {optimizationData.map((item, index) => (

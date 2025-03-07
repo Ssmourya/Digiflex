@@ -240,7 +240,7 @@ const DesignTestingFAQData = [
     answer:
       "Absolutely! We deliver detailed reports with usability insights, pain points, and recommendations. Our goal is to equip your team with data-driven strategies for improving user experience and product performance.",
   },
-];
+]
 
 
 

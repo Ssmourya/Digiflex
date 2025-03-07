@@ -69,19 +69,19 @@ export const mainNavItems = [
     },
     {
         label: "Marketing",
-        href: "#"
+        href: "/marketing"
     },
     {
         label: "Portfolio",
-        href: "#",
+        href: "/portfolio",
     },
     {
         label: "Blog",
-        href: "/digiflex.ai/blog"
+        href: "/blog"
     },
     {
         label: "About us",
-        href: "about-us"
+        href: "/about-us"
     },
 ];
 
@@ -553,32 +553,32 @@ export const technologyCategories = [
             {
                 icon: Code,
                 title: "React Development",
-                path: "/tech/frontend/reactjs-development-services"
+                path: "/reactjs-development-services"
             },
             {
                 icon: Code,
                 title: "Angular Development",
-                path: "/tech/frontend/angular-development-services"
+                path: "/angular-development-services"
             },
             {
                 icon: Code,
                 title: "Vue.js Development",
-                path: "/tech/frontend/vuejs-development-services"
+                path: "/vuejs-development-services"
             },
             {
                 icon: Code,
                 title: "Bootstrap Development",
-                path: "/tech/frontend/bootstrap-development-services"
+                path: "/bootstrap-development-services"
             },
             {
                 icon: Code,
                 title: "Knockout.js Development",
-                path: "/tech/frontend/knockoutjs-development-services"
+                path: "/knockoutjs-development-services"
             },
             {
                 icon: Code,
                 title: "Next.js Development",
-                path: "/tech/frontend/nextjs-development-services"
+                path: "/nextjs-development-services"
             }
         ],
         image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=600&q=80",

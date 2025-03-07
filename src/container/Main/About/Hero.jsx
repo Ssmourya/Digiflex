@@ -1,19 +1,20 @@
-import { motion } from "framer-motion"
-import React from "react"
+import { motion } from "framer-motion";
+import React from "react";
+import AboutBg from "../../../assets/AboutBg.mp4";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
-}
+  transition: { duration: 0.5 },
+};
 
 const staggerChildren = {
   animate: {
     transition: {
-      staggerChildren: 0.1
-    }
-  }
-}
+      staggerChildren: 0.1,
+    },
+  },
+};
 function Hero() {
   return (
     <div>
@@ -25,10 +26,7 @@ function Hero() {
       >
         <div className="absolute inset-0">
           <video className="w-full h-full object-cover" autoPlay loop muted>
-            <source
-              src="https://video-previews.elements.envatousercontent.com/h264-video-previews/bea2a251-2097-4f2b-afb6-557c89314dd5/54171549.mp4"
-              type="video/mp4"
-            />
+            <source src={AboutBg} type="video/mp4" />
           </video>
         </div>
         <div className="absolute inset-0 bg-black/40 z-10 " />
@@ -57,4 +55,4 @@ function Hero() {
   );
 }
 
-export default Hero
+export default Hero;

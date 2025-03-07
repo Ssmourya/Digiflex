@@ -1,6 +1,6 @@
 import React from 'react';
-import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon } from 'lucide-react';
 import WrapperContainer from '../../../Layout/WrapperContainer';
+import shubhamsir from '../../../assets/shubhamsir.webp'
 
 const teamMembers = [
   {
@@ -25,13 +25,13 @@ const teamMembers = [
     id: 4,
     name: 'Shubham Jat',
     role: 'Business Development Manager',
-    image: 'https://digiflex.ai/img/1704269389180.jpg'
+    image: shubhamsir
   }
 ];
 
 function App() {
   return (
-    <div className="bg-blue-950 min-h px-4 md:px-8">
+    <div className="bg-blue-950 min-h px-4 md:px-8 rounded">
       <WrapperContainer>
         <div className="pb-10">
           <div className="text-center mb-16">

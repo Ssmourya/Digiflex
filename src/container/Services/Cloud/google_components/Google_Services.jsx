@@ -7,6 +7,7 @@ import Subheading from "../../../../Layout/Subheading";
 import Paragraph from "../../../../Layout/Paragraph";
 
 
+
 const steps = [
   { id: 1, name: "INGESTION", color: "bg-[#FBBC05]" },
   { id: 2, name: "STORAGE", color: "bg-[#EA4335]" },
@@ -59,7 +60,7 @@ function Google_Services() {
       <Subheading>
       <div>
         <p className="text-center">
-        Digiflex leverages Google Cloud's AI and data services to build scalable, secure, and high-performance solutions, driving business innovation. 
+        Digiflex.ai leverages Google Cloud's AI and data services to build scalable, secure, and high-performance solutions, driving business innovation. 
         </p>
       </div>
         </Subheading>

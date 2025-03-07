@@ -42,9 +42,12 @@ const footerLinks = {
     { name: 'Cloud Native', url: '/cloud-native-development-services' },
     { name: 'Cloud Optimization', url: '/cloud-optimization-services' }
   ],
-  // 'AI': [
-  //   { name: 'AI Development', url: '/services/AI/Ai_development' }
-  // ],
+  'ARTIFICIAL INTELLIGENCE': [
+  { name: 'AI App Development', url: '/ai-app-development' },
+  { name: 'AI Software Development', url: '/ai-software-development' },
+  { name: 'Large Language Model Development', url: '/large-language-model-development' },
+  { name: 'Enterprise AI Chatbot Development', url: '/enterprise-ai-chatbot-development' }
+  ],
   'BLOCKCHAIN': [
     { name: 'Exchange Software', url: '/crypto-exchange-software-development' },
     { name: 'ICO Development', url: '/initial-coin-offering-ico-development' },
@@ -64,14 +67,14 @@ const footerLinks = {
     { name: 'VR/XR Simulation', url: '/vr-xr-simulation-development' },
     { name: 'Resource Augmentation', url: '/game-development-resource-augmentation' }
   ],
-  'FRONTEND': [
-    { name: 'Angular Development', url: '/tech/frontend/angular-development-services' },
-    { name: 'React Development', url: '/tech/frontend/reactjs-development-services' },
-    { name: 'Vue Development', url: '/tech/frontend/vuejs-development-services' },
-    { name: 'Bootstrap Development', url: '/tech/frontend/bootstrap-development-services' },
-    { name: 'KnockoutJS Development', url: '/tech/frontend/knockoutjs-development-services' },
-    { name: 'NextJS Development', url: '/tech/frontend/nextjs-development-services' }
-  ],
+'FRONTEND': [
+    { name: 'Angular Development', url: '/angular-development-services' },
+    { name: 'React Development', url: '/reactjs-development-services' },
+    { name: 'Vue Development', url: '/vuejs-development-services' },
+    { name: 'Bootstrap Development', url: '/bootstrap-development-services' },
+    { name: 'KnockoutJS Development', url: '/knockoutjs-development-services' },
+    { name: 'NextJS Development', url: '/nextjs-development-services' }
+],
   'WEBSITE DEVELOPMENT': [
     { name: 'MERN Stack Development', url: '/mern-stack-development' },
     { name: 'Java Development', url: '/java-j2ee-development-services' },
@@ -91,13 +94,22 @@ const footerLinks = {
     { name: 'Xamarin Development', url: '/xamarin-app-development-services' },
     { name: 'HTML5 App Development', url: '/html5-app-development-services' }
   ],
-  'DEVOPS': [
-    { name: 'CI/CD Implementation', url: '/services/devops/ci-cd' },
-    { name: 'Infrastructure as Code', url: '/services/devops/infrastructure-as-code' },
-    { name: 'Security & Compliance', url: '/services/devops/security-compliance' },
-    { name: 'Cloud Automation', url: '/services/devops/cloud-automation' },
-    { name: 'Monitoring & Logging', url: '/services/devops/monitoring-logging' }
-  ],
+
+'E COMMERCE': [
+  { name: 'Shopify Development', url: '/shopify-development-services' },
+  { name: 'WooCommerce Development', url: '/woocommerce-development-services' },
+  { name: 'OpenCart Development', url: '/opencart-development-services' },
+  { name: 'Magento Development', url: '/magento-development-services' },
+  { name: 'PrestaShop Development', url: '/prestashop-development-services' },
+  { name: 'Odoo Development', url: '/odoo-development-services' }
+],
+  // 'DEVOPS': [
+  //   { name: 'CI/CD Implementation', url: '/services/devops/ci-cd' },
+  //   { name: 'Infrastructure as Code', url: '/services/devops/infrastructure-as-code' },
+  //   { name: 'Security & Compliance', url: '/services/devops/security-compliance' },
+  //   { name: 'Cloud Automation', url: '/services/devops/cloud-automation' },
+  //   { name: 'Monitoring & Logging', url: '/services/devops/monitoring-logging' }
+  // ],
   'RESOURCES': [
     { name: 'About Us', url: '/about-us' },
     { name: 'Our Work', url: '/our-work' },
@@ -110,10 +122,10 @@ const footerLinks = {
 
 const Navigation = () => {
   return (
-    <div className="flex justify-center items-center bg-blue-950 py-8">
+    <div className="flex justify-center items-center bg-blue-950">
       <WrapperContainer>
         <div className="text-white w-full">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
               {Object.entries(footerLinks).map(([category, links]) => (
                 <div key={category} className="mb-6">

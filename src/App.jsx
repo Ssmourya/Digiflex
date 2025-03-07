@@ -128,14 +128,13 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // This matches any single-segment path
   const match = useMatch("/:path");
-
-  if (
-    match?.params.path === "about-us" ||
-    match?.params.path === "contact-us"
-  ) {
-    console.log(match);
-  }
+  
+  // Check if we're on about-us or contact-us pages
+  const isAboutOrContactPage = 
+    match?.params.path === "about-us" || 
+    match?.params.path === "contact-us";
 
   return (
     <div className=" w-full ">
@@ -400,8 +399,12 @@ function App() {
 
       </Routes>
 
-      {!match && <ReviewsSection />}
-      {!match && <Contact />}
+      {!isAboutOrContactPage && (
+        <>
+          <ReviewsSection />
+          <Contact />
+        </>
+      )}
       <Navigation/>
       <Footer />
     </div>

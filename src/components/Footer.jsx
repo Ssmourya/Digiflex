@@ -153,9 +153,9 @@ function Footer() {
         </div>
         <div className="w-full h-px bg-blue-800 mb-4"></div>
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-4 max-w-[1275px] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1275px] mx-auto mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1275px] pt-10">
           {locations.map((loc, index) => (
-            <div key={index} className="rounded-none flex flex-col items-start">
+            <div key={index} className="rounded-none flex flex-col text-left">
               <div className="flex items-center gap-2">
                 <h2 className="text-lg font-semibold">{loc.city}</h2>
                 <img src={loc.flagUrl} alt={loc.alt} className="h-6 w-10" />

@@ -69,19 +69,19 @@ export const mainNavItems = [
     },
     {
         label: "Marketing",
-        href: "#"
+        href: "/marketing"
     },
     {
         label: "Portfolio",
-        href: "#",
+        href: "/portfolio",
     },
     {
         label: "Blog",
-        href: "/digiflex.ai/blog"
+        href: "/blog"
     },
     {
         label: "About us",
-        href: "about-us"
+        href: "/about-us"
     },
 ];
 

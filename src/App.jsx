@@ -282,31 +282,31 @@ function App() {
 <Route path="/salesforce-consulting-assessment" element={<ConsultingAssesment/>} />
 
 
-        {/* Frontend Technology */}
-        <Route
-          path="/tech/frontend/angular-development-services"
-          element={<AngularDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/reactjs-development-services"
-          element={<ReactDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/vuejs-development-services"
-          element={<VueDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/bootstrap-development-services"
-          element={<BootstrapDevelopment />}
-        />
-        <Route 
-          path="/tech/frontend/knockoutjs-development-services"
-          element={<KnowkoutjsDevelopment />}
-        />
-        <Route
-          path="/tech/frontend/nextjs-development-services"
-          element={<NextjsDevelopment />}
-        />
+  {  /* Frontend Technology */}
+  <Route
+  path="/angular-development-services"
+  element={<AngularDevelopment />}
+  />
+  <Route
+  path="/reactjs-development-services"
+  element={<ReactDevelopment />}
+  />
+  <Route
+  path="/vuejs-development-services"
+  element={<VueDevelopment />}
+  />
+  <Route
+  path="/bootstrap-development-services"
+  element={<BootstrapDevelopment />}
+  />
+  <Route 
+  path="/knockoutjs-development-services"
+  element={<KnowkoutjsDevelopment />}
+  />
+  <Route
+  path="/nextjs-development-services"
+  element={<NextjsDevelopment />}
+  />
 
         {/* Mobile Technology */}
         <Route path="/ios-app-development-services" element={<IosDevelopmentTech />} />

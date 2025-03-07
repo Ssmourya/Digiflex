@@ -67,14 +67,14 @@ const footerLinks = {
     { name: 'VR/XR Simulation', url: '/vr-xr-simulation-development' },
     { name: 'Resource Augmentation', url: '/game-development-resource-augmentation' }
   ],
-  'FRONTEND': [
-    { name: 'Angular Development', url: '/tech/frontend/angular-development-services' },
-    { name: 'React Development', url: '/tech/frontend/reactjs-development-services' },
-    { name: 'Vue Development', url: '/tech/frontend/vuejs-development-services' },
-    { name: 'Bootstrap Development', url: '/tech/frontend/bootstrap-development-services' },
-    { name: 'KnockoutJS Development', url: '/tech/frontend/knockoutjs-development-services' },
-    { name: 'NextJS Development', url: '/tech/frontend/nextjs-development-services' }
-  ],
+'FRONTEND': [
+    { name: 'Angular Development', url: '/angular-development-services' },
+    { name: 'React Development', url: '/reactjs-development-services' },
+    { name: 'Vue Development', url: '/vuejs-development-services' },
+    { name: 'Bootstrap Development', url: '/bootstrap-development-services' },
+    { name: 'KnockoutJS Development', url: '/knockoutjs-development-services' },
+    { name: 'NextJS Development', url: '/nextjs-development-services' }
+],
   'WEBSITE DEVELOPMENT': [
     { name: 'MERN Stack Development', url: '/mern-stack-development' },
     { name: 'Java Development', url: '/java-j2ee-development-services' },

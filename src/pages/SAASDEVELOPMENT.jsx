@@ -7,7 +7,8 @@ import Saas5 from "../container/Services/Custom App/Saas Devlopment/Saas5";
 import videoBg from "../assets/blockchain_video.mp4"; // Video Background
 import Heading from '../Layout/Heading';
 import Subheading from '../Layout/Subheading';
-import SaaSFAQ from "../container/Services/Custom App/Saas Devlopment/SaaSFAQ";
+import { SaaSfaqs} from "../container/Services/Cloud/Faqdata";
+import Faq from "../components/Faq";
 const clients = [
   { name: "Universal", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBM7RW2MYrGDHBmKM99UUycqt995yTLhWww&s" },
   { name: "NHS", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGtutCNQT5sDXQvTm17rkNot67tFpR38Jig&s" },
@@ -124,7 +125,7 @@ const Saas = () => {
       <Saas2 />
       <Saas3 />
       <Saas4 />
-      <SaaSFAQ/>
+      <Faq faqs={SaaSfaqs}/>
      
     </>
   );

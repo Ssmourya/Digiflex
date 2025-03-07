@@ -5,7 +5,9 @@ import Thirds from "../container/Services/Custom App/CEM Devlopment/Third";
 import Four from "../container/Services/Custom App/CEM Devlopment/Four";
 import KnowledgeSection from "../container/Services/Custom App/CEM Devlopment/KnowledgeSection";
 import WrapperContainer from "../Layout/WrapperContainer";
-import CemDevelopmentFAQ from "../container/Services/Custom App/CEM Devlopment/CemDevelopmentFAQ";
+import Faq from "../components/Faq";
+import { CemFaq } from "../container/Services/Cloud/Faqdata";
+
 
 const Hero = () => {
   return (
@@ -49,8 +51,9 @@ const Hero = () => {
       <Four />
       <Cards />
       <KnowledgeSection />
+      <Faq faqs={CemFaq}/>
     </WrapperContainer>
-    <CemDevelopmentFAQ/>
+    
     </>
   );
 };

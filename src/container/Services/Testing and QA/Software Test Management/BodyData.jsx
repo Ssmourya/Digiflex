@@ -10,11 +10,11 @@ const ParaComponent = ({ section }) => {
     return (
         <div className="w-full md:w-[50%]">
 
-            <Heading>
+            <Heading className="text-start">
                 {section.title}
             </Heading>
 
-            <Paragraph className="text-md">{section.description}</Paragraph>
+            <Paragraph className="text-md text-start">{section.description}</Paragraph>
 
             {
                 Object.values(section.points).map((point, pointIndex) => (
@@ -30,7 +30,7 @@ const ParaComponent = ({ section }) => {
 
 const ImageComponent = ({ section }) => {
     return (
-        <div className=" md:w-[384px] sm:w-1/4 h-auto rounded-xl overflow-hidden">
+        <div className=" md:w-[384px] sm:w-2/4 h-auto rounded-xl overflow-hidden">
             <img
                 src={section.image}
                 alt="Key Image"

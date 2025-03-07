@@ -9,11 +9,10 @@ const PerformanceTestingSection = () => {
     return (
         <WrapperContainer>
             <div className="flex flex-col lg:flex-row gap-12 items-start">
+                
                 {/* Left side - Illustration */}
-                <div className="w-full lg:w-2/5">
-                    <div className="w-full">
-                    <img src={Website_Maintenance} alt="" />
-                    </div>
+                <div className="xs:w-1/2 sm:w-1/2 md:w- lg:w-2/5 mx-auto">
+                    <img src={Website_Maintenance} className='object-cover w-full h-full'/>
                 </div>
 
                 {/* Right side - Content */}

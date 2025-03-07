@@ -31,7 +31,7 @@ const teamMembers = [
 
 function App() {
   return (
-    <div className="bg-blue-950 min-h px-4 md:px-8">
+    <div className="bg-blue-950 min-h px-4 md:px-8 rounded">
       <WrapperContainer>
         <div className="pb-10">
           <div className="text-center mb-16">

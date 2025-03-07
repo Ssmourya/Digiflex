@@ -1,6 +1,6 @@
 import React from 'react';
-import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon } from 'lucide-react';
 import WrapperContainer from '../../../Layout/WrapperContainer';
+import shubhamsir from '../../../assets/shubhamsir.webp'
 
 const teamMembers = [
   {
@@ -25,7 +25,7 @@ const teamMembers = [
     id: 4,
     name: 'Shubham Jat',
     role: 'Business Development Manager',
-    image: 'https://digiflex.ai/img/1704269389180.jpg'
+    image: shubhamsir
   }
 ];
 

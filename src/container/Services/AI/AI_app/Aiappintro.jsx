@@ -6,7 +6,7 @@ import Aiappintroimg from '../../../../assets/Aiappintro.png';
 
 function Aiappintro() {
   return (
-    <div className='pb-20'>
+    <div>
     <WrapperContainer>
       <div className='flex flex-col lg:flex-row gap-8'>
         <div className='flex-1'>

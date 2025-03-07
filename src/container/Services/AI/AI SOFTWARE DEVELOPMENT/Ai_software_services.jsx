@@ -12,6 +12,8 @@ const IndustriesData = [
       "Custom AI solutions for finance, healthcare, e-commerce, and more.",
       "AI-powered chatbots & virtual assistants to enhance customer experience.",
       "Smart recommendation systems for personalized user engagement.",
+      "AI-driven automation for improved efficiency and cost savings.",
+      "Seamless integration with existing applications and platforms.",
     ],
   },
   {
@@ -20,6 +22,8 @@ const IndustriesData = [
       "Predictive analytics for data-driven decision-making.",
       "Natural Language Processing (NLP) for intelligent text & speech processing.",
       "Computer vision for facial recognition, object detection & video analytics.",
+      "Deep learning models for advanced pattern recognition and forecasting.",
+      "AI-powered anomaly detection for security and fraud prevention.",
     ],
   },
   {
@@ -28,6 +32,8 @@ const IndustriesData = [
       "Robotic Process Automation (RPA) to streamline repetitive tasks.",
       "AI-powered workflow optimization for operational efficiency.",
       "Smart decision-making systems using AI-driven insights.",
+      "Automated data entry and document processing with AI.",
+      "AI-based customer support automation for faster response times.",
     ],
   },
   {
@@ -36,6 +42,8 @@ const IndustriesData = [
       "AI integration with AWS, Azure, and Google Cloud.",
       "Big data AI processing for analytics and business intelligence.",
       "Secure & scalable AI architectures deployed on cloud platforms.",
+      "Real-time AI model deployment and monitoring in the cloud.",
+      "Cloud-based AI-driven automation for seamless operations.",
     ],
   },
   {
@@ -43,9 +51,13 @@ const IndustriesData = [
     about: [
       "AI-driven smart contracts for blockchain transactions.",
       "AI-enhanced cybersecurity & fraud detection in Web3 applications.",
+      "Decentralized AI models for trustless and transparent operations.",
+      "AI-powered NFT and token analytics for market predictions.",
+      "AI-based risk assessment for DeFi and blockchain security.",
     ],
   },
 ];
+
 
 function AiSoftwareServices() {
   const [select, setSelect] = useState(IndustriesData[0]);

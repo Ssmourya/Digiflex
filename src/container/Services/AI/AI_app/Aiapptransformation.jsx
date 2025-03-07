@@ -33,19 +33,19 @@ const benefits = [
 
 function Aiapptransformation() {
   return (
-    <div className="bg-[#E0E0E0] pb-20">
+    <div className="">
       <WrapperContainer>
         <Heading>
           <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold">
             AI App Development – The Future of Digital Transformation
           </h1>
         </Heading>
-        <div className="bg-white rounded-2xl p-4 md:p-8">
-          <div className="flex flex-col items-center p-4 md:p-8">
+        <div >
+          <div className="flex flex-col items-center gap-5">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex flex-col md:flex-row items-start md:items-center w-full max-w-4xl bg-white border border-gray-300 rounded-lg p-4 md:p-6 mb-4 shadow-md min-h-[8rem]"
+                className="flex flex-col md:flex-row items-start md:items-center w-full max-w-4xl  border border-gray-300 rounded-lg min-h-[6rem] pl-5 "
               >
                 <Fontheading>
                   <h1 className="w-full md:w-auto text-lg font-semibold">

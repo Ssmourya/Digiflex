@@ -87,7 +87,7 @@ export default function OurWork() {
                 OUR WORK
               </span>
             </div>
-            <h1 className="mt-2 text-4xl md:text-5xl font-bold text-blue-700">Portfolio</h1>
+            <h2 className="mt-2 text-4xl md:text-5xl font-bold text-blue-700">Portfolio</h2>
             <p className="mt-4 text-lg lg:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
               Discover how we've helped businesses transform their digital presence with cutting-edge solutions.
             </p>

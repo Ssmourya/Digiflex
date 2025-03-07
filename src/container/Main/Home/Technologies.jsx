@@ -486,14 +486,14 @@ const TechnologiesSection = () => {
               TECH STACK
             </span>
           </div>
-          <motion.h1 
+          <motion.h2 
             className="text-4xl md:text-5xl font-bold text-blue-700 mb-4"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             Our Expertise in Cutting-Edge Technologies
-          </motion.h1>
+          </motion.h2>
           <motion.p 
             className="text-xl text-gray-600 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}

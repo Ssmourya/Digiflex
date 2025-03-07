@@ -13,9 +13,9 @@ function App() {
               <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2" />
               <span className="text-blue-600 font-semibold text-xs sm:text-sm">WHAT WE OFFER</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 lg:mb-4 md:mb-6 leading-tight text-blue-700 px-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 lg:mb-4 md:mb-6 leading-tight text-blue-700 px-2">
               Comprehensive Digital Solutions for Your Business
-            </h1>
+            </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-2 pb-4 lg:pb-0">
               From ideation to execution, we provide expert consulting, design, development, and quality assurance to bring your vision to life.
             </p>
@@ -44,7 +44,7 @@ function App() {
               </div>
 
               {/* Bottom Right Image */}
-              <div className="absolute right-0 sm:-right-6 lg:-right-10 bottom-0 w-[55%] sm:w-[60%] h-[45%] sm:h-[50%] border-4 sm:border-8 border-white  shadow-lg">
+              <div className="absolute right-0 sm:-right-6 lg:-right-10 bottom-0 w-[55%] sm:w-[60%] h-[45%] sm:h-[50%] border-4 rounded-2xl sm:border-8 border-white  shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400"
                   alt="Machine Learning"

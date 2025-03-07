@@ -388,7 +388,7 @@ function App() {
       <Route path="/ai-app-development" element={<Ai_development/>}/>
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
-      <Route path="/enterprise-ai-chatbot-development" element={<Ai_chatbot/>}/>
+      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>        
 
        {/*E-Commerce*/}
 
@@ -398,13 +398,11 @@ function App() {
       <Route path="/magento-development-services" element={<Magento/>}/>
       <Route path="/prestashop-development-services" element={<Pestrashop/>}/>
       <Route path="/odoo-development-services" element={<Odoo/>}/>
-      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>
-      
 
       </Routes>
 
-   <ReviewsSection/>
-       <Contact/>
+      {!match && <ReviewsSection />}
+      {!match && <Contact />}
       <Navigation/>
       <Footer />
     </div>

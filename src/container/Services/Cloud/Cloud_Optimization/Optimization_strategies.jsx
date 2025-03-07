@@ -52,7 +52,7 @@ function OptimizationStrategies() {
   const [activeIndex, setActiveIndex] = useState(null);
   return (
     <WrapperContainer>
-      <Heading>Cloud Optimization Strategies by Digiflex</Heading>
+      <Heading>Cloud Optimization Strategies by Digiflex.ai</Heading>
       <div className="flex flex-col md:flex-row justify-between items-center mt-10">
         <div className="flex flex-col w-full text-black md:w-2/3">
           {StrategiesData.map((strategy, index) => (

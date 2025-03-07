@@ -28,7 +28,7 @@ function Ai_TechnologiesUsed() {
         <Heading>
         <span>
           <h2>
-            Technologies Used at Digiflex
+            Technologies Used at Digiflex.ai
           </h2>
           </span>
           </Heading>

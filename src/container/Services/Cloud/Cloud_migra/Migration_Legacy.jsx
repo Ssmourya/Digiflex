@@ -5,24 +5,24 @@ import Subheading from "../../../../Layout/Subheading";
 
 const features = [
   {
-    title: "Scalability",
-    description: "Easily scale resources up or down based on demand.",
+    title: "AI-Powered Automation",
+    description: "Enhance efficiency with intelligent process automation.",
   },
   {
-    title: "Cost Efficiency",
-    description: "Optimize IT expenses with pay-as-you-go pricing.",
+    title: "24/7 Availability",
+    description: "Ensure seamless operations with round-the-clock support.",
   },
   {
-    title: "Security",
-    description: "Enhanced security measures for data protection.",
+    title: "Scalability & Customization",
+    description: "Tailored solutions that scale with your business growth.",
   },
   {
-    title: "Disaster Recovery",
-    description: "Reliable backup and recovery solutions.",
+    title: "Data-Driven Insights",
+    description: "Leverage analytics for smarter decision-making.",
   },
   {
-    title: "Flexibility & Innovation",
-    description: "Rapid innovation with flexible cloud solutions.",
+    title: "Seamless Integration",
+    description: "Effortlessly connect with existing enterprise systems.",
   },
 ];
 
@@ -33,12 +33,12 @@ function FeatureCircles() {
       <div >
       <Heading>
         <h1>
-          Why Migrate from Legacy Systems to the Cloud?
+          Why Choose Digiflex.ai for Enterprise AI Solutions?
         </h1>
         </Heading>
         <Subheading>
         <p className="text-center">
-        Legacy systems are costly, hard to scale, and pose security risks. Cloud migration enhances scalability, security, and efficiency, ensuring modern, cost-effective, and future-ready business operations.
+        Digiflex.ai empowers businesses with advanced AI-driven solutions, ensuring automation, efficiency, and scalability for future-ready operations.
         </p>
         </Subheading>
       </div>

@@ -25,12 +25,13 @@ function OptimizationBenefits() {
         <Heading>
           <h1>Key Benefits of Cloud Optimization</h1>
         </Heading>
-        <div className="flex flex-wrap justify-center items-center mt-10">
-          <div className="flex flex-wrap gap-10 justify-center">
+        <div className="mt-10">
+          {/* Grid for mobile screens (2 items per row on small screens) */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="relative group w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
+                className="flex justify-center items-center"
               >
                 <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 flex items-center justify-center bg-blue-500 text-white rounded-full text-center font-semibold transition-transform duration-300 hover:translate-y-4">
                   <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
@@ -42,6 +43,7 @@ function OptimizationBenefits() {
           </div>
         </div>
       </WrapperContainer>
+
       <WrapperContainer>
         <Heading>Importance of Cloud Optimization</Heading>
         <Paragraph className="mt-10">

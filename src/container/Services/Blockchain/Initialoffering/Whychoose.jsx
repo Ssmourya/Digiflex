@@ -65,7 +65,7 @@ const WhyChoose = () => {
       <section>
         <div className="max-w-6xl mx-auto text-center">
           <Heading>
-            <h2>Why Choose Quest Digiflex</h2>
+            <h2>Why Choose Quest Digiflex.ai</h2>
           </Heading>
           {/* Optional descriptive text */}
           <p className="mt-4 text-gray-600">

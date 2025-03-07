@@ -52,7 +52,7 @@ function AiSoftwareServices() {
 
   return (
     <WrapperContainer>
-      <Heading>Digiflex AI Software Development Services</Heading>
+      <Heading>Digiflex.ai AI Software Development Services</Heading>
       <div className="flex flex-col md:flex-row border-2 border-[#C0DCFE] rounded-3xl w-full h-auto">
         {/* Left Section (Industry List) */}
         <div className="md:w-1/2 w-full bg-[#C0DCFE] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none p-4">

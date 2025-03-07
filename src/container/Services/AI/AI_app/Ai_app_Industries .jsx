@@ -10,13 +10,13 @@ const IndustriesData = [
   {
     title: "E-Commerce & Retail",
     description:
-      "At Digiflex, we enhance E-Commerce & Retail with AI-driven chatbots, recommendation engines, and customer analytics. Our chatbots provide real-time assistance, while recommendation systems personalize shopping experiences, boosting sales and engagement.",
+      "At Digiflex.ai, we enhance E-Commerce & Retail with AI-driven chatbots, recommendation engines, and customer analytics. Our chatbots provide real-time assistance, while recommendation systems personalize shopping experiences, boosting sales and engagement.",
     logo: "xyz",
   },
   {
     title: "Healthcare & MedTech",
     description:
-      "Digiflex revolutionizes healthcare with AI-powered diagnostics, medical image analysis, and predictive analytics. Our AI-driven tools assist doctors in faster, more accurate disease detection, improving patient care.",
+      "Digiflex.ai revolutionizes healthcare with AI-powered diagnostics, medical image analysis, and predictive analytics. Our AI-driven tools assist doctors in faster, more accurate disease detection, improving patient care.",
     logo: "xyz",
   },
   {
@@ -28,7 +28,7 @@ const IndustriesData = [
   {
     title: "Education & E-Learning",
     description:
-      "Digiflex enhances education with AI-driven personalized learning and smart tutoring systems. Our AI adapts to student needs, providing customized learning experiences and real-time feedback.",
+      "Digiflex.ai enhances education with AI-driven personalized learning and smart tutoring systems. Our AI adapts to student needs, providing customized learning experiences and real-time feedback.",
     logo: "xyz",
   },
   {

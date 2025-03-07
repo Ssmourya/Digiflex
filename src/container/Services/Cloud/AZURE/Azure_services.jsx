@@ -9,9 +9,9 @@ import Fontheading from "../../../../Layout/Fontheading";
 
 const advantages = [
   {
-    title: "Scalability & Flexibility with Digiflex",
+    title: "Scalability & Flexibility with Digiflex.ai",
     points: [
-      "Digiflex ensures seamless scaling of cloud resources based on business needs.",
+      "Digiflex.ai ensures seamless scaling of cloud resources based on business needs.",
       "Supports hybrid and multi-cloud environments for optimized performance.",
     ],
     image: Azure_sca,
@@ -19,7 +19,7 @@ const advantages = [
   {
     title: "Cost-Effective Cloud Solutions",
     points: [
-      "Digiflex leverages Azure’s pay-as-you-go model to minimize IT expenses.",
+      "Digiflex.ai leverages Azure’s pay-as-you-go model to minimize IT expenses.",
       "Exclusive discounts and strategic resource allocation for maximum efficiency.",
     ],
     image: Azore_cost,
@@ -27,7 +27,7 @@ const advantages = [
   {
     title: "Enterprise-Grade Security & Compliance",
     points: [
-      "Digiflex implements advanced security measures, including multi-layer encryption and threat protection.",
+      "Digiflex.ai implements advanced security measures, including multi-layer encryption and threat protection.",
       "Ensures compliance with GDPR, HIPAA, ISO, and other global standards to meet regulatory requirements.",
     ],
     image: Azure_security,
@@ -35,7 +35,7 @@ const advantages = [
   {
     title: "Reliable Cloud Infrastructure",
     points: [
-      "Digiflex guarantees 99.99% uptime with Azure’s globally distributed data centers.",
+      "Digiflex.ai guarantees 99.99% uptime with Azure’s globally distributed data centers.",
       "Automated backups and disaster recovery solutions to safeguard critical data.",
     ],
     image: Azure_time,
@@ -48,7 +48,7 @@ function AzureServices() {
       <WrapperContainer>
         <div>
           <Heading>
-            <h1>Advantages of Azure with Digiflex</h1>
+            <h1>Advantages of Azure with Digiflex.ai</h1>
           </Heading>
           <div className="">
             {advantages.map((advantage, index) => (

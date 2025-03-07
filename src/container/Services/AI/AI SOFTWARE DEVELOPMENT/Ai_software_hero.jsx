@@ -64,7 +64,7 @@ function Ai_software_hero() {
     
               {/* Animated Description with Glowing Effect */}
               <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-12 animate-glow">
-              At Digiflex, we specialize in AI-powered software development, transforming businesses with intelligent automation, machine learning, and cloud-based AI solutions. Our cutting-edge AI technologies help businesses automate processes, enhance decision-making, and improve efficiency.
+              At Digiflex.ai, we specialize in AI-powered software development, transforming businesses with intelligent automation, machine learning, and cloud-based AI solutions. Our cutting-edge AI technologies help businesses automate processes, enhance decision-making, and improve efficiency.
               </p>
               {/* Floating Orbs */}
               {[...Array(5)].map((_, i) => (

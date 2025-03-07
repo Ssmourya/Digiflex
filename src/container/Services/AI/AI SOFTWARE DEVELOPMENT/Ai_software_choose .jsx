@@ -27,7 +27,7 @@ function Ai_software_choose() {
         <WrapperContainer>
             <Heading>
                 <span>
-                    <h1>Why Choose Digiflex?</h1>
+                    <h1>Why Choose Digiflex.ai?</h1>
                 </span>
             </Heading>
             <div className='flex flex-wrap md:flex-nowrap gap-6 md:gap-8 h-auto justify-center'>

@@ -5,39 +5,41 @@ import Migrationsaas from '../../../../assets/MigrationSaas.jpg'
 import MigrationPass from '../../../../assets/MigrationPaas.avif'
 import MigrationIaas from '../../../../assets/MigrationIaas.avif'
 
+
+
 const advantages = [
   {
-    title: "Infrastructure as a Service (IaaS)",
+    title: "AI-Powered Conversational Abilities",
     points: [
-      "Provides virtualized computing resources (servers, storage, networking).",
-      "Example: Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.",
+      "Understand and respond to user queries accurately with advanced NLP.",
+      "Enhance user experience with human-like interactions and contextual awareness.",
     ],
-    image: MigrationIaas,
+    image: Migrationsaas,
   },
   {
-    title: "Platform as a Service (PaaS)",
+    title: "Multi-Platform Integration",
     points: [
-      "Multi-layered encryption, DDoS protection, and threat monitoring.",
-      "Complies with GDPR, HIPAA, ISO, and other global standards.",
+      "Seamless integration with websites, mobile apps, and enterprise software.",
+      "Connect Digiflex.ai's chatbot with CRM, ERP, and HRMS for enhanced automation.",
     ],
     image: MigrationPass,
   },
   {
-    title: "Software as a Service (SaaS)",
+    title: "Automation & Workflow Optimization",
     points: [
-      "99.99% uptime with multiple data centers worldwide.",
-      "Disaster recovery and automatic backups ensure data safety.",
+      "Reduce manual efforts by automating repetitive tasks efficiently.",
+      "Digiflex.ai enables businesses to streamline workflows and improve productivity.",
     ],
-    image: Migrationsaas,
+    image: MigrationIaas,
   },
 ];
 
-function Migration_service () {
+function EnterpriseAIService () {
   return (
     <>
        <WrapperContainer>
         <Heading>
-          <h1>Cloud Service Models for Migration</h1>
+          <h1>Enterprise AI Chatbot Solutions by Digiflex.ai</h1>
         </Heading>
         <div className="mt-5">
       <div className="">
@@ -74,4 +76,4 @@ function Migration_service () {
   )
 }
 
-export default Migration_service 
+export default EnterpriseAIService

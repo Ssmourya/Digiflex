@@ -62,7 +62,7 @@ const Card = ({ title, number, description, image }) => {
 const Ai_digiflex_development = () => {
   return (
     <WrapperContainer>
-      <Heading>Why Choose Digiflex for AI App Development?</Heading>
+      <Heading>Why Choose Digiflex.ai for AI App Development?</Heading>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4">
         {data.map((item, index) => (
           <Card key={index} {...item} />

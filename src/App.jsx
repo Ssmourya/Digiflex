@@ -115,6 +115,7 @@ import Pestrashop from "./pages/PestrashopDevelopment";
 import Odoo from './pages/OdooDevelopment';
 
 import Ai_enterprise from './pages/Ai_enterprise'
+import Ai_chatbot from "./pages/Ai_chatbot";
 
 
 function App() {
@@ -387,8 +388,7 @@ function App() {
       <Route path="/ai-app-development" element={<Ai_development/>}/>
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
-      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>        
-{/* <<<<<<< Updated upstream */}
+      <Route path="/enterprise-ai-chatbot-development" element={<Ai_chatbot/>}/>
 
        {/*E-Commerce*/}
 
@@ -398,10 +398,8 @@ function App() {
       <Route path="/magento-development-services" element={<Magento/>}/>
       <Route path="/prestashop-development-services" element={<Pestrashop/>}/>
       <Route path="/odoo-development-services" element={<Odoo/>}/>
-{/* ======= */}
       <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>
       
-{/* >>>>>>> Stashed changes */}
 
       </Routes>
 

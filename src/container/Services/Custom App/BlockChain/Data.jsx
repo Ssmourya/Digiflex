@@ -27,125 +27,125 @@ import img26 from "../../../../assets/costimg.png"
 export const Data = [
     {
         img:img1,
-        "header": "Blockchain Technology Consulting",
-        "data": "Expert guidance to explore, implement, and optimize blockchain solutions for improved security, transparency, and efficiency.",
+        "header": "Blockchain Technology Consulting by Digiflex.ai",
+        "data": "Digiflex.ai provides expert guidance to explore, implement, and optimize blockchain solutions for improved security, transparency, and efficiency."
     },
     {
         img:img2,
-        "header": "Blockchain Protocol Developement",
-        "data": "Expert guidance to explore, implement, and optimize blockchain solutions for improved security, transparency, and efficiency."
+        "header": "Blockchain Protocol Development by Digiflex.ai",
+        "data": "Digiflex.ai specializes in building and optimizing blockchain protocols, ensuring secure and scalable solutions for businesses."
     },
     {
         img:img3,
-        "header": "Enterprise Blockchain Developement",
-        "data": "Expert guidance to explore, implement, and optimize blockchain solutions for improved security, transparency, and efficiency."
+        "header": "Enterprise Blockchain Development by Digiflex.ai",
+        "data": "Digiflex.ai helps enterprises leverage blockchain for enhanced transparency, security, and operational efficiency."
     }
 ]
 export const newData = [
     {
         img:img4,
-        "header":"DApps Developement",
-        "data":"DApp Development creates apps on blockchain networks, using smart contracts for decentralization, security, and transparency."
+        "header":"DApps Development by Digiflex.ai",
+        "data":"Digiflex.ai creates decentralized applications (DApps) on blockchain networks, utilizing smart contracts for enhanced security and transparency."
     },
     {
         img:img5,
-        "header":"NFT Marketplace Developement",
-        "data":"An NFT Marketplace is a platform for buying and selling NFTs."
+        "header":"NFT Marketplace Development by Digiflex.ai",
+        "data":"Digiflex.ai develops NFT marketplaces for seamless buying, selling, and trading of digital assets."
     },{
         img:img6,
-        "header":"Asset Tokenization Developement",
-        "data":"Asset Tokenization converts real-world assets into digital tokens on a blockchain."
+        "header":"Asset Tokenization Development by Digiflex.ai",
+        "data":"Digiflex.ai offers asset tokenization solutions, converting real-world assets into secure blockchain-based digital tokens."
     }
 ]
 export const Data2 = [
     {
         img:img7,
-        "header":"Polygon ",
-        "data":"First zero knowledge scaling solution compatible with Ethereum Virtual Machine for smart contracts"
+        "header":"Polygon Integration by Digiflex.ai",
+        "data":"Digiflex.ai leverages Polygon's zero-knowledge scaling solution for Ethereum-compatible smart contracts."
     },
     {
         img:img9,
-        "header":"Avalanche ",
-        "data":"Avalanche Subnets are customizable blockchains within the Avalanche network, allowing developers to create tailored, scalable, and interoperable ecosystems."
+        "header":"Avalanche Development by Digiflex.ai",
+        "data":"Digiflex.ai enables custom blockchain development using Avalanche Subnets for scalable and interoperable ecosystems."
     },{
         img:img10,
-        "header":"Cosmos SDK",
-        "data":"The Cosmos SDK is a framework for building custom blockchains in Go, offering modularity, scalability, and interoperability through the IBC protocol."
+        "header":"Cosmos SDK Solutions by Digiflex.ai",
+        "data":"Digiflex.ai utilizes Cosmos SDK to build custom blockchain solutions with modularity and scalability."
     },{
         img:img22,
-        "header":"Polkadot ",
-        "data":"Polkadot parachains are specialized blockchains that run in parallel, connected to the Polkadot Relay Chain, enabling scalability, interoperability, and shared security."
+        "header":"Polkadot Parachain Solutions by Digiflex.ai",
+        "data":"Digiflex.ai develops Polkadot-based parachains for seamless interoperability and scalability."
     },{
         img:img23,
-        "header":"Arbitrum ",
-        "data":"Arbitrum Orbit enables developers to create Layer 3 chains on Arbitrum for enhanced scalability and customization."
+        "header":"Arbitrum Layer 3 Solutions by Digiflex.ai",
+        "data":"Digiflex.ai enhances blockchain scalability using Arbitrum Orbit for Layer 3 development."
     }
 ]
 export const Data3 = [
     {
         img:img17,
-        "header":"24/7 Monitoring",
-        "data":"24/7 Monitoring ensures continuous tracking of systems, networks, and applications to detect issues, prevent downtime, and enhance security. It helps maintain performance, reliability, and quick issue resolution, ensuring seamless operations."
+        "header":"24/7 Monitoring by Digiflex.ai",
+        "data":"Digiflex.ai ensures continuous system monitoring to detect issues, prevent downtime, and enhance security."
     },
     {
         img:img18,
-        "header":"Cloud Infrastructure Management",
-        "data":"Optimizing cloud resources to improve scalability, efficiency, and cost-effectiveness. This includes provisioning, configuration, load balancing, and maintaining cloud environments for seamless operations."
+        "header":"Cloud Infrastructure Management by Digiflex.ai",
+        "data":"Digiflex.ai optimizes cloud resources for improved scalability, efficiency, and cost-effectiveness."
     },
     {
         img:img19,
-        "header":"Bug Fixes & Updates",
-        "data":"Regular patches and updates enhance software functionality, fix vulnerabilities, and introduce improvements. Keeping systems up-to-date ensures stability and security while preventing potential exploits."
+        "header":"Bug Fixes & Updates by Digiflex.ai",
+        "data":"Digiflex.ai provides regular software patches and updates to enhance functionality and security."
     },
     {
         img:img16,
-        "header":"Security & Compliance",
-        "data":"Implementing strong security measures to safeguard sensitive data from cyber threats. Adhering to regulatory standards ensures legal compliance and protects businesses from security breaches."
+        "header":"Security & Compliance by Digiflex.ai",
+        "data":"Digiflex.ai implements strong security measures to safeguard sensitive data and ensure compliance."
     },
     {
         img:img20,
-        "header":"Backup & Disaster Recovery",
-        "data":"Preventing data loss by maintaining regular backups and implementing disaster recovery plans. This ensures quick restoration of data and business continuity in case of hardware failures or cyber incidents."
+        "header":"Backup & Disaster Recovery by Digiflex.ai",
+        "data":"Digiflex.ai provides robust backup and disaster recovery solutions for business continuity."
     },
     {
         img:img21,
-        "header":"Technical Assistance",
-        "data":"Enhancing system speed, efficiency, and reliability through performance tuning, resource allocation, and proactive troubleshooting. Optimized systems lead to better user experience and higher productivity."
+        "header":"Technical Assistance by Digiflex.ai",
+        "data":"Digiflex.ai offers expert technical support for enhanced system performance and reliability."
     }
 ]
 export const logoData = [
     {
         img:img11,
-        "data":"Custom Blockchain Solutions"
+        "data":"Custom Blockchain Solutions by Digiflex.ai"
     },{
         img:img12,
-        "data":"Smart Contract Development"
+        "data":"Smart Contract Development by Digiflex.ai"
     },{
         img:img13,
-        "data":"Decentralized Applications (DApps)"
+        "data":"Decentralized Applications (DApps) by Digiflex.ai"
     },{
         img:img14,
-        "data":"Tokenization Services"
+        "data":"Tokenization Services by Digiflex.ai"
     },{
         img:img15,
-        "data":"Blockchain Consulting"
+        "data":"Blockchain Consulting by Digiflex.ai"
     },{
         img:img16,
-        "data":"Security & Audits"
+        "data":"Security & Audits by Digiflex.ai"
     }
 ]
 export const carddata =[
     {
         img:img24,
-        "name": "Strength section",
-        "data": "Blockchain's strengths include decentralization, security,immutability, transparency, and scalability, making it ideal for secure, efficient applications like finance and supply chain."
+        "name": "Strength section by Digiflex.ai",
+        "data": "Digiflex.ai provides decentralized, secure, and scalable blockchain solutions for various applications."
     },{
         img:img25,
-        "name": "Bust Operational Bottlenecks",
-        "data":"Busting operational bottlenecks in blockchain involves addressing issues like scalability, transaction speed, and high costs by improving consensus mechanisms."
+        "name": "Bust Operational Bottlenecks with Digiflex.ai",
+        "data":"Digiflex.ai optimizes blockchain efficiency by improving scalability and reducing transaction costs."
     },{
         img:img26,
-        "name": "Cut Intermediary",
-        "data":"Blockchain cuts intermediary costs by enabling peer-to-peer transactions without the need for third parties, reducing fees, delays, and the risk of fraud, making processes more efficient and cost-effective."
+        "name": "Cut Intermediary Costs with Digiflex.ai",
+        "data":"Digiflex.ai streamlines peer-to-peer transactions, reducing fees, delays, and fraud risks."
     }
 ]

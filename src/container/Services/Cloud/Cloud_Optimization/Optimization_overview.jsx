@@ -9,7 +9,7 @@ function OptimizationOverview() {
     <WrapperContainer>
      
         <Heading>
-          Cloud Optimization Strategies by Digiflex
+          Cloud Optimization Strategies by Digiflex.ai
         </Heading>
     
       
@@ -20,7 +20,7 @@ function OptimizationOverview() {
           className="w-full md:w-80 h-auto max-w-full"
         />
         <Paragraph className="leading-9 text-justify">
-          At Digiflex, we help businesses optimize their cloud infrastructure to enhance efficiency,
+          At Digiflex.ai, we help businesses optimize their cloud infrastructure to enhance efficiency,
           reduce costs, and maximize performance. As organizations migrate data, applications, and services
           to the cloud, strategic resource management becomes critical.
 
@@ -30,7 +30,7 @@ function OptimizationOverview() {
           companies can fully utilize their cloud investments.
 
           This guide explores the fundamentals of cloud optimization, key benefits, and best practices
-          to achieve a cost-efficient, high-performing cloud ecosystem. Digiflex specializes in strategic
+          to achieve a cost-efficient, high-performing cloud ecosystem. Digiflex.ai specializes in strategic
           planning, monitoring, and resource adjustments to maintain optimal cloud performance and availability.
         </Paragraph>
       </div>

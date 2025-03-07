@@ -8,33 +8,33 @@ function Aws_intro() {
     const useCases = [
         { 
             title: "Big Data & Analytics", 
-            description: "Real-time data processing with Digiflex-powered AWS solutions.", 
-            extra: "Digiflex leverages AWS services like Redshift, Athena, and EMR to offer scalable storage, data lakes, and advanced analytics."
+            description: "Real-time data processing with Digiflex.ai-powered AWS solutions.", 
+            extra: "Digiflex.ai leverages AWS services like Redshift, Athena, and EMR to offer scalable storage, data lakes, and advanced analytics."
         },
         { 
             title: "AI & Machine Learning", 
-            description: "Training and deploying ML models with Digiflex expertise.", 
-            extra: "With AWS SageMaker, Rekognition, Polly, and Lex, Digiflex enables businesses to integrate AI-driven automation seamlessly."
+            description: "Training and deploying ML models with Digiflex.ai expertise.", 
+            extra: "With AWS SageMaker, Rekognition, Polly, and Lex, Digiflex.ai enables businesses to integrate AI-driven automation seamlessly."
         },
         { 
             title: "IoT (Internet of Things)", 
-            description: "Managing and analyzing IoT devices with Digiflex solutions.", 
-            extra: "Digiflex utilizes AWS IoT Core to provide secure connections and efficient management for billions of IoT devices."
+            description: "Managing and analyzing IoT devices with Digiflex.ai solutions.", 
+            extra: "Digiflex.ai utilizes AWS IoT Core to provide secure connections and efficient management for billions of IoT devices."
         },
         { 
             title: "Web Hosting", 
-            description: "Hosting websites and applications with Digiflex-managed AWS infrastructure.", 
-            extra: "Digiflex ensures reliable hosting with AWS EC2, S3, CloudFront, and Route 53 for seamless global delivery."
+            description: "Hosting websites and applications with Digiflex.ai-managed AWS infrastructure.", 
+            extra: "Digiflex.ai ensures reliable hosting with AWS EC2, S3, CloudFront, and Route 53 for seamless global delivery."
         },
         { 
             title: "Enterprise Applications", 
-            description: "Running SAP, Microsoft, and other enterprise workloads with Digiflex solutions.", 
-            extra: "Digiflex optimizes business-critical applications using AWS for high performance, scalability, and security."
+            description: "Running SAP, Microsoft, and other enterprise workloads with Digiflex.ai solutions.", 
+            extra: "Digiflex.ai optimizes business-critical applications using AWS for high performance, scalability, and security."
         },
         { 
             title: "Gaming", 
-            description: "Scalable backend infrastructure for multiplayer games powered by Digiflex.", 
-            extra: "Using AWS GameLift and other services, Digiflex delivers high-speed, low-latency game server hosting."
+            description: "Scalable backend infrastructure for multiplayer games powered by Digiflex.ai.", 
+            extra: "Using AWS GameLift and other services, Digiflex.ai delivers high-speed, low-latency game server hosting."
         }
     ];
 
@@ -44,11 +44,11 @@ function Aws_intro() {
                 {/* AWS Introduction Section */}
                 
                     <Heading>
-                        <h1>About AWS Cloud Services by Digiflex</h1>
+                        <h1>About AWS Cloud Services by Digiflex.ai</h1>
                     </Heading>
                     <div className='text-center'>
                        <Subheading>
-                       Digiflex leverages AWS Cloud to deliver secure, scalable, and cost-efficient solutions, empowering businesses to build, deploy, and manage applications with advanced computing, AI, and analytics services.
+                       Digiflex.ai leverages AWS Cloud to deliver secure, scalable, and cost-efficient solutions, empowering businesses to build, deploy, and manage applications with advanced computing, AI, and analytics services.
                         </Subheading>
                     </div>
 

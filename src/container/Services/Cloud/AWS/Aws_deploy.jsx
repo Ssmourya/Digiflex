@@ -5,8 +5,8 @@ import Heading from "../../../../Layout/Heading";
 function Aws_deploy() {
   const steps = [
     { title: "Select Deployment Strategy" },
-    { title: "Deploy Frontend with Digiflex" },
-    { title: "Deploy Backend with Digiflex" },
+    { title: "Deploy Frontend with Digiflex.ai" },
+    { title: "Deploy Backend with Digiflex.ai" },
     { title: "Integrate Frontend & Backend Seamlessly" },
   ];
 
@@ -14,7 +14,7 @@ function Aws_deploy() {
     <WrapperContainer>
       <Heading>
         <div>
-            Deploy Your Project on AWS with Digiflex
+            Deploy Your Project on AWS with Digiflex.ai
         </div>
       </Heading>
 

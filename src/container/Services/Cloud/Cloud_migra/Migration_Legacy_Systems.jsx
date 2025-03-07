@@ -5,24 +5,24 @@ import Fontheading from "../../../../Layout/Fontheading";
 
 const steps = [
   {
-    title: "Step 1: Assess & Plan",
+    title: "Step 1: AI-Powered Conversational Abilities",
     description:
-      "Identify applications and workloads suitable for migration. Evaluate dependencies, performance bottlenecks, and security risks. Choose a cloud provider (AWS, Azure, Google Cloud, etc.).",
+      "Digiflex.ai ensures accurate and intelligent chatbot interactions using cutting-edge AI and NLP technologies, enhancing user engagement.",
   },
   {
-    title: "Step 2: Choose a Migration Strategy",
+    title: "Step 2: Multi-Platform Integration",
     description:
-      "Decide between Rehosting, Refactoring, or Replatforming based on business goals. Plan data migration using tools like AWS DMS or Azure Migrate.",
+      "Seamlessly integrate Digiflex.ai chatbots with websites, mobile apps, messaging platforms, and enterprise software like CRM, ERP, and HRMS.",
   },
   {
-    title: "Step 3: Execute Migration",
+    title: "Step 3: 24/7 Availability",
     description:
-      "Migrate in phases to avoid downtime. Use containerization (Docker, Kubernetes) for flexibility. Test performance and security after migration.",
+      "Provide continuous customer support and internal assistance with Digiflex.ai chatbots, ensuring uninterrupted service.",
   },
   {
-    title: "Step 4: Optimize & Monitor",
+    title: "Step 4: Automation & Optimization",
     description:
-      "Fine-tune cloud resources to optimize cost & performance. Implement cloud monitoring tools like AWS CloudWatch, Azure Monitor, or Google Cloud Operations Suite. Set up automatic scaling and backups.",
+      "Digiflex.ai chatbots automate repetitive tasks, optimize workflows, and enhance business productivity with intelligent automation.",
   },
 ];
 
@@ -31,7 +31,7 @@ function MigrationSteps() {
     <WrapperContainer>
     <div>  
     <Heading>
-      <h1>Cloud Migration Steps</h1>
+      <h1>Enterprise AI Chatbot Implementation</h1>
       </Heading>
       <div className="pt-5 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl">
         {steps.map((step, index) => (

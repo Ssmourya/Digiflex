@@ -17,7 +17,7 @@ function Azure_info() {
       
       <div>
       <Paragraph>
-        <p className="text-center">Azure offers a comprehensive suite of cloud services that empower organizations to streamline operations, enhance scalability, and strengthen security while minimizing infrastructure costs. Digiflex leverages Azure’s powerful capabilities to help businesses deploy applications globally, manage data efficiently, and integrate AI-driven solutions seamlessly. With a flexible cloud environment that supports diverse workloads—from web applications and databases to advanced analytics and IoT solutions—Digiflex enables modern digital transformation with cutting-edge Azure services.</p>
+        <p className="text-center">Azure offers a comprehensive suite of cloud services that empower organizations to streamline operations, enhance scalability, and strengthen security while minimizing infrastructure costs. Digiflex.ai leverages Azure’s powerful capabilities to help businesses deploy applications globally, manage data efficiently, and integrate AI-driven solutions seamlessly. With a flexible cloud environment that supports diverse workloads—from web applications and databases to advanced analytics and IoT solutions—Digiflex.ai enables modern digital transformation with cutting-edge Azure services.</p>
         </Paragraph>
       </div>
 </WrapperContainer>

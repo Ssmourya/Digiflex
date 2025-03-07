@@ -60,8 +60,8 @@ const Llm_services = () => {
   return (
     <>
     <WrapperContainer>
-    <Heading>Quest Digiflex - Your Trusted Partner in LLM Development</Heading>
-    <Paragraph>At Quest Digiflex, we specialize in creating cutting-edge AI-driven LLM solutions to help businesses harness the true power of artificial intelligence. Whether you need a custom AI model, a fine-tuned chatbot, or an AI-powered automation tool, our expert team is here to bring your vision to life.</Paragraph>
+    <Heading>Quest Digiflex.ai - Your Trusted Partner in LLM Development</Heading>
+    <Paragraph>At Quest Digiflex.ai, we specialize in creating cutting-edge AI-driven LLM solutions to help businesses harness the true power of artificial intelligence. Whether you need a custom AI model, a fine-tuned chatbot, or an AI-powered automation tool, our expert team is here to bring your vision to life.</Paragraph>
     <div className=" relative">
       <div className="relative overflow-hidden">
         <div 

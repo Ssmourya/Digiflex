@@ -19,7 +19,7 @@ function Aws_busines() {
   return (
     <WrapperContainer>
       <div className="flex flex-col items-center text-center">
-        <Heading>Why Businesses Choose Digiflex for AWS Solutions</Heading>
+        <Heading>Why Businesses Choose Digiflex.ai for AWS Solutions</Heading>
 
         <img
           src={AWS_logo}
@@ -28,7 +28,7 @@ function Aws_busines() {
         />
 
         <Subheading>
-          Digiflex utilizes AWS to deliver scalable, secure, and cost-effective cloud solutions, helping businesses optimize operations, enhance security, and drive innovation with advanced cloud infrastructure.
+          Digiflex.ai utilizes AWS to deliver scalable, secure, and cost-effective cloud solutions, helping businesses optimize operations, enhance security, and drive innovation with advanced cloud infrastructure.
         </Subheading>
       </div>
 

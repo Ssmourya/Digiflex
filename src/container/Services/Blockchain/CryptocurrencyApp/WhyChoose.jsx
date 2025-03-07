@@ -64,7 +64,7 @@ const WhyChoose = () => {
         <div className="max-w-5xl mx-auto text-center px-4 mb-10 ">
           <Heading>
           <div>
-          Why Choose Digiflex for Cryptocurrency App?
+          Why Choose Digiflex.ai for Cryptocurrency App?
           </div>
           </Heading>
           <Paragraph>

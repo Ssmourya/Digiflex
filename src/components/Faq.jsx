@@ -14,7 +14,7 @@ const Faq = ({faqs}) => {
 
   return (
     <WrapperContainer>
-      <div className="pb-10">
+      <div className="pb-20">
         <div className="max-w-5xl mx-auto text-center">
         
         

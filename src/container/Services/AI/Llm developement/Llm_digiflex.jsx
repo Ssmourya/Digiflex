@@ -36,7 +36,7 @@ function Llm_digiflex() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1 className="text-center text-3xl md:text-4xl font-bold text-gray-800">Why Choose Quest Digiflex?</h1>
+        <h1 className="text-center text-3xl md:text-4xl font-bold text-gray-800">Why Choose Quest Digiflex.ai?</h1>
       </Heading>
       
       {/* Responsive Layout */}

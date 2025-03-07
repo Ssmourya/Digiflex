@@ -8,7 +8,7 @@ const industries = [
     icon: <Cpu size={40} className="text-blue-500 group-hover:text-blue-700 transition-colors duration-300" />,
     title: "Cutting-Edge Performance",
     description:
-      "At Digiflex, we develop highly optimized LLMs with superior accuracy, speed, and bias reduction, ensuring seamless integration into diverse business applications.",
+      "At Digiflex.ai, we develop highly optimized LLMs with superior accuracy, speed, and bias reduction, ensuring seamless integration into diverse business applications.",
   },
   {
     icon: <Image size={40} className="text-blue-500 group-hover:text-blue-700 transition-colors duration-300" />,
@@ -18,7 +18,7 @@ const industries = [
   {
     icon: <Settings size={40} className="text-blue-500 group-hover:text-blue-700 transition-colors duration-300" />,
     title: "Enterprise-Grade AI Automation",
-    description:"Digiflex empowers businesses by automating clerical workflows, enhancing customer interactions, and streamlining content creation, driving efficiency across industries.",
+    description:"Digiflex.ai empowers businesses by automating clerical workflows, enhancing customer interactions, and streamlining content creation, driving efficiency across industries.",
   },
   {
     icon: <MessageCircle size={40} className="text-blue-500 group-hover:text-blue-700 transition-colors duration-300" />,
@@ -36,7 +36,7 @@ function LlmFuture() {
           <div className=" max-w-2xl mx-auto text-center">
           <Heading>
             <h2>
-              Digiflex  
+              Digiflex.ai  
               <span className="block">Shaping the Future of LLMs</span>
             </h2>
             </Heading>

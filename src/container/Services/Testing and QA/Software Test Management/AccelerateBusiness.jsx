@@ -72,7 +72,7 @@ const AccelerateBusiness = () => {
             </div>
           </div>
         </div>
-        <Faq faqs={SoftwareTestManagementFAQData} />;
+        <Faq faqs={SoftwareTestManagementFAQData} />
       </WrapperContainer>
     );
 };

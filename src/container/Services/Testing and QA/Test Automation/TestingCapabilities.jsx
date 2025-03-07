@@ -124,7 +124,7 @@ const TestingCapabilities = () => {
           </div>
         </div>
       </div>
-      <Faq faqs={TestAutomationFAQData} />;
+      <Faq faqs={TestAutomationFAQData} />
     </WrapperContainer>
   );
 };

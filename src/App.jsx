@@ -105,6 +105,7 @@ import CloudNative from "./pages/CloudNative";
 import Ai_development from "./pages/Ai_development"
 import Ai_software from "./pages/Ai_software";
 import Llm_development from "./pages/Llm_development"
+import Ai_chatbot from "./pages/Ai_chatbot";
 
 
 import Shopify from "./pages/Shopifydevlopment";
@@ -114,8 +115,6 @@ import Magento from './pages/MagentoDevelopment'
 import Pestrashop from "./pages/PestrashopDevelopment";
 import Odoo from './pages/OdooDevelopment';
 
-import Ai_enterprise from './pages/Ai_enterprise'
-import Ai_chatbot from "./pages/Ai_chatbot";
 
 
 function App() {
@@ -388,7 +387,7 @@ function App() {
       <Route path="/ai-app-development" element={<Ai_development/>}/>
       <Route path="/ai-software-development" element={<Ai_software/>}/>
       <Route path="/large-language-model-development" element={<Llm_development/>}/>
-      <Route path="/enterprise-ai-chatbot-development" element={<Ai_enterprise/>}/>        
+      <Route path="/enterprise-ai-chatbot-development" element={<Ai_chatbot/>}/>        
 
        {/*E-Commerce*/}
 

@@ -70,7 +70,7 @@ function Ai_app_Industries() {
           <Subheading>
             <span className="text-xl md:text-3xl font-semibold">{select.title}</span>
           </Subheading>
-          <Paragraph className="pt-3 md:pt-5 text-sm md:text-lg text-justify">
+          <Paragraph className="pt-3 md:pt-5 text-sm md:text-lg">
             {select.description}
           </Paragraph>
         </div>

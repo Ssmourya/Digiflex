@@ -48,7 +48,7 @@ const features = [
 
 function Ai_chatbot_enterprise() {
   return (
-    <div className="bg-[#E6F1FE]">
+    <div >
       <WrapperContainer>
         <Heading>Enterprise AI Chatbot</Heading>
         <Subheading className="text-center">

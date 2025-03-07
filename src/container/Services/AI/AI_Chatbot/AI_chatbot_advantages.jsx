@@ -30,7 +30,7 @@ export default function AIChatbotAdvantages() {
 
   return (
     <WrapperContainer>
-    <div>
+    <div className="pb-20">
       {/* Heading */}
      <Heading>Advantages of Enterprise AI Chatbots</Heading>
       {/* Cards Section */}

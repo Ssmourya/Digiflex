@@ -1,18 +1,23 @@
-import React from 'react';
+import React from "react";
 import { RefreshCw, Search, Layout, Palette, Send } from "lucide-react";
 import { RefreshCcw, Code, Users, Smartphone } from "lucide-react";
-import { Brain, Building2, ShoppingCart, Heart } from 'lucide-react';
-import WrapperContainer from "../../../../Layout/WrapperContainer"
+import { Brain, Building2, ShoppingCart, Heart } from "lucide-react";
+import WrapperContainer from "../../../../Layout/WrapperContainer";
 import { DesignConsultingFAQData } from "../FAQData";
 import Faq from "../../../../components/Faq";
-
 
 // FeatureCard Component
 const FeatureCard = ({ title, description, titleColor }) => {
   return (
     <div className="flex-1 p-8 bg-white/90 backdrop-blur-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 group">
-      <h3 className={`text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors duration-300`}>{title}</h3>
-      <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">{description}</p>
+      <h3
+        className={`text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors duration-300`}
+      >
+        {title}
+      </h3>
+      <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+        {description}
+      </p>
     </div>
   );
 };
@@ -25,10 +30,17 @@ const TimelineItem = ({ icon: Icon, title, items }) => {
         <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 shadow-lg group-hover:shadow-xl transition-all duration-500">
           <Icon className="w-8 h-8 text-white animate-bounce-subtle" />
         </div>
-        <h3 className="text-xl font-bold mb-4 text-center text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{title}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+          {title}
+        </h3>
         <ul className="space-y-2">
           {items.map((item, index) => (
-            <li key={index} className="text-gray-600 text-center group-hover:text-gray-800 transition-colors duration-300">{item}</li>
+            <li
+              key={index}
+              className="text-gray-600 text-center group-hover:text-gray-800 transition-colors duration-300"
+            >
+              {item}
+            </li>
           ))}
         </ul>
       </div>
@@ -43,8 +55,12 @@ const ServiceCard = ({ icon: Icon, title, description }) => {
       <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4 shadow-lg group-hover:shadow-xl transition-all duration-500">
         <Icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
       </div>
-      <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{title}</h3>
-      <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">{description}</p>
+      <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+        {title}
+      </h3>
+      <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
+        {description}
+      </p>
     </div>
   );
 };
@@ -62,8 +78,12 @@ const ProcessStep = ({ icon, step, title, description }) => {
           {step}
         </span>
       </div>
-      <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{title}</h3>
-      <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">{description}</p>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+        {title}
+      </h3>
+      <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
+        {description}
+      </p>
     </div>
   );
 };
@@ -72,8 +92,18 @@ const ProcessStep = ({ icon, step, title, description }) => {
 const ArrowIcon = () => {
   return (
     <div className="hidden md:block w-8">
-      <svg className="w-8 h-8 text-blue-500 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      <svg
+        className="w-8 h-8 text-blue-500 animate-pulse"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M17 8l4 4m0 0l-4 4m4-4H3"
+        />
       </svg>
     </div>
   );
@@ -98,7 +128,7 @@ const Cards = [
     description:
       "We understand the fast-paced demands of modern business. Tight deadlines? No problem. Our agile workflow ensures you get high-quality assets exactly when you need them – no compromises.",
     titleColor: "text-gray-800",
-  }
+  },
 ];
 
 // Timeline Items array
@@ -106,7 +136,11 @@ const timelineItems = [
   {
     icon: RefreshCw,
     title: "Understanding",
-    items: ["Business objectives & challenges", "Technology & functionality", "Competitive analysis"],
+    items: [
+      "Business objectives & challenges",
+      "Technology & functionality",
+      "Competitive analysis",
+    ],
   },
   {
     icon: Search,
@@ -116,18 +150,30 @@ const timelineItems = [
   {
     icon: Layout,
     title: "Wireframes",
-    items: ["Rapid concept sketching", "Functionality exploration", "Prototypes"],
+    items: [
+      "Rapid concept sketching",
+      "Functionality exploration",
+      "Prototypes",
+    ],
   },
   {
     icon: Palette,
     title: "Mockups",
-    items: ["Brand identity integration", "High-fidelity mockups", "Prototypes"],
+    items: [
+      "Brand identity integration",
+      "High-fidelity mockups",
+      "Prototypes",
+    ],
   },
   {
     icon: Send,
     title: "Delivery",
-    items: ["Finalize UX deliverables", "Style guide & functional specs", "Suggestions/next steps"],
-  }
+    items: [
+      "Finalize UX deliverables",
+      "Style guide & functional specs",
+      "Suggestions/next steps",
+    ],
+  },
 ];
 
 // Services array
@@ -167,7 +213,7 @@ const servicescard2 = [
     title: "UI for web and mobile",
     description:
       "Our UI design solutions bring aesthetics and functionality, making your product shine on every screen.",
-  }
+  },
 ];
 
 // Industries array
@@ -175,69 +221,151 @@ const industries = [
   {
     icon: <Brain className="w-12 h-12" />,
     title: "AI & Machine Learning",
-    description: "Maxiom provides UI/UX consulting for AI and machine learning platforms, designing interfaces that simplify complex data interactions."
+    description:
+      "Maxiom provides UI/UX consulting for AI and machine learning platforms, designing interfaces that simplify complex data interactions.",
   },
   {
     icon: <Building2 className="w-12 h-12" />,
     title: "Finance",
-    description: "Maxiom's consulting services for financial platforms ensure secure, user-friendly interfaces that provide real-time data visualization."
+    description:
+      "Maxiom's consulting services for financial platforms ensure secure, user-friendly interfaces that provide real-time data visualization.",
   },
   {
     icon: <ShoppingCart className="w-12 h-12" />,
     title: "E-commerce & Retail",
-    description: "Our UI/UX consulting for e-commerce helps create engaging and intuitive shopping experiences."
+    description:
+      "Our UI/UX consulting for e-commerce helps create engaging and intuitive shopping experiences.",
   },
   {
     icon: <Heart className="w-12 h-12" />,
     title: "Healthcare",
-    description: "Maxiom's UI/UX consulting services for healthcare focus on creating user-friendly interfaces that improve patient outcomes."
-  }
+    description:
+      "Maxiom's UI/UX consulting services for healthcare focus on creating user-friendly interfaces that improve patient outcomes.",
+  },
 ];
 
 // Steps array
 const steps = [
   {
-    icon: <svg className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-    </svg>,
+    icon: (
+      <svg
+        className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+        />
+      </svg>
+    ),
     title: "Discovery & analysis",
-    description: "We begin by understanding your unique challenges and goals to tailor our solution to your specific needs."
+    description:
+      "We begin by understanding your unique challenges and goals to tailor our solution to your specific needs.",
   },
   {
-    icon: <svg className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-    </svg>,
+    icon: (
+      <svg
+        className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+        />
+      </svg>
+    ),
     title: "Strategic planning",
-    description: "Our experts craft a detailed roadmap that aligns with your objectives and ensures successful implementation."
+    description:
+      "Our experts craft a detailed roadmap that aligns with your objectives and ensures successful implementation.",
   },
   {
-    icon: <svg className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>,
+    icon: (
+      <svg
+        className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+    ),
     title: "Design & development",
-    description: "We design and develop a customized solution, leveraging cutting-edge technology and best practices."
+    description:
+      "We design and develop a customized solution, leveraging cutting-edge technology and best practices.",
   },
   {
-    icon: <svg className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-    </svg>,
+    icon: (
+      <svg
+        className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+        />
+      </svg>
+    ),
     title: "Implementation",
-    description: "Our team seamlessly integrates the solution into your existing infrastructure, ensuring minimal disruption."
+    description:
+      "Our team seamlessly integrates the solution into your existing infrastructure, ensuring minimal disruption.",
   },
   {
-    icon: <svg className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>,
+    icon: (
+      <svg
+        className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    ),
     title: "Optimization",
-    description: "We continuously monitor and optimize the solution to enhance performance and deliver maximum ROI."
+    description:
+      "We continuously monitor and optimize the solution to enhance performance and deliver maximum ROI.",
   },
   {
-    icon: <svg className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-    </svg>,
+    icon: (
+      <svg
+        className="w-8 h-8 transition-colors duration-300 group-hover:text-blue-600"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
+      </svg>
+    ),
     title: "Ongoing support",
-    description: "Maxiom provides ongoing support and maintenance to ensure long-term success and adaptability."
-  }
+    description:
+      "Maxiom provides ongoing support and maintenance to ensure long-term success and adaptability.",
+  },
 ];
 
 const Body = () => {
@@ -336,16 +464,15 @@ const Body = () => {
         </WrapperContainer>
       </div>
       {/* section 3 part2 */}
-      <div className="bg-blue-950">
+      <div className="bg-blue-950 pb-20">
         <WrapperContainer>
-          {/* Testing Cycle */}
-          <div className="py-10 max-w-md mx-auto justify-center text-center">
-            <div className="relative w-48 h-48 mx-auto mb-8">
-              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-spin-slow">
+          <div className=" max-w-lg mx-auto text-center flex flex-col items-center">
+            <div className="relative w-48 h-48">
+              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-spin-slow flex items-center justify-center">
                 <div className="absolute -right-3 top-1/2 w-6 h-6 bg-blue-500 rounded-full transform -translate-y-1/2"></div>
               </div>
-              <div className="absolute inset-4 bg-blue-950 backdrop-blur-lg rounded-full flex items-center justify-center">
-                <p className="text-sm font-medium text-white max-w-[120px] leading-tight animate-glow">
+              <div className="absolute inset-4 bg-blue-950 backdrop-blur-lg rounded-full flex items-center justify-center p-4">
+                <p className="text-xs sm:text-sm font-medium text-white max-w-[120px] leading-tight animate-glow text-center">
                   User Testing & Observation Cycle
                 </p>
               </div>
@@ -396,7 +523,7 @@ const Body = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
                 Industry-Specific
                 <div className="relative">
-                  <span className="text-blue-800">UI/UX</span>
+                  <span className="text-blue-800">UI/UX </span>
                   <span className="relative">Consulting</span>
                 </div>
                 Solutions

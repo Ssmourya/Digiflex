@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from '../container/Technology/MobileAppDev/XamarinAppDevlopment/Hero'
-import WhyChooseXamarin from '../container/Technology/MobileAppDev/XamarinAppDevlopment/WhyChooseXamarin'
-import XamarinAppServices from '../container/Technology/MobileAppDev/XamarinAppDevlopment/XamarinAppServices'
-import WhyDigiflex from '../container/Technology/MobileAppDev/XamarinAppDevlopment/WhyDigiflex'
-import XamarinTechStack from '../container/Technology/MobileAppDev/XamarinAppDevlopment/XamarinTechStack'
-import IndustriesWeServe from '../container/Technology/MobileAppDev/XamarinAppDevlopment/IndustriesWeServe'
-import { Xamarinfaqs } from "../container/Services/Cloud/Faqdata";import Faq from '../components/Faq'
+import Hero from '../app/container/Technology/MobileAppDev/XamarinAppDevlopment/Hero'
+import WhyChooseXamarin from '../app/container/Technology/MobileAppDev/XamarinAppDevlopment/WhyChooseXamarin'
+import XamarinAppServices from '../app/container/Technology/MobileAppDev/XamarinAppDevlopment/XamarinAppServices'
+import WhyDigiflex from '../app/container/Technology/MobileAppDev/XamarinAppDevlopment/WhyDigiflex'
+import XamarinTechStack from '../app/container/Technology/MobileAppDev/XamarinAppDevlopment/XamarinTechStack'
+import IndustriesWeServe from '../app/container/Technology/MobileAppDev/XamarinAppDevlopment/IndustriesWeServe'
+import { Xamarinfaqs } from "../app/container/Services/Cloud/Faqdata";import Faq from '../app/components/Faq'
 
 const XamarinAppDEvlopment = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/SALESFORCE/CRMImplementation/Hero'
-import Body from '../container/Services/SALESFORCE/CRMImplementation/Body'
+import Hero from '../app/container/Services/SALESFORCE/CRMImplementation/Hero'
+import Body from '../app/container/Services/SALESFORCE/CRMImplementation/Body'
 
 const CrmImplementation = () => {
   return (

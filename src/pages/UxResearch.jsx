@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/UI-UX/UXResearch/Hero'
-import Body from '../container/Services/UI-UX/UXResearch/Body'
+import Hero from '../app/container/Services/UI-UX/UXResearch/Hero'
+import Body from '../app/container/Services/UI-UX/UXResearch/Body'
 
 
 function UxResearch() {

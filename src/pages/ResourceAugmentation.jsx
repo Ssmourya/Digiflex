@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/Game Development/RESOURCE AUGMENTATION/Hero'
-import Body from '../container/Services/Game Development/RESOURCE AUGMENTATION/Body'
+import Hero from '../app/container/Services/Game Development/RESOURCE AUGMENTATION/Hero'
+import Body from '../app/container/Services/Game Development/RESOURCE AUGMENTATION/Body'
 
 
 const ResourceAugmentation = () => {

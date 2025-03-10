@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/Blockchain/EXchangeSoftware/Hero'
-import Body from '../container/Services/Blockchain/EXchangeSoftware/Body'
+import Hero from '../app/container/Services/Blockchain/EXchangeSoftware/Hero'
+import Body from '../app/container/Services/Blockchain/EXchangeSoftware/Body'
 
 
 const ExchangeShoftware = () => {

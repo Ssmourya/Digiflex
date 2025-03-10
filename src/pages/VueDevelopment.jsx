@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Technology/Frontend/Vue/Hero'
-import Body from '../container/Technology/Frontend/Vue/Body'
+import Hero from '../app/container/Technology/Frontend/Vue/Hero'
+import Body from '../app/container/Technology/Frontend/Vue/Body'
 
 const VueDevelopment = () => {
   return (

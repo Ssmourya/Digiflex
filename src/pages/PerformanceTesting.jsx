@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-import PerformanceTestingHero from "../container/Services/Testing and QA/Performance Testing/PerformanceTestingHero";
-import PerformanceTestingSection from '../container/Services/Testing and QA/Performance Testing/PerformanceTestingSection';
-import Services from '../container/Services/Testing and QA/Performance Testing/Services';
-import PerformanceTestingDiagram from "../container/Services/Testing and QA/Performance Testing/PerformanceTestingDiagram";
-import TestingTools from '../container/Services/Testing and QA/Performance Testing/TestingTools';
-import BusinessSolutions from "../container/Services/Testing and QA/Performance Testing/BusinessSolutions";
-import PerformanceChallenges from "../container/Services/Testing and QA/Performance Testing/PerformanceChallenges";
-import WrapperContainer from '../Layout/WrapperContainer';
+import PerformanceTestingHero from "../app/container/Services/Testing and QA/Performance Testing/PerformanceTestingHero";
+import PerformanceTestingSection from '../app/container/Services/Testing and QA/Performance Testing/PerformanceTestingSection';
+import Services from '../app/container/Services/Testing and QA/Performance Testing/Services';
+import PerformanceTestingDiagram from "../app/container/Services/Testing and QA/Performance Testing/PerformanceTestingDiagram";
+import TestingTools from '../app/container/Services/Testing and QA/Performance Testing/TestingTools';
+import BusinessSolutions from "../app/container/Services/Testing and QA/Performance Testing/BusinessSolutions";
+import PerformanceChallenges from "../app/container/Services/Testing and QA/Performance Testing/PerformanceChallenges";
+import WrapperContainer from '../app/Layout/WrapperContainer';
 const PerformanceTesting = () => {
     return (
         <div>

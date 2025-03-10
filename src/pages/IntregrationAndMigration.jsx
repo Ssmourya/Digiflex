@@ -1,12 +1,14 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import videoBg from "../assets/blockchain_video.mp4";
-import Mobile2 from "../container/Services/Custom App/Intregation and Migration/Mobile2";
-import Mobile3 from "../container/Services/Custom App/Intregation and Migration/Mobile3";
-import Mobile4 from "../container/Services/Custom App/Intregation and Migration/mobile4";
-import WrapperContainer from "../Layout/WrapperContainer";
-import { IntegrationMigrationFAQ} from "../container/Services/Cloud/Faqdata";
-import Faq from "../components/Faq";
+import Mobile2 from "../app/container/Services/Custom App/Intregation and Migration/Mobile2";
+import Mobile3 from "../app/container/Services/Custom App/Intregation and Migration/Mobile3";
+import Mobile4 from "../app/container/Services/Custom App/Intregation and Migration/mobile4";
+import WrapperContainer from "../app/Layout/WrapperContainer";
+import { IntegrationMigrationFAQ} from "../app/container/Services/Cloud/Faqdata";
+import Faq from "../app/components/Faq";
 
 const Mobile = () => {
   return (

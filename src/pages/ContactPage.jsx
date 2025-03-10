@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../container/Main/Contact/page'
+import Contact from '../app/container/Main/Contact/page'
 
 function ContactPage() {
   return (

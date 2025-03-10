@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/Blockchain/SmartContractDevelopment/Hero'
-import Body from '../container/Services/Blockchain/SmartContractDevelopment/Body'
+import Hero from '../app/container/Services/Blockchain/SmartContractDevelopment/Hero'
+import Body from '../app/container/Services/Blockchain/SmartContractDevelopment/Body'
 
 const SmartContractDevelopment = () => {
   return (

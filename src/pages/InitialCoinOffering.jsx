@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/Blockchain/Initialoffering/Hero'
-import Body from '../container/Services/Blockchain/Initialoffering/Body'
+import Hero from '../app/container/Services/Blockchain/Initialoffering/Hero'
+import Body from '../app/container/Services/Blockchain/Initialoffering/Body'
 
 
 const InitialCoinOffering = () => {

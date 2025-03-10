@@ -1,11 +1,11 @@
 import React from "react";
-import videoBg from "../assets/blockchain_video.mp4";
-import WebApplication2 from "../container/Services/Custom App/Web Application Devlopment/WebApplication2";
-import WebApplication3 from "../container/Services/Custom App/Web Application Devlopment/WebApplication3";
-import WebApplication4 from "../container/Services/Custom App/Web Application Devlopment/WebApplication4";
-import WebApplication5 from "../container/Services/Custom App/Web Application Devlopment/WebApplication5";
-import { Applefaqs} from "../container/Services/Cloud/Faqdata";
-import Faq from '../components/Faq';
+import video from './public/videos/blockchain_video.mp4';
+import WebApplication2 from "../app/container/Services/Custom App/Web Application Devlopment/WebApplication2";
+import WebApplication3 from "../app/container/Services/Custom App/Web Application Devlopment/WebApplication3";
+import WebApplication4 from "../app/container/Services/Custom App/Web Application Devlopment/WebApplication4";
+import WebApplication5 from "../app/container/Services/Custom App/Web Application Devlopment/WebApplication5";
+import { Applefaqs} from "../app/container/Services/Cloud/Faqdata";
+import Faq from '../app/components/Faq';
 
 export default function Application() {
   return (
@@ -20,7 +20,7 @@ export default function Application() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src={videoBg} type="video/mp4" />
+          <source src={video} type="video/mp4" />
         </video>
 
         {/* Overlay */}

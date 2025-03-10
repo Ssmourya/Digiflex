@@ -1,12 +1,12 @@
 import React from "react";
 import videoBg from "../assets/blockchain_video.mp4";
-import Cards from "../container/Services/Custom App/CEM Devlopment/Cards";
-import Thirds from "../container/Services/Custom App/CEM Devlopment/Third";
-import Four from "../container/Services/Custom App/CEM Devlopment/Four";
-import KnowledgeSection from "../container/Services/Custom App/CEM Devlopment/KnowledgeSection";
-import WrapperContainer from "../Layout/WrapperContainer";
-import Faq from "../components/Faq";
-import { CemFaq } from "../container/Services/Cloud/Faqdata";
+import Cards from "../app/container/Services/Custom App/CEM Devlopment/Cards";
+import Thirds from "../app/container/Services/Custom App/CEM Devlopment/Third";
+import Four from "../app/container/Services/Custom App/CEM Devlopment/Four";
+import KnowledgeSection from "../app/container/Services/Custom App/CEM Devlopment/KnowledgeSection";
+import WrapperContainer from "../app/Layout/WrapperContainer";
+import Faq from "../app/components/Faq";
+import { CemFaq } from "../app/container/Services/Cloud/Faqdata";
 
 
 const Hero = () => {

@@ -1,13 +1,13 @@
 import React from 'react';
-import Website2 from '../container/Services/Custom App/Website Devlopment/Website2';
-import Website3 from '../container/Services/Custom App/Website Devlopment/Website3';
-import Website4 from '../container/Services/Custom App/Website Devlopment/Website4';
-import Website5 from '../container/Services/Custom App/Website Devlopment/Website5';
+import Website2 from '../app/container/Services/Custom App/Website Devlopment/Website2';
+import Website3 from '../app/container/Services/Custom App/Website Devlopment/Website3';
+import Website4 from '../app/container/Services/Custom App/Website Devlopment/Website4';
+import Website5 from '../app/container/Services/Custom App/Website Devlopment/Website5';
 import { PhoneIcon as WhatsApp } from 'lucide-react';
 import videoBg from '../assets/blockchain_video.mp4'; // Video background
-import WrapperContainer from '../Layout/WrapperContainer';
-import { Websitefaqs} from "../container/Services/Cloud/Faqdata";
-import Faq from '../components/Faq';
+import WrapperContainer from '../app/Layout/WrapperContainer';
+import { Websitefaqs} from "../app/container/Services/Cloud/Faqdata";
+import Faq from '../app/components/Faq';
 
 const Website = () => {
   return (

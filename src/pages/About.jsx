@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Main/About/Hero'
-import Body from '../container/Main/About/Body'
+import Hero from '../app/container/Main/About/Hero'
+import Body from '../app/container/Main/About/Body'
 
 function About() {
   return (

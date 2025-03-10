@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../container/Services/SALESFORCE/Devops&TestAutomation/Hero'
-import Body from '../container/Services/SALESFORCE/Devops&TestAutomation/Body'
+import Hero from '../app/container/Services/SALESFORCE/Devops&TestAutomation/Hero'
+import Body from '../app/container/Services/SALESFORCE/Devops&TestAutomation/Body'
 
 const DevopsTestAutomaion = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroSection from '../container/Technology/WebsiteDevlopment/Mern/HeroSection'
-import TechBreakdown from '../container/Technology/WebsiteDevlopment/Mern/TechBreakdown'
+import HeroSection from '../app/container/Technology/WebsiteDevlopment/Mern/HeroSection'
+import TechBreakdown from '../app/container/Technology/WebsiteDevlopment/Mern/TechBreakdown'
 
 const WebsiteTechDevlopmet = () => {
   return (

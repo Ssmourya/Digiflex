@@ -2,15 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Saas2 from "../app/container/Services/Custom App/Saas Devlopment/Saas2";
-import Saas3 from "../app/container/Services/Custom App/Saas Devlopment/Saas3";
-import Saas4 from "../app/container/Services/Custom App/Saas Devlopment/Saas4";
-import Saas5 from "../app/container/Services/Custom App/Saas Devlopment/Saas5";
-import videoBg from "../assets/blockchain_video.mp4"; // Video Background
-import Heading from '../app/Layout/Heading';
-import Subheading from '../app/Layout/Subheading';
-import { SaaSfaqs} from "../app/container/Services/Cloud/Faqdata";
-import Faq from "../app/components/Faq";
+import Saas2 from "../container/Services/Custom App/Saas Devlopment/Saas2";
+import Saas3 from "../container/Services/Custom App/Saas Devlopment/Saas3";
+import Saas4 from "../container/Services/Custom App/Saas Devlopment/Saas4";
+import Saas5 from "../container/Services/Custom App/Saas Devlopment/Saas5";
+import Heading from '../Layout/Heading';
+import Subheading from '../Layout/Subheading';
+import { SaaSfaqs} from "../container/Services/Cloud/Faqdata";
+import Faq from "../components/Faq";
 const clients = [
   { name: "Universal", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBM7RW2MYrGDHBmKM99UUycqt995yTLhWww&s" },
   { name: "NHS", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGtutCNQT5sDXQvTm17rkNot67tFpR38Jig&s" },
@@ -31,7 +30,7 @@ const Saas = () => {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src={videoBg} type="video/mp4" />
+          <source src="/assets/blockchain_video.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}

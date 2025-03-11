@@ -3,13 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
-import videoBg from '../assets/blockchain_video.mp4';
-import Amp2 from '../app/container/Services/Custom App/Mobile App Devlopment/Amp2';
-import Amp3 from '../app/container/Services/Custom App/Mobile App Devlopment/Amp3';
-import Amp5 from '../app/container/Services/Custom App/Mobile App Devlopment/Amp5';
+import Amp2 from '../container/Services/Custom App/Mobile App Devlopment/Amp2';
+import Amp3 from '../container/Services/Custom App/Mobile App Devlopment/Amp3';
+import Amp5 from '../container/Services/Custom App/Mobile App Devlopment/Amp5';
 
-import WrapperContainer from '../app/Layout/WrapperContainer';
-import { Mobilefaqs } from "../app/container/Services/Cloud/Faqdata";import Faq from '../app/components/Faq';
+import WrapperContainer from '../Layout/WrapperContainer';
+import { Mobilefaqs } from "../container/Services/Cloud/Faqdata";import Faq from '../components/Faq';
 
 
 
@@ -26,7 +25,7 @@ const Amp = () => {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src={videoBg} type="video/mp4" />
+          <source src="/assets/blockchain_video.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay Div */}

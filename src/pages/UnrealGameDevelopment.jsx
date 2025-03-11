@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../app/container/Services/Game Development/UNREAL GAME DEVELOPMENT/Hero'
-import Body from '../app/container/Services/Game Development/UNREAL GAME DEVELOPMENT/Body'
+import Hero from '../container/Services/Game Development/UNREAL GAME DEVELOPMENT/Hero'
+import Body from '../container/Services/Game Development/UNREAL GAME DEVELOPMENT/Body'
 
 
 const UnrealGameDevelopment = () => {

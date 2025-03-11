@@ -1,9 +1,9 @@
 import React from 'react'
-import HeroSection from '../app/container/Services/E-Commerce/WooDevelopment/HeroSection'
-import DevComponent from '../app/container/Services/E-Commerce/WooDevelopment/DevComponent'
-import WooCommercePerformance from '../app/container/Services/E-Commerce/WooDevelopment/WooCommercePerformance'
-import Innovation from '../app/container/Services/E-Commerce/WooDevelopment/Innovation'
-import WooFAQ from '../app/container/Services/E-Commerce/WooDevelopment/wooFAQ'
+import HeroSection from '../container/Services/E-Commerce/WooDevelopment/HeroSection'
+import DevComponent from '../container/Services/E-Commerce/WooDevelopment/DevComponent'
+import WooCommercePerformance from '../container/Services/E-Commerce/WooDevelopment/WooCommercePerformance'
+import Innovation from '../container/Services/E-Commerce/WooDevelopment/Innovation'
+import WooFAQ from '../container/Services/E-Commerce/WooDevelopment/wooFAQ'
 
 const WooDevelopment = () => {
   return (

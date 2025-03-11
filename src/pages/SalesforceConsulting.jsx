@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Hero from '../app/container/Services/Consulting/salesforce/Hero'
-import Body from '../app/container/Services/Consulting/salesforce/Body';
+import Hero from '../container/Services/Consulting/salesforce/Hero'
+import Body from '../container/Services/Consulting/salesforce/Body';
 
 function SalesforceConsulting() {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import Optimization_hero from '../app/container/Services/Cloud/Cloud_Optimization/Optimization_hero'
-import Optimization_overview from '../app/container/Services/Cloud/Cloud_Optimization/Optimization_overview'
-import Optimization_work from '../app/container/Services/Cloud/Cloud_Optimization/Optimization_work'
-import Optimization_strategies from '../app/container/Services/Cloud/Cloud_Optimization/Optimization_strategies'
-import Optimization_benefits from '../app/container/Services/Cloud/Cloud_Optimization/Optimization_benefits'
-import Faq from '../app/components/Faq'
-import { CloudOptimizationFAQData } from '../app/container/Services/Cloud/Faqdata'
+import Optimization_hero from '../container/Services/Cloud/Cloud_Optimization/Optimization_hero'
+import Optimization_overview from '../container/Services/Cloud/Cloud_Optimization/Optimization_overview'
+import Optimization_work from '../container/Services/Cloud/Cloud_Optimization/Optimization_work'
+import Optimization_strategies from '../container/Services/Cloud/Cloud_Optimization/Optimization_strategies'
+import Optimization_benefits from '../container/Services/Cloud/Cloud_Optimization/Optimization_benefits'
+import Faq from '../components/Faq'
+import { CloudOptimizationFAQData } from '../container/Services/Cloud/Faqdata'
 
 function CloudOptimization() {
   return (

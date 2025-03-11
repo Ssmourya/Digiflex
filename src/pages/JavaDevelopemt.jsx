@@ -1,13 +1,13 @@
 import React from 'react'
-import Hero from '../app/container/Technology/WebsiteDevlopment/JAVA/Hero'
-import JavaDevelopmentServices from '../app/container/Technology/WebsiteDevlopment/JAVA/JavaDevelopmentServices'
-import Technologies from '../app/container/Technology/WebsiteDevlopment/JAVA/Technologies'
-import DevelopmentProcess from '../app/container/Technology/WebsiteDevlopment/JAVA/DevelopmentProcess'
-import WhyChooseUs from '../app/container/Technology/WebsiteDevlopment/JAVA/WhyChooseUs'
-import CaseStudies from '../app/container/Technology/WebsiteDevlopment/JAVA/CaseStudiesPortfolio'
-import WrapperContainer from '../app/Layout/WrapperContainer'
-import Faq from '../app/components/Faq'
-import { Javafaqs } from "../app/container/Services/Cloud/Faqdata";
+import Hero from '../container/Technology/WebsiteDevlopment/JAVA/Hero'
+import JavaDevelopmentServices from '../container/Technology/WebsiteDevlopment/JAVA/JavaDevelopmentServices'
+import Technologies from '../container/Technology/WebsiteDevlopment/JAVA/Technologies'
+import DevelopmentProcess from '../container/Technology/WebsiteDevlopment/JAVA/DevelopmentProcess'
+import WhyChooseUs from '../container/Technology/WebsiteDevlopment/JAVA/WhyChooseUs'
+import CaseStudies from '../container/Technology/WebsiteDevlopment/JAVA/CaseStudiesPortfolio'
+import WrapperContainer from '../Layout/WrapperContainer'
+import Faq from '../components/Faq'
+import { Javafaqs } from "../container/Services/Cloud/Faqdata";
 
 const JAVADEVELOPMENENT = () => {
   return (

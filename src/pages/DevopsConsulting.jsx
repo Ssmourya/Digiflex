@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Hero from '../app/container/Services/Consulting/devops/Hero'
-import Body from '../app/container/Services/Consulting/devops/Body';
+import Hero from '../container/Services/Consulting/devops/Hero'
+import Body from '../container/Services/Consulting/devops/Body';
 
 function DevopsConsulting() {
   return (

@@ -2,16 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Blockchain_intro } from "../app/container/Services/Custom App/BlockChain/Blockchain_intro";
-import Blockchain_application from "../app/container/Services/Custom App/BlockChain/Blockchain_application ";
-import Blockchain_application_development from "../app/container/Services/Custom App/BlockChain/Blockchain_application_development";
-import Blockchain_platforms from "../app/container/Services/Custom App/BlockChain/Blockchain_platforms";
-import Blockchain_services from "../app/container/Services/Custom App/BlockChain/Blockchain_services";
-import Blockchain_support from "../app/container/Services/Custom App/BlockChain/Blockchain_support ";
-import videoBg from "../assets/blockchain_video.mp4";
-import WrapperContainer from "../app/Layout/WrapperContainer";
-import { BlockchainDevFaqs } from "../app/container/Services/Cloud/Faqdata";
-import Faq from "../app/components/Faq";
+import { Blockchain_intro } from "../container/Services/Custom App/BlockChain/Blockchain_intro";
+import Blockchain_application from "../container/Services/Custom App/BlockChain/Blockchain_application ";
+import Blockchain_application_development from "../container/Services/Custom App/BlockChain/Blockchain_application_development";
+import Blockchain_platforms from "../container/Services/Custom App/BlockChain/Blockchain_platforms";
+import Blockchain_services from "../container/Services/Custom App/BlockChain/Blockchain_services";
+import Blockchain_support from "../container/Services/Custom App/BlockChain/Blockchain_support ";
+import WrapperContainer from "../Layout/WrapperContainer";
+import { BlockchainDevFaqs } from "../container/Services/Cloud/Faqdata";
+import Faq from "../components/Faq";
 
 function Home() {
   return (
@@ -26,7 +25,7 @@ function Home() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src={videoBg} type="video/mp4" />
+          <source src="/assets/blockchain_video.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}

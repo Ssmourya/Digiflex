@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroSection from '../app/container/Services/E-Commerce/PrestashopDevelopment/HeroSection'
-import FeatureHighlights from '../app/container/Services/E-Commerce/PrestashopDevelopment/FeatureHighlights'
-import DevelopmentProcess from '../app/container/Services/E-Commerce/PrestashopDevelopment/DevelopmentProcess'
-import PrestaShopFAQ from '../app/container/Services/E-Commerce/PrestashopDevelopment/PestraFAQ'
+import HeroSection from '../container/Services/E-Commerce/PrestashopDevelopment/HeroSection'
+import FeatureHighlights from '../container/Services/E-Commerce/PrestashopDevelopment/FeatureHighlights'
+import DevelopmentProcess from '../container/Services/E-Commerce/PrestashopDevelopment/DevelopmentProcess'
+import PrestaShopFAQ from '../container/Services/E-Commerce/PrestashopDevelopment/PestraFAQ'
 
 const PestrashopDevelopment = () => {
   return (

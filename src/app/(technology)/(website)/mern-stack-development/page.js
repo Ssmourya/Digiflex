@@ -1,4 +1,4 @@
-import WebsiteTechDevlopmet from '@/pages/WebsiteTechDevlopmet';
+import WebsiteTechDevlopmet from '@/pages/Mern';
 
 export default function WebsiteTechDevlopmetPage() {
   return (

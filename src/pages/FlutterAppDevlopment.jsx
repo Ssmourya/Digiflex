@@ -4,7 +4,8 @@ import WhyChooseFlutter from '../container/Technology/MobileAppDev/FlutterAppDEv
 import OurServices from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/OurServices';
 import OurTechStack from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/OurTechStack'
 import IndustriesWeServe from '../container/Technology/MobileAppDev/FlutterAppDEvlopment/IndustriesWeServe'
-import { FlutterfaqData } from "../container/Services/Cloud/Faqdata";import WrapperContainer from '../a../Layout/WrapperContainer
+import { FlutterfaqData } from "../container/Services/Cloud/Faqdata";
+import WrapperContainer from '@/Layout/WrapperContainer';
 import Faq from '../components/Faq';
 const FlutterAppDevlopment = () => {
   return (

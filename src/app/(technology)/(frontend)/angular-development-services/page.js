@@ -1,4 +1,4 @@
-import AngularDevelopment from '@/../pages/AngularDevelopment';
+import AngularDevelopment from '@/pages/AngularDevelopment';
 
 export default function AngularDevelopmentPage() {
   return (

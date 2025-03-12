@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Hero() {
   const letterRefs = useRef([]);
   const text = "DEVOPS & TEST AUTOMATION";
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+    
     letterRefs.current.forEach((letter, index) => {
       if (letter) {
         letter.style.animationDelay = `${index * 0.1}s`;
@@ -30,22 +33,21 @@ function Hero() {
       
       {/* Overlays */}
       <div className="absolute inset-0 bg-black/50 -z-10" />
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-950/95 via-purple-900/90 to-black/95 -z-10" /> */}
       <div className="absolute inset-0 bg-gradient-to-tr from-indigo-950/50 via-transparent to-blue-900/50 -z-10" />
       
-      {/* Animated Particles */}
-      {[...Array(40)].map((_, i) => (
-        <div
-          key={i}
-          className="absolute w-1 h-1 bg-blue-400 rounded-full animate-particle opacity-0"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 5}s`,
-            animationDuration: `${5 + Math.random() * 10}s`,
-          }}
-        />
-      ))}
+      {/* Animated Particles - Only render on client */}
+      {isMounted && [...Array(40)].map((_, i) => (
+  <div
+    key={i}
+    className="absolute w-1 h-1 bg-blue-400 rounded-full animate-particle opacity-0"
+    style={{
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 5}s`,
+      animationDuration: `${5 + Math.random() * 10}s`,
+    }}
+  />
+))}
       
       {/* Content */}
       <div className="relative flex items-center justify-center z-20 min-h-screen px-4 py-20">
@@ -70,16 +72,7 @@ function Hero() {
           
           <p className="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto mb-8 leading-relaxed">
           DevOps and test automation streamline software delivery, ensuring efficiency, reliability, scalability, and faster deployment cycles.
-
-
-
-
-
-
-
-
           </p>
-      
         </div>
       </div>
     </div>

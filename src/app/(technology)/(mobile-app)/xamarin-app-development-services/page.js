@@ -1,4 +1,4 @@
-import XamarinAppDEvlopment from '@/pages/XamarinAppDEvlopment';
+import XamarinAppDEvlopment from '@/pages/XamarinAppDevelopment';
 
 export default function XamarinAppDEvlopmentPage() {
   return (

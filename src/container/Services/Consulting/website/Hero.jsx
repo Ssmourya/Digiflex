@@ -1,19 +1,33 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 function Hero() {
   const letterRefs = useRef([]);
   const text = "Website Consulting Service";
-
+  const [windowWidth, setWindowWidth] = useState(0);
+  
   useEffect(() => {
+    // Set window width after component mounts
+    setWindowWidth(window.innerWidth);
+    
+    // Handle window resize
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    
+    // Letter animation
     letterRefs.current.forEach((letter, index) => {
       if (letter) {
         letter.style.animationDelay = `${index * 0.1}s`;
       }
     });
+    
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // Determine particle count based on window width
+  const particleCount = windowWidth < 768 ? 20 : 40;
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-black">
@@ -23,12 +37,12 @@ function Hero() {
           autoPlay
           loop
           muted
-          playsInline // Added playsinline for iOS compatibility
+          playsInline
           className="object-cover w-full h-full"
           style={{ position: "absolute", top: "0", left: "0" }}
         >
           <source
-            src='/assets/ConsultingVideo.mp4' // Replace with your video URL
+            src='/assets/ConsultingVideo.mp4'
             type="video/mp4"
           />
         </video>
@@ -39,8 +53,8 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-950/95 via-purple-900/90 to-black/95 z-10 animate-gradient-extreme mix-blend-overlay" />
       <div className="absolute inset-0 bg-gradient-to-tr from-indigo-950/50 via-transparent to-blue-900/50 z-10 animate-gradient-reverse mix-blend-multiply" />
 
-      {/* Animated Particles - Reduced count on mobile */}
-      {[...Array(window.innerWidth < 768 ? 20 : 40)].map((_, i) => (
+      {/* Animated Particles - Only render when windowWidth is set */}
+      {windowWidth > 0 && [...Array(particleCount)].map((_, i) => (
         <div
           key={i}
           className="absolute w-1 h-1 bg-blue-400 rounded-full animate-particle opacity-0"
@@ -94,8 +108,8 @@ function Hero() {
             </span>
           </button>
 
-          {/* Floating Orbs - Adjusted size and position for responsiveness */}
-          {[...Array(5)].map((_, i) => (
+          {/* Floating Orbs - Only render when windowWidth is set */}
+          {windowWidth > 0 && [...Array(5)].map((_, i) => (
             <div
               key={i}
               className="absolute w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full blur-3xl animate-orb-float mix-blend-screen"
@@ -107,8 +121,8 @@ function Hero() {
                     "rgba(59,130,246,0.3)",
                   ][i % 3]
                 } 0%, transparent 70%)`,
-                left: `${10 + i * (window.innerWidth < 768 ? 10 : 15)}%`,
-                top: `${20 + (i % 3) * (window.innerWidth < 768 ? 15 : 20)}%`,
+                left: `${10 + i * (windowWidth < 768 ? 10 : 15)}%`,
+                top: `${20 + (i % 3) * (windowWidth < 768 ? 15 : 20)}%`,
                 animationDelay: `${i * 0.5}s`,
               }}
             />

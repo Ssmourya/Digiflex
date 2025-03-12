@@ -1,4 +1,4 @@
-import HtmlDevlopment from '@/pages/HtmlDevlopment';
+import HtmlDevlopment from '@/pages/HtmlAppDevlopment';
 
 export default function HtmlDevlopmentPage() {
   return (

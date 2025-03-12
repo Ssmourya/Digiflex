@@ -1,4 +1,4 @@
-import Java from '@/pages/Java';
+import Java from '@/pages/JavaDevelopemt';
 
 export default function JavaPage() {
   return (

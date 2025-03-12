@@ -2,14 +2,14 @@
 
 import React from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import WrapperContainer from '@/Layout/WrapperContainer';
 
 function App() {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleRedirect = () => {
-    navigate('/contact-us'); 
+    router.push('/contact-us');
   };
 
   return (

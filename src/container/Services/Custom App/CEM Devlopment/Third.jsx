@@ -1,5 +1,4 @@
 import React from "react";
-import bg4 from "@/assets/bg4.png";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
 import Paragraph from "@/Layout/Paragraph";
@@ -55,7 +54,7 @@ const Thirds = () => {
       <div className="ai-workspace flex flex-col md:flex-row gap-8 items-center">
         <div className="workspace-left flex-1 flex justify-center">
           <img
-            src={bg4}
+            src='/assets/bg4.png'
             alt="AI Workspace"
             className="w-full max-w-sm md:max-w-[75%] rounded-lg shadow-md"
           />

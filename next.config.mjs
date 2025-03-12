@@ -1,5 +1,5 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   transpilePackages: [
     "@splinetool/react-spline",
@@ -8,6 +8,7 @@ const nextConfig = {
     "slick-carousel",
     "gsap"
   ],
+  images: {
+    unoptimized: true,
+  },
 };
-
-export default nextConfig;

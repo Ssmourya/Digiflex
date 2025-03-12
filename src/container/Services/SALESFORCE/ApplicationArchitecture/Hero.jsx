@@ -1,8 +1,5 @@
 "use client";
-
-
 import React, { useEffect, useRef } from "react";
-import saleshforce from "@/@/public/assets/Salesforce.mp4"
 
 function Hero() {
   const letterRefs = useRef([]);
@@ -26,7 +23,7 @@ function Hero() {
           muted
           className="absolute object-cover w-full h-full"
         >
-          <source src={saleshforce} type="video/mp4" />
+          <source src="/assets/Salesforce.mp4" type="video/mp4" />
         </video>
       </div>
       

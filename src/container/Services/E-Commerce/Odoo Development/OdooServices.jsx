@@ -8,7 +8,6 @@ import {
   FaSyncAlt,
   FaArrowRight
 } from "react-icons/fa";
-import odooimg from "@/@/public/assets/OdooErp.png";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
 import Paragraph from "@/Layout/Paragraph";
@@ -96,7 +95,7 @@ const OdooServices = () => {
                   
                   {/* Main image */}
                   <img
-                    src={odooimg}
+                    src="/assets/OdooErp.png"
                     alt="Odoo ERP Solutions"
                     className="relative z-10 rounded-lg shadow-lg w-full max-w-lg object-cover"
                   />

@@ -1,4 +1,4 @@
-import Pestrashop from '@/pages/Pestrashop';
+import Pestrashop from '@/pages/PestrashopDevelopment';
 
 export default function PestrashopPage() {
   return (

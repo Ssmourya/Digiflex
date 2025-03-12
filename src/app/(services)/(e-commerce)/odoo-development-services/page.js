@@ -1,4 +1,4 @@
-import Odoo from '@/pages/Odoo';
+import Odoo from '@/pages/OdooDevelopment';
 
 export default function OdooPage() {
   return (

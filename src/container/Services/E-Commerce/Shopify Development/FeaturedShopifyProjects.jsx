@@ -3,27 +3,23 @@
 import { motion } from "framer-motion";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
-import store_1 from '@/@/public/assets/shop_store_3.mp4';
-import store_2 from '@/@/public/assets/shop_store_2.mp4';
-import store_3 from '@/@/public/assets/shop_store_4.mp4';
 import Subheading from "@/Layout/Subheading";
 import Paragraph from "@/Layout/Paragraph";
-import SectionContainer from '@/Layout/SectionContainer';
 
 const projects = [
   {
     title: "Luxury Fashion Store",
-    video: store_1,
+    video: "/assets/shop_store_3.mp4",
     description: "A premium Shopify store with high-end design and seamless user experience.",
   },
   {
     title: "Tech Gadget Hub",
-    video: store_2,
+    video: "/assets/shop_store_2.mp4",
     description: "A modern Shopify store optimized for selling cutting-edge technology.",
   },
   {
     title: "Organic Beauty Shop",
-    video: store_3,
+    video: "/assets/shop_store_4.mp4",
     description: "A nature-inspired Shopify store designed for organic beauty products.",
   },
 ];

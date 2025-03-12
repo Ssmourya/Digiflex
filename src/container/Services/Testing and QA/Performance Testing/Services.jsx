@@ -1,9 +1,4 @@
 import React from 'react';
-import endurance_Testing from "@/@/public/assets/endurance_Testing.jpeg";
-import load_Testing from "@/@/public/assets/load_Testing.jpeg";
-import scalability_Testing from "@/@/public/assets/scalability_Testing.jpeg";
-import stress_Testing from "@/@/public/assets/stress_Testing.jpeg";
-import volume_Testing from "@/@/public/assets/volume_Testing.jpeg";
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 
@@ -29,42 +24,42 @@ const Service = ({ img, title, description }) => (
 const Services = () => {
     const services = [
         {
-            img: load_Testing,
+            img: "/assets/load_Testing.jpeg",
             title: "Load Testing",
             description: "Ensure your software performs seamlessly under normal and peak load conditions with our expert load testing solutions."
         },
         {
-            img: stress_Testing,
+            img: "/assets/stress_Testing.jpeg",
             title: "Stress Testing",
             description: "Discover your software's limits by determining the maximum load it can endure before failure, ensuring reliability and robustness with our stress testing services."
         },
         {
-            img: volume_Testing,
+            img: "/assets/volume_Testing.jpeg",
             title: "Volume Testing",
             description: "Validate your system's ability to manage and process large volumes of data effectively, guaranteeing performance consistency."
         },
         {
-            img: scalability_Testing,
+            img: "/assets/scalability_Testing.jpeg",
             title: "Scalability Testing",
             description: "Evaluate and optimize your software's ability to scale effortlessly in response to fluctuating user demands, a core aspect of our performance testing suite."
         },
         {
-            img: endurance_Testing,
+            img: "/assets/endurance_Testing.jpeg",
             title: "Endurance Testing",
             description: "Assess your software's capacity to operate under sustained loads over extended periods, ensuring durability and long-term reliability."
         },
         {
-            img: load_Testing,
+            img: "/assets/load_Testing.jpeg",
             title: "Load Testing",
             description: "Ensure your software performs seamlessly under normal and peak load conditions with our expert load testing solutions."
         },
         {
-            img: stress_Testing,
+            img: "/assets/stress_Testing.jpeg",
             title: "Stress Testing",
             description: "Discover your software's limits by determining the maximum load it can endure before failure, ensuring reliability and robustness with our stress testing services."
         },
         {
-            img: volume_Testing,
+            img: "/assets/volume_Testing.jpeg",
             title: "Volume Testing",
             description: "Validate your system's ability to manage and process large volumes of data effectively, guaranteeing performance consistency."
         },

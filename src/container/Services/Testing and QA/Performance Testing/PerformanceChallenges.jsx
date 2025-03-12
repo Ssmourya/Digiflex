@@ -1,6 +1,5 @@
 import React from 'react';
 import { Plus, Minus } from 'lucide-react';
-import perfo_test_and_sol from "@/@/public/assets/perfo_test_and_sol.jpeg";
 import Heading from '@/Layout/Heading';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Subheading from '@/Layout/Subheading';
@@ -56,7 +55,7 @@ const PerformanceChallenges = () => {
           </Heading>
           <div className="w-full sm:w-[75%] md:w-[60%] lg:w-[35%] overflow-hidden">
             <img
-              src={perfo_test_and_sol}
+              src="/assets/perfo_test_and_sol.jpeg"
               alt="Performance Testing Challenges and Solutions"
               className="w-full object-cover rounded-xl shadow-md"
             />

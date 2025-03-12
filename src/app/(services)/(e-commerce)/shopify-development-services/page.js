@@ -1,4 +1,4 @@
-import Shopify from '@/pages/Shopify';
+import Shopify from '@/pages/Shopifydevlopment';
 
 export default function ShopifyPage() {
   return (

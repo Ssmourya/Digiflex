@@ -1,5 +1,4 @@
 import React from 'react';
-import Website_Maintenance from "@/@/public/assets/Website_Maintenance.jpeg"
 import WrapperContainer from "@/Layout/WrapperContainer"
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading"
@@ -12,7 +11,7 @@ const PerformanceTestingSection = () => {
                 
                 {/* Left side - Illustration */}
                 <div className="xs:w-1/2 sm:w-1/2 md:w- lg:w-2/5 mx-auto">
-                    <img src={Website_Maintenance} className='object-cover w-full h-full'/>
+                    <img src="/assets/Website_Maintenance.jpeg" className='object-cover w-full h-full'/>
                 </div>
 
                 {/* Right side - Content */}

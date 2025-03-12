@@ -1,4 +1,4 @@
-import Opencart from '@/pages/Opencart';
+import Opencart from '@/pages/OpencartDevelopment';
 
 export default function OpencartPage() {
   return (

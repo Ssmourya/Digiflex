@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { FaRocket, FaUsers, FaCogs, FaShieldAlt, FaChartLine } from "react-icons/fa";
 
 // Import single image
-import Image from "@/@/public/assets/Shopify_App_Development.jpg";
 
 const WhyChooseUs = () => {
   return (
@@ -60,7 +59,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 1 }}
         >
           <motion.img
-            src={Image}
+            src="/assets/Shopify_App_Development.jpg"
             alt="Shopify Development"
             className="w-full h-full object-contain rounded-lg shadow-lg"
             whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)" }}

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import videoGame from "@/@/public/assets/unrealGame.mp4";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,7 +48,7 @@ const Hero = () => {
           className="absolute top-0 left-0 w-full h-full object-cover filter"
           style={{ filter: "blur(1px)" }}
         >
-          <source src={videoGame} type="video/mp4" />
+          <source src="/assets/unrealGame.mp4" type="video/mp4" />
         </video>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">

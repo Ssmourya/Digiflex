@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import WrapperContainer from "@/Layout/WrapperContainer";
-import AiAutomationImage from "@/@/public/assets/Magento_Ai.jpg"; // Add your image path
 import Subheading from "@/Layout/Subheading";
 
 const aiFeatures = [
@@ -53,7 +52,7 @@ const MagentoAIAutomation = () => {
             transition={{ duration: 1 }}
           >
             <img 
-              src={AiAutomationImage} 
+              src="/assets/Magento_Ai.jpg" 
               alt="Magento AI & Automation" 
               className="w-full max-w-lg rounded-lg shadow-xl"
             />

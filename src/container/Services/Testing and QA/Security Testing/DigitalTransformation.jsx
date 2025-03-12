@@ -1,10 +1,5 @@
 import React from "react";
 import { Rocket, Lightbulb, Target, Code, Zap, Cpu } from "lucide-react"; // Importing Lucide icons
-import Focusing_Business from "@/@/public/assets/Focusing-Business.jpeg";
-import Next_Gen_Technologies from "@/@/public/assets/Next_Gen_Technologies.jpeg";
-import Digital_Engineering from "@/@/public/assets/Digital_Engineering.jpeg";
-import agile from "@/@/public/assets/agile.jpeg";
-import Innovation from "@/@/public/assets/Innovation.jpeg";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import Subheading from "@/Layout/Subheading";
@@ -13,7 +8,7 @@ import WrapperContainer from "@/Layout/WrapperContainer";
 const cardData = [
     {
         id: 1,
-        image: Next_Gen_Technologies,
+        image: "/assets/Next_Gen_Technologies.jpeg",
         alt: "Next Gen Technologies",
         heading: "Adapting Next Gen Technologies",
         icon: <Cpu className="w-6 h-6 text-indigo-600" />,
@@ -22,7 +17,7 @@ const cardData = [
     },
     {
         id: 2,
-        image: Innovation,
+        image: "/assets/Innovation.jpeg",
         alt: "Innovation",
         heading: "Leading through innovation",
         icon: <Lightbulb className="w-6 h-6 text-yellow-500" />,
@@ -31,7 +26,7 @@ const cardData = [
     },
     {
         id: 3,
-        image: Focusing_Business,
+        image: "/assets/Focusing-Business.jpeg",
         alt: "Customer Outcomes",
         heading: "Focusing on the Customer's Business Outcomes",
         icon: <Target className="w-6 h-6 text-red-500" />,
@@ -40,7 +35,7 @@ const cardData = [
     },
     {
         id: 4,
-        image: Digital_Engineering,
+        image: "/assets/Digital_Engineering.jpeg",
         alt: "Engineering DNA",
         heading: "Digital Engineering with Quality DNA",
         icon: <Code className="w-6 h-6 text-green-500" />,
@@ -49,7 +44,7 @@ const cardData = [
     },
     {
         id: 5,
-        image: agile,
+        image: "/assets/agile.jpeg",
         alt: "Scaling with Agility",
         heading: "Scaling with Agility",
         icon: <Zap className="w-6 h-6 text-blue-500" />,
@@ -58,7 +53,7 @@ const cardData = [
     },
     {
         id: 6,
-        image: Next_Gen_Technologies,
+        image: "/assets/Next_Gen_Technologies.jpeg",
         alt: "Next Gen Technologies",
         heading: "Adapting Next Gen Technologies",
         icon: <Cpu className="w-6 h-6 text-indigo-600" />,

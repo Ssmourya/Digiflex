@@ -1,10 +1,4 @@
 import React from "react";
-import feature1 from "@/@/public/assets/Solution_1.jpg";
-import feature2 from "@/@/public/assets/Parfomance_1.jpg";
-import feature3 from "@/@/public/assets/user_interface.jpg";
-import feature4 from "@/@/public/assets/Payment.jpg";
-import feature5 from "@/@/public/assets/Expand.jpg";
-import feature6 from "@/@/public/assets/Mantanance.jpg";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Subheading from "@/Layout/Subheading";
 import Paragraph from "@/Layout/Paragraph";
@@ -13,37 +7,37 @@ import Heading from "@/Layout/Heading";
 const OpenCartModernSection = () => {
   const features = [
     { 
-      img: feature1, 
+      img: "/assets/Solution_1.jpg", 
       title: "Custom OpenCart Solutions", 
       text: "Tailored features and seamless integrations for your store.",
       color: "bg-indigo-500" 
     },
     { 
-      img: feature2, 
+      img: "/assets/Parfomance_1.jpg", 
       title: "High-Performance Optimization", 
       text: "Improve speed, SEO, and user experience to boost conversions.",
       color: "bg-blue-500" 
     },
     { 
-      img: feature3, 
+      img: "/assets/user_interface.jpg", 
       title: "Custom Theme & UI Design", 
       text: "Modern and responsive themes that attract and retain customers.",
       color: "bg-green-500" 
     },
     { 
-      img: feature4, 
+      img: "/assets/Payment.jpg", 
       title: "Secure Payment & Checkout", 
       text: "Safe and seamless payment gateways for smooth transactions.",
       color: "bg-red-500" 
     },
     { 
-      img: feature5, 
+      img: "/assets/Expand.jpg", 
       title: "Scalability & Flexibility", 
       text: "Easily expand your store with powerful OpenCart extensions.",
       color: "bg-purple-500" 
     },
     { 
-      img: feature6, 
+      img: "/assets/Mantanance.jpg", 
       title: "Ongoing Support & Maintenance", 
       text: "Dedicated technical support for uninterrupted performance.",
       color: "bg-yellow-500" 

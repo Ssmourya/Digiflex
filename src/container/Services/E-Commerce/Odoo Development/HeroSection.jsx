@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { SiOdoo } from "react-icons/si";
-import bgVideo from "@/@/public/assets/blue_theam.mp4"; // Add your Odoo-specific video file
 
 const OdooHero = () => {
   return (
@@ -17,7 +16,7 @@ const OdooHero = () => {
         muted
         playsInline
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src="/assets/blue_theam.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

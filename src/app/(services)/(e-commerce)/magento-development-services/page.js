@@ -1,4 +1,4 @@
-import Magento from '@/pages/Magento';
+import Magento from '@/pages/MagentoDevelopment';
 
 export default function MagentoPage() {
   return (

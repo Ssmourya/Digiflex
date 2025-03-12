@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
 import WrapperContainer from "@/Layout/WrapperContainer";
-import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 
 const faqs = [

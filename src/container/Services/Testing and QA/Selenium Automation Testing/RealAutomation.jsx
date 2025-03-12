@@ -1,5 +1,4 @@
 import React from "react";
-import RealAutomationImg from "@/@/public/assets/RealAutomation.jpeg";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
@@ -60,7 +59,7 @@ const RealAutomation = () => {
                 <div className="sm:w-3/4 md:w-1/2   flex items-center justify-center">
                     <div className="w-full h-full relative">
                         <img
-                            src={RealAutomationImg}
+                            src="/assets/RealAutomation.jpeg"
                             className="w-full h-auto object-contain rounded-xl shadow-lg"
                             alt="Automated Selenium Testing Platform"
                         />

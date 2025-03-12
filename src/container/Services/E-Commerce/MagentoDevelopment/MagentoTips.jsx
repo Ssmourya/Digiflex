@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Heading from "@/Layout/Heading"; 
 import Paragraph from "@/Layout/Paragraph";
 import WrapperContainer from "@/Layout/WrapperContainer";
-import PerformanceImage from "@/@/public/assets/Magento_perfomance.jpg"; // Add your image path here
 import Subheading from "@/Layout/Subheading";
 
 const optimizations = [
@@ -64,7 +63,7 @@ const MagentoBoost = () => {
           transition={{ duration: 1 }}
         >
           <img 
-            src={PerformanceImage} 
+            src="/assets/Magento_perfomance.jpg"
             alt="Magento Performance Boost" 
             className="w-full max-w-md rounded-lg shadow-lg"
           />

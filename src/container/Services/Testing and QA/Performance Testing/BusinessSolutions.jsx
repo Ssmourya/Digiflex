@@ -1,7 +1,5 @@
 import React from 'react';
-import devops_Solutions from "@/@/public/assets/devops_Solutions.jpeg";
-import quality_assurance from "@/@/public/assets/quality_assurance.jpeg";
-import software_dev from "@/@/public/assets/software_dev.jpeg";
+
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 
@@ -9,17 +7,17 @@ const BusinessSolutions = () => {
     const solutions = [
         {
             title: "DevOps Solutions",
-            image: devops_Solutions,
+            image: "/assets/devops_Solutions.jpeg",
             link: "#"
         },
         {
             title: "Quality Assurance",
-            image: quality_assurance,
+            image: "/assets/quality_assurance.jpeg",
             link: "#"
         },
         {
             title: "Software Development",
-            image: software_dev,
+            image: "/assets/software_dev.jpeg",
             link: "#"
         }
     ];

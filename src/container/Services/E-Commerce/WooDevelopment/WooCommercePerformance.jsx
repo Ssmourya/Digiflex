@@ -2,8 +2,7 @@
 
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import image1 from "@/@/public/assets/woo_bg_1.jpg";
-import video from "@/@/public/assets/Woo_Perfomance.mp4";
+
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
@@ -50,7 +49,7 @@ const WooCommercePerformance = () => {
       <div
         className="relative w-full min-h-[70vh] flex items-center"
         style={{
-          background: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url(${image1})`,
+          background: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url($"/assets/woo_bg_1.jpg")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -142,7 +141,7 @@ const WooCommercePerformance = () => {
                   muted
                   playsInline
                 >
-                  <source src={video} type="video/mp4" />
+                  <source src="/assets/Woo_Perfomance.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

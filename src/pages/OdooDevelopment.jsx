@@ -12,7 +12,7 @@ const OdooDevelopment = () => {
       <OdooServices/>
       <CaseStudies/>
       <Development/>
-      < OdooFAQ/>
+      <OdooFAQ/>
     </div>
   )
 }

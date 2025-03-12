@@ -1,8 +1,5 @@
 import React from "react";
-import security_1 from "@/@/public/assets/security_1.jpeg"
-import security_2 from "@/@/public/assets/security_2.jpeg"
 
-import Heading from "@/Layout/Heading";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Paragraph from "@/Layout/Paragraph";
 import Subheading from "@/Layout/Subheading";
@@ -14,7 +11,7 @@ const SecurityOperations = () => {
             <div className="bg-gray-100 p-6 rounded-2xl shadow-lg w-full md:w-1/2">
                 <div className="w-full h-64 mb-4"> {/* Fixed height wrapper for image */}
                     <img
-                        src={security_1}
+                        src="/assets/security_1.jpeg"
                         alt="Security Operations Center"
                         className="rounded-xl w-full h-full object-cover"
                     />
@@ -40,7 +37,7 @@ const SecurityOperations = () => {
             <div className="bg-gray-100 p-6 rounded-2xl shadow-lg w-full md:w-1/2">
                 <div className="w-full h-64 mb-4"> {/* Fixed height wrapper for image */}
                     <img
-                        src={security_2}
+                        src="/assets/security_2.jpeg"
                         alt="Security Operations as a Platform"
                         className="rounded-xl w-full h-full object-cover"
                     />

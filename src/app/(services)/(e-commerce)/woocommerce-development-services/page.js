@@ -1,4 +1,4 @@
-import Woo from '@/pages/Woo';
+import Woo from '@/pages/WooDevelopment';
 
 export default function WooPage() {
   return (

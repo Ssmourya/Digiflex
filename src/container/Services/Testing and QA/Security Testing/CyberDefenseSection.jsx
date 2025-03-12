@@ -1,4 +1,3 @@
-import TechnicalPeople from "@/@/public/assets/TechnicalPeople.jpeg"
 import Heading from "@/Layout/Heading";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Paragraph from "@/Layout/Paragraph";
@@ -28,7 +27,7 @@ const CyberDefenseSection = () => {
                {/* Image Section */}
                <div className="w-full md:w-1/2 relative">
                     <img
-                         src={TechnicalPeople}
+                         src="/assets/TechnicalPeople.jpeg"
                          alt="Cyber defense dashboard"
                          className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] object-cover rounded-lg shadow-lg"
                     />

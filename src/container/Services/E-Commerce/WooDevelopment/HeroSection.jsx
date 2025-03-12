@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import bgVideo from "@/@/public/assets/blue_theam.mp4"; // Add your video file
 
 const HeroSection = () => {
   return (
@@ -17,7 +16,7 @@ const HeroSection = () => {
         muted
         playsInline
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src="/assets/blue_theam.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

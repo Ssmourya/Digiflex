@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaShopify } from "react-icons/fa"; // Shopify-related icon
-import bgVideo from "@/@/public/assets/blue_theam.mp4"; // Add your video file
 
 const ShopifyHero = () => {
   return (
@@ -18,7 +17,7 @@ const ShopifyHero = () => {
         muted
         playsInline
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src="/assets/blue_theam.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

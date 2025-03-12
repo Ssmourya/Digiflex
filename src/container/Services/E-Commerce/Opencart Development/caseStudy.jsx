@@ -6,9 +6,7 @@ import WrapperContainer from "@/Layout/WrapperContainer";
 import Subheading from "@/Layout/Subheading";
 import Paragraph from "@/Layout/Paragraph";
 import Heading from "@/Layout/Heading";
-import Fashion from '@/@/public/assets/Fashion-boutiqe.jpg';
-import GourmetFoods from '@/@/public/assets/GourmetFoods.webp';
-import TechGadgets from '@/@/public/assets/TechGadgets.jpg';
+
 
 const OpenCartCaseStudies = () => {
   const caseStudies = [
@@ -18,7 +16,7 @@ const OpenCartCaseStudies = () => {
       challenge: "Struggling with inventory management across multiple locations",
       solution: "Custom OpenCart inventory sync module with real-time updates",
       results: "43% reduction in out-of-stock situations, 27% increase in sales",
-      image: Fashion,
+      image: "/assets/Fashion-boutiqe.jpg",
       color: "bg-blue-500"
     },
     {
@@ -27,7 +25,7 @@ const OpenCartCaseStudies = () => {
       challenge: "Complex shipping requirements for perishable goods",
       solution: "Custom shipping calculator with temperature-controlled options",
       results: "92% customer satisfaction, 50% decrease in shipping issues",
-      image: GourmetFoods,
+      image: "/assets/GourmetFoods.webp",
       color: "bg-blue-500"
     },
     {
@@ -36,7 +34,7 @@ const OpenCartCaseStudies = () => {
       challenge: "Poor mobile conversion rates despite high traffic",
       solution: "Responsive OpenCart theme with optimized checkout",
       results: "215% increase in mobile conversions, 31% higher AOV",
-      image: TechGadgets,
+      image: "/assets/TechGadgets.jpg",
       color: "bg-blue-500"
     }
   ];

@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import image_1 from "@/@/public/assets/coustom_development.jpg";
-import image_2 from "@/@/public/assets/Fast_optimized.jpg";
-import image_3 from "@/@/public/assets/Secure_payment.jpg";
-import image_4 from "@/@/public/assets/Mobile_friendly.jpg";
+
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
@@ -20,7 +17,7 @@ const FeatureHighlights = () => {
       ),
       title: "Custom Development",
       description: "Tailored PrestaShop solutions with personalized features. Our team ensures that your store is designed specifically to meet your business needs, enhancing both functionality and performance.",
-      image: image_1,
+      image: "/assets/coustom_development.jpg",
     },
     {
       icon: (
@@ -30,7 +27,7 @@ const FeatureHighlights = () => {
       ),
       title: "Fast & Optimized",
       description: "Optimized coding ensures a seamless user experience. With our speed-enhancing strategies, your customers will enjoy faster load times and smooth navigation.",
-      image: image_2,
+      image: "/assets/Fast_optimized.jpg",
     },
     {
       icon: (
@@ -40,7 +37,7 @@ const FeatureHighlights = () => {
       ),
       title: "Secure Payments",
       description: "Safe and secure payment gateway integration. We implement the latest security protocols to ensure all transactions are encrypted and protected against fraud.",
-      image: image_3,
+      image: "/assets/Secure_payment.jpg",
     },
     {
       icon: (
@@ -50,7 +47,7 @@ const FeatureHighlights = () => {
       ),
       title: "Mobile Friendly",
       description: "Fully responsive design for all devices. Whether your customers shop from a phone, tablet, or desktop, they will experience a seamless and visually appealing interface.",
-      image: image_4,
+      image: "/assets/Mobile_friendly.jpg",
     }
   ];
 

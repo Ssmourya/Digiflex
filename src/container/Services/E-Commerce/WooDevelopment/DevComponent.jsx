@@ -2,7 +2,6 @@ import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
-import woo from '@/@/public/assets/WooDevelopment.jpg'
 
 const DevComponent = () => {
   return (
@@ -19,7 +18,7 @@ const DevComponent = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <img
-              src={woo}
+              src="/assets/WooDevelopment.jpg"
               alt="WooCommerce Development"
               className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
             />

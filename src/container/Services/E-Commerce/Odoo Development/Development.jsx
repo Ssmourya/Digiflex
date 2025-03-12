@@ -7,44 +7,36 @@ import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import Subheading from "@/Layout/Subheading";
 
-// Import Images
-import customizationImg from "@/@/public/assets/Modules.jpg";
-import ecommerceImg from "@/@/public/assets/ecommerceImg.jpg";
-import accountingImg from "@/@/public/assets/Accounting_Finance.jpg";
-import inventoryImg from "@/@/public/assets/Inventory_Supply_Chain.jpg";
-import projectImg from "@/@/public/assets/Project_Management.jpg";
-import securityImg from "@/@/public/assets/Security_Scalability.jpg";
-
 const odooFeatures = [
   { 
     title: "Customization & Modules", 
     content: "Odoo allows extensive customization with modular architecture. Businesses can develop custom modules to meet specific needs, including CRM, accounting, HR, and more.",
-    image: customizationImg
+    image: "/assets/Modules.jpg"
   },
   { 
     title: "E-commerce & POS", 
     content: "Odoo integrates seamlessly with e-commerce platforms and POS systems, enabling businesses to manage sales, inventory, and customer data efficiently.",
-    image: ecommerceImg
+    image: "/assets/ecommerceImg.jpg"
   },
   { 
     title: "Accounting & Finance", 
     content: "Odoo's built-in accounting features automate financial reporting, invoicing, and tax compliance, making financial management easier for businesses.",
-    image: accountingImg
+    image: "/assets/Accounting_Finance.jpg"
   },
   { 
     title: "Inventory & Supply Chain", 
     content: "Odoo offers real-time inventory tracking, warehouse management, and automated stock replenishment to streamline supply chain operations.",
-    image: inventoryImg
+    image: "/assets/Inventory_Supply_Chain.jpg"
   },
   { 
     title: "Project Management", 
     content: "Odoo's project management tools help businesses track tasks, collaborate with teams, and manage deadlines with Kanban and Gantt chart views.",
-    image: projectImg
+    image: "/assets/Project_Management.jpg"
   },
   { 
     title: "Security & Scalability", 
     content: "Odoo ensures data security with encryption, access control, and cloud scalability, making it suitable for businesses of all sizes.",
-    image: securityImg
+    image: "/assets/Security_Scalability.jpg"
   }
 ];
 

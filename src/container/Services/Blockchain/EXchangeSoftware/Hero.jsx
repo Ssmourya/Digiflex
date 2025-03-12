@@ -3,7 +3,6 @@
 
 import React, { useEffect, useRef } from "react";
 import { ArrowRight, Sparkles } from "lucide-react";
-import exchangesoftware from '@/@/public/assets/Blockchain.mp4'
 
 function Hero() {
   const letterRefs = useRef([]);
@@ -27,7 +26,7 @@ function Hero() {
           muted
           className="absolute object-cover w-full h-full"
         >
-          <source src={exchangesoftware} type="video/mp4" />
+          <source src="/assets/Blockchain.mp4" type="video/mp4" />
         </video>
       </div>
       

@@ -1,6 +1,5 @@
 import React from "react";
 import { logoData } from "./Data";
-import img10 from "@/assets/blockchain.jpg";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 
@@ -18,7 +17,7 @@ const Blockchain_services = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src={img10}
+              src="/assets/blockchain.jpg"
               alt="Blockchain"
               className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl rounded-lg "
             />

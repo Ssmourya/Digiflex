@@ -1,9 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import exchangesoftware from "@/@/public/assets/video2.mp4";
-import Azore_intro from "@/@/public/assets/Azore_intro.png";
-import Google_Cloud_Logo from "@/@/public/assets/Google-Cloud-Logo.png";
 
 function OptimizationHero() {
   const letterRefs = useRef([]);
@@ -22,7 +19,7 @@ function OptimizationHero() {
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full z-0">
         <video autoPlay loop muted className="object-cover w-full h-full">
-          <source src={exchangesoftware} type="video/mp4" />
+          <source src="/assets/video2.mp4" type="video/mp4" />
         </video>
       </div>
       {/* Overlays */}
@@ -69,12 +66,12 @@ function OptimizationHero() {
 
           <div className="flex justify-center items-center gap-6 flex-wrap mt-5">
             <img
-              src={Azore_intro}
+              src="/assets/Azore_intro.png"
               alt="Azure intro"
               className="w-32 md:w-40 lg:w-52"
             />
             <img
-              src={Google_Cloud_Logo}
+              src="/assets/Google-Cloud-Logo.png"
               alt="Google Cloud Logo"
               className="w-32 md:w-40 lg:w-52"
             />

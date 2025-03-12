@@ -1,9 +1,6 @@
 import React from 'react'
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
-import Migrationsaas from '@/@/public/assets/MigrationSaas.jpg'
-import MigrationPass from '@/@/public/assets/MigrationPaas.avif'
-import MigrationIaas from '@/@/public/assets/MigrationIaas.avif'
 
 
 
@@ -14,7 +11,7 @@ const advantages = [
       "Understand and respond to user queries accurately with advanced NLP.",
       "Enhance user experience with human-like interactions and contextual awareness.",
     ],
-    image: Migrationsaas,
+    image: "/assets/MigrationSaas.jpg",
   },
   {
     title: "Multi-Platform Integration",
@@ -22,7 +19,7 @@ const advantages = [
       "Seamless integration with websites, mobile apps, and enterprise software.",
       "Connect Digiflex.ai's chatbot with CRM, ERP, and HRMS for enhanced automation.",
     ],
-    image: MigrationPass,
+    image: "/assets/MigrationPaas.avif",
   },
   {
     title: "Automation & Workflow Optimization",
@@ -30,7 +27,7 @@ const advantages = [
       "Reduce manual efforts by automating repetitive tasks efficiently.",
       "Digiflex.ai enables businesses to streamline workflows and improve productivity.",
     ],
-    image: MigrationIaas,
+    image: "/assets/MigrationIaas.avif",
   },
 ];
 

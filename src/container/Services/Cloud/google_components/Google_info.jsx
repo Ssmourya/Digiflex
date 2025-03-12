@@ -1,5 +1,4 @@
 import React from "react";
-import Google_intro from "@/@/public/assets/google_intro.jpg";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
@@ -26,7 +25,7 @@ function Google_info() {
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <img
-            src={Google_intro}
+            src="/assets/google_intro.jpg"
             alt="Google Cloud"
             className="w-full h-auto max-w-full"
           />

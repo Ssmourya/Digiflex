@@ -1,14 +1,11 @@
 import React from "react";
-import Google_logo from "@/@/public/assets/Google-Cloud-Logo.png";
-import Micro_Azore from "@/@/public/assets/Azore_intro.png";
-import Aws_logo from "@/@/public/assets/AWS_logo.avif";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Subheading from "@/Layout/Subheading";
 
 const cloudServices = [
   {
     provider: "AWS",
-    logo: Aws_logo,
+    logo: "/assets/AWS_logo.avif",
     services: [
       { name: "AWS Lambda", description: "Serverless computing." },
       { name: "Amazon ECS/EKS", description: "Managed container orchestration." },
@@ -17,7 +14,7 @@ const cloudServices = [
   },
   {
     provider: "Microsoft Azure",
-    logo: Micro_Azore,
+    logo: "/assets/Azore_intro.png",
     services: [
       { name: "Azure Kubernetes Service (AKS)", description: "Managed Kubernetes." },
       { name: "Azure Functions", description: "Serverless computing." },
@@ -26,7 +23,7 @@ const cloudServices = [
   },
   {
     provider: "Google Cloud Platform (GCP)",
-    logo: Google_logo,
+    logo: "/assets/Google-Cloud-Logo.png",
     services: [
       { name: "Google Kubernetes Engine (GKE)", description: "Managed Kubernetes." },
       { name: "Cloud Run", description: "Serverless containers." },

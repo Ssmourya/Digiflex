@@ -1,5 +1,4 @@
 import React from "react";
-import bg9 from "@/@/public/assets/bg9.png"; // Correct image path
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
 import Paragrph from "@/Layout/Paragraph"
@@ -14,7 +13,7 @@ export default function Website5() {
         {/* Left side - Image showcasing website development */}
         <div className="p-6 border rounded-lg flex flex-col items-center">
           <img
-            src={bg9}
+            src='/assets/bg9.png'
             alt="Website Development Services"
             className="w-full h-auto rounded-md"
           />

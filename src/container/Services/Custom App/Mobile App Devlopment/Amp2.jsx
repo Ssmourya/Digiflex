@@ -2,9 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Robo from "@/assets/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection-b.png";
-import Rob from "@/assets/business-risk-concept-illustration-b.png";
-import difi from "@/assets/bg11.png";
 import { Shield, Users, FileCheck, Clock } from "lucide-react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -48,7 +45,7 @@ const Amp2 = () => {
               whileHover={{ scale: 1.05 }}
             >
               <img
-                src={Robo}
+                src="/assets/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection-b.png"
                 alt="Mobile App Security"
                 className="w-full max-w-xl object-contain"
               />

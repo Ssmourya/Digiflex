@@ -2,7 +2,7 @@ import React from 'react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 import Paragraph from '@/Layout/Paragraph';
-import Optimization from '@/@/public/assets/Optimization.webp';
+
 
 function OptimizationOverview() {
   return (
@@ -15,7 +15,7 @@ function OptimizationOverview() {
       
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6 ">
         <img 
-          src={Optimization} 
+          src="/assets/Optimization.webp" 
           alt="Cloud Optimization" 
           className="w-full md:w-80 h-auto max-w-full"
         />

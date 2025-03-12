@@ -356,12 +356,12 @@ export const serviceCategories = [
             {
                 icon: MessageSquareLock,
                 title: "NFT Marketplace",
-                path: "/services/blockchain/nftmarketplacedevelopment"
+                path: "/nftmarketplacedevelopment"
             },
             {
                 icon: ServerIcon,
                 title: "DeFi Development Services",
-                path: "/services/blockchain/defidevelopmentservices"
+                path: "/defidevelopmentservices"
             },
             {
                 icon: ServerIcon,

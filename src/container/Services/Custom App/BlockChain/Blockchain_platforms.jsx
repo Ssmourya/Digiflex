@@ -1,26 +1,18 @@
 import React from "react";
-import img1 from "@/assets/blockchainlogo1.png";
-import img3 from "@/assets/blockchainlogo3.png";
-import img4 from "@/assets/blockchainlogo4.png";
-import img5 from "@/assets/blockchainlogo5.png";
-import img6 from "@/assets/blockchainlogo6.png";
-import img7 from "@/assets/blockchainlogo7.png";
-import img8 from "@/assets/blockchainlogo8.png";
-import img9 from "@/assets/blockchainlogo9.png";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import Subheading from "@/Layout/Subheading";
 
 const platforms = [
-  { img: img1, name: "Ethereum" },
-  { img: img3, name: "Binance Chain" },
-  { img: img4, name: "Solana" },
-  { img: img5, name: "Hyperledger Fabric" },
-  { img: img6, name: "Polygon" },
-  { img: img7, name: "Cardano" },
-  { img: img8, name: "Tezos" },
-  { img: img9, name: "Polkadot" },
+  { img: "/assets/blockchainlogo1.png", name: "Ethereum" },
+  { img: "/assets/blockchainlogo3.png", name: "Binance Chain" },
+  { img: "/assets/blockchainlogo4.png", name: "Solana" },
+  { img: "/assets/blockchainlogo5.png", name: "Hyperledger Fabric" },
+  { img: "/assets/blockchainlogo6.png", name: "Polygon" },
+  { img: "/assets/blockchainlogo7.png", name: "Cardano" },
+  { img: "/assets/blockchainlogo8.png", name: "Tezos" },
+  { img: "/assets/blockchainlogo9.png", name: "Polkadot" },
 ];
 
 const Blockchain_platforms = () => {

@@ -1,7 +1,6 @@
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
-import Native_Advantage from "@/@/public/assets/Nativ_advantage.avif";
 
 function NativeAdvantage() {
   return (
@@ -17,7 +16,7 @@ function NativeAdvantage() {
 
         {/* Image Center */}
         <div className="flex justify-center">
-          <img src={Native_Advantage} alt="Digiflex Advantage" className="w-64 md:w-80 rounded-xl shadow-md" />
+          <img src="/assets/Nativ_advantage.avif" alt="Digiflex Advantage" className="w-64 md:w-80 rounded-xl shadow-md" />
         </div>
 
         {/* Advantages List - Right */}

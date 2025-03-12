@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import exchangesoftware from "@/@/public/assets/video2.mp4";
 
 function Intercloud_hero() {
 
@@ -29,7 +28,7 @@ function Intercloud_hero() {
                 style={{ position: "absolute", top: "0", left: "0" }}
               >
                 <source
-                  src={exchangesoftware} // Replace with your video URL
+                  src="/assets/video2.mp4" // Replace with your video URL
                   type="video/mp4"
                 />
               </video>

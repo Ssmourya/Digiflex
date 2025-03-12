@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Google_hosting from "@/@/public/assets/google_hosting.jpg";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Fontheading from "@/Layout/Fontheading";
@@ -70,7 +69,7 @@ function Google_Hosting() {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img 
-            src={Google_hosting} 
+            src="/assets/google_hosting.jpg"
             alt="Google Cloud Hosting" 
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg " 
           />

@@ -55,8 +55,8 @@ const footerLinks = {
     { name: 'Cryptocurrency App', url: '/cryptocurrency-app-development' },
     { name: 'Cryptocurrency Wallet', url: '/cryptocurrency-wallet-development' },
     { name: 'Smart Contract', url: '/smart-contract-development-services' },
-    { name: 'NFT Marketplace', url: '/services/blockchain/nftmarketplacedevelopment' },
-    { name: 'DeFi Development', url: '/services/blockchain/defidevelopmentservices' },
+    { name: 'NFT Marketplace', url: '/nftmarketplacedevelopment' },
+    { name: 'DeFi Development', url: '/defidevelopmentservices' },
     { name: 'Web3 Development', url: '/web3-development-services' }
   ],
   'GAME DEVELOPMENT': [

@@ -5,12 +5,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
-import AI_Expert from "@/@/public/assets/AI_Expert.jpg";
-import Llm_Optimization from "@/@/public/assets/Llm_Optimization.jpg";
-import AI_chatbots from "@/@/public/assets/AI_chatbots.jpg";
-import Llm_codegeneration from "@/@/public/assets/Llm_codegeneration.webp";
-import devops_Solutions from "@/@/public/assets/devops_Solutions.jpeg";
-import security from "@/@/public/assets/security.jpg";
 
 const Llm_services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,32 +13,32 @@ const Llm_services = () => {
     {
       title: "Custom LLM Training & Development",
       description: "We build AI models tailored to your industry.",
-      image: AI_Expert,
+      image: '/assets/AI_Expert.jpg',
     },
     {
       title: "Fine-Tuning & Optimization",
       description: "Enhancing pre-trained models for better accuracy.",
-      image: Llm_Optimization,
+      image: '/assets/Llm_Optimization.jpg',
     },
     {
       title: "AI-Powered Chatbots & Virtual Assistants",
       description: "Intelligent automation for customer engagement.",
-      image: AI_chatbots,
+      image:'/assets/AI_chatbots.jpg',
     },
     {
       title: "Automated Content & Code Generation",
       description: "AI-generated text, reports, and programming solutions.",
-      image: Llm_codegeneration,
+      image: '/assets/Llm_codegeneration.webp',
     },
     {
       title: "Integration & Deployment",
       description: "Seamlessly incorporating AI models into your existing systems.",
-      image: devops_Solutions,
+      image:'/assets/devops_Solutions.jpeg',
     },
     {
       title: "AI Security & Compliance",
       description: "Ensuring safe and ethical AI model deployment.",
-      image: security,
+      image: '/assets/security.jpg',
     },
   ];
 

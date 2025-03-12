@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import exchangesoftware from "@/@/public/assets/video2.mp4";
+
 
 function MigrationHero() {
   const letterRefs = useRef([]);
@@ -26,7 +26,7 @@ function MigrationHero() {
           className="object-cover w-full h-full"
           style={{ position: "absolute", top: "0", left: "0" }}
         >
-          <source src={exchangesoftware} type="video/mp4" />
+          <source src='/assets/video2.mp4' type="video/mp4" />
         </video>
       </div>
       {/* Blur Overlay */}

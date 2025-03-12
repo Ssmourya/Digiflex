@@ -2,7 +2,7 @@ import React from 'react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 import Paragraph from '@/Layout/Paragraph';
-import Aiappintroimg from '@/@/public/assets/Aiappintro.png';
+
 
 function Aiappintro() {
   return (
@@ -26,7 +26,7 @@ function Aiappintro() {
           </Paragraph>
         </div>
         <div className='flex-1'>
-          <img src={Aiappintroimg} alt='AI App Intro' className='w-full h-auto rounded-lg shadow-lg' />
+          <img src='/assets/Aiappintro.png' alt='AI App Intro' className='w-full h-auto rounded-lg shadow-lg' />
         </div>
       </div>
     </WrapperContainer>

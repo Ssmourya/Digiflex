@@ -1,4 +1,4 @@
-import Intercloud_Migration from '@/pages/Intercloud_Migration';
+import Intercloud_Migration from '@/pages/Intercloud';
 
 export default function Intercloud_MigrationPage() {
   return (

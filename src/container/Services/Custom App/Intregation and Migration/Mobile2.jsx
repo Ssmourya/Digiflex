@@ -1,9 +1,6 @@
 "use client";
 
 import React from 'react';
-import bg10 from '@/assets/bg10.png';
-import bg11 from '@/assets/bg11.png';
-import bg12 from '@/assets/bg12.jpg';
 import { motion } from 'framer-motion';
 import Heading from '@/Layout/Heading';
 import Subheading from '@/Layout/Subheading';
@@ -25,7 +22,7 @@ const Mobile2 = () => {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <div className="p-4 rounded-full inline-block mb-4">
-              <img src={bg11} alt="End-To-End Consulting Icon" />
+              <img src="/assets/bg11.png" alt="End-To-End Consulting Icon" />
             </div>
             <Subheading className="text-xl font-semibold mb-2">
               End-To-End Consulting
@@ -42,7 +39,7 @@ const Mobile2 = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <img src={bg12} alt="Center Image" className="w-full object-cover rounded-lg" />
+            <img src="/assets/bg12.jpg" alt="Center Image" className="w-full object-cover rounded-lg" />
           </motion.div>
           
           {/* Third Feature with Animation */}
@@ -53,7 +50,7 @@ const Mobile2 = () => {
             transition={{ duration: 1, delay: 0.8 }}
           >
             <div className="p-4 rounded-full inline-block mb-4">
-              <img src={bg10} alt="Automated Data Transfer Icon" />
+              <img src="@/assets/bg10.png" alt="Automated Data Transfer Icon" />
             </div>
             <Subheading className="text-xl font-semibold mb-2">
               Automated Data Transfer

@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
-import optimizationimg from "@/@/public/assets/optimizationimg.avif";
 import Paragraph from "@/Layout/Paragraph";
 import Fontheading from "@/Layout/Fontheading";
 
@@ -83,7 +82,7 @@ function OptimizationStrategies() {
 
         <div className="flex justify-center items-center w-full md:w-1/3 mt-8 md:mt-0">
           <img
-            src={optimizationimg}
+            src="/assets/Optimization.webp"
             alt="Cloud Optimization"
             className="w-full max-w-sm h-auto object-contain"
           />

@@ -3,7 +3,6 @@ import { MessageSquare, Bot, Code, Smile, Globe, FileText } from "lucide-react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
-import photo from "@/@/public/assets/LLM_intro.jpg";
 
 const data = [
   {
@@ -64,7 +63,7 @@ function Llm_intro() {
         </div>
 
         <div className="w-screen md:w-1/2 flex justify-center mt-6 md:mt-0 px-4">
-          <img src={photo} alt="LLM" className="max-w-full h-auto" />
+          <img src='/assets/LLM_intro.jpg' alt="LLM" className="max-w-full h-auto" />
         </div>
       </div>
 

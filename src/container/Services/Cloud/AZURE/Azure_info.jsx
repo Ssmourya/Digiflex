@@ -1,5 +1,4 @@
 import React from "react";
-import Azure_intro from "@/@/public/assets/Azore_intro.png"
 import Heading from "@/Layout/Heading";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Paragraph from "@/Layout/Paragraph";
@@ -9,7 +8,7 @@ function Azure_info() {
     <>
     <WrapperContainer>
       <div className="flex flex-col items-center justify-center text-center">
-        <img src={Azure_intro} alt="AZURE MICROSOFT LOGO" className="w-40" />
+        <img src="/assets/Azore_intro.png" alt="AZURE MICROSOFT LOGO" className="w-40" />
         <Heading>
           AZURE
         </Heading>

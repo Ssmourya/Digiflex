@@ -2,8 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import bg14 from "@/assets/bg14.jpg";
-import bg6 from "@/assets/bg6.png";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 
@@ -30,12 +28,12 @@ const Mobile3 = () => {
   // Updated services array with icons for each card.
   const services = [
     {
-      imgSrc: bg14,
+      imgSrc: "/assets/bg14.jpg",
       text: "Application Porting & Migration Assessment",
       icon: <RefreshCcw className="w-8 h-8 text-white" />,
     },
     {
-      imgSrc: bg6,
+      imgSrc:"/assets/bg6.png",
       text: "Application Re-engineering",
       icon: <Settings className="w-8 h-8 text-white" />,
     },
@@ -91,7 +89,7 @@ const Mobile3 = () => {
       {/* Optional Graphic */}
       <div className="flex justify-center mb-8">
         <motion.img
-          src={bg6}
+          src='/assets/bg6.png'
           alt="Mobile Graphic"
           className="w-[290px]"
           initial={{ opacity: 0, scale: 0.8 }}

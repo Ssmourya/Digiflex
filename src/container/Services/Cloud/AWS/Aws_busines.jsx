@@ -1,6 +1,4 @@
 import React from "react";
-import AWS_logo from "@/@/public/assets/AWS_logo.avif";
-import Aws_intro_img from "@/@/public/assets/Aws_intro.avif";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
@@ -22,7 +20,7 @@ function Aws_busines() {
         <Heading>Why Businesses Choose Digiflex.ai for AWS Solutions</Heading>
 
         <img
-          src={AWS_logo}
+          src="/assets/AWS_logo.avif"
           alt="AWS Cloud"
           className="w-[60px] md:w-[80px] lg:w-[100px]"
         />
@@ -38,7 +36,7 @@ function Aws_busines() {
       >
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src={Aws_intro_img}
+            src="/assets/Aws_intro.avif"
             alt="AWS Infrastructure"
             className="w-full max-w-[500px] "
           />

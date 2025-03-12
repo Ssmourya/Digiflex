@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import exchangesoftware from "@/@/public/assets/AIvideo.mp4";
+
 
 const Llm_hero = () => {
   const letterRefs = useRef([]);
@@ -27,7 +27,7 @@ const Llm_hero = () => {
           style={{ position: "absolute", top: "0", left: "0" }}
         >
           <source
-            src={exchangesoftware} // Replace with your video URL
+            src="/assets/AIvideo.mp4" // Replace with your video URL
             type="video/mp4"
           />
         </video>

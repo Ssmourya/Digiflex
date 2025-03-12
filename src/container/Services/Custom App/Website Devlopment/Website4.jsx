@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Code, Clipboard, CheckCircle, Coffee, ShoppingCart, Globe, Shield, Layers } from "lucide-react";
-import bussse from "@/@/public/assets/Busssensss.png";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
 import Paragrph from "@/Layout/Paragraph"
@@ -109,7 +108,7 @@ export default function Website4() {
             </p>
           </div>
           <div className="w-full md:w-1/2 hidden md:block">
-            <img src={bussse} alt="Business Website" className="w-full h-auto object-cover rounded-lg shadow-md" />
+            <img src='/assets/Busssensss.png' alt="Business Website" className="w-full h-auto object-cover rounded-lg shadow-md" />
           </div>
         </div>
 

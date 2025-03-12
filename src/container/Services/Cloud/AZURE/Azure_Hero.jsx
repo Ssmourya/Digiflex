@@ -1,8 +1,6 @@
 "use client";
 
   import React, { useEffect, useRef } from "react";
-  import exchangesoftware from '@/@/public/assets/video2.mp4'
-import azure from '@/@/public/assets/Microsoft-Azure-logo.png'
 
 function Azure_Hero() {
 
@@ -30,7 +28,7 @@ function Azure_Hero() {
                 style={{ position: "absolute", top: "0", left: "0" }}
               >
                 <source
-                  src={exchangesoftware} // Replace with your video URL
+                  src="/assets/video2.mp4" // Replace with your video URL
                   type="video/mp4"
                 />
               </video>
@@ -74,7 +72,7 @@ function Azure_Hero() {
                 {/* Animated Description with Glowing Effect */}
                 <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-12 animate-glow">
                 <p className="mt-2 ">A platform, offering a wide range of services for building, deploying, and managing applications through Microsoft-managed data centers. It provides solutions in computing, storage,networking, AI, machine learning, DevOps, security, and more.</p>
-          <img src={azure} alt='google cloud' className='w-1/6 text-center items-center justify-center '/>
+          <img src="/assets/Microsoft-Azure-logo.png" alt='google cloud' className='w-1/6 text-center items-center justify-center '/>
                 </p>
                 {/* Floating Orbs */}
                 {[...Array(5)].map((_, i) => (

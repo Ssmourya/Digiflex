@@ -7,7 +7,6 @@ const NftMarketplace = () => {
    <>
    <Hero/>
    <Body/>
-
    </>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
-import cloud_nativ from '@/@/public/assets/Cloud_native.png';
 import Paragraph from '@/Layout/Paragraph';
 
 function NativeIntro() {
@@ -33,7 +32,7 @@ function NativeIntro() {
 
           <div className="w-full md:w-1/2">
             <img 
-              src={cloud_nativ} 
+              src="/assets/Cloud_native.png" 
               alt="Digiflex Cloud Native Solutions" 
               className="w-full max-w-[600px] mx-auto rounded-lg shadow-md"
             />

@@ -4,25 +4,23 @@ import React, { useState } from 'react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 import Subheading from '@/Layout/Subheading';
-import IntercloudCloud from '@/@/public/assets/IntercloudCloud.avif';
-import Intercloudimg from '@/@/public/assets/Intercloudimg.avif';
-import IntercloudHybrid from '@/@/public/assets/IntercloudHybrid.avif';
+
 
 const data = [
   {
-    img: IntercloudCloud,
+    img: "/assets/IntercloudCloud.avif",
     title: "Cloud-to-Cloud Migration",
     description:
       "Digiflex.ai ensures smooth migration of applications, workloads, and data between cloud platforms like AWS and Azure, optimizing performance and cost-efficiency.",
   },
   {
-    img: Intercloudimg,
+    img: "/assets/Intercloudimg.avif",
     title: "Hybrid Cloud Migration",
     description: 
       "With Digiflex.ai, businesses can seamlessly move data between private and public clouds, ensuring security, scalability, and operational efficiency.",
   },
   {
-    img: IntercloudHybrid,
+    img: "/assets/IntercloudHybrid.avif",
     title: "Multi-Cloud Deployment",
     description:
       "Digiflex.ai enables businesses to leverage multiple cloud providers simultaneously, distributing workloads for enhanced reliability and flexibility.",

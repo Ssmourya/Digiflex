@@ -2,24 +2,11 @@ import React from 'react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 
-// Importing images
-import bcm from '@/@/public/assets/BMC_logo.jpg';
-import carbonite from '@/@/public/assets/intercloud_carbonite.png';
-import clud from '@/@/public/assets/Intercloud_cloudEndure.jpg';
-import flexera from '@/@/public/assets/intercloud_flexera.png';
-import ibm from '@/@/public/assets/intercloud_ibm.png';
-import river from '@/@/public/assets/intercloud_river.png';
-import turbon from '@/@/public/assets/intercloud_turbon.png';
-import vm from '@/@/public/assets/Intercloud_vm.webp';
-import cloud from '@/@/public/assets/Google-Cloud-Logo.png';
-import azore from '@/@/public/assets/azure-cloud-logo.png';
-import AWS_logo from '@/@/public/assets/aws-cloud-logo.png';
-
 // Array of images
 const images = [
-    cloud, azore, AWS_logo, bcm, 
-    carbonite, clud, flexera, 
-    ibm, river, turbon, vm
+    "/assets/Google-Cloud-Logo.png", "/assets/azure-cloud-logo.png", "/assets/aws-cloud-logo.png", "/assets/BMC_logo.jpg", 
+   "/assets/intercloud_carbonite.png", "/assets/Intercloud_cloudEndure.jpg", "/assets/intercloud_flexera.png", 
+    "/assets/intercloud_ibm.png","/assets/intercloud_river.png", "/assets/intercloud_turbon.png", "/assets/Intercloud_vm.webp"
 ];
 
 function Intercloudpopular() {

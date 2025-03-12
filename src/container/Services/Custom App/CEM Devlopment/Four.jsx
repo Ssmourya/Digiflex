@@ -1,6 +1,4 @@
 import React from "react";
-import bg5 from "@/assets/bg5.png";
-import bg6 from "@/assets/bg6.png"; // Added a new image
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
 import Paragraph from "@/Layout/Paragraph";
@@ -39,7 +37,7 @@ const Four = () => {
           </ul>
         </div>
         <div className="flex-1">
-          <img src={bg5} alt="Knowledge Management" className="w-full rounded-lg shadow-md mb-4" />
+          <img src='/assets/bg5.png' alt="Knowledge Management" className="w-full rounded-lg shadow-md mb-4" />
         </div>
       </div>
 
@@ -73,7 +71,7 @@ const Four = () => {
           </ul>
         </div>
         <div className="flex-1">
-          <img src={bg6} alt="Omni-Channel Engagement" className="w-full rounded-lg shadow-md mb-4" />
+          <img src='/assets/bg6.png' alt="Omni-Channel Engagement" className="w-full rounded-lg shadow-md mb-4" />
         </div>
       </div>
     </div>

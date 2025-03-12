@@ -4,45 +4,29 @@ import React from "react";
 import { ChevronLeft, ChevronRight, Menu } from "lucide-react";
 import Heading from "@/Layout/Heading";
 import { motion } from "framer-motion";
-import Hd from "@/assets/Hd.jpg";
-import Hd2 from "@/assets/Hd2.jpg";
-import Hd3 from "@/assets/Hd3.jpg";
-import Hd4 from "@/assets/Hd4.jpg";
-import Hd5 from "@/assets/Hd5.jpg";
-import Hd6 from "@/assets/Hd6.jpg";
 
-import Logo from "@/assets/Logo.jpg";
-import Logo2 from "@/assets/Logo2.jpg";
-import Logo3 from "@/assets/Logo3.jpg";
-import Logo4 from "@/assets/Logo4.jpg";
-import Logo5 from "@/assets/Logo5.jpg";
-import Logo6 from "@/assets/Logo6.jpg";
-import Logo7 from "@/assets/Logo7.jpg";
-import Logo8 from "@/assets/Logo8.jpg";
-import Logo9 from "@/assets/Logo9.jpg";
-import Logo10 from "@/assets/Logo10.jpg";
 
 import Subheading from "@/Layout/Subheading";
 
 const industries = [
-  { name: "Healthcare", image: Hd },
-  { name: "Travel & Tourism", image: Hd2 },
-  { name: "Fintech", image: Hd3 },
-  { name: "BFSI", image: Hd4 },
-  { name: "Automotive", image: Hd5 },
-  { name: "Education & eLearning", image: Hd6 },
+  { name: "Healthcare", image: "/assets/Hd.jpg" },
+  { name: "Travel & Tourism", image: "/assets/Hd2.jpg" },
+  { name: "Fintech", image: "/assets/Hd3.jpg" },
+  { name: "BFSI", image:"/assets/Hd4.jpg"},
+  { name: "Automotive", image: "/assets/Hd5.jpg" },
+  { name: "Education & eLearning", image: "/assets/Hd6.jpg" },
 ];
 
 const partners = [
-  { name: "Yale University", logo: Logo },
-  { name: "Dubai Police", logo: Logo2 },
-  { name: "Panasonic", logo: Logo3 },
-  { name: "Infosys", logo: Logo4 },
-  { name: "KIA", logo: Logo5 },
-  { name: "Eatigo", logo: Logo6 },
-  { name: "Hitachi", logo: Logo7 },
-  { name: "Orange Business Services", logo: Logo8 },
-  { name: "CSF", logo: Logo9 },
+  { name: "Yale University", logo: "/assets/Logo.jpg"},
+  { name: "Dubai Police", logo:"/assets/Logo2.jpg" },
+  { name: "Panasonic", logo: "/assets/Logo3.jpg"},
+  { name: "Infosys", logo:"/assets/Logo4.jpg"},
+  { name: "KIA", logo: "/assets/Logo5.jpg"},
+  { name: "Eatigo", logo: "/assets/Logo6.jpg" },
+  { name: "Hitachi", logo: "/assets/Logo7.jpg" },
+  { name: "Orange Business Services", logo: "/assets/Logo8.jpg" },
+  { name: "CSF", logo: "/assets/Logo9.jpg" },
   { name: "Spinny", logo: '/assets/Logo10.jpg' },
 ];
 

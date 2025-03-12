@@ -1,8 +1,4 @@
 import React from "react";
-import Azure_sca from "@/@/public/assets/Azore_sca.jpg";
-import Azore_cost from "@/@/public/assets/Azore_cost.avif";
-import Azure_security from "@/@/public/assets/Azore_security.jpg";
-import Azure_time from "@/@/public/assets/Azure_time.jpg";
 import Heading from "@/Layout/Heading";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Fontheading from "@/Layout/Fontheading";
@@ -14,7 +10,7 @@ const advantages = [
       "Digiflex.ai ensures seamless scaling of cloud resources based on business needs.",
       "Supports hybrid and multi-cloud environments for optimized performance.",
     ],
-    image: Azure_sca,
+    image: "/assets/Azore_sca.jpg",
   },
   {
     title: "Cost-Effective Cloud Solutions",
@@ -22,7 +18,7 @@ const advantages = [
       "Digiflex.ai leverages Azure’s pay-as-you-go model to minimize IT expenses.",
       "Exclusive discounts and strategic resource allocation for maximum efficiency.",
     ],
-    image: Azore_cost,
+    image:"/assets/Azore_cost.avif",
   },
   {
     title: "Enterprise-Grade Security & Compliance",
@@ -30,7 +26,7 @@ const advantages = [
       "Digiflex.ai implements advanced security measures, including multi-layer encryption and threat protection.",
       "Ensures compliance with GDPR, HIPAA, ISO, and other global standards to meet regulatory requirements.",
     ],
-    image: Azure_security,
+    image: "/assets/Azore_security.jpg",
   },
   {
     title: "Reliable Cloud Infrastructure",
@@ -38,7 +34,7 @@ const advantages = [
       "Digiflex.ai guarantees 99.99% uptime with Azure’s globally distributed data centers.",
       "Automated backups and disaster recovery solutions to safeguard critical data.",
     ],
-    image: Azure_time,
+    image: "/assets/Azure_time.jpg",
   },
 ];
 

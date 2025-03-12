@@ -1,46 +1,35 @@
 import React from "react";
-import Azure_computer from '@/@/public/assets/Azore_Computer.png';
-import Azure_storage from '@/@/public/assets/Azore_storage.webp';
-import Azure_network from "@/@/public/assets/Azore_network.png";
-import Azure_learning from '@/@/public/assets/Azore_learning.jpg';
-import Azure_security from '@/@/public/assets/Azore_security.png';
 import Heading from "@/Layout/Heading";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Subheading from "@/Layout/Subheading";
 
 const services = [
   {
-    icon: Azure_computer,
+    icon: "/assets/Azore_Computer.png",
     title: "Compute Services",
     brief: "Virtual Machines (VMs), App Services, AKS",
     details: "Azure provides scalable compute resources with Virtual Machines, Kubernetes, and App Services for hosting .",
   },
   {
-    icon: Azure_storage,
+    icon: "/assets/Azore_storage.webp",
     title: "Storage Services",
     brief: "Blob Storage, Azure Files, Data Lake",
     details: "Reliable cloud storage solutions including Blob Storage for unstructured data, Azure Files for file storage, and Data Lake for big data analytics.",
   },
   {
-    icon: Azure_network,
+    icon: "/assets/Azore_network.png",
     title: "Networking",
     brief: "Virtual Networks (VNet), Load Balancers, ExpressRoute",
     details: "Connect and secure cloud applications using Azure Virtual Networks, Load Balancers for traffic management, and ExpressRoute for private connections.",
   },
   {
-    icon: Azure_storage,
-    title: "Database Services",
-    brief: "Azure SQL Database, Cosmos DB, PostgreSQL, MySQL",
-    details: "Fully managed database services supporting SQL and NoSQL options like Cosmos DB, PostgreSQL, MySQL, and scalable Azure SQL Database.",
-  },
-  {
-    icon: Azure_learning,
+    icon: "/assets/Azore_learning.jpg",
     title: "AI & Machine Learning",
     brief: "Cognitive Services, Azure Machine Learning",
     details: "Enhance applications with AI capabilities using Cognitive Services for vision, speech, and language processing, and Azure ML for model training.",
   },
   {
-    icon: Azure_security,
+    icon: "/assets/Azore_security.png",
     title: "Security & Identity",
     brief: "Azure Active Directory (AAD), Key Vault, Security Center",
     details: "Secure access and identity management with Azure AD, store secrets safely in Key Vault, and protect resources using Security Center.",

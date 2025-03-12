@@ -1,4 +1,5 @@
-"use client"
+"use client" 
+ import Image from 'next/image';
 
 import React from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -64,11 +65,11 @@ function App() {
             
             {/* Image Section */}
             <div className="lg:w-1/2">
-              <img 
-                src="https://html.designingmedia.com/artelligence/assets/images/choose-image.png"
+              <Image 
+                src="https://html.designingmedia.com/artelligence/assets/images/choose-image.png" width={500} height={300}
                 alt="AI Technology Visualization"
                 className="rounded-lg"
-              />
+               priority={false} />
             </div>
           </div>
         </div>

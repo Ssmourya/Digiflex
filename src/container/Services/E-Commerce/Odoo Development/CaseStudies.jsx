@@ -1,6 +1,6 @@
-"use client";
-
-import React, { useState } from "react";
+"use client" 
+import Image from "next/image";
+ import React, { useState } from "react";
 import { FaTags, FaArrowRight } from "react-icons/fa";
 
 // Import images
@@ -126,10 +126,11 @@ const CaseStudies = () => {
               >
                 {/* Image with Overlay */}
                 <div className="relative overflow-hidden h-56">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+                    priority={false}
                   />
                   <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 text-xs font-semibold rounded-md transition-all duration-300 ease-in-out">
                     {project.category}

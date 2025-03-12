@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -19,26 +20,38 @@ const KnowledgeSection = () => {
             AI-Powered Knowledge Base
           </Subheading>
           <Paragraph>
-            Provide instant access to relevant knowledge articles, FAQs, and troubleshooting 
-            guides, enabling both customers and support agents to resolve issues efficiently. 
-            Reduce service request volumes by offering self-service solutions through an 
-            intelligent AI-driven knowledge management system.
+            Provide instant access to relevant knowledge articles, FAQs, and
+            troubleshooting guides, enabling both customers and support agents
+            to resolve issues efficiently. Reduce service request volumes by
+            offering self-service solutions through an intelligent AI-driven
+            knowledge management system.
           </Paragraph>
         </div>
         <ul className="list-none space-y-2 text-center md:text-left">
-          <li className="text-base text-blue-600">Real-Time AI Article Recommendations</li>
-          <li className="text-base text-blue-600">Generative AI-Powered Search Insights</li>
-          <li className="text-base text-blue-600">Seamless Integration with Chatbots & Support Portals</li>
-          <li className="text-base text-blue-600">Automated Content Curation & Updates</li>
+          <li className="text-base text-blue-600">
+            Real-Time AI Article Recommendations
+          </li>
+          <li className="text-base text-blue-600">
+            Generative AI-Powered Search Insights
+          </li>
+          <li className="text-base text-blue-600">
+            Seamless Integration with Chatbots & Support Portals
+          </li>
+          <li className="text-base text-blue-600">
+            Automated Content Curation & Updates
+          </li>
         </ul>
       </div>
 
       {/* Knowledge Right Section */}
       <div className="flex-1 flex justify-center">
-        <img
+        <Image
           src="https://blog.darwinbox.com/hubfs/HR%20Tech%20Implementation.jpg"
+          width={500}
+          height={300}
           alt="AI-Driven Knowledge Management"
           className="w-full max-w-md rounded-lg shadow-lg"
+          priority={false}
         />
       </div>
     </div>

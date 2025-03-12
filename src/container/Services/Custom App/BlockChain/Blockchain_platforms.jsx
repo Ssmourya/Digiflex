@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -18,37 +19,42 @@ const platforms = [
 const Blockchain_platforms = () => {
   return (
     <WrapperContainer>
-    <div className="">
+      <div className="">
+        <h1>
+          <Heading>
+            Blockchain Development Platforms <br /> We Support ...
+          </Heading>
+        </h1>
 
-      <h1>
-      <Heading>
-        Blockchain Development Platforms <br /> We Support ...
-        </Heading>
-      </h1>
-
-      <Paragraph>
-      <p className="text-center">
-        Blockchain development platforms provide the tools, frameworks, and
-        environments developers need to build decentralized applications (DApps),
-        smart contracts, and blockchain networks. Here's a detailed overview of
-        popular platforms that support blockchain development and their key features.
-      </p>
+        <Paragraph>
+          <p className="text-center">
+            Blockchain development platforms provide the tools, frameworks, and
+            environments developers need to build decentralized applications
+            (DApps), smart contracts, and blockchain networks. Here's a detailed
+            overview of popular platforms that support blockchain development
+            and their key features.
+          </p>
         </Paragraph>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 px-10">
-        {platforms.map((platform, index) => (
-          <div
-            key={index}
-            className="border border-gray-300 p-5 rounded-xl shadow-md hover:shadow-xl transform transition-all duration-300 ease-in-out hover:scale-105"
-          >
-            <img src={platform.img} alt={platform.name} className="w-24 h-24 object-contain mx-auto" />
-            <Subheading>
-            <p className="text-lg font-semibold mt-3">{platform.name}</p>
-            </Subheading>
-          </div>
-        ))}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 px-10">
+          {platforms.map((platform, index) => (
+            <div
+              key={index}
+              className="border border-gray-300 p-5 rounded-xl shadow-md hover:shadow-xl transform transition-all duration-300 ease-in-out hover:scale-105"
+            >
+              <Image
+                src={platform.img}
+                alt={platform.name}
+                className="w-24 h-24 object-contain mx-auto"
+                priority={false}
+              />
+              <Subheading>
+                <p className="text-lg font-semibold mt-3">{platform.name}</p>
+              </Subheading>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </WrapperContainer>
   );
 };

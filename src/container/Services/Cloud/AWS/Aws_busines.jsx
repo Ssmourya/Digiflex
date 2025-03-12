@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -19,14 +20,20 @@ function Aws_busines() {
       <div className="flex flex-col items-center text-center">
         <Heading>Why Businesses Choose Digiflex.ai for AWS Solutions</Heading>
 
-        <img
+        <Image
           src="/assets/AWS_logo.avif"
+          width={500}
+          height={300}
           alt="AWS Cloud"
           className="w-[60px] md:w-[80px] lg:w-[100px]"
+          priority={false}
         />
 
         <Subheading>
-          Digiflex.ai utilizes AWS to deliver scalable, secure, and cost-effective cloud solutions, helping businesses optimize operations, enhance security, and drive innovation with advanced cloud infrastructure.
+          Digiflex.ai utilizes AWS to deliver scalable, secure, and
+          cost-effective cloud solutions, helping businesses optimize
+          operations, enhance security, and drive innovation with advanced cloud
+          infrastructure.
         </Subheading>
       </div>
 
@@ -35,10 +42,13 @@ function Aws_busines() {
                       mt-8 md:mt-5 px-4 md:px-8"
       >
         <div className="w-full lg:w-1/2 flex justify-center">
-          <img
+          <Image
             src="/assets/Aws_intro.avif"
+            width={500}
+            height={300}
             alt="AWS Infrastructure"
             className="w-full max-w-[500px] "
+            priority={false}
           />
         </div>
 

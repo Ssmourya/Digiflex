@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -8,36 +8,42 @@ import Paragraph from "@/Layout/Paragraph";
 import Subheading from "@/Layout/Subheading";
 
 const odooFeatures = [
-  { 
-    title: "Customization & Modules", 
-    content: "Odoo allows extensive customization with modular architecture. Businesses can develop custom modules to meet specific needs, including CRM, accounting, HR, and more.",
-    image: "/assets/Modules.jpg"
+  {
+    title: "Customization & Modules",
+    content:
+      "Odoo allows extensive customization with modular architecture. Businesses can develop custom modules to meet specific needs, including CRM, accounting, HR, and more.",
+    image: "/assets/Modules.jpg",
   },
-  { 
-    title: "E-commerce & POS", 
-    content: "Odoo integrates seamlessly with e-commerce platforms and POS systems, enabling businesses to manage sales, inventory, and customer data efficiently.",
-    image: "/assets/ecommerceImg.jpg"
+  {
+    title: "E-commerce & POS",
+    content:
+      "Odoo integrates seamlessly with e-commerce platforms and POS systems, enabling businesses to manage sales, inventory, and customer data efficiently.",
+    image: "/assets/ecommerceImg.jpg",
   },
-  { 
-    title: "Accounting & Finance", 
-    content: "Odoo's built-in accounting features automate financial reporting, invoicing, and tax compliance, making financial management easier for businesses.",
-    image: "/assets/Accounting_Finance.jpg"
+  {
+    title: "Accounting & Finance",
+    content:
+      "Odoo's built-in accounting features automate financial reporting, invoicing, and tax compliance, making financial management easier for businesses.",
+    image: "/assets/Accounting_Finance.jpg",
   },
-  { 
-    title: "Inventory & Supply Chain", 
-    content: "Odoo offers real-time inventory tracking, warehouse management, and automated stock replenishment to streamline supply chain operations.",
-    image: "/assets/Inventory_Supply_Chain.jpg"
+  {
+    title: "Inventory & Supply Chain",
+    content:
+      "Odoo offers real-time inventory tracking, warehouse management, and automated stock replenishment to streamline supply chain operations.",
+    image: "/assets/Inventory_Supply_Chain.jpg",
   },
-  { 
-    title: "Project Management", 
-    content: "Odoo's project management tools help businesses track tasks, collaborate with teams, and manage deadlines with Kanban and Gantt chart views.",
-    image: "/assets/Project_Management.jpg"
+  {
+    title: "Project Management",
+    content:
+      "Odoo's project management tools help businesses track tasks, collaborate with teams, and manage deadlines with Kanban and Gantt chart views.",
+    image: "/assets/Project_Management.jpg",
   },
-  { 
-    title: "Security & Scalability", 
-    content: "Odoo ensures data security with encryption, access control, and cloud scalability, making it suitable for businesses of all sizes.",
-    image: "/assets/Security_Scalability.jpg"
-  }
+  {
+    title: "Security & Scalability",
+    content:
+      "Odoo ensures data security with encryption, access control, and cloud scalability, making it suitable for businesses of all sizes.",
+    image: "/assets/Security_Scalability.jpg",
+  },
 ];
 
 const OdooDevelopment = () => {
@@ -48,12 +54,11 @@ const OdooDevelopment = () => {
       <section className="w-full bg-gradient-to-b from-gray-50 to-white py-0 px-0">
         <div className="max-w-6xl mx-auto text-center">
           {/* Header */}
-          <Heading>
-            Odoo Development & Features
-          </Heading>
+          <Heading>Odoo Development & Features</Heading>
           <div className="w-24 h-1 bg-blue-600 mx-auto my-4"></div>
           <Paragraph className="text-center">
-            Discover how Odoo’s modular system can revolutionize your business processes with seamless integrations and powerful automation.
+            Discover how Odoo’s modular system can revolutionize your business
+            processes with seamless integrations and powerful automation.
           </Paragraph>
         </div>
 
@@ -89,20 +94,17 @@ const OdooDevelopment = () => {
             >
               {/* Image - Full Visibility without Cropping */}
               <div className="w-full mb-6 flex justify-center">
-                <img 
-                  src={odooFeatures[activeIndex].image} 
-                  alt={odooFeatures[activeIndex].title} 
+                <Image
+                  src={odooFeatures[activeIndex].image}
+                  alt={odooFeatures[activeIndex].title}
                   className="w-full max-h-80 object-contain rounded-lg shadow-md"
+                  priority={false}
                 />
               </div>
 
               {/* Title & Description */}
-              <Subheading >
-                {odooFeatures[activeIndex].title}
-              </Subheading>
-              <Paragraph >
-                {odooFeatures[activeIndex].content}
-              </Paragraph>
+              <Subheading>{odooFeatures[activeIndex].title}</Subheading>
+              <Paragraph>{odooFeatures[activeIndex].content}</Paragraph>
             </motion.div>
           </div>
         </div>

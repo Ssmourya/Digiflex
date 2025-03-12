@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -26,18 +27,27 @@ const Four = () => {
               AI-Powered Knowledge Base
             </Subheading>
             <Paragraph>
-              Empower your service teams with AI-driven knowledge management. 
-              Reduce resolution times and enhance customer interactions with instant access to contextual, relevant information.  
-              Leverage real-time insights to improve agent productivity and customer satisfaction.
+              Empower your service teams with AI-driven knowledge management.
+              Reduce resolution times and enhance customer interactions with
+              instant access to contextual, relevant information. Leverage
+              real-time insights to improve agent productivity and customer
+              satisfaction.
             </Paragraph>
           </div>
           <ul className="list-none p-0 text-center md:text-left">
             <li className="text-blue-600 text-base mb-2">AI-Powered Search</li>
-            <li className="text-blue-600 text-base mb-2">Smart Content Suggestions</li>
+            <li className="text-blue-600 text-base mb-2">
+              Smart Content Suggestions
+            </li>
           </ul>
         </div>
         <div className="flex-1">
-          <img src='/assets/bg5.png' alt="Knowledge Management" className="w-full rounded-lg shadow-md mb-4" />
+          <Image
+            src="/assets/bg5.png"
+            alt="Knowledge Management"
+            className="w-full rounded-lg shadow-md mb-4"
+            priority={false}
+          />
         </div>
       </div>
 
@@ -61,17 +71,28 @@ const Four = () => {
               Unified Communication Across Channels
             </Subheading>
             <Paragraph>
-              Deliver seamless customer support across voice, chat, email, and social channels.  
-              Our omni-channel engagement solution ensures personalized, context-aware interactions, reducing friction and improving customer experience.
+              Deliver seamless customer support across voice, chat, email, and
+              social channels. Our omni-channel engagement solution ensures
+              personalized, context-aware interactions, reducing friction and
+              improving customer experience.
             </Paragraph>
           </div>
           <ul className="list-none p-0 text-center md:text-left">
-            <li className="text-blue-600 text-base mb-2">Automated Response Suggestions</li>
-            <li className="text-blue-600 text-base mb-2">Real-Time Agent Collaboration</li>
+            <li className="text-blue-600 text-base mb-2">
+              Automated Response Suggestions
+            </li>
+            <li className="text-blue-600 text-base mb-2">
+              Real-Time Agent Collaboration
+            </li>
           </ul>
         </div>
         <div className="flex-1">
-          <img src='/assets/bg6.png' alt="Omni-Channel Engagement" className="w-full rounded-lg shadow-md mb-4" />
+          <Image
+            src="/assets/bg6.png"
+            alt="Omni-Channel Engagement"
+            className="w-full rounded-lg shadow-md mb-4"
+            priority={false}
+          />
         </div>
       </div>
     </div>

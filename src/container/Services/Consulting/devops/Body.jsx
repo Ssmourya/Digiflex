@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import DevOpsProcess from "./DevOpsProcess";
 import DevOpsSolutions from "./DevOpsSolutions";
@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 
 import WrapperContainer from "@/Layout/WrapperContainer";
 import FAQ from "./FAQ";
-
 
 function Body() {
   return (
@@ -46,11 +45,12 @@ function Body() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <img
-              src='/assets/devops2.png'
+            <Image
+              src="/assets/devops2.png"
               alt="DevOps Illustration"
               className="w-full h-auto 
               transition-transform duration-300 transform hover:scale-105"
+              priority={false}
             />
           </motion.div>
         </div>
@@ -69,8 +69,7 @@ function Body() {
       <IndustriesSection />
 
       {/* FAQ Section */}
-      <FAQ/>
-
+      <FAQ />
     </div>
   );
 }

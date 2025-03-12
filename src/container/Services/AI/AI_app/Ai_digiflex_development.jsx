@@ -1,7 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
-
 
 const data = [
   {
@@ -9,28 +9,28 @@ const data = [
     number: "01",
     description:
       "We specialize in AI-driven solutions that redefine business processes.",
-    image: '/assets/AI_First.webp',
+    image: "/assets/AI_First.webp",
   },
   {
     title: "Expert Team",
     number: "02",
     description:
       "Our AI engineers, developers, and data scientists bring years of expertise in building AI-powered applications.",
-    image:'/assets/AI_Expert.jpg',
+    image: "/assets/AI_Expert.jpg",
   },
   {
     title: "Cutting-Edge Technologies",
     number: "03",
     description:
       "We leverage TensorFlow, PyTorch, OpenAI, GPT models, and advanced AI frameworks.",
-    image: '/assets/AI_Cutting-Edge.jpeg',
+    image: "/assets/AI_Cutting-Edge.jpeg",
   },
   {
     title: "Scalable & Secure Solutions",
     number: "04",
     description:
       "We build apps that are robust, secure, and designed for future scalability. ",
-    image: '/assets/AI_Scable.jpg',
+    image: "/assets/AI_Scable.jpg",
   },
 ];
 
@@ -44,10 +44,11 @@ const Card = ({ title, number, description, image }) => {
         </span>
       </div>
       <div className="relative mb-4">
-        <img
+        <Image
           src={image}
           alt={title}
           className="mt-5 w-full h-52 rounded-lg object-cover"
+          priority={false}
         />
       </div>
       <p className="text-gray-600 text-sm md:text-base">{description}</p>

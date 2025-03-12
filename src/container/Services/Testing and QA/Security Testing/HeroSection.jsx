@@ -1,23 +1,25 @@
+import Image from "next/image";
 import React from "react";
-import HeroPageForAll from '@/components/HeroPageForAll';
+import HeroPageForAll from "@/components/HeroPageForAll";
 
 const HeroSection = () => {
+  const data = {
+    image: "/assets/perfo_test_and_sol.jpeg",
+    title: "AI-Driven Software Quality - Precision and Excellence",
+    description:
+      "We help you revolutionize your quality journey with AI-powered assurance and engineering—quick releases, minimized errors, and elevated user experiences.",
+  };
 
-    const data = {
-        image : "/assets/perfo_test_and_sol.jpeg",
-        title: "AI-Driven Software Quality - Precision and Excellence",
-        description : "We help you revolutionize your quality journey with AI-powered assurance and engineering—quick releases, minimized errors, and elevated user experiences.",
-    }
-
-    return (
-        <HeroPageForAll title={data.title} image={data.image} description={data.description}/>
-    );
+  return (
+    <HeroPageForAll
+      title={data.title}
+      image={data.image}
+      description={data.description}
+    />
+  );
 };
 
 export default HeroSection;
-
-
-
 
 // import React from "react";
 // import perfo_test_and_sol from "@/assets/perfo_test_and_sol.jpeg";
@@ -33,7 +35,7 @@ export default HeroSection;
 //                         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
 //                             Redefining Software Quality using AI — <br /> Engineering Excellence, <br /> Assuring Accuracy
 //                         </h1>
-                        
+
 //                         <p className="text-lg md:text-xl text-gray-300 mb-8">
 //                             We help you revolutionize your quality journey with AI-powered assurance and engineering—quick releases, minimized errors, and elevated user experiences.
 //                         </p>
@@ -45,11 +47,11 @@ export default HeroSection;
 
 //                     {/* Right image */}
 //                     <div className="relative h-full w-full hidden lg:block">
-//                         <img 
-//                             src={perfo_test_and_sol} 
-//                             alt="Performance Testing" 
+//                         <Image
+//                             src={perfo_test_and_sol}
+//                             alt="Performance Testing"
 //                             className="object-cover w-full rounded-md"
-//                         />
+//                         priority={false} />
 //                     </div>
 //                 </div>
 //             </div>

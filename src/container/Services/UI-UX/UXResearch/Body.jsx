@@ -1,6 +1,6 @@
-"use client";
-
-import { React, useState } from "react";
+"use client" 
+import Image from "next/image";
+ import { React, useState } from "react";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -105,10 +105,13 @@ const ServicesHero = () => {
             {/* Right Image */}
             <div className="w-full mt-1 lg:mt-0">
               <div className="relative w-full h-full flex justify-center lg:justify-center">
-                <img
+                <Image
                   src="/assets/uxreasearch43.jpg"
+                  width={500}
+                  height={300}
                   alt="UX Research Illustration"
                   className="w-full max-w-[500px] lg:max-w-none object-center"
+                  priority={false}
                 />
               </div>
             </div>
@@ -354,10 +357,11 @@ const ServicesHero = () => {
                         cursor-pointer group my-6"
               >
                 <div className="flex flex-col h-full">
-                  <img
+                  <Image
                     src={tool.logo || "/placeholder.svg"}
                     alt={`${tool.name} Logo`}
                     className="h-8 w-auto mb-6 object-contain"
+                    priority={false}
                   />
                   <p className="text-[#1a1a1a] leading-relaxed flex-grow">
                     {tool.description}

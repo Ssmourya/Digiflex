@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -62,7 +63,12 @@ const WhyDigiflex = () => {
 const ServiceCard = ({ image, icon, title, description }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <img src={image} alt={title} className="w-full h-40 object-cover" />
+      <Image
+        src={image}
+        alt={title}
+        className="w-full h-40 object-cover"
+        priority={false}
+      />
       <div className="p-6">
         <div className="flex items-center mb-4">
           <span className="text-4xl mr-4">{icon}</span>

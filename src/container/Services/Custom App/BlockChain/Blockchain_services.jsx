@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { logoData } from "./Data";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -16,10 +17,13 @@ const Blockchain_services = () => {
         <div className="flex flex-col md:flex-row items-center mt-10 gap-10">
           {/* Image Section */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img
+            <Image
               src="/assets/blockchain.jpg"
+              width={500}
+              height={300}
               alt="Blockchain"
               className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl rounded-lg "
+              priority={false}
             />
           </div>
 
@@ -31,7 +35,12 @@ const Blockchain_services = () => {
                   key={index}
                   className="flex items-center p-3 bg-white hover:shadow-lg transition duration-500 rounded-lg border border-gray-200"
                 >
-                  <img src={item.img} alt={item.data} className="w-10 h-10" />
+                  <Image
+                    src={item.img}
+                    alt={item.data}
+                    className="w-10 h-10"
+                    priority={false}
+                  />
                   <p className="ml-4 text-lg sm:text-xl text-gray-700 font-medium">
                     {item.data}
                   </p>

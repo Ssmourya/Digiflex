@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { carddata } from "./Data";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -31,10 +32,11 @@ const Blockchain_application_development = () => {
             key={index}
             className="bg-white border border-gray-200 rounded-xl w-full max-w-sm h-[320px] p-6 shadow-lg hover:shadow-xl transform transition-all duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
           >
-            <img
+            <Image
               src={item.img}
               alt={item.name}
               className="w-20 h-20 mx-auto mb-4"
+              priority={false}
             />
             <Subheading>
               <p className="text-xl font-semibold text-center">{item.name}</p>

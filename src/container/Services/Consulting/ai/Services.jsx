@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -46,11 +47,11 @@ function Services({ services, activeService, setActiveService }) {
               }`}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-black/50" />
-              <img
+              <Image
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover"
-              />
+               priority={false} />
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <h4 className="text-2xl font-bold text-white mb-2">
                   {service.title}

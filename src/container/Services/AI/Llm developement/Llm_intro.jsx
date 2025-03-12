@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { MessageSquare, Bot, Code, Smile, Globe, FileText } from "lucide-react";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -63,7 +64,12 @@ function Llm_intro() {
         </div>
 
         <div className="w-screen md:w-1/2 flex justify-center mt-6 md:mt-0 px-4">
-          <img src='/assets/LLM_intro.jpg' alt="LLM" className="max-w-full h-auto" />
+          <Image
+            src="/assets/LLM_intro.jpg"
+            alt="LLM"
+            className="max-w-full h-auto"
+            priority={false}
+          />
         </div>
       </div>
 

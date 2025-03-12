@@ -1,25 +1,27 @@
 "use client";
-
-import React from 'react';
-import { motion } from 'framer-motion';
-import HeroPageForAll from '@/components/HeroPageForAll';
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
+import HeroPageForAll from "@/components/HeroPageForAll";
 
 const Hero = () => {
-    
-    const data = {
-        image: "/assets/company_logo_2.jpg",
-        title: "Creative and Minimal IT Agency",
-        description: "Digiflex AI excels in turning your concept into realities with its comprehensive application and web development services, which let you easily incorporate special characteristics and technology that complement your business strategy.",
-    };
+  const data = {
+    image: "/assets/company_logo_2.jpg",
+    title: "Creative and Minimal IT Agency",
+    description:
+      "Digiflex AI excels in turning your concept into realities with its comprehensive application and web development services, which let you easily incorporate special characteristics and technology that complement your business strategy.",
+  };
 
-    return (
-        <HeroPageForAll title={data.title} image={data.image} description={data.description}/>
-    );
+  return (
+    <HeroPageForAll
+      title={data.title}
+      image={data.image}
+      description={data.description}
+    />
+  );
 };
 
 export default Hero;
-
-
 
 // import React from 'react';
 // import { motion } from 'framer-motion';
@@ -61,9 +63,8 @@ export default Hero;
 //                                 application and web development services, which let you easily incorporate special
 //                                 characteristics and technology that complement your business strategy.
 //                             </motion.p>
-                            
-//                         </motion.div>
 
+//                         </motion.div>
 
 //                         <motion.div
 //                             initial={{ opacity: 0, y: 30 }}
@@ -72,13 +73,13 @@ export default Hero;
 //                             transition={{ duration: 1.2, ease: "easeOut" }}
 //                             className="overflow-hidden"
 //                         >
-//                             <img src="/assets/company_logo_2.jpg" width={"550px"} alt="Company Logo" loading="lazy" className="rounded-md shadow-lg" />
+//                             <Image src="/assets/company_logo_2.jpg" width={500} height={300} width={"550px"} alt="Company Logo" loading="lazy" className="rounded-md shadow-lg" priority={false} />
 //                         </motion.div>
 
 //                     </motion.div>
-                    
+
 //                 </motion.div>
-                
+
 //                 {/* Stats */}
 //                 <motion.div
 //                     initial={{ opacity: 0 }}
@@ -95,14 +96,14 @@ export default Hero;
 //                         <p className="text-2xl font-bold">200,100</p>
 //                         <p className="text-white">Participants</p>
 //                     </motion.div>
-                    
+
 //                     <motion.div whileHover={{ scale: 1.1 }} className="text-center">
 //                         <p className="text-2xl font-bold">$1 billion+</p>
 //                         <p className="text-white">Total Assets Connected</p>
 //                     </motion.div>
-                    
+
 //                 </motion.div>
-        
+
 //             </div>
 
 //         </div>

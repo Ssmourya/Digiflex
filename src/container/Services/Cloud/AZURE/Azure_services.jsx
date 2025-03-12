@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -18,7 +19,7 @@ const advantages = [
       "Digiflex.ai leverages Azure’s pay-as-you-go model to minimize IT expenses.",
       "Exclusive discounts and strategic resource allocation for maximum efficiency.",
     ],
-    image:"/assets/Azore_cost.avif",
+    image: "/assets/Azore_cost.avif",
   },
   {
     title: "Enterprise-Grade Security & Compliance",
@@ -65,10 +66,11 @@ function AzureServices() {
                 </div>
 
                 <div className="w-full md:w-1/2 flex justify-center">
-                  <img
+                  <Image
                     src={advantage.image}
                     alt={advantage.title}
                     className="w-[350px] h-[300px] object-cover rounded-lg"
+                    priority={false}
                   />
                 </div>
               </div>

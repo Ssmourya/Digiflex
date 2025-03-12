@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -65,9 +65,8 @@ function OptimizationStrategies() {
                 className="p-4 cursor-pointer transition-transform duration-300  hover:translate-y-2 "
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(null)}
-              ><Fontheading>
-                {strategy.title}
-                </Fontheading>
+              >
+                <Fontheading>{strategy.title}</Fontheading>
               </div>
               {activeIndex === index && (
                 <Paragraph>
@@ -81,10 +80,13 @@ function OptimizationStrategies() {
         </div>
 
         <div className="flex justify-center items-center w-full md:w-1/3 mt-8 md:mt-0">
-          <img
+          <Image
             src="/assets/Optimization.webp"
+            width={500}
+            height={300}
             alt="Cloud Optimization"
             className="w-full max-w-sm h-auto object-contain"
+            priority={false}
           />
         </div>
       </div>

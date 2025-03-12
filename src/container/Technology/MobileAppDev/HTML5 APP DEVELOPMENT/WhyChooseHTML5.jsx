@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Globe2, Rocket, Film, Search } from "lucide-react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -32,10 +33,13 @@ export default function WhyChooseHTML5() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Image Section */}
           <div className="md:w-[350px]">
-            <img
+            <Image
               src="/assets/Ghtml.png"
+              width={500}
+              height={300}
               alt="Why Choose HTML5"
               className="rounded-lg shadow-lg w-full object-cover"
+              priority={false}
             />
           </div>
           {/* Benefits Section */}

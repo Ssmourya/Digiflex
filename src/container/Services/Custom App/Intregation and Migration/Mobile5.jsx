@@ -1,11 +1,11 @@
 "use client";
+import Image from "next/image";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import Heading from '@/Layout/Heading';
-import Subheading from '@/Layout/Subheading';
-import Paragraph from '@/Layout/Paragraph';
-
+import React from "react";
+import { motion } from "framer-motion";
+import Heading from "@/Layout/Heading";
+import Subheading from "@/Layout/Subheading";
+import Paragraph from "@/Layout/Paragraph";
 
 const Mobile5 = () => {
   return (
@@ -19,7 +19,8 @@ const Mobile5 = () => {
       >
         <Heading>Integration and Migration Made Easier!!</Heading>
         <Paragraph>
-          Accelerate Your Digital Transformation with Seamless Integration & Migration.
+          Accelerate Your Digital Transformation with Seamless Integration &
+          Migration.
         </Paragraph>
       </motion.div>
 
@@ -38,10 +39,13 @@ const Mobile5 = () => {
           transition={{ duration: 1, delay: 0.7 }}
         >
           <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl">
-            <img
+            <Image
               src="https://i.pinimg.com/736x/fc/d8/31/fcd8310354601ee5a6f161324cee0ada.jpg"
+              width={500}
+              height={300}
               alt="E-learning platform"
               className="w-full h-full object-cover"
+              priority={false}
             />
           </div>
         </motion.div>
@@ -54,13 +58,17 @@ const Mobile5 = () => {
           transition={{ duration: 1, delay: 0.9 }}
         >
           <Subheading>
-           Digiflex.ai Team Helped an E-learning Platform Add New Features at a Faster Pace
+            Digiflex.ai Team Helped an E-learning Platform Add New Features at a
+            Faster Pace
           </Subheading>
           <Paragraph>
-            The e-learning platform provides STEM-focused courses and tech camps for a deeper education in technology for school students. 
-            The platform is supported by education and technology experts from the Harvard Graduate School of Education and the MIT Media Lab, 
-            making it a perfect synthesis of education and STEM. Mindbowser augmented the development efforts by providing a technology team 
-            that worked directly with the CTO to accelerate development efforts.
+            The e-learning platform provides STEM-focused courses and tech camps
+            for a deeper education in technology for school students. The
+            platform is supported by education and technology experts from the
+            Harvard Graduate School of Education and the MIT Media Lab, making
+            it a perfect synthesis of education and STEM. Mindbowser augmented
+            the development efforts by providing a technology team that worked
+            directly with the CTO to accelerate development efforts.
           </Paragraph>
         </motion.div>
       </motion.div>

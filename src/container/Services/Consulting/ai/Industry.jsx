@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
@@ -150,10 +151,11 @@ export default function Industry() {
               {/* Image */}
               <div className="col-span-12 lg:col-span-6 relative group">
                 <div className="relative h-[400px] rounded-lg overflow-hidden transition-all duration-500 transform group-hover:scale-110">
-                  <img
+                  <Image
                     src={industries[activeIndustry].image}
                     alt={industries[activeIndustry].title}
                     className="w-full h-full object-cover transition-transform"
+                    priority={false}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>

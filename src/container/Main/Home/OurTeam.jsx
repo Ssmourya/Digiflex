@@ -1,3 +1,5 @@
+
+import Image from 'next/image';
 import React from 'react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 // import shubhamsir from '@/../public/assets/shubhamsir.webp'
@@ -55,11 +57,11 @@ function App() {
                   
                   {/* Image container */}
                   <div className="absolute inset-2 overflow-hidden rounded-full border-2 border-[#0099ff] group-hover:border-[#0099ff]/80 transition-colors duration-300">
-                    <img
+                    <Image
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
+                     priority={false} />
                   </div>
                 </div>
                 

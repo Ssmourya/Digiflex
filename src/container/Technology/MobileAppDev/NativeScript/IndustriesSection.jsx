@@ -1,10 +1,17 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
-import { 
-  FaHospital, FaShoppingCart, FaTaxi, FaBook, 
-  FaUniversity, FaPlane, FaBuilding, FaIndustry, 
-  FaFilm, FaDumbbell 
+import {
+  FaHospital,
+  FaShoppingCart,
+  FaTaxi,
+  FaBook,
+  FaUniversity,
+  FaPlane,
+  FaBuilding,
+  FaIndustry,
+  FaFilm,
+  FaDumbbell,
 } from "react-icons/fa";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -49,7 +56,8 @@ const industries = [
     description:
       "Mobile banking, payment solutions, investment platforms, and financial management tools with robust security features.",
     icon: <FaUniversity />,
-    image: "/assets/fintech-investment-financial-internet-technology-concept.jpg",
+    image:
+      "/assets/fintech-investment-financial-internet-technology-concept.jpg",
   },
   {
     id: 6,
@@ -101,7 +109,9 @@ export default function IndustriesSection() {
       <div className="flex flex-col md:flex-row w-full md:w-3/4 bg-white shadow-lg p-6 rounded-lg border border-gray-300">
         {/* Sidebar */}
         <div className="w-full md:w-1/4 bg-[#172554] text-white shadow-md p-4 rounded-lg mb-4 md:mb-0">
-          <h2 className="text-xl font-bold mb-4">Industries We Serve at Digiflex.ai</h2>
+          <h2 className="text-xl font-bold mb-4">
+            Industries We Serve at Digiflex.ai
+          </h2>
           <ul>
             {industries.map((industry) => (
               <li
@@ -122,10 +132,11 @@ export default function IndustriesSection() {
 
         {/* Content Area */}
         <div className="w-full md:w-3/4 flex flex-col items-center justify-center p-6">
-          <img
+          <Image
             src={selectedIndustry.image}
             alt={selectedIndustry.name}
             className="w-full md:w-1/2 rounded-lg shadow-lg mb-4 object-cover"
+            priority={false}
           />
           <div className="flex flex-col items-center">
             <Heading

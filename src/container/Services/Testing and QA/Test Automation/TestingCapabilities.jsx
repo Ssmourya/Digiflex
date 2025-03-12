@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import { CheckCircle } from "lucide-react";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -81,10 +81,13 @@ const TestingCapabilities = () => {
           <div className="flex flex-col lg:flex-row">
             {/* Image Section */}
             <div className="lg:w-1/2 relative overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                width={500}
+                height={300}
                 alt="Testing and Quality Assurance"
                 className="object-cover w-full h-full max-h-[400px] lg:max-h-none transform hover:scale-105 transition-transform duration-700"
+                priority={false}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-transparent flex items-center">
                 <h3 className="text-2xl md:text-3xl font-bold text-white px-8 max-w-xs">

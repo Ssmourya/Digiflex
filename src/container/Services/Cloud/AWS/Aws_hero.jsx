@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 function AwsHero() {
@@ -26,7 +26,7 @@ function AwsHero() {
             style={{ position: "absolute", top: "0", left: "0" }}
           >
             <source
-              src='/assets/video2.mp4' // Replace with your video URL
+              src="/assets/video2.mp4" // Replace with your video URL
               type="video/mp4"
             />
           </video>
@@ -72,10 +72,11 @@ function AwsHero() {
               AWS, A cloud computing platform offered by Amazon, providing a
               wide range of cloud services such as computing power, storage,
               databases, machine learning, security, and networking.
-              <img
-                src='/assets/AWS_logo.avif'
+              <Image
+                src="/assets/AWS_logo.avif"
                 alt="AWS logo"
                 className="w-1/6 mx-auto flex justify-center items-center"
+                priority={false}
               />
             </p>
             {/* Floating Orbs */}

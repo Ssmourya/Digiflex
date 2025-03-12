@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -10,22 +11,18 @@ import Paragraph from "@/Layout/Paragraph";
 const Amp2 = () => {
   const features = [
     {
-     
       icon: <Shield className="w-8 h-8 text-blue-600" />,
       text: "Secure and Scalable Mobile App Solutions",
     },
     {
-      
       icon: <Users className="w-8 h-8 text-blue-600" />,
       text: "Experienced Team with Deep Industry Knowledge",
     },
     {
-     
       icon: <FileCheck className="w-8 h-8 text-blue-600" />,
       text: "Custom Mobile Applications Tailored to Your Business Needs",
     },
     {
-     
       icon: <Clock className="w-8 h-8 text-blue-600" />,
       text: "Timely Delivery and Ongoing Support",
     },
@@ -33,7 +30,6 @@ const Amp2 = () => {
 
   return (
     <>
-      
       <div className="min-h-[60vh] w-full bg-white flex items-center justify-center">
         <div className="container mx-auto px-4 py-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2">
@@ -44,10 +40,13 @@ const Amp2 = () => {
               transition={{ duration: 0.8 }}
               whileHover={{ scale: 1.05 }}
             >
-              <img
+              <Image
                 src="/assets/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection-b.png"
+                width={500}
+                height={300}
                 alt="Mobile App Security"
                 className="w-full max-w-xl object-contain"
+                priority={false}
               />
             </motion.div>
             <motion.div
@@ -59,7 +58,10 @@ const Amp2 = () => {
             >
               <Heading>Mobile App Security</Heading>
               <p className="text-lg text-gray-700 mb-4">
-                At <span className="font-bold text-[#172554]">Digiflex.ai</span>, we prioritize mobile app security by implementing advanced encryption protocols, secure authentication mechanisms, and strict compliance with industry standards.
+                At <span className="font-bold text-[#172554]">Digiflex.ai</span>
+                , we prioritize mobile app security by implementing advanced
+                encryption protocols, secure authentication mechanisms, and
+                strict compliance with industry standards.
               </p>
               <div className="space-y-6">
                 {features.map((feature, index) => (
@@ -73,7 +75,6 @@ const Amp2 = () => {
                   >
                     <div className="mt-1">{feature.icon}</div>
                     <Paragraph>{feature.text}</Paragraph>
-                   
                   </motion.div>
                 ))}
               </div>
@@ -81,9 +82,6 @@ const Amp2 = () => {
           </div>
         </div>
       </div>
-
-     
-     
     </>
   );
 };

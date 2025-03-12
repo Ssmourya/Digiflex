@@ -1,19 +1,37 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Heading from "@/Layout/Heading"; 
+import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Subheading from "@/Layout/Subheading";
 
 const optimizations = [
-  { title: "Enable Full-Page Caching", description: "Reduces server load and speeds up page rendering." },
-  { title: "Use a Fast Hosting Provider", description: "Choose a reliable and high-performance hosting service." },
-  { title: "Optimize Images", description: "Compress images to reduce loading time without compromising quality." },
-  { title: "Minify CSS, JavaScript, and HTML", description: "Remove unnecessary spaces and comments to enhance performance." },
-  { title: "Use a Content Delivery Network (CDN)", description: "Distribute content across multiple servers to speed up delivery." }
+  {
+    title: "Enable Full-Page Caching",
+    description: "Reduces server load and speeds up page rendering.",
+  },
+  {
+    title: "Use a Fast Hosting Provider",
+    description: "Choose a reliable and high-performance hosting service.",
+  },
+  {
+    title: "Optimize Images",
+    description:
+      "Compress images to reduce loading time without compromising quality.",
+  },
+  {
+    title: "Minify CSS, JavaScript, and HTML",
+    description:
+      "Remove unnecessary spaces and comments to enhance performance.",
+  },
+  {
+    title: "Use a Content Delivery Network (CDN)",
+    description:
+      "Distribute content across multiple servers to speed up delivery.",
+  },
 ];
 
 const MagentoBoost = () => {
@@ -23,11 +41,12 @@ const MagentoBoost = () => {
       <div className="text-center max-w-6xl mx-auto px-6 sm:px-12 py-0">
         <Heading>Boost Your Magento Performance</Heading>
         <Paragraph className="max-w-4xl mx-auto mt-4">
-          Enhance your Magento store’s speed and efficiency using these essential optimization techniques.
+          Enhance your Magento store’s speed and efficiency using these
+          essential optimization techniques.
         </Paragraph>
       </div>
 
-      <motion.div 
+      <motion.div
         className="max-w-6xl mx-auto px-6 sm:px-12 py-0 flex flex-col md:flex-row items-center gap-10"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -56,16 +75,19 @@ const MagentoBoost = () => {
         </div>
 
         {/* Right Side - Image */}
-        <motion.div 
+        <motion.div
           className="w-full md:w-1/2 flex justify-center"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <img 
+          <Image
             src="/assets/Magento_perfomance.jpg"
-            alt="Magento Performance Boost" 
+            width={500}
+            height={300}
+            alt="Magento Performance Boost"
             className="w-full max-w-md rounded-lg shadow-lg"
+            priority={false}
           />
         </motion.div>
       </motion.div>

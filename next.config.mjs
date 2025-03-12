@@ -8,7 +8,4 @@ const nextConfig = {
     "slick-carousel",
     "gsap"
   ],
-  images: {
-    unoptimized: true,
-  },
 };

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 
@@ -10,10 +11,13 @@ const SmartFeatures = () => {
           <div className="relative">
             <div className="w-full h-full flex items-center justify-center">
               {/* Replace with your larger image or 3D character */}
-              <img
+              <Image
                 src="https://i.pinimg.com/736x/97/4f/0f/974f0f681a608d5e60806a8473a3756e.jpg"
+                width={500}
+                height={300}
                 alt="3D Character"
                 className="max-w-full max-h-[400px] object-contain"
+                priority={false}
               />
             </div>
           </div>
@@ -21,12 +25,7 @@ const SmartFeatures = () => {
 
         {/* Right Section */}
         <div className="md:w-1/2 p-8 flex flex-col justify-center">
-
-          <Heading>
-          
-            Smart Android App Features We Offer
-         
-          </Heading>
+          <Heading>Smart Android App Features We Offer</Heading>
           <p className="text-gray-700 text-lg mb-8">
             We offer cutting-edge features tailored to enhance user engagement
             and business growth.
@@ -63,7 +62,8 @@ const SmartFeatures = () => {
             <li className="flex items-start">
               <span className="text-[#1A2E6F] font-bold text-2xl mr-4">📡</span>
               <p className="text-lg text-gray-800">
-                <strong>IoT Connectivity:</strong> Smart home automation & device control.
+                <strong>IoT Connectivity:</strong> Smart home automation &
+                device control.
               </p>
             </li>
           </ul>

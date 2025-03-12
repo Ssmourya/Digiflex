@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Check } from "lucide-react";
 import Heading from "@/Layout/Heading";
@@ -56,10 +57,13 @@ function Futuresection() {
 
           {/* Right Section (Image) */}
           <div className="flex justify-center">
-            <img
+            <Image
               src="https://www.maxiomtech.com/wp-content/uploads/2024/10/mobile_app_development_image_hero-1536x1245.png"
+              width={500}
+              height={300}
               alt="Mobile Development"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg drop-shadow-lg transition-transform duration-300 transform hover:scale-105"
+              priority={false}
             />
           </div>
         </div>

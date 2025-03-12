@@ -1,10 +1,9 @@
 "use client";
-
-import React, { useState } from 'react';
-import WrapperContainer from '@/Layout/WrapperContainer';
-import Heading from '@/Layout/Heading';
-import Subheading from '@/Layout/Subheading';
-
+import Image from "next/image";
+import React, { useState } from "react";
+import WrapperContainer from "@/Layout/WrapperContainer";
+import Heading from "@/Layout/Heading";
+import Subheading from "@/Layout/Subheading";
 
 const data = [
   {
@@ -16,7 +15,7 @@ const data = [
   {
     img: "/assets/Intercloudimg.avif",
     title: "Hybrid Cloud Migration",
-    description: 
+    description:
       "With Digiflex.ai, businesses can seamlessly move data between private and public clouds, ensuring security, scalability, and operational efficiency.",
   },
   {
@@ -32,14 +31,14 @@ function IntercloudType() {
 
   return (
     <WrapperContainer>
-      <Heading>
-        Intercloud Migration Services by Digiflex.ai
-      </Heading>
+      <Heading>Intercloud Migration Services by Digiflex.ai</Heading>
       <Subheading>
         <p className="text-center ">
-          Digiflex.ai provides cutting-edge intercloud migration solutions to help businesses optimize their cloud strategy efficiently and securely.
+          Digiflex.ai provides cutting-edge intercloud migration solutions to
+          help businesses optimize their cloud strategy efficiently and
+          securely.
         </p>
-        </Subheading>
+      </Subheading>
       <div className="flex flex-wrap justify-center gap-6 pt-5">
         {data.map((item, index) => (
           <div
@@ -48,14 +47,25 @@ function IntercloudType() {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <img src={item.img} alt={item.title} className="w-full h-40 object-cover rounded-md" />
-            <h2 className="text-lg font-semibold mt-2 text-center">{item.title}</h2>
+            <Image
+              src={item.img}
+              alt={item.title}
+              className="w-full h-40 object-cover rounded-md"
+              priority={false}
+            />
+            <h2 className="text-lg font-semibold mt-2 text-center">
+              {item.title}
+            </h2>
             <div
               className={`absolute top-0 left-0 w-full h-full bg-white p-4 flex items-center justify-center text-center transition-transform duration-500 ease-in-out rounded-lg shadow-lg ${
-                hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+                hoveredIndex === index
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-full opacity-0"
               }`}
             >
-              <h2 className="text-lg font-semibold mt-2 pr-2 text-center">{item.title}</h2>
+              <h2 className="text-lg font-semibold mt-2 pr-2 text-center">
+                {item.title}
+              </h2>
               <p className="text-sm text-gray-700">{item.description}</p>
             </div>
           </div>

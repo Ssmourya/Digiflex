@@ -1,7 +1,8 @@
+import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
-import Paragrph from "@/Layout/Paragraph"
+import Paragrph from "@/Layout/Paragraph";
 export default function Website5() {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto">
@@ -12,13 +13,18 @@ export default function Website5() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left side - Image showcasing website development */}
         <div className="p-6 border rounded-lg flex flex-col items-center">
-          <img
-            src='/assets/bg9.png'
+          <Image
+            src="/assets/bg9.png"
             alt="Website Development Services"
             className="w-full h-auto rounded-md"
+            priority={false}
           />
           <Paragrph>
-            At Digiflex.ai, we specialize in creating high-performance websites tailored to your business needs. Whether you need a sleek corporate website, a feature-rich e-commerce platform, or a custom web application, our expert developers ensure seamless user experiences and cutting-edge design.
+            At Digiflex.ai, we specialize in creating high-performance websites
+            tailored to your business needs. Whether you need a sleek corporate
+            website, a feature-rich e-commerce platform, or a custom web
+            application, our expert developers ensure seamless user experiences
+            and cutting-edge design.
           </Paragrph>
         </div>
 
@@ -40,7 +46,7 @@ export default function Website5() {
                 description:
                   "Ideal for small and medium enterprises. This package includes up to 10 pages, optimized for conversions, lead generation, and mobile responsiveness.",
               },
-             
+
               {
                 title: "Website Maintenance & Support",
                 description:
@@ -53,9 +59,7 @@ export default function Website5() {
               },
             ].map((service, index) => (
               <div key={index} className="space-y-2">
-                <Subheading>
-                  {service.title}
-                </Subheading>
+                <Subheading>{service.title}</Subheading>
                 <Paragrph>{service.description}</Paragrph>
               </div>
             ))}

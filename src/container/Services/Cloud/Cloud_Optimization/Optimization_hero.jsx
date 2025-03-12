@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 function OptimizationHero() {
@@ -65,15 +65,21 @@ function OptimizationHero() {
           </p>
 
           <div className="flex justify-center items-center gap-6 flex-wrap mt-5">
-            <img
+            <Image
               src="/assets/Azore_intro.png"
+              width={500}
+              height={300}
               alt="Azure intro"
               className="w-32 md:w-40 lg:w-52"
+              priority={false}
             />
-            <img
+            <Image
               src="/assets/Google-Cloud-Logo.png"
+              width={500}
+              height={300}
               alt="Google Cloud Logo"
               className="w-32 md:w-40 lg:w-52"
+              priority={false}
             />
           </div>
         </div>

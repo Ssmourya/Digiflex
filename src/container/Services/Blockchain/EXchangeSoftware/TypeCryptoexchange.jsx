@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -70,7 +70,8 @@ function AiAppServices() {
 
         <Paragraph>
           <div className="text-center">
-          Crypto exchange development includes centralized, decentralized, hybrid, and P2P models.
+            Crypto exchange development includes centralized, decentralized,
+            hybrid, and P2P models.
           </div>
         </Paragraph>
 
@@ -85,10 +86,11 @@ function AiAppServices() {
             transition={{ duration: 0.5 }}
             className="w-full md:w-1/2 h-[300px] md:h-[500px] overflow-hidden"
           >
-            <img
+            <Image
               src={services[currentSlide].image}
               alt={services[currentSlide].title}
               className="w-full h-full object-cover"
+              priority={false}
             />
           </motion.div>
 

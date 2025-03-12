@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Subheading from "@/Layout/Subheading";
@@ -60,10 +61,9 @@ const Amp5 = () => {
     <section className="bg-white py-16">
       <div className="container px-4 mx-auto">
         {/* Main Heading */}
-        
+
         <Heading> Web and Mobile App Development</Heading>
-         
- 
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
@@ -72,10 +72,11 @@ const Amp5 = () => {
             >
               {/* Image Section */}
               <div className="w-full aspect-[16/9] bg-gray-200 rounded-xl overflow-hidden">
-                <img
+                <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.imageAlt}
                   className="object-cover w-full h-full"
+                  priority={false}
                 />
               </div>
 

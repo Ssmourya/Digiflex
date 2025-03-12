@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/libs/utlis";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -40,7 +40,12 @@ const values = [
   },
 ];
 
-const categories = ["Trust & Community", "Passion", "Quality & Simplicity", "Employee Wellness"];
+const categories = [
+  "Trust & Community",
+  "Passion",
+  "Quality & Simplicity",
+  "Employee Wellness",
+];
 
 export default function OurValues() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +56,9 @@ export default function OurValues() {
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-5">
           Our <span className="text-blue-700">Values</span>
         </h1>
-        <Paragraph>Rooted in trust, driven by innovation, and united by purpose.</Paragraph>
+        <Paragraph>
+          Rooted in trust, driven by innovation, and united by purpose.
+        </Paragraph>
         <div className="relative min-h-[300px] flex items-center p-8 md:p-10">
           {/* Navigation Dots */}
           <div className="absolute left-4 top-1/2 -translate-y-1/2 flex flex-col gap-2">
@@ -61,7 +68,9 @@ export default function OurValues() {
                 onClick={() => setCurrentIndex(index)}
                 className={cn(
                   "w-2 h-2 rounded-full transition-all duration-300",
-                  currentIndex === index ? "bg-blue-600 scale-150" : "bg-gray-300"
+                  currentIndex === index
+                    ? "bg-blue-600 scale-150"
+                    : "bg-gray-300"
                 )}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -77,12 +86,11 @@ export default function OurValues() {
 
             {/* Image */}
             <div className="relative w-full max-w-md mx-auto rounded-2xl overflow-hidden">
-              <img
+              <Image
                 src={values[currentIndex].image || "/placeholder.svg"}
                 alt={values[currentIndex].title}
                 className="object-cover w-full h-auto"
-                priority
-              />
+                priority={false}/>
             </div>
 
             {/* Description */}
@@ -100,7 +108,9 @@ export default function OurValues() {
               onClick={() => setCurrentIndex(index)}
               className={cn(
                 "text-sm cursor-pointer transition-all duration-300",
-                currentIndex === index ? "text-blue-600 font-medium" : "text-gray-500 hover:text-blue-600"
+                currentIndex === index
+                  ? "text-blue-600 font-medium"
+                  : "text-gray-500 hover:text-blue-600"
               )}
             >
               {category}

@@ -1,73 +1,83 @@
-import React from 'react';
-import { Lightbulb, MessageSquare, CheckCircle, Diamond } from 'lucide-react';
-import { Code, Users, Layout, Smartphone, Video, Box } from 'lucide-react';
-import Heading from '@/Layout/Heading';
-import Paragraph from '@/Layout/Paragraph';
-import WrapperContainer from "@/Layout/WrapperContainer"
-import SubHeading from "@/Layout/Subheading"
+import Image from "next/image";
+import React from "react";
+import { Lightbulb, MessageSquare, CheckCircle, Diamond } from "lucide-react";
+import { Code, Users, Layout, Smartphone, Video, Box } from "lucide-react";
+import Heading from "@/Layout/Heading";
+import Paragraph from "@/Layout/Paragraph";
+import WrapperContainer from "@/Layout/WrapperContainer";
+import SubHeading from "@/Layout/Subheading";
 import { ProductDesignFAQData } from "../FAQData";
 import Faq from "@/components/Faq";
 
-
-// section 1 
+// section 1
 const services = [
-    {
-      title: 'Consumer & Enterprise Software',
-      icon: <Code className="w-8 h-8 text-blue-500" />,
-      description: 'End-to-end software solutions for businesses and consumers'
-    },
-    {
-      title: 'User Research & Testing',
-      icon: <Users className="w-8 h-8 text-blue-500" />,
-      description: 'Deep insights into user behavior and preferences'
-    },
-    {
-      title: 'CX, UX & Interaction Design',
-      icon: <Layout className="w-8 h-8 text-blue-500" />,
-      description: 'Creating seamless and intuitive user experiences'
-    },
-    {
-      title: 'UI Design',
-      icon: <Smartphone className="w-8 h-8 text-blue-500" />,
-      description: 'Beautiful and functional interface designs'
-    },
-    {
-      title: 'Motion Design',
-      icon: <Video className="w-8 h-8 text-blue-500" />,
-      description: 'Engaging animations and interactive elements'
-    },
-    {
-      title: 'Design Systems',
-      icon: <Box className="w-8 h-8 text-blue-500" />,
-      description: 'Scalable and consistent design frameworks'
-    }
-  ];
+  {
+    title: "Consumer & Enterprise Software",
+    icon: <Code className="w-8 h-8 text-blue-500" />,
+    description: "End-to-end software solutions for businesses and consumers",
+  },
+  {
+    title: "User Research & Testing",
+    icon: <Users className="w-8 h-8 text-blue-500" />,
+    description: "Deep insights into user behavior and preferences",
+  },
+  {
+    title: "CX, UX & Interaction Design",
+    icon: <Layout className="w-8 h-8 text-blue-500" />,
+    description: "Creating seamless and intuitive user experiences",
+  },
+  {
+    title: "UI Design",
+    icon: <Smartphone className="w-8 h-8 text-blue-500" />,
+    description: "Beautiful and functional interface designs",
+  },
+  {
+    title: "Motion Design",
+    icon: <Video className="w-8 h-8 text-blue-500" />,
+    description: "Engaging animations and interactive elements",
+  },
+  {
+    title: "Design Systems",
+    icon: <Box className="w-8 h-8 text-blue-500" />,
+    description: "Scalable and consistent design frameworks",
+  },
+];
 
 //section 3
 const features = [
-    {
-      icon: <Lightbulb className="w-8 h-8 text-blue-500 transform transition-transform duration-300 hover:scale-125 animate-pulse" />,
-      title: "Innovation Partners",
-      description: "We're collaborators in your success. We bring fresh perspectives, cutting-edge technology, and a commitment to pushing boundaries, transforming your vision into groundbreaking solutions"
-    },
-    {
-      icon: <MessageSquare className="w-8 h-8 text-yellow-500 transform transition-transform duration-300 hover:scale-125 animate-bounce" />,
-      title: "We're Humans",
-      description: "Being a good listener makes it all easier. Our consulting team will hear your pain areas, aspirations, and needs. This helps craft solutions that resonate with your brand and goals."
-    },
-    {
-      icon: <CheckCircle className="w-8 h-8 text-emerald-500 transform transition-transform duration-300 hover:rotate-180" />,
-      title: "People's Choice",
-      description: "Our clients choose us because we don't just deliver software—we deliver success, turning challenges into opportunities and visions into reality. We're trusted globally for excellence in innovation."
-    },
-    {
-      icon: <Diamond className="w-8 h-8 text-purple-500 transform transition-transform duration-300 hover:scale-125 animate-spin" />,
-      title: "Deliver Value for $",
-      description: "Excellence doesn't have to come with a hefty price tag—just the right partner. With us, every dollar invested brings you closer to success, ensuring high-quality results without breaking the bank."
-    }
+  {
+    icon: (
+      <Lightbulb className="w-8 h-8 text-blue-500 transform transition-transform duration-300 hover:scale-125 animate-pulse" />
+    ),
+    title: "Innovation Partners",
+    description:
+      "We're collaborators in your success. We bring fresh perspectives, cutting-edge technology, and a commitment to pushing boundaries, transforming your vision into groundbreaking solutions",
+  },
+  {
+    icon: (
+      <MessageSquare className="w-8 h-8 text-yellow-500 transform transition-transform duration-300 hover:scale-125 animate-bounce" />
+    ),
+    title: "We're Humans",
+    description:
+      "Being a good listener makes it all easier. Our consulting team will hear your pain areas, aspirations, and needs. This helps craft solutions that resonate with your brand and goals.",
+  },
+  {
+    icon: (
+      <CheckCircle className="w-8 h-8 text-emerald-500 transform transition-transform duration-300 hover:rotate-180" />
+    ),
+    title: "People's Choice",
+    description:
+      "Our clients choose us because we don't just deliver software—we deliver success, turning challenges into opportunities and visions into reality. We're trusted globally for excellence in innovation.",
+  },
+  {
+    icon: (
+      <Diamond className="w-8 h-8 text-purple-500 transform transition-transform duration-300 hover:scale-125 animate-spin" />
+    ),
+    title: "Deliver Value for $",
+    description:
+      "Excellence doesn't have to come with a hefty price tag—just the right partner. With us, every dollar invested brings you closer to success, ensuring high-quality results without breaking the bank.",
+  },
 ];
-
-
 
 const DigitalProducts = () => {
   return (
@@ -185,10 +195,13 @@ const DigitalProducts = () => {
 
               {/* Right Image */}
               <div className="flex-1 w-full">
-                <img
+                <Image
                   src="/assets/productdesign32.png"
+                  width={500}
+                  height={300}
                   alt="Website Design Preview"
                   className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  priority={false}
                 />
               </div>
             </div>
@@ -250,10 +263,13 @@ const DigitalProducts = () => {
 
               {/* Right Image */}
               <div className="flex-1 w-full">
-                <img
+                <Image
                   src="/assets/productdesign33.png"
+                  width={500}
+                  height={300}
                   alt="Website Design Preview"
                   className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  priority={false}
                 />
               </div>
             </div>
@@ -310,10 +326,13 @@ const DigitalProducts = () => {
 
               {/* Right Image */}
               <div className="flex-1 w-full">
-                <img
+                <Image
                   src="/assets/productdesign34.png"
+                  width={500}
+                  height={300}
                   alt="Website Design Preview"
                   className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  priority={false}
                 />
               </div>
             </div>

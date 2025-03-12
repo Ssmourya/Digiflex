@@ -1,10 +1,20 @@
 "use client";
+import Image from "next/image";
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaRobot, FaBrain, FaLock, FaCloud, FaMicrochip, FaCubes, FaEye, FaNetworkWired } from "react-icons/fa";
+import {
+  FaRobot,
+  FaBrain,
+  FaLock,
+  FaCloud,
+  FaMicrochip,
+  FaCubes,
+  FaEye,
+  FaNetworkWired,
+} from "react-icons/fa";
 import "tailwindcss/tailwind.css";
-import WrapperContainer from '../../../Layout/WrapperContainer'
+import WrapperContainer from "../../../Layout/WrapperContainer";
 
 const images1 = [
   "https://i.pinimg.com/736x/ae/5f/c6/ae5fc66ea21871dd7aa620e7109f048d.jpg",
@@ -21,14 +31,47 @@ const images2 = [
 ];
 
 const technologies = [
-  { name: "Artificial Intelligence", description: "AI powers automation, chatbots, and smart assistants.", icon: <FaRobot /> },
-  { name: "Machine Learning", description: "ML enables systems to learn and improve from data.", icon: <FaBrain /> },
-  { name: "Blockchain", description: "Decentralized and secure technology for digital transactions.", icon: <FaCubes /> },
-  { name: "Cybersecurity", description: "Protecting digital assets from cyber threats.", icon: <FaLock /> },
-  { name: "Cloud Computing", description: "Scalable and flexible storage solutions.", icon: <FaCloud /> },
-  { name: "IoT (Internet of Things)", description: "Connecting smart devices for automation.", icon: <FaNetworkWired /> },
-  { name: "Quantum Computing", description: "Next-gen computing for complex problem-solving.", icon: <FaMicrochip /> },
-  { name: "AR/VR (Augmented & Virtual Reality)", description: "Immersive digital experiences.", icon: <FaEye /> },
+  {
+    name: "Artificial Intelligence",
+    description: "AI powers automation, chatbots, and smart assistants.",
+    icon: <FaRobot />,
+  },
+  {
+    name: "Machine Learning",
+    description: "ML enables systems to learn and improve from data.",
+    icon: <FaBrain />,
+  },
+  {
+    name: "Blockchain",
+    description:
+      "Decentralized and secure technology for digital transactions.",
+    icon: <FaCubes />,
+  },
+  {
+    name: "Cybersecurity",
+    description: "Protecting digital assets from cyber threats.",
+    icon: <FaLock />,
+  },
+  {
+    name: "Cloud Computing",
+    description: "Scalable and flexible storage solutions.",
+    icon: <FaCloud />,
+  },
+  {
+    name: "IoT (Internet of Things)",
+    description: "Connecting smart devices for automation.",
+    icon: <FaNetworkWired />,
+  },
+  {
+    name: "Quantum Computing",
+    description: "Next-gen computing for complex problem-solving.",
+    icon: <FaMicrochip />,
+  },
+  {
+    name: "AR/VR (Augmented & Virtual Reality)",
+    description: "Immersive digital experiences.",
+    icon: <FaEye />,
+  },
 ];
 
 const Marquee = ({ images, direction }) => {
@@ -40,11 +83,12 @@ const Marquee = ({ images, direction }) => {
         className="flex flex-col gap-4"
       >
         {images.concat(images).map((img, index) => (
-          <img
+          <Image
             key={index}
             src={img}
             alt="Marquee Image"
             className="w-full h-[130px] md:h-[140px] lg:h-[150px] object-cover rounded-lg shadow-lg"
+            priority={false}
           />
         ))}
       </motion.div>
@@ -63,7 +107,9 @@ const TechnologyCards = () => {
           <div className="text-blue-600 text-xl md:text-2xl">{tech.icon}</div>
           <div>
             <h3 className="font-bold text-base md:text-lg">{tech.name}</h3>
-            <p className="text-gray-600 text-xs md:text-sm">{tech.description}</p>
+            <p className="text-gray-600 text-xs md:text-sm">
+              {tech.description}
+            </p>
           </div>
         </div>
       ))}
@@ -74,37 +120,37 @@ const TechnologyCards = () => {
 // Custom breakpoint for iPads
 const useIpadBreakpoint = () => {
   const [isIpad, setIsIpad] = React.useState(false);
-  
+
   React.useEffect(() => {
     const checkIfIpad = () => {
       // iPad Mini is 768px width, iPad Air is 820px width in portrait mode
       const width = window.innerWidth;
       setIsIpad(width >= 768 && width <= 1024);
     };
-    
+
     checkIfIpad();
-    window.addEventListener('resize', checkIfIpad);
-    return () => window.removeEventListener('resize', checkIfIpad);
+    window.addEventListener("resize", checkIfIpad);
+    return () => window.removeEventListener("resize", checkIfIpad);
   }, []);
-  
+
   return isIpad;
 };
 
 const KeyFeatures = () => {
   const isIpad = useIpadBreakpoint();
-  
+
   return (
     <WrapperContainer>
       <div className="relative w-full max-w-[1400px] rounded-[2.5rem] p-0.5 overflow-hidden bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-500/20">
         {/* Animated gradient overlays */}
         <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-[250px] md:w-[300px] lg:w-[400px] h-[250px] md:h-[300px] lg:h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 left-0 w-[250px] md:w-64 lg:w-96 h-[250px] md:h-64 lg:h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2" />
+          <div className="absolute top-0 right-0 w-[250px] md:w-[300px] lg:w-[400px] h-[250px] md:h-[300px] lg:h-[400px] bg-blue-400 rounded-full filter blur-3xl opacity-30 translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 left-0 w-[250px] md:w-64 lg:w-96 h-[250px] md:h-64 lg:h-96 bg-blue-300 rounded-full filter blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2" />
         </div>
-        
+
         {/* Inner Content */}
         <div className="relative bg-white rounded-[2.4rem] p-6 md:p-8 lg:p-12 overflow-hidden">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -112,9 +158,13 @@ const KeyFeatures = () => {
           >
             Key Functions
           </motion.h2>
-          
+
           {/* iPad-specific layout adjustments */}
-          <div className={`flex ${isIpad ? 'flex-col' : 'flex-col lg:flex-row'} gap-6 md:gap-8 items-center`}>
+          <div
+            className={`flex ${
+              isIpad ? "flex-col" : "flex-col lg:flex-row"
+            } gap-6 md:gap-8 items-center`}
+          >
             <div className="flex gap-4 justify-center">
               <Marquee images={images1} direction="up" />
               <Marquee images={images2} direction="down" />

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import Image from "next/image";
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -127,10 +128,13 @@ export default function HomeTextEffect() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         {/* Background image for screens < 720px */}
-        <img
+        <Image
           className="absolute inset-0 w-full h-full object-cover md:hidden"
           src="/assets/HomeHeroBg.jpg"
+          width={500}
+          height={300}
           alt="Background"
+          priority={false}
         />
 
         <div className="w-full h-full flex justify-center items-center relative">

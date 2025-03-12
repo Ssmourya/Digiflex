@@ -1,7 +1,7 @@
 "use client";
-
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import Image from "next/image";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
@@ -46,10 +46,12 @@ const features = [
 
 const FeatureStep = ({ title, isActive, onClick }) => {
   return (
-    <motion.div 
+    <motion.div
       onClick={onClick}
       className={`cursor-pointer rounded-lg p-4 transition-colors ${
-        isActive ? 'bg-blue-50 border-2 border-blue-200' : 'bg-gray-50 hover:bg-gray-100'
+        isActive
+          ? "bg-blue-50 border-2 border-blue-200"
+          : "bg-gray-50 hover:bg-gray-100"
       }`}
       whileHover={{ scale: isActive ? 1 : 1.02 }}
     >
@@ -69,24 +71,20 @@ const FeatureContent = ({ feature }) => {
       <div>
         {/* Apply the gradient to the feature title if desired */}
         <Subheading
-        
           className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
           {feature.title}
-       
         </Subheading>
         <Paragraph
-        
           className="text-gray-600 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
           {feature.description}
-        
         </Paragraph>
       </div>
       <motion.div
@@ -95,10 +93,11 @@ const FeatureContent = ({ feature }) => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
       >
-        <img 
-          src={feature.image} 
+        <Image
+          src={feature.image}
           alt={feature.title}
           className="w-full h-full object-contain p-4"
+          priority={false}
         />
       </motion.div>
     </motion.div>
@@ -114,7 +113,7 @@ export default function WhyChooseDigiflex() {
         {/* Main Heading & Subheading */}
         <div className="text-center mb-8">
           {/* Main Heading with Gradient */}
-          
+
           <Heading
             className="text-5xl pb-6 font-bold "
             initial={{ opacity: 0, y: 20 }}
@@ -123,8 +122,8 @@ export default function WhyChooseDigiflex() {
             viewport={{ once: true }}
           >
             Why Choose Digiflex.ai For businesses ?
-            </Heading>
-         
+          </Heading>
+
           {/* Subheading with Black Text */}
           <motion.p
             className="mt-4 text-xl text-black"
@@ -136,7 +135,7 @@ export default function WhyChooseDigiflex() {
             Your trusted partner for innovative iOS solutions.
           </motion.p>
         </div>
-        
+
         {/* Feature Steps */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-6">
           {features.map((feature) => (
@@ -151,9 +150,9 @@ export default function WhyChooseDigiflex() {
 
         {/* Feature Content */}
         <AnimatePresence mode="wait">
-          <FeatureContent 
-            key={activeFeature} 
-            feature={features.find(f => f.id === activeFeature)} 
+          <FeatureContent
+            key={activeFeature}
+            feature={features.find((f) => f.id === activeFeature)}
           />
         </AnimatePresence>
       </div>

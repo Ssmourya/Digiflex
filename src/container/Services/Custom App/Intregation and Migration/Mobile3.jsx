@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -33,7 +34,7 @@ const Mobile3 = () => {
       icon: <RefreshCcw className="w-8 h-8 text-white" />,
     },
     {
-      imgSrc:"/assets/bg6.png",
+      imgSrc: "/assets/bg6.png",
       text: "Application Re-engineering",
       icon: <Settings className="w-8 h-8 text-white" />,
     },
@@ -63,33 +64,29 @@ const Mobile3 = () => {
     <div className="bg-white text-black p-8">
       {/* Section Title */}
       <Heading
-      
         className="text-center text-2xl font-bold mb-4"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         How do we achieve success in Integration Migration Services?
-      
       </Heading>
       <Paragraph
-      
         className="text-center mb-8 max-w-3xl mx-auto text-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        At Digiflex.ai, we ensure success in integration and migration services by
-        leveraging advanced tools and technologies to deliver reliable, efficient,
-        and scalable solutions. Our approach includes expertise in data migration tools,
-        seamless API integration, client-centric strategies, and a proven track record in
-        successful projects.
-      
+        At Digiflex.ai, we ensure success in integration and migration services
+        by leveraging advanced tools and technologies to deliver reliable,
+        efficient, and scalable solutions. Our approach includes expertise in
+        data migration tools, seamless API integration, client-centric
+        strategies, and a proven track record in successful projects.
       </Paragraph>
       {/* Optional Graphic */}
       <div className="flex justify-center mb-8">
         <motion.img
-          src='/assets/bg6.png'
+          src="/assets/bg6.png"
           alt="Mobile Graphic"
           className="w-[290px]"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -110,10 +107,11 @@ const Mobile3 = () => {
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           >
             {/* Background Image */}
-            <img
+            <Image
               src={service.imgSrc}
               alt={service.text}
               className="w-full h-56 object-cover"
+              priority={false}
             />
             {/* Dark Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -131,7 +129,7 @@ const Mobile3 = () => {
               <h2 className="text-lg font-bold text-white text-center">
                 {service.text}
               </h2>
-              <Paragraph >
+              <Paragraph>
                 Digiflex.ai specializes in evaluating application ecosystems for
                 seamless porting and migration.
               </Paragraph>

@@ -1,8 +1,7 @@
-import React from 'react'
-import WrapperContainer from '@/Layout/WrapperContainer';
-import Heading from '@/Layout/Heading';
-
-
+import Image from "next/image";
+import React from "react";
+import WrapperContainer from "@/Layout/WrapperContainer";
+import Heading from "@/Layout/Heading";
 
 const advantages = [
   {
@@ -31,46 +30,47 @@ const advantages = [
   },
 ];
 
-function EnterpriseAIService () {
+function EnterpriseAIService() {
   return (
     <>
-       <WrapperContainer>
+      <WrapperContainer>
         <Heading>
           <h1>Enterprise AI Chatbot Solutions by Digiflex.ai</h1>
         </Heading>
         <div className="mt-5">
-      <div className="">
-        {advantages.map((advantage, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center justify-between ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
-          >
-            {/* Text Section */}
-            <div className="w-full md:w-1/2 px-6">
-              <h2 className="text-3xl font-bold mb-4">{advantage.title}</h2>
-              <ul className="list-disc list-inside text-lg space-y-2">
-                {advantage.points.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            </div>
+          <div className="">
+            {advantages.map((advantage, index) => (
+              <div
+                key={index}
+                className={`flex flex-col md:flex-row items-center justify-between ${
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
+              >
+                {/* Text Section */}
+                <div className="w-full md:w-1/2 px-6">
+                  <h2 className="text-3xl font-bold mb-4">{advantage.title}</h2>
+                  <ul className="list-disc list-inside text-lg space-y-2">
+                    {advantage.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
 
-            <div className="w-full md:w-1/2 flex justify-center">
-              <img
-                src={advantage.image}
-                alt={advantage.title}
-                className="w-[350px] h-[300px] object-cover rounded-lg"
-              />
-            </div>
+                <div className="w-full md:w-1/2 flex justify-center">
+                  <Image
+                    src={advantage.image}
+                    alt={advantage.title}
+                    className="w-[350px] h-[300px] object-cover rounded-lg"
+                    priority={false}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
-       </WrapperContainer>
+        </div>
+      </WrapperContainer>
     </>
-  )
+  );
 }
 
-export default EnterpriseAIService
+export default EnterpriseAIService;

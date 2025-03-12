@@ -1,9 +1,9 @@
+import Image from "next/image";
 import React from "react";
 import Paragraph from "@/Layout/Paragraph";
-import WrapperContainer from "@/Layout/WrapperContainer"
+import WrapperContainer from "@/Layout/WrapperContainer";
 import { DesignTestingFAQData } from "../FAQData";
 import Faq from "@/components/Faq";
-
 
 function ComprehensiveSection() {
   return (
@@ -44,10 +44,13 @@ function ComprehensiveSection() {
 
           {/* Right Section (Image) */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <img
+            <Image
               src="https://www.lambdatest.com/resources/images/testmanager/Comprehensive-Exploratory-Testing.png"
+              width={500}
+              height={300}
               alt="Exploratory Testing"
               className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-full h-auto object-cover rounded-lg shadow-lg"
+              priority={false}
             />
           </div>
         </div>

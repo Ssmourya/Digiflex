@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -10,10 +11,11 @@ import Faq from "@/components/Faq";
 const Card = ({ image, title, description, points }) => (
   <div className="relative w-full h-56 sm:w-72 bg-black border border-green-500 text-white rounded-xl overflow-hidden shadow-2xl group transition-all duration-300 hover:scale-105">
     <div className="relative">
-      <img
+      <Image
         src={image}
         alt={title}
         className="w-full h-48 object-cover opacity-60 group-hover:opacity-90 transition-all duration-500"
+        priority={false}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
     </div>

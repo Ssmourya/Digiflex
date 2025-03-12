@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -60,10 +61,11 @@ function Technology({ technologies, activeTech, setActiveTech }) {
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <img
+                    <Image
                       src={logo.url}
                       alt={logo.name}
                       className="max-w-full max-h-full object-contain"
+                      priority={false}
                     />
                   </motion.div>
                 ))}

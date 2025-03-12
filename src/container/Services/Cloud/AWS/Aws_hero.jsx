@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import video2 from '@/@/public/assets/video2.mp4';
-import AWS_logo from "@/@/public/assets/AWS_logo.avif";
 
 function AwsHero() {
   const letterRefs = useRef([]);
@@ -28,7 +26,7 @@ function AwsHero() {
             style={{ position: "absolute", top: "0", left: "0" }}
           >
             <source
-              src={video2} // Replace with your video URL
+              src='/assets/video2.mp4' // Replace with your video URL
               type="video/mp4"
             />
           </video>
@@ -75,7 +73,7 @@ function AwsHero() {
               wide range of cloud services such as computing power, storage,
               databases, machine learning, security, and networking.
               <img
-                src={AWS_logo}
+                src='/assets/AWS_logo.avif'
                 alt="AWS logo"
                 className="w-1/6 mx-auto flex justify-center items-center"
               />

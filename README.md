@@ -21,7 +21,7 @@ To set up the Digiflex.ai project locally, follow these steps:
 
 1. Clone the repository:
  ```
-git clone https://github.com/divyanshuaaliwal/digiflex.ai.git
+git clone https://github.com/Ssmourya/Digiflex.git
 cd digiflex.ai
 ```
 

@@ -136,6 +136,9 @@ export default function IndustriesSection() {
             src={selectedIndustry.image}
             alt={selectedIndustry.name}
             className="w-full md:w-1/2 rounded-lg shadow-lg mb-4 object-cover"
+            width={500}
+            height={300}
+
             priority={false}
           />
           <div className="flex flex-col items-center">

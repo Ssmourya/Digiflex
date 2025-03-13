@@ -98,6 +98,8 @@ const FeatureContent = ({ feature }) => {
           alt={feature.title}
           className="w-full h-full object-contain p-4"
           priority={false}
+          width={500}
+          height={300}
         />
       </motion.div>
     </motion.div>

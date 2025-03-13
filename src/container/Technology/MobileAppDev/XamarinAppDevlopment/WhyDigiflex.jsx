@@ -68,6 +68,8 @@ const ServiceCard = ({ image, icon, title, description }) => {
         alt={title}
         className="w-full h-40 object-cover"
         priority={false}
+        width={500}
+        height={300}
       />
       <div className="p-6">
         <div className="flex items-center mb-4">

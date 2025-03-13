@@ -3,6 +3,7 @@ import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Paragraph from "@/Layout/Paragraph";
 import Heading from "@/Layout/Heading";
+
 const Html5DevelopmentSection = () => {
   return (
     <WrapperContainer>
@@ -23,32 +24,32 @@ const Html5DevelopmentSection = () => {
             <li>✔ Cross-platform HTML5-based mobile solutions</li>
             <li>✔ Deep expertise in related techs CSS3 and JavaScript</li>
             <li>
-              ✔ Experts in HTML5 frameworks: SproutCore, AngularJS, Ember.js &
-              PhoneGap
+              ✔ Experts in HTML5 frameworks: SproutCore, AngularJS, Ember.js & PhoneGap
             </li>
             <li>
-              ✔ In-house, front-end specialists including: BAs, UX/UI &
-              Designers
+              ✔ In-house, front-end specialists including: BAs, UX/UI & Designers
             </li>
             <li>✔ Proven track record of successful HTML5 project delivery</li>
             <li>✔ Rigorous quality assurance (QA) testing before “Go-Live”</li>
             <li>
-              ✔ Shorter development times translating to lower costs for
-              customers
+              ✔ Shorter development times translating to lower costs for customers
             </li>
           </ul>
-          <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+          <button
+            className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            aria-label="Contact us for HTML5 Development"
+          >
             Get In Touch
           </button>
         </div>
         <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
           <Image
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
+            src="/images/html5-development.jpg" // Use a local image
             width={500}
             height={300}
             alt="HTML5 Development"
             className="w-80 md:w-full"
-            priority={false}
+            priority={true} // Load faster
           />
         </div>
       </section>

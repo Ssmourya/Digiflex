@@ -61,6 +61,7 @@ export default function CaseStudiesPortfolio() {
                 className="bg-white text-blue-600 rounded-2xl shadow-lg overflow-hidden transition transform duration-300 hover:scale-105"
               >
                 <Image
+                width={100} height={100}
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"

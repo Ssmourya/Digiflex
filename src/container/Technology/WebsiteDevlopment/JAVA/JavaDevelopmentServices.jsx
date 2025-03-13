@@ -111,17 +111,17 @@ export default function JavaDevelopmentServices() {
             />
             <div className="p-8">
               <Subheading>
-                <h3>{service.title}</h3>
+                {service.title}
               </Subheading>
-              <Paragraph>
+              {/* <Paragraph> */}
                 <ul className="space-y-3">
                   {service.description.map((desc, i) => (
-                    <li key={i} className="flex items-start">
+                    <li key={i} className="flex items-start text-base text-gray-700 mb-5 text-center">
                       <FaCheckCircle className="text-blue-600 mr-3 mt-1" /> {desc}
                     </li>
                   ))}
                 </ul>
-              </Paragraph>
+              {/* </Paragraph> */}
             </div>
           </motion.div>
         ))}

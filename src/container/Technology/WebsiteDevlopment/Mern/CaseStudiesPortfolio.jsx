@@ -67,6 +67,8 @@ export default function CaseStudiesPortfolio() {
                   alt={project.title}
                   className="w-full h-48 object-cover"
                   priority={false}
+                  height={100}
+                  width={100}
                 />
                 <div className="p-6">
                   <Subheading className="text-xl text-blue-600 font-bold mb-2">

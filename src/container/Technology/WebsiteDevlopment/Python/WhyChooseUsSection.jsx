@@ -148,7 +148,9 @@ const WhyChooseUsSection = () => {
               >
                 <div className="md:flex">
                   <div className="md:w-2/5 mb-6 md:mb-0 md:pr-6">
-                    <Image
+                    <Image 
+                    height={100}
+                    width={100}
                       src={study.image}
                       alt={study.title}
                       className="rounded-lg w-full h-64 object-cover"

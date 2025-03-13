@@ -54,6 +54,8 @@ export default function DevelopmentProcess() {
                     alt={step.step}
                     className="w-32 h-32 object-cover rounded-full shadow-lg"
                     priority={false}
+                    height={100}
+                    width={100}
                   />
                   <Subheading className="mt-4 font-semibold">
                     {step.step}

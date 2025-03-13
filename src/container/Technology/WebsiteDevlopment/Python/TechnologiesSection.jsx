@@ -63,6 +63,9 @@ const TechnologiesSection = () => {
             >
               <div className="h-48 overflow-hidden relative">
                 <Image
+                
+                height={100}
+                width={100}
                   src={tech.image}
                   alt={`${tech.category} technologies`}
                   className="w-full h-full object-cover"

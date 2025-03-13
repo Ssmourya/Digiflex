@@ -66,7 +66,7 @@ const Mobile2 = () => {
           >
             <div className="p-4 rounded-full inline-block mb-4">
               <Image
-                src="@/assets/bg10.png"
+                src="/assets/bg10.png"
                 width={500}
                 height={300}
                 alt="Automated Data Transfer Icon"

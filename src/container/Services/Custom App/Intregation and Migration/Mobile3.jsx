@@ -89,6 +89,8 @@ const Mobile3 = () => {
           src="/assets/bg6.png"
           alt="Mobile Graphic"
           className="w-[290px]"
+          width={100}
+          height={100}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -110,6 +112,8 @@ const Mobile3 = () => {
             <Image
               src={service.imgSrc}
               alt={service.text}
+              width={100}
+              height={100}
               className="w-full h-56 object-cover"
               priority={false}
             />

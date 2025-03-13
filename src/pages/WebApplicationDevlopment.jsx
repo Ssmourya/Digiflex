@@ -19,7 +19,7 @@ export default function Application() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src="/public/videos/blockchain_video.mp4" type="video/mp4" />
+          <source src="/assets/blockchain_video.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}

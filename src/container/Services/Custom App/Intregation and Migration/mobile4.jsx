@@ -52,6 +52,8 @@ const Mobile4 = () => {
                     <Image
                       src={client.logo}
                       alt={`${client.name} logo`}
+                      width={100}
+                      height={100}
                       className="h-[80px] object-contain"
                       priority={false}
                     />

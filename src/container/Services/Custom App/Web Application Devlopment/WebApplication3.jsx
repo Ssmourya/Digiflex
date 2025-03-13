@@ -62,6 +62,8 @@ const WebApplication3 = () => {
                 <Image
                   src={industry.image}
                   alt={industry.name}
+                  height={100}
+                  width={100}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   priority={false}
                 />
@@ -103,6 +105,8 @@ const WebApplication3 = () => {
               <Image
                 src={partner.logo}
                 alt={partner.name}
+                height={100}
+                width={100}
                 className="max-h-16 w-auto transition-transform duration-300 hover:scale-110"
                 priority={false}
               />

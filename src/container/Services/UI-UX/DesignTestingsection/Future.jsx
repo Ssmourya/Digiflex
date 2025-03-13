@@ -27,7 +27,7 @@ function Futuresection() {
             {/* New Additional Information */}
             <div className="mt-8">
               <Heading className="font-semibold text-black text-lg sm:text-xl">
-                Ready to Scale? Let’s Take the Next Step.
+                Ready to Scale? Let's Take the Next Step.
               </Heading>
               <Paragraph className="text-gray-600 mb-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
                 We don't just offer solutions; we build partnerships that help

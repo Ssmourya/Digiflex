@@ -31,6 +31,7 @@ function Engagementsection() {
               alt="Staff Augmentation"
               className="w-full h-full object-cover"
               priority={false}
+              unoptimized={true} // Add this to bypass optimization for external images
             />
             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 backdrop-blur-md">
               <h2 className="text-white text-lg font-semibold opacity-75">
@@ -51,6 +52,7 @@ function Engagementsection() {
               alt="Fixed Price"
               className="w-full h-full object-cover"
               priority={false}
+              unoptimized={true} // Add this to bypass optimization for external images
             />
             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 backdrop-blur-md">
               <h2 className="text-white text-lg font-semibold opacity-75">
@@ -69,6 +71,7 @@ function Engagementsection() {
               alt="Fixed Price"
               className="w-full h-full object-cover"
               priority={false}
+              unoptimized={true} // Add this to bypass optimization for external images
             />
             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 backdrop-blur-md">
               <h2 className="text-white text-lg font-semibold opacity-75">

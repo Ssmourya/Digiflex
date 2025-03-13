@@ -1,6 +1,6 @@
-"use client" 
+"use client";
 import Image from "next/image";
- import { React, useState } from "react";
+import { React, useState } from "react";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -321,7 +321,7 @@ const ServicesHero = () => {
                 </h2>
               </div>
               <p className="text-gray-600 hover:text-black">
-                At DigiFlex, UX research isn’t just about collecting data—it’s
+                At DigiFlex, UX research isn't just about collecting data—it's
                 about transforming insights into action, helping businesses
                 create products that truly connect with their users.
               </p>
@@ -360,6 +360,8 @@ const ServicesHero = () => {
                   <Image
                     src={tool.logo || "/placeholder.svg"}
                     alt={`${tool.name} Logo`}
+                    width={32}
+                    height={32}
                     className="h-8 w-auto mb-6 object-contain"
                     priority={false}
                   />

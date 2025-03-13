@@ -36,11 +36,11 @@ function Aiapptransformation() {
     <div className="">
       <WrapperContainer>
         <Heading>
-          <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold">
+          <div className="text-center text-2xl md:text-3xl lg:text-4xl font-bold">
             AI App Development – The Future of Digital Transformation
-          </h1>
+          </div>
         </Heading>
-        <div >
+        <div>
           <div className="flex flex-col items-center gap-5">
             {benefits.map((benefit, index) => (
               <div
@@ -48,9 +48,9 @@ function Aiapptransformation() {
                 className="flex flex-col md:flex-row items-start md:items-center w-full max-w-4xl  border border-gray-300 rounded-lg min-h-[6rem] pl-5 "
               >
                 <Fontheading>
-                  <h1 className="w-full md:w-auto text-lg font-semibold">
+                  <div className="w-full md:w-auto text-lg font-semibold">
                     {benefit.title}
-                  </h1>
+                  </div>
                 </Fontheading>
                 <p className="text-gray-600 mt-2 md:mt-0 md:ml-4">
                   {benefit.description}

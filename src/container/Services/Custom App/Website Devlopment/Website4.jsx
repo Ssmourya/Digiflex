@@ -151,6 +151,8 @@ export default function Website4() {
             <Image
               src="/assets/Busssensss.png"
               alt="Business Website"
+              width={100}
+              height={100}
               className="w-full h-auto object-cover rounded-lg shadow-md"
               priority={false}
             />

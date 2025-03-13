@@ -10,17 +10,14 @@ const Blockchain_support = () => {
     <>
       <WrapperContainer>
         <div className="bg-white p-10 rounded-xl">
-          <Heading>
-            <h1>Blockchain Support Services</h1>
+          <Heading>Blockchain Support Services
           </Heading>
           <Paragraph>
-            <p>
               A Blockchain Support Server ensures smooth blockchain network
               operation through 24/7 monitoring, node management, security, and
               backups. It maintains uptime, optimizes scalability, and protects
               against threats. With technical assistance and regular updates, it
               ensures a stable and efficient blockchain infrastructure.
-            </p>
           </Paragraph>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8">
             {Data3.slice(0, 12).map((item, index) => (

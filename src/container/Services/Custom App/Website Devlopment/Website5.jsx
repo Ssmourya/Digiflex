@@ -17,6 +17,8 @@ export default function Website5() {
             src="/assets/bg9.png"
             alt="Website Development Services"
             className="w-full h-auto rounded-md"
+            width={100}
+            height={100}
             priority={false}
           />
           <Paragrph>

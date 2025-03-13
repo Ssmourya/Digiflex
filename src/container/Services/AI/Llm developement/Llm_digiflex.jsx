@@ -1,5 +1,11 @@
 import React from "react";
-import { BrainCircuit, Settings, ShieldCheck, RefreshCw, Layers } from "lucide-react";
+import {
+  BrainCircuit,
+  Settings,
+  ShieldCheck,
+  RefreshCw,
+  Layers,
+} from "lucide-react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Paragraph from "@/Layout/Paragraph";
@@ -8,7 +14,8 @@ const data = [
   {
     icon: <BrainCircuit size={48} className="text-blue-600" />,
     title: "AI Expertise",
-    description: "Our team of AI professionals has deep expertise in machine learning, NLP, and LLM development.",
+    description:
+      "Our team of AI professionals has deep expertise in machine learning, NLP, and LLM development.",
   },
   {
     icon: <Settings size={48} className="text-blue-600" />,
@@ -18,7 +25,8 @@ const data = [
   {
     icon: <ShieldCheck size={48} className="text-blue-600" />,
     title: "Scalability & Security",
-    description: "High-performance models with a focus on data security and compliance.",
+    description:
+      "High-performance models with a focus on data security and compliance.",
   },
   {
     icon: <RefreshCw size={48} className="text-blue-600" />,
@@ -49,10 +57,10 @@ function Llm_digiflex() {
               {item.icon}
             </div>
 
-            <h3 className="text-lg font-semibold text-blue-600">{item.title}</h3>
-            <Paragraph>
-              <p className="text-gray-600">{item.description}</p>
-            </Paragraph>
+            <h3 className="text-lg font-semibold text-blue-600">
+              {item.title}
+            </h3>
+            <div className="text-gray-600">{item.description}</div>
           </div>
         ))}
       </div>

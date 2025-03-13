@@ -47,6 +47,8 @@ const Card = ({ title, number, description, image }) => {
         <Image
           src={image}
           alt={title}
+          width={500}
+          height={300}
           className="mt-5 w-full h-52 rounded-lg object-cover"
           priority={false}
         />

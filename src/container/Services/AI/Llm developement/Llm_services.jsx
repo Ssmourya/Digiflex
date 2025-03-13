@@ -88,6 +88,8 @@ const Llm_services = () => {
                     <Image
                       src={slide.image}
                       alt={slide.title}
+                      width={400}
+                      height={192}
                       className="w-full h-full object-cover"
                       priority={false}
                     />

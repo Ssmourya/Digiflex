@@ -18,7 +18,7 @@ function Llm_work() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1>How do large language models work?</h1>
+        <div>How do large language models work?</div>
       </Heading>
       
       <div className='flex flex-col md:flex-row'>

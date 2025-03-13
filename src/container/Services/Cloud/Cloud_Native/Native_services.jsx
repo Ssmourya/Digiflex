@@ -52,17 +52,19 @@ const CloudServices = () => {
             className="border rounded-lg p-6 shadow-lg transition duration-300 ease-in-out hover:bg-blue-900 hover:text-white group"
           >
             <div className="flex justify-center mb-4">
-              <Image
-                src={provider.logo}
-                alt={provider.provider}
-                className=" h-16 object-contain"
-                priority={false}
-              />
+              {provider.logo && (
+                <Image
+                  src={provider.logo}
+                  alt={provider.provider || "Provider Logo"}
+                  width={64} // Add a fixed width
+                  height={64} // Add a fixed height
+                  className="h-16 object-contain"
+                  priority={false}
+                />
+              )}
             </div>
-            <Subheading>
-              <h2 className="text-xl font-semibold mb-4 text-center group-hover:text-white">
-                {provider.provider}
-              </h2>
+            <Subheading className="text-xl font-semibold mb-4 text-center group-hover:text-white">            
+                {provider.provider}           
             </Subheading>
             <ul>
               {provider.services.map((service, i) => (

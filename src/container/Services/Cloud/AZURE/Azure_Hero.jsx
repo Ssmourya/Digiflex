@@ -69,13 +69,11 @@ function Azure_Hero() {
 
           {/* Animated Description with Glowing Effect */}
           <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-12 animate-glow">
-            <p className="mt-2 ">
               A platform, offering a wide range of services for building,
               deploying, and managing applications through Microsoft-managed
               data centers. It provides solutions in computing,
               storage,networking, AI, machine learning, DevOps, security, and
               more.
-            </p>
             <Image
               src="/assets/Microsoft-Azure-logo.png"
               width={500}

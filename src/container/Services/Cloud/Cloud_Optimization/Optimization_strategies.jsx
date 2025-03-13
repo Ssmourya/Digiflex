@@ -69,10 +69,8 @@ function OptimizationStrategies() {
                 <Fontheading>{strategy.title}</Fontheading>
               </div>
               {activeIndex === index && (
-                <Paragraph>
-                  <div className="p-4 transition-opacity duration-300 text-xl opacity-100">
-                    {strategy.describe}
-                  </div>
+                <Paragraph className="p-4 transition-opacity duration-300 text-xl opacity-100">                 
+                    {strategy.describe}               
                 </Paragraph>
               )}
             </div>

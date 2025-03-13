@@ -45,7 +45,7 @@ function Google_Advantage() {
 
     <WrapperContainer>
       <Heading>
-        <h1>Advantage of Google Cloud</h1>
+        Advantage of Google Cloud
       </Heading>
       <div className=" pt-5 grid grid-cols-1 md:grid-cols-2  gap-6 md:gap-8 ">
         {advantages.map((item, index) => (
@@ -55,11 +55,11 @@ function Google_Advantage() {
           >
             <div className="flex items-center justify-between mb-3">
               <Subheading>
-                <h3 className="text-md md:text-lg font-medium">{item.title}</h3>
+                {item.title}
               </Subheading>
             </div>
             <Paragraph>
-              <p className="text-gray-600 text-sm md:text-base">{item.description}</p>
+              {item.description}
             </Paragraph>
           </div>
         ))}

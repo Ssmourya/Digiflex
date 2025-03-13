@@ -69,16 +69,22 @@ function AwsHero() {
 
             {/* Animated Description with Glowing Effect */}
             <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-12 animate-glow">
-              AWS, A cloud computing platform offered by Amazon, providing a
-              wide range of cloud services such as computing power, storage,
+              AWS, a cloud computing platform offered by Amazon, provides a wide
+              range of cloud services such as computing power, storage,
               databases, machine learning, security, and networking.
+            </p>
+
+            {/* ✅ Fixed Image Width & Height Issue */}
+            <div className="flex justify-center items-center">
               <Image
                 src="/assets/AWS_logo.avif"
                 alt="AWS logo"
-                className="w-1/6 mx-auto flex justify-center items-center"
+                width={150} // Adjust width as needed
+                height={100} // Adjust height as needed
                 priority={false}
               />
-            </p>
+            </div>
+
             {/* Floating Orbs */}
             {[...Array(5)].map((_, i) => (
               <div
@@ -104,4 +110,5 @@ function AwsHero() {
     </>
   );
 }
+
 export default AwsHero;

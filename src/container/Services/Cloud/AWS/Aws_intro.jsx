@@ -44,7 +44,7 @@ function Aws_intro() {
                 {/* AWS Introduction Section */}
                 
                     <Heading>
-                        <h1>About AWS Cloud Services by Digiflex.ai</h1>
+                        About AWS Cloud Services by Digiflex.ai
                     </Heading>
                     <div className='text-center'>
                        <Subheading>

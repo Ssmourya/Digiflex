@@ -31,10 +31,8 @@ function FeatureCircles() {
     <>
     <WrapperContainer>
       <div >
-      <Heading>
-        <h1>
-          Why Choose Digiflex.ai for Enterprise AI Solutions?
-        </h1>
+      <Heading>      
+          Why Choose Digiflex.ai for Enterprise AI Solutions?        
         </Heading>
         <Subheading>
         <p className="text-center">

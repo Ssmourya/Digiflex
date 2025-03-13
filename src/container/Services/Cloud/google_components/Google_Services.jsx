@@ -4,8 +4,6 @@ import { Eye, FileText, Shield, BarChart, Globe, Monitor } from "lucide-react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
-import Paragraph from "@/Layout/Paragraph";
-
 
 
 const steps = [
@@ -57,12 +55,10 @@ function Google_Services() {
         <Heading>
             Key Services of Google Cloud
         </Heading>
-      <Subheading>
-      <div>
-        <p className="text-center">
+      <Subheading className="text-center">
+      
         Digiflex.ai leverages Google Cloud's AI and data services to build scalable, secure, and high-performance solutions, driving business innovation. 
-        </p>
-      </div>
+       
         </Subheading>
         {/* Steps Section */}
         <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 pt-5">
@@ -99,14 +95,11 @@ function Google_Services() {
           </h1>
           </div>
         </Heading>
-          <Subheading>
-          <div>
-          <p className="text-center ">
+          <Subheading className="text-center ">         
           Google Cloud boasts features like scalable computing, robust storage,
           and advanced analytics, all backed by a secure, global
           infrastructure.
-        </p>
-          </div></Subheading>
+       </Subheading>
        
 
         {/* Features Grid */}
@@ -121,7 +114,7 @@ function Google_Services() {
                   {feature.icon}
                 </div>
                 <Subheading>
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                  {feature.title}
                 </Subheading>
                 <p className="text-gray-600">{feature.description}</p>
               </div>

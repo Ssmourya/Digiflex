@@ -48,9 +48,8 @@ function Google_Hosting() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1>Types of Google Cloud Hosting</h1>
+        Types of Google Cloud Hosting
       </Heading>
-
       <div className="pt-5 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
         {/* Services List */}
         <div className="w-full lg:w-1/2">
@@ -62,9 +61,7 @@ function Google_Hosting() {
               onMouseLeave={() => handleMouseLeave(index)}
             >
               {/* Service Name */}
-              <p className="border-l-4 border-[#0B57D0] pl-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold cursor-pointer">
                 <Fontheading>{service.name}</Fontheading>
-              </p>
 
               {/* Description Appears Below on Hover with Smooth Expand Animation */}
               <div

@@ -31,7 +31,7 @@ function MigrationSteps() {
     <WrapperContainer>
     <div>  
     <Heading>
-      <h1>Enterprise AI Chatbot Implementation</h1>
+      Enterprise AI Chatbot Implementation
       </Heading>
       <div className="pt-5 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl">
         {steps.map((step, index) => (
@@ -39,10 +39,8 @@ function MigrationSteps() {
             key={index}
             className="group bg-white border border-gray-200 p-6 rounded-2xl shadow-lg transition ease-in-out transform hover:bg-blue-600 duration-400 hover:scale-105"
           >
-            <Fontheading>
-            <h2 className=" mb-2 transition duration-400 ease-in-out group-hover:text-white">
+            <Fontheading className=" mb-2 transition duration-400 ease-in-out group-hover:text-white">
               {step.title}
-            </h2>
               </Fontheading>
             <p className="text-gray-700 transition duration-400 ease-in-out  group-hover:text-white">
               {step.description}

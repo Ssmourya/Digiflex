@@ -21,8 +21,8 @@ function Azure_info() {
         </div>
 
         <div>
-          <Paragraph>
-            <p className="text-center">
+          <Paragraph className="text-center">
+            
               Azure offers a comprehensive suite of cloud services that empower
               organizations to streamline operations, enhance scalability, and
               strengthen security while minimizing infrastructure costs.
@@ -33,7 +33,7 @@ function Azure_info() {
               applications and databases to advanced analytics and IoT
               solutions—Digiflex.ai enables modern digital transformation with
               cutting-edge Azure services.
-            </p>
+           
           </Paragraph>
         </div>
       </WrapperContainer>

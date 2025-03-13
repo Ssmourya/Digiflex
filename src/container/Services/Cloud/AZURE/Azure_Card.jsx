@@ -8,7 +8,7 @@ function Azure_Card() {
    <>
    <WrapperContainer>
         <Heading>
-        <p>Start Your Cloud Journey with Digiflex.ai</p>
+        Start Your Cloud Journey with Digiflex.ai
         </Heading>
    <div className="flex justify-center items-center mt-5">
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-6">

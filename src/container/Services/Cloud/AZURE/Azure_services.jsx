@@ -41,44 +41,41 @@ const advantages = [
 
 function AzureServices() {
   return (
-    <>
-      <WrapperContainer>
-        <div>
-          <Heading>
-            <h1>Advantages of Azure with Digiflex.ai</h1>
-          </Heading>
-          <div className="">
-            {advantages.map((advantage, index) => (
-              <div
-                key={index}
-                className={`flex flex-col md:flex-row items-center justify-between ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
-              >
-                {/* Text Section */}
-                <div className="w-full md:w-1/2">
-                  <Fontheading>{advantage.title}</Fontheading>
-                  <ul className="mt-5 list-disc list-inside text-lg space-y-2">
-                    {advantage.points.map((point, i) => (
-                      <li key={i}>{point}</li>
-                    ))}
-                  </ul>
-                </div>
+    <WrapperContainer>
+      <Heading>Advantages of Azure with Digiflex.ai</Heading>
+      <div className="space-y-10">
+        {advantages.map((advantage, index) => (
+          <div
+            key={index}
+            className={`flex flex-col md:flex-row items-center justify-between ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            } space-y-6 md:space-y-0`}
+          >
+            {/* Text Section */}
+            <div className="w-full md:w-1/2">
+              <Fontheading>{advantage.title}</Fontheading>
+              <ul className="mt-5 list-disc list-inside text-lg space-y-2">
+                {advantage.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
 
-                <div className="w-full md:w-1/2 flex justify-center">
-                  <Image
-                    src={advantage.image}
-                    alt={advantage.title}
-                    className="w-[350px] h-[300px] object-cover rounded-lg"
-                    priority={false}
-                  />
-                </div>
-              </div>
-            ))}
+            {/* Image Section */}
+            <div className="w-full md:w-1/2 flex justify-center">
+              <Image
+                src={advantage.image}
+                alt={advantage.title}
+                width={350} // Added required width
+                height={300} // Added required height
+                className="object-cover rounded-lg"
+                priority={false}
+              />
+            </div>
           </div>
-        </div>
-      </WrapperContainer>
-    </>
+        ))}
+      </div>
+    </WrapperContainer>
   );
 }
 

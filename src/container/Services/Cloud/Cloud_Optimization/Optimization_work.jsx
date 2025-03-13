@@ -54,7 +54,7 @@ function OptimizationWork() {
           <div key={index} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border border-gray-200 hover:scale-105 hover:shadow-lg">
             <div className="mb-4">{item.icon}</div>
             <Subheading>
-              <h2 className="mb-2">{item.title}</h2>
+              {item.title}
             </Subheading>
             <Paragraph>{item.description}</Paragraph>
           </div>

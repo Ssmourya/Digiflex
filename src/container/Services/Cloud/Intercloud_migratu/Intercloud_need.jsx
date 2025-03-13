@@ -42,7 +42,7 @@ function Intercloud_need() {
   return (
     <WrapperContainer>
       <Heading>
-        <h1>Why Choose Digiflex.ai for Intercloud Migration?</h1>
+        Why Choose Digiflex.ai for Intercloud Migration?
       </Heading>
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
             {data.map((industry, index) => (

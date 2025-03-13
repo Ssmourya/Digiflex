@@ -48,17 +48,15 @@ const AWS_services = () => {
       <WrapperContainer>
         <div className="bg-gray-100 p-5 rounded-xl ">
           <Heading>
-            <h1>Digiflex.ai AWS Cloud Services</h1>
+          Digiflex.ai AWS Cloud Services
           </Heading>
-          <Paragraph>
-            <p className=" text-center max-w-3xl mx-auto">
+          <Paragraph className="text-center mx-auto">          
               Digiflex.ai is a trusted provider of AWS-powered cloud solutions,
               helping businesses scale with cutting-edge computing, storage,
               networking, and security services. Whether you need advanced AI/ML
               capabilities, secure data management, or global cloud
               infrastructure, Digiflex.ai ensures a seamless and efficient cloud
-              transformation.
-            </p>
+              transformation.        
           </Paragraph>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8">
             {useCases.map((item, index) => (

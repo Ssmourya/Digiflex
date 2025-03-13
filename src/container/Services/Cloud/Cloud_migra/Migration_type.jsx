@@ -22,7 +22,7 @@ function AI_Strategies() {
             <WrapperContainer>
                 <div>
                     <Heading>
-                        <h1>AI Strategies by Digiflex.ai</h1>
+                        AI Strategies by Digiflex.ai
                     </Heading>
                     <Subheading className='text-center'>Explore cutting-edge AI solutions designed to revolutionize your business operations:</Subheading>
                     

@@ -44,14 +44,12 @@ function NativeFeature() {
           className="flex flex-col items-center p-6 bg-white shadow-lg rounded-2xl border border-gray-200 hover:shadow-xl transition"
         >
           {topic.icon}
-          <Subheading>
-          <h3 className="mt-4 text-lg font-semibold text-center">
-            {topic.title}
-          </h3>
+          <Subheading className="mt-4 text-lg font-semibold text-center">         
+            {topic.title}        
+          </Subheading>
           <p className="text-sm text-gray-600 text-center mt-2">
             {topic.description}
           </p>
-          </Subheading>
         </div>
       ))}
     </div>

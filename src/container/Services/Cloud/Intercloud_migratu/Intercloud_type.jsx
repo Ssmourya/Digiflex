@@ -50,9 +50,12 @@ function IntercloudType() {
             <Image
               src={item.img}
               alt={item.title}
+              width={300} 
+              height={160}
               className="w-full h-40 object-cover rounded-md"
               priority={false}
             />
+
             <h2 className="text-lg font-semibold mt-2 text-center">
               {item.title}
             </h2>

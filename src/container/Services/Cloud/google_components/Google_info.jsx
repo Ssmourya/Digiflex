@@ -17,8 +17,7 @@ function Google_info() {
               </p>
             </div>
           </Heading>
-          <Paragraph>
-            <p className="text-left mt-4 ">
+          <Paragraph className="text-left mt-4" >         
               Digiflex.ai leverages the power of Google Cloud to deliver
               cutting-edge AI app development services. With Google Cloud’s
               robust computing power, flexible storage options, advanced data
@@ -27,8 +26,7 @@ function Google_info() {
               worldwide. By utilizing the same infrastructure that powers
               Google’s own products, Digiflex.ai helps organizations build,
               deploy, and scale applications efficiently, driving innovation and
-              digital transformation.
-            </p>
+              digital transformation.           
           </Paragraph>
         </div>
 

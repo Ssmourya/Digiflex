@@ -34,6 +34,8 @@ function Intercloudpopular() {
               <Image
                 src={img}
                 alt={`Image ${index + 1}`}
+                width={300} 
+                height={160}
                 className="w-full h-full object-contain"
                 priority={false}
               />
@@ -50,8 +52,10 @@ function Intercloudpopular() {
             >
               <Image
                 src={img}
-                alt={`Image ${index + 5}`}
+                alt="img"
                 className="w-full h-full object-contain"
+                width={300} 
+                height={160}
                 priority={false}
               />
             </div>
@@ -67,7 +71,9 @@ function Intercloudpopular() {
             >
               <Image
                 src={img}
-                alt={`Image ${index + 8}`}
+                alt="img"
+                width={300} 
+                height={160}
                 className="w-full h-full object-contain"
                 priority={false}
               />

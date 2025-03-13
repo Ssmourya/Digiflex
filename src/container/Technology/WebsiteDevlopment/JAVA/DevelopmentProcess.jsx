@@ -52,6 +52,8 @@ export default function DevelopmentProcess() {
                     alt={step.step}
                     className="w-32 h-32 object-cover rounded-full shadow-lg"
                     priority={false}
+                    width={128}
+                    height={128}
                   />
                   <Paragraph>{step.step}</Paragraph>
                 </div>

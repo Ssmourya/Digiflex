@@ -19,6 +19,8 @@ const Card = ({ index, hoveredIndex, onHover, onLeave, image, title }) => {
         alt={title}
         className="w-full h-[300px] rounded-lg shadow-lg object-cover"
         priority={false}
+        width={500}
+        height={300}
       />
       <p className="font-medium text-lg text-white">{title}</p>
     </div>

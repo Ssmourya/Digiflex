@@ -128,6 +128,8 @@ const PythonServices = () => {
                     alt={service.imageAlt}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     priority={false}
+                    width={500}
+                    height={200}
                   />
                 </div>
                 <div className="p-6">

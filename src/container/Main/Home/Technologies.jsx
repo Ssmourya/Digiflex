@@ -566,6 +566,8 @@ const TechnologiesSection = () => {
                 <Image
                   src={tech.icon}
                   alt={`${tech.name} icon`}
+                  width={64}
+                  height={64}
                   className="max-w-full max-h-full object-contain"
                   priority={false}
                 />

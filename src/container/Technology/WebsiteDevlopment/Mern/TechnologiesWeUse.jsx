@@ -185,6 +185,8 @@ export default function TechnologiesWeUse() {
                       alt={item.category}
                       className="w-full h-48 object-cover"
                       priority={false}
+                      width={500}
+                      height={192}
                     />
                     <div className="absolute inset-0 bg-blue-600 opacity-25"></div>
                   </div>

@@ -168,6 +168,8 @@ function Footer() {
                     <Image
                       src={loc.flagUrl}
                       alt={loc.alt}
+                      width={40}  // Add explicit width
+                      height={24} // Add explicit height
                       className="h-6 w-10"
                       priority={false}
                     />

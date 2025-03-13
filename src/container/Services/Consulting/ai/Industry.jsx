@@ -154,6 +154,8 @@ export default function Industry() {
                   <Image
                     src={industries[activeIndustry].image}
                     alt={industries[activeIndustry].title}
+                    width={600}  // Adjust based on your design
+                    height={400} // Matches the h-[400px] container
                     className="w-full h-full object-cover transition-transform"
                     priority={false}
                   />

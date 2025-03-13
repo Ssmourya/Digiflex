@@ -55,30 +55,30 @@ export const mainNavItems = [
         hasDropdown: true,
         dropdownType: "technology",
     },
-    {
-        label: "Products",
-        href: "#",
-        hasDropdown: true,
-        dropdownType: "products",
-    },
-    {
-        label: "Industry",
-        href: "#",
-        hasDropdown: false,
-        dropdownType: "industries",
-    },
-    {
-        label: "Marketing",
-        href: "/marketing"
-    },
-    {
-        label: "Portfolio",
-        href: "/portfolio",
-    },
-    {
-        label: "Blog",
-        href: "/blog"
-    },
+    // {
+    //     label: "Products",
+    //     href: "#",
+    //     hasDropdown: true,
+    //     dropdownType: "products",
+    // },
+    // {
+    //     label: "Industry",
+    //     href: "#",
+    //     hasDropdown: false,
+    //     dropdownType: "industries",
+    // },
+    // {
+    //     label: "Marketing",
+    //     href: "/marketing"
+    // },
+    // {
+    //     label: "Portfolio",
+    //     href: "/portfolio",
+    // },
+    // {
+    //     label: "Blog",
+    //     href: "/blog"
+    // },
     {
         label: "About us",
         href: "/about-us"
@@ -475,21 +475,21 @@ export const serviceCategories = [
                 title: "Consulting Assessment",
                 path: "/salesforce-consulting-assessment"
             },
-            {
-                icon: Database,
-                title: "CRM Implementation",
-                path: "/services/salesforce/crm"
-            },
-            {
-                icon: Server,
-                title: "Salesforce Customization",
-                path: "/services/salesforce/customization"
-            },
-            {
-                icon: Cloud,
-                title: "Cloud Integration",
-                path: "/services/salesforce/cloud-integration"
-            }
+            // {
+            //     icon: Database,
+            //     title: "CRM Implementation",
+            //     path: "/services/salesforce/crm"
+            // },
+            // {
+            //     icon: Server,
+            //     title: "Salesforce Customization",
+            //     path: "/services/salesforce/customization"
+            // },
+            // {
+            //     icon: Cloud,
+            //     title: "Cloud Integration",
+            //     path: "/services/salesforce/cloud-integration"
+            // }
         ],
         image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=600&q=80",
     },
@@ -606,27 +606,27 @@ export const technologyCategories = [
                 title: "Python",
                 path: "/python-development-services"
             },
-            {
-                icon: Globe,
-                title: ".NET",
-                path: "/dotnet-development-services"
-            },
-            {
-                icon: Globe,
-                title: "Ruby on Rails (ROR)",
-                path: "/ruby-on-rails-development",
-            },
-            { icon: Globe, title: "Golang", path: "/golang-development-services" },
-            {
-                icon: Globe,
-                title: "PHP: Laravel",
-                path: "/php-laravel-codeigniter-development",
-            },
-            {
-                icon: Globe,
-                title: "PHP: CodeIgniter",
-                path: "/tech/web/codeigniter",
-            },
+            // {
+            //     icon: Globe,
+            //     title: ".NET",
+            //     path: "/dotnet-development-services"
+            // },
+            // {
+            //     icon: Globe,
+            //     title: "Ruby on Rails (ROR)",
+            //     path: "/ruby-on-rails-development",
+            // },
+            // { icon: Globe, title: "Golang", path: "/golang-development-services" },
+            // {
+            //     icon: Globe,
+            //     title: "PHP: Laravel",
+            //     path: "/php-laravel-codeigniter-development",
+            // },
+            // {
+            //     icon: Globe,
+            //     title: "PHP: CodeIgniter",
+            //     path: "/tech/web/codeigniter",
+            // },
         ],
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     },

@@ -48,7 +48,7 @@ const locations = [
 ];
 
 const contacts = {
-  phones: ["+91 9039383183", "+91 9111454949"],
+  phones: ["+91 9039383183", "+91 8319635887"],
   emails: ["hr@digiflex.ai", "info@digiflex.ai"],
 };
 

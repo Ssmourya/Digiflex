@@ -107,9 +107,9 @@ const footerLinks = {
   'RESOURCES': [
     { name: 'About Us', url: '/about-us' },
     { name: 'Our Work', url: '/our-work' },
-    { name: 'Blog', url: '/blog' },
-    { name: 'Careers', url: '/careers' },
-    { name: 'Sitemap', url: '/sitemap' },
+    // { name: 'Blog', url: '/blog' },
+    // { name: 'Careers', url: '/careers' },
+    // { name: 'Sitemap', url: '/sitemap' },
     { name: 'Contact Us', url: '/contact-us' }
   ]
 };

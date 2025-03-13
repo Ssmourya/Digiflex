@@ -62,7 +62,7 @@ function Technology({ technologies, activeTech, setActiveTech }) {
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     <Image
-                      src={logo.url.startsWith("/") ? logo.url : `/${logo.url}`}
+                      src={logo.url}
                       alt={logo.name || "Technology logo"}
                       className="max-w-full max-h-full object-contain"
                       width={100}

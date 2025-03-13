@@ -1,34 +1,28 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import WrapperContainer from '@/Layout/WrapperContainer';
-import Heading from '@/Layout/Heading';
-import Subheading from '@/Layout/Subheading';
-import Paragraph from '@/Layout/Paragraph';
+import React from "react";
+import { motion } from "framer-motion";
+import WrapperContainer from "@/Layout/WrapperContainer";
+import Heading from "@/Layout/Heading";
+import Subheading from "@/Layout/Subheading";
+import Paragraph from "@/Layout/Paragraph";
 
 function Process({ steps, visibleSteps }) {
   return (
-   <WrapperContainer>
+    <WrapperContainer>
       <div>
         {/* Section Header with Animation */}
-  <Heading>
-  Our Well-organized Approach for
-  </Heading>
         <motion.h3
-          className="text-5xl font-bold mb-12 text-center"
+          className="text-4xl font-bold mb-12 text-center text-blue-700"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-       <Subheading>
-       AI Consulting
-       </Subheading>
+          Our Well-organized Approach
         </motion.h3>
-   <Paragraph>
-   At Digiflex.ai, we follow a structured and strategic methodology to deliver high-quality AI solutions. Our approach ensures seamless integration, optimized performance, and tangible business outcomes for our clients.
-
-   </Paragraph>
+        <Paragraph>
+          At Digiflex.ai, we follow a structured and strategic methodology to deliver high-quality AI solutions. Our approach ensures seamless integration, optimized performance, and tangible business outcomes for our clients.
+        </Paragraph>
 
         <div className="space-y-12 relative">
           {/* Vertical Line */}
@@ -39,23 +33,29 @@ function Process({ steps, visibleSteps }) {
             <motion.div
               key={step.number}
               data-step={step.number}
-              className={`relative flex items-start gap-8 transition-all duration-1000 transform ${visibleSteps.includes(step.number) ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}
+              className={`relative flex items-start gap-8 transition-all duration-1000 transform ${
+                visibleSteps.includes(step.number) ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+              }`}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
               {/* Step Circle with Gradient Background */}
               <motion.div
-                className={`flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-r ${step.gradient} flex items-center justify-center text-white text-2xl font-bold transition-all duration-500 transform ${visibleSteps.includes(step.number) ? 'scale-100' : 'scale-0'}`}
+                className={`flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-r ${step.gradient} flex items-center justify-center text-white text-2xl font-bold transition-all duration-500 transform ${
+                  visibleSteps.includes(step.number) ? "scale-100" : "scale-0"
+                }`}
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                {step.number.toString().padStart(2, '0')}
+                {step.number.toString().padStart(2, "0")}
               </motion.div>
 
               {/* Step Title and Description */}
               <motion.div
-                className={`transition-all duration-500 delay-200 ${visibleSteps.includes(step.number) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                className={`transition-all duration-500 delay-200 ${
+                  visibleSteps.includes(step.number) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -67,7 +67,7 @@ function Process({ steps, visibleSteps }) {
           ))}
         </div>
       </div>
-      </WrapperContainer>
+    </WrapperContainer>
   );
 }
 

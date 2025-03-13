@@ -79,7 +79,7 @@ const Marquee = ({ images, direction }) => {
     <div className="overflow-hidden h-[300px] md:h-[350px] lg:h-[400px] w-[140px] md:w-[150px] lg:w-[160px] relative">
       <motion.div
         animate={{ y: direction === "up" ? [-400, 0] : [0, -400] }}
-        transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
+        transition={{ repeat: Infinity, duration: Infinity, ease: "linear" }}
         className="flex flex-col gap-4"
       >
         {images.concat(images).map((img, index) => (
@@ -87,9 +87,9 @@ const Marquee = ({ images, direction }) => {
             key={index}
             src={img}
             alt="Marquee Image"
-            width={200}
-            height={100}
-            className="w-[200px] h-[100px] object-contain mx-4"
+            width={160} // Match the container width (lg:w-[160px])
+            height={100} // Keep consistent height
+            className="w-[140px] md:w-[150px] lg:w-[160px] h-[100px] object-cover mx-auto" // Use object-cover for uniform appearance
             priority={false}
           />
         ))}

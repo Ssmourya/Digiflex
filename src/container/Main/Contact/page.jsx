@@ -143,6 +143,7 @@ export default function Contact() {
             alt="Background"
             className="h-full w-full object-cover"
             priority={false}
+            fill
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950/90 to-black/20 z-10 animate-gradient-extreme mix-blend-overlay" />

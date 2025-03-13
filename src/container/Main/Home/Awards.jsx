@@ -25,71 +25,86 @@ function App() {
       }
     };
 
-    // Update dimensions on mount and window resize
     updateSectionDimensions();
     window.addEventListener("resize", updateSectionDimensions);
 
     return () => window.removeEventListener("resize", updateSectionDimensions);
   }, []);
 
+  // Award badges with specific size configurations and multipliers
+  const targetSize = 200; // Target size for all badges
   const awards = [
     {
       id: 1,
       image: "/assets/clutch.png",
       alt: "Clutch Award Badge",
       link: "https://clutch.co",
-      sizeMultiplier: 1.9,
+      width: 200,
+      height: 200,
+      multiplier: 2.2, // Already at target size
     },
     {
       id: 2,
       image: "/assets/goodfirms.png",
-      alt: "Top Rated Badge",
+      alt: "Top Web Development Company",
       link: "https://www.goodfirms.co",
-      sizeMultiplier: 0.8,
+      width: 180,
+      height: 180,
+      multiplier: targetSize / 180, // 1.111
     },
     {
       id: 3,
-      image:
-        "https://erawebstudio.com/wp-content/uploads/2022/04/upwork-badge.png",
+      image: "https://erawebstudio.com/wp-content/uploads/2022/04/upwork-badge.png",
       alt: "Upwork Top Rated Badge",
       link: "https://www.upwork.com",
-      sizeMultiplier: 0.8,
+      width: 180,
+      height: 180,
+      multiplier: targetSize / 180, // 1.111
     },
     {
       id: 4,
       image: "/assets/google.png",
-      alt: "Upwork Top Rated Badge",
-      link: "https://www.upwork.com",
-      sizeMultiplier: 1.8,
+      alt: "Google 5-Star Rating",
+      link: "https://www.google.com",
+      width: 250,
+      height: 250,
+      multiplier: 2.2,
     },
     {
       id: 5,
       image: "/assets/mobapp.png",
-      alt: "Top Rated Badge",
-      link: "https://www.goodfirms.co",
-      sizeMultiplier: 0.9,
+      alt: "Top Rated App Development",
+      link: "https://www.softwareworld.co",
+      width: 170,
+      height: 170,
+      multiplier: 1.0, 
     },
     {
       id: 6,
-      image:
-        "https://www.softwaresuggest.com/award_logo/customer-choice-winter-2025.png",
-      alt: "Upwork Top Rated Badge",
-      link: "https://www.upwork.com",
-      sizeMultiplier: 1.0,
+      image: "https://www.softwaresuggest.com/award_logo/customer-choice-winter-2025.png",
+      alt: "Customer Choice Winter 2025",
+      link: "https://www.softwaresuggest.com",
+      width: 160,
+      height: 160,
+      multiplier: targetSize / 160, // 1.25
     },
     {
       id: 7,
       image: "/assets/globalSpring.png",
-      alt: "Top Rated Badge",
-      link: "https://www.goodfirms.co",
-      sizeMultiplier: 0.9,
+      alt: "Clutch Global Spring 2024",
+      link: "https://clutch.co",
+      width: 160,
+      height: 160,
+      multiplier: targetSize / 160, // 1.25
     },
     {
       id: 8,
       image: "/assets/manifest.png",
-      alt: "Upwork Top Rated Badge",
-      link: "https://www.upwork.com",
-      sizeMultiplier: 0.9,
+      alt: "Most Reviewed AI Company",
+      link: "https://themanifest.com",
+      width: 160,
+      height: 160,
+      multiplier: 0.8, 
     },
   ];
 
@@ -106,25 +121,10 @@ function App() {
     return (
       <motion.div
         className="absolute"
-        style={{
-          left: randomX,
-          top: randomY,
-        }}
-        initial={{
-          scale: 0,
-          rotate: 0,
-        }}
-        animate={{
-          scale: [0, 1, 0],
-          opacity: [0, 1, 0],
-          rotate: 360,
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          delay,
-          ease: "easeInOut",
-        }}
+        style={{ left: randomX, top: randomY }}
+        initial={{ scale: 0, rotate: 0 }}
+        animate={{ scale: [0, 1, 0], opacity: [0, 1, 0], rotate: 360 }}
+        transition={{ duration: 3, repeat: Infinity, delay, ease: "easeInOut" }}
       >
         <svg
           width={size * 16}
@@ -163,15 +163,8 @@ function App() {
             <motion.div
               key={i}
               className={`absolute h-2 w-1 rounded-full ${randomColor}`}
-              style={{
-                width: size,
-                height: size,
-                left: randomX,
-              }}
-              initial={{
-                y: -20,
-                rotate: 0,
-              }}
+              style={{ width: size, height: size, left: randomX }}
+              initial={{ y: -20, rotate: 0 }}
               animate={{
                 y: sectionDimensions.height + 20,
                 rotate: 360,
@@ -193,7 +186,6 @@ function App() {
   const CelebrationBackground = () => (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {sectionDimensions.width > 0 && [
-        // Only render animations when section dimensions are available
         ...[...Array(15)].map((_, i) => (
           <Star
             key={`star-${i}`}
@@ -210,15 +202,8 @@ function App() {
             <motion.div
               key={`circle-${i}`}
               className="absolute rounded-full bg-gradient-to-r from-blue-200 to-purple-200 opacity-20 blur-xl"
-              style={{
-                height: "8rem",
-                width: "8rem",
-                left: randomX,
-                top: randomY,
-              }}
-              initial={{
-                scale: 0,
-              }}
+              style={{ height: "8rem", width: "8rem", left: randomX, top: randomY }}
+              initial={{ scale: 0 }}
               animate={{
                 scale: [1, 2, 1],
                 x: [0, (Math.random() - 0.5) * 100],
@@ -238,63 +223,56 @@ function App() {
   );
 
   return (
-    <div className="min-h relative overflow-hidden">
-      <section ref={sectionRef} className="py-12 sm:py-20 px-4 relative">
+    <div className="min-h-screen relative overflow-hidden">
+      <section
+        ref={sectionRef}
+        className="py-12 sm:py-20 px-4 relative max-w-7xl mx-auto"
+      >
         <CelebrationBackground />
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-6 sm:mb-10">
-            <div className="flex flex-col items-center">
-              <h2 className="text-blue-700 text-4xl sm:text-5xl md:text-6xl font-bold">
-                Awards & Recognitions
-              </h2>
-              {/* <div className="h-1 w-16 bg-[#00A6E5] mt-4"></div> */}
-            </div>
-          </div>
+        <div className="mb-10 sm:mb-16 text-center">
+          <h2 className="text-blue-700 text-4xl sm:text-5xl md:text-6xl font-bold">
+            Awards & Recognitions
+          </h2>
+        </div>
 
-          {/* Updated grid layout with responsive columns */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:flex md:flex-wrap md:justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-20">
-            {awards.map((award, index) => (
-              <motion.div
-                key={award.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.2,
-                }}
-                whileHover={{ scale: 1.05 }}
-                className="flex flex-col items-center"
+        {/* Fixed size award grid with better consistency */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
+          {awards.map((award, index) => (
+            <motion.div
+              key={award.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center justify-center"
+            >
+              <a
+                href={award.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-full h-full"
               >
-                <a
-                  href={award.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full max-w-[100px] sm:max-w-[140px] md:max-w-[180px] lg:max-w-[240px]"
-                >
-                  <div className="w-full aspect-square flex items-center justify-center">
-                    <Image
-                      src={award.image}
-                      alt={award.alt}
-                      width={200}
-                      height={200}
-                      className="w-full h-full object-contain"
-                      style={{
-                        transform: `scale(${
-                          // Smaller scale on mobile, original scale on larger screens
-                          typeof window !== "undefined" &&
-                          window.innerWidth < 640
-                            ? Math.min(2, award.sizeMultiplier || 1)
-                            : award.sizeMultiplier || 1
-                        })`,
-                      }}
-                      priority={false}
-                    />
-                  </div>
-                </a>
-                {award.extraContent}
-              </motion.div>
-            ))}
-          </div>
+                <div className="relative flex items-center justify-center p-2">
+                  {/* Use fixed target size with multiplier applied to original dimensions */}
+                  <Image
+                    src={award.image}
+                    alt={award.alt}
+                    width={targetSize}
+                    height={targetSize}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      objectFit: "contain",
+                      transform: `scale(${award.multiplier})`, // Apply multiplier
+                      transformOrigin: "center",
+                    }}
+                    quality={90}
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </motion.div>
+          ))}
         </div>
       </section>
     </div>

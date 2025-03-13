@@ -147,7 +147,7 @@ function Footer() {
             <Link to="/" className="flex items-center no-underline">
               <Image
                 src="/assets/digiflex.png"
-                width={500}
+                width={200}
                 height={300}
                 alt="logo"
                 className="h-6"

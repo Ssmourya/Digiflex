@@ -75,6 +75,8 @@ const Amp5 = () => {
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.imageAlt}
+                  width={736} 
+                  height={414}
                   className="object-cover w-full h-full"
                   priority={false}
                 />

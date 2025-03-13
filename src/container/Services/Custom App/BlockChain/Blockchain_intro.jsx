@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
 import { Data, newData } from "./Data";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -17,16 +17,15 @@ export const Blockchain_intro = () => {
               <Image
                 src={item.img}
                 alt={item.header}
+                width={112}
+                height={128}
                 className="w-28 h-32 object-cover mx-auto rounded-t-lg"
-               priority={false} />
+                priority={false}
+              />
               <Subheading>
-                <p className="font-bold px-5 py-2 text-center">
-                  {item.header}
-                </p>
+                <p className="font-bold px-5 py-2 text-center">{item.header}</p>
               </Subheading>
-              <p className=" px-4 text-sm text-center">
-                {item.data}
-              </p>
+              <p className=" px-4 text-sm text-center">{item.data}</p>
             </div>
           ))}
         </div>
@@ -40,16 +39,15 @@ export const Blockchain_intro = () => {
               <Image
                 src={item.img}
                 alt={item.header}
+                width={112}
+                height={128}
                 className="w-28 h-32 object-cover mx-auto rounded-t-lg"
-               priority={false} />
+                priority={false}
+              />
               <Subheading>
-                <p className="font-bold px-8 py-5 text-center">
-                  {item.header}
-                </p>
+                <p className="font-bold px-8 py-5 text-center">{item.header}</p>
               </Subheading>
-              <p className=" text-sm px-4 text-center">
-                {item.data}
-              </p>
+              <p className=" text-sm px-4 text-center">{item.data}</p>
             </div>
           ))}
         </div>

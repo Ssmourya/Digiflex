@@ -156,6 +156,8 @@ const NavItem = ({ setActiveDropdown, service, topbarHeight }) => {
                   <Image
                     src={service.image}
                     alt={service.title}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover rounded-xl"
                     style={{ maxHeight: "400px" }}
                     priority={false}

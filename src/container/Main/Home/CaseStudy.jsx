@@ -87,7 +87,9 @@ const Marquee = ({ images, direction }) => {
             key={index}
             src={img}
             alt="Marquee Image"
-            className="w-full h-[130px] md:h-[140px] lg:h-[150px] object-cover rounded-lg shadow-lg"
+            width={200}
+            height={100}
+            className="w-[200px] h-[100px] object-contain mx-4"
             priority={false}
           />
         ))}

@@ -89,8 +89,11 @@ export default function OurValues() {
               <Image
                 src={values[currentIndex].image || "/placeholder.svg"}
                 alt={values[currentIndex].title}
+                width={500}
+                height={300}
                 className="object-cover w-full h-auto"
-                priority={false}/>
+                priority={false}
+              />
             </div>
 
             {/* Description */}

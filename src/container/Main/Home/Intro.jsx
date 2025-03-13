@@ -23,8 +23,8 @@ function App() {
               <div className="relative z-10 h-[220px] sm:h-[400px] md:h-[450px] lg:h-[400px] xl:h-[500px]">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1200&h=800&q=80"
-                  width={500}
-                  height={300}
+                  width={1200}
+                  height={800}
                   alt="Team Meeting"
                   className="rounded-lg w-full h-full object-cover"
                   priority={false}
@@ -43,8 +43,8 @@ function App() {
               <div className="absolute bottom-0 right-0 transform translate-x-2 sm:translate-x-5 lg:translate-x-3 xl:translate-x-5 -translate-y-1 z-10 w-3/4 h-[120px] sm:h-[180px] md:h-[200px] lg:h-[160px] xl:h-[200px]">
                 <Image
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=800&q=80"
-                  width={500}
-                  height={300}
+                  width={1200}
+                  height={800}
                   alt="Team Collaboration"
                   className="rounded-lg w-full h-full object-cover grayscale"
                   priority={false}
@@ -99,32 +99,32 @@ function App() {
                     <div className="flex -space-x-2 sm:-space-x-3 lg:-space-x-2 xl:-space-x-3">
                       <Image
                         src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=faces&q=80"
-                        width={500}
-                        height={300}
+                        width={48}
+                        height={48}
                         className="w-10 h-10 sm:w-12 sm:h-12 lg:w-10 lg:h-10 xl:w-12 xl:h-12 rounded-full border-2 border-white"
                         alt="Client"
                         priority={false}
                       />
                       <Image
                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=faces&q=80"
-                        width={500}
-                        height={300}
+                        width={48}
+                        height={48}
                         className="w-10 h-10 sm:w-12 sm:h-12 lg:w-10 lg:h-10 xl:w-12 xl:h-12 rounded-full border-2 border-white"
                         alt="Client"
                         priority={false}
                       />
                       <Image
                         src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&fit=crop&crop=faces&q=80"
-                        width={500}
-                        height={300}
+                        width={48}
+                        height={48}
                         className="w-10 h-10 sm:w-12 sm:h-12 lg:w-10 lg:h-10 xl:w-12 xl:h-12 rounded-full border-2 border-white"
                         alt="Client"
                         priority={false}
                       />
                       <Image
                         src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&fit=crop&crop=faces&q=80"
-                        width={500}
-                        height={300}
+                        width={48}
+                        height={48}
                         className="w-10 h-10 sm:w-12 sm:h-12 lg:w-10 lg:h-10 xl:w-12 xl:h-12 rounded-full border-2 border-white"
                         alt="Client"
                         priority={false}

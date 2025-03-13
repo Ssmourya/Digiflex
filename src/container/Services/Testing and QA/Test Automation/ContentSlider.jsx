@@ -23,6 +23,8 @@ const ContentBlock = ({ title, description, image, hyperlink }) => {
         <Image
           src={image}
           alt={title}
+          width={500}
+          height={300}
           className="w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
           priority={false}
         />

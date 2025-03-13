@@ -20,48 +20,48 @@ const Thirds = () => {
           <div className="logos flex gap-8 whitespace-nowrap animate-scroll">
             <Image
               src="https://i.pinimg.com/736x/48/e0/f3/48e0f3e95f00646880441f490bf008f5.jpg"
-              width={500}
-              height={300}
+              width={100}
+              height={100}
               alt="Accenture"
               className="max-w-[80px] md:max-w-[100px] h-auto"
               priority={false}
             />
             <Image
               src="https://i.pinimg.com/236x/c8/dc/e1/c8dce16663e5e2d215231332e9e6287e.jpg"
-              width={500}
-              height={300}
+              width={100}
+              height={100}
               alt="AWS"
               className="max-w-[80px] md:max-w-[100px] h-auto"
               priority={false}
             />
             <Image
               src="https://tse4.mm.bing.net/th?id=OIP.cu4eSa20CWvBzOA2dsN3vAHaEK&pid=Api&P=0&h=180"
-              width={500}
-              height={300}
+              width={100}
+              height={100}
               alt="Cognizant"
               className="max-w-[80px] md:max-w-[100px] h-auto"
               priority={false}
             />
             <Image
               src="https://tse2.mm.bing.net/th?id=OIP.yKW0vY2oXU2fll6NLaYvDgHaHa&pid=Api&P=0&h=180"
-              width={500}
-              height={300}
+              width={100}
+              height={100}
               alt="Deloitte"
               className="max-w-[80px] md:max-w-[100px] h-auto"
               priority={false}
             />
             <Image
               src="https://www.logotypes101.com/logos/277/E3C10AE4CF26940A139B8277DB970E4E/genesys_logo.png"
-              width={500}
-              height={300}
+              width={100}
+              height={100}
               alt="Genesys"
               className="max-w-[80px] md:max-w-[100px] h-auto"
               priority={false}
             />
             <Image
               src="https://download.logo.wine/logo/NICE_Ltd./NICE_Ltd.-Logo.wine.png"
-              width={500}
-              height={300}
+              width={100}
+              height={100}
               alt="NICE"
               className="max-w-[80px] md:max-w-[100px] h-auto"
               priority={false}

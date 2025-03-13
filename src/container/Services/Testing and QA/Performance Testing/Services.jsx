@@ -9,6 +9,8 @@ const Service = ({ img, title, description }) => (
       <Image
         src={img}
         alt={title}
+        width={500}
+        height={192}
         className="w-full h-48 object-cover opacity-70 group-hover:opacity-90 transition-all duration-500"
         priority={false}
       />

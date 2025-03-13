@@ -275,6 +275,8 @@ function App() {
                     <Image
                       src={award.image}
                       alt={award.alt}
+                      width={200}
+                      height={200}
                       className="w-full h-full object-contain"
                       style={{
                         transform: `scale(${

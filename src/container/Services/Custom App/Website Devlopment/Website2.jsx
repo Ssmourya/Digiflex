@@ -52,6 +52,8 @@ const Website2 = () => {
               <Image
                 src={logo.src}
                 alt={logo.alt}
+                width={128}
+                height={128}
                 className="max-w-full h-auto object-contain"
                 priority={false}
               />

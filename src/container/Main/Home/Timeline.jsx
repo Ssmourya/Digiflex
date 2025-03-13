@@ -12,35 +12,54 @@ function App() {
   const scrollingTimeout = useRef(null);
 
   const timelineData = [
-    { id: 1, title: "Project Inception", 
-      description: "Initial project planning and requirements gathering phase.", 
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d" },
-    { id: 2, title: "Design Phase", 
-      description: "Creating wireframes, mockups, and finalizing the design system.", 
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5" },
-    { id: 3, title: "Development Start", 
-      description: "Beginning the development process with core functionality.", 
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085" },
-    { id: 4, title: "Initial Prototype", 
-      description: "First working prototype ready for testing and feedback.", 
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f" },
-    { id: 5, title: "Testing and Refinement", 
-      description: "Comprehensive testing phase including bug fixes.", 
-      image: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9" },
-    { id: 6, title: "Project Launch", 
-      description: "Final deployment and official launch.", 
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f" },
+    {
+      id: 1,
+      title: "Project Inception",
+      description: "Initial project planning and requirements gathering phase.",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    },
+    {
+      id: 2,
+      title: "Design Phase",
+      description:
+        "Creating wireframes, mockups, and finalizing the design system.",
+      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5",
+    },
+    {
+      id: 3,
+      title: "Development Start",
+      description: "Beginning the development process with core functionality.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    },
+    {
+      id: 4,
+      title: "Initial Prototype",
+      description: "First working prototype ready for testing and feedback.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    },
+    {
+      id: 5,
+      title: "Testing and Refinement",
+      description: "Comprehensive testing phase including bug fixes.",
+      image: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+    },
+    {
+      id: 6,
+      title: "Project Launch",
+      description: "Final deployment and official launch.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
       // Set scrolling state to true
       setIsScrolling(true);
-      
+
       if (scrollingTimeout.current) {
         clearTimeout(scrollingTimeout.current);
       }
-      
+
       // Reset scrolling state after scrolling stops
       scrollingTimeout.current = setTimeout(() => {
         setIsScrolling(false);
@@ -51,20 +70,20 @@ function App() {
       }
 
       scrollTimeout.current = setTimeout(() => {
-        const scrollContainer = document.querySelector('.timeline-scroll');
+        const scrollContainer = document.querySelector(".timeline-scroll");
         if (!scrollContainer) return;
 
         const containerRect = scrollContainer.getBoundingClientRect();
-        const containerCenter = containerRect.top + (containerRect.height/2);
+        const containerCenter = containerRect.top + containerRect.height / 2;
 
         let closestId = activeId;
         let minDistance = Number.MAX_VALUE;
-        
+
         timelineRefs.current.forEach((el, index) => {
           if (el) {
             const rect = el.getBoundingClientRect();
-            const elementCenter = rect.top + (rect.height/2);
-            
+            const elementCenter = rect.top + rect.height / 2;
+
             const distance = Math.abs(elementCenter - containerCenter);
             if (distance < minDistance) {
               minDistance = distance;
@@ -72,16 +91,18 @@ function App() {
             }
           }
         });
-        
+
         if (closestId === activeId) {
           setActiveId(closestId);
         }
       }, 100);
     };
-    
-    const scrollContainer = document.querySelector('.timeline-scroll');
+
+    const scrollContainer = document.querySelector(".timeline-scroll");
     if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
+      scrollContainer.addEventListener("scroll", handleScroll, {
+        passive: true,
+      });
       handleScroll(); // Initial check
     }
 
@@ -122,24 +143,28 @@ function App() {
                   key={item.id}
                   ref={(el) => (timelineRefs.current[index] = el)}
                   initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ 
-                    opacity: 1, 
-                    x: 0 
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
                   }}
                   viewport={{ once: true, margin: "-10%", amount: 0.3 }}
-                  transition={{ 
-                    duration: 0.7, 
-                    ease: "easeInOut" 
+                  transition={{
+                    duration: 0.7,
+                    ease: "easeInOut",
                   }}
                   onClick={() => handleItemClick(item.id)}
                   className={`p-6 rounded-xl cursor-pointer transition-all duration-500 ${
                     activeId === item.id && !isScrolling
-                      ? 'bg-blue-50 shadow-lg transform scale-105'
-                      : 'hover:bg-gray-50 hover:shadow-md'
+                      ? "bg-blue-50 shadow-lg transform scale-105"
+                      : "hover:bg-gray-50 hover:shadow-md"
                   }`}
                 >
-                  <span className="text-sm font-medium text-blue-500">Step {item.id}</span>
-                  <h3 className="mt-2 text-xl font-bold text-gray-900">{item.title}</h3>
+                  <span className="text-sm font-medium text-blue-500">
+                    Step {item.id}
+                  </span>
+                  <h3 className="mt-2 text-xl font-bold text-gray-900">
+                    {item.title}
+                  </h3>
                   <p className="mt-2 text-gray-600">{item.description}</p>
                 </motion.div>
               ))}

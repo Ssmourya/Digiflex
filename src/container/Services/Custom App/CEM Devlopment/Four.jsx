@@ -45,6 +45,8 @@ const Four = () => {
           <Image
             src="/assets/bg5.png"
             alt="Knowledge Management"
+            width={500}
+            height={300}
             className="w-full rounded-lg shadow-md mb-4"
             priority={false}
           />
@@ -90,6 +92,8 @@ const Four = () => {
           <Image
             src="/assets/bg6.png"
             alt="Omni-Channel Engagement"
+            width={500}
+            height={300}
             className="w-full rounded-lg shadow-md mb-4"
             priority={false}
           />

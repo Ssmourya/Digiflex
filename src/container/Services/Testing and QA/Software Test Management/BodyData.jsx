@@ -32,6 +32,8 @@ const ImageComponent = ({ section }) => {
       <Image
         src={`/assets/${section.imageName}.jpeg`}
         alt="Key Image"
+        width={500}
+        height={300}
         loading="lazy"
         className="w-full h-full rounded-md object-contain shadow-lg"
         priority={false}

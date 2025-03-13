@@ -8,12 +8,12 @@ import React, {
   useId,
   useRef,
   useState,
-} from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Autoplay from 'embla-carousel-autoplay';
-import useEmblaCarousel from 'embla-carousel-react';
-import ClassNames from 'embla-carousel-class-names';
-import { cn } from '@/libs/utlis';
+} from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
+import ClassNames from "embla-carousel-class-names";
+import { cn } from "@/libs/utlis";
 
 const CarouselContext = createContext();
 const TWEEN_FACTOR_BASE = 0.52;
@@ -25,7 +25,7 @@ export const useCarouselContext = () => {
   const context = useContext(CarouselContext);
   if (!context) {
     throw new Error(
-      'useCarouselContext must be used within a CarouselProvider'
+      "useCarouselContext must be used within a CarouselProvider"
     );
   }
   return context;
@@ -61,7 +61,7 @@ const Carousel = ({
   const [emblaRef, emblaApi] = useEmblaCarousel(options, plugins);
   const [selectedThumbIndex, setSelectedThumbIndex] = useState(0);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: 'keepSnaps',
+    containScroll: "keepSnaps",
     dragFree: true,
   });
 
@@ -82,8 +82,8 @@ const Carousel = ({
   useEffect(() => {
     if (!emblaApi) return;
     onSelect();
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
+    emblaApi.on("select", onSelect);
+    emblaApi.on("reInit", onSelect);
   }, [emblaApi, onSelect]);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -104,8 +104,8 @@ const Carousel = ({
   useEffect(() => {
     if (!emblaApi) return;
     onScroll(emblaApi);
-    emblaApi.on('reInit', onScroll);
-    emblaApi.on('scroll', onScroll);
+    emblaApi.on("reInit", onScroll);
+    emblaApi.on("scroll", onScroll);
   }, [emblaApi, onScroll]);
 
   const { selectedSnap, snapCount } = useSelectedSnapDisplay(emblaApi);
@@ -117,7 +117,7 @@ const Carousel = ({
     (emblaApi) => {
       if (!isScale) return;
       tweenNodes.current = emblaApi.slideNodes().map((slideNode, index) => {
-        const node = slideNode.querySelector('.slider_content');
+        const node = slideNode.querySelector(".slider_content");
         if (!node) {
           console.warn(`No .slider_content found for slide ${index}`);
         }
@@ -142,7 +142,7 @@ const Carousel = ({
       const engine = emblaApi.internalEngine();
       const scrollProgress = emblaApi.scrollProgress();
       const slidesInView = emblaApi.slidesInView();
-      const isScrollEvent = eventName === 'scroll';
+      const isScrollEvent = eventName === "scroll";
 
       emblaApi.scrollSnapList().forEach((scrollSnap, snapIndex) => {
         let diffToTarget = scrollSnap - scrollProgress;
@@ -188,10 +188,10 @@ const Carousel = ({
       tweenScale(emblaApi);
 
       emblaApi
-        .on('reInit', setTweenNodes)
-        .on('reInit', setTweenFactor)
-        .on('reInit', tweenScale)
-        .on('scroll', tweenScale);
+        .on("reInit", setTweenNodes)
+        .on("reInit", setTweenFactor)
+        .on("reInit", tweenScale)
+        .on("scroll", tweenScale);
     }
   }, [emblaApi, tweenScale, isScale, setTweenNodes, setTweenFactor]);
 
@@ -217,7 +217,7 @@ const Carousel = ({
       }}
     >
       <div
-        className={cn(className, 'overflow-hidden rounded-md')}
+        className={cn(className, "overflow-hidden rounded-md")}
         ref={emblaRef}
       >
         {children}
@@ -229,8 +229,8 @@ const Carousel = ({
 export const SliderContainer = ({ className, children }) => {
   return (
     <div
-      className={cn('flex', className)}
-      style={{ touchAction: 'pan-y pinch-zoom' }}
+      className={cn("flex", className)}
+      style={{ touchAction: "pan-y pinch-zoom" }}
     >
       {children}
     </div>
@@ -249,12 +249,8 @@ export const Slider = ({ children, className, thumnailSrc }) => {
   }, [addImgToSlider]);
 
   return (
-    <div className={cn('min-w-0 flex-grow-0 flex-shrink-0', className)}>
-      {isScale ? (
-        <div className='slider_content'>{children}</div>
-      ) : (
-        children
-      )}
+    <div className={cn("min-w-0 flex-grow-0 flex-shrink-0", className)}>
+      {isScale ? <div className="slider_content">{children}</div> : children}
     </div>
   );
 };
@@ -263,8 +259,8 @@ export const SliderPrevButton = ({ children, className }) => {
   const { onPrevButtonClick, prevBtnDisabled } = useCarouselContext();
   return (
     <button
-      className={cn('', className)}
-      type='button'
+      className={cn("", className)}
+      type="button"
       onClick={onPrevButtonClick}
       disabled={prevBtnDisabled}
     >
@@ -277,8 +273,8 @@ export const SliderNextButton = ({ children, className }) => {
   const { onNextButtonClick, nextBtnDisabled } = useCarouselContext();
   return (
     <button
-      className={cn('', className)}
-      type='button'
+      className={cn("", className)}
+      type="button"
       onClick={onNextButtonClick}
       disabled={nextBtnDisabled}
     >
@@ -292,12 +288,12 @@ export const SliderProgress = ({ className }) => {
   return (
     <div
       className={cn(
-        'bg-gray-500 relative rounded-md h-2 justify-end items-center w-96 max-w-[90%] overflow-hidden',
+        "bg-gray-500 relative rounded-md h-2 justify-end items-center w-96 max-w-[90%] overflow-hidden",
         className
       )}
     >
       <div
-        className='dark:bg-white bg-black absolute w-full top-0 -left-[100%] bottom-0'
+        className="dark:bg-white bg-black absolute w-full top-0 -left-[100%] bottom-0"
         style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
       />
     </div>
@@ -317,7 +313,7 @@ export const SliderSnapDisplay = ({ className }) => {
   return (
     <div
       className={cn(
-        'mix-blend-difference overflow-hidden flex gap-1 items-center',
+        "mix-blend-difference overflow-hidden flex gap-1 items-center",
         className
       )}
     >
@@ -339,29 +335,29 @@ export const SliderDotButton = ({ className, activeclass }) => {
   const { selectedIndex, scrollSnaps, onDotButtonClick, carouselId } =
     useCarouselContext();
   return (
-    <div className={cn('flex', className)}>
-      <div className='flex gap-2'>
+    <div className={cn("flex", className)}>
+      <div className="flex gap-2">
         {scrollSnaps.map((_, index) => (
           <button
-            type='button'
+            type="button"
             key={index}
             onClick={() => onDotButtonClick(index)}
-            className='relative inline-flex p-0 m-0 w-10 h-2'
+            className="relative inline-flex p-0 m-0 w-10 h-2"
           >
-            <div className='bg-gray-500/40 h-1 rounded-full w-10'></div>
+            <div className="bg-gray-500/40 h-1 rounded-full w-10"></div>
             {index === selectedIndex && (
-              <AnimatePresence mode='wait'>
+              <AnimatePresence mode="wait">
                 <motion.div
                   transition={{
                     layout: {
                       duration: 0.4,
-                      ease: 'easeInOut',
+                      ease: "easeInOut",
                       delay: 0.04,
                     },
                   }}
                   layoutId={`hover-${carouselId}`}
                   className={cn(
-                    'absolute z-[3] w-full h-full left-0 top-0 dark:bg-white bg-black rounded-full',
+                    "absolute z-[3] w-full h-full left-0 top-0 dark:bg-white bg-black rounded-full",
                     activeclass
                   )}
                 />
@@ -399,9 +395,9 @@ export const useDotButton = (emblaApi) => {
 
     onInit(emblaApi);
     onSelect(emblaApi);
-    emblaApi.on('reInit', onInit);
-    emblaApi.on('reInit', onSelect);
-    emblaApi.on('select', onSelect);
+    emblaApi.on("reInit", onInit);
+    emblaApi.on("reInit", onSelect);
+    emblaApi.on("select", onSelect);
   }, [emblaApi, onInit, onSelect]);
 
   return {
@@ -434,8 +430,8 @@ export const usePrevNextButtons = (emblaApi) => {
     if (!emblaApi) return;
 
     onSelect(emblaApi);
-    emblaApi.on('reInit', onSelect);
-    emblaApi.on('select', onSelect);
+    emblaApi.on("reInit", onSelect);
+    emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
 
   return {
@@ -459,8 +455,8 @@ export const useSelectedSnapDisplay = (emblaApi) => {
     if (!emblaApi) return;
 
     updateScrollSnapState(emblaApi);
-    emblaApi.on('select', updateScrollSnapState);
-    emblaApi.on('reInit', updateScrollSnapState);
+    emblaApi.on("select", updateScrollSnapState);
+    emblaApi.on("reInit", updateScrollSnapState);
   }, [emblaApi, updateScrollSnapState]);
   return {
     selectedSnap,
@@ -473,22 +469,22 @@ export const ThumsSlider = () => {
     useCarouselContext();
 
   return (
-    <div className='overflow-hidden mt-2' ref={emblaThumbsRef}>
-      <div className='flex flex-row gap-2'>
+    <div className="overflow-hidden mt-2" ref={emblaThumbsRef}>
+      <div className="flex flex-row gap-2">
         {slidesrArr.map((slide, index) => (
           <div
             key={`thumb-${index}`}
             className={`min-w-0 w-full xl:h-24 aspect-auto border-2 rounded-md ${
               index === selectedIndex
-                ? 'opacity-100'
-                : 'border-transparent opacity-30'
+                ? "opacity-100"
+                : "border-transparent opacity-30"
             }`}
-            style={{ flex: '0 0 15%' }}
+            style={{ flex: "0 0 15%" }}
             onClick={() => onThumbClick(index)}
           >
             <motion.img
               src={slide}
-              className='w-full h-full object-cover rounded-sm'
+              className="w-full h-full object-cover rounded-sm"
               width={400}
               height={400}
               alt={`Thumbnail ${index + 1}`}

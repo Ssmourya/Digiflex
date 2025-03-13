@@ -1,5 +1,5 @@
-"use client"
-  import Image from "next/image";
+"use client";
+import Image from "next/image";
 
 import React, { useState, useEffect } from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -308,6 +308,8 @@ function App() {
                     <Image
                       src={industry.image}
                       alt={industry.title}
+                      width={800}
+                      height={600}
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                       priority={false}
                     />
@@ -349,6 +351,8 @@ function App() {
                           <Image
                             src={industry.image}
                             alt={industry.title}
+                            width={800}
+                            height={600}
                             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                             priority={false}
                           />

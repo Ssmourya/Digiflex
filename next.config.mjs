@@ -5,7 +5,7 @@ const nextConfig = {
       { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
       { protocol: 'https', hostname: 'html.designingmedia.com', pathname: '/**' },
       { protocol: 'https', hostname: 'cdn.jsdelivr.net', pathname: '/**' },
-      { protocol: 'https', hostname: 'img.icons8.com', pathname: '/**' }, // Added here
+      { protocol: 'https', hostname: 'img.icons8.com', pathname: '/**' },
       { protocol: 'https', hostname: 'cdn.worldvectorlogo.com', pathname: '/**' },
       { protocol: 'https', hostname: 'upload.wikimedia.org', pathname: '/**' },
       { protocol: 'https', hostname: 'www.vectorlogo.zone', pathname: '/**' },
@@ -29,6 +29,10 @@ const nextConfig = {
       { protocol: 'https', hostname: 'download.logo.wine', pathname: '/**' },
       { protocol: 'https', hostname: 'erawebstudio.com', pathname: '/**' },
       { protocol: 'https', hostname: 'www.softwaresuggest.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'www.freepik.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'media.istockphoto.com', pathname: '/**' },
+      // **Add this line**
+      { protocol: 'https', hostname: 'img.freepik.com', pathname: '/**' },
     ],
   },
   transpilePackages: [

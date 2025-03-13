@@ -92,14 +92,14 @@ const Process = () => {
               <div>
                 
                 <Subheading>
-                  <div>
+               =
                   {step.title}
-                  </div>
+              =
                 </Subheading>
               <Paragraph>
-                <span>
+                
                 {step.description}
-                </span>
+            
               </Paragraph>
               
               </div>

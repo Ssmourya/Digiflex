@@ -47,14 +47,10 @@ const Web3Features = () => {
         <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-blue-100 rounded-full opacity-30 blur-3xl"></div> */}
         
         <Heading>
-         <div>
          Why Should You Go For Web3 Development?
-         </div>
         </Heading>
-        <Paragraph>
-          <span className='block text-center'>
+        <Paragraph className=' text-center'>
           Web3 ensures decentralization, security, transparency, user control, and blockchain innovation.
-          </span>
         </Paragraph>
 
         <div className="mt-16 relative z-10 space-y-8">
@@ -76,15 +72,11 @@ const Web3Features = () => {
                 <div className="flex items-start">
                   <div className="ml-4">
                   <Subheading>
-                    <div>
                     {feature.title}
-                    </div>
                   </Subheading>
                    
                    <Paragraph>
-                    <span>
                     {feature.description}
-                    </span>
                    </Paragraph>
                   </div>
                 </div>

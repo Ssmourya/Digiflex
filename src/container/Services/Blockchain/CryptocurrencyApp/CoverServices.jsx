@@ -84,15 +84,11 @@ const CoverServices = () => {
       <div className="max-w-7xl mx-auto">
       <div className="bg-white  flex justify-center">
         <Heading>
-        <h1>
           What We Cover In Cryptocurrency Services
-        </h1>
         </Heading> 
       </div>
-      <Paragraph>
-          <div className='text-center' > 
+      <Paragraph  className='text-center'>
           We cover trading, security, wallet development, ICO, blockchain integration, and consulting.
-          </div>
         </Paragraph>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

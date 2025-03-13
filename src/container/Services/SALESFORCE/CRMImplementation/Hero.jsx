@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
 <>
-<h1>jklklsfjslfsdkjfdjffnskjfdsjkf</h1></>
+<h1>Hello</h1></>
   )
 }
 

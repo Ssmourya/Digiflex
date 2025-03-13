@@ -2,7 +2,8 @@ import React from 'react'
 import ProcessSmartContract from './ProcessSmartContract'
 import SmartWork from './SmartWork'
 import Benifits from './Benifits'
-import Faq from './Faq'
+import {SmartContractfaqs} from '../Faqdata'
+import Faq from '@/components/Faq'
 
 
 const Body = () => {
@@ -11,7 +12,7 @@ const Body = () => {
    <ProcessSmartContract/>
    <SmartWork/>
    <Benifits/>
-   <Faq/>
+   <Faq faqs={SmartContractfaqs} />
    </>
   )
 }

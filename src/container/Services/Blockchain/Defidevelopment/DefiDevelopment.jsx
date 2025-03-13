@@ -111,14 +111,10 @@ const DeFiServices = () => {
       <div className="max-w-6xl mx-auto">
         
           <Heading>
-            <div>
             Our DeFi Development Services
-            </div>
           </Heading>
-          <Paragraph>
-            <span className='block text-center'>
+          <Paragraph  className='text-center'>
             We provide secure, scalable, transparent, and innovative DeFi development solutions globally.
-            </span>
           </Paragraph>
     
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

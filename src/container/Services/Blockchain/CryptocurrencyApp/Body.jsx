@@ -2,7 +2,8 @@ import React from 'react'
 import CoverServices from './CoverServices'
 import WhyChoose from './WhyChoose'
 import TypeCryptocurrency from './TypeCryptocurrency'
-import Faq from './Faq'
+import { CryptocurrencyAppfaqs} from '../Faqdata'
+import Faq from '@/components/Faq'
 
 
 const Body = () => {
@@ -11,7 +12,7 @@ const Body = () => {
  <CoverServices/>
  <WhyChoose/>
  <TypeCryptocurrency/>
- <Faq/>
+ <Faq faqs={ CryptocurrencyAppfaqs} />
 
  </>
   )

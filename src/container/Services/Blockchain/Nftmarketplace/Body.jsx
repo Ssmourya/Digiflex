@@ -2,7 +2,8 @@ import React from 'react'
 import NftServices from './NftServices'
 import DevelopmentServices from './DevelopmentServices'
 import Tools from './Tools'
-import Faq from './Faq'
+import {Nftfaqs} from '../Faqdata'
+import Faq from '@/components/Faq'
 
 
 const Body = () => {
@@ -11,7 +12,7 @@ const Body = () => {
     <NftServices/>
     <DevelopmentServices/>
     <Tools/>
-    <Faq/>
+    <Faq faqs={Nftfaqs} />
     
     </>
   )

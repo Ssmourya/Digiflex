@@ -85,16 +85,16 @@ const SmartContractWorkflow = () => {
      
         <div>
             <Heading>
-          <div>
+       
             How Does a Smart Contract Work?
-          </div>
+         
             </Heading>
 
         </div>
-        <Paragraph>
-          <span className="block text-center">
+        <Paragraph className=" text-center">
+    
           Smart contracts execute automatically using blockchain, ensuring transparency, security, and trust.
-          </span>
+
         </Paragraph>
         
 

@@ -24,14 +24,10 @@ const SecurityFeatures = () => {
       <div className="container mx-auto lg:w-[78vw] md:w-[80vw] px-4 sm:px-6">
         {/* Section Heading */}
         <Heading>
-          <div>
             Security Features 
-          </div>
         </Heading>
-        <Paragraph>
-          <span className="block text-center">
+        <Paragraph className="text-center">
           Encryption, two-factor authentication, biometrics, multi-signature, and private key security.
-          </span>
         </Paragraph>
 
         {/* Security Features Grid */}

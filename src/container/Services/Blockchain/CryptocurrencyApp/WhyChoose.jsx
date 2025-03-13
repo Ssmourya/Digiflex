@@ -63,14 +63,10 @@ const WhyChoose = () => {
       <section>
         <div className="max-w-5xl mx-auto text-center px-4 mb-10 ">
           <Heading>
-          <div>
-          Why Choose Digiflex.ai for Cryptocurrency App?
-          </div>
+          Why Choose Digiflex.ai for Cryptocurrency App?   
           </Heading>
-          <Paragraph>
-            <div className='text-center'>
+          <Paragraph className='text-center'>
             Leverage our expertise and cutting-edge solutions to power your cryptocurrency application with robust security, scalability, and global reach.
-            </div>
           </Paragraph>
           
           

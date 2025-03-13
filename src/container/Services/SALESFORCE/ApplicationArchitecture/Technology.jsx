@@ -1,14 +1,5 @@
 "use client";
 
-// import React from 'react'
-
-// const Technology = () => {
-//   return (
-//     <div>Technology</div>
-//   )
-// }
-
-// export default Technology
 import React, { useState } from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -55,17 +46,12 @@ const Technology = () => {
       <div className="bg-white flex flex-col justify-center items-center relative ">
         {/* Heading */}
         <Heading>
-          <div>
             Technologies What We Use
-          </div>
         </Heading>
 
         {/* Subheading */}
         <Paragraph>
-          <span>
-            Our powerful tech stack enables us to build scalable, high-performance solutions.
-          </span>
-        
+            Our powerful tech stack enables us to build scalable, high-performance solutions.  
         </Paragraph>
 
         {/* Technologies Grid */}

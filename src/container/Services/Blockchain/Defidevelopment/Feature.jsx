@@ -11,15 +11,11 @@ const FeaturesSection = () => {
   return (
     <WrapperContainer>
       <div >
-        <Heading >
-          <div className="text-center">
+        <Heading className="text-center">
           Our Top Features
-          </div>
         </Heading>
-        <Paragraph>
-          <span className="block text-center">
+        <Paragraph className="text-center">
           Secure transactions, smart contracts, liquidity pools, staking, and decentralized governance features.
-          </span>
         </Paragraph>
         <div className="max-w-4xl mx-auto mt-8 space-y-8">
           {features.map((feature, index) => (

@@ -193,14 +193,10 @@ const Tools = () => {
         <div>
           <div className="text-center mb-16">
             <Heading>
-              <div>
                 NFT Development Tech Stack
-              </div>
             </Heading>
-            <Paragraph>
-              <span className='block text-center'>
-                A comprehensive suite of technologies powering next-generation NFT marketplaces
-              </span>             
+            <Paragraph className=' text-center'>
+                A comprehensive suite of technologies powering next-generation NFT marketplaces           
             </Paragraph>
           </div>
 

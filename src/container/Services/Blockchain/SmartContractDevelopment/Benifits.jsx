@@ -25,15 +25,10 @@ const SmartContractBenefits = () => {
    
     <div className=" flex flex-col items-center justify-center ">
       <Heading>
-      <div>
-        The Benefits of Smart Contracts
-      </div>
-    
+        The Benefits of Smart Contract
       </Heading>
-      <Paragraph>
-        <span className="block text-center">
+      <Paragraph className="text-center">    
         Smart contracts offer automation, security, transparency, efficiency, speed, and trust.
-        </span>
       </Paragraph>
      
 

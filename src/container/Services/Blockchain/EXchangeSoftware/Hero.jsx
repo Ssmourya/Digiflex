@@ -1,8 +1,7 @@
 "use client";
 
-
 import React, { useEffect, useRef } from "react";
-import { ArrowRight, Sparkles } from "lucide-react";
+// import { ArrowRight, Sparkles } from "lucide-react";
 
 function Hero() {
   const letterRefs = useRef([]);

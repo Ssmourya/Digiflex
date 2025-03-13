@@ -65,14 +65,12 @@ function AiAppServices() {
     <WrapperContainer>
       <div className="items-center">
         <Heading>
-          <div>Types of Crypto Exchange Development</div>
+        Types of Crypto Exchange Development
         </Heading>
 
-        <Paragraph>
-          <div className="text-center">
+        <Paragraph className="text-center">
             Crypto exchange development includes centralized, decentralized,
             hybrid, and P2P models.
-          </div>
         </Paragraph>
 
         {/* Responsive Card */}
@@ -86,12 +84,15 @@ function AiAppServices() {
             transition={{ duration: 0.5 }}
             className="w-full md:w-1/2 h-[300px] md:h-[500px] overflow-hidden"
           >
-            <Image
-              src={services[currentSlide].image}
-              alt={services[currentSlide].title}
-              className="w-full h-full object-cover"
-              priority={false}
-            />
+           <div className="relative w-full h-[300px] md:h-[500px]">
+  <Image
+    src={services[currentSlide].image}
+    alt={services[currentSlide].title}
+    fill
+    className="object-cover"
+  />
+</div>
+
           </motion.div>
 
           {/* Left Side - Text */}

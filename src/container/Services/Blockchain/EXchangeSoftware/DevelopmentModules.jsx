@@ -63,10 +63,8 @@ const CryptoExchangeModules = () => {
       <Heading>
         Crypto Exchange Modules
       </Heading>
-      <Paragraph>
-        <div className="text-center">
+      <Paragraph className="text-center">
         Crypto exchange modules include user authentication, trading engine, wallet, and security.
-        </div>
       </Paragraph>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {modules.map((module, index) => (

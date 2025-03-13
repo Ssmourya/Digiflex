@@ -100,14 +100,10 @@ const Features = () => {
    <WrapperContainer>
         <div >
         <Heading>
-        <div>
          Features Of Cryptocurrency Wallet Development
-        </div>
         </Heading>
-        <Paragraph>
-          <span className='block text-center'>
+        <Paragraph className='text-center'>
           Secure, decentralized, multi-chain support, fast transactions, and user control.
-          </span>
         </Paragraph>
     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">

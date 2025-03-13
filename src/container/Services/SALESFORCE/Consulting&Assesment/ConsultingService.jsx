@@ -77,14 +77,10 @@ const ConsultingServices = () => {
       <section className="w-full max-w-6xl">
         <div className="text-center mb-12">
           <Heading>
-            <div>
             Our Consulting & Assessment Services
-            </div>
           </Heading>
-          <Paragraph>
-            <span className='block text-center'>
+          <Paragraph className='text-center'>
             Expert solutions tailored to your business needs, delivered with precision and professionalism.
-            </span>
           </Paragraph>
         </div>
         
@@ -104,10 +100,8 @@ const ConsultingServices = () => {
                 <Subheading>
                 {service.title}
                 </Subheading>
-                <Paragraph>
-                <span className='block text-center'>
+                <Paragraph className=' text-center'>
                 {service.description}
-                </span>
                 </Paragraph>
                 
                 <button 

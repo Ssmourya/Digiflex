@@ -250,14 +250,10 @@ const AnimatedGrid = () => {
     <WrapperContainer>
     <div>
       <Heading>
-        <div>
         Types Of CryptoCurrency App
-        </div>
       </Heading>
-      <Paragraph>
-        <div className='text-center'>
+      <Paragraph className='text-center'>
         Our crypto app supports exchange, wallet, payment, staking, and investment types.
-        </div>
       </Paragraph>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

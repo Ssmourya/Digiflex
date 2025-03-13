@@ -19,14 +19,10 @@ export default function BenefitsSection() {
               
       <div>
         <Heading>
-            <div>
             Real-Life Benefits of DeFi Software Development
-            </div>
         </Heading>
-        <Paragraph>
-          <span className='block text-center'>
+        <Paragraph className=' text-center'>
           DeFi software enables decentralization, security, transparency, fast transactions, and financial freedom.
-          </span>
         </Paragraph>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

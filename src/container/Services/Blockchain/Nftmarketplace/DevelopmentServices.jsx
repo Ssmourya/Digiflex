@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// const DevelopmentServices = () => {
-//   return (
-//     <div>DevelopmentServices</div>
-//   )
-// }
-
-// export default DevelopmentServices
-
-
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -49,14 +38,10 @@ const  DevelopmentServices = () => {
   
     <div >
      <Heading>
-        <div>
         Our NFT Marketplace Development Services
-        </div>
      </Heading>
-     <Paragraph>
-      <span className="block text-center">
+     <Paragraph className="text-center">
       We offer secure, scalable, customizable, and feature-rich NFT marketplace development services.
-      </span>
      </Paragraph>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

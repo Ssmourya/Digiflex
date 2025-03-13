@@ -33,14 +33,10 @@ const StepSlider = () => {
     <WrapperContainer>
       {/* Heading Section */}
       <Heading>
-        <div>
         Our Services
-        </div>
       </Heading>
-      <Paragraph>
-        <div className="text-center">
+      <Paragraph className="text-center">
         We provide secure, scalable, and customized Initial Coin Offering solutions.
-        </div>
       </Paragraph>
 
       {/* Cards Section */}
@@ -55,16 +51,14 @@ const StepSlider = () => {
           >
             {/* Step Title */}
             <Subheading>
-              <div>
               {step.title}
-              </div>
             </Subheading>
            
             {/* Step Description */}
-            <Paragraph>
-              <div className="text-left">  
+            <Paragraph className="text-left">
+          
             {step.description}
-              </div>
+        
             </Paragraph>
            
             {/* Step Number (Moved Below Text) */}

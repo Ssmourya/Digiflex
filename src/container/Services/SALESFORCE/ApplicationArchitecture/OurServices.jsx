@@ -101,9 +101,7 @@ const ArchitectureServices = () => {
     
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Heading>
-            <div>
                 Our Services
-            </div>
         </Heading>
         <div className="space-y-16">
           {services.map((service) => (

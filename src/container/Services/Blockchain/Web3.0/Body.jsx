@@ -2,7 +2,9 @@ import React from 'react'
 import DevelopmetServices from './DevelopmetServices'
 import Process from './Process'
 import Whyweb3 from './Whyweb3'
-import Faq from './Faq'
+import {webfaq} from '../Faqdata'
+import Faq from '@/components/Faq'
+
 
 const Body = () => {
   return (
@@ -10,7 +12,7 @@ const Body = () => {
    <DevelopmetServices/>
    <Process/>
    <Whyweb3/>
-   <Faq/>
+   <Faq faqs={webfaq} />
    </>
   )
 }

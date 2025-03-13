@@ -2,7 +2,8 @@ import React from 'react'
 import OurServices from './OurServices'
 import WhyChoose from './WhyChoose'
 import Technology from './Technology'
-import Faq from './Faq'
+import { ApplicationArchitecturefaqs} from '../faqdata'
+import Faq from '@/components/Faq'
 
 const Body = () => {
   return (
@@ -10,7 +11,7 @@ const Body = () => {
     <OurServices/>
     <WhyChoose/>
     <Technology/>
-    <Faq/>
+    <Faq faqs={ ApplicationArchitecturefaqs} />
     </>
   )
 }

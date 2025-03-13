@@ -54,15 +54,10 @@ const IcoDevelopmentProcess = () => {
         {/* Heading */}
         <div className="text-center">
         <Heading>
-          <div>
           Initial Coin Offering Benifits
-          </div>
         </Heading>
-          <Paragraph>
-            <div className="text-center">
-          Unlock success in your business with our comprehensive ICO development process, positioning us as a true leader in the crypto industry.
-
-            </div>
+          <Paragraph className="text-center">
+          Unlock success in your business with our comprehensive ICO development process, positioning us as a true leader in the crypto indu
           </Paragraph>
         </div>
 

@@ -132,15 +132,11 @@ export default function ConsultingAssessment() {
       <WrapperContainer>
       <div className="max-w-6xl mx-auto text-center relative z-10">
    <Heading>
-    <div>
       Why Choose Quest Digiflex.ai
-    </div>
    </Heading>
 
-     <Paragraph>
-      <span className='inline-flex items-center justify-center'>
+     <Paragraph  className='inline-flex items-center justify-center'>
       Empowering businesses with data-driven insights and expert strategies.
-      </span>
      </Paragraph>
       </div>
       
@@ -177,10 +173,8 @@ export default function ConsultingAssessment() {
             Our Impact
           </div>
         </Heading>
-         <Paragraph>
-          <span className='block text-center'>
+         <Paragraph className=' text-center'>
           Delivering measurable results for our clients
-          </span>
          </Paragraph>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

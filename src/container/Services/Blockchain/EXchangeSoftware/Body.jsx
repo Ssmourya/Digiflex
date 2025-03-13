@@ -3,7 +3,8 @@ import Cryptodevelopment from './Cryptodevelopment'
 import TopFeature from './TopFeature'
 import TypeCryptoexchange from './TypeCryptoexchange'
 import DevelopmentModules from './DevelopmentModules'
-import Faq from './Faq'
+import { EXchangefaq } from '../Faqdata'
+import Faq from '@/components/Faq'
 
 
 const Body = () => {
@@ -13,7 +14,8 @@ const Body = () => {
  <TopFeature/>
  <TypeCryptoexchange/>
  <DevelopmentModules/>
- <Faq/>
+ <Faq faqs={ EXchangefaq } />
+
  </>
   )
 }

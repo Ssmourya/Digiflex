@@ -82,14 +82,10 @@ const TopFeature = () => {
 <WrapperContainer>
       <div className="text-center">
         <Heading>
-        <div>
           Top Features of Exchange Software
-        </div>
         </Heading>
-        <Paragraph>
-          <div className="text-center">
+        <Paragraph className="text-center"> 
           Our exchange software includes security, scalability, multi-currency support, and liquidity solutions.
-          </div>
         </Paragraph>
       </div>
       <div className="">

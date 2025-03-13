@@ -2,7 +2,8 @@ import React from 'react'
 import Initialofferingservices from './Initialofferingservices'
 import Initialofferingbenifits from './Initialofferingbenifits'
 import Whychoose from './Whychoose'
-import Faq from './Faq'
+import {Initialfaqs} from '../Faqdata'
+import Faq from '@/components/Faq'
 
 
 
@@ -14,8 +15,7 @@ const Body = () => {
  <Initialofferingservices/>
  <Initialofferingbenifits/>
  <Whychoose/>
-
- <Faq/>
+ <Faq faqs={Initialfaqs} />
 
  
 

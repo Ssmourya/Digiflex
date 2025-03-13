@@ -24,12 +24,10 @@ const WalletServices = () => {
     <WrapperContainer>
       <div>
         <Heading>
-          <div>Cryptocurrency Wallet Development Services</div>
+          Cryptocurrency Wallet Development Services
         </Heading>
-        <Paragraph>
-          <span className="block text-center">
+        <Paragraph className=" text-center"> 
             Innovative cryptocurrency wallet development empowers secure, seamless, efficient digital transactions.
-          </span>
         </Paragraph>
 
         {/* Timeline container */}

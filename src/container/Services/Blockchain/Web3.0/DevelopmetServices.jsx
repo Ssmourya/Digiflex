@@ -59,15 +59,11 @@ const DevelopmetServices = () => {
     <>
     <WrapperContainer>
     <Heading>
-        <div>
         Acquire Our Best Web3 Development Services
-        </div>
     </Heading>
-     <Paragraph>
-        <span className=" flex justify-center" >
+     <Paragraph className=" flex justify-center" >
         We offer cutting-edge Web3 development services, empowering businesses
         in diverse industries to streamline operations.
-        </span>
      </Paragraph>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">

@@ -3,7 +3,9 @@ import DefiDevelopment from './DefiDevelopment'
 import DefiBenifits from './DefiBenifits'
 import DefiTechnology from './DefiTechnology'
 import Feature from './Feature'
-import Faq from './Faq'
+import { Defifaqs} from '../Faqdata'
+import Faq from '@/components/Faq'
+
 
 const Body = () => {
   return (
@@ -12,7 +14,7 @@ const Body = () => {
     <DefiBenifits/>
     <DefiTechnology/>
     <Feature/>
-    <Faq/>
+    <Faq faqs={ Defifaqs} />
     </>
   )
 }

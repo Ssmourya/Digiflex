@@ -68,14 +68,10 @@ const CryptoWalletTypes = () => {
     <WrapperContainer>
       <div className="container mx-auto lg:w-[80vw] md:w-[80vw] px-4 sm:px-6">
         <Heading>
-        <div>
-            Types Of Crypto Wallet
-        </div>     
+            Types Of Crypto Wallet 
         </Heading>
-        <Paragraph>
-          <span className='block text-center'>
+        <Paragraph className=' text-center'>  
           Types of crypto wallets include hot, cold, hardware, software, and paper.
-          </span>
         </Paragraph>
 
         {/* Responsive Grid with Centering and Left/Right Gaps */}

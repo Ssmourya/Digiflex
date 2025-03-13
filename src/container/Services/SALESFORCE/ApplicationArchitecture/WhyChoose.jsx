@@ -24,9 +24,7 @@ const WhyChoose = () => {
    
     <div className="bg-white flex flex-col justify-center items-center">
       <Heading>
-        <div>
-        Why Choose Digiflex?
-        </div>
+                Why Choose Digiflex?
       </Heading>
     
       

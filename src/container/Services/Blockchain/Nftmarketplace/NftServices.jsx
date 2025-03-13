@@ -37,12 +37,10 @@ const NftServices = () => {
     <>
       <WrapperContainer>
         <Heading>
-          <div>Looking for a NFT Marketplace Website Developer?</div>
+          Looking for a NFT Marketplace Website Developer?
         </Heading>
-        <Paragraph>
-          <span className="block text-center">
+        <Paragraph className="text-center">
           Expert NFT marketplace developer for secure, scalable, feature-rich, and user-friendly platforms.
-          </span>
         </Paragraph>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 sm:px-6 md:px-8">

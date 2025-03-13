@@ -82,9 +82,9 @@ export default function WhyDigiflex() {
           >
             <div className="p-3 bg-blue-100 rounded-full">{feature.icon}</div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <div className="text-lg font-semibold text-gray-800">
                 {feature.title}
-              </h3>
+              </div>
               <p className="text-gray-600 text-sm mt-2">
                 {feature.description}
               </p>

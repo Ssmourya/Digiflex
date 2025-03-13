@@ -24,13 +24,13 @@ export default function Industries() {
   return (
     <WrapperContainer>
       <div className="bg-white text-black py-12">
-        <Heading>Industries We Serve</Heading>
+        <h2 className="text-3xl font-bold text-center">Industries We Serve</h2>
         <Paragraph>
           We serve a diverse range of clients from all business verticals.
         </Paragraph>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8  mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 mx-auto px-4">
         {industries.map((industry, index) => (
           <motion.div
             key={index}

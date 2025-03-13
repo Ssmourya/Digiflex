@@ -54,7 +54,7 @@ const Process = () => {
       icon: TestTube,
       title: "Testing & Debugging",
       description:
-        "We perform unit tests, browser compatibility checks, and debugging using Knockout’s built-in tools and external testing frameworks.",
+        "We perform unit tests, browser compatibility checks, and debugging using Knockout's built-in tools and external testing frameworks.",
     },
     {
       icon: Rocket,
@@ -73,7 +73,7 @@ const Process = () => {
   return (
     <WrapperContainer>
       <div className="text-center mb-10">
-        <Heading>Knockout.js Development Process</Heading>
+        <Heading level={1}>Knockout.js Development Process</Heading>
         <Paragraph>
           Our Knockout.js development process ensures a structured and scalable
           approach, leveraging MVVM architecture for dynamic and interactive web

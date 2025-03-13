@@ -93,7 +93,6 @@ function TechCard({ tech }) {
   );
 }
 
-
 export default function ToolsAndTech() {
   return (
     <WrapperContainer>
@@ -104,7 +103,9 @@ export default function ToolsAndTech() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <Heading>Knockout.js Development Toolkit</Heading>
+          <h1 className="text-3xl font-bold mb-4">
+            Knockout.js Development Toolkit
+          </h1>
           <Paragraph>
             Explore the tools and technologies we use to craft dynamic,
             data-driven applications with Knockout.js.

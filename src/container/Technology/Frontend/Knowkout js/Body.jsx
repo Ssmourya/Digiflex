@@ -15,8 +15,8 @@ const Body = () => {
       <Industries />
       <WhyDigiflex />
       <Process />
-      <ToolsAndTech/>
-      <FAQ/>
+      <ToolsAndTech />
+      <FAQ />
     </>
   );
 };

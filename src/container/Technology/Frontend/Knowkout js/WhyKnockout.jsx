@@ -50,9 +50,9 @@ const WhyKnockoutJS = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-500"
           >
-            <h3 className="text-xl font-semibold mb-2 text-blue-600">
+            <div className="text-xl font-semibold mb-2 text-blue-600">
               {feature.title}
-            </h3>
+            </div>
             <p className="text-gray-700">{feature.description}</p>
           </motion.div>
         ))}

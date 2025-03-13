@@ -40,7 +40,7 @@ export default function Industries() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <div className="text-5xl">{industry.icon}</div>
-            <h3 className="mt-4 text-lg font-semibold">{industry.name}</h3>
+            <div className="mt-4 text-lg font-semibold">{industry.name}</div>
           </motion.div>
         ))}
       </div>

@@ -56,16 +56,16 @@ const features = [
 export default function WhyDigiflex() {
   return (
     <WrapperContainer>
-      <motion.h2
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="text-2xl font-bold text-gray-900 text-center"
       >
-        <Heading>
+        <Heading level={2}>
           Why Choose Digiflex as Your Knockout.js Development Partner?
         </Heading>
-      </motion.h2>
+      </motion.div>
       <Paragraph>
         Businesses have plenty of reasons to choose us for their next project.
         We offer solutions tailored to specific business needs.

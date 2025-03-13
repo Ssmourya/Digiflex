@@ -54,10 +54,12 @@ const Saas3 = () => {
               className="group relative overflow-hidden rounded-lg"
             >
               <Image
-                src={study.image}
-                alt={study.title}
-                className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110"
-                priority={false}
+              src={study.image}
+              alt={study.title}
+              width={736} // Pinterest image width based on URL
+              height={736} // Assuming square aspect ratio (adjust if different)
+              className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110"
+              priority={false}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70">
                 <div className="absolute top-4 left-4">

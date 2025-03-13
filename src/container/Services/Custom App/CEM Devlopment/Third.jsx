@@ -76,6 +76,8 @@ const Thirds = () => {
           <Image
             src="/assets/bg4.png"
             alt="AI Workspace"
+            width={600} 
+            height={400}
             className="w-full max-w-sm md:max-w-[75%] rounded-lg shadow-md"
             priority={false}
           />

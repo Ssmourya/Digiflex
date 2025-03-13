@@ -1,6 +1,6 @@
-"use client" 
+"use client";
 import Image from "next/image";
- import React from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Saas2 from "../container/Services/Custom App/Saas Devlopment/Saas2";
 import Saas3 from "../container/Services/Custom App/Saas Devlopment/Saas3";
@@ -10,6 +10,7 @@ import Heading from "../Layout/Heading";
 import Subheading from "../Layout/Subheading";
 import { SaaSfaqs } from "../container/Services/Cloud/Faqdata";
 import Faq from "../components/Faq";
+
 const clients = [
   {
     name: "Universal",
@@ -17,7 +18,7 @@ const clients = [
   },
   {
     name: "NHS",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGtutCNQT5sDXQvTm17rkNot67tFpR38Jig&s",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbnhs://encrypted-tbn0.gstatic.com/images?q=tbn9GcShGtutCNQT5sDXQvTm17rkNot67tFpR38Jig&s",
   },
   {
     name: "Guinness",
@@ -60,7 +61,7 @@ const Saas = () => {
           </h1>
           <p className="text-lg leading-relaxed mb-6">
             Scalable, Secure, and High-Performance SaaS Solutions for Modern
-            Businesses.{" "}
+            Businesses.
           </p>
 
           {/* Call to Action Button */}
@@ -86,7 +87,6 @@ const Saas = () => {
           transition={{ duration: 1 }}
         >
           <Heading>Our Clients</Heading>
-
           <p className="text-gray-600">
             The world's leading companies trust our software development
             expertise.
@@ -103,6 +103,8 @@ const Saas = () => {
               <Image
                 src={client.src}
                 alt={`${client.name} logo`}
+                width={120} // Adjust based on actual logo size or desired display
+                height={48} // Adjust based on actual logo size or desired display
                 className="max-h-12 w-auto object-contain"
                 priority={false}
               />
@@ -111,6 +113,7 @@ const Saas = () => {
         </div>
       </div>
 
+      {/* Why Choose Section */}
       <div className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <Heading>Why Choose Our SaaS Solutions?</Heading>

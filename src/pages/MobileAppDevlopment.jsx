@@ -57,9 +57,9 @@ const Amp = () => {
 
      
       
+      <WrapperContainer>
       <Amp2 />
       <Amp3 />
-      <WrapperContainer>
       
       <Amp5 />
       <Faq faqs={Mobilefaqs}/>

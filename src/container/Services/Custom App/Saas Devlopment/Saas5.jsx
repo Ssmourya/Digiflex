@@ -52,6 +52,8 @@ const Saas5 = () => {
               <Image
                 src={insight.image}
                 alt={insight.title}
+                width={736} // Pinterest image width based on URL
+              height={736} // Assuming square aspect ratio (adjust if different)
                 className="w-full h-48 object-cover"
                 priority={false}
               />

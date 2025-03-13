@@ -99,7 +99,7 @@ function GameArtModules() {
       <WrapperContainer>
         <div className="bg-white py-10 flex justify-center">
           <Heading>
-            <h1>Our Game Art Services in Game Development</h1>
+            Our Game Art Services in Game Development
           </Heading>
         </div>
 

@@ -72,7 +72,7 @@ const GameDesignSection = () => {
         className="mx-auto"
       >
         <div className="text-center mb-12">
-          <Heading>Key Features of Game Development</Heading>
+          <Heading>Key Features of PC Game Development</Heading>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Understanding the essential aspects of game development helps create immersive and engaging experiences for players worldwide. At Digiflex, we specialize in providing top-notch game development services that bring your creative visions to life.
           </p>

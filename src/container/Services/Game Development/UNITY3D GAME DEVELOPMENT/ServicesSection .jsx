@@ -76,9 +76,7 @@ const ServicesSection = () => {
     <WrapperContainer>
       <div className="max-w-full space-y-6">
         <Heading>
-          <h1 className="text-3xl font-bold text-center mb-6">
-            Digiflex Unity3D Game Development Services
-          </h1>
+            Digiflex Unity3D Game Development Service
         </Heading>
         <div className="flex flex-col space-y-8">
           {services.map((service, index) => (

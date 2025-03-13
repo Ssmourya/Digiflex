@@ -55,7 +55,7 @@ const UnrealBenefits = () => {
       <div className="max-w-7xl ">
         <div className="text-center p-6">
           <Heading>
-            <h1>OUR UNREAL GAME DEVELOPMENT SERVICES</h1>
+            OUR UNREAL GAME DEVELOPMENT SERVICES
           </Heading>
         </div>
         <div className="sm:p-6">

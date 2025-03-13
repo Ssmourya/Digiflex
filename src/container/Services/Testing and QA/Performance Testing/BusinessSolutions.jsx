@@ -41,6 +41,8 @@ const BusinessSolutions = () => {
                 alt={solution.title}
                 className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                 priority={false}
+                height={100}
+                width={100}
               />
 
               {/* Base Overlay */}

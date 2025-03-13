@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 import Overview from "../container/Services/Testing and QA/Software Test Management/Overview"
@@ -13,7 +14,7 @@ import WrapperContainer from '../Layout/WrapperContainer';
 
 const SoftwareTestManagement = () => {
   return (
-    <div>
+    <>
         <Hero/>
 		
 		<Overview/>
@@ -23,7 +24,7 @@ const SoftwareTestManagement = () => {
 		<BodyData/>
 		<AnalystRecognition/>
 		<AccelerateBusiness/>
-    </div>
+    </>
   )
 }
 

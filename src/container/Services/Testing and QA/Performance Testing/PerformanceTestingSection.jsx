@@ -17,6 +17,7 @@ const PerformanceTestingSection = () => {
             height={300}
             className="object-cover w-full h-full"
             priority={false}
+            alt="image"
           />
         </div>
 

@@ -1,13 +1,12 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 import Subheading from '@/Layout/Subheading';
 import Paragraph from '@/Layout/Paragraph';
 
-
+import { motion } from "framer-motion";
 
 const Card = ({index, icon, title, description}) => {
     return (
@@ -67,14 +66,8 @@ const Benifits = () => {
     return (
     <WrapperContainer>
             <div>
-                <motion.Heading
-                    className="text-5xl font-semibold text-center text-[#1A2E6F] mb-20 "
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                >
-                  <Heading> Benefits of Test Management</Heading> 
-                </motion.Heading>
+                
+                <Heading> Benefits of Test Management</Heading> 
 
                 <motion.div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -84,10 +77,11 @@ const Benifits = () => {
                         hidden: { opacity: 0, scale: 0.8 },
                         visible: { opacity: 1, scale: 1, transition: { staggerChildren: 0.2 } },
                     }}
+                    whileInView={{ opacity: 1 }}
                 >
                     {
                         benefits.map((benefit, index) => (
-                            <Card index={index} icon={benefit.icon} title={benefit.title} description={benefit.description} />
+                            <Card key={index} icon={benefit.icon} title={benefit.title} description={benefit.description} />
                         ))
                     }
                 </motion.div>

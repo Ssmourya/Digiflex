@@ -116,6 +116,8 @@ const PentestProgress = () => {
               <Image
                 src={steps[currentSlide].image}
                 alt={steps[currentSlide].name}
+                width={100}
+                height={100}
                 className="w-full h-full object-cover"
                 priority={false}
               />

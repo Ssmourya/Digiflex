@@ -70,7 +70,9 @@ const Card = ({ image, alt, heading, description, icon }) => {
       <div className="h-48 w-full">
         <Image
           src={image}
-          alt={alt}
+          alt={{alt}}
+          width={100}
+          height={100}
           className="w-full h-full object-cover rounded-t-xl"
           priority={false}
         />
@@ -110,7 +112,6 @@ const DigitalTransformation = () => {
           <Card
             key={card.id}
             image={card.image}
-            alt={card.alt}
             heading={card.heading}
             description={card.description}
             icon={card.icon}

@@ -82,10 +82,6 @@ const Overview = () => {
 
         <div
           className="flex justify-center items-center w-full"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
         >
           <div className="flex flex-col lg:flex-row justify-between items-center  w-full">
             <ImageComponent />

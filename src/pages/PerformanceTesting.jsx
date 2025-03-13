@@ -11,7 +11,7 @@ import PerformanceChallenges from "../container/Services/Testing and QA/Performa
 import WrapperContainer from '../Layout/WrapperContainer';
 const PerformanceTesting = () => {
     return (
-        <div>
+        <>
             <PerformanceTestingHero/>
 			<PerformanceTestingSection/>
 			<Services/>
@@ -19,7 +19,7 @@ const PerformanceTesting = () => {
 			<TestingTools/>
 			<BusinessSolutions/>
 			<PerformanceChallenges/>
-        </div>
+        </>
     )
 }
 

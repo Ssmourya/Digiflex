@@ -10,18 +10,15 @@ const Blockchain_application_development = () => {
   return (
     <WrapperContainer>
       <div>
-        <Heading>
-          <h1>Blockchain Application Development</h1>
+        <Heading>Blockchain Application Development
         </Heading>
-        <Paragraph>
-          <p className="mt-2 text-center">
+        <Paragraph className="mt-2 text-center">
             Blockchain application development involves creating decentralized
             apps (dApps) or systems that leverage blockchain technology for
             transparency, security, and immutability. It includes designing
             smart contracts, integrating wallets, and ensuring scalability while
             addressing user needs in areas like finance, supply chain, and
             identity management.
-          </p>
         </Paragraph>
       </div>
 
@@ -37,14 +34,13 @@ const Blockchain_application_development = () => {
               alt={item.name}
               className="w-20 h-20 mx-auto mb-4"
               priority={false}
+              width={100}
+              height={100}
             />
-            <Subheading>
-              <p className="text-xl font-semibold text-center">{item.name}</p>
+            <Subheading className="text-xl font-semibold text-center">{item.name}
             </Subheading>
-            <Paragraph>
-              <p className=" text-center overflow-hidden text-ellipsis">
+            <Paragraph className=" text-center overflow-hidden text-ellipsis">
                 {item.data}
-              </p>
             </Paragraph>
           </div>
         ))}

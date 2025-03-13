@@ -20,20 +20,18 @@ const Blockchain_platforms = () => {
   return (
     <WrapperContainer>
       <div className="">
-        <h1>
+        
           <Heading>
             Blockchain Development Platforms <br /> We Support ...
           </Heading>
-        </h1>
+        
 
-        <Paragraph>
-          <p className="text-center">
+        <Paragraph className="text-center">
             Blockchain development platforms provide the tools, frameworks, and
             environments developers need to build decentralized applications
             (DApps), smart contracts, and blockchain networks. Here's a detailed
             overview of popular platforms that support blockchain development
             and their key features.
-          </p>
         </Paragraph>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 px-10">
@@ -45,11 +43,12 @@ const Blockchain_platforms = () => {
               <Image
                 src={platform.img}
                 alt={platform.name}
+                width={100}
+              height={100}
                 className="w-24 h-24 object-contain mx-auto"
                 priority={false}
               />
-              <Subheading>
-                <p className="text-lg font-semibold mt-3">{platform.name}</p>
+              <Subheading className="text-lg font-semibold mt-3">{platform.name}
               </Subheading>
             </div>
           ))}

@@ -71,7 +71,7 @@ function Home() {
           <Blockchain_application_development />
           <Blockchain_platforms />
           <Blockchain_services />
-          <Blockchain_support />
+          {/* <Blockchain_support /> */}
         </WrapperContainer>
        <Faq faqs={BlockchainDevFaqs}/>
       </div>

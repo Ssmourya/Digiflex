@@ -8,11 +8,10 @@ const Blockchain_services = () => {
   return (
     <WrapperContainer>
       <div className="text-center md:text-left">
-        <h2>
+      
           <Heading>
             We Provide <br /> Blockchain Development Services
           </Heading>
-        </h2>
 
         <div className="flex flex-col md:flex-row items-center mt-10 gap-10">
           {/* Image Section */}
@@ -36,6 +35,8 @@ const Blockchain_services = () => {
                   className="flex items-center p-3 bg-white hover:shadow-lg transition duration-500 rounded-lg border border-gray-200"
                 >
                   <Image
+                  width={100}
+                  height={100}
                     src={item.img}
                     alt={item.data}
                     className="w-10 h-10"

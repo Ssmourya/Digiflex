@@ -317,9 +317,11 @@ function TechStack() {
                     <Image
                       src={tool.icon}
                       alt={`${tool.name} logo`}
+                      width={48}
+                      height={48}
                       className="max-w-full max-h-full object-contain"
                       onError={handleImageError}
-                      priority={false}
+                      unoptimized={true}
                     />
                   </div>
                   <span className="text-sm font-medium text-gray-700 text-center">

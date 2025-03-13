@@ -88,6 +88,8 @@ const ProcessContent = ({ step }) => {
           src={content[step].image}
           alt={content[step].title}
           className="w-full h-full object-contain p-4"
+          width={500}
+          height={500}
           priority={false}
         />
       </motion.div>

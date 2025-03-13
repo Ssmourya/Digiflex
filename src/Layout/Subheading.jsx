@@ -1,12 +1,12 @@
 import React from "react";
 
-const Subheading = ({ children, className = "" }) => {
+const Subheading = ({ as: Tag = "h3", children, className = "" }) => {
   return (
-    <h3
-      className={`text-xl font-semibold text-blue-600 mb-4 mt-4  ${className}`}
+    <Tag
+      className={`text-xl font-semibold text-blue-600 mb-4 mt-4 ${className}`}
     >
       {children}
-    </h3>
+    </Tag>
   );
 };
 

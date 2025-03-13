@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import Heading from "@/Layout/Heading";
@@ -50,8 +50,11 @@ function Services({ services, activeService, setActiveService }) {
               <Image
                 src={service.image}
                 alt={service.title}
+                width={800}
+                height={600}
                 className="w-full h-full object-cover"
-               priority={false} />
+                priority={false}
+              />
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <h4 className="text-2xl font-bold text-white mb-2">
                   {service.title}

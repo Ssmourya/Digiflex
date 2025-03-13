@@ -48,6 +48,8 @@ function Body() {
             <Image
               src="/assets/devops2.png"
               alt="DevOps Illustration"
+              width={500}
+              height={400}
               className="w-full h-auto 
               transition-transform duration-300 transform hover:scale-105"
               priority={false}

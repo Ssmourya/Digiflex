@@ -62,10 +62,16 @@ function Technology({ technologies, activeTech, setActiveTech }) {
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     <Image
-                      src={logo.url}
-                      alt={logo.name}
+                      src={logo.url.startsWith("/") ? logo.url : `/${logo.url}`}
+                      alt={logo.name || "Technology logo"}
                       className="max-w-full max-h-full object-contain"
+                      width={100}
+                      height={100}
                       priority={false}
+                      unoptimized={true}
+                      onError={(e) => {
+                        e.target.style.display = "none";
+                      }}
                     />
                   </motion.div>
                 ))}

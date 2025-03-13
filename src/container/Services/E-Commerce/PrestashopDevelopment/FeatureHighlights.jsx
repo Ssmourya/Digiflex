@@ -114,6 +114,8 @@ const FeatureHighlights = () => {
             <Image
               src={features[activeFeatureIndex].image}
               alt={features[activeFeatureIndex].title}
+              width={500}
+              height={300}
               className="w-72 md:w-80 lg:w-96 h-auto rounded-lg shadow-md"
               priority={false}
             />

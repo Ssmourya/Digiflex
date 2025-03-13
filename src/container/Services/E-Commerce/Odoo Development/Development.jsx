@@ -97,6 +97,8 @@ const OdooDevelopment = () => {
                 <Image
                   src={odooFeatures[activeIndex].image}
                   alt={odooFeatures[activeIndex].title}
+                  width={500}
+                  height={300}
                   className="w-full max-h-80 object-contain rounded-lg shadow-md"
                   priority={false}
                 />

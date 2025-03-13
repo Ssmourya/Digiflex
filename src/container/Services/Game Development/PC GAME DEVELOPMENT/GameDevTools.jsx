@@ -16,7 +16,7 @@ const GameDevTools = () => {
     <WrapperContainer>
     
         <Heading>
-          <h2 className="text-3xl font-bold mb-4">Tools & Software for PC Game Development</h2>
+          Tools & Software for PC Game Development
         </Heading>
         <div className="overflow-x-auto shadow-lg rounded-lg">
           <table className="min-w-full border-collapse border border-gray-300">

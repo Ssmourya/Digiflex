@@ -129,6 +129,8 @@ const CaseStudies = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={500}
+                    height={300}
                     className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                     priority={false}
                   />

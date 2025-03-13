@@ -57,7 +57,7 @@ const GameDevProcess = () => {
   return (
     <WrapperContainer>
         <Heading>
-          <h1 className="text-3xl font-bold text-center mb-6">Game Development Process</h1>
+          Game Development Process
         </Heading>
         <div className="text-center mb-8">
           <p className="text-lg text-gray-700">

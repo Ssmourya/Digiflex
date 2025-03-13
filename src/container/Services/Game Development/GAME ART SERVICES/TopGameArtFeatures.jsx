@@ -72,10 +72,11 @@ const TopGameArtFeatures = () => {
           <div className="text-center">Top Features of Game Art Services</div>
         </Heading>
         <Paragraph>
-          <div className="text-center mb-12">
-            Elevate your game with top-tier game art services, delivering
+           Elevate your game with top-tier game art services, delivering
             exceptional visual quality and performance.
-          </div>
+          
+
+
         </Paragraph>
         
         <div className="relative">

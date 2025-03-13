@@ -46,14 +46,13 @@ const Benefits = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <Heading>
-            <h2>WHY CHOOSE DIGIFLEX FOR PC GAME DEVELOPMENT?</h2>
+            WHY CHOOSE DIGIFLEX FOR PC GAME DEVELOPMENT?
           </Heading>
 
-          <p className="max-w-3xl mx-auto">
             <Paragraph>
               At Digiflex, we leverage years of expertise in PC game development to bring your ideas to life. Our commitment to quality, innovation, and customer satisfaction sets us apart in the industry.
             </Paragraph>
-          </p>
+          
         </div>
 
         {/* Benefits Grid */}

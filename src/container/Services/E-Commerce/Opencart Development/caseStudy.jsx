@@ -86,6 +86,8 @@ const OpenCartCaseStudies = () => {
                       <Image
                         src={study.logo}
                         alt={`${study.client} Logo`}
+                        width={500}
+                        height={300}
                         className="w-12 h-12 rounded-full"
                         priority={false}
                       />

@@ -39,7 +39,7 @@ const DevelopmentServices = () => {
   return (
     <WrapperContainer>
         <Heading>
-          <h1 className="text-3xl font-bold text-center mb-6">Digiflex VR/XR Simulation Game Development Services</h1>
+          Digiflex VR/XR Simulation Game Development Services
         </Heading>
 
         <div className="space-y-8">

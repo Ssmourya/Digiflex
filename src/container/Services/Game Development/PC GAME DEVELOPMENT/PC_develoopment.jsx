@@ -46,7 +46,7 @@ function PC_development() {
   return (
     <WrapperContainer>
       <div className="max-w-4xl mx-auto text-center">
-        <Heading>Game Development</Heading>
+        <Heading>PC Game Development</Heading> 
 
         <p className="text-gray-600 text-lg leading-loose">
           Exploring key aspects of game development, from coding to design.

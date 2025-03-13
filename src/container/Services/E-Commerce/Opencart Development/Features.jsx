@@ -76,6 +76,8 @@ const OpenCartModernSection = () => {
                   <Image
                     src={feature.img}
                     alt={feature.title}
+                    width={200}
+                    height={200}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     priority={false}
                   />

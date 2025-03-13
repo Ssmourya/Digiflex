@@ -10,24 +10,15 @@ function Aiappintro() {
       <WrapperContainer>
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1">
-            <Heading>
-              <span>
-                <h1 className="text-left">
-                  Welcome to Quest Digiflex.ai – Pioneering AI App Development
-                </h1>
-              </span>
+            <Heading level={1} className="text-left">
+              Welcome to Quest Digiflex.ai – Pioneering AI App Development
             </Heading>
-            <Paragraph>
-              <span>
-                <p className="text-xl text-left text-black leading-7">
-                  At Digiflex.ai, we transform businesses with cutting-edge
-                  AI-powered applications that enhance efficiency, automate
-                  processes, and unlock new opportunities. Our team of expert
-                  developers, data scientists, and AI engineers specialize in
-                  crafting intelligent applications that revolutionize
-                  industries.
-                </p>
-              </span>
+            <Paragraph className="text-xl text-left text-black leading-7">
+              At Digiflex.ai, we transform businesses with cutting-edge
+              AI-powered applications that enhance efficiency, automate
+              processes, and unlock new opportunities. Our team of expert
+              developers, data scientists, and AI engineers specialize in
+              crafting intelligent applications that revolutionize industries.
             </Paragraph>
           </div>
           <div className="flex-1">
@@ -35,6 +26,8 @@ function Aiappintro() {
               src="/assets/Aiappintro.png"
               alt="AI App Intro"
               className="w-full h-auto rounded-lg shadow-lg"
+              width={500}
+              height={300}
               priority={false}
             />
           </div>

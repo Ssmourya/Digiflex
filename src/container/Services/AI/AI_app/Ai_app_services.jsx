@@ -70,7 +70,7 @@ function AiAppServices() {
     <WrapperContainer>
       <div className="relative flex flex-col items-center w-full px-4">
         <Heading>
-          <h1>Our AI App Development Services</h1>
+          <div>Our AI App Development Services</div>
         </Heading>
 
         {/* Main Content */}
@@ -89,15 +89,17 @@ function AiAppServices() {
               alt={services[currentSlide].title}
               className="w-full h-full object-cover"
               priority={false}
+              width={800}
+              height={500}
             />
           </motion.div>
 
           {/* Right Side - Text (Resizes for Smaller Screens) */}
           <div className="w-full lg:w-1/2 p-6 sm:p-8 flex flex-col justify-center">
             <Fontheading>
-              <h2 className=" sm:text-2xl md:text-3xl lg:text-4xl mb-4">
+              <div className=" sm:text-2xl md:text-3xl lg:text-4xl mb-4">
                 {services[currentSlide].title}
-              </h2>
+              </div>
             </Fontheading>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
               {services[currentSlide].description}

@@ -60,7 +60,6 @@ const IndustriesData = [
   },
 ];
 
-
 function AiSoftwareServices() {
   const [select, setSelect] = useState(IndustriesData[0]);
 
@@ -90,9 +89,11 @@ function AiSoftwareServices() {
         {/* Right Section (Industry Details) */}
         <div className="md:w-1/2 w-full p-6 md:p-10 bg-white rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
           <Subheading>
-            <span className="text-xl md:text-3xl font-semibold">{select.title}</span>
+            <span className="text-xl md:text-3xl font-semibold">
+              {select.title}
+            </span>
           </Subheading>
-          <Paragraph className="pt-3 md:pt-5 text-sm md:text-lg text-justify">
+          <div className="pt-3 md:pt-5 text-sm md:text-lg text-justify">
             <ul className="space-y-2">
               {select.about.map((point, index) => (
                 <li key={index} className="flex items-start space-x-2">
@@ -101,7 +102,7 @@ function AiSoftwareServices() {
                 </li>
               ))}
             </ul>
-          </Paragraph>
+          </div>
         </div>
       </div>
     </WrapperContainer>

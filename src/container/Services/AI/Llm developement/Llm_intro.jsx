@@ -47,11 +47,10 @@ const data = [
 function Llm_intro() {
   return (
     <WrapperContainer>
-      <Heading>
-        <h1>What is LLM Development?</h1>
-      </Heading>
+      <Heading>What is LLM Development?</Heading>
 
       <div className="flex flex-col md:flex-row items-center md:items-start">
+        {/* Text Section */}
         <div className="w-full md:w-1/2 mt-10 md:mt-20 px-4">
           <Paragraph>
             LLM (Large Language Model) Development involves building,
@@ -63,12 +62,15 @@ function Llm_intro() {
           </Paragraph>
         </div>
 
-        <div className="w-screen md:w-1/2 flex justify-center mt-6 md:mt-0 px-4">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0 px-4">
           <Image
             src="/assets/LLM_intro.jpg"
             alt="LLM"
             className="max-w-full h-auto"
             priority={false}
+            width={500}
+            height={300}
           />
         </div>
       </div>
@@ -86,8 +88,8 @@ function Llm_intro() {
             <h3 className="text-xl font-semibold text-blue-600">
               {item.title}
             </h3>
-            <Paragraph>
-              <p className="text-gray-600 text-left">{item.about}</p>
+            <Paragraph className="text-gray-600 text-left">
+              {item.about}
             </Paragraph>
           </div>
         ))}

@@ -31,7 +31,8 @@ const nextConfig = {
       { protocol: 'https', hostname: 'www.softwaresuggest.com', pathname: '/**' },
       { protocol: 'https', hostname: 'www.freepik.com', pathname: '/**' },
       { protocol: 'https', hostname: 'media.istockphoto.com', pathname: '/**' },
-      // **Add this line**
+      { protocol: 'https', hostname: 'www.maxiomtech.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'www.lambdatest.com', pathname: '/**' },
       { protocol: 'https', hostname: 'img.freepik.com', pathname: '/**' },
     ],
   },

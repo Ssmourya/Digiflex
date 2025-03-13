@@ -77,14 +77,10 @@ const TechContent = ({ feature }) => {
       exit={{ opacity: 0, y: -20 }}
       className="mt-6 p-6 bg-white rounded-lg shadow-md text-center"
     >
-      <motion.h3
-       
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-      >
-        <Heading>{feature.title}</Heading>
-      </motion.h3>
+
+        <Heading >{feature.title}</Heading>
+
+
       <Paragraph
       
         className="text-gray-600 leading-relaxed"

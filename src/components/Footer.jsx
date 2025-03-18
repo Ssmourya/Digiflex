@@ -147,8 +147,8 @@ function Footer() {
             <Link to="/" className="flex items-center no-underline">
               <Image
                 src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png"
-                width={200}
-                height={300}
+                width={150}
+                height={200}
                 alt="logo"
                 className="h-6"
                 priority={false}

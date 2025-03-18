@@ -6,35 +6,35 @@ import Subheading from "@/Layout/Subheading";
 
 const services = [
   {
-    icon: "/assets/Azore_Computer.png",
+    icon: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_Computer.png",
     title: "Compute Services",
     brief: "Virtual Machines (VMs), App Services, AKS",
     details:
       "Azure provides scalable compute resources with Virtual Machines, Kubernetes, and App Services for hosting.",
   },
   {
-    icon: "/assets/Azore_storage.webp",
+    icon: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_storage.webp",
     title: "Storage Services",
     brief: "Blob Storage, Azure Files, Data Lake",
     details:
       "Reliable cloud storage solutions including Blob Storage for unstructured data, Azure Files for file storage, and Data Lake for big data analytics.",
   },
   {
-    icon: "/assets/Azore_network.png",
+    icon: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_network.png",
     title: "Networking",
     brief: "Virtual Networks (VNet), Load Balancers, ExpressRoute",
     details:
       "Connect and secure cloud applications using Azure Virtual Networks, Load Balancers for traffic management, and ExpressRoute for private connections.",
   },
   {
-    icon: "/assets/Azore_learning.jpg",
+    icon: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_learning.jpg",
     title: "AI & Machine Learning",
     brief: "Cognitive Services, Azure Machine Learning",
     details:
       "Enhance applications with AI capabilities using Cognitive Services for vision, speech, and language processing, and Azure ML for model training.",
   },
   {
-    icon: "/assets/Azore_security.png",
+    icon: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_security.png",
     title: "Security & Identity",
     brief: "Azure Active Directory (AAD), Key Vault, Security Center",
     details:

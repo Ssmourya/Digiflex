@@ -46,7 +46,7 @@ function Body() {
             transition={{ duration: 0.8 }}
           >
             <Image
-              src="/assets/devops2.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/devops2.png"
               alt="DevOps Illustration"
               width={500}
               height={400}

@@ -104,7 +104,7 @@ const OdooServices = () => {
 
                   {/* Main image */}
                   <Image
-                    src="/assets/OdooErp.png"
+                    src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/OdooErp.png"
                     width={500}
                     height={300}
                     alt="Odoo ERP Solutions"

@@ -58,7 +58,7 @@ const MagentoAIAutomation = () => {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/assets/Magento_Ai.jpg"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Magento_Ai.jpg"
               width={500}
               height={300}
               alt="Magento AI & Automation"

@@ -13,37 +13,37 @@ const services = [
     title: "Centralized Exchange",
     description:
       "This is an order book-based trading platform for crypto exchanges involving third parties to ease operations, that's centrally controlled by the authority.",
-    image: "/assets/Centralized Exchange.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Centralized Exchange.avif",
   },
   {
     title: "Decentralized Exchange",
     description:
       "This is a liquidity pool-based crypto exchange platform that uses the blockchain network and uses transactions that are all recorded on immutable ledgers.",
-    image: "/assets/DecentralizedExchange.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/DecentralizedExchange.avif",
   },
   {
     title: "Hybrid Crypto Exchange",
     description:
       "The hybrid model of exchange is based on the order books, whose transactions happen on the chain, aiding both the compatibility of CEX and DEX.",
-    image: "/assets/Hybrid Crypto Exchange.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hybrid Crypto Exchange.avif",
   },
   {
     title: "Peer-to-Peer (P2P) Crypto Exchange",
     description:
       "Peer-to-peer crypto exchange is a direct trading mechanism between two users that provides a free trade experience without third-party intermediaries.",
-    image: "/assets/Peertopeer.webp",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Peertopeer.webp",
   },
   {
     title: "Crypto Derivatives Exchange",
     description:
       "It allows traders to buy and sell financial contracts whose value are derived from underlying cryptocurrencies such as futures, options, and perpetual contracts.",
-    image: "/assets/Crypto Derivatives Exchange.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Crypto Derivatives Exchange.avif",
   },
   {
     title: "Margin Exchanges",
     description:
       "Margin exchanges allow traders to borrow funds to trade large positions, increase the potential of their asset gains, and minimize loss through leverage.",
-    image: "/assets/Margin Exchanges.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Margin Exchanges.avif",
   },
 ];
 

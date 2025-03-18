@@ -196,7 +196,7 @@ const DigitalProducts = () => {
               {/* Right Image */}
               <div className="flex-1 w-full">
                 <Image
-                  src="/assets/productdesign32.png"
+                  src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/productdesign32.png"
                   width={500}
                   height={300}
                   alt="Website Design Preview"
@@ -264,7 +264,7 @@ const DigitalProducts = () => {
               {/* Right Image */}
               <div className="flex-1 w-full">
                 <Image
-                  src="/assets/productdesign33.png"
+                  src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/productdesign33.png"
                   width={500}
                   height={300}
                   alt="Website Design Preview"
@@ -327,7 +327,7 @@ const DigitalProducts = () => {
               {/* Right Image */}
               <div className="flex-1 w-full">
                 <Image
-                  src="/assets/productdesign34.png"
+                  src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/productdesign34.png"
                   width={500}
                   height={300}
                   alt="Website Design Preview"

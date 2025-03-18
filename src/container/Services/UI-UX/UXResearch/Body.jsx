@@ -106,7 +106,7 @@ const ServicesHero = () => {
             <div className="w-full mt-1 lg:mt-0">
               <div className="relative w-full h-full flex justify-center lg:justify-center">
                 <Image
-                  src="/assets/uxreasearch43.jpg"
+                  src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/uxreasearch43.jpg"
                   width={500}
                   height={300}
                   alt="UX Research Illustration"

@@ -21,7 +21,7 @@ function Aws_busines() {
         <Heading>Why Businesses Choose Digiflex.ai for AWS Solutions</Heading>
 
         <Image
-          src="/assets/AWS_logo.avif"
+          src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AWS_logo.avif"
           width={500}
           height={300}
           alt="AWS Cloud"
@@ -43,7 +43,7 @@ function Aws_busines() {
       >
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/assets/Aws_intro.avif"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Aws_intro.avif"
             width={500}
             height={300}
             alt="AWS Infrastructure"

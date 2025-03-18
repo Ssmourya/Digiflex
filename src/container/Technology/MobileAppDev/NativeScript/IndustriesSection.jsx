@@ -24,7 +24,7 @@ const industries = [
     description:
       "Patient portals, appointment booking apps, teleconsultation, medical record management, and remote patient monitoring to improve healthcare accessibility and efficiency.",
     icon: <FaHospital />,
-    image: "/assets/Healthcare.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Healthcare.jpg",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const industries = [
     description:
       "Mobile shopping experiences with real-time inventory tracking, secure payment gateways, personalized recommendations, and seamless order fulfillment.",
     icon: <FaShoppingCart />,
-    image: "/assets/Ecomerce.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Ecomerce.jpg",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const industries = [
     description:
       "Ride-hailing, home services, logistics, and instant service booking platforms providing convenience and efficiency to users.",
     icon: <FaTaxi />,
-    image: "/assets/Automation.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation.jpeg",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const industries = [
     description:
       "Interactive learning platforms, educational games, virtual classrooms, and knowledge assessment tools for students of all ages.",
     icon: <FaBook />,
-    image: "/assets/Education.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Education.jpg",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const industries = [
       "Mobile banking, payment solutions, investment platforms, and financial management tools with robust security features.",
     icon: <FaUniversity />,
     image:
-      "/assets/fintech-investment-financial-internet-technology-concept.jpg",
+      "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/fintech-investment-financial-internet-technology-concept.jpg",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const industries = [
     description:
       "Travel booking, itinerary management, contactless check-ins, and personalized travel recommendations for enhanced customer experiences.",
     icon: <FaPlane />,
-    image: "/assets/Travel.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Travel.jpg",
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ const industries = [
     description:
       "Property listing, virtual tours, mortgage calculators, and property management solutions for buyers, sellers, and agents.",
     icon: <FaBuilding />,
-    image: "/assets/Reacl-estate.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Reacl-estate.jpg",
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const industries = [
     description:
       "Supply chain management, inventory tracking, production monitoring, and quality control applications for industrial operations.",
     icon: <FaIndustry />,
-    image: "/assets/Manufacturing.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Manufacturing.jpg",
   },
   {
     id: 9,
@@ -89,7 +89,7 @@ const industries = [
     description:
       "Content streaming, social media, gaming, and interactive entertainment applications with engaging user experiences.",
     icon: <FaFilm />,
-    image: "/assets/Entertainment.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Entertainment.jpg",
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const industries = [
     description:
       "Workout tracking, nutrition planning, meditation guides, and health monitoring applications for holistic wellness.",
     icon: <FaDumbbell />,
-    image: "/assets/Fitness.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Fitness.jpg",
   },
 ];
 

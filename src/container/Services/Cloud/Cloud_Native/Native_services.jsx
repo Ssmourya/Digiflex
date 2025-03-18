@@ -6,7 +6,7 @@ import Subheading from "@/Layout/Subheading";
 const cloudServices = [
   {
     provider: "AWS",
-    logo: "/assets/AWS_logo.avif",
+    logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AWS_logo.avif",
     services: [
       { name: "AWS Lambda", description: "Serverless computing." },
       {
@@ -18,7 +18,7 @@ const cloudServices = [
   },
   {
     provider: "Microsoft Azure",
-    logo: "/assets/Azore_intro.png",
+    logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_intro.png",
     services: [
       {
         name: "Azure Kubernetes Service (AKS)",
@@ -30,7 +30,7 @@ const cloudServices = [
   },
   {
     provider: "Google Cloud Platform (GCP)",
-    logo: "/assets/Google-Cloud-Logo.png",
+    logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Google-Cloud-Logo.png",
     services: [
       {
         name: "Google Kubernetes Engine (GKE)",

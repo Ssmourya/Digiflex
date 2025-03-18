@@ -19,7 +19,7 @@ function OptimizationHero() {
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full z-0">
         <video autoPlay loop muted className="object-cover w-full h-full">
-          <source src="/assets/video2.mp4" type="video/mp4" />
+          <source src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/video2.mp4" type="video/mp4" />
         </video>
       </div>
       {/* Overlays */}
@@ -66,7 +66,7 @@ function OptimizationHero() {
 
           <div className="flex justify-center items-center gap-6 flex-wrap mt-5">
             <Image
-              src="/assets/Azore_intro.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_intro.png"
               width={500}
               height={300}
               alt="Azure intro"
@@ -74,7 +74,7 @@ function OptimizationHero() {
               priority={false}
             />
             <Image
-              src="/assets/Google-Cloud-Logo.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Google-Cloud-Logo.png"
               width={500}
               height={300}
               alt="Google Cloud Logo"

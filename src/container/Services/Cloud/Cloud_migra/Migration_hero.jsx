@@ -26,7 +26,7 @@ function MigrationHero() {
           className="object-cover w-full h-full"
           style={{ position: "absolute", top: "0", left: "0" }}
         >
-          <source src='/assets/video2.mp4' type="video/mp4" />
+          <source src='https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/video2.mp4' type="video/mp4" />
         </video>
       </div>
       {/* Blur Overlay */}

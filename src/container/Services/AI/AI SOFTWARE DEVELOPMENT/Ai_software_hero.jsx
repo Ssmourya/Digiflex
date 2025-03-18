@@ -27,7 +27,7 @@ function Ai_software_hero() {
               style={{ position: "absolute", top: "0", left: "0" }}
             >
               <source
-                src='/assets/AIvideo.mp4' // Replace with your video URL
+                src='https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AIvideo.mp4' // Replace with your video URL
                 type="video/mp4"
               />
             </video>

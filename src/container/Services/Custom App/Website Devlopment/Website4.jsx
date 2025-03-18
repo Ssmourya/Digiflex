@@ -149,7 +149,7 @@ export default function Website4() {
           </div>
           <div className="w-full md:w-1/2 hidden md:block">
             <Image
-              src="/assets/Busssensss.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Busssensss.png"
               alt="Business Website"
               width={100}
               height={100}

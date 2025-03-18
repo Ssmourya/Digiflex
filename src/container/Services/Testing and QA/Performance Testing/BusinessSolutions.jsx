@@ -8,17 +8,17 @@ const BusinessSolutions = () => {
   const solutions = [
     {
       title: "DevOps Solutions",
-      image: "/assets/devops_Solutions.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/devops_Solutions.jpeg",
       link: "#",
     },
     {
       title: "Quality Assurance",
-      image: "/assets/quality_assurance.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/quality_assurance.jpeg",
       link: "#",
     },
     {
       title: "Software Development",
-      image: "/assets/software_dev.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/software_dev.jpeg",
       link: "#",
     },
   ];

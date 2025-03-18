@@ -14,7 +14,7 @@ const HeroPageForAll = ({ title, description, videoSrc }) => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src='/assets/TestingQAbg.mp4' type="video/mp4" />
+        <source src='https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/TestingQAbg.mp4' type="video/mp4" />
       </video>
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>

@@ -29,12 +29,12 @@ const Mobile3 = () => {
   // Updated services array with icons for each card.
   const services = [
     {
-      imgSrc: "/assets/bg14.jpg",
+      imgSrc: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg14.jpg",
       text: "Application Porting & Migration Assessment",
       icon: <RefreshCcw className="w-8 h-8 text-white" />,
     },
     {
-      imgSrc: "/assets/bg6.png",
+      imgSrc: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg6.png",
       text: "Application Re-engineering",
       icon: <Settings className="w-8 h-8 text-white" />,
     },
@@ -86,7 +86,7 @@ const Mobile3 = () => {
       {/* Optional Graphic */}
       <div className="flex justify-center mb-8">
         <motion.img
-          src="/assets/bg6.png"
+          src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg6.png"
           alt="Mobile Graphic"
           className="w-[290px]"
           width={100}

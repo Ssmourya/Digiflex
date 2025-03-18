@@ -7,12 +7,12 @@ import Paragraph from "@/Layout/Paragraph";
 
 export default function Industries() {
   const industries = [
-    { name: "Healthcare", image: "/assets/Healthcare.jpg", description: "Innovative iOS solutions for patient care and medical management." },
-    { name: "E-commerce", image: "/assets/Ecomerce.jpg", description: "Boost your online store with seamless shopping experiences." },
-    { name: "Education", image: "/assets/Education.jpg", description: "Engaging learning platforms for students and educators." },
-    { name: "Finance & FinTech", image: "/assets/fintech-investment-financial-internet-technology-concept.jpg", description: "Secure and efficient financial technology applications." },
-    { name: "Entertainment & Media", image: "/assets/enterprise.png", description: "Immersive experiences for streaming and media consumption." },
-    { name: "Real Estate", image: "/assets/Reacl-estate.jpg", description: "Smart property solutions for buyers and sellers." },
+    { name: "Healthcare", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Healthcare.jpg", description: "Innovative iOS solutions for patient care and medical management." },
+    { name: "E-commerce", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Ecomerce.jpg", description: "Boost your online store with seamless shopping experiences." },
+    { name: "Education", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Education.jpg", description: "Engaging learning platforms for students and educators." },
+    { name: "Finance & FinTech", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/fintech-investment-financial-internet-technology-concept.jpg", description: "Secure and efficient financial technology applications." },
+    { name: "Entertainment & Media", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/enterprise.png", description: "Immersive experiences for streaming and media consumption." },
+    { name: "Real Estate", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Reacl-estate.jpg", description: "Smart property solutions for buyers and sellers." },
   ];
 
   return (

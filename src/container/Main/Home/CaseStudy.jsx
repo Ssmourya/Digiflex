@@ -75,22 +75,37 @@ const technologies = [
 ];
 
 const Marquee = ({ images, direction }) => {
+  // Calculate total content height to ensure seamless looping
+  const imageHeight = 100; // Height of each image
+  const gap = 16; // Gap between images (4 in gap-4 = 16px)
+  const totalContentHeight = images.length * (imageHeight + gap);
+  
   return (
     <div className="overflow-hidden h-[300px] md:h-[350px] lg:h-[400px] w-[140px] md:w-[150px] lg:w-[160px] relative">
       <motion.div
-        animate={{ y: direction === "up" ? [-400, 0] : [0, -400] }}
-        transition={{ repeat: Infinity, duration: Infinity, ease: "linear" }}
+        animate={{ 
+          y: direction === "up" 
+            ? [-totalContentHeight / 2, -totalContentHeight - totalContentHeight / 2] 
+            : [-totalContentHeight - totalContentHeight / 2, -totalContentHeight / 2]
+        }}
+        transition={{ 
+          repeat: Infinity,
+          duration: 15,
+          ease: "linear",
+          repeatType: "loop"
+        }}
         className="flex flex-col gap-4"
       >
-        {images.concat(images).map((img, index) => (
+        {/* Triple the images to ensure no empty space during transition */}
+        {[...images, ...images, ...images].map((img, index) => (
           <Image
             key={index}
             src={img}
             alt="Marquee Image"
-            width={160} // Match the container width (lg:w-[160px])
-            height={100} // Keep consistent height
-            className="w-[140px] md:w-[150px] lg:w-[160px] h-[100px] object-cover mx-auto" // Use object-cover for uniform appearance
-            priority={false}
+            width={160}
+            height={imageHeight}
+            className="w-[140px] md:w-[150px] lg:w-[160px] h-[100px] object-cover mx-auto"
+            priority={index < images.length} // Prioritize loading first set
           />
         ))}
       </motion.div>

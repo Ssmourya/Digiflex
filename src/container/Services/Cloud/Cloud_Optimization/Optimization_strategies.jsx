@@ -79,7 +79,7 @@ function OptimizationStrategies() {
 
         <div className="flex justify-center items-center w-full md:w-1/3 mt-8 md:mt-0">
           <Image
-            src="/assets/Optimization.webp"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Optimization.webp"
             width={500}
             height={300}
             alt="Cloud Optimization"

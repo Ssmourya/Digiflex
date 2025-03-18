@@ -25,7 +25,7 @@ const Body = () => {
         {/* Right Video/Image Section */}
         <div className="sm:w-[224px] md:w-[384px] flex justify-center items-center">
           <Image
-            src="/assets/Software _Testing.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg"
             width={500}
             height={300}
             alt="Software Testing"

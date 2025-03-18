@@ -31,25 +31,25 @@ const ProcessContent = ({ step }) => {
       title: "Discovery",
       description:
         "Our process begins with a thorough assessment of your business processes, goals, and challenges. This in-depth analysis helps us understand your unique requirements and identify the most effective IT solutions, including tailored Salesforce implementations, to drive your organization's success.",
-      image: "/assets/discovery.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/discovery.png",
     },
     findings: {
       title: "Findings",
       description:
         "We compile a detailed report of our findings, highlighting key insights and challenges. Based on this analysis, we propose innovative solutions and processes, creating a clear and actionable roadmap to guide your business toward achieving its objectives efficiently.",
-      image: "/assets/analysis.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/analysis.png",
     },
     proposal: {
       title: "Proposal",
       description:
         "At Digiflex.ai, we are pleased to present tailored solutions and actionable recommendations to address your current challenges, backed by a detailed project plan and competitive pricing. Leveraging our expertise in IT services and product development, we aim to deliver scalable, efficient, and innovative solutions that align with your goals.",
-      image: "/assets/proposal.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/proposal.png",
     },
     kickoff: {
       title: "Kickoff",
       description:
         "Once the agreement is signed, we'll guide you through a detailed project plan and seamlessly implement the recommended processes and customizations into your Salesforce environment. Our team at Digiflex.ai ensures a smooth transition, empowering your business with optimized solutions tailored to your needs.",
-      image: "/assets/kickoff.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/kickoff.png",
     },
   };
 

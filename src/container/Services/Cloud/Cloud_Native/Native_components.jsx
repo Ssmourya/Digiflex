@@ -16,56 +16,56 @@ const data = [
   {
     title: "Microservices Architecture",
     icon: <Cloud size={32} />,
-    image: "/assets/Information_Gathering.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Information_Gathering.jpeg",
     description:
       "Digiflex enables applications to be built as small, independent services that communicate via APIs.",
   },
   {
     title: "Containerization & Orchestration",
     icon: <Package size={32} />,
-    image:"/assets/Ai_Containerization.png",
+    image:"https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Ai_Containerization.png",
     description:
       "Digiflex leverages Docker for standardized application packaging and Kubernetes for management.",
   },
   {
     title: "Serverless Computing",
     icon: <Server size={32} />,
-    image: "/assets/perfo_test_and_sol.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/perfo_test_and_sol.jpeg",
     description:
       "Digiflex eliminates infrastructure management with serverless solutions like AWS Lambda and Azure Functions.",
   },
   {
     title: "CI/CD Automation",
     icon: <RefreshCcw size={32} />,
-    image: "/assets/AI-Powered.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI-Powered.jpg",
     description:
       "Digiflex automates software pipelines using Jenkins, GitHub Actions, and AWS CodePipeline.",
   },
   {
     title: "Scalability & Elasticity",
     icon: <TrendingUp size={32} />,
-    image: "/assets/AI_Elasticity.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Elasticity.avif",
     description:
       "Digiflex optimizes auto-scaling strategies with horizontal and vertical scaling techniques.",
   },
   {
     title: "Observability & Monitoring",
     icon: <Eye size={32} />,
-    image: "/assets/AI_Cutting-Edge.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Cutting-Edge.jpeg",
     description:
       "Digiflex provides real-time insights using Prometheus, Grafana, and AWS CloudWatch.",
   },
   {
     title: "Service Mesh Security",
     icon: <ShieldCheck size={32} />,
-    image: "/assets/Automation-2.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation-2.jpeg",
     description:
       "Digiflex ensures secure, encrypted communication between microservices using Istio and Linkerd.",
   },
   {
     title: "Security & Compliance",
     icon: <Lock size={32} />,
-    image: "/assets/AI_Automation_Business.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Automation_Business.jpg",
     description:
       "Digiflex enforces the Zero Trust Security Model with IAM and TLS encryption.",
   },

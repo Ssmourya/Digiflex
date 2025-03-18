@@ -17,7 +17,7 @@ const OpenCartCaseStudies = () => {
       solution: "Custom OpenCart inventory sync module with real-time updates",
       results:
         "43% reduction in out-of-stock situations, 27% increase in sales",
-      image: "/assets/Fashion-boutiqe.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Fashion-boutiqe.jpg",
       color: "bg-blue-500",
     },
     {
@@ -27,7 +27,7 @@ const OpenCartCaseStudies = () => {
       solution:
         "Custom shipping calculator with temperature-controlled options",
       results: "92% customer satisfaction, 50% decrease in shipping issues",
-      image: "/assets/GourmetFoods.webp",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/GourmetFoods.webp",
       color: "bg-blue-500",
     },
     {
@@ -36,7 +36,7 @@ const OpenCartCaseStudies = () => {
       challenge: "Poor mobile conversion rates despite high traffic",
       solution: "Responsive OpenCart theme with optimized checkout",
       results: "215% increase in mobile conversions, 31% higher AOV",
-      image: "/assets/TechGadgets.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/TechGadgets.jpg",
       color: "bg-blue-500",
     },
   ];

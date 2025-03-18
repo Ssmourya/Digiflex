@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-// import AboutBg from "@/../public/assets/AboutBg.mp4";
+// import AboutBg from "@/../publichttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AboutBg.mp4";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -28,7 +28,7 @@ function Hero() {
       >
         <div className="absolute inset-0">
           <video className="w-full h-full object-cover" autoPlay loop muted>
-            <source src='/assets/AboutBg.mp4' type="video/mp4" />
+            <source src='https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AboutBg.mp4' type="video/mp4" />
           </video>
         </div>
         <div className="absolute inset-0 bg-black/40 z-10 " />

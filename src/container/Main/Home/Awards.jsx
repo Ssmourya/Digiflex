@@ -36,7 +36,7 @@ function App() {
   const awards = [
     {
       id: 1,
-      image: "/assets/clutch.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/clutch.png",
       alt: "Clutch Award Badge",
       link: "https://clutch.co",
       width: 200,
@@ -45,7 +45,7 @@ function App() {
     },
     {
       id: 2,
-      image: "/assets/goodfirms.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/goodfirms.png",
       alt: "Top Web Development Company",
       link: "https://www.goodfirms.co",
       width: 180,
@@ -63,7 +63,7 @@ function App() {
     },
     {
       id: 4,
-      image: "/assets/google.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/google.png",
       alt: "Google 5-Star Rating",
       link: "https://www.google.com",
       width: 250,
@@ -72,7 +72,7 @@ function App() {
     },
     {
       id: 5,
-      image: "/assets/mobapp.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/mobapp.png",
       alt: "Top Rated App Development",
       link: "https://www.softwareworld.co",
       width: 170,
@@ -90,7 +90,7 @@ function App() {
     },
     {
       id: 7,
-      image: "/assets/globalSpring.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/globalSpring.png",
       alt: "Clutch Global Spring 2024",
       link: "https://clutch.co",
       width: 160,
@@ -99,7 +99,7 @@ function App() {
     },
     {
       id: 8,
-      image: "/assets/manifest.png",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/manifest.png",
       alt: "Most Reviewed AI Company",
       link: "https://themanifest.com",
       width: 160,

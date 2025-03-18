@@ -14,7 +14,7 @@ export default function Website5() {
         {/* Left side - Image showcasing website development */}
         <div className="p-6 border rounded-lg flex flex-col items-center">
           <Image
-            src="/assets/bg9.png"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg9.png"
             alt="Website Development Services"
             className="w-full h-auto rounded-md"
             width={100}

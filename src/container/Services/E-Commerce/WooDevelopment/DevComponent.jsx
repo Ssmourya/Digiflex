@@ -23,7 +23,7 @@ const DevComponent = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <Image
-              src="/assets/WooDevelopment.jpg"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/WooDevelopment.jpg"
               width={500}
               height={300}
               alt="WooCommerce Development"

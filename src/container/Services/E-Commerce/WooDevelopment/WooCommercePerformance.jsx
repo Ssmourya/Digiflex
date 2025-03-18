@@ -49,7 +49,7 @@ const WooCommercePerformance = () => {
       <div
         className="relative w-full min-h-[70vh] flex items-center"
         style={{
-          background: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url($"/assets/woo_bg_1.jpg")`,
+          background: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url($"https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/woo_bg_1.jpg")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -141,7 +141,7 @@ const WooCommercePerformance = () => {
                   muted
                   playsInline
                 >
-                  <source src="/assets/Woo_Perfomance.mp4" type="video/mp4" />
+                  <source src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Woo_Perfomance.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

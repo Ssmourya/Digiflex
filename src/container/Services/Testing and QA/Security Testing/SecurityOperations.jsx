@@ -14,7 +14,7 @@ const SecurityOperations = () => {
           {" "}
           {/* Fixed height wrapper for image */}
           <Image
-            src="/assets/security_1.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/security_1.jpeg"
             width={500}
             height={300}
             alt="Security Operations Center"
@@ -44,7 +44,7 @@ const SecurityOperations = () => {
           {" "}
           {/* Fixed height wrapper for image */}
           <Image
-            src="/assets/security_2.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/security_2.jpeg"
             width={500}
             height={300}
             alt="Security Operations as a Platform"

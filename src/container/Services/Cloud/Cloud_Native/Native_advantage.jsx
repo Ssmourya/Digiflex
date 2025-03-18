@@ -24,7 +24,7 @@ function NativeAdvantage() {
         {/* Image Center */}
         <div className="flex justify-center">
           <Image
-            src="/assets/Nativ_advantage.avif"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Nativ_advantage.avif"
             width={500}
             height={300}
             alt="Digiflex Advantage"

@@ -9,7 +9,7 @@ import WrapperContainer from "@/Layout/WrapperContainer";
 const cardData = [
   {
     id: 1,
-    image: "/assets/Next_Gen_Technologies.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Next_Gen_Technologies.jpeg",
     alt: "Next Gen Technologies",
     heading: "Adapting Next Gen Technologies",
     icon: <Cpu className="w-6 h-6 text-indigo-600" />,
@@ -18,7 +18,7 @@ const cardData = [
   },
   {
     id: 2,
-    image: "/assets/Innovation.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Innovation.jpeg",
     alt: "Innovation",
     heading: "Leading through innovation",
     icon: <Lightbulb className="w-6 h-6 text-yellow-500" />,
@@ -27,7 +27,7 @@ const cardData = [
   },
   {
     id: 3,
-    image: "/assets/Focusing-Business.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Focusing-Business.jpeg",
     alt: "Customer Outcomes",
     heading: "Focusing on the Customer's Business Outcomes",
     icon: <Target className="w-6 h-6 text-red-500" />,
@@ -36,7 +36,7 @@ const cardData = [
   },
   {
     id: 4,
-    image: "/assets/Digital_Engineering.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Digital_Engineering.jpeg",
     alt: "Engineering DNA",
     heading: "Digital Engineering with Quality DNA",
     icon: <Code className="w-6 h-6 text-green-500" />,
@@ -45,7 +45,7 @@ const cardData = [
   },
   {
     id: 5,
-    image: "/assets/agile.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/agile.jpeg",
     alt: "Scaling with Agility",
     heading: "Scaling with Agility",
     icon: <Zap className="w-6 h-6 text-blue-500" />,
@@ -54,7 +54,7 @@ const cardData = [
   },
   {
     id: 6,
-    image: "/assets/Next_Gen_Technologies.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Next_Gen_Technologies.jpeg",
     alt: "Next Gen Technologies",
     heading: "Adapting Next Gen Technologies",
     icon: <Cpu className="w-6 h-6 text-indigo-600" />,

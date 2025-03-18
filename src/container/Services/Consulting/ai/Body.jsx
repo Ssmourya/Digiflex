@@ -90,7 +90,7 @@ function Body() {
           url: "https://www.python.org/static/community_logos/python-logo-generic.svg",
         },
         { name: "R", url: "https://www.r-project.org/logo/Rlogo.svg" },
-        { name: "Julia", url: "https://julialang.org/assets/infra/logo.svg" },
+        { name: "Julia", url: "https://julialang.orghttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/infra/logo.svg" },
       ],
     },
     libraries: {
@@ -104,7 +104,7 @@ function Body() {
         },
         {
           name: "PyTorch",
-          url: "https://pytorch.org/assets/images/pytorch-logo.png",
+          url: "https://pytorch.orghttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/images/pytorch-logo.png",
         },
         {
           name: "Scikit-learn",
@@ -124,7 +124,7 @@ function Body() {
         },
         {
           name: "Hugging Face",
-          url: "https://huggingface.co/front/assets/huggingface_logo.svg",
+          url: "https://huggingface.co/fronthttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/huggingface_logo.svg",
         },
       ],
     },

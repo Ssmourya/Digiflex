@@ -27,7 +27,7 @@ function Hero() {
           muted
           className="absolute object-cover w-full h-full"
         >
-          <source src="/assets/Salesforce.mp4" type="video/mp4" />
+          <source src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Salesforce.mp4" type="video/mp4" />
         </video>
       </div>
       

@@ -59,56 +59,56 @@ const ContentSlider = () => {
   const sliderRef = useRef(null);
   const contentData = [
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "Digiflex Streamlined Supply Chain for E-Commerce Giant",
       description:
         "By integrating automation into the supply chain, Digiflex helped an e-commerce leader to reduce operational costs, improve delivery times, and increase overall efficiency in their processes.",
       hyperlink: "https://www.digiflex.ai/know-more1",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "AI Automation Boosts Financial Services Efficiency",
       description:
         "Digiflex partnered with a financial services provider to automate manual processes, resulting in a 50% reduction in errors and faster data processing, helping the company scale more efficiently.",
       hyperlink: "https://www.digiflex.ai/know-more2",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "Retail Inventory Management Enhanced with AI",
       description:
         "Leveraging advanced AI models, Digiflex optimized inventory management for a retail client, reducing stockouts by 30% and preventing overstocking, increasing profitability and customer satisfaction.",
       hyperlink: "https://www.digiflex.ai/know-more3",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "AI Improves Customer Retention for Telecom Provider",
       description:
         "Through AI-driven solutions, Digiflex helped a telecom provider enhance personalized customer experiences, resulting in improved customer retention and reduced churn by 25%.",
       hyperlink: "https://www.digiflex.ai/know-more4",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "AI-Driven Marketing Boosts Engagement by 25%",
       description:
         "Digiflex empowered a leading global brand to optimize their marketing campaigns with AI, increasing customer engagement by 25% and driving a notable uplift in revenue.",
       hyperlink: "https://www.digiflex.ai/know-more5",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "AI Fraud Detection Reduces Incidents by 40%",
       description:
         "With AI-driven fraud detection, Digiflex helped a banking client lower fraud-related incidents by 40%, protecting assets and improving security measures for customers.",
       hyperlink: "https://www.digiflex.ai/know-more6",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "AI Cuts Hiring Time by 50% in HR Processes",
       description:
         "By implementing AI-powered recruitment tools, Digiflex helped a client cut their hiring time by half and significantly improved the quality of new hires.",
       hyperlink: "https://www.digiflex.ai/know-more7",
     },
     {
-      img: "/assets/Software _Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Software _Testing.jpeg",
       title: "Healthcare Data Processing Automated by 80%",
       description:
         "Digiflex helped a healthcare provider automate 80% of their data processing workflows, improving operational efficiency and reducing human error in critical healthcare data management.",

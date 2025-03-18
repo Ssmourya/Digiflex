@@ -28,49 +28,49 @@ const Service = ({ img, title, description }) => (
 const Services = () => {
   const services = [
     {
-      img: "/assets/load_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/load_Testing.jpeg",
       title: "Load Testing",
       description:
         "Ensure your software performs seamlessly under normal and peak load conditions with our expert load testing solutions.",
     },
     {
-      img: "/assets/stress_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/stress_Testing.jpeg",
       title: "Stress Testing",
       description:
         "Discover your software's limits by determining the maximum load it can endure before failure, ensuring reliability and robustness with our stress testing services.",
     },
     {
-      img: "/assets/volume_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/volume_Testing.jpeg",
       title: "Volume Testing",
       description:
         "Validate your system's ability to manage and process large volumes of data effectively, guaranteeing performance consistency.",
     },
     {
-      img: "/assets/scalability_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/scalability_Testing.jpeg",
       title: "Scalability Testing",
       description:
         "Evaluate and optimize your software's ability to scale effortlessly in response to fluctuating user demands, a core aspect of our performance testing suite.",
     },
     {
-      img: "/assets/endurance_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/endurance_Testing.jpeg",
       title: "Endurance Testing",
       description:
         "Assess your software's capacity to operate under sustained loads over extended periods, ensuring durability and long-term reliability.",
     },
     {
-      img: "/assets/load_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/load_Testing.jpeg",
       title: "Load Testing",
       description:
         "Ensure your software performs seamlessly under normal and peak load conditions with our expert load testing solutions.",
     },
     {
-      img: "/assets/stress_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/stress_Testing.jpeg",
       title: "Stress Testing",
       description:
         "Discover your software's limits by determining the maximum load it can endure before failure, ensuring reliability and robustness with our stress testing services.",
     },
     {
-      img: "/assets/volume_Testing.jpeg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/volume_Testing.jpeg",
       title: "Volume Testing",
       description:
         "Validate your system's ability to manage and process large volumes of data effectively, guaranteeing performance consistency.",

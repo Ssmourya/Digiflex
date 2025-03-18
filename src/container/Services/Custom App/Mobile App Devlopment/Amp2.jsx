@@ -41,7 +41,7 @@ const Amp2 = () => {
               whileHover={{ scale: 1.05 }}
             >
               <Image
-                src="/assets/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection-b.png"
+                src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection-b.png"
                 width={500}
                 height={300}
                 alt="Mobile App Security"

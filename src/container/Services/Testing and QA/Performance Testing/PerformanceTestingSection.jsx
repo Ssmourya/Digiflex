@@ -12,7 +12,7 @@ const PerformanceTestingSection = () => {
         {/* Left side - Illustration */}
         <div className="xs:w-1/2 sm:w-1/2 md:w- lg:w-2/5 mx-auto">
           <Image
-            src="/assets/Website_Maintenance.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Website_Maintenance.jpeg"
             width={500}
             height={300}
             className="object-cover w-full h-full"

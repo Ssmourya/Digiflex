@@ -26,7 +26,7 @@ function Azure_Hero() {
           style={{ position: "absolute", top: "0", left: "0" }}
         >
           <source
-            src="/assets/video2.mp4" // Replace with your video URL
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/video2.mp4" // Replace with your video URL
             type="video/mp4"
           />
         </video>
@@ -75,7 +75,7 @@ function Azure_Hero() {
               storage,networking, AI, machine learning, DevOps, security, and
               more.
             <Image
-              src="/assets/Microsoft-Azure-logo.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Microsoft-Azure-logo.png"
               width={500}
               height={300}
               alt="google cloud"

@@ -10,7 +10,7 @@ const advantages = [
       "Understand and respond to user queries accurately with advanced NLP.",
       "Enhance user experience with human-like interactions and contextual awareness.",
     ],
-    image: "/assets/MigrationSaas.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/MigrationSaas.jpg",
   },
   {
     title: "Multi-Platform Integration",
@@ -18,7 +18,7 @@ const advantages = [
       "Seamless integration with websites, mobile apps, and enterprise software.",
       "Connect Digiflex.ai's chatbot with CRM, ERP, and HRMS for enhanced automation.",
     ],
-    image: "/assets/MigrationPaas.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/MigrationPaas.avif",
   },
   {
     title: "Automation & Workflow Optimization",
@@ -26,7 +26,7 @@ const advantages = [
       "Reduce manual efforts by automating repetitive tasks efficiently.",
       "Digiflex.ai enables businesses to streamline workflows and improve productivity.",
     ],
-    image: "/assets/MigrationIaas.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/MigrationIaas.avif",
   },
 ];
 

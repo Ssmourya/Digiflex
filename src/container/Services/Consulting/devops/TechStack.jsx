@@ -84,7 +84,7 @@ const categories = [
       },
       {
         name: "GoCD",
-        icon: "https://gocd.org/assets/images/go-logo-white.svg",
+        icon: "https://gocd.orghttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/images/go-logo-white.svg",
       },
     ],
   },
@@ -113,7 +113,7 @@ const categories = [
       },
       {
         name: "Rancher",
-        icon: "https://ranchermanager.docs.rancher.com/assets/images/rancher-logo-horiz-color-1.png",
+        icon: "https://ranchermanager.docs.rancher.comhttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/images/rancher-logo-horiz-color-1.png",
       },
       {
         name: "Docker Compose",
@@ -143,7 +143,7 @@ const categories = [
       },
       {
         name: "New Relic",
-        icon: "https://newrelic.com/themes/custom/erno/assets/mediakit/new_relic_logo_vertical.svg",
+        icon: "https://newrelic.com/themes/custom/ernohttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/mediakit/new_relic_logo_vertical.svg",
       },
       {
         name: "Nagios",

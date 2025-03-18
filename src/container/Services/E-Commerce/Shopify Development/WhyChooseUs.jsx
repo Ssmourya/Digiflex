@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 1 }}
         >
           <motion.img
-            src="/assets/Shopify_App_Development.jpg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Shopify_App_Development.jpg"
             alt="Shopify Development"
             className="w-full h-full object-contain rounded-lg shadow-lg"
             whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)" }}

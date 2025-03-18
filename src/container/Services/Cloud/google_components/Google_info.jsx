@@ -19,12 +19,12 @@ function Google_info() {
           </Heading>
           <Paragraph className="text-left mt-4" >         
               Digiflex.ai leverages the power of Google Cloud to deliver
-              cutting-edge AI app development services. With Google Cloud’s
+              cutting-edge AI app development services. With Google Cloud's
               robust computing power, flexible storage options, advanced data
               analytics, and machine learning tools, Digiflex.ai ensures
               high-performance, scalable, and secure solutions for businesses
               worldwide. By utilizing the same infrastructure that powers
-              Google’s own products, Digiflex.ai helps organizations build,
+              Google's own products, Digiflex.ai helps organizations build,
               deploy, and scale applications efficiently, driving innovation and
               digital transformation.           
           </Paragraph>
@@ -33,7 +33,7 @@ function Google_info() {
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <Image
-            src="/assets/google_intro.jpg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/google_intro.jpg"
             width={500}
             height={300}
             alt="Google Cloud"

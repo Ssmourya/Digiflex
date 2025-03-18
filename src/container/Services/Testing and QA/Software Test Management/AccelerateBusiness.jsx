@@ -40,7 +40,7 @@ const Card = ({ image, title, description, points }) => (
 const AccelerateBusiness = () => {
     const cards = [
         {
-            image: "/assets/Automation.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation.jpeg",
             title: "QA Advisory",
             description: "Guiding digital assurance to excellence",
             points: {
@@ -50,7 +50,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Cybersecurity.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Cybersecurity.jpeg",
             title: "AI Powered Testing",
             description: "Smarter, faster, more reliable",
             points: {
@@ -60,7 +60,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Shield.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Shield.jpeg",
             title: "Quality Engineering",
             description: "Quality assured through our services",
             points: {
@@ -70,7 +70,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Automation.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation.jpeg",
             title: "Next Gen Apps Testing",
             description: "Assuring tomorrow's solutions",
             points: {
@@ -80,7 +80,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Cybersecurity.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Cybersecurity.jpeg",
             title: "Enterprise Apps Testing",
             description: "Driving quality in platforms",
             points: {
@@ -90,7 +90,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Shield.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Shield.jpeg",
             title: "Data & Analytics Testing",
             description: "Confidence through data insights",
             points: {
@@ -100,7 +100,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Automation.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation.jpeg",
             title: "Automation Testing",
             description: "Scale with speed and quality",
             points: {
@@ -110,7 +110,7 @@ const AccelerateBusiness = () => {
             },
         },
         {
-            image: "/assets/Cybersecurity.jpeg",
+            image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Cybersecurity.jpeg",
             title: "QA for AI Systems",
             description: "Reliable AI with comprehensive QA",
             points: {

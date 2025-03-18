@@ -4,7 +4,7 @@ import HeroPageForAll from "@/components/HeroPageForAll";
 
 const TestAutomationLandingPage = () => {
   const data = {
-    image: "/assets/test_automation.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/test_automation.jpeg",
     title: "Reliable & Cost-Effective Software Quality",
     description:
       "Harness AI-driven assurance to streamline software delivery, minimize defects, and optimize development efficiency. Our solutions ensure faster releases, reduced costs, and a superior user experience with uncompromising quality.",
@@ -49,7 +49,7 @@ export default TestAutomationLandingPage;
 //                     {/* Right image */}
 //                     <div className="relative h-full w-full hidden lg:block">
 //                         <Image
-//                             src="/assets/test_automation.jpeg" width={500} height={300}
+//                             src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/test_automation.jpeg" width={500} height={300}
 //                             alt="Test_Automation image"
 //                             className="object-cover w-full rounded-md"
 //                         priority={false} />

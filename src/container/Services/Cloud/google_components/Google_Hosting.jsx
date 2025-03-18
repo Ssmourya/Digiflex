@@ -87,7 +87,7 @@ function Google_Hosting() {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/assets/google_hosting.jpg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/google_hosting.jpg"
             width={500}
             height={300}
             alt="Google Cloud Hosting"

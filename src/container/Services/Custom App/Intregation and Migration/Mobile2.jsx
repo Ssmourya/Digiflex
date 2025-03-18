@@ -23,7 +23,7 @@ const Mobile2 = () => {
           >
             <div className="p-4 rounded-full inline-block mb-4">
               <Image
-                src="/assets/bg11.png"
+                src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg11.png"
                 width={500}
                 height={300}
                 alt="End-To-End Consulting Icon"
@@ -48,7 +48,7 @@ const Mobile2 = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <Image
-              src="/assets/bg12.jpg"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg12.jpg"
               width={500}
               height={300}
               alt="Center Image"
@@ -66,7 +66,7 @@ const Mobile2 = () => {
           >
             <div className="p-4 rounded-full inline-block mb-4">
               <Image
-                src="/assets/bg10.png"
+                src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg10.png"
                 width={500}
                 height={300}
                 alt="Automated Data Transfer Icon"

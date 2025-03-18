@@ -62,7 +62,7 @@ const ScalableAutomation = () => {
         {/* Right Section */}
         <div className="w-full md:w-1/2 p-5 flex justify-center">
           <Image
-            src="/assets/cloud_infrastructure.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/cloud_infrastructure.jpeg"
             width={500}
             height={300}
             className="rounded-xl w-full max-w-[500px] md:max-w-full"

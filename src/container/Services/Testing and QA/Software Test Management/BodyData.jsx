@@ -30,7 +30,7 @@ const ImageComponent = ({ section }) => {
   return (
     <div className=" md:w-[384px] sm:w-2/4 h-auto rounded-xl overflow-hidden">
       <Image
-        src={`/assets/${section.imageName}.jpeg`}
+        src={`https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/${section.imageName}.jpeg`}
         alt="Key Image"
         width={500}
         height={300}

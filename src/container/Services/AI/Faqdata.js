@@ -191,7 +191,7 @@ const faqsques = [
     AIPoweredAppsFAQData,
     faqsques,
     LargeLanguageModelFAQData,
-    AICopilotFAQData
+    AICopilotFAQData,
     MachineLearningFAQData
  };
   

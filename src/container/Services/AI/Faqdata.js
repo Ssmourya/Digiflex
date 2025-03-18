@@ -98,10 +98,55 @@ const faqsques = [
     },
   ];
   
+  const MachineLearningFAQData = [
+    {
+      question: "what is machine learning (ml)?",
+      answer:
+        "machine learning (ml) is a subset of ai that enables systems to learn from data and make predictions or decisions without explicit programming.",
+    },
+    {
+      question: "what ml services does digiflex.ai offer?",
+      answer:
+        "digiflex.ai provides ml model development, data preprocessing, model training, deployment, optimization, and integration into business applications.",
+    },
+    {
+      question: "how can ml benefit my business?",
+      answer:
+        "ml can automate processes, enhance decision-making with predictive analytics, improve customer experiences, detect fraud, and optimize operations for better efficiency.",
+    },
+    {
+      question: "can digiflex.ai build a custom ml model for my business?",
+      answer:
+        "yes, we specialize in developing custom ml models tailored to your specific business needs, ensuring accuracy and performance.",
+    },
+    {
+      question: "which industries can benefit from ml solutions?",
+      answer:
+        "ml is widely used in industries like healthcare, finance, e-commerce, marketing, manufacturing, and logistics for automation and data-driven decision-making.",
+    },
+    {
+      question: "how does digiflex.ai ensure ml model accuracy and performance?",
+      answer:
+        "we use advanced techniques such as hyperparameter tuning, cross-validation, and continuous model evaluation to ensure high accuracy and reliability.",
+    },
+    {
+      question: "what are the costs associated with ml model development?",
+      answer:
+        "costs vary based on data complexity, model size, computing resources, and customization needs. digiflex.ai offers cost-effective ml solutions tailored to your budget.",
+    },
+    {
+      question: "how can i integrate ml into my existing applications?",
+      answer:
+        "digiflex.ai provides seamless ml integration through apis and cloud-based services, ensuring smooth deployment into your software ecosystem.",
+    },
+  ];
+  
+
   
   export { 
     AIPoweredAppsFAQData,
     faqsques,
     LargeLanguageModelFAQData,
+    MachineLearningFAQData
  };
   

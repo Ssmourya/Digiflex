@@ -50,12 +50,10 @@ export default function TestAutomationPage() {
   return (
     <WrapperContainer>
       <Heading>
-        <div>Test Automation in DevOps</div>
+       Test Automation in DevOps
       </Heading>
-      <Paragraph>
-        <span className="block text-center">
+      <Paragraph className="block text-center"> 
           Test automation in DevOps ensures fast, reliable, and efficient software delivery.
-        </span>
       </Paragraph>
 
       <div className="flex flex-col sm:flex-row">

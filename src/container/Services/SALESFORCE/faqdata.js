@@ -58,3 +58,45 @@ export const  ApplicationArchitecturefaqs = [
         answer: "You can fill out the Contact Us form on our website or reach out to us via email/call. We will get back to you shortly.",
       },
 ];
+export const Devopsfaq =  [
+  {
+      question: "What is DevOps?",
+      answer:
+        "DevOps is a software development methodology that integrates development (Dev) and operations (Ops) teams to improve collaboration, automate processes, and ensure faster, more reliable software delivery.",
+    },
+    {
+      question: "What is Automation Testing in DevOps?",
+      answer:
+        "Automation Testing in DevOps involves using software tools to execute test cases automatically, reducing manual effort and speeding up testing in CI/CD pipelines.",
+    },
+    {
+      question: "Why is Automation Testing Important in DevOps?",
+      answer:
+        "It ensures Continuous Testing, reduces manual errors, speeds up release cycles, and improves software quality.",
+    },
+    {
+      question: "What are the most used DevOps tools?",
+      answer:
+        "Common DevOps tools include Jenkins, GitHub Actions, Docker, Kubernetes, Terraform, and Prometheus.",
+    },
+    {
+      question: "Which tools are used for Automation Testing in DevOps?",
+      answer:
+        "Popular tools include Jest, Cypress, Selenium, Postman, JMeter, and SonarQube.",
+    },
+    {
+      question: "How do you integrate Automation Testing in a DevOps Pipeline?",
+      answer:
+        "Write automated test scripts, configure test execution in CI/CD pipelines, run tests on every commit, and deploy only if all tests pass.",
+    },
+    {
+      question: "What is Shift-Left Testing in DevOps?",
+      answer:
+        "Shift-left testing means testing earlier in the software development cycle to detect and fix bugs sooner.",
+    },
+    {
+      question: "What are common challenges in Automation Testing?",
+      answer:
+        "Challenges include test flakiness, high maintenance, and slow execution of large test suites.",
+    },
+];

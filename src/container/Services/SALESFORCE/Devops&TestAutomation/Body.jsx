@@ -1,9 +1,10 @@
 import React from 'react'
-import Hero from './Hero'
+// import Hero from './Hero'
 import Lifesycle from './Lifesycle'
 import TestAutomation from './TestAutomation'
 import Tools from './Tools'
-import Faq from './Faq'
+import {Devopsfaq } from '../faqdata'
+import Faq from '@/components/Faq'
 
 const Body = () => {
   return (
@@ -11,7 +12,7 @@ const Body = () => {
    <Lifesycle/>
    <TestAutomation/>
    <Tools/>
-   <Faq/>
+   <Faq faqs={ Devopsfaq } />
 
    </>
   )

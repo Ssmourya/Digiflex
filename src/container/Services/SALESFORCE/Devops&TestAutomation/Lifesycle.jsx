@@ -32,14 +32,10 @@ const DevOpsDiagram = () => {
   return (
     <WrapperContainer>
         <Heading>
-            <div>
                 Phase Of The Devops Lifecycle
-            </div>
         </Heading>
-        <Paragraph>
-            <span className="block text-center">
+        <Paragraph className="block text-center">
             The DevOps lifecycle streamlines development, integration, testing, deployment, monitoring, and continuous improvement.
-            </span>
         </Paragraph>
 
   

@@ -485,11 +485,11 @@ export const serviceCategories = [
                 title: "Consulting Assessment",
                 path: "/salesforce-consulting-assessment"
             },
-            // {
-            //     icon: Database,
-            //     title: "CRM Implementation",
-            //     path: "/services/salesforce/crm"
-            // },
+             {
+                icon: Database,
+                title: "DEVOPS & TEST AUTOMATION",
+                path: "/devops-test-automation-services"
+             },
             // {
             //     icon: Server,
             //     title: "Salesforce Customization",

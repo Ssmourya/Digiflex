@@ -97,7 +97,51 @@ const faqsques = [
         "Digiflex.ai provides seamless API integration services, helping businesses deploy LLMs into websites, chatbots, customer support systems, and enterprise applications.",
     },
   ];
+
   
+  const AICopilotFAQData = [
+  {
+    question: "What is an AI Copilot?",
+    answer:
+      "An AI Copilot is an intelligent assistant designed to enhance productivity by automating tasks, providing insights, and assisting with decision-making across various domains.",
+  },
+  {
+    question: "What services does Digiflex offer for AI Copilot development?",
+    answer:
+      "Digiflex specializes in developing AI Copilot solutions, including custom AI-powered assistants, workflow automation, real-time data analysis, and seamless integrations with business tools.",
+  },
+  {
+    question: "How can an AI Copilot improve my workflow?",
+    answer:
+      "AI Copilots help streamline tasks such as content generation, data analysis, customer support automation, personalized recommendations, and workflow optimization, boosting efficiency and reducing manual effort.",
+  },
+  {
+    question: "Can Digiflex customize an AI Copilot for my business needs?",
+    answer:
+      "Yes, we offer tailored AI Copilot solutions, allowing businesses to integrate domain-specific intelligence and automate tasks suited to their unique operational requirements.",
+  },
+  {
+    question: "What industries benefit the most from AI Copilots?",
+    answer:
+      "Industries like finance, healthcare, e-commerce, education, customer service, and SaaS can leverage AI Copilots to enhance productivity, automate repetitive tasks, and improve user experience.",
+  },
+  {
+    question: "How does Digiflex ensure AI Copilot security and compliance?",
+    answer:
+      "We prioritize security and compliance by implementing encryption, access controls, and industry-standard data protection measures to safeguard sensitive business information.",
+  },
+  {
+    question: "What is the cost of developing an AI Copilot?",
+    answer:
+      "The cost varies based on features, complexity, and customization needs. Digiflex provides scalable and cost-effective AI Copilot solutions tailored to your business goals.",
+  },
+  {
+    question: "How do I integrate an AI Copilot into my existing systems?",
+    answer:
+      "Digiflex offers seamless API and software integration services, ensuring AI Copilots work effortlessly with your existing business tools, CRMs, customer support systems, and applications.",
+  },
+];
+
   const MachineLearningFAQData = [
     {
       question: "what is machine learning (ml)?",
@@ -147,6 +191,7 @@ const faqsques = [
     AIPoweredAppsFAQData,
     faqsques,
     LargeLanguageModelFAQData,
+    AICopilotFAQData
     MachineLearningFAQData
  };
   

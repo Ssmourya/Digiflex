@@ -330,7 +330,7 @@ export const serviceCategories = [
             },
             {
                 icon: Cloud,
-                title: "MLOPS-Consulting",
+                title: "MLOPS Consulting",
                 path: "/mlops-consulting-services"
             },
         ],

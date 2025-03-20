@@ -6,7 +6,7 @@ import Subheading from '@/Layout/Subheading';
 import Paragraph from '@/Layout/Paragraph';
 const Technologies = () => {
     return (
-        <WrapperContainer className="mb-10">
+        <WrapperContainer>
             <div >
                 <div className="text-center">
                     <Heading>Technologies We Work With</Heading>

@@ -31,7 +31,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -92,7 +92,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -121,7 +121,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -154,7 +154,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -183,7 +183,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -213,7 +213,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -243,7 +243,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -273,7 +273,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -302,7 +302,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -331,7 +331,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -362,7 +362,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-full animate-bounce-slow">
                   <svg
-                    className="w-6 h-6 text-blue-600 animate-spin-slow"
+                    className="w-6 h-6 text-blue-600 animate-bounce"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

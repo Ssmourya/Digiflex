@@ -325,8 +325,13 @@ export const serviceCategories = [
             },
             {
                 icon: Cloud,
-                title: "AI COPILOT DEVELOPMENT",
+                title: "AI Copilot Development",
                 path: "/ai-copilot-development"
+            },
+            {
+                icon: Cloud,
+                title: "AI Agent Development",
+                path: "/ai-agent-development"
             },
         ],
         image: "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",

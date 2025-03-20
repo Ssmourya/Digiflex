@@ -52,13 +52,27 @@ const expertiseAreas = [
 ];
 
 const iconVariants = {
-  hidden: { opacity: 0, scale: 0.5 },
+  hidden: { opacity: 0, scale: 0.5, y: 0 },
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { type: "spring", stiffness: 200 },
+    y: [0, -10, 0],
+    transition: {
+      y: {
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut",
+      },
+      type: "spring",
+      stiffness: 100,
+    },
   },
-  hover: { scale: 1.2, transition: { duration: 0.3 } },
+  hover: {
+    scale: 1.2,
+    rotate: 15,
+    backgroundColor: "#93c5fd",
+    transition: { duration: 0.3 },
+  },
 };
 
 const OurExpertise = () => {

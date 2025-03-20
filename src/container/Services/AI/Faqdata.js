@@ -185,6 +185,49 @@ const faqsques = [
     },
   ];
   
+  const AIAgentFAQData = [
+    {
+      question: "what is an ai agent?",
+      answer:
+        "an ai agent is an intelligent system that can perceive its environment, process information, and take actions to achieve specific goals, often using machine learning and natural language processing.",
+    },
+    {
+      question: "what ai agent services does digiflex.ai offer?",
+      answer:
+        "digiflex.ai provides custom ai agents for automation, customer support, data analysis, decision-making, virtual assistants, and business process optimization.",
+    },
+    {
+      question: "how can an ai agent benefit my business?",
+      answer:
+        "ai agents can enhance customer interactions, automate repetitive tasks, improve decision-making, provide data-driven insights, and boost operational efficiency.",
+    },
+    {
+      question: "can digiflex.ai build a custom ai agent for my business?",
+      answer:
+        "yes, we specialize in developing ai agents tailored to your business needs, ensuring seamless integration, high accuracy, and optimal performance.",
+    },
+    {
+      question: "which industries can benefit from ai agents?",
+      answer:
+        "ai agents are widely used in industries like healthcare, finance, e-commerce, marketing, logistics, and customer service to enhance automation and intelligence.",
+    },
+    {
+      question: "how does digiflex.ai ensure ai agent accuracy and performance?",
+      answer:
+        "we use state-of-the-art ai techniques such as reinforcement learning, fine-tuned NLP models, and continuous model evaluation to ensure accuracy and efficiency.",
+    },
+    {
+      question: "what are the costs associated with developing an ai agent?",
+      answer:
+        "costs vary based on complexity, required features, and integration needs. digiflex.ai offers cost-effective solutions tailored to your budget and business goals.",
+    },
+    {
+      question: "how can i integrate an ai agent into my existing applications?",
+      answer:
+        "digiflex.ai provides seamless ai agent integration through APIs, cloud services, and on-premise deployment, ensuring smooth interoperability with your software ecosystem.",
+    },
+];
+
 
   
   export { 
@@ -192,6 +235,7 @@ const faqsques = [
     faqsques,
     LargeLanguageModelFAQData,
     AICopilotFAQData,
-    MachineLearningFAQData
+    MachineLearningFAQData,
+    AIAgentFAQData
  };
   

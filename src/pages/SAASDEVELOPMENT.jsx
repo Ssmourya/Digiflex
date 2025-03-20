@@ -16,10 +16,10 @@ const clients = [
     name: "Universal",
     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBM7RW2MYrGDHBmKM99UUycqt995yTLhWww&s",
   },
-  {
-    name: "NHS",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbnhs://encrypted-tbn0.gstatic.com/images?q=tbn9GcShGtutCNQT5sDXQvTm17rkNot67tFpR38Jig&s",
-  },
+  // {
+  //   name: "NHS",
+  //   src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:hs9GcShGtutCNQT5sDXQvTm17rkNot67tFpR38Jig&s",
+  // },
   {
     name: "Guinness",
     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBcKvoP84DeACaP9kvyPCakbXbWXrYb1ztA&s",

@@ -512,16 +512,21 @@ export const serviceCategories = [
                 title: "DEVOPS & TEST AUTOMATION",
                 path: "/devops-test-automation-services"
              },
-            // {
-            //     icon: Server,
-            //     title: "Salesforce Customization",
-            //     path: "/services/salesforce/customization"
-            // },
-            // {
-            //     icon: Cloud,
-            //     title: "Cloud Integration",
-            //     path: "/services/salesforce/cloud-integration"
-            // }
+            {
+                icon: Server,
+                title: "SALESFORCE DIGITAL 360",
+                path: "/salesforce-digital-360-solutions"
+            },
+            {
+                icon: Cloud,
+                title: "NEW CLOUD ROLL OUT STRATEGY",
+                path: "/new-cloud-rollout-strategy"
+            },
+            {
+                icon: Cloud,
+                title: "MAINTENANCE & SUPPORT",
+                path: "/salesforce-maintenance-support-services"
+            }
         ],
         image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=600&q=80",
     },

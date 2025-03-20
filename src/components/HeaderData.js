@@ -325,13 +325,8 @@ export const serviceCategories = [
             },
             {
                 icon: Cloud,
-                title: "AI Copilot Development",
+                title: "AI COPILOT DEVELOPMENT",
                 path: "/ai-copilot-development"
-            },
-            {
-                icon: Cloud,
-                title: "AI Agent Development",
-                path: "/ai-agent-development"
             },
         ],
         image: "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
@@ -621,27 +616,23 @@ export const technologyCategories = [
                 title: "Python",
                 path: "/python-development-services"
             },
-            // {
-            //     icon: Globe,
-            //     title: ".NET",
-            //     path: "/dotnet-development-services"
-            // },
-            // {
-            //     icon: Globe,
-            //     title: "Ruby on Rails (ROR)",
-            //     path: "/ruby-on-rails-development",
-            // },
-            // { icon: Globe, title: "Golang", path: "/golang-development-services" },
-            // {
-            //     icon: Globe,
-            //     title: "PHP: Laravel",
-            //     path: "/php-laravel-codeigniter-development",
-            // },
-            // {
-            //     icon: Globe,
-            //     title: "PHP: CodeIgniter",
-            //     path: "/tech/web/codeigniter",
-            // },
+            {
+                icon: Globe,
+                title: ".NET",
+                path: "/dotnet-development-services"
+            },
+            {
+                icon: Globe,
+                title: "Ruby on Rails (ROR)",
+                path: "/ruby-on-rails-development",
+            },
+            { icon: Globe, title: "Golang", path: "/golang-development-services" },
+            {
+                icon: Globe,
+                title: "PHP: Laravel",
+                path: "/php-laravel-codeigniter-development",
+            },
+           
         ],
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     },

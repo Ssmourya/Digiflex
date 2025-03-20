@@ -141,107 +141,8 @@ const AICopilotFAQData = [
       "Digiflex offers seamless API and software integration services, ensuring AI Copilots work effortlessly with your existing business tools, CRMs, customer support systems, and applications.",
   },
 ];
-
-<<<<<<< HEAD
+ 
   const MachineLearningFAQData = [
-    {
-      question: "what is machine learning (ml)?",
-      answer:
-        "machine learning (ml) is a subset of ai that enables systems to learn from data and make predictions or decisions without explicit programming.",
-    },
-    {
-      question: "what ml services does digiflex.ai offer?",
-      answer:
-        "digiflex.ai provides ml model development, data preprocessing, model training, deployment, optimization, and integration into business applications.",
-    },
-    {
-      question: "how can ml benefit my business?",
-      answer:
-        "ml can automate processes, enhance decision-making with predictive analytics, improve customer experiences, detect fraud, and optimize operations for better efficiency.",
-    },
-    {
-      question: "can digiflex.ai build a custom ml model for my business?",
-      answer:
-        "yes, we specialize in developing custom ml models tailored to your specific business needs, ensuring accuracy and performance.",
-    },
-    {
-      question: "which industries can benefit from ml solutions?",
-      answer:
-        "ml is widely used in industries like healthcare, finance, e-commerce, marketing, manufacturing, and logistics for automation and data-driven decision-making.",
-    },
-    {
-      question: "how does digiflex.ai ensure ml model accuracy and performance?",
-      answer:
-        "we use advanced techniques such as hyperparameter tuning, cross-validation, and continuous model evaluation to ensure high accuracy and reliability.",
-    },
-    {
-      question: "what are the costs associated with ml model development?",
-      answer:
-        "costs vary based on data complexity, model size, computing resources, and customization needs. digiflex.ai offers cost-effective ml solutions tailored to your budget.",
-    },
-    {
-      question: "how can i integrate ml into my existing applications?",
-      answer:
-        "digiflex.ai provides seamless ml integration through apis and cloud-based services, ensuring smooth deployment into your software ecosystem.",
-    },
-  ];
-  
-  const AIAgentFAQData = [
-    {
-      question: "what is an ai agent?",
-      answer:
-        "an ai agent is an intelligent system that can perceive its environment, process information, and take actions to achieve specific goals, often using machine learning and natural language processing.",
-    },
-    {
-      question: "what ai agent services does digiflex.ai offer?",
-      answer:
-        "digiflex.ai provides custom ai agents for automation, customer support, data analysis, decision-making, virtual assistants, and business process optimization.",
-    },
-    {
-      question: "how can an ai agent benefit my business?",
-      answer:
-        "ai agents can enhance customer interactions, automate repetitive tasks, improve decision-making, provide data-driven insights, and boost operational efficiency.",
-    },
-    {
-      question: "can digiflex.ai build a custom ai agent for my business?",
-      answer:
-        "yes, we specialize in developing ai agents tailored to your business needs, ensuring seamless integration, high accuracy, and optimal performance.",
-    },
-    {
-      question: "which industries can benefit from ai agents?",
-      answer:
-        "ai agents are widely used in industries like healthcare, finance, e-commerce, marketing, logistics, and customer service to enhance automation and intelligence.",
-    },
-    {
-      question: "how does digiflex.ai ensure ai agent accuracy and performance?",
-      answer:
-        "we use state-of-the-art ai techniques such as reinforcement learning, fine-tuned NLP models, and continuous model evaluation to ensure accuracy and efficiency.",
-    },
-    {
-      question: "what are the costs associated with developing an ai agent?",
-      answer:
-        "costs vary based on complexity, required features, and integration needs. digiflex.ai offers cost-effective solutions tailored to your budget and business goals.",
-    },
-    {
-      question: "how can i integrate an ai agent into my existing applications?",
-      answer:
-        "digiflex.ai provides seamless ai agent integration through APIs, cloud services, and on-premise deployment, ensuring smooth interoperability with your software ecosystem.",
-    },
-];
-
-
-  
-  export { 
-    AIPoweredAppsFAQData,
-    faqsques,
-    LargeLanguageModelFAQData,
-    AICopilotFAQData,
-    MachineLearningFAQData,
-    AIAgentFAQData
- };
-  
-=======
-const MachineLearningFAQData = [
   {
     question: "what is machine learning (ml)?",
     answer:
@@ -326,14 +227,59 @@ const MLOpsFAQData = [
       "digiflex.ai offers customized mlops solutions that integrate with your current devops and cloud environment, ensuring a smooth transition and minimal disruptions."
   }
 ];
+  const AIAgentFAQData = [
+    {
+      question: "what is an ai agent?",
+      answer:
+        "an ai agent is an intelligent system that can perceive its environment, process information, and take actions to achieve specific goals, often using machine learning and natural language processing.",
+    },
+    {
+      question: "what ai agent services does digiflex.ai offer?",
+      answer:
+        "digiflex.ai provides custom ai agents for automation, customer support, data analysis, decision-making, virtual assistants, and business process optimization.",
+    },
+    {
+      question: "how can an ai agent benefit my business?",
+      answer:
+        "ai agents can enhance customer interactions, automate repetitive tasks, improve decision-making, provide data-driven insights, and boost operational efficiency.",
+    },
+    {
+      question: "can digiflex.ai build a custom ai agent for my business?",
+      answer:
+        "yes, we specialize in developing ai agents tailored to your business needs, ensuring seamless integration, high accuracy, and optimal performance.",
+    },
+    {
+      question: "which industries can benefit from ai agents?",
+      answer:
+        "ai agents are widely used in industries like healthcare, finance, e-commerce, marketing, logistics, and customer service to enhance automation and intelligence.",
+    },
+    {
+      question: "how does digiflex.ai ensure ai agent accuracy and performance?",
+      answer:
+        "we use state-of-the-art ai techniques such as reinforcement learning, fine-tuned NLP models, and continuous model evaluation to ensure accuracy and efficiency.",
+    },
+    {
+      question: "what are the costs associated with developing an ai agent?",
+      answer:
+        "costs vary based on complexity, required features, and integration needs. digiflex.ai offers cost-effective solutions tailored to your budget and business goals.",
+    },
+    {
+      question: "how can i integrate an ai agent into my existing applications?",
+      answer:
+        "digiflex.ai provides seamless ai agent integration through APIs, cloud services, and on-premise deployment, ensuring smooth interoperability with your software ecosystem.",
+    },
+];
 
 
-export {
-  AIPoweredAppsFAQData,
-  faqsques,
-  LargeLanguageModelFAQData,
-  AICopilotFAQData,
-  MachineLearningFAQData,
-  MLOpsFAQData,
-};
->>>>>>> c455b552f58c6c3b2ec6b6e13329f4a115ed338f
+  
+  export { 
+    AIPoweredAppsFAQData,
+    faqsques,
+    LargeLanguageModelFAQData,
+    AICopilotFAQData,
+    MachineLearningFAQData,
+    MLOpsFAQData,
+    AIAgentFAQData
+ };
+  
+

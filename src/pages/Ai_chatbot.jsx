@@ -5,6 +5,8 @@ import Ai_chatbot_enterprise from '../container/Services/AI/AI_Chatbot/Ai_chatbo
 import AIChatbotAdvantages from '../container/Services/AI/AI_Chatbot/AI_chatbot_advantages'
 import AI_use_case from '@/container/Services/AI/AI_Chatbot/AI_use_case'
 import AI_whychoose from '@/container/Services/AI/AI_Chatbot/AI_whychoose'
+import Faq from '@/components/Faq'
+import { AIChatbotFAQData } from '@/container/Services/AI/Faqdata'
 
 function Ai_chatbot() {
   return (
@@ -15,6 +17,7 @@ function Ai_chatbot() {
         <AIChatbotAdvantages/>
         <AI_use_case/>
         <AI_whychoose/>
+        <Faq faqs={AIChatbotFAQData}/>
     </>
   )
 }

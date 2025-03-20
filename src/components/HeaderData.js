@@ -1,4 +1,11 @@
 import {
+    
+    Bot,
+    Brain, 
+    MessageSquare,  
+    Settings, 
+    Users, 
+    MessageCircle,
     BrainCircuit,
     Boxes,
     MoveUpRight,
@@ -304,40 +311,45 @@ export const serviceCategories = [
                 path: "/ai-app-development"
             },
             {
-                icon: Cloud,
+                icon: Bot,
                 title: "AI Software Development",
                 path: "/ai-software-development"
             },
             {
-                icon: Cloud,
+                icon: Code,
                 title: "LLM Development",
                 path: "/large-language-model-development"
             },
             {
-                icon: Cloud,
+                icon: Brain,
                 title: "AI Chatbot",
                 path: "/enterprise-ai-chatbot-development"
             },
             {
-                icon: Cloud,
+                icon: MessageSquare,
                 title: "Machine Learning Development",
                 path: "/machine-learning-development"
             },
             {
-                icon: Cloud,
-                title: "Ai Copilot Development",
+                icon: Cpu,
+                title: "AI Copilot Development",
                 path: "/ai-copilot-development"
             },
             {
-                icon: Cloud,
+                icon: Settings,
                 title: "MLOPS Consulting",
                 path: "/mlops-consulting-services"
             },
             {
-                icon: Cloud,
+                icon: Users,
                 title: "AI Agent Development",
                 path: "/ai-agent-development"
             },
+            {
+                icon: MessageCircle ,
+                title: "AI Chatbot Development",
+                path: "/ai-chatbot-development-services"
+            }
         ],
         image: "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
     },

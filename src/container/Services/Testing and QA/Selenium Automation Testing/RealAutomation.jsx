@@ -60,7 +60,7 @@ const RealAutomation = () => {
         <div className="sm:w-3/4 md:w-1/2   flex items-center justify-center">
           <div className="w-full h-full relative">
             <Image
-              src="/assets/RealAutomation.jpeg"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/RealAutomation.jpeg"
               width={500}
               height={300}
               className="w-full h-auto object-contain rounded-xl shadow-lg"

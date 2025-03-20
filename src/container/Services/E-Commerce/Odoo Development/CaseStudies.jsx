@@ -18,7 +18,7 @@ const CaseStudies = () => {
       title: "Odoo Implementation for Retail Business",
       description:
         "Successfully implemented Odoo ERP to streamline inventory, sales, and customer management.",
-      image: "/assets/Management.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Management.jpg",
       client: "RetailCo",
       technologies: "Odoo, Python, PostgreSQL",
       link: "/case-study/retailco",
@@ -28,7 +28,7 @@ const CaseStudies = () => {
       title: "Odoo Customization for Manufacturing",
       description:
         "Customized Odoo to suit manufacturing requirements, including inventory tracking and quality control.",
-      image: "/assets/Pakaging.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Pakaging.jpg",
       client: "ManuTech",
       technologies: "Odoo, React, PostgreSQL",
       link: "/case-study/manutech",
@@ -38,7 +38,7 @@ const CaseStudies = () => {
       title: "E-commerce Integration for Retail Business",
       description:
         "Integrated Odoo ERP with an e-commerce platform to manage online sales, inventory, and customer support.",
-      image: "/assets/E-com.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/E-com.jpg",
       client: "OnlineStore",
       technologies: "Odoo, WooCommerce, MySQL",
       link: "/case-study/online-store",
@@ -48,7 +48,7 @@ const CaseStudies = () => {
       title: "Supply Chain Optimization for Manufacturing",
       description:
         "Implemented supply chain tracking and optimization using Odoo to reduce costs and improve efficiency.",
-      image: "/assets/SupplyChain.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/SupplyChain.jpg",
       client: "TechManufacture",
       technologies: "Odoo, Python, PostgreSQL",
       link: "/case-study/tech-manufacture",
@@ -58,7 +58,7 @@ const CaseStudies = () => {
       title: "Cloud-Based Solutions for Healthcare",
       description:
         "Developed cloud-based solutions using Odoo to streamline patient data management and medical records.",
-      image: "/assets/Health_care.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Health_care.jpg",
       client: "HealthCo",
       technologies: "Odoo, AWS, PostgreSQL",
       link: "/case-study/healthco",
@@ -68,7 +68,7 @@ const CaseStudies = () => {
       title: "Automated Inventory Management for Wholesale",
       description:
         "Created an automated inventory management system using Odoo to improve stock control for a wholesale business.",
-      image: "/assets/Whole_sale.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Whole_sale.jpg",
       client: "WholesaleCo",
       technologies: "Odoo, Python, PostgreSQL",
       link: "/case-study/wholesaleco",

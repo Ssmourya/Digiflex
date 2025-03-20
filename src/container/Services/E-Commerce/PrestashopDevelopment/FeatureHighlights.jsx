@@ -23,7 +23,7 @@ const FeatureHighlights = () => {
       title: "Custom Development",
       description:
         "Tailored PrestaShop solutions with personalized features. Our team ensures that your store is designed specifically to meet your business needs, enhancing both functionality and performance.",
-      image: "/assets/coustom_development.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/coustom_development.jpg",
     },
     {
       icon: (
@@ -39,7 +39,7 @@ const FeatureHighlights = () => {
       title: "Fast & Optimized",
       description:
         "Optimized coding ensures a seamless user experience. With our speed-enhancing strategies, your customers will enjoy faster load times and smooth navigation.",
-      image: "/assets/Fast_optimized.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Fast_optimized.jpg",
     },
     {
       icon: (
@@ -55,7 +55,7 @@ const FeatureHighlights = () => {
       title: "Secure Payments",
       description:
         "Safe and secure payment gateway integration. We implement the latest security protocols to ensure all transactions are encrypted and protected against fraud.",
-      image: "/assets/Secure_payment.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Secure_payment.jpg",
     },
     {
       icon: (
@@ -71,7 +71,7 @@ const FeatureHighlights = () => {
       title: "Mobile Friendly",
       description:
         "Fully responsive design for all devices. Whether your customers shop from a phone, tablet, or desktop, they will experience a seamless and visually appealing interface.",
-      image: "/assets/Mobile_friendly.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Mobile_friendly.jpg",
     },
   ];
 

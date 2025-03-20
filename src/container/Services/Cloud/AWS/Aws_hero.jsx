@@ -26,7 +26,7 @@ function AwsHero() {
             style={{ position: "absolute", top: "0", left: "0" }}
           >
             <source
-              src="/assets/video2.mp4" // Replace with your video URL
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/video2.mp4" // Replace with your video URL
               type="video/mp4"
             />
           </video>
@@ -77,7 +77,7 @@ function AwsHero() {
             {/* ✅ Fixed Image Width & Height Issue */}
             <div className="flex justify-center items-center">
               <Image
-                src="/assets/AWS_logo.avif"
+                src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AWS_logo.avif"
                 alt="AWS logo"
                 width={150} // Adjust width as needed
                 height={100} // Adjust height as needed

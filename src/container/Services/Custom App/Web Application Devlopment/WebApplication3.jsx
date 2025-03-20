@@ -8,25 +8,25 @@ import { motion } from "framer-motion";
 import Subheading from "@/Layout/Subheading";
 
 const industries = [
-  { name: "Healthcare", image: "/assets/Hd.jpg" },
-  { name: "Travel & Tourism", image: "/assets/Hd2.jpg" },
-  { name: "Fintech", image: "/assets/Hd3.jpg" },
-  { name: "BFSI", image: "/assets/Hd4.jpg" },
-  { name: "Automotive", image: "/assets/Hd5.jpg" },
-  { name: "Education & eLearning", image: "/assets/Hd6.jpg" },
+  { name: "Healthcare", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hd.jpg" },
+  { name: "Travel & Tourism", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hd2.jpg" },
+  { name: "Fintech", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hd3.jpg" },
+  { name: "BFSI", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hd4.jpg" },
+  { name: "Automotive", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hd5.jpg" },
+  { name: "Education & eLearning", image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Hd6.jpg" },
 ];
 
 const partners = [
-  { name: "Yale University", logo: "/assets/Logo.jpg" },
-  { name: "Dubai Police", logo: "/assets/Logo2.jpg" },
-  { name: "Panasonic", logo: "/assets/Logo3.jpg" },
-  { name: "Infosys", logo: "/assets/Logo4.jpg" },
-  { name: "KIA", logo: "/assets/Logo5.jpg" },
-  { name: "Eatigo", logo: "/assets/Logo6.jpg" },
-  { name: "Hitachi", logo: "/assets/Logo7.jpg" },
-  { name: "Orange Business Services", logo: "/assets/Logo8.jpg" },
-  { name: "CSF", logo: "/assets/Logo9.jpg" },
-  { name: "Spinny", logo: "/assets/Logo10.jpg" },
+  { name: "Yale University", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo.jpg" },
+  { name: "Dubai Police", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo2.jpg" },
+  { name: "Panasonic", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo3.jpg" },
+  { name: "Infosys", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo4.jpg" },
+  { name: "KIA", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo5.jpg" },
+  { name: "Eatigo", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo6.jpg" },
+  { name: "Hitachi", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo7.jpg" },
+  { name: "Orange Business Services", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo8.jpg" },
+  { name: "CSF", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo9.jpg" },
+  { name: "Spinny", logo: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Logo10.jpg" },
 ];
 
 const WebApplication3 = () => {

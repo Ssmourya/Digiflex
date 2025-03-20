@@ -12,37 +12,37 @@ const odooFeatures = [
     title: "Customization & Modules",
     content:
       "Odoo allows extensive customization with modular architecture. Businesses can develop custom modules to meet specific needs, including CRM, accounting, HR, and more.",
-    image: "/assets/Modules.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Modules.jpg",
   },
   {
     title: "E-commerce & POS",
     content:
       "Odoo integrates seamlessly with e-commerce platforms and POS systems, enabling businesses to manage sales, inventory, and customer data efficiently.",
-    image: "/assets/ecommerceImg.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/ecommerceImg.jpg",
   },
   {
     title: "Accounting & Finance",
     content:
       "Odoo's built-in accounting features automate financial reporting, invoicing, and tax compliance, making financial management easier for businesses.",
-    image: "/assets/Accounting_Finance.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Accounting_Finance.jpg",
   },
   {
     title: "Inventory & Supply Chain",
     content:
       "Odoo offers real-time inventory tracking, warehouse management, and automated stock replenishment to streamline supply chain operations.",
-    image: "/assets/Inventory_Supply_Chain.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Inventory_Supply_Chain.jpg",
   },
   {
     title: "Project Management",
     content:
       "Odoo's project management tools help businesses track tasks, collaborate with teams, and manage deadlines with Kanban and Gantt chart views.",
-    image: "/assets/Project_Management.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Project_Management.jpg",
   },
   {
     title: "Security & Scalability",
     content:
       "Odoo ensures data security with encryption, access control, and cloud scalability, making it suitable for businesses of all sizes.",
-    image: "/assets/Security_Scalability.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Security_Scalability.jpg",
   },
 ];
 

@@ -6,14 +6,14 @@ import Paragraph from "@/Layout/Paragraph";
 import Subheading from "@/Layout/Subheading";
 
 const platforms = [
-  { img: "/assets/blockchainlogo1.png", name: "Ethereum" },
-  { img: "/assets/blockchainlogo3.png", name: "Binance Chain" },
-  { img: "/assets/blockchainlogo4.png", name: "Solana" },
-  { img: "/assets/blockchainlogo5.png", name: "Hyperledger Fabric" },
-  { img: "/assets/blockchainlogo6.png", name: "Polygon" },
-  { img: "/assets/blockchainlogo7.png", name: "Cardano" },
-  { img: "/assets/blockchainlogo8.png", name: "Tezos" },
-  { img: "/assets/blockchainlogo9.png", name: "Polkadot" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo1.png", name: "Ethereum" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo3.png", name: "Binance Chain" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo4.png", name: "Solana" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo5.png", name: "Hyperledger Fabric" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo6.png", name: "Polygon" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo7.png", name: "Cardano" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo8.png", name: "Tezos" },
+  { img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/blockchainlogo9.png", name: "Polkadot" },
 ];
 
 const Blockchain_platforms = () => {

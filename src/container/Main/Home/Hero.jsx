@@ -5,8 +5,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MetallicPaint from "@/components/ui/MetallicPaint"; // Ensure this is the correct path
 // Using public folder for media files in Next.js
-// import bg from "@/assets/HomeHeroBg4.mp4";
-// import bg2 from "@/assets/HomeHeroBg.jpg";
+// import bg from "@https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/HomeHeroBg4.mp4";
+// import bg2 from "@https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/HomeHeroBg.jpg";
 
 function renderTextToImageData(lines, options = {}) {
   const {
@@ -130,7 +130,7 @@ export default function HomeTextEffect() {
         {/* Background image for screens < 720px */}
         <Image
           className="absolute inset-0 w-full h-full object-cover md:hidden"
-          src="/assets/HomeHeroBg.jpg"
+          src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/HomeHeroBg.jpg"
           width={500}
           height={300}
           alt="Background"
@@ -156,7 +156,7 @@ export default function HomeTextEffect() {
           muted
           playsInline
         >
-          <source src="/assets/HomeHeroBg4.mp4" type="video/mp4" />
+          <source src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/HomeHeroBg4.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-t md:bg-gradient-to-l from-transparent to-[#021B3B] w-full sm:w-2/3 md:w-1/4"></div>
       </motion.div>

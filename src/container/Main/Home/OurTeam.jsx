@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
-// import shubhamsir from '@/../public/assets/shubhamsir.webp'
+// import shubhamsir from '@/../publichttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/shubhamsir.webp'
 
 const teamMembers = [
   {
@@ -29,7 +29,7 @@ const teamMembers = [
     id: 4,
     name: "Shubham Jat",
     role: "Business Development Manager",
-    image: "/assets/shubhamsir.webp",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/shubhamsir.webp",
   },
 ];
 

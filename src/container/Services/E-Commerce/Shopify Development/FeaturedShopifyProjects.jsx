@@ -9,17 +9,17 @@ import Paragraph from "@/Layout/Paragraph";
 const projects = [
   {
     title: "Luxury Fashion Store",
-    video: "/assets/shop_store_3.mp4",
+    video: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/shop_store_3.mp4",
     description: "A premium Shopify store with high-end design and seamless user experience.",
   },
   {
     title: "Tech Gadget Hub",
-    video: "/assets/shop_store_2.mp4",
+    video: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/shop_store_2.mp4",
     description: "A modern Shopify store optimized for selling cutting-edge technology.",
   },
   {
     title: "Organic Beauty Shop",
-    video: "/assets/shop_store_4.mp4",
+    video: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/shop_store_4.mp4",
     description: "A nature-inspired Shopify store designed for organic beauty products.",
   },
 ];

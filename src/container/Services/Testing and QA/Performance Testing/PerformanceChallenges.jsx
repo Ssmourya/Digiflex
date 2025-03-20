@@ -55,7 +55,7 @@ const PerformanceChallenges = () => {
         </Heading>
         <div className="w-full sm:w-[75%] md:w-[60%] lg:w-[35%] overflow-hidden">
           <Image
-            src="/assets/perfo_test_and_sol.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/perfo_test_and_sol.jpeg"
             width={500}
             height={300}
             alt="Performance Testing Challenges and Solutions"

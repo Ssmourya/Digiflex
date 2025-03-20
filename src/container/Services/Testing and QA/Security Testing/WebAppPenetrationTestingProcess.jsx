@@ -14,42 +14,42 @@ const PentestProgress = () => {
       name: "Define Scope",
       description:
         "We work with you to clearly define the boundaries and objectives of the security assessment. This step ensures that both parties agree on the systems, applications, and networks that will be tested. It also includes determining the rules of engagement, legal considerations, and testing methodologies to be used. A well-defined scope helps avoid misunderstandings and ensures a smooth testing process.",
-      image: "/assets/Define_Scope.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Define_Scope.jpeg",
       status: "completed",
     },
     {
       name: "Information Gathering",
       description:
         "In this phase, we collect and analyze all available information about the target systems and infrastructure. This includes identifying domains, subdomains, IP addresses, technology stacks, employee email addresses, and any exposed data that could be leveraged in an attack. This step helps us understand the potential attack surface and develop effective testing strategies.",
-      image: "/assets/Information_Gathering.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Information_Gathering.jpeg",
       status: "completed",
     },
     {
       name: "Enumeration",
       description:
         "Enumeration involves systematically mapping the network and identifying potential vulnerabilities and entry points. We gather details about open ports, running services, databases, and configurations. This step also includes identifying potential user accounts, API endpoints, and version-specific vulnerabilities in the applications. The goal is to uncover as much technical insight as possible about the target environment.",
-      image: "/assets/Enumeration.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Enumeration.jpeg",
       status: "completed",
     },
     {
       name: "Attack and Penetration",
       description:
         "During this critical phase, controlled attacks are carefully executed to validate security weaknesses and potential impacts. We attempt to exploit vulnerabilities found in previous phases, using both automated tools and manual techniques. This process includes privilege escalation, lateral movement, and testing the effectiveness of security controls like firewalls, intrusion detection systems (IDS), and web application security measures. We ensure that all attacks are conducted in a safe and ethical manner without disruptions.",
-      image: "/assets/Attack_and_Penetration.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Attack_and_Penetration.jpeg",
       status: "completed",
     },
     {
       name: "Reporting",
       description:
         "After the testing is completed, we compile a comprehensive report detailing our findings. This includes an in-depth analysis of identified vulnerabilities, their severity levels, potential impact, and step-by-step exploitation techniques. We also provide clear remediation steps to help your team patch and mitigate security risks effectively. Our actionable insights empower your organization to strengthen defenses and prevent real-world cyber threats.",
-      image: "/assets/reporting.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/reporting.jpeg",
       status: "current",
     },
     {
       name: "Remediation Testing",
       description:
         "Once the recommended security fixes are implemented, we perform remediation testing to verify that the vulnerabilities have been effectively addressed. This step ensures that patches are properly applied, configurations are secured, and no new security gaps have been introduced. A final validation report is provided, confirming the security posture improvements and offering further recommendations if necessary.",
-      image: "/assets/Remediation_Testing.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Remediation_Testing.jpeg",
       status: "upcoming",
     },
   ];

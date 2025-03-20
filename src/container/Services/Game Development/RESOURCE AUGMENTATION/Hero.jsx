@@ -48,7 +48,7 @@ const Hero = () => {
           className="absolute top-0 left-0 w-full h-full object-cover filter"
           style={{ filter: "blur(1px)" }}
         >
-          <source src="/assets/unrealGame.mp4" type="video/mp4" />
+          <source src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/unrealGame.mp4" type="video/mp4" />
         </video>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">

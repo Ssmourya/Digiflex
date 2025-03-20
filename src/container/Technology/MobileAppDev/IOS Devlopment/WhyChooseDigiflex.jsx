@@ -12,35 +12,35 @@ const features = [
     title: "Experienced iOS Developers",
     description:
       "Our team of skilled developers brings years of experience to build high-quality iOS apps.",
-    image: "/assets/IOS5.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IOS5.jpg",
   },
   {
     id: "uiux",
     title: "User-Centric UI/UX Designs",
     description:
       "We craft intuitive and engaging user interfaces that enhance user experience.",
-    image: "/assets/IOS4.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IOS4.jpg",
   },
   {
     id: "performance",
     title: "Performance-Optimized Apps",
     description:
       "Our apps are built for speed and efficiency, ensuring smooth performance.",
-    image: "/assets/IOS3.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IOS3.jpg",
   },
   {
     id: "security",
     title: "Secure & Scalable Architecture",
     description:
       "We ensure data security and scalability for apps that grow with your business.",
-    image: "/assets/IOS2.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IOS2.jpg",
   },
   {
     id: "agile",
     title: "Agile Development Approach",
     description:
       "We follow an agile methodology for fast, iterative development and quick market launch.",
-    image: "/assets/IOS.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IOS.jpg",
   },
 ];
 

@@ -3,7 +3,6 @@ import React from "react";
 import WrapperContainer from "@/Layout/WrapperContainer";
 import {
   Dialog,
-  DialogTrigger,
   DialogContent,
   DialogTitle,
   DialogImage,
@@ -11,6 +10,7 @@ import {
   DialogDescription,
   DialogContainer,
 } from "@/components/ui/linear-dialog";
+import { DialogTrigger } from "@/components/ui/linear-dialog";
 import { Plus } from "lucide-react";
 
 const projects = [

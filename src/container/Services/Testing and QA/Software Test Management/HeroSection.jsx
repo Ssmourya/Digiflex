@@ -6,7 +6,7 @@ import HeroPageForAll from "@/components/HeroPageForAll";
 
 const Hero = () => {
   const data = {
-    image: "/assets/company_logo_2.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/company_logo_2.jpg",
     title: "Creative and Minimal IT Agency",
     description:
       "Digiflex AI excels in turning your concept into realities with its comprehensive application and web development services, which let you easily incorporate special characteristics and technology that complement your business strategy.",
@@ -73,7 +73,7 @@ export default Hero;
 //                             transition={{ duration: 1.2, ease: "easeOut" }}
 //                             className="overflow-hidden"
 //                         >
-//                             <Image src="/assets/company_logo_2.jpg" width={500} height={300} width={"550px"} alt="Company Logo" loading="lazy" className="rounded-md shadow-lg" priority={false} />
+//                             <Image src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/company_logo_2.jpg" width={500} height={300} width={"550px"} alt="Company Logo" loading="lazy" className="rounded-md shadow-lg" priority={false} />
 //                         </motion.div>
 
 //                     </motion.div>

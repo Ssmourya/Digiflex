@@ -5,7 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, Mail, Phone } from "lucide-react";
 import { SocialIcon } from "react-social-icons";
-// import logo from "@/public/assets/digiflex.png";
+// import logo from "@/publichttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png";
 import WrapperContainer from "../Layout/WrapperContainer";
 
 const locations = [
@@ -146,9 +146,9 @@ function Footer() {
           <div className="mb-4 max-w-[1240px] mx-auto">
             <Link to="/" className="flex items-center no-underline">
               <Image
-                src="/assets/digiflex.png"
-                width={200}
-                height={300}
+                src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png"
+                width={150}
+                height={200}
                 alt="logo"
                 className="h-6"
                 priority={false}

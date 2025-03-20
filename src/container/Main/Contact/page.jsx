@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-// import image from "@/../public/assets/ContactUs.jpg";
+// import image from "@/../publichttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/ContactUs.jpg";
 import WrapperContainer from "@/Layout/WrapperContainer";
 
 const INQUIRY_TYPES = ["general", "support", "sales", "partnership"];
@@ -139,7 +139,7 @@ export default function Contact() {
       >
         <div className="absolute inset-0">
           <Image
-            src="/assets/ContactUs.jpg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/ContactUs.jpg"
             alt="Background"
             className="h-full w-full object-cover"
             priority={false}

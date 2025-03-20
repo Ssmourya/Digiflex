@@ -43,7 +43,7 @@ const Four = () => {
         </div>
         <div className="flex-1">
           <Image
-            src="/assets/bg5.png"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg5.png"
             alt="Knowledge Management"
             width={500}
             height={300}
@@ -90,7 +90,7 @@ const Four = () => {
         </div>
         <div className="flex-1">
           <Image
-            src="/assets/bg6.png"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg6.png"
             alt="Omni-Channel Engagement"
             width={500}
             height={300}

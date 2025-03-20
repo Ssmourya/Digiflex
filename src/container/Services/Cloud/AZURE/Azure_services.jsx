@@ -11,15 +11,15 @@ const advantages = [
       "Digiflex.ai ensures seamless scaling of cloud resources based on business needs.",
       "Supports hybrid and multi-cloud environments for optimized performance.",
     ],
-    image: "/assets/Azore_sca.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_sca.jpg",
   },
   {
     title: "Cost-Effective Cloud Solutions",
     points: [
-      "Digiflex.ai leverages Azure’s pay-as-you-go model to minimize IT expenses.",
+      "Digiflex.ai leverages Azure's pay-as-you-go model to minimize IT expenses.",
       "Exclusive discounts and strategic resource allocation for maximum efficiency.",
     ],
-    image: "/assets/Azore_cost.avif",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_cost.avif",
   },
   {
     title: "Enterprise-Grade Security & Compliance",
@@ -27,15 +27,15 @@ const advantages = [
       "Digiflex.ai implements advanced security measures, including multi-layer encryption and threat protection.",
       "Ensures compliance with GDPR, HIPAA, ISO, and other global standards to meet regulatory requirements.",
     ],
-    image: "/assets/Azore_security.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azore_security.jpg",
   },
   {
     title: "Reliable Cloud Infrastructure",
     points: [
-      "Digiflex.ai guarantees 99.99% uptime with Azure’s globally distributed data centers.",
+      "Digiflex.ai guarantees 99.99% uptime with Azure's globally distributed data centers.",
       "Automated backups and disaster recovery solutions to safeguard critical data.",
     ],
-    image: "/assets/Azure_time.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Azure_time.jpg",
   },
 ];
 

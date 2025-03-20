@@ -13,33 +13,33 @@ const Llm_services = () => {
     {
       title: "Custom LLM Training & Development",
       description: "We build AI models tailored to your industry.",
-      image: "/assets/AI_Expert.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Expert.jpg",
     },
     {
       title: "Fine-Tuning & Optimization",
       description: "Enhancing pre-trained models for better accuracy.",
-      image: "/assets/Llm_Optimization.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Llm_Optimization.jpg",
     },
     {
       title: "AI-Powered Chatbots & Virtual Assistants",
       description: "Intelligent automation for customer engagement.",
-      image: "/assets/AI_chatbots.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_chatbots.jpg",
     },
     {
       title: "Automated Content & Code Generation",
       description: "AI-generated text, reports, and programming solutions.",
-      image: "/assets/Llm_codegeneration.webp",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Llm_codegeneration.webp",
     },
     {
       title: "Integration & Deployment",
       description:
         "Seamlessly incorporating AI models into your existing systems.",
-      image: "/assets/devops_Solutions.jpeg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/devops_Solutions.jpeg",
     },
     {
       title: "AI Security & Compliance",
       description: "Ensuring safe and ethical AI model deployment.",
-      image: "/assets/security.jpg",
+      image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/security.jpg",
     },
   ];
 

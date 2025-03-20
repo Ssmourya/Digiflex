@@ -7,19 +7,19 @@ import Subheading from "@/Layout/Subheading";
 
 const data = [
   {
-    img: "/assets/IntercloudCloud.avif",
+    img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IntercloudCloud.avif",
     title: "Cloud-to-Cloud Migration",
     description:
       "Digiflex.ai ensures smooth migration of applications, workloads, and data between cloud platforms like AWS and Azure, optimizing performance and cost-efficiency.",
   },
   {
-    img: "/assets/Intercloudimg.avif",
+    img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Intercloudimg.avif",
     title: "Hybrid Cloud Migration",
     description:
       "With Digiflex.ai, businesses can seamlessly move data between private and public clouds, ensuring security, scalability, and operational efficiency.",
   },
   {
-    img: "/assets/IntercloudHybrid.avif",
+    img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/IntercloudHybrid.avif",
     title: "Multi-Cloud Deployment",
     description:
       "Digiflex.ai enables businesses to leverage multiple cloud providers simultaneously, distributing workloads for enhanced reliability and flexibility.",

@@ -58,7 +58,7 @@ const Body = () => {
               {/* Image - Using Next.js Image component with width and height */}
               <div className="relative w-full max-w-lg md:max-w-xl lg:max-w-2xl">
                 <Image
-                  src="/assets/BrandStrategy.jpg"
+                  src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/BrandStrategy.jpg"
                   alt="Brand Why"
                   width={800}
                   height={600}
@@ -111,7 +111,7 @@ const Body = () => {
             <div className="w-full md:w-[450px] flex justify-center">
               <div className="relative w-full">
                 <Image
-                  src="/assets/BrandStrategyWhyUs.jpg"
+                  src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/BrandStrategyWhyUs.jpg"
                   alt="Brand Strategy"
                   width={450}
                   height={300}

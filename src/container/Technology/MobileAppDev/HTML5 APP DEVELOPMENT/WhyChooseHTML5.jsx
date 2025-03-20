@@ -34,7 +34,7 @@ export default function WhyChooseHTML5() {
           {/* Image Section */}
           <div className="md:w-[350px]">
             <Image
-              src="/assets/Ghtml.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Ghtml.png"
               width={500}
               height={300}
               alt="Why Choose HTML5"

@@ -33,7 +33,7 @@ function NativeIntro() {
 
           <div className="w-full md:w-1/2">
             <Image
-              src="/assets/Cloud_native.png"
+              src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Cloud_native.png"
               width={500}
               height={300}
               alt="Digiflex Cloud Native Solutions"

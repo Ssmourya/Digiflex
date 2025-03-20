@@ -25,7 +25,7 @@ function Engagementsection() {
             data-aos="flip-left" // Apply AOS flip-left animation
           >
             <Image
-              src="https://www.techverx.com/wp-content/themes/nifty-child/assets/homepage-assets/images/augmented-team.jpg"
+              src="https://www.techverx.com/wp-content/themes/nifty-childhttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/homepage-assets/images/augmented-team.jpg"
               width={500}
               height={300}
               alt="Staff Augmentation"

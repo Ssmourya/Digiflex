@@ -19,7 +19,7 @@ const Overview = () => {
     return (
       <div className="overflow-auto w-full sm:w-3/4 md:w-1/2 lg:w-[30%] flex justify-center items-center mb-8 md:mb-0 p-4">
         <Image
-          src="/assets/left-logo.jpeg"
+          src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/left-logo.jpeg"
           width={500}
           height={300}
           alt="Company Logo"

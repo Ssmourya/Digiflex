@@ -299,7 +299,7 @@ const technologies = [
   },
   {
     name: "Hugging Face",
-    icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+    icon: "https://huggingface.co/fronthttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/huggingface_logo-noborder.svg",
     category: "AI/ML",
   },
   {

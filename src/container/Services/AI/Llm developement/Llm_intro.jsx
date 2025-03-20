@@ -65,7 +65,7 @@ function Llm_intro() {
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0 px-4">
           <Image
-            src="/assets/LLM_intro.jpg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/LLM_intro.jpg"
             alt="LLM"
             className="max-w-full h-auto"
             priority={false}

@@ -20,7 +20,7 @@ const TestAutomationFeatures = () => {
         {/* Left Image Section */}
         <div className="sm:w-[224px] md:w-[384px] flex justify-center">
           <Image
-            src="/assets/Automation_Technology.jpeg"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation_Technology.jpeg"
             width={500}
             height={300}
             alt="Test Automation Dashboard"

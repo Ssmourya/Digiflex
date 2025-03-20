@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-// import logo from "@/assets/digiflex.png";
+// import logo from "@https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png";
 import { Search, X, Menu, ChevronDown } from "lucide-react";
 import {
   mainNavItems,
@@ -149,9 +149,9 @@ const Navbar = () => {
           <div className="flex items-center h-16 gap-x-10">
             <Link href="/" className="flex items-center no-underline">
               <Image
-                src="/assets/digiflex.png"
-                width={200}
-                height={300}
+                src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png"
+                width={150}
+                height={200}
                 alt="logo"
                 className="h-6"
                 priority={false}

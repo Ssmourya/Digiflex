@@ -5,17 +5,17 @@ import Heading from "@/Layout/Heading";
 
 // Array of images
 const images = [
-  "/assets/Google-Cloud-Logo.png",
-  "/assets/azure-cloud-logo.png",
-  "/assets/aws-cloud-logo.png",
-  "/assets/BMC_logo.jpg",
-  "/assets/intercloud_carbonite.png",
-  "/assets/Intercloud_cloudEndure.jpg",
-  "/assets/intercloud_flexera.png",
-  "/assets/intercloud_ibm.png",
-  "/assets/intercloud_river.png",
-  "/assets/intercloud_turbon.png",
-  "/assets/Intercloud_vm.webp",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Google-Cloud-Logo.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/azure-cloud-logo.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/aws-cloud-logo.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/BMC_logo.jpg",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/intercloud_carbonite.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Intercloud_cloudEndure.jpg",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/intercloud_flexera.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/intercloud_ibm.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/intercloud_river.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/intercloud_turbon.png",
+  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Intercloud_vm.webp",
 ];
 
 function Intercloudpopular() {

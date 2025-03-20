@@ -39,10 +39,10 @@ const AnalystRecognition = () => {
   };
 
   const cards = [
-    { image: "/assets/Automation.jpeg", title: "NelsonHall" },
-    { image: "/assets/Cybersecurity.jpeg", title: "Gartner" },
-    { image: "/assets/Shield.jpeg", title: "ISG" },
-    { image: "/assets/Automation-2.jpeg", title: "MPQ" },
+    { image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation.jpeg", title: "NelsonHall" },
+    { image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Cybersecurity.jpeg", title: "Gartner" },
+    { image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Shield.jpeg", title: "ISG" },
+    { image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Automation-2.jpeg", title: "MPQ" },
   ];
 
   return (

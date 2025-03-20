@@ -11,7 +11,7 @@ function OptimizationOverview() {
 
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6 ">
         <Image
-          src="/assets/Optimization.webp"
+          src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Optimization.webp"
           width={500}
           height={300}
           alt="Cloud Optimization"

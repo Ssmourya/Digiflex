@@ -35,7 +35,7 @@ const CyberDefenseSection = () => {
       {/* Image Section */}
       <div className="w-full md:w-1/2 relative">
         <Image
-          src="/assets/TechnicalPeople.jpeg"
+          src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/TechnicalPeople.jpeg"
           width={500}
           height={300}
           alt="Cyber defense dashboard"

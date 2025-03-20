@@ -9,28 +9,28 @@ const data = [
     number: "01",
     description:
       "We specialize in AI-driven solutions that redefine business processes.",
-    image: "/assets/AI_First.webp",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_First.webp",
   },
   {
     title: "Expert Team",
     number: "02",
     description:
       "Our AI engineers, developers, and data scientists bring years of expertise in building AI-powered applications.",
-    image: "/assets/AI_Expert.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Expert.jpg",
   },
   {
     title: "Cutting-Edge Technologies",
     number: "03",
     description:
       "We leverage TensorFlow, PyTorch, OpenAI, GPT models, and advanced AI frameworks.",
-    image: "/assets/AI_Cutting-Edge.jpeg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Cutting-Edge.jpeg",
   },
   {
     title: "Scalable & Secure Solutions",
     number: "04",
     description:
       "We build apps that are robust, secure, and designed for future scalability. ",
-    image: "/assets/AI_Scable.jpg",
+    image: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/AI_Scable.jpg",
   },
 ];
 

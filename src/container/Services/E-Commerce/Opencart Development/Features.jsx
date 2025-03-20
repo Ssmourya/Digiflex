@@ -8,37 +8,37 @@ import Heading from "@/Layout/Heading";
 const OpenCartModernSection = () => {
   const features = [
     {
-      img: "/assets/Solution_1.jpg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Solution_1.jpg",
       title: "Custom OpenCart Solutions",
       text: "Tailored features and seamless integrations for your store.",
       color: "bg-indigo-500",
     },
     {
-      img: "/assets/Parfomance_1.jpg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Parfomance_1.jpg",
       title: "High-Performance Optimization",
       text: "Improve speed, SEO, and user experience to boost conversions.",
       color: "bg-blue-500",
     },
     {
-      img: "/assets/user_interface.jpg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/user_interface.jpg",
       title: "Custom Theme & UI Design",
       text: "Modern and responsive themes that attract and retain customers.",
       color: "bg-green-500",
     },
     {
-      img: "/assets/Payment.jpg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Payment.jpg",
       title: "Secure Payment & Checkout",
       text: "Safe and seamless payment gateways for smooth transactions.",
       color: "bg-red-500",
     },
     {
-      img: "/assets/Expand.jpg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Expand.jpg",
       title: "Scalability & Flexibility",
       text: "Easily expand your store with powerful OpenCart extensions.",
       color: "bg-purple-500",
     },
     {
-      img: "/assets/Mantanance.jpg",
+      img: "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/Mantanance.jpg",
       title: "Ongoing Support & Maintenance",
       text: "Dedicated technical support for uninterrupted performance.",
       color: "bg-yellow-500",

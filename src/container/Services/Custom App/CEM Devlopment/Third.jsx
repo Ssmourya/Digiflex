@@ -74,7 +74,7 @@ const Thirds = () => {
       <div className="ai-workspace flex flex-col md:flex-row gap-8 items-center">
         <div className="workspace-left flex-1 flex justify-center">
           <Image
-            src="/assets/bg4.png"
+            src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/bg4.png"
             alt="AI Workspace"
             width={600} 
             height={400}

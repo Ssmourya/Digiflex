@@ -1,6 +1,10 @@
 import React from 'react';
 import { Code2, Cpu, Shield, Cloud, Database, Rocket } from 'lucide-react';
 
+import WrapperContainer from "@/Layout/WrapperContainer";
+import Heading from "@/Layout/Heading";
+
+
 const Features = () => {
     
   const features = [
@@ -37,13 +41,17 @@ const Features = () => {
   ];
 
   return (
+    <WrapperContainer>
     <div className="py-20 bg-gray-50">
       {/* Introduction Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">
-            Why Choose .NET Development?
-          </h2>
+         <Heading>   
+         Why Choose .NET Development?
+         </Heading>
+        
+
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             .NET is a powerful, open-source framework for building modern applications. 
             It provides a comprehensive platform for developing web, mobile, desktop, 
@@ -87,6 +95,7 @@ const Features = () => {
         </button>
       </div>
     </div>
+    </WrapperContainer>
   );
 };
 

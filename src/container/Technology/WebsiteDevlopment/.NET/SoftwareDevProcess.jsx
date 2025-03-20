@@ -66,7 +66,7 @@ const SoftwareDevProcess = () => {
             At Digiflex, we specialize in providing top-notch .NET software development services. Our team is dedicated to building robust and scalable applications tailored to your needs.
           </p>
         </div>
-        <div className="grid gap-6">
+        <div className="grid gap-4 ">
           {Object.entries(sections).map(([key, section]) => (
             <div key={key} className="border rounded-lg overflow-hidden shadow-md bg-white">
               <div 

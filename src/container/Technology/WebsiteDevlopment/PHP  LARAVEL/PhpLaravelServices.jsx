@@ -1,8 +1,5 @@
 "use client";
 
-
-
-
 import React from "react";
 import { motion } from "framer-motion";
 import WrapperContainer from "@/Layout/WrapperContainer";
@@ -11,64 +8,64 @@ import Paragraph from "@/Layout/Paragraph";
 
 const services = [
   {
-    title: "2D Concept Art",
+    title: "Backend Development with PHP",
     description:
-      "Digiflex's expert artists transform your game ideas into stunning 2D concepts, including characters, environments, and props, with industry-leading quality and attention to detail.",
-    icon: "✏️",
+      "Digiflex specializes in building robust and scalable backend systems using PHP and Laravel. We create high-performance applications that cater to your business needs with clean, maintainable code.",
+    icon: "💻",
     gradient: "from-pink-500 to-purple-500"
   },
   {
-    title: "3D Modeling & Texturing",
+    title: "Laravel Framework Development",
     description:
-      "Our specialized 3D team brings your game to life with high-quality models and detailed textures, optimized for performance across all platforms using cutting-edge tools and techniques.",
-    icon: "🗿",
+      "Our expert Laravel developers build secure, scalable, and feature-rich applications. We leverage Laravel’s powerful ecosystem to deliver fast and efficient web solutions.",
+    icon: "⚡️",
     gradient: "from-blue-500 to-cyan-500"
   },
   {
-    title: "Character Design",
+    title: "API Development with PHP",
     description:
-      "Digiflex's character artists create unique and memorable characters with detailed designs, from stylized heroes to realistic NPCs, backed by years of gaming industry experience.",
-    icon: "👤",
+      "We create fast, secure, and scalable RESTful APIs using PHP and Laravel. Our APIs are designed for high availability and real-time data processing.",
+    icon: "🔌",
     gradient: "from-green-500 to-teal-500"
   },
   {
-    title: "Environment Art",
+    title: "E-commerce Development with Laravel",
     description:
-      "Our environment artists craft immersive game worlds with breathtaking detail, from lush forests to futuristic cities, leveraging the latest tools and rendering technologies.",
-    icon: "🌍",
+      "Build and optimize your e-commerce platform with PHP and Laravel. Our custom solutions ensure your online store is fast, secure, and user-friendly.",
+    icon: "🛒",
     gradient: "from-yellow-500 to-orange-500"
   },
   {
-    title: "Animation Services",
+    title: "Database Design & Optimization",
     description:
-      "Digiflex's animation team adds fluidity and personality to your game with custom animations, including advanced rigging, keyframing, and state-of-the-art motion capture integration.",
-    icon: "🏃",
+      "Our PHP and Laravel experts specialize in creating optimized database schemas and queries to improve performance and scalability for large applications.",
+    icon: "📊",
     gradient: "from-red-500 to-pink-500"
   },
   {
-    title: "UI/UX Design",
+    title: "Laravel Performance Optimization",
     description:
-      "Our UI/UX specialists design intuitive and visually appealing interfaces that enhance gameplay experience, following modern gaming standards and user-centered design principles.",
-    icon: "📱",
+      "We use advanced Laravel features like caching, queue management, and database optimization techniques to ensure your application runs at peak performance.",
+    icon: "🚀",
     gradient: "from-indigo-500 to-purple-500"
   },
   {
-    title: "Visual Effects (VFX)",
+    title: "Security & Authentication with Laravel",
     description:
-      "Digiflex's VFX artists enhance your game with stunning visual effects using advanced particle systems, custom shaders, and dynamic lighting to create unforgettable gaming moments.",
-    icon: "✨",
+      "Implement robust security measures in your application with Laravel's built-in tools for authentication, authorization, and encryption to protect sensitive data.",
+    icon: "🔐",
     gradient: "from-purple-500 to-blue-500"
   },
   {
-    title: "Promotional Art",
+    title: "Custom Laravel Solutions",
     description:
-      "Our marketing art team boosts your game's visibility with eye-catching promotional assets, including cinematic trailers, key art, and platform-optimized store visuals.",
-    icon: "🎨",
+      "We deliver fully customized solutions tailored to your specific business requirements using Laravel, ensuring your project is built the right way from the start.",
+    icon: "🔧",
     gradient: "from-cyan-500 to-green-500"
   },
 ];
 
-const GameArtServices = () => {
+const PhpLaravelServices = () => {
   return (
     <WrapperContainer>
       <motion.div
@@ -76,9 +73,9 @@ const GameArtServices = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <Heading>Digiflex Game Art Services</Heading>
+        <Heading>Digiflex PHP & Laravel Development Services</Heading>
         <Paragraph>
-          Partner with Digiflex to elevate your game's visual appeal with our comprehensive art services. Our award-winning team combines creativity and technical expertise to create immersive and engaging experiences that captivate players worldwide.
+          Partner with Digiflex to build powerful web applications with PHP and Laravel. Our experienced developers create secure, scalable, and high-performance systems tailored to your needs.
         </Paragraph>
       </motion.div>
 
@@ -115,4 +112,4 @@ const GameArtServices = () => {
   );
 };
 
-export default GameArtServices;
+export default PhpLaravelServices;

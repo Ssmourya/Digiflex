@@ -124,12 +124,12 @@ const NavItem = ({ setActiveDropdown, service, topbarHeight }) => {
                 {service.title} Services
               </h3>
               <div
-                className={`${
-                  service.features?.length > 4
-                    ? "grid grid-cols-1 md:grid-cols-2 gap-3"
-                    : "space-y-3"
-                }`}
-              >
+  className={`${
+    service.features?.length > 4
+      ? "grid grid-cols-1 md:grid-cols-2 gap-3 max-h-80 p-1 overflow-y-auto"
+      : "space-y-4"
+  }`}
+>
                 {service.features?.map((feature, index) => (
                   <Link
                     href={feature.path}

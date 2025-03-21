@@ -664,21 +664,35 @@ export const technologyCategories = [
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     },
 
-    // {
-    //   id: "devops",
-    //   icon: Server,
-    //   title: "DevOps",
-    //   color: "text-gray-500",
-    //   description: "Automation, CI/CD, and cloud infrastructure solutions for seamless deployment and monitoring.",
-    //   features: [
-    //     { icon: Cloud, title: "CI/CD Implementation", path: "/services/devops/ci-cd" },
-    //     { icon: Server, title: "Infrastructure as Code", path: "/services/devops/infrastructure-as-code" },
-    //     { icon: Shield, title: "Security & Compliance", path: "/services/devops/security-compliance" },
-    //     { icon: Cloud, title: "Cloud Automation", path: "/services/devops/cloud-automation" },
-    //     { icon: Database, title: "Monitoring & Logging", path: "/services/devops/monitoring-logging" }
-    //   ],
-    //   image: "https://images.unsplash.com/photo-1581092446327-3f94ee1dfd84?auto=format&fit=crop&w=600&q=80",
-    // },
+    {
+        id: "salesforce-ideas-cloudified",
+        icon: Globe,
+        title: "SALESFORCE: IDEAS CLOUDIFIED",
+        color: "text-blue-500",
+        description: "Comprehensive Salesforce solutions to enhance business processes and customer engagement.",
+        features: [
+            { icon: Globe, title: "Sales Cloud", path: "/sales-cloud" },
+            { icon: Globe, title: "Marketing Cloud & Pardot", path: "/marketing-cloud-pardot" },
+            { icon: Globe, title: "Service Cloud", path: "/service-cloud" },
+            { icon: Globe, title: "Community/Experience Cloud", path: "/community-experience-cloud" },
+            { icon: Globe, title: "Force.com", path: "/force-com" },
+            { icon: Globe, title: "Einstein Analytics & Discovery", path: "/einstein-analytics-discovery" },
+            { icon: Globe, title: "Commerce Cloud", path: "/commerce-cloud" },
+            { icon: Globe, title: "Revenue Cloud/CPQ", path: "/revenue-cloud-cpq" },
+            { icon: Globe, title: "Lightning Experience", path: "/lightning-experience" },
+            { icon: Globe, title: "Field Service Lightning", path: "/field-service-lightning" },
+            { icon: Globe, title: "Non-Profit Cloud", path: "/non-profit-cloud" },
+            { icon: Globe, title: "AppExchange Apps", path: "/appexchange-apps" },
+            { icon: Globe, title: "Financial Services Cloud", path: "/financial-services-cloud" },
+            { icon: Globe, title: "Education Cloud", path: "/education-cloud" }
+        ],
+        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
+    }
+    
+
+
+
+
 
 ];
 

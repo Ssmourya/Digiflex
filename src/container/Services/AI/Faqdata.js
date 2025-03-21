@@ -269,8 +269,65 @@ const MLOpsFAQData = [
         "digiflex.ai provides seamless ai agent integration through APIs, cloud services, and on-premise deployment, ensuring smooth interoperability with your software ecosystem.",
     },
 ];
-
-
+const AIChatbotFAQData = [
+  {
+    question: "What is an Enterprise AI Chatbot?",
+    answer:
+      "An Enterprise AI Chatbot is an AI-powered virtual assistant designed to automate customer interactions, improve support efficiency, and enhance user engagement for businesses.",
+  },
+  {
+    question: "How can an AI Chatbot benefit my business?",
+    answer:
+      "AI chatbots help businesses by reducing response times, providing 24/7 customer support, automating repetitive tasks, and improving customer satisfaction.",
+  },
+  {
+    question: "What industries can benefit from AI chatbots?",
+    answer:
+      "AI chatbots can be used in healthcare, e-commerce, finance, education, travel, real estate, insurance, and more to automate customer service, lead generation, and workflow management.",
+  },
+  {
+    question: "What makes Digiflex’s AI chatbot different from others?",
+    answer:
+      "Digiflex’s AI chatbots are powered by advanced NLP, machine learning, and integration capabilities, ensuring human-like interactions, seamless business integration, and high scalability.",
+  },
+];
+const chatbotdevelopmentFAQData = [
+  {
+    question: " What is an AI chatbot, and how can it help my business?",
+    answer:
+      "An AI chatbot is a virtual assistant that uses artificial intelligence to understand and respond to user queries in real time. It can automate customer support, enhance user engagement, and improve business efficiency by handling repetitive tasks, reducing response time, and providing personalized interactions.",
+  },
+  {
+    question: "What platforms can your AI chatbot be integrated with?",
+    answer:
+      "Our AI chatbots seamlessly integrate with multiple platforms, including websites, mobile apps, WhatsApp, Facebook Messenger, Slack, Microsoft Teams, and CRM systems like Salesforce and HubSpot. This ensures smooth communication and automation across different channels.",
+  },
+  {
+    question: "How secure are the AI chatbots developed by Digiflex.ai?",
+    answer:
+      "Security is our top priority. Our AI chatbots follow industry-standard encryption protocols, secure authentication methods, and compliance with GDPR and CCPA regulations. We ensure that sensitive customer data remains protected while providing seamless and efficient chatbot interactions.",
+  },
+  {
+    question: "Do your chatbots support multiple languages?",
+    answer:
+      "Yes, our AI chatbots support multiple languages, allowing businesses to cater to a global audience. Whether you need a chatbot in English, Spanish, French, or any other language, we can customize it to ensure smooth communication with your customers worldwide.",
+  },
+  {
+    question: "How long does it take to develop a chatbot?",
+    answer:
+      "The development timeline depends on the complexity and features required. A basic chatbot can be developed in 2-4 weeks, while more advanced AI-powered chatbots with deep learning capabilities may take 6-8 weeks. We ensure timely delivery without compromising on quality and functionality.",
+  },
+  {
+    question: "Can your chatbots be customized for specific industries?",
+    answer:
+      "Absolutely! Our AI chatbots are tailored to various industries, including eCommerce, healthcare, finance, real estate, and customer service. Whether you need a chatbot for lead generation, appointment scheduling, or automated customer support, we build solutions that align with your business needs.",
+  },
+  {
+    question: "How can I get started with AI chatbot development at Digiflex.ai?",
+    answer:
+      "Getting started is easy! Simply contact us for a consultation, and we will assess your requirements, suggest the best AI chatbot solution, and guide you through the development process. Our team ensures that your chatbot is customized, optimized, and deployed to provide maximum efficiency for your business.",
+  },
+];
   
   export { 
     AIPoweredAppsFAQData,
@@ -279,7 +336,9 @@ const MLOpsFAQData = [
     AICopilotFAQData,
     MachineLearningFAQData,
     MLOpsFAQData,
-    AIAgentFAQData
+    AIAgentFAQData,
+    AIChatbotFAQData,
+    chatbotdevelopmentFAQData
  };
   
 

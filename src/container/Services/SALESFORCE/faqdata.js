@@ -100,3 +100,99 @@ export const Devopsfaq =  [
         "Challenges include test flakiness, high maintenance, and slow execution of large test suites.",
     },
 ];
+
+export const Salesforce360faq = [
+  {
+    question: "What is Salesforce Digital 360?",
+    answer:
+      "Salesforce Digital 360 is a suite of digital solutions that helps businesses enhance customer engagement by leveraging Marketing Cloud, Commerce Cloud, and Experience Cloud.",
+  },
+  {
+    question: "What are the key components of Salesforce Digital 360?",
+    answer:
+      "The key components include Marketing Cloud for customer engagement, Commerce Cloud for digital commerce, and Experience Cloud for personalized customer experiences.",
+  },
+  {
+    question: "How does Marketing Cloud help businesses in Digital 360?",
+    answer:
+      "Marketing Cloud helps businesses create personalized marketing campaigns, automate customer journeys, and analyze marketing performance using AI-driven insights.",
+  },
+  {
+    question: "What is the role of Commerce Cloud in Salesforce Digital 360?",
+    answer:
+      "Commerce Cloud enables businesses to build seamless e-commerce experiences with AI-driven product recommendations, mobile-first shopping, and multi-channel selling capabilities.",
+  },
+  {
+    question: "How does Experience Cloud enhance customer engagement?",
+    answer:
+      "Experience Cloud allows businesses to create branded customer portals, community forums, and self-service hubs to improve user interaction and customer satisfaction.",
+  },
+  {
+    question: "How does Salesforce Digital 360 support AI and automation?",
+    answer:
+      "Salesforce Digital 360 leverages AI-powered tools like Einstein AI to automate marketing, predict customer behavior, and enhance sales strategies.",
+  },
+  {
+    question: "What industries can benefit from Salesforce Digital 360?",
+    answer:
+      "Industries such as retail, finance, healthcare, education, and technology can benefit by enhancing customer engagement and streamlining business processes.",
+  },
+  {
+    question: "How does Salesforce Digital 360 improve customer data management?",
+    answer:
+      "It centralizes customer data across different touchpoints, providing businesses with a 360-degree view of customer interactions for better decision-making.",
+  },
+];
+
+export const NewCloudRollfaqs = [
+  {
+    question: "What is the New Cloud Rollout Strategy?",
+    answer: "The New Cloud Rollout Strategy focuses on a seamless migration to cloud infrastructure, ensuring scalability, security, and cost efficiency.",
+  },
+  {
+    question: "What are the key benefits of cloud adoption?",
+    answer: "It enhances security, improves performance, supports remote collaboration, and reduces IT infrastructure costs.",
+  },
+  {
+    question: "Which cloud platforms are supported?",
+    answer: "We support AWS, Azure, and Google Cloud, providing flexible deployment options tailored to your needs.",
+  },
+  {
+    question: "How long does the rollout process take?",
+    answer: "The timeline varies based on business size and complexity, but we ensure minimal disruption with structured migration phases.",
+  },
+  {
+    question: "What security measures are implemented?",
+    answer: "Our strategy includes multi-layer encryption, compliance with global security standards, and real-time threat monitoring.",
+  },
+];
+
+export const Maintenancefaqs = [
+  {
+    question: "What is included in your maintenance and support services?",
+    answer:
+      "Our maintenance and support services include proactive monitoring, security updates, performance optimization, bug fixes, backup & recovery, and 24/7 technical support.",
+  },
+  {
+    question: "Do you provide emergency support for critical issues?",
+    answer:
+      "Yes, we offer 24/7 emergency support to resolve critical issues as quickly as possible and minimize downtime.",
+  },
+  {
+    question: "How often do you release security updates?",
+    answer:
+      "We regularly release security updates to ensure your system is protected against vulnerabilities and threats.",
+  },
+  {
+    question: "What happens if my application crashes?",
+    answer:
+      "If your application crashes, our proactive monitoring system will detect the issue, and our team will work on resolving it immediately to restore functionality.",
+  },
+  {
+    question: "Can I customize the maintenance plan based on my needs?",
+    answer:
+      "Yes, we offer flexible maintenance plans that can be customized based on your specific business requirements.",
+  },
+];
+
+

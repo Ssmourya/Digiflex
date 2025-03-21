@@ -2,7 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Heading from "@/Layout/Heading";
 import Subheading from "@/Layout/Subheading";
-import Paragraph from "@/Layout/Paragraph";
+import Paragraph from "@/Layout/Paragraph"
+import WrapperContainer from "@/Layout/WrapperContainer"
+
 
 
 export default function CaseStudiesPortfolio() {
@@ -44,8 +46,9 @@ export default function CaseStudiesPortfolio() {
 
   return (
     <>
+     <WrapperContainer>
       <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl">
           <div className="text-center mb-12">
             <Heading>Case Studies & Portfolio</Heading>
             <p className="text-gray-600">
@@ -82,6 +85,7 @@ export default function CaseStudiesPortfolio() {
           </div>
         </div>
       </section>
+      </WrapperContainer>
     
     </>
   );

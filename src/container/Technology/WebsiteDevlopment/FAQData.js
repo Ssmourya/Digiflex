@@ -76,3 +76,79 @@ export const GolangServicesFAQData = [
   },
 ];
 
+
+export const LaravelServicesFAQData = [
+  {
+    question: "What are PHP Laravel development services?",
+    answer:
+      "PHP Laravel development services involve building robust, secure, and scalable web applications using the Laravel framework, which is based on PHP. These services include custom web development, API creation, MVC architecture implementation, and enterprise-level solutions.",
+  },
+  {
+    question: "How do PHP Laravel development services benefit businesses?",
+    answer:
+      "Laravel offers elegant syntax, powerful tools, and built-in features like authentication and routing, making it ideal for business applications. It speeds up development, enhances security, and supports scalability, helping businesses grow efficiently.",
+  },
+  {
+    question: "What types of applications can be built using PHP Laravel?",
+    answer:
+      "Laravel is widely used for e-commerce platforms, content management systems (CMS), RESTful APIs, web portals, and custom business applications. It’s also favored for rapid prototyping and building secure, database-driven applications.",
+  },
+  {
+    question: "How do you ensure quality in PHP Laravel development?",
+    answer:
+      "We follow best practices such as unit testing with PHPUnit, continuous integration (CI/CD), and Laravel’s artisan tools. Our team ensures code quality, security, and performance through thorough testing and compliance with coding standards.",
+  },
+  {
+    question: "How long does it take to develop a PHP Laravel application?",
+    answer:
+      "Development time varies based on project complexity and requirements. Small applications can be completed in a few weeks, while large-scale enterprise solutions may take several months. We provide detailed timelines and milestones for efficient delivery.",
+  },
+  {
+    question: "What cloud services do you support with PHP Laravel?",
+    answer:
+      "Laravel integrates seamlessly with cloud platforms like AWS, Google Cloud, and Azure. We offer cloud-based deployment, Laravel Vapor for serverless solutions, and scalable architectures using tools like Docker and Laravel Forge.",
+  },
+  {
+    question: "Do you offer maintenance and support for PHP Laravel applications?",
+    answer:
+      "Yes, we provide ongoing maintenance, updates, and support for Laravel applications. Our services include bug fixes, performance optimization, security updates, and feature enhancements to ensure long-term reliability and efficiency.",
+  },
+];
+
+export const RubyOnRailsServicesFAQData = [
+  {
+    question: "What are Ruby on Rails development services?",
+    answer:
+      "Ruby on Rails development services involve creating dynamic, robust, and scalable web applications using the Ruby on Rails framework. These services include full-stack web development, custom application development, APIs, e-commerce platforms, and rapid prototyping for startups.",
+  },
+  {
+    question: "How do Ruby on Rails development services benefit businesses?",
+    answer:
+      "Ruby on Rails offers rapid development, a strong community, and a convention-over-configuration approach, making it perfect for businesses needing quick, reliable solutions. It reduces development costs, speeds up time-to-market, and supports scalable web applications.",
+  },
+  {
+    question: "What types of applications can be built using Ruby on Rails?",
+    answer:
+      "Ruby on Rails is ideal for building web applications, content management systems (CMS), e-commerce platforms, social networking sites, and SaaS products. It’s also widely used for startups and MVPs due to its speed and flexibility.",
+  },
+  {
+    question: "How do you ensure quality in Ruby on Rails development?",
+    answer:
+      "We follow best practices like test-driven development (TDD), continuous integration (CI/CD), and Rails’ built-in testing tools. Our team ensures code quality, security, and performance through thorough testing and compliance with Rails conventions.",
+  },
+  {
+    question: "How long does it take to develop a Ruby on Rails application?",
+    answer:
+      "Development time varies based on project complexity and requirements. Simple applications or MVPs can be built in a few weeks, while complex, feature-rich solutions may take several months. We provide detailed timelines and milestones for efficient delivery.",
+  },
+  {
+    question: "What cloud services do you support with Ruby on Rails?",
+    answer:
+      "Ruby on Rails integrates smoothly with cloud platforms like AWS, Heroku, and Google Cloud. We offer cloud deployment, containerization with Docker, scalable architectures, and serverless options tailored to your business needs.",
+  },
+  {
+    question: "Do you offer maintenance and support for Ruby on Rails applications?",
+    answer:
+      "Yes, we provide ongoing maintenance, updates, and support for Ruby on Rails applications. Our services include bug fixes, performance tuning, security updates, and feature enhancements to ensure long-term reliability and success.",
+  },
+];

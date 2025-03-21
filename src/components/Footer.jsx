@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Menu, Mail, Phone } from "lucide-react";
 import { SocialIcon } from "react-social-icons";
 // import logo from "@/publichttps://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png";
@@ -144,7 +144,7 @@ function Footer() {
       <WrapperContainer>
         <div className="container -mt-4">
           <div className="mb-4 max-w-[1240px] mx-auto">
-            <Link to="/" className="flex items-center no-underline">
+            <Link href="/" className="flex items-center no-underline">
               <Image
                 src="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png"
                 width={150}
@@ -240,7 +240,7 @@ function Footer() {
               <span className="text-sm text-gray-300">
                 2025 Digiflex. All rights reserved
               </span>
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <a
                   href="#"
                   className="text-sm hover:text-blue-300 text-gray-300"
@@ -253,7 +253,7 @@ function Footer() {
                 >
                   Accessibility
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="flex items-center gap-2">
               {socialLinks.map((link, index) =>

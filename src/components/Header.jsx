@@ -14,6 +14,8 @@ import {
 import MegaMenu from "./MegaMenu";
 import { Phone, Mail } from "lucide-react";
 
+import Head from 'next/head';
+
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -108,6 +110,13 @@ const Navbar = () => {
 
   return (
     <>
+    <Head>
+        <link
+          rel="preload"
+          href="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/digiflex.png"
+          as="image"
+        />
+      </Head>
       <div className="w-full bg-blue-950 border-b border-blue-800 px-4 md:px-8 py-2">
         <div className="flex xs:justify-between justify-end items-center">
           <div className="flex flex-row items-center">
@@ -153,8 +162,7 @@ const Navbar = () => {
                 width={150}
                 height={200}
                 alt="logo"
-                className="h-6"
-                priority={false}
+                 priority
               />
             </Link>
 

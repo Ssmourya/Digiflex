@@ -1,12 +1,10 @@
 "use client";
+
 import Image from "next/image";
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import MetallicPaint from "@/components/ui/MetallicPaint"; // Ensure this is the correct path
-// Using public folder for media files in Next.js
-// import bg from "@https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/HomeHeroBg4.mp4";
-// import bg2 from "@https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:digiflex/HomeHeroBg.jpg";
+import MetallicPaint from "@/components/ui/MetallicPaint";
 
 function renderTextToImageData(lines, options = {}) {
   const {

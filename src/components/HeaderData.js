@@ -663,7 +663,6 @@ export const technologyCategories = [
         ],
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     },
-
     {
         id: "salesforce-ideas-cloudified",
         icon: Globe,
@@ -671,27 +670,23 @@ export const technologyCategories = [
         color: "text-blue-500",
         description: "Comprehensive Salesforce solutions to enhance business processes and customer engagement.",
         features: [
-            { icon: Globe, title: "Sales Cloud", path: "/sales-cloud" },
-            { icon: Globe, title: "Marketing Cloud & Pardot", path: "/marketing-cloud-pardot" },
-            { icon: Globe, title: "Service Cloud", path: "/service-cloud" },
-            { icon: Globe, title: "Community/Experience Cloud", path: "/community-experience-cloud" },
-            { icon: Globe, title: "Force.com", path: "/force-com" },
+            { icon: Globe, title: "Sales Cloud", path: "/salesforce-sales-cloud-consulting" },
+            { icon: Globe, title: "Marketing Cloud & Pardot", path: "/salesforce-marketing-cloud-pardot-consulting" },
+            { icon: Globe, title: "Service Cloud", path: "/salesforce-service-cloud-consulting" },
+            { icon: Globe, title: "Community/Experience Cloud", path: "/salesforce-community-experience-cloud-consulting" },
+            { icon: Globe, title: "Force.com", path: "/force-com-development" },
             { icon: Globe, title: "Einstein Analytics & Discovery", path: "/einstein-analytics-discovery" },
-            { icon: Globe, title: "Commerce Cloud", path: "/commerce-cloud" },
+            { icon: Globe, title: "Commerce Cloud", path: "/salesforce-commerce-cloud" },
             { icon: Globe, title: "Revenue Cloud/CPQ", path: "/revenue-cloud-cpq" },
-            { icon: Globe, title: "Lightning Experience", path: "/lightning-experience" },
+            { icon: Globe, title: "Lightning Experience", path: "/salesforce-lightning-experience" },
             { icon: Globe, title: "Field Service Lightning", path: "/field-service-lightning" },
-            { icon: Globe, title: "Non-Profit Cloud", path: "/non-profit-cloud" },
+            { icon: Globe, title: "Non-Profit Cloud", path: "/salesforce-non-profit-cloud" },
             { icon: Globe, title: "AppExchange Apps", path: "/appexchange-apps" },
-            { icon: Globe, title: "Financial Services Cloud", path: "/financial-services-cloud" },
-            { icon: Globe, title: "Education Cloud", path: "/education-cloud" }
+            { icon: Globe, title: "Financial Services Cloud", path: "/salesforce-financial-services-cloud" },
+            { icon: Globe, title: "Education Cloud", path: "/salesforce-education-cloud" }
         ],
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
     }
-    
-
-
-
 
 
 ];

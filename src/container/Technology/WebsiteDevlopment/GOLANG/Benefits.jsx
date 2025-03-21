@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
 import { CheckCircle, Users, ShieldCheck, Box } from 'lucide-react';
 import WrapperContainer from '@/Layout/WrapperContainer';
 import Heading from '@/Layout/Heading';
 import Paragraph from '@/Layout/Paragraph';
 
-const BenefitCard = ({ icon, title, description }) => (
+const BenefitCard = memo(({ icon, title, description }) => (
   <div className="bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:shadow-xl flex flex-col h-full">
     <div className="flex justify-between items-start mb-6">
       <h3 className="text-gray-900 text-xl font-bold max-w-[70%]">{title}</h3>
-      <div className="w-16 h-16">
-        {icon}
+      <div className="w-16 h-16" aria-label={title}>
+        {icon || <Box className="text-gray-500" size={48} />}
       </div>
     </div>
     <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
   </div>
-);
+));
+
+BenefitCard.propTypes = {
+  icon: PropTypes.element,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 const Benefits = () => {
   const benefits = [

@@ -6,6 +6,9 @@ const Fontheading = ({ children, className = '' }) => {
         className={`text-2xl font-semibold text-black ${className}`}
       >
         {children}
+        
+
+
       </h1>
     );
   };
